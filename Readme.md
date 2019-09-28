@@ -12,7 +12,7 @@ Everyone is encouraged to participate, regardless of your skill level, this is a
 - Fix Typos, Code Bugs or Accessibility oversights
  
 ## Project Brief
-Over the years [Santa Claus](https://en.wikipedia.org/wiki/Santa_Claus) has noticed a decline in the Christmas spirit and is in desperate need of our help! Santa and his elf have put together a [basic design concept](https://github.com/zero-to-mastery/Santafied/tree/master/design) for a brand new website they want to be able to launch in November.
+Over the years Santa Claus has noticed a decline in the Christmas spirit and is in desperate need of our help! Santa and his elf have put together a [basic design concept](https://github.com/zero-to-mastery/Santafied/tree/master/design) for a brand new website they want to be able to launch in November.
  
 The website should provide visitors with the following:
 - [ ] A page for Christmas information and facts.
