@@ -1,7 +1,7 @@
 ![](https://cdn.discordapp.com/attachments/598312632407293963/626070022447431783/santafied.png)
 # Santafied - Hacktoberfest 2019 
  
-Welcome to this years HTML challenge for Hacktoberfest ([What is Hacktoberfest?](../README.md)). A project with beginners and aspiring developers in mind, utilising HTML, CSS & maybe a dash of Javascript to achieve a simplistic yet elegant Christmas themed website.
+Welcome to this years HTML challenge for Hacktoberfest ([What is Hacktoberfest?](https://github.com/zero-to-mastery/hacktoberfest-2019#what-is-hacktoberfest)). A project with beginners and aspiring developers in mind, utilising HTML, CSS & maybe a dash of Javascript to achieve a simplistic yet elegant Christmas themed website.
  
 Everyone is encouraged to participate, regardless of your skill level, this is a practice project and should be considered a playground.  This project has plenty of options for collaboration, here are just a few of the many that we welcome pull requests: 
 - HTML elements
@@ -12,7 +12,7 @@ Everyone is encouraged to participate, regardless of your skill level, this is a
 - Fix Typos, Code Bugs or Accessibility oversights
  
 ## Project Brief
-Over the years [Santa Claus](https://en.wikipedia.org/wiki/Santa_Claus) has noticed a decline in the Christmas spirit and is in desperate need of our help! Santa and his elf have put together a [basic design concept](./design) for a brand new website they want to be able to launch in November.
+Over the years [Santa Claus](https://en.wikipedia.org/wiki/Santa_Claus) has noticed a decline in the Christmas spirit and is in desperate need of our help! Santa and his elf have put together a [basic design concept](https://github.com/zero-to-mastery/Santafied/tree/master/design) for a brand new website they want to be able to launch in November.
  
 The website should provide visitors with the following:
 - [ ] A page for Christmas information and facts.
@@ -29,7 +29,7 @@ The website should provide visitors with the following:
  
  
 ### Suggestions & Ideas
-Santa and his elves are very much open to ideas and suggestions for new content. Please create a new issue [here](), ensuring that you indicate if the task is "up for grabs" or you wish to take up the task yourself. 
+Santa and his elves are very much open to ideas and suggestions for new content. Please create a new issue [here](https://github.com/zero-to-mastery/Santafied/issues), ensuring that you indicate if the task is "up for grabs" or you wish to take up the task yourself. 
  
  
 ## Getting Started
@@ -41,7 +41,7 @@ Ok, so you have read the brief and checked out the designs. Ready to contribute,
 1. First up you need to Fork (make a copy) of this repo to your Github account. 
 2. Clone (download) your fork to you computer
 3. Set your streams so you can sync you clone with the original repo (get the latest updates)
-4. Find a task [here](../projects/1) or [create a task](../issues)
+4. Find a task [here](https://github.com/zero-to-mastery/Santafied/projects/1?add_cards_query=is%3Aopen) or [create a task](https://github.com/zero-to-mastery/Santafied/issues)
 5. Create a branch for your task and complete the task
 6. Commit and push the code to your fork
 7. Create a pull request to have the changes merged into the origin
