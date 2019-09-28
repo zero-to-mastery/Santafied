@@ -1,0 +1,36 @@
+/*
+ * Following codeblocks are just starter code
+ * Feel free to modify it in any way you like
+ */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  padding: 1rem 0.5rem;
+  box-shadow: 0 0 10px 0px lightgray;
+  background: crimson;
+}
+
+nav strong {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+section {
+  padding: 0 1rem;
+  font-size: 1.4em;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: crimson;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  color: gray;
+}
