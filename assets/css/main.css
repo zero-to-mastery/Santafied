@@ -5,20 +5,20 @@
 
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-}
 
-nav {
-  padding: 1rem 0.5rem;
-  box-shadow: 0 0 10px 0px lightgray;
-  background: crimson;
 }
-
-nav strong {
-  color: whitesmoke;
-  text-decoration: none;
+/*navbar Starts*/
+#brand-color{
+  color: #ff4546;
 }
-
+.nav-link {
+    margin-right: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+  }
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ff4546;
+    }
+/*Navbar END*/
 section {
   padding: 0 1rem;
   font-size: 1.4em;
