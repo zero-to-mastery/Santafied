@@ -45,6 +45,9 @@ Ok, so you have read the brief and checked out the designs. Ready to contribute,
 5. Create a branch for your task and complete the task
 6. Commit and push the code to your fork
 7. Create a pull request to have the changes merged into the origin
+
+
+**All discussions around this event can now be had in our #hacktoberfest-2019 channel on Discord!**
  
 Congratulations! You are now one pull request closer to getting that free t-shirt. Repeat steps 4-7 until you have made at least 4 qualifying pull requests. You can check how many qualifying pull requests you have made at https://hacktoberfest.digitalocean.com/stats/ Have Fun and Happy Coding Guys!
  
