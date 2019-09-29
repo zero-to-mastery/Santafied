@@ -1,0 +1,46 @@
+section#hero-content {
+  background: linear-gradient(-45deg, crimson, #ff4546);
+  width: 100%; 
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+
+#carousel {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+#carousel .slide {
+  /* min-height: 400px; */
+}
+
+#carousel .slide img {
+  max-width: 100%;
+}
+
+.tns-outer {
+  position: relative;
+}
+
+.tns-controls button {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 300;
+  font-size: 4rem;
+}
+.tns-controls .left-arrow {
+  left: 10px;
+}
+
+.tns-controls .right-arrow {
+  right: 10px;
+}
+
+.tns-controls .left-arrow,
+.tns-controls .right-arrow {
+  position: absolute;
+  top: 45%;
+}
