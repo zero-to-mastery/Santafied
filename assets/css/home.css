@@ -1,6 +1,6 @@
 section#hero-content {
   background: linear-gradient(-45deg, crimson, #ff4546);
-  width: 100%; 
+  width: 100%;
   padding: 0;
   margin: 0;
   height: auto;
@@ -40,4 +40,23 @@ section#hero-content {
 .tns-controls .right-arrow {
   position: absolute;
   top: 45%;
+}
+
+.intro-div{
+  background: linear-gradient(-45deg, crimson, #ff4546);
+  width:100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.santafied-image{
+  width: inherit;
+  height: inherit;
+  padding-top: 75px;
+}
+
+.intro-text{
+  font-family: 'Mountains of Christmas', cursive;
+  color: white;
+  font-size: 2rem;
 }
