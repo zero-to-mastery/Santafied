@@ -1,6 +1,6 @@
 section#hero-content {
   background: linear-gradient(-45deg, crimson, #ff4546);
-  width: 100%; 
+  width: 100%;
   padding: 0;
   margin: 0;
   height: auto;
@@ -40,4 +40,18 @@ section#hero-content {
 .tns-controls .right-arrow {
   position: absolute;
   top: 45%;
+}
+
+.container-main-image {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
