@@ -13,7 +13,13 @@ body {
 }
 .nav-link {
     margin-right: 1rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Markazi Text', serif;
+    font-size: 21px;
+    font-style: italic;
+  }
+  .navbar-light .navbar-nav .nav-link{
+    color: black;
   }
 .navbar-light .navbar-nav .nav-link:hover {
     color: #ff4546;
