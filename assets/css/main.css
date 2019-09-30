@@ -3,7 +3,7 @@
  * Feel free to modify it in any way you like
  */
 
-body {
+ body {
   margin: 0;
 
 }
@@ -26,11 +26,23 @@ body {
     font-style: italic;
     font-weight: 500;
   }
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #ff4546;
-    letter-spacing: 0.2rem;
-    font-weight: 600;
-   }
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  margin-top: 0;
+}
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #ff4546;
+}
+.navbar-light .navbar-nav .nav-item:hover .nav-link {
+  color: #ff4546;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+}
 
 
 .navbar-light .navbar-nav .nav-link {
