@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+
+}
+/*navbar Starts*/
+#brand-color{
+  color: #ff4546;
+}
+.nav-link {
+    margin-right: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+  }
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ff4546;
+    }
+/*Navbar END*/
+footer {
+  padding: 1rem;
+  text-align: center;
+  color: gray;
+}
+/*Footer END*/
+
+body{
+	text-align: center;
+	align-content: center;
+
+}
+#giftsPage{
+	background-color: #ff4546;
+}
+
+#bannerImage{
+	position:relative;
+}
+
+#bannerImage{
+	width:100vw;
+	height:90vh;
+}
+
+#banner #caption{
+	position: absolute;
+	top:25%;
+	left:30%;
+	color:white;
+	display:flex;
+	flex-direction: column;
+}
+
+#giftsPage{
+	height:90vh;
+
+}
+#giftList{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #ff4546;
+	border-top: 2px solid rgba(255,255,255,0.8);
+
+}
+#giftList .card{
+	margin:20px;
+
+}
+.card-img-top{
+	height:50%;
+}
+
+
