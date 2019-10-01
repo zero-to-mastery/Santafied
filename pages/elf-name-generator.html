@@ -20,6 +20,7 @@
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../assets/css/elf-name-generator.css" />
     <title>Santafied | Films</title>
   </head>
   <body id="films">
@@ -67,91 +68,12 @@
     <!-- :::END OF Nav -->
 
     <div class="container">
-      <h1 class="title">Christmas Songs</h1>
-      <div class="row">
-        <div class="col-4">
-          <div class="list-group" id="list-tab" role="tablist">
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-profile-list"
-              data-toggle="list"
-              href="#last-christmas"
-              role="tab"
-              aria-controls="profile"
-              >Last Christmas</a
-            >
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-settings-list"
-              data-toggle="list"
-              href="#all-i-want-for-christmas"
-              role="tab"
-              aria-controls="settings"
-              >All I Want for Christmas Is You</a
-            >
-          </div>
+      <h1 class="title">Elf Name Generator</h1>
+      <div class="name-generator">
+        <div id="name-box">
+          <p class="name">Click the button!</p>
         </div>
-        <!-- :::END OF MENU TO FILTER FILMS :::-->
-
-        <!-- ::: CARDS OF FILMS :::-->
-        <div class="col-8">
-          <div class="tab-content" id="nav-tabContent">
-            <!-- ::: CARD EXAMPLE OF A MOVIE :::-->
-            <div
-              class="tab-pane fade"
-              id="last-christmas"
-              role="tabpanel"
-              aria-labelledby="grinch-stole-list"
-            >
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Last_Christmaswham.jpg/220px-Last_Christmaswham.jpg"
-                      class="card-img"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Last Christmas</h5>
-                      <p class="card-text">
-                        Last Christmas" is a song by English pop duo Wham!, released on Epic Records in December 1984, on a double A-side with "Everything She Wants". It was written and produced by George Michael, and has been covered by many artists since its original release.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ::: END OF CARD EXAMPLE :::-->
-            <div
-            class="tab-pane fade"
-            id="all-i-want-for-christmas"
-            role="tabpanel"
-            aria-labelledby="grinch-stole-list"
-          >
-            <div class="card mb-3" style="max-width: 670px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/All_I_Want_for_Christmas_Is_You_Mariah_Carey.png/220px-All_I_Want_for_Christmas_Is_You_Mariah_Carey.png"
-                    class="card-img"
-                    alt="..."
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">All I Want for Christmas Is You</h5>
-                    <p class="card-text">
-                        All I Want for Christmas Is You" is a Christmas song performed by American singer and songwriter Mariah Carey. She wrote and produced the song alongside Walter Afanasieff. Columbia Records released it on November 28, 1994,[1] as the lead single from her fourth studio album and first holiday album, Merry Christmas (1994). The track is an uptempo love song that includes bell chimes, heavy back-up vocals, and synthesizers. It is also the best-selling modern day Christmas song making her the "Queen of Christmas" in popular culture and music.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
+        <button id="loadName">Elf Me</button>
       </div>
     </div>
 
@@ -174,5 +96,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="../assets/js/elf-name-generator.js"></script>
   </body>
 </html>
