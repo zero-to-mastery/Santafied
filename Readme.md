@@ -42,7 +42,7 @@ Ok, so you have read the brief and checked out the designs. Ready to contribute,
 2. Clone (download) your fork to you computer
 3. Set your streams so you can sync you clone with the original repo (get the latest updates)
 
-- `git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git`
+- `git remote add upstream https://github.com/zero-to-mastery/Santafied.git`
 - `git pull upstream master`
 - The above 2 commands will synchronize your forked version of the project with the actual repository.
 
