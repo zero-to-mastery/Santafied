@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <title>Santafied | Films</title>
+    <title>Santafied | Recipes</title>
   </head>
   <body id="films">
     <!-- :::NAV Starts ::: -->
@@ -40,14 +40,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-item nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-item nav-link" href="../index.html">Home</a></li>
             <li class="nav-item"><a class="nav-item nav-link" href="#">Facts</a></li>
-            <li class="nav-item"><a class="nav-item nav-link" href="../pages/recipes.html">Recipes</a></li>
+            <li class="nav-item"><a class="nav-item nav-link" href="recipes.html">Recipes</a></li>
             <li class="nav-item"><a class="nav-item nav-link" href="#">Gifts</a></li>
-            <li class="nav-item"><a class="nav-item nav-link" href="../pages/songs.html">Songs</a></li>
+            <li class="nav-item"><a class="nav-item nav-link" href="songs.html">Songs</a></li>
             <li class="nav-item"><a class="nav-item nav-link" href="#">Games</a></li>
-            <li class="nav-item"><a class="nav-item nav-link" href="../pages/films.html">Films</a></li>
-            <li class="nav-item"><a class="nav-item nav-link" href="../pages/books.html">Books</a></li>
+            <li class="nav-item"><a class="nav-item nav-link" href="films.html">Films</a></li>
+            <li class="nav-item"><a class="nav-item nav-link" href="books.html">Books</a></li>
             <li class="nav-item"><a class="nav-item nav-link" href="#">Activities</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -71,6 +71,25 @@
       <div class="row">
         <div class="col-4">
           <div class="list-group" id="list-tab" role="tablist">
+            <!-- ::: MENU TO FILTER Recipes :::-->
+            <a 
+              class="list-group-item list-group-item-action active"
+              id="list-profile-list"
+              data-toggle="list"
+              href="#gingerbread-men"
+              role="tab"
+              aria-controls="profile"
+              >Gingerbread Men</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-settings-list"
+              data-toggle="list"
+              href="#christmas-pudding"
+              role="tab"
+              aria-controls="settings"
+              >Chrismas Pudding</a
+            >
             <a
               class="list-group-item list-group-item-action"
               id="list-profile-list"
@@ -91,12 +110,116 @@
             >
           </div>
         </div>
-        <!-- :::END OF MENU TO FILTER FILMS :::-->
+        <!-- :::END OF MENU TO FILTER Recipe :::-->
 
-        <!-- ::: CARDS OF FILMS :::-->
+        <!-- ::: CARDS OF Recipe :::-->
         <div class="col-8">
           <div class="tab-content" id="nav-tabContent">
-            <!-- ::: CARD EXAMPLE OF A MOVIE :::-->
+            <!-- ::: CARD EXAMPLE OF A Recipe :::-->
+            <div 
+              class="tab-pane active"
+              id="gingerbread-men"
+              role="tabpanel"
+              aria-labelledby="gingerbread-mens"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      src="https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/53/2018/10/The-Hummingbird-Bakery-gingerbread-man-recipe-620x408.jpg"
+                      class="card-img"
+                      alt="..."
+                    />
+                    <ul>
+                      <li>
+                        <small>Makes: 24</small>
+                      </li>
+                      <li>
+                        <small>Prep: 30 min</small>
+                      </li>
+                      <li>
+                        <small>Cooking: 15min</small>
+                      </li>
+                      <li>
+                        <small>Skill: Easy</small>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Gingerbread Men</h5>
+                      <p class="card-text">
+                        
+                        The Hummingbird Bakery gingerbread man recipe makes delicious little gingerbread men every time. Let's get cracking!
+
+            A good gingerbread men recipe is essential to any family recipe collection. And this one is a great addition to your cohort. To make this gingerbread men recipe, you don’t have to use a gingerbread man shaped cookie cutter if you don’t fancy, but it’s so much fun to decorate each one individually, giving each a different outfit and facial expression as you go!
+            </p>
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >Read more at<a
+                            href="https://www.goodtoknow.co.uk/recipes/the-hummingbird-bakery-gingerbread-men#Vvvgi2EtHPFD4wm7.99"
+                            target="__blank"
+                            > goodtoknow.co.uk</a
+                          ></small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: END OF CARD EXAMPLE :::-->
+            
+            <div
+              class="tab-pane fade"
+              id="christmas-pudding"
+              role="tabpanel"
+              aria-labelledby="list-settings-list"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      src="https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/53/2016/12/Christmad-pud-cupcakes-620x408.jpg"
+                      class="card-img"
+                      alt="..."
+                    />
+                    <ul>
+                      <li>
+                        <small>Makes: 12</small>
+                      </li>
+                      <li>
+                        <small>Prep: 20 min</small>
+                      </li>
+                      <li>
+                        <small>Cooking: 30min</small>
+                      </li>
+                      <li>
+                        <small>Skill: Easy</small>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Christmas Pudding Cupcakes</h5>
+                      <p class="card-text">
+                        Bake these cute little Christmas pudding cupcakes to give as festive gifts – the combination of green, red and white fondant makes them extra special. If you’re looking for a fun festive bake, these Christmas pudding cupcakes are what you’re after! Make sure you soak your dried fruit the night before for a really Christmassy bake, otherwise you’ll definitely miss out on some of the flavour!
+            </p>
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >Read more at<a
+                            href="https://www.goodtoknow.co.uk/recipes/christmas-pudding-cupcakes#PwJkQP2j3Os7ShEV.99"
+                            target="__blank"
+                            > goodtoknow.co.uk</a
+                          ></small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div
               class="tab-pane fade"
               id="caramel-pecan"
@@ -125,7 +248,7 @@
               </div>
             </div>
             <!-- ::: END OF CARD EXAMPLE :::-->
-            <div
+                        <div
             class="tab-pane fade"
             id="cookie-dough-trifle"
             role="tabpanel"
@@ -150,8 +273,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
           </div>
         </div>
       </div>
@@ -178,3 +299,4 @@
     ></script>
   </body>
 </html>
+
