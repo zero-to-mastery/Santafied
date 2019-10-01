@@ -41,6 +41,11 @@ Ok, so you have read the brief and checked out the designs. Ready to contribute,
 1. First up you need to Fork (make a copy) of this repo to your Github account. 
 2. Clone (download) your fork to you computer
 3. Set your streams so you can sync you clone with the original repo (get the latest updates)
+
+- `git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git`
+- `git pull upstream master`
+- The above 2 commands will synchronize your forked version of the project with the actual repository.
+
 4. Find a task [here](https://github.com/zero-to-mastery/Santafied/projects/1?add_cards_query=is%3Aopen) or [create a task](https://github.com/zero-to-mastery/Santafied/issues)
 5. Create a branch for your task and complete the task
 6. Commit and push the code to your fork
