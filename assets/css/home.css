@@ -1,5 +1,5 @@
 section#hero-content {
-  background: linear-gradient(-45deg, crimson, #ff4546);
+  background: linear-gradient(-45deg, white, #ff4546);
   width: 100%;
   padding: 0;
   margin: 0;
@@ -29,32 +29,6 @@ section#hero-content {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.tns-outer {
-  position: relative;
-}
-
-.tns-controls button {
-  background: none;
-  border: none;
-  outline: none;
-  color: white;
-  font-weight: 300;
-  font-size: 4rem;
-}
-.tns-controls .left-arrow {
-  left: 10px;
-}
-
-.tns-controls .right-arrow {
-  right: 10px;
-}
-
-.tns-controls .left-arrow,
-.tns-controls .right-arrow {
-  position: absolute;
-  top: 45%;
-}
-
 .intro-div {
   background: linear-gradient(-45deg, crimson, #ff4546);
   width: 100%;
@@ -81,6 +55,45 @@ section#hero-content {
   color: white;
 }
 
+.carousel-item {
+  height: 80vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-20%);
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+  color: #fff;
+  display: inline-block;
+  text-shadow: none;
+  margin-bottom: 20px;
+}
+.carousel-caption h3 {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 35px 43px;
+  font-size: 4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.carousel-caption p {
+  background: #ccc;
+  opacity: 0.9;
+  color: black;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
 /* Centered text */
 .centered {
   position: absolute;
