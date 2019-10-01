@@ -128,7 +128,60 @@ section {
   margin-top: 100px;
 }
 
+/*inverted form*/
 .form-control.form-inverted {
   background-color: #1d1d1d;
   border: 1px solid #1d1d1d;
 }
+.feature-section{
+  width: 100%;
+  height: 40vh;
+  background-color: #ff4546;
+  color:white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.feature-card{
+  height:40vh;
+  width:30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.icon{
+  border:1px solid rgb(241, 239, 239,0.5);
+   border-radius: 50%; 
+  height: 18vh;
+  width: 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+}
+.subtitle{
+  font-size: 18px;
+}
+.page-content{
+  height: 100vh;
+}
+ 
