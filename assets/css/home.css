@@ -88,3 +88,7 @@ section#hero-content {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.centered .display-1{
+  font-size: 5rem;
+}
