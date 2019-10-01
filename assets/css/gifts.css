@@ -44,12 +44,50 @@ section#giftsPage{
 	
 }
 #giftList .card{
-	margin:20px;
-
+	/* margin:20px; */
+	/* width: 80%; */
 }
+
 .card-img-top{
 	height:50%;
 }
 .card-title{
 	color:crimson;
+}
+
+#single-product{
+	border-radius:15px;
+	margin:10px !important;
+}
+#single-product img{
+	border-top-left-radius:15px;
+	border-bottom-left-radius:15px;
+}
+#single-product .content{
+	padding-top: 10px;
+	padding-left:20px;
+}
+#single-product span{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#single-product-2{
+	border-radius:15px;
+	margin:10px !important;
+	height: 415px;
+}
+#single-product-2 img{
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	height: 200px;
+}
+#single-product-2 .content{
+	padding-left: 40px;
+}
+#single-product-2 span{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
