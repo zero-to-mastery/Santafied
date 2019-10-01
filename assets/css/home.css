@@ -16,6 +16,19 @@ section#hero-content {
   max-width: 100%;
 }
 
+#carousel .slide .container-main-image {
+  position: relative;
+}
+
+#carousel .slide .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
 .tns-outer {
   position: relative;
 }
@@ -43,7 +56,7 @@ section#hero-content {
 }
 
 .homeintro-div {
-  background: linear-gradient(-45deg, crimson, #ff4546);
+
   height: 100vh;
   display: flex;
   text-align: center;
@@ -69,24 +82,4 @@ section#hero-content {
 }
 .santafied-image {
   width: 80%;
-}
-
-.intro-text {
-  font-family: "Mountains of Christmas", cursive;
-  color: white;
-  font-size: 2rem;
-}
-
-.container-main-image {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-/* Centered text */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
