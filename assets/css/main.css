@@ -127,3 +127,8 @@ section {
   border-top: 1px solid gray;
   margin-top: 100px;
 }
+
+.form-control.form-inverted {
+  background-color: #1d1d1d;
+  border: 1px solid #1d1d1d;
+}
