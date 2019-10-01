@@ -154,4 +154,7 @@ section {
 .subtitle{
   font-size: 18px;
 }
+.page-content{
+  height: 100vh;
+}
  
