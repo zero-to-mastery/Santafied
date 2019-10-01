@@ -11,6 +11,9 @@ section#hero-content {
   min-height: 400px;
   margin: 0 auto;
 }
+#carousel-iw{
+  padding-bottom: 5px;
+}
 
 #carousel .slide img {
   max-width: 100%;
