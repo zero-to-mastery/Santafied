@@ -5,10 +5,9 @@
 
 body {
   margin: 0;
-
 }
 /*navbar Starts*/
-#brand-color{
+#brand-color {
   color: #ff4546;
 }
 
@@ -20,37 +19,111 @@ body {
   font-weight: 600;
 }
 .nav-link {
-    margin-right: 1rem;
-    transition: all 0.2s;
-    font-size: 0.9rem;
-    font-style: italic;
-    font-weight: 500;
-  }
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #ff4546;
-    letter-spacing: 0.2rem;
-    font-weight: 600;
-   }
+  margin-right: 1rem;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: 500;
+}
 
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  margin-top: 0;
+}
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #ff4546;
+}
+.navbar-light .navbar-nav .nav-item:hover .nav-link {
+  color: #ff4546;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+}
 
 .navbar-light .navbar-nav .nav-link {
   color: #000;
 }
 /*Navbar END*/
+/*
 section {
   padding: 0 1rem;
   font-size: 1.4em;
-  height: 85vh;
+  height: 85vh;  
   display: flex;
   align-items: center;
   justify-content: center;
   color: crimson;
+} */
+
+/*Footer*/
+
+.site-footer {
+  background: #111111;
+  color: gray;
+  padding: 100px 0; /*padding top and bottom 100px 0 padding left and right*/
 }
 
-footer {
+.site-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.site-footer p {
+  margin-top: 1rem;
+}
+
+.site-footer h4 {
+  color: white;
+}
+
+.site-footer a:hover {
+  color: white;
+  opacity: 0.6;
+}
+
+.footer-tel,
+.footer-logo {
+  font-size: 2.25em; /*36px - 36 divided by 16*/
+}
+
+.footer-email {
+  color: white;
+}
+
+.footer-social a {
+  font-size: 20px;
+  color: gray;
+  border: solid 1px gray;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social a:hover {
+  background-color: red;
+  border-color: red;
+  color: white;
+  opacity: 1;
+}
+
+.footer-copyright {
   padding: 1rem;
   text-align: center;
-  color: gray;
+  border-top: 1px solid gray;
+  margin-top: 100px;
+}
+
+/*inverted form*/
+.form-control.form-inverted {
+  background-color: #1d1d1d;
+  border: 1px solid #1d1d1d;
 }
 .feature-section{
   width: 100%;

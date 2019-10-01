@@ -1,0 +1,93 @@
+#giftsPage{
+	background-color: #ff4546;
+}
+
+#bannerImage{
+	position:relative;
+}
+
+#bannerImage{
+	width:100vw;
+	height:90vh;
+}
+
+#banner .caption{
+	position: absolute;
+	top:25%;
+	left:15%;
+	color:white;
+	display:flex;
+	flex-direction: column;
+	font-size: 2em;
+}
+
+section#giftsPage{
+	height:90vh;
+
+}
+#note{
+	padding:20px;
+	margin-top:20px;
+	margin-bottom:30px;
+	border-top: 2px solid rgba(255,255,255,0.8);
+	font-size: 2em;
+	color:crimson;
+	text-align: center;
+}
+#giftList{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #ff4546;
+	border-top: 2px solid rgba(255,255,255,0.8);
+	
+}
+#giftList .card{
+	/* margin:20px; */
+	/* width: 80%; */
+}
+
+.card-img-top{
+	height:50%;
+}
+.card-title{
+	color:crimson;
+}
+
+#single-product{
+	border-radius:15px;
+	margin:10px !important;
+}
+#single-product img{
+	border-top-left-radius:15px;
+	border-bottom-left-radius:15px;
+}
+#single-product .content{
+	padding-top: 10px;
+	padding-left:20px;
+}
+#single-product span{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#single-product-2{
+	border-radius:15px;
+	margin:10px !important;
+	height: 415px;
+}
+#single-product-2 img{
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	height: 200px;
+}
+#single-product-2 .content{
+	padding-left: 40px;
+}
+#single-product-2 span{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -26,7 +26,7 @@
     <!-- :::NAV Starts ::: -->
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="../index.html"
           ><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a
         >
         <button
@@ -39,18 +39,35 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="../index.html">Home</a>
-            <a class="nav-item nav-link" href="#">Facts</a>
-            <a class="nav-item nav-link" href="#">Recipes</a>
-            <a class="nav-item nav-link" href="#">Gifts</a>
-            <a class="nav-item nav-link" href="#">Songs</a>
-            <a class="nav-item nav-link" href="#">Games</a>
-            <a class="nav-item nav-link active" href="./films.html">Films</a>
-            <a class="nav-item nav-link" href="#">Books</a>
-            <a class="nav-item nav-link" href="#">Activities</a>
-            <a class="nav-item nav-link" href="#">More</a>
-          </div>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-item nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-item nav-link" href="../pages/facts.html">Facts</a></li>
+            <li class="nav-item"><a class="nav-item nav-link" href="../pages/recipes.html">Recipes</a></li>
+            <li class="nav-item"><a class="nav-item nav-link" href="../pages/gifts.html">Gifts</a></li>
+            <li class="nav-item"><a class="nav-item nav-link" href="../pages/songs.html">Songs</a></li>
+            <li class="nav-item"><a class="nav-item nav-link" href="#">Games</a></li>
+            <li class="nav-item"><a class="nav-item nav-link" href="../pages/films.html">Films</a></li>
+            <li class="nav-item"><a class="nav-item nav-link" href="../pages/books.html">Books</a></li>
+            <li class="nav-item"><a class="nav-item nav-link" href="#">Activities</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="elf-name-generator.html">Elf Name Generator</a>
+                <a class="dropdown-item" href="#">Category</a>
+                <a class="dropdown-item" href="#">Category</a>
+              </div>
+            </li>
+          </ul>
         </div>
       </nav>
     </div>
@@ -61,119 +78,228 @@
       <h1 class="title">Christmas Films</h1>
       <div class="row">
         <div class="col-4">
-          <div class="list-group" id="list-tab" role="tablist">
-            <!-- ::: MENU TO FILTER FILMS :::-->
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-profile-list"
-              data-toggle="list"
-              href="#grinch-stole"
-              role="tab"
-              aria-controls="profile"
-              >How the Grinch Stole Christmas</a
-            >
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-settings-list"
-              data-toggle="list"
-              href="#list-settings"
-              role="tab"
-              aria-controls="settings"
-              >Disney's A Christmas Carol</a
-            >
-          </div>
+            <div class="list-group" id="list-tab" role="tablist">
+                <!-- ::: MENU TO FILTER FILMS :::-->
+                <a class="list-group-item list-group-item-action active"
+                   id="list-profile-list"
+                   data-toggle="list"
+                   href="#grinch-stole"
+                   role="tab"
+                   aria-controls="profile">How the Grinch Stole Christmas</a>
+                <a class="list-group-item list-group-item-action"
+                   id="list-settings-list"
+                   data-toggle="list"
+                   href="#list-settings"
+                   role="tab"
+                   aria-controls="settings">Disney's A Christmas Carol</a>
+                <a class="list-group-item list-group-item-action"
+                   id="list-settings-list"
+                   data-toggle="list"
+                   href="#home-alone"
+                   role="tab"
+                   aria-controls="settings">Home Alone</a>
+                <a class="list-group-item list-group-item-action"
+                   id="list-settings-list"
+                   data-toggle="list"
+                   href="#home-alone-2"
+                   role="tab"
+                   aria-controls="settings">Home Alone 2: Lost in New York</a>
+                <a class="list-group-item list-group-item-action"
+                   id="list-settings-list"
+                   data-toggle="list"
+                   href="#home-alone-2"
+                   role="tab"
+                   aria-controls="settings">Santa Claus the Movie</a>
+                <a class="list-group-item list-group-item-action"
+                   id="list-settings-list"
+                   data-toggle="list"
+                   href="#santa-claus-movie"
+                   role="tab"
+                   aria-controls="settings">Santa Claus: The Movie</a>
+            </div>
         </div>
         <!-- :::END OF MENU TO FILTER FILMS :::-->
 
         <!-- ::: CARDS OF FILMS :::-->
         <div class="col-8">
-          <div class="tab-content" id="nav-tabContent">
-            <!-- ::: CARD EXAMPLE OF A MOVIE :::-->
-            <div
-              class="tab-pane fade"
-              id="grinch-stole"
-              role="tabpanel"
-              aria-labelledby="grinch-stole-list"
-            >
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img
-                      src="https://m.media-amazon.com/images/M/MV5BNWNiNTczNzEtMjQyZC00MjFmLTkzMDMtODk4ZGMyZmE0N2E4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
-                      class="card-img"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">How the Grinch Stole Christmas</h5>
-                      <p class="card-text">
-                        Inside a snowflake exists the magical land of Whoville.
-                        In Whoville, live the Whos, an almost mutated sort of
-                        munchkin-like people. All the Whos love Christmas, yet
-                        just outside of their beloved town, lives the Grinch
-                        (Jim Carrey). The Grinch is a nasty creature that hates
-                        Christmas, and plots to steal it away from the Whos
-                        which he equally abhors. Yet a small child, Cindy Lou
-                        Who (Taylor Momsen), decides to try befriend the Grinch.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted"
-                          ><a
-                            href="https://www.imdb.com/title/tt0170016/"
-                            target="__blank"
-                            >IMDB</a
-                          ></small
-                        >
-                      </p>
+            <div class="tab-content" id="nav-tabContent">
+                <!-- ::: CARD EXAMPLE OF A MOVIE :::-->
+                <div class="tab-pane fade active show"
+                     id="grinch-stole"
+                     role="tabpanel"
+                     aria-labelledby="grinch-stole-list">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/M/MV5BNWNiNTczNzEtMjQyZC00MjFmLTkzMDMtODk4ZGMyZmE0N2E4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                                     class="card-img"
+                                     alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">How the Grinch Stole Christmas</h5>
+                                    <p class="card-text">
+                                        Inside a snowflake exists the magical land of Whoville.
+                                        In Whoville, live the Whos, an almost mutated sort of
+                                        munchkin-like people. All the Whos love Christmas, yet
+                                        just outside of their beloved town, lives the Grinch
+                                        (Jim Carrey). The Grinch is a nasty creature that hates
+                                        Christmas, and plots to steal it away from the Whos
+                                        which he equally abhors. Yet a small child, Cindy Lou
+                                        Who (Taylor Momsen), decides to try befriend the Grinch.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <a href="https://www.imdb.com/title/tt0170016/"
+                                               target="__blank">IMDB</a>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-            <!-- ::: END OF CARD EXAMPLE :::-->
-            <div
-              class="tab-pane fade"
-              id="list-settings"
-              role="tabpanel"
-              aria-labelledby="list-settings-list"
-            >
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img
-                      src="https://m.media-amazon.com/images/M/MV5BMTM1MTI5ODU4MV5BMl5BanBnXkFtZTcwNTYyNTU4Mg@@._V1_SY1000_CR0,0,676,1000_AL_.jpg"
-                      class="card-img"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Disney's A Christmas Carol</h5>
-                      <p class="card-text">
-                        Miser Ebenezer Scrooge is awakened on Christmas Eve by
-                        spirits who reveal to him his own miserable existence,
-                        what opportunities he wasted in his youth, his current
-                        cruelties, and the dire fate that awaits him if he does
-                        not change his ways. Scrooge is faced with his own story
-                        of growing bitterness and meanness, and must decide what
-                        his own future will hold: death or redemption
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted"
-                          ><a
-                            href="https://www.imdb.com/title/tt1067106/"
-                            target="__blank"
-                            >IMDB</a
-                          ></small
-                        >
-                      </p>
+                <!-- ::: END OF CARD EXAMPLE :::-->
+                <div class="tab-pane fade"
+                     id="list-settings"
+                     role="tabpanel"
+                     aria-labelledby="list-settings-list">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMTM1MTI5ODU4MV5BMl5BanBnXkFtZTcwNTYyNTU4Mg@@._V1_SY1000_CR0,0,676,1000_AL_.jpg"
+                                     class="card-img"
+                                     alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Disney's A Christmas Carol</h5>
+                                    <p class="card-text">
+                                        Miser Ebenezer Scrooge is awakened on Christmas Eve by
+                                        spirits who reveal to him his own miserable existence,
+                                        what opportunities he wasted in his youth, his current
+                                        cruelties, and the dire fate that awaits him if he does
+                                        not change his ways. Scrooge is faced with his own story
+                                        of growing bitterness and meanness, and must decide what
+                                        his own future will hold: death or redemption
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <a href="https://www.imdb.com/title/tt1067106/"
+                                               target="__blank">IMDB</a>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+                <!-- ::: HOME ALONE CARD EXAMPLE :::-->
+                <div class="tab-pane fade"
+                     id="home-alone"
+                     role="tabpanel"
+                     aria-labelledby="list-settings-list">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                                     class="card-img"
+                                     alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Home Alone</h5>
+                                    <p class="card-text">
+                                        When bratty 8-year-old Kevin McCallister (Macaulay
+                                        Culkin) acts out the night before a family trip to
+                                        Paris, his mother (Catherine O'Hara) makes him sleep in
+                                        the attic. After the McCallisters mistakenly leave for
+                                        the airport without Kevin, he awakens to an empty house
+                                        and assumes his wish to have no family has come true.
+                                        But his excitement sours when he realizes that two con
+                                        men (Joe Pesci, Daniel Stern) plan to rob the
+                                        McCallister residence, and that he alone must protect
+                                        the family home.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <a href="https://www.imdb.com/title/tt0099785/"
+                                               target="__blank">IMDB</a>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: HOME ALONE 2 CARD EXAMPLE :::-->
+                <div class="tab-pane fade"
+                     id="home-alone-2"
+                     role="tabpanel"
+                     aria-labelledby="list-settings-list">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="http://www.gstatic.com/tv/thumb/v22vodart/14385/p14385_v_v8_ab.jpg"
+                                     class="card-img"
+                                     alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Home Alone 2: Lost in New York</h5>
+                                    <p class="card-text">
+                                        After snarky youth Kevin McCallister (Macaulay Culkin)
+                                        loses track of his father at the airport, he mistakenly
+                                        gets on a plane headed for New York City -- while the
+                                        rest of the McCallisters fly to Florida. Now alone in
+                                        the Big Apple, Kevin cons his way into a room at the
+                                        Plaza Hotel and begins his usual antics. But when Kevin
+                                        discovers that the Sticky Bandits (Joe Pesci, Daniel
+                                        Stern) are on the loose, he struggles to stop them from
+                                        robbing an elderly man's toy store just before
+                                        Christmas.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <a href="https://www.imdb.com/title/tt0104431/"
+                                               target="__blank">IMDB</a>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SANTA CLAUS: THE MOVIE -->
+                <div class="tab-pane fade active show"
+                     id="grinch-stole"
+                     role="tabpanel"
+                     aria-labelledby="grinch-stole-list">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/M/MV5BZDc1OGVkMmQtYTU0NC00ZTc4LWIyNjItM2IzYzcwNTA1ZmJmXkEyXkFqcGdeQXVyMjY3MjUzNDk@._V1_.jpg"
+                                     class="card-img"
+                                     alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Santa Claus: The Movie</h5>
+                                    <p class="card-text">
+                                        The legend of Santa Claus is put in jeopardy when an unscrupulous toy manufacturer attempts to take over Christmas. Staring Dudley Moore and John Lithgow.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <a href="https://www.imdb.com/title/tt0089961/?ref_=fn_al_tt_2"
+                                               target="__blank">IMDB</a>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
       </div>
     </div>

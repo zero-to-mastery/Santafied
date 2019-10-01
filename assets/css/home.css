@@ -1,6 +1,6 @@
 section#hero-content {
   background: linear-gradient(-45deg, crimson, #ff4546);
-  width: 100%; 
+  width: 100%;
   padding: 0;
   margin: 0;
   height: auto;
@@ -14,6 +14,19 @@ section#hero-content {
 
 #carousel .slide img {
   max-width: 100%;
+}
+
+#carousel .slide .container-main-image {
+  position: relative;
+}
+
+#carousel .slide .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .tns-outer {
@@ -40,4 +53,37 @@ section#hero-content {
 .tns-controls .right-arrow {
   position: absolute;
   top: 45%;
+}
+
+.intro-div {
+  background: linear-gradient(-45deg, crimson, #ff4546);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.santafied-image {
+  width: inherit;
+  height: inherit;
+  padding-top: 75px;
+}
+
+.intro-text {
+  font-family: "Mountains of Christmas", cursive;
+  color: white;
+  font-size: 2rem;
+}
+
+.container-main-image {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
