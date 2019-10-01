@@ -1,0 +1,26 @@
+.name-generator{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
+
+#name-box p.name{
+  font-size:6rem;
+  font-weight:bold;
+}
+
+#loadName{
+  padding:20px;
+  font-size:2.5rem;
+  text-transform: uppercase;
+  border-radius:10px;
+  border:0;
+  color:white;
+  background-color:#ff4546;
+  transition: background-color 0.2s;
+}
+#loadName:hover{
+  background-color:#c92e2f;
+}
