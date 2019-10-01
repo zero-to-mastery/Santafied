@@ -1,0 +1,45 @@
+{
+  "facts": [{
+      "id": 1,
+      "title": "Santa Claus' Image",
+      "img": "https://static.artfire.com/uploads/mfs/items/9f/ba/large/9fbabe253db0b7fa12e3988bb09e68034d168a377e71a4e674e2673a2e3416bf.jpg",
+      "content": "The image of Santa Claus flying his sleigh began in 1819 and was created by Washington Irving, the same author who dreamt up the Headless Horseman.",
+      "addedBy": "Ayoub Issaad"
+    },
+    {
+      "id": 1,
+      "title": "Rudolph the Reindeer",
+      "img": "https://yorktownsentry.com/wp-content/uploads/2014/12/15632775_s_zps7f87f857.jpg",
+      "content": "The Montgomery Ward department store created Rudolph the Reindeer as a marketing gimmick to encourage children to buy their Christmas coloring books.",
+      "addedBy": "Ayoub Issaad"
+    },
+    {
+      "id": 1,
+      "title": "Red Nose",
+      "img": "https://pbs.twimg.com/profile_images/2945988100/2f3e75b221836e422cb39e5cb15370fe.jpeg",
+      "content": "The original Rudolph did not have a red nose. In that day and age, red noses were seen as an indicator of chronic alcoholism and Montgomery Ward didn’t want him to look like a drunkard. To complete the original picture, he was almost named Reginald or Rollo",
+      "addedBy": "Ayoub Issaad"
+    },
+    {
+      "id": 1,
+      "title": "Jingle Bells",
+      "img": "http://oneidalanguage.ca/wp-content/uploads/2018/12/Jingle-bells.jpg",
+      "content": "“Jingle Bells” was written for Thanksgiving, not Christmas. The song was written in 1857 by James Lord Pierpont and published under the title “One Horse Open Sleigh”. It was supposed to be played in the composer’s Sunday school class during Thanksgiving as a way to commemorate the famed Medford sleigh races. “Jingle Bells” was also the first song to be broadcast from space.",
+      "addedBy": "Ayoub Issaad"
+    },
+    {
+      "id": 1,
+      "title": "Netherlands is different",
+      "img": "https://www.pastbook.com/txt/assets/Sinterklaas.jpg",
+      "content": "In the Netherlands, Sinterklaas (the Dutch version of Santa Claus) arrives from Spain, not from the North Pole. And that’s not the only weird thing about the Dutch Christmas. Sinterklaas has his little helpers, but they are not adorable hard-working elves: they are black-faced boys and girls who can steal your kids if they misbehave, and bring them to back Spain which is, according to the Dutch, a severe punishment.",
+      "addedBy": "Ayoub Issaad"
+    },
+    {
+      "id": 1,
+      "title": "Good Luck!",
+      "img": "https://www.pastbook.com/txt/assets/spider-web.jpg",
+      "content": "In Germany, Poland, and Ukraine, finding a spider or a spider’s web on a Christmas tree is believed to be a harbinger of good luck. According to one legend, a spider wove a blanket for Baby Jesus, according to the other – a spider web on the Christmas tree turned silver and gold once the sunlight touched it. One way or another, decorating a Christmas tree with artificial spiders and spider webs will inevitably bring you luck and prosperity!",
+      "addedBy": "Ayoub Issaad"
+    }
+  ]
+}
