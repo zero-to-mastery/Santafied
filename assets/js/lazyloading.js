@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   } else {
     var lazyloadThrottleTimeout;
-    lazyloadImages = document.querySelectorAll(".lazy");
+    lazyloadImages = document.querySelectorAll(".card-img");
 
     function lazyload () {
       if(lazyloadThrottleTimeout) {
