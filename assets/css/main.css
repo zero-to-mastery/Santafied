@@ -51,6 +51,10 @@
   font-weight: 600;
 }
 
+.nav-item .selected {
+	font-weight: bold;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: #000;
 }
