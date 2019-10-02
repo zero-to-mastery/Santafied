@@ -57,7 +57,7 @@ Ok, so you have read the brief and checked out the designs. Ready to contribute,
 
 **All discussions around this event can now be had in our #hacktoberfest-2019 channel on Discord!**
 
-Congratulations! You are now one pull request closer to getting that free t-shirt. Repeat steps 4-7 until you have made at least 4 qualifying pull requests. You can check how many qualifying pull requests you have made at https://hacktoberfest.digitalocean.com/stats/ Have Fun and Happy Coding Guys!
+Congratulations! You are now one pull request closer to getting that free t-shirt. Repeat steps 4-7 until you have made at least 4 qualifying pull requests. You can check how many qualifying pull requests you have made at https://hacktoberfest.digitalocean.com/profile Have Fun and Happy Coding Guys!
 
 ## To ensure everyone has the best chance at participating in this project. Please follow these simple guidelines where possible:
 
