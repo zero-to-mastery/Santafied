@@ -209,3 +209,11 @@ footer {
 .form-inline{
   justify-content: center;
 }
+
+.page-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
