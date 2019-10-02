@@ -5,7 +5,12 @@
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
+
 /*navbar Starts*/
 #brand-color {
   color: #ff4546;
@@ -65,12 +70,14 @@ section {
 
 footer {
   text-align: center;
-  padding: 50px 10px;
+  padding: 30px 10px;
+  margin-top:auto;
+  background: #111111;
+  color: gray;
 }
 
 .site-footer {
-  background: #111111;
-  color: gray;
+
   padding: 100px 0; /*padding top and bottom 100px 0 padding left and right*/
 }
 
@@ -130,7 +137,6 @@ footer {
 /* Sub pages footer styles */
 
 .sub-page > footer {
-  margin: 32px 0;
   text-align: center;
 }
 
