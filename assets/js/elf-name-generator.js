@@ -3,14 +3,14 @@ let firstNames = [
   "Sparkle","BoBunny","Jolly","Moxie","Bella","Charmy","Glitzy",
   "Bling-Bling","Perky","Cosmo","Bubbles","Pixie","Frilly","Scrappy",
   "Bitty","Purdy","Tinsel","Foxy","Stampy","Inky","Wonky","Glimmer",
-  "Shimmer","Happy","Button","Tiny"
+  "Shimmer","Happy","Button","Tiny","Snowy","Fluffy","Jolly","Mischievous",
 ];
 
 //array of last Name
 let lastNames = [
   "Gifty-Pants","Point-Ears","Sugar-Gems","McSprinkles","Merry-Mess",
   "Jingle-Bells","Glitter-Bottom","Crafty-Pants","Twinkle-Toes",
-  "Sugar-Stitches","McGlitter","Curly-Toes"
+  "Sugar-Stitches","McGlitter","Curly-Toes","Big-ears","Rolly-Renn","Twinkles",
 ];
 
 //generateName function
