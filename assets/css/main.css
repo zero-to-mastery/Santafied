@@ -164,8 +164,7 @@ footer {
   }
   
   .footer-links h4 { 
-    margin-bottom: 30px;
-    margin-left: 60px;
+    margin: 0 0 30px 60px;
   }
   
   .footer-links li {
