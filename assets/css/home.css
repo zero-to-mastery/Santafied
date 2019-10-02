@@ -80,24 +80,34 @@ section#hero-content {
   transform: translate(-50%, -50%);
 }
 
-.centered .display-1{
-  font-size: 5rem;
+.centered .display-1 {
+  font-size: 3rem;
 }
+
+@media (min-width: 1280px) {
+  .centered .display-1 {
+    font-size: 5rem;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 1280px) {
-.carousel-item {
+  .carousel-item {
     height: 60vh;
   }
-.carousel-caption {
-  top: 30%;
-  transform: translateY(-30%);
+  .carousel-caption {
+    top: 30%;
+    transform: translateY(-30%);
+  }
+  .carousel-caption h3 {
+    padding: 35px 43px;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
 }
-.carousel-caption h3 {
-  padding: 35px 43px;
-  font-size: 2rem;
-  font-weight: 600;
-}
-.carousel-caption p {
-  font-size: 1.2rem
-}
-  
+
+.slide img {
+  width: 100%;
 }
