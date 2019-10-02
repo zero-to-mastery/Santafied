@@ -3,7 +3,7 @@
  * Feel free to modify it in any way you like
  */
 
-body {
+ body {
   margin: 0;
 }
 /*navbar Starts*/
@@ -20,6 +20,8 @@ body {
 }
 .nav-link {
   margin-right: 1rem;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
   font-size: 0.9rem;
   font-style: italic;
@@ -111,9 +113,15 @@ footer {
   border-radius: 100%;
   width: 45px;
   height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-social a:hover {
@@ -154,25 +162,44 @@ footer {
   height: 40vh;
   background-color: #ff4546;
   color:white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .feature-card{
   height:40vh;
   width:30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .icon{
   border:1px solid rgb(241, 239, 239,0.5);
    border-radius: 50%; 
   height: 18vh;
   width: 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 
 }
 .subtitle{

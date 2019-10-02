@@ -13,6 +13,7 @@
 @media(max-width: 767px) {
   .tab-content .card-img {
     max-height: 300px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
