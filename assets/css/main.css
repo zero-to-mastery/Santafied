@@ -159,17 +159,11 @@ footer {
   height: 40vh;
   background-color: #ff4546;
   color:white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .feature-card{
   height:40vh;
-  width:30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,16 +172,14 @@ footer {
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+      justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 .icon{
   border:1px solid rgb(241, 239, 239,0.5);
-   border-radius: 50%; 
-  height: 18vh;
-  width: 8vw;
+  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,7 +189,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-
+  padding: 9vh;
 }
 .subtitle{
   font-size: 18px;
@@ -205,4 +197,6 @@ footer {
 .page-content{
   height: 100vh;
 }
- 
+.form-inline{
+  justify-content: center;
+}
