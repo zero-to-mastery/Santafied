@@ -63,6 +63,9 @@ section {
   color: crimson;
 } */
 
+.fa-cube{
+  color:#ff4546;
+}
 /*Footer*/
 
 footer {
@@ -108,8 +111,8 @@ footer {
   color: gray;
   border: solid 1px gray;
   border-radius: 100%;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
