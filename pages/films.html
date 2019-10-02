@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="../assets/js/lazyloading.js"></script>
     <script
       src="https://kit.fontawesome.com/5e68800c4a.js"
       crossorigin="anonymous"
@@ -22,7 +23,7 @@
     />
     <title>Santafied | Films</title>
   </head>
-  <body id="films">
+  <body id="films" class="sub-page">
     <!-- :::NAV Starts ::: -->
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -142,6 +143,24 @@
               class="list-group-item list-group-item-action"
               id="list-settings-list"
               data-toggle="list"
+              href="#love-actually"
+              role="tab"
+              aria-controls="settings"
+              >Love Actually</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-settings-list"
+              data-toggle="list"
+              href="#miracle-34th-street"
+              role="tab"
+              aria-controls="settings"
+              >Miracle on 34th Street</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-settings-list"
+              data-toggle="list"
               href="#santa-claus"
               role="tab"
               aria-controls="settings"
@@ -174,9 +193,10 @@
                 <div class="row no-gutters">
                   <div class="col-md-4">
                     <img
-                      src="https://m.media-amazon.com/images/M/MV5BNWNiNTczNzEtMjQyZC00MjFmLTkzMDMtODk4ZGMyZmE0N2E4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                      data-src="https://m.media-amazon.com/images/M/MV5BNWNiNTczNzEtMjQyZC00MjFmLTkzMDMtODk4ZGMyZmE0N2E4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
                       class="card-img"
                       alt="..."
+                      loading="lazy"
                     />
                   </div>
                   <div class="col-md-8">
@@ -217,9 +237,10 @@
                 <div class="row no-gutters">
                   <div class="col-md-4">
                     <img
-                      src="https://m.media-amazon.com/images/M/MV5BMTM1MTI5ODU4MV5BMl5BanBnXkFtZTcwNTYyNTU4Mg@@._V1_SY1000_CR0,0,676,1000_AL_.jpg"
+                      data-src="https://m.media-amazon.com/images/M/MV5BMTM1MTI5ODU4MV5BMl5BanBnXkFtZTcwNTYyNTU4Mg@@._V1_SY1000_CR0,0,676,1000_AL_.jpg"
                       class="card-img"
                       alt="..."
+                      loading="lazy"
                     />
                   </div>
                   <div class="col-md-8">
@@ -259,9 +280,10 @@
                 <div class="row no-gutters">
                   <div class="col-md-4">
                     <img
-                      src="https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                      data-src="https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
                       class="card-img"
                       alt="..."
+                      loading="lazy"
                     />
                   </div>
                   <div class="col-md-8">
@@ -304,9 +326,10 @@
                 <div class="row no-gutters">
                   <div class="col-md-4">
                     <img
-                      src="http://www.gstatic.com/tv/thumb/v22vodart/14385/p14385_v_v8_ab.jpg"
+                      data-src="http://www.gstatic.com/tv/thumb/v22vodart/14385/p14385_v_v8_ab.jpg"
                       class="card-img"
                       alt="..."
+                      loading="lazy"
                     />
                   </div>
                   <div class="col-md-8">
@@ -338,6 +361,91 @@
                 </div>
               </div>
             </div>
+            <!-- Love Actually -->
+            <div
+              class="tab-pane fade "
+              id="love-actually"
+              role="tabpanel"
+              aria-labelledby="santa-claus-list"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      data-src="https://upload.wikimedia.org/wikipedia/en/e/eb/Love_Actually_movie.jpg"
+                      class="card-img"
+                      alt="..."
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Love Actually</h5>
+                      <p class="card-text">
+                        Follows the lives of eight very different couples in
+                        dealing with their love lives in various loosely
+                        interrelated tales all set during a frantic month before
+                        Christmas in London, England.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">
+                          <a
+                            href="https://www.imdb.com/title/tt0314331/"
+                            target="__blank"
+                            >IMDB</a
+                          >
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Miracle on 34th Street -->
+            <div
+              class="tab-pane fade "
+              id="miracle-34th-street"
+              role="tabpanel"
+              aria-labelledby="santa-claus-list"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      data-src="https://upload.wikimedia.org/wikipedia/en/5/56/Miracle_on_34th_Street_poster.jpg"
+                      class="card-img"
+                      alt="..."
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Miracle on 34th Street</h5>
+                      <p class="card-text">
+                        A little girl discovers dreams do come true if you
+                        really believe. Six-year-old Susan has doubts about
+                        childhood's most enduring miracle, Santa Claus. Her
+                        mother told her the "secret" about Santa a long time
+                        ago, so Susan doesn't expect to receive the most
+                        important gifts on her Christmas list. But after meeting
+                        a special department store Santa who's convinced he's
+                        the real thing, Susan is given the most precious gift of
+                        all, something to believe in.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">
+                          <a
+                            href="https://www.imdb.com/title/tt0110527/"
+                            target="__blank"
+                            >IMDB</a
+                          >
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- SANTA CLAUS: THE MOVIE -->
             <div
               class="tab-pane fade "
@@ -349,9 +457,10 @@
                 <div class="row no-gutters">
                   <div class="col-md-4">
                     <img
-                      src="https://m.media-amazon.com/images/M/MV5BZDc1OGVkMmQtYTU0NC00ZTc4LWIyNjItM2IzYzcwNTA1ZmJmXkEyXkFqcGdeQXVyMjY3MjUzNDk@._V1_.jpg"
+                      data-src="https://m.media-amazon.com/images/M/MV5BZDc1OGVkMmQtYTU0NC00ZTc4LWIyNjItM2IzYzcwNTA1ZmJmXkEyXkFqcGdeQXVyMjY3MjUzNDk@._V1_.jpg"
                       class="card-img"
                       alt="..."
+                      loading="lazy"
                     />
                   </div>
                   <div class="col-md-8">
@@ -387,9 +496,10 @@
                 <div class="row no-gutters">
                   <div class="col-md-4">
                     <img
-                      src="https://m.media-amazon.com/images/I/91ORhMVJxWL._AC_UY218_SEARCH213888_FMwebp_QL75_.jpg"
+                      data-src="https://m.media-amazon.com/images/I/91ORhMVJxWL._AC_UY218_SEARCH213888_FMwebp_QL75_.jpg"
                       class="card-img"
                       alt="..."
+                      loading="lazy"
                     />
                   </div>
                   <div class="col-md-8">
@@ -424,17 +534,17 @@
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
   </body>
 </html>
