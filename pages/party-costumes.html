@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="../assets/js/lazyloading.js"></script>
 		<script
 			src="https://kit.fontawesome.com/5e68800c4a.js"
 			crossorigin="anonymous"
@@ -15,21 +16,16 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/recipes.css" />
 		<link rel="stylesheet" href="../assets/css/films.css" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="../assets/css/elf-name-generator.css" />
-		<link
-			href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap"
-			rel="stylesheet"
-		/>
-
-		<title>Santafied | Films</title>
+		<title>Santafied | Party Costumes</title>
 	</head>
-	<body id="films">
-		<!-- :::NAV Starts ::: -->
+	<body class="sub-page">
+		<!-- ::: Start of Nav ::: -->
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<a class="navbar-brand" href="../index.html"
@@ -103,18 +99,91 @@
 				</div>
 			</nav>
 		</div>
+		<!-- ::: End of Nav -->
 
-		<!-- :::END OF Nav -->
-
+		<!-- ::: Card Container :::-->
 		<div class="container">
-			<h1 class="title">Elf Name Generator</h1>
-			<div class="name-generator">
-				<div id="name-box">
-					<p class="name">Click the button!</p>
+			<h1 class="title">Party Costumes</h1>
+			<div class="row">
+				<div class="col-md-4 tab-navigation">
+					<div class="list-group" id="list-tab" role="tablist">
+						<!-- ::: Start of Filter Menu :::-->
+						<a
+							class="list-group-item list-group-item-action active"
+							id="list-profile-list"
+							data-toggle="list"
+							href="#placeholder"
+							role="tab"
+							aria-controls="profile"
+							>Party Costume Idea Placeholder</a
+						>
+						<!-- ::: End of Filter Menu :::-->
+					</div>
 				</div>
-				<button id="loadName">Elf Me</button>
+
+				<!-- ::: Card Container :::-->
+				<div class="col-md-8">
+					<div class="tab-content" id="nav-tabContent">
+						<!-- ::: Example Card for Costume Idea :::-->
+						<div
+							class="tab-pane active"
+							id="placeholder"
+							role="tabpanel"
+							aria-labelledby="placeholder"
+						>
+							<div class="card mb-3" style="max-width: 670px;">
+								<div class="row no-gutters">
+									<div class="col-md-12 col-lg-4">
+										<img
+											data-src="https://via.placeholder.com/150"
+											class="card-img"
+											alt="..."
+											loading="lazy"
+										/>
+									</div>
+									<div class="col-md-12 col-lg-8">
+										<div class="card-body">
+											<h5 class="card-title">Placeholder Title</h5>
+											<p class="card-text">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												Morbi facilisis diam fermentum iaculis tristique.
+												Quisque eget ante faucibus, dignissim nisl vitae,
+												viverra lorem. Curabitur volutpat urna sapien, non
+												posuere magna pulvinar eget. Pellentesque lobortis
+												gravida quam, lobortis porttitor sapien ullamcorper
+												vitae. Curabitur euismod justo enim, vitae pellentesque
+												tellus rhoncus a. Etiam scelerisque lacus nec maximus
+												tincidunt. Maecenas libero quam, accumsan quis hendrerit
+												vitae, pulvinar sed nunc. Curabitur eget leo vitae magna
+												varius porttitor in a neque. Ut eget gravida tortor, id
+												posuere dui. Praesent tristique nunc vel libero varius,
+												sit amet tincidunt tortor mattis. Integer in enim sed
+												odio commodo pellentesque accumsan in ante. Curabitur in
+												orci sed turpis euismod dictum sit amet eget lectus.
+												Curabitur efficitur viverra justo, nec dictum nisl
+												posuere at. Etiam fermentum sodales libero, ac rutrum
+												dolor imperdiet eu. Phasellus sodales venenatis erat,
+												sit amet scelerisque magna venenatis quis. Integer et
+												maximus sapien.
+											</p>
+											<p class="card-text">
+												<small class="text-muted"
+													>Link placeholder<a href="#" target="__blank">
+														placeholder.co.uk</a
+													></small
+												>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- ::: End of Example Card - Add more below this line! :::-->
+					</div>
+				</div>
 			</div>
 		</div>
+		<!-- ::: End of Card Container :::-->
 
 		<footer>
 			&copy; Santafied. A project under zero-to-mastery.
@@ -135,6 +204,5 @@
 			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 			crossorigin="anonymous"
 		></script>
-		<script src="../assets/js/elf-name-generator.js"></script>
 	</body>
 </html>
