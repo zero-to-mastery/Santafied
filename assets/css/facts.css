@@ -10,10 +10,21 @@
   padding: 0;
 }
 
+/*Center all images, horizontally and vertically*/
+.col-lg-4 {
+	justify-content: center;
+	align-self: center;
+}
+
 @media(max-width: 767px) {
   .tab-content .card-img {
     max-height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
   }
+}
+
+/*Padding*/
+img{
+	margin: 5px;
 }

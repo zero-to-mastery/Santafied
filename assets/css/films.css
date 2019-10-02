@@ -1,10 +1,3 @@
-body#films .container > h1.title {
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
 body#films .list-group-item.list-group-item-action.active {
   background-color: #ff4546 !important;
   border-color: #ff4546 !important;
