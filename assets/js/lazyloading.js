@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var lazyloadImages;
 
   if ("IntersectionObserver" in window) {
-    lazyloadImages = document.querySelectorAll(".card-img");
+    lazyloadImages = document.querySelectorAll(".card-img, .img-fluid");
     var imageObserver = new IntersectionObserver(function(entries, observer) {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   } else {
     var lazyloadThrottleTimeout;
-    lazyloadImages = document.querySelectorAll(".card-img");
+    lazyloadImages = document.querySelectorAll(".card-img, .img-fluid");
 
     function lazyload () {
       if(lazyloadThrottleTimeout) {
