@@ -127,6 +127,20 @@ footer {
   margin-top: 100px;
 }
 
+/* Sub pages footer styles */
+
+.sub-page > footer {
+  margin: 32px 0;
+  text-align: center;
+}
+
+/* Sub pages tab navigation styles */
+
+.sub-page .list-group-item.list-group-item-action.active {
+  background-color: #ff4546 !important;
+  border-color: #ff4546 !important;
+}
+
 /*inverted form*/
 .form-control.form-inverted {
   background-color: #1d1d1d;
