@@ -16,7 +16,6 @@ div.products {
 div.watches {
   height: 80%;
 }
-
 #giftsPage {
   background-color: #ff4546;
 }
@@ -45,13 +44,13 @@ section#giftsPage {
 }
 #note {
   padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  border-top: 2px solid rgba(255, 255, 255, 0.8);
-  font-size: 2em;
-  color: crimson;
+ border-top: 2px solid rgba(255, 255, 255, 0.8);
+  font-size: 1.8em;
+  color: rgba(0,0,0,0.8);
   text-align: center;
+  background-color: brown;
 }
+
 #giftList {
   display: flex;
   flex-direction: row;
@@ -60,12 +59,14 @@ section#giftsPage {
   background-color: #ff4546;
   border-top: 2px solid rgba(255, 255, 255, 0.8);
 }
-
+.cardBackground{
+  background-color: rgba(0,0,0,0.5);
+}
 .card-img-top {
   height: 50%;
 }
-.card-title {
-  color: crimson;
+.card-title,.card-text{
+  color: white;
 }
 
 #single-product {
