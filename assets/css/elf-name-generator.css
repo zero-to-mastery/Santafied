@@ -1,11 +1,22 @@
 .name-generator{
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
 }
 
-
+.name{
+  font-family: "Mountains of Christmas", cursive;
+}
 #name-box p.name{
   font-size:6rem;
   font-weight:bold;
@@ -19,6 +30,8 @@
   border:0;
   color:white;
   background-color:#ff4546;
+  -webkit-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 #loadName:hover{

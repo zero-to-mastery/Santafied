@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="../assets/js/lazyloading.js"></script>
     <script
       src="https://kit.fontawesome.com/5e68800c4a.js"
       crossorigin="anonymous"
@@ -15,6 +16,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/recipes.css" />
     <link rel="stylesheet" href="../assets/css/films.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
@@ -22,7 +24,7 @@
     />
     <title>Santafied | Recipes</title>
   </head>
-  <body id="films">
+  <body class="sub-page">
     <!-- :::NAV Starts ::: -->
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -45,10 +47,10 @@
             <li class="nav-item"><a class="nav-item nav-link" href="../pages/recipes.html">Recipes</a></li>
             <li class="nav-item"><a class="nav-item nav-link" href="../pages/gifts.html">Gifts</a></li>
             <li class="nav-item"><a class="nav-item nav-link" href="../pages/songs.html">Songs</a></li>
-            <li class="nav-item"><a class="nav-item nav-link" href="#">Games</a></li>
+            <li class="nav-item"><a class="nav-item nav-link" href="../pages/games.html">Games</a></li>
             <li class="nav-item"><a class="nav-item nav-link" href="../pages/films.html">Films</a></li>
             <li class="nav-item"><a class="nav-item nav-link" href="../pages/books.html">Books</a></li>
-            <li class="nav-item"><a class="nav-item nav-link" href="#">Activities</a></li>
+            <li class="nav-item"><a class="nav-item nav-link" href="../pages/activities">Activities</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 More
@@ -69,10 +71,10 @@
     <div class="container">
       <h1 class="title">Christmas Recipes</h1>
       <div class="row">
-        <div class="col-4">
+        <div class="col-md-4 tab-navigation">
           <div class="list-group" id="list-tab" role="tablist">
             <!-- ::: MENU TO FILTER Recipes :::-->
-            <a 
+            <a
               class="list-group-item list-group-item-action active"
               id="list-profile-list"
               data-toggle="list"
@@ -88,7 +90,7 @@
               href="#christmas-pudding"
               role="tab"
               aria-controls="settings"
-              >Chrismas Pudding</a
+              >Christmas Pudding</a
             >
             <a
               class="list-group-item list-group-item-action"
@@ -117,15 +119,31 @@
             aria-controls="profile"
             >Christmas Linzer Cookies</a
           >
+            <a
+            class="list-group-item list-group-item-action"
+            id="list-settings-list"
+            data-toggle="list"
+            href="#potato-candy"
+            role="tab"
+            aria-controls="settings"
+            >Potato Candy</a>
+            <a
+            class="list-group-item list-group-item-action"
+            id="list-settings-list"
+            data-toggle="list"
+            href="#vegan-pecan-pie"
+            role="tab"
+            aria-controls="settings"
+            >Vegan Pecan Pie</a>
           </div>
         </div>
         <!-- :::END OF MENU TO FILTER Recipe :::-->
 
         <!-- ::: CARDS OF Recipe :::-->
-        <div class="col-8">
+        <div class="col-md-8">
           <div class="tab-content" id="nav-tabContent">
             <!-- ::: CARD EXAMPLE OF A Recipe :::-->
-            <div 
+            <div
               class="tab-pane active"
               id="gingerbread-men"
               role="tabpanel"
@@ -133,11 +151,12 @@
             >
               <div class="card mb-3" style="max-width: 670px;">
                 <div class="row no-gutters">
-                  <div class="col-md-4">
+                  <div class="col-md-12 col-lg-4">
                     <img
-                      src="https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/53/2018/10/The-Hummingbird-Bakery-gingerbread-man-recipe-620x408.jpg"
+                      data-src="https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/53/2018/10/The-Hummingbird-Bakery-gingerbread-man-recipe-620x408.jpg"
                       class="card-img"
                       alt="..."
+                      loading="lazy"
                     />
                     <ul>
                       <li>
@@ -154,11 +173,11 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-12 col-lg-8">
                     <div class="card-body">
                       <h5 class="card-title">Gingerbread Men</h5>
                       <p class="card-text">
-                        
+
                         The Hummingbird Bakery gingerbread man recipe makes delicious little gingerbread men every time. Let's get cracking!
 
             A good gingerbread men recipe is essential to any family recipe collection. And this one is a great addition to your cohort. To make this gingerbread men recipe, you don’t have to use a gingerbread man shaped cookie cutter if you don’t fancy, but it’s so much fun to decorate each one individually, giving each a different outfit and facial expression as you go!
@@ -178,7 +197,7 @@
               </div>
             </div>
             <!-- ::: END OF CARD EXAMPLE :::-->
-            
+
             <div
               class="tab-pane fade"
               id="christmas-pudding"
@@ -187,11 +206,12 @@
             >
               <div class="card mb-3" style="max-width: 670px;">
                 <div class="row no-gutters">
-                  <div class="col-md-4">
+                  <div class="col-md-12 col-lg-4">
                     <img
-                      src="https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/53/2016/12/Christmad-pud-cupcakes-620x408.jpg"
+                      data-src="https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/53/2016/12/Christmad-pud-cupcakes-620x408.jpg"
                       class="card-img"
                       alt="..."
+                      loading="lazy"
                     />
                     <ul>
                       <li>
@@ -208,7 +228,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-12 col-lg-8">
                     <div class="card-body">
                       <h5 class="card-title">Christmas Pudding Cupcakes</h5>
                       <p class="card-text">
@@ -237,11 +257,12 @@
             >
               <div class="card mb-3" style="max-width: 670px;">
                 <div class="row no-gutters">
-                  <div class="col-md-4">
+                  <div class="col-md-12 col-lg-4">
                     <img
-                      src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/caramel-pecan-brownie-trifle-recipes-1565897633.jpg" width="222", height="146"
+                      data-src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/caramel-pecan-brownie-trifle-recipes-1565897633.jpg"
                       class="card-img"
                       alt="..."
+                      loading="lazy"
                     />
                     <ul>
                       <li>
@@ -258,7 +279,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-12 col-lg-8">
                     <div class="card-body">
                       <h5 class="card-title">Caramel Pecan Brownie Trifles</h5>
                       <p class="card-text">
@@ -278,19 +299,20 @@
               </div>
             </div>
             <!-- ::: END OF CARD EXAMPLE :::-->
-                        <div
-            class="tab-pane fade"
-            id="cookie-dough-trifle"
-            role="tabpanel"
-            aria-labelledby="grinch-stole-list"
-          >
+            <div
+              class="tab-pane fade"
+              id="cookie-dough-trifle"
+              role="tabpanel"
+              aria-labelledby="grinch-stole-list"
+            >
             <div class="card mb-3" style="max-width: 670px;">
               <div class="row no-gutters">
-                <div class="col-md-4">
+                <div class="col-md-12 col-lg-4">
                   <img
-                    src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cookie-dough-trifle-recipes-1565897228.jpg?crop=1xw:1xh;center,top&resize=980:*" width="222", height="146"
+                    data-src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cookie-dough-trifle-recipes-1565897228.jpg?crop=1xw:1xh;center,top&resize=980:*"
                     class="card-img"
                     alt="..."
+                    loading="lazy"
                   />
                   <ul>
                       <li>
@@ -307,7 +329,7 @@
                       </li>
                     </ul>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-12 col-lg-8">
                   <div class="card-body">
                     <h5 class="card-title">Cookie Dough Trifle</h5>
                     <p class="card-text">
@@ -315,7 +337,7 @@
                     </p>
                     <p class="card-text">
                       <small class="text-muted"
-                          > Get the recipe at <a href="https://www.delish.com/cooking/recipe-ideas/a50270/cookie-dough-trifle-recipe/" width="222", height="146"
+                          > Get the recipe at <a href="https://www.delish.com/cooking/recipe-ideas/a50270/cookie-dough-trifle-recipe/"
                             target="__blank"
                             > Delish</a
                           ></small
@@ -324,9 +346,9 @@
                   </div>
                 </div>
               </div>
-          </div>
+            </div>
         </div>
-        
+
             <!-- ::: CARD EXAMPLE OF A RECIPE :::-->
             <div
               class="tab-pane fade"
@@ -336,11 +358,12 @@
             >
               <div class="card mb-3" style="max-width: 670px;">
                 <div class="row no-gutters">
-                  <div class="col-md-4">
+                  <div class="col-md-12 col-lg-4">
                     <img
-                      src="https://www.anasbakingchronicles.com/wp-content/uploads/2018/11/Linzers-blog4-1-of-1.jpg" width="222", height="146"
+                      data-src="https://www.anasbakingchronicles.com/wp-content/uploads/2018/11/Linzers-blog4-1-of-1.jpg"
                       class="card-img"
                       alt="christmas linzer cookies"
+                      loading="lazy"
                     />
                     <ul>
                       <li>
@@ -357,7 +380,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-12 col-lg-8">
                     <div class="card-body">
                       <h5 class="card-title">Christmas Linzer Cookies</h5>
                       <p class="card-text">
@@ -370,7 +393,7 @@
                       </p>
                        <p class="card-text">
                       <small class="text-muted"
-                          > Get the recipe at <a href="https://www.laurainthekitchen.com/recipes/linzer-cookies/" 
+                          > Get the recipe at <a href="https://www.laurainthekitchen.com/recipes/linzer-cookies/"
                             target="__blank"
                             > Laura in the kitchen</a
                           ></small
@@ -382,6 +405,111 @@
               </div>
             </div>
             <!-- ::: END OF CARD EXAMPLE :::-->
+            <!-- ::: Beginning of Potato Candy Recipe Card :::-->
+            <div
+              class="tab-pane fade"
+              id="potato-candy"
+              role="tabpanel"
+              aria-labelledby="list-settings-list"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      data-src="https://sugarspunrun.com/wp-content/uploads/2018/11/How-to-make-Potato-Candy-1-of-1-2-500x500.jpg"
+                      class="card-img"
+                      alt="..."
+                      loading="lazy"
+                    />
+                    <ul>
+                      <li>
+                        <small>Makes: 40 slices</small>
+                      </li>
+                      <li>
+                        <small>Prep: 2 hrs 30 min</small>
+                      </li>
+                      <li>
+                        <small>Cooking: 20min</small>
+                      </li>
+                      <li>
+                        <small>Skill: Easy</small>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Potato Candy</h5>
+                      <p class="card-text">
+                        This holiday treat is traditionally enjoyed in the Appalachian region of the United States. Potatoes may seem like a strange ingredient for a candy, but in this case the potatoes work to create a perfectly textured dough. If you love soft treats like fudge, you're sure to enjoy this recipe!
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted"
+                          > Get the recipe at <a
+                            href="https://sugarspunrun.com/potato-candy/"
+                            target="__blank"
+                            > sugarspunrun.com</a>
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: End of Potato Candy Recipe ::: -->
+            <!-- ::: Beginning of Pecan Pie Recipe Card :::-->
+            <div
+              class="tab-pane fade"
+              id="vegan-pecan-pie"
+              role="tabpanel"
+              aria-labelledby="list-settings-list"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      data-src="https://images.unsplash.com/photo-1546024664-9226c2d3819b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1017&q=80"
+                      class="card-img"
+                      alt="pecan pie"
+                      loading="lazy"
+                    />
+                    <ul>
+                      <li>
+                        <small>Makes: 1 pie</small>
+                      </li>
+                      <li>
+                        <small>Prep: 30 min</small>
+                      </li>
+                      <li>
+                        <small>Cooking: 35min</small>
+                      </li>
+                      <li>
+                        <small>Skill: Easy</small>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Vegan Friendly Pecan Pie</h5>
+                      <p class="card-text">
+                        Delicious pie for all the vegans out there or for those who want to try something different!
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted"
+                          > Get the recipe at <a
+                            href="https://chocolatecoveredkatie.com/2017/12/11/vegan-pecan-pie-recipe/"
+                            target="__blank"
+                            > Chocolate Covered Katie</a>
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: End of Pecan Pie Recipe ::: -->
+
+      </div>
+      </div>
       </div>
     </div>
 
@@ -392,18 +520,17 @@
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
   </body>
 </html>
-

@@ -1,0 +1,19 @@
+.tab-navigation {
+  margin-bottom: 16px;
+}
+
+.tab-content .card-img {
+  max-height: 250px;
+}
+
+.tab-content .col-md-12 {
+  padding: 0;
+}
+
+@media(max-width: 767px) {
+  .tab-content .card-img {
+    max-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}

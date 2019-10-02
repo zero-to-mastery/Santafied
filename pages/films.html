@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="../assets/js/lazyloading.js"></script>
     <script
       src="https://kit.fontawesome.com/5e68800c4a.js"
       crossorigin="anonymous"
@@ -22,7 +23,7 @@
     />
     <title>Santafied | Films</title>
   </head>
-  <body id="films">
+  <body id="films" class="sub-page">
     <!-- :::NAV Starts ::: -->
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -40,15 +41,35 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-item nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-item nav-link" href="../pages/facts.html">Facts</a></li>
-            <li class="nav-item"><a class="nav-item nav-link" href="../pages/recipes.html">Recipes</a></li>
-            <li class="nav-item"><a class="nav-item nav-link" href="../pages/gifts.html">Gifts</a></li>
-            <li class="nav-item"><a class="nav-item nav-link" href="../pages/songs.html">Songs</a></li>
-            <li class="nav-item"><a class="nav-item nav-link" href="#">Games</a></li>
-            <li class="nav-item"><a class="nav-item nav-link" href="../pages/films.html">Films</a></li>
-            <li class="nav-item"><a class="nav-item nav-link" href="../pages/books.html">Books</a></li>
-            <li class="nav-item"><a class="nav-item nav-link" href="#">Activities</a></li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="../pages/facts.html">Facts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="../pages/recipes.html"
+                >Recipes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="../pages/gifts.html">Gifts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="../pages/songs.html">Songs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="../pages/games.html">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="../pages/films.html">Films</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="../pages/books.html">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="../pages/activities.html">Activities</a>
+            </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -62,7 +83,9 @@
                 More
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="elf-name-generator.html">Elf Name Generator</a>
+                <a class="dropdown-item" href="elf-name-generator.html"
+                  >Elf Name Generator</a
+                >
                 <a class="dropdown-item" href="#">Category</a>
                 <a class="dropdown-item" href="#">Category</a>
               </div>
@@ -77,229 +100,429 @@
     <div class="container">
       <h1 class="title">Christmas Films</h1>
       <div class="row">
-        <div class="col-4">
-            <div class="list-group" id="list-tab" role="tablist">
-                <!-- ::: MENU TO FILTER FILMS :::-->
-                <a class="list-group-item list-group-item-action active"
-                   id="list-profile-list"
-                   data-toggle="list"
-                   href="#grinch-stole"
-                   role="tab"
-                   aria-controls="profile">How the Grinch Stole Christmas</a>
-                <a class="list-group-item list-group-item-action"
-                   id="list-settings-list"
-                   data-toggle="list"
-                   href="#list-settings"
-                   role="tab"
-                   aria-controls="settings">Disney's A Christmas Carol</a>
-                <a class="list-group-item list-group-item-action"
-                   id="list-settings-list"
-                   data-toggle="list"
-                   href="#home-alone"
-                   role="tab"
-                   aria-controls="settings">Home Alone</a>
-                <a class="list-group-item list-group-item-action"
-                   id="list-settings-list"
-                   data-toggle="list"
-                   href="#home-alone-2"
-                   role="tab"
-                   aria-controls="settings">Home Alone 2: Lost in New York</a>
-                <a class="list-group-item list-group-item-action"
-                   id="list-settings-list"
-                   data-toggle="list"
-                   href="#home-alone-2"
-                   role="tab"
-                   aria-controls="settings">Santa Claus the Movie</a>
-                <a class="list-group-item list-group-item-action"
-                   id="list-settings-list"
-                   data-toggle="list"
-                   href="#santa-claus-movie"
-                   role="tab"
-                   aria-controls="settings">Santa Claus: The Movie</a>
-            </div>
+        <div class="col-md-4 tab-navigation">
+          <div class="list-group" id="list-tab" role="tablist">
+            <!-- ::: MENU TO FILTER FILMS :::-->
+            <a
+              class="list-group-item list-group-item-action active"
+              id="list-profile-list"
+              data-toggle="list"
+              href="#grinch-stole"
+              role="tab"
+              aria-controls="profile"
+              >How the Grinch Stole Christmas</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-settings-list"
+              data-toggle="list"
+              href="#list-settings"
+              role="tab"
+              aria-controls="settings"
+              >Disney's A Christmas Carol</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-settings-list"
+              data-toggle="list"
+              href="#home-alone"
+              role="tab"
+              aria-controls="settings"
+              >Home Alone</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-settings-list"
+              data-toggle="list"
+              href="#home-alone-2"
+              role="tab"
+              aria-controls="settings"
+              >Home Alone 2: Lost in New York</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-settings-list"
+              data-toggle="list"
+              href="#love-actually"
+              role="tab"
+              aria-controls="settings"
+              >Love Actually</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-settings-list"
+              data-toggle="list"
+              href="#miracle-34th-street"
+              role="tab"
+              aria-controls="settings"
+              >Miracle on 34th Street</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-settings-list"
+              data-toggle="list"
+              href="#santa-claus"
+              role="tab"
+              aria-controls="settings"
+              >Santa Claus The Movie</a>
+
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-settings-list"
+              data-toggle="list"
+              href="#Elf"
+              role="tab"
+              aria-controls="settings"
+              >Elf</a
+            >
+          </div>
         </div>
         <!-- :::END OF MENU TO FILTER FILMS :::-->
 
         <!-- ::: CARDS OF FILMS :::-->
-        <div class="col-8">
-            <div class="tab-content" id="nav-tabContent">
-                <!-- ::: CARD EXAMPLE OF A MOVIE :::-->
-                <div class="tab-pane fade active show"
-                     id="grinch-stole"
-                     role="tabpanel"
-                     aria-labelledby="grinch-stole-list">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="https://m.media-amazon.com/images/M/MV5BNWNiNTczNzEtMjQyZC00MjFmLTkzMDMtODk4ZGMyZmE0N2E4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
-                                     class="card-img"
-                                     alt="..." />
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">How the Grinch Stole Christmas</h5>
-                                    <p class="card-text">
-                                        Inside a snowflake exists the magical land of Whoville.
-                                        In Whoville, live the Whos, an almost mutated sort of
-                                        munchkin-like people. All the Whos love Christmas, yet
-                                        just outside of their beloved town, lives the Grinch
-                                        (Jim Carrey). The Grinch is a nasty creature that hates
-                                        Christmas, and plots to steal it away from the Whos
-                                        which he equally abhors. Yet a small child, Cindy Lou
-                                        Who (Taylor Momsen), decides to try befriend the Grinch.
-                                    </p>
-                                    <p class="card-text">
-                                        <small class="text-muted">
-                                            <a href="https://www.imdb.com/title/tt0170016/"
-                                               target="__blank">IMDB</a>
-                                        </small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+        <div class="col-md-8">
+          <div class="tab-content" id="nav-tabContent">
+            <!-- ::: CARD EXAMPLE OF A MOVIE :::-->
+            <div
+              class="tab-pane fade active show"
+              id="grinch-stole"
+              role="tabpanel"
+              aria-labelledby="grinch-stole-list"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      data-src="https://m.media-amazon.com/images/M/MV5BNWNiNTczNzEtMjQyZC00MjFmLTkzMDMtODk4ZGMyZmE0N2E4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                      class="card-img"
+                      alt="..."
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">How the Grinch Stole Christmas</h5>
+                      <p class="card-text">
+                        Inside a snowflake exists the magical land of Whoville.
+                        In Whoville, live the Whos, an almost mutated sort of
+                        munchkin-like people. All the Whos love Christmas, yet
+                        just outside of their beloved town, lives the Grinch
+                        (Jim Carrey). The Grinch is a nasty creature that hates
+                        Christmas, and plots to steal it away from the Whos
+                        which he equally abhors. Yet a small child, Cindy Lou
+                        Who (Taylor Momsen), decides to try befriend the Grinch.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">
+                          <a
+                            href="https://www.imdb.com/title/tt0170016/"
+                            target="__blank"
+                            >IMDB</a
+                          >
+                        </small>
+                      </p>
                     </div>
+                  </div>
                 </div>
-                <!-- ::: END OF CARD EXAMPLE :::-->
-                <div class="tab-pane fade"
-                     id="list-settings"
-                     role="tabpanel"
-                     aria-labelledby="list-settings-list">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="https://m.media-amazon.com/images/M/MV5BMTM1MTI5ODU4MV5BMl5BanBnXkFtZTcwNTYyNTU4Mg@@._V1_SY1000_CR0,0,676,1000_AL_.jpg"
-                                     class="card-img"
-                                     alt="..." />
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Disney's A Christmas Carol</h5>
-                                    <p class="card-text">
-                                        Miser Ebenezer Scrooge is awakened on Christmas Eve by
-                                        spirits who reveal to him his own miserable existence,
-                                        what opportunities he wasted in his youth, his current
-                                        cruelties, and the dire fate that awaits him if he does
-                                        not change his ways. Scrooge is faced with his own story
-                                        of growing bitterness and meanness, and must decide what
-                                        his own future will hold: death or redemption
-                                    </p>
-                                    <p class="card-text">
-                                        <small class="text-muted">
-                                            <a href="https://www.imdb.com/title/tt1067106/"
-                                               target="__blank">IMDB</a>
-                                        </small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ::: HOME ALONE CARD EXAMPLE :::-->
-                <div class="tab-pane fade"
-                     id="home-alone"
-                     role="tabpanel"
-                     aria-labelledby="list-settings-list">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
-                                     class="card-img"
-                                     alt="..." />
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Home Alone</h5>
-                                    <p class="card-text">
-                                        When bratty 8-year-old Kevin McCallister (Macaulay
-                                        Culkin) acts out the night before a family trip to
-                                        Paris, his mother (Catherine O'Hara) makes him sleep in
-                                        the attic. After the McCallisters mistakenly leave for
-                                        the airport without Kevin, he awakens to an empty house
-                                        and assumes his wish to have no family has come true.
-                                        But his excitement sours when he realizes that two con
-                                        men (Joe Pesci, Daniel Stern) plan to rob the
-                                        McCallister residence, and that he alone must protect
-                                        the family home.
-                                    </p>
-                                    <p class="card-text">
-                                        <small class="text-muted">
-                                            <a href="https://www.imdb.com/title/tt0099785/"
-                                               target="__blank">IMDB</a>
-                                        </small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ::: HOME ALONE 2 CARD EXAMPLE :::-->
-                <div class="tab-pane fade"
-                     id="home-alone-2"
-                     role="tabpanel"
-                     aria-labelledby="list-settings-list">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="http://www.gstatic.com/tv/thumb/v22vodart/14385/p14385_v_v8_ab.jpg"
-                                     class="card-img"
-                                     alt="..." />
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Home Alone 2: Lost in New York</h5>
-                                    <p class="card-text">
-                                        After snarky youth Kevin McCallister (Macaulay Culkin)
-                                        loses track of his father at the airport, he mistakenly
-                                        gets on a plane headed for New York City -- while the
-                                        rest of the McCallisters fly to Florida. Now alone in
-                                        the Big Apple, Kevin cons his way into a room at the
-                                        Plaza Hotel and begins his usual antics. But when Kevin
-                                        discovers that the Sticky Bandits (Joe Pesci, Daniel
-                                        Stern) are on the loose, he struggles to stop them from
-                                        robbing an elderly man's toy store just before
-                                        Christmas.
-                                    </p>
-                                    <p class="card-text">
-                                        <small class="text-muted">
-                                            <a href="https://www.imdb.com/title/tt0104431/"
-                                               target="__blank">IMDB</a>
-                                        </small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- SANTA CLAUS: THE MOVIE -->
-                <div class="tab-pane fade active show"
-                     id="grinch-stole"
-                     role="tabpanel"
-                     aria-labelledby="grinch-stole-list">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="https://m.media-amazon.com/images/M/MV5BZDc1OGVkMmQtYTU0NC00ZTc4LWIyNjItM2IzYzcwNTA1ZmJmXkEyXkFqcGdeQXVyMjY3MjUzNDk@._V1_.jpg"
-                                     class="card-img"
-                                     alt="..." />
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Santa Claus: The Movie</h5>
-                                    <p class="card-text">
-                                        The legend of Santa Claus is put in jeopardy when an unscrupulous toy manufacturer attempts to take over Christmas. Staring Dudley Moore and John Lithgow.
-                                    </p>
-                                    <p class="card-text">
-                                        <small class="text-muted">
-                                            <a href="https://www.imdb.com/title/tt0089961/?ref_=fn_al_tt_2"
-                                               target="__blank">IMDB</a>
-                                        </small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <!-- ::: END OF CARD EXAMPLE :::-->
+            <div
+              class="tab-pane fade"
+              id="list-settings"
+              role="tabpanel"
+              aria-labelledby="list-settings-list"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      data-src="https://m.media-amazon.com/images/M/MV5BMTM1MTI5ODU4MV5BMl5BanBnXkFtZTcwNTYyNTU4Mg@@._V1_SY1000_CR0,0,676,1000_AL_.jpg"
+                      class="card-img"
+                      alt="..."
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Disney's A Christmas Carol</h5>
+                      <p class="card-text">
+                        Miser Ebenezer Scrooge is awakened on Christmas Eve by
+                        spirits who reveal to him his own miserable existence,
+                        what opportunities he wasted in his youth, his current
+                        cruelties, and the dire fate that awaits him if he does
+                        not change his ways. Scrooge is faced with his own story
+                        of growing bitterness and meanness, and must decide what
+                        his own future will hold: death or redemption
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">
+                          <a
+                            href="https://www.imdb.com/title/tt1067106/"
+                            target="__blank"
+                            >IMDB</a
+                          >
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: HOME ALONE CARD EXAMPLE :::-->
+            <div
+              class="tab-pane fade"
+              id="home-alone"
+              role="tabpanel"
+              aria-labelledby="list-settings-list"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      data-src="https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                      class="card-img"
+                      alt="..."
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Home Alone</h5>
+                      <p class="card-text">
+                        When bratty 8-year-old Kevin McCallister (Macaulay
+                        Culkin) acts out the night before a family trip to
+                        Paris, his mother (Catherine O'Hara) makes him sleep in
+                        the attic. After the McCallisters mistakenly leave for
+                        the airport without Kevin, he awakens to an empty house
+                        and assumes his wish to have no family has come true.
+                        But his excitement sours when he realizes that two con
+                        men (Joe Pesci, Daniel Stern) plan to rob the
+                        McCallister residence, and that he alone must protect
+                        the family home.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">
+                          <a
+                            href="https://www.imdb.com/title/tt0099785/"
+                            target="__blank"
+                            >IMDB</a
+                          >
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: HOME ALONE 2 CARD EXAMPLE :::-->
+            <div
+              class="tab-pane fade"
+              id="home-alone-2"
+              role="tabpanel"
+              aria-labelledby="list-settings-list"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      data-src="http://www.gstatic.com/tv/thumb/v22vodart/14385/p14385_v_v8_ab.jpg"
+                      class="card-img"
+                      alt="..."
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Home Alone 2: Lost in New York</h5>
+                      <p class="card-text">
+                        After snarky youth Kevin McCallister (Macaulay Culkin)
+                        loses track of his father at the airport, he mistakenly
+                        gets on a plane headed for New York City -- while the
+                        rest of the McCallisters fly to Florida. Now alone in
+                        the Big Apple, Kevin cons his way into a room at the
+                        Plaza Hotel and begins his usual antics. But when Kevin
+                        discovers that the Sticky Bandits (Joe Pesci, Daniel
+                        Stern) are on the loose, he struggles to stop them from
+                        robbing an elderly man's toy store just before
+                        Christmas.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">
+                          <a
+                            href="https://www.imdb.com/title/tt0104431/"
+                            target="__blank"
+                            >IMDB</a
+                          >
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Love Actually -->
+            <div
+              class="tab-pane fade "
+              id="love-actually"
+              role="tabpanel"
+              aria-labelledby="santa-claus-list"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      data-src="https://upload.wikimedia.org/wikipedia/en/e/eb/Love_Actually_movie.jpg"
+                      class="card-img"
+                      alt="..."
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Love Actually</h5>
+                      <p class="card-text">
+                        Follows the lives of eight very different couples in
+                        dealing with their love lives in various loosely
+                        interrelated tales all set during a frantic month before
+                        Christmas in London, England.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">
+                          <a
+                            href="https://www.imdb.com/title/tt0314331/"
+                            target="__blank"
+                            >IMDB</a
+                          >
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Miracle on 34th Street -->
+            <div
+              class="tab-pane fade "
+              id="miracle-34th-street"
+              role="tabpanel"
+              aria-labelledby="santa-claus-list"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      data-src="https://upload.wikimedia.org/wikipedia/en/5/56/Miracle_on_34th_Street_poster.jpg"
+                      class="card-img"
+                      alt="..."
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Miracle on 34th Street</h5>
+                      <p class="card-text">
+                        A little girl discovers dreams do come true if you
+                        really believe. Six-year-old Susan has doubts about
+                        childhood's most enduring miracle, Santa Claus. Her
+                        mother told her the "secret" about Santa a long time
+                        ago, so Susan doesn't expect to receive the most
+                        important gifts on her Christmas list. But after meeting
+                        a special department store Santa who's convinced he's
+                        the real thing, Susan is given the most precious gift of
+                        all, something to believe in.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">
+                          <a
+                            href="https://www.imdb.com/title/tt0110527/"
+                            target="__blank"
+                            >IMDB</a
+                          >
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- SANTA CLAUS: THE MOVIE -->
+            <div
+              class="tab-pane fade "
+              id="santa-claus"
+              role="tabpanel"
+              aria-labelledby="santa-claus-list"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      data-src="https://m.media-amazon.com/images/M/MV5BZDc1OGVkMmQtYTU0NC00ZTc4LWIyNjItM2IzYzcwNTA1ZmJmXkEyXkFqcGdeQXVyMjY3MjUzNDk@._V1_.jpg"
+                      class="card-img"
+                      alt="..."
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Santa Claus: The Movie</h5>
+                      <p class="card-text">
+                        The legend of Santa Claus is put in jeopardy when an
+                        unscrupulous toy manufacturer attempts to take over
+                        Christmas. Staring Dudley Moore and John Lithgow.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">
+                          <a
+                            href="https://www.imdb.com/title/tt0089961/?ref_=fn_al_tt_2"
+                            target="__blank"
+                            >IMDB</a
+                          >
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Elf -->
+            <div
+              class="tab-pane fade "
+              id="Elf"
+              role="tabpanel"
+              aria-labelledby="santa-claus-list"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      data-src="https://m.media-amazon.com/images/I/91ORhMVJxWL._AC_UY218_SEARCH213888_FMwebp_QL75_.jpg"
+                      class="card-img"
+                      alt="..."
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Elf</h5>
+                      <p class="card-text">
+                        Buddy was a baby in an orphanage who stowed away in Santa's sack and ended up at the North Pole. Later, as an adult human who happened to be raised by elves, Santa allows him to go to New York City to find his birth father, Walter Hobbs. Hobbs, on Santa's naughty list for being a heartless jerk, had no idea that Buddy was even born. Buddy, meanwhile, experiences the delights of New York City (and human culture) as only an elf can. When Walter's relationship with Buddy interferes with his job, he is forced to reevaluate his priorities.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">
+                          <a
+                            href="https://www.imdb.com/title/tt0319343/?ref_=nv_sr_1?ref_=nv_sr_1"
+                            target="__blank"
+                            >IMDB</a
+                          >
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -311,17 +534,17 @@
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
   </body>
 </html>

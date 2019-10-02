@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="../assets/js/lazyloading.js"></script>
   <script src="https://kit.fontawesome.com/5e68800c4a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
@@ -14,7 +15,7 @@
 </head>
 
 
-<body id="films">
+<body class="sub-page">
   <!-- :::NAV Starts ::: -->
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -30,10 +31,10 @@
           <li class="nav-item"><a class="nav-item nav-link" href="../pages/recipes.html">Recipes</a></li>
           <li class="nav-item"><a class="nav-item nav-link" href="../pages/gifts.html">Gifts</a></li>
           <li class="nav-item"><a class="nav-item nav-link" href="../pages/songs.html">Songs</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="#">Games</a></li>
+          <li class="nav-item"><a class="nav-item nav-link" href="../pages/games.html">Games</a></li>
           <li class="nav-item"><a class="nav-item nav-link" href="../pages/films.html">Films</a></li>
           <li class="nav-item"><a class="nav-item nav-link" href="../pages/books.html">Books</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="#">Activities</a></li>
+          <li class="nav-item"><a class="nav-item nav-link" href="../pages/activities.html">Activities</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
@@ -78,8 +79,8 @@
               <div class="row no-gutters">
                 <div class="col-md-4">
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Last_Christmaswham.jpg/220px-Last_Christmaswham.jpg"
-                    class="card-img" alt="..." />
+                    data-src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Last_Christmaswham.jpg/220px-Last_Christmaswham.jpg"
+                    class="card-img" alt="..." loading="lazy"/>
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -100,8 +101,8 @@
               <div class="row no-gutters">
                 <div class="col-md-4">
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/All_I_Want_for_Christmas_Is_You_Mariah_Carey.png/220px-All_I_Want_for_Christmas_Is_You_Mariah_Carey.png"
-                    class="card-img" alt="..." />
+                    data-src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/All_I_Want_for_Christmas_Is_You_Mariah_Carey.png/220px-All_I_Want_for_Christmas_Is_You_Mariah_Carey.png"
+                    class="card-img" alt="..." loading="lazy"/>
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -123,7 +124,7 @@
             <div class="card mb-3" style="max-width: 670px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="https://m.media-amazon.com/images/I/71aA3Wt3UWL._SS500_.jpg" class="card-img" alt="..." />
+                  <img data-src="https://m.media-amazon.com/images/I/71aA3Wt3UWL._SS500_.jpg" class="card-img" alt="..." loading="lazy"/>
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -144,8 +145,8 @@
             <div class="card mb-3" style="max-width: 670px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/5/5a/Decca18429A.jpg" class="card-img"
-                    alt="..." />
+                  <img data-src="https://upload.wikimedia.org/wikipedia/en/5/5a/Decca18429A.jpg" class="card-img"
+                    alt="..." loading="lazy"/>
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -165,8 +166,8 @@
             <div class="card mb-3" style="max-width: 670px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/a/af/Single_Eartha_Kitt-Santa_Baby_cover.jpg"
-                    class="card-img" alt="..." />
+                  <img data-src="https://upload.wikimedia.org/wikipedia/en/a/af/Single_Eartha_Kitt-Santa_Baby_cover.jpg"
+                    class="card-img" alt="..." loading="lazy"/>
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
