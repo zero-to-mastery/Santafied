@@ -63,6 +63,11 @@ section {
 
 /*Footer*/
 
+footer {
+  text-align: center;
+  padding: 50px 10px;
+}
+
 .site-footer {
   background: #111111;
   color: gray;
