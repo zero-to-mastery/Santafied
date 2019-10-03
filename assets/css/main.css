@@ -3,13 +3,17 @@
  * Feel free to modify it in any way you like
  */
 
- body {
+body {
   margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+.main-content {
+  max-width: 62rem;
+  margin: 0 auto;
+}
 
 /*navbar Starts*/
 #brand-color {
@@ -52,13 +56,12 @@
 }
 
 .nav-item .selected {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .navbar-light .navbar-nav .nav-link {
   color: #000;
 }
-
 
 /*Navbar END*/
 /*
@@ -72,21 +75,20 @@ section {
   color: crimson;
 } */
 
-.fa-cube{
-  color:#ff4546;
+.fa-cube {
+  color: #ff4546;
 }
 /*Footer*/
 
 footer {
   text-align: center;
   padding: 30px 10px;
-  margin-top:auto;
+  margin-top: auto;
   background: #111111;
   color: gray;
 }
 
 .site-footer {
-
   padding: 100px 0; /*padding top and bottom 100px 0 padding left and right*/
 }
 
@@ -128,11 +130,11 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .footer-social a:hover {
@@ -166,11 +168,11 @@ footer {
   .footer-links {
     text-align: left;
   }
-  
-  .footer-links h4 { 
+
+  .footer-links h4 {
     margin: 0 0 30px 60px;
   }
-  
+
   .footer-links li {
     margin: 10px 0 10px 60px;
   }
@@ -196,23 +198,23 @@ footer {
 }
 .feature-section {
   background-color: #ff4546;
-  color:white;
+  color: white;
 }
 
-.feature-card{
-  height:40vh;
+.feature-card {
+  height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-pack: distribute;
-      justify-content: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
@@ -233,26 +235,26 @@ footer {
   }
 }
 
-.icon{
-  border:1px solid rgb(241, 239, 239,0.5);
+.icon {
+  border: 1px solid rgb(241, 239, 239, 0.5);
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 9vh;
 }
-.subtitle{
+.subtitle {
   font-size: 18px;
 }
-.page-content{
+.page-content {
   height: 100vh;
 }
-.form-inline{
+.form-inline {
   justify-content: center;
 }
