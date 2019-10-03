@@ -258,3 +258,8 @@ footer {
 .form-inline {
   justify-content: center;
 }
+
+.navbar-brand i {
+  content: url('../img/santafied_logo.svg');
+  height: 23px;
+}
