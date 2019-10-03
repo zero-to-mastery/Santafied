@@ -29,7 +29,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-item nav-link" href="index.html">Home</a>
+            <a class="nav-item nav-link selected" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-item nav-link" href="pages/facts.html">Facts</a>
@@ -55,6 +55,9 @@
           <li class="nav-item">
             <a class="nav-item nav-link" href="pages/activities.html">Activities</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="#footer">Contact Us</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
@@ -62,7 +65,9 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="pages/elf-name-generator.html">Elf Name Generator</a>
+
               <a class="dropdown-item" href="pages/party-costumes.html">Party Costumes</a>
+
               <a class="dropdown-item" href="#">Category</a>
             </div>
           </li>
@@ -74,7 +79,7 @@
   </div>
 
   <!-- :::END OF Nav -->
-
+  <div class="container" >
   <section id="hero-content">
     <div>
       <div id="carousel-indecator" class="carousel slide" data-ride="carousel">
@@ -104,7 +109,9 @@
               src="https://images.unsplash.com/photo-1450198342040-c32e6d1ef2e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
               alt="" />
             <div class="carousel-caption d-flex flex-column align-items-center">
-                    <a href="pages/gifts.html">  <h3>Christmas Gifts 🎁</h3></a>
+              <a href="pages/gifts.html">
+                <h3>Christmas Gifts 🎁</h3>
+              </a>
 
               <p>
                 Great gift ideas for the whole family!
@@ -117,7 +124,9 @@
               src="https://images.unsplash.com/photo-1481223014211-199b3e8f0002?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1920"
               alt="" />
             <div class="carousel-caption d-flex flex-column align-items-center">
-              <a href="pages/movies.html">  <h3>Christmas Movies 📽️</h3></a>
+              <a href="pages/films.html">
+                <h3>Christmas Movies 📽️</h3>
+              </a>
 
               <p>
                 A compilation of must-watch Christmas movies.
@@ -130,7 +139,9 @@
               src="https://images.unsplash.com/photo-1451408446993-f6a39d2e667e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80"
               alt="" />
             <div class="carousel-caption d-flex flex-column align-items-center">
-              <a href="pages/recipes.html"><h3>Christmas Recipies 🍰</h3></a>
+              <a href="pages/recipes.html">
+                <h3>Christmas Recipies 🍰</h3>
+              </a>
 
               <p>
                 Make sure your Christmas is delicious by working your way through this list!
@@ -156,40 +167,41 @@
     <iframe src="https://tunein.com/embed/player/s117270/" style="width:100%; height:100px;" scrolling="no" frameborder="no"></iframe>
   </section>
 
-  <section class="feature-section">
-    <div class="feature-card">
-      <div class="icon">
-        <i class="fa fa-truck"></i>
+  <section class="container-fluid feature-section">
+    <div class="row">
+      <div class="col-lg-4 col-md-12 feature-card">
+        <div class="icon">
+          <i class="fa fa-truck"></i>
+        </div>
+        <div class="feature-content">
+          <h5 class="title">Feature Point 1</h5>
+          <p class="subtitle">Lorem ipsum dolor sit
+          </p>
+        </div>
       </div>
-      <div class="feature-content">
-        <h5 class="title">Feature Point 1</h5>
-        <p class="subtitle">Lorem ipsum dolor sit
-        </p>
+      <div class="col-lg-4 col-md-12 feature-card">
+        <div class="icon">
+          <i class="fa fa-spinner"></i>
+        </div>
+        <div class="feature-content">
+          <h5 class="title">Feature Point 2</h5>
+          <p class="subtitle">Lorem ipsum dolor sit
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 feature-card">
+        <div class="icon">
+          <i class="fa fa-shield"></i>
+        </div>
+        <div class="feature-content">
+          <h5 class="title">Feature Point 3</h5>
+          <p class="subtitle">Lorem ipsum dolor sit
+          </p>
+        </div>
       </div>
     </div>
-    <div class="feature-card">
-      <div class="icon">
-        <i class="fa fa-spinner"></i>
-      </div>
-      <div class="feature-content">
-        <h5 class="title">Feature Point 2</h5>
-        <p class="subtitle">Lorem ipsum dolor sit
-        </p>
-      </div>
-    </div>
-    <div class="feature-card">
-      <div class="icon">
-        <i class="fa fa-shield"></i>
-      </div>
-      <div class="feature-content">
-        <h5 class="title">Feature Point 3</h5>
-        <p class="subtitle">Lorem ipsum dolor sit
-        </p>
-      </div>
-    </div>
-
   </section>
-
+</div>
   <footer class="site-footer">
     <div class="container">
       <div class="row">
@@ -202,16 +214,17 @@
           <a href="tel:+1800123456" class="footer-tel">+ 1 800 123 456</a><br /><span class="footer-email">Email
             <a href="mailto:support@santafied.fi">support@santafied.fi</a></span>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 footer-links" >
           <h4>Links</h4>
           <ul class="list-unstyled">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-            <li><a href="#">Link 5</a></li>
-            <li><a href="#">Link 6</a></li>
-            <li><a href="#">Link 7</a></li>
+            <li><a href="pages/facts.html">Facts and Info</a></li>
+            <li><a href="pages/recipes.html">Recipes</a></li>
+            <li><a href="pages/gifts.html">Gifts Suggestions</a></li>
+            <li><a href="pages/songs.html">Seasonal Songs &amp; Lyrics</a></li>
+            <li><a href="pages/games.html">Seasonal Games</a></li>
+            <li><a href="pages/films.html">Seasonal Films</a></li>
+            <li><a href="pages/books.html">Seasonal Books</a></li>
+            <li><a href="pages/activities.html">Seasonal Activities</a></li>
           </ul>
         </div>
         <div class="col-12 col-md-4">
@@ -237,25 +250,25 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="row">
-        <div class="col footer-copyright">
-          &copy; Santafied. A project under zero-to-mastery.
+        <div class="row">
+          <div class="col footer-copyright">
+            &copy; Santafied. A project under zero-to-mastery.
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </section>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <script src="./assets/js/carousel.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
