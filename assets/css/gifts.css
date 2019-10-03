@@ -22,8 +22,12 @@ div.watches {
   height: 80%;
 }
 #giftsPage {
-  position:relative;
   background-color: #ff4546;
+}
+#banner {
+  position:relative;
+  box-sizing:border-box;
+  /*margin:0 -15px;*/
 }
 
 #bannerImage {
@@ -38,8 +42,9 @@ div.watches {
 
 #banner .caption {
   position: absolute;
-  top:25%;
+  top:10vw;
   left:0;
+  padding:0 20px;
   width:100%; 
   color: white;
   display: -webkit-box;
@@ -52,6 +57,11 @@ div.watches {
   font-size: 2em;
 }
 
+@media all and (max-width: 500px) {
+  #banner .caption {
+    font-size:1.6em;
+  }
+}
 section#giftsPage {
   height: 90vh;
 }
