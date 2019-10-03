@@ -3,6 +3,37 @@ body {
   overflow-x: hidden;
 }
 
+/* Layout */
+
+.gifts-banner {
+  background-image: url('../img/gift_banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 50vh;
+}
+
+.gifts-banner__caption{
+  color: #fff;
+}
+
+.gifts-note {
+  padding: 2rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.8);
+  font-size: 1.8em;
+  color: rgba(0,0,0,0.8);
+  background-color: brown;
+}
+
+
+
+/* Typography */
+
+h1 {
+  font-size: 4rem;
+}
+
+
 div.gifts-card {
   height: 100%;
 }
@@ -21,45 +52,8 @@ div.products {
 div.watches {
   height: 80%;
 }
-#giftsPage {
-  background-color: #ff4546;
-}
 
-#bannerImage {
-  position: relative;
-}
 
-#bannerImage {
-  width: 100vw;
-  height: 90vh;
-}
-
-#banner .caption {
-  position: absolute;
-  top: 25%;
-  left: 15%;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 2em;
-}
-
-section#giftsPage {
-  height: 90vh;
-}
-#note {
-  padding: 20px;
- border-top: 2px solid rgba(255, 255, 255, 0.8);
-  font-size: 1.8em;
-  color: rgba(0,0,0,0.8);
-  text-align: center;
-  background-color: brown;
-}
 
 #giftList {
   display: -webkit-box;
@@ -123,4 +117,18 @@ section#giftsPage {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+
+/*
+* Mobile optimization
+*/
+
+@media (max-width: 575px) {
+  h1 {
+    font-size: 2rem;
+  } 
+  .gifts-banner {
+    height: 30rem;
+  }
 }

@@ -23,7 +23,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"
     />
-    <link rel="stylesheet" href="../assets/css/normalize.css" />
+  <!--<link rel="stylesheet" href="../assets/css/normalize.css" />-->
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../assets/css/gifts.css" />
     <title>Santafied | Gifts</title>
@@ -113,32 +113,20 @@
 
     <!-- :::END OF Nav -->
     <div class="container">
-      <section id="giftsPage">
-        <div id="banner">
-          <img
-            class="img-fluid"
-            data-src="../assets/img/gift_banner.jpg"
-            alt="gift_banner"
-            id="bannerImage"
-            loading="lazy"
-          />
-          <div class="caption text-center">
-            <h1>Looking for Christmas Gift Ideas?!!</h1>
-            <br />
-            <h2>Check out our List below...!!</h2>
-          </div>
-        </div>
+      <section class="gifts-banner d-flex justify-content-center">
+        <div class="gifts-banner__caption text-center">
+          <h1 class="p-5">Looking for Christmas Gift Ideas?!!</h1>
+          <h2 class="p-2">Check out our list below...!!</h2>
+        </div>   
       </section>
-      <section>
-        <div id="note">
-          <p>
-            Uhooooo.....Christmas is almost here!!<br />
-            If you haven't done your Christmas shopping yet, We're here to help
-            you with some ideas!!<br />
-            Here is a list of Christmas Gifts suggestions you can choose
-            from..<br /><br />
-          </p>
-        </div>
+      <section class="gifts-note text-center">
+        <p>Uhooooo.....Christmas is almost here!!</p>
+        <p>If you haven't done your Christmas shopping yet, We're here to help you with some ideas!!</p>
+        <p>Here is a list of Christmas Gifts suggestions you can choose from.</p>
+        </p>
+      </section>
+
+      <section>  
         <div class="row p-5" id="giftList">
           <div class="col-12 p-2">
             <div class="card gifts-card cardBackground">
