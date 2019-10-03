@@ -20,16 +20,16 @@ Over the years Santa Claus has noticed a decline in the Christmas spirit and is 
 The website should provide visitors with the following:
 
 - [ ] A page for Christmas information and facts.
-- [ ] Recipes page for traditional food and drinks at Christmas
+- [ ] Recipes page for traditional food and drinks of Christmas
 - [ ] Gift suggestions for secret santas
 - [ ] Lyrics for Christmas songs
-- [ ] Christmas games
-- [ ] Christmas Films
-- [ ] Christmas Books
-- [ ] Christmas Activities
-- [ ] Christmas themed party costumes
-- [ ] Christmas themed backgrounds
-- [ ] Christmas themed [name generator](https://www.google.com/search?q=what+is+my+christmas+name&oq=what+is+my+christma&aqs=chrome.0.0j69i57j0l4.8031j0j4&sourceid=chrome&ie=UTF-8)
+- [ ] Christmas games 🎮
+- [ ] Christmas Films 🎥
+- [ ] Christmas Books 📚
+- [ ] Christmas Activities 🤪
+- [ ] Christmas themed party costumes 👻
+- [ ] Christmas themed backgrounds 🗻
+- [ ] Christmas themed [name generator webapp](https://www.google.com/search?q=what+is+my+christmas+name&oq=what+is+my+christma&aqs=chrome.0.0j69i57j0l4.8031j0j4&sourceid=chrome&ie=UTF-8) 📱
 
 ### Suggestions & Ideas
 
@@ -44,7 +44,7 @@ Ok, so you have read the brief and checked out the designs. Ready to contribute,
 
 1. First up you need to Fork (make a copy) of this repo to your Github account.
 2. Clone (download) your fork to you computer
-3. Set your streams so you can sync you clone with the original repo (get the latest updates)
+3. Set your streams so you can sync your clone with the original repo (get the latest updates)
 
 - `git remote add upstream https://github.com/zero-to-mastery/Santafied.git`
 - `git pull upstream master`
