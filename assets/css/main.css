@@ -21,11 +21,17 @@ body {
 }
 
 .navbar {
-  padding: 20px 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
 }
 .navbar-brand {
   font-size: 2rem;
   font-weight: 600;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
 }
 .nav-link {
   margin-right: 1rem;
@@ -40,11 +46,55 @@ body {
 .nav-item:hover .dropdown-menu {
   display: block;
 }
+.dropdown-button {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: #ff4546;
+  letter-spacing: 2px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+}
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  margin-left: 4px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #ff4546;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 99;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .dropdown-menu {
   margin-top: 0;
 }
-.dropdown-item.active,
-.dropdown-item:active {
+.dropdown-item.active .dropdown-item:active {
   color: #fff;
   text-decoration: none;
   background-color: #ff4546;
@@ -54,6 +104,9 @@ body {
   letter-spacing: 0.2rem;
   font-weight: 600;
 }
+.navbar-light .navbar-nav {
+  display: block;
+}
 
 .nav-item .selected {
   font-weight: bold;
@@ -61,6 +114,23 @@ body {
 
 .navbar-light .navbar-nav .nav-link {
   color: #000;
+}
+
+.nav-form-control {
+  margin-left: 20px;
+  border-radius: 12px 0px 0px 12px;
+  border-color: #ddd;
+  border-style: solid;
+  color: #495057;
+}
+.nav-email-btn {
+  border-radius: 0px 12px 12px 0px;
+  left: -5px;
+  position: relative;
+  background-color: white;
+  color: #ff4546;
+  border-color: #ff4546;
+  border-style: solid;
 }
 
 /*Navbar END*/

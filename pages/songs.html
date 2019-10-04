@@ -18,41 +18,64 @@
 
 <body class="sub-page">
   <!-- :::NAV Starts ::: -->
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> SANTA<span
-          id="brand-color">FIED</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-item nav-link" href="../index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/facts.html">Facts</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/recipes.html">Recipes</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/gifts.html">Gifts</a></li>
-          <li class="nav-item"><a class="nav-item nav-link selected" href="../pages/songs.html">Songs</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/games.html">Games</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/films.html">Films</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/books.html">Books</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/activities.html">Activities</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              More
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="elf-name-generator.html">Elf Name Generator</a>
-              <a class="dropdown-item" href="party-costumes.html">Party Costumes</a>
-              <a class="dropdown-item" href="international.html">International</a>
-              <a class="dropdown-item" href="#">Category</a>
-            </div>
-          </li>
-        </ul>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html"><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a>
+    <div class="navbar-right">
+      <div class="dropdown">
+        <button class="dropdown-button">Navigation
+          <div class="arrow-down"></div>
+        </button>
+        <div class="dropdown-content">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="facts.html">Facts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="recipes.html">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="gifts.html">Gifts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link selected" href="songs.html">Songs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="games.html">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="films.html">Films</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="books.html">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="activities.html">Activities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="elf-name-generator.html">Elf Name Generator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="international.html">International</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="party-costumes.html">Party Costumes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="#footer">Contact Us</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </nav>
-  </div>
+      <form class="nav-form-inline">
+        <input class="nav-form-control" type="email" id="nav-form-email" />
+        <button type="submit" class="nav-email-btn">Subscribe</button>
+      </form>
+    </div>
+  </nav>
+
   <!-- :::END OF Nav -->
   <div class="container">
     <h1 class="title">Christmas Songs</h1>
@@ -71,10 +94,10 @@
             href="#white-christmas" role="tab" aria-controls="settings">White Christmas</a>
           <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
             href="#santa-baby" role="tab" aria-controls="settings">Santa Baby</a>
-            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-              href="#carol-of-the-bells" role="tab" aria-controls="settings">Carol of the Bells</a>
           <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-            href="#jingle-bell-rock" role="tab" aria-controls="settings">Jingle Bell Rock</a>  
+            href="#carol-of-the-bells" role="tab" aria-controls="settings">Carol of the Bells</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+            href="#jingle-bell-rock" role="tab" aria-controls="settings">Jingle Bell Rock</a>
         </div>
       </div>
       <!-- :::END OF MENU TO FILTER FILMS :::-->
@@ -163,12 +186,13 @@
                   <div class="card-body">
                     <h5 class="card-title">Run Rudolph Run</h5>
                     <p class="card-text">
-                      "Run, Rudolph, Run" is a Christmas song popularized by Chuck Berry, written by Johnny Marks 
-                       and Marvin Brodie and published by St. Nicholas Music (ASCAP). The song was first recorded
-                       by Berry in 1958 and released as a single on Chess Records. It has since been covered by numerous
-                       other artists, sometimes with the title "Run, Run, Rudolph". The song is a 12-bar blues, musically 
-                       similar to Berry's very popular and recognizable song "Johnny B. Goode" and melodically identical to 
-                       his song "Little Queenie", released in 1959.
+                      "Run, Rudolph, Run" is a Christmas song popularized by Chuck Berry, written by Johnny Marks
+                      and Marvin Brodie and published by St. Nicholas Music (ASCAP). The song was first recorded
+                      by Berry in 1958 and released as a single on Chess Records. It has since been covered by numerous
+                      other artists, sometimes with the title "Run, Run, Rudolph". The song is a 12-bar blues, musically
+                      similar to Berry's very popular and recognizable song "Johnny B. Goode" and melodically identical
+                      to
+                      his song "Little Queenie", released in 1959.
                     </p>
                   </div>
                 </div>
@@ -235,7 +259,8 @@
                       on Youtube and other streaming platforms.
                     </p>
                     <small class="text-muted">
-                      Watch the video on <a href="https://www.youtube.com/watch?v=WSUFzC6_fp8" target="__blank">Youtube</a>
+                      Watch the video on <a href="https://www.youtube.com/watch?v=WSUFzC6_fp8"
+                        target="__blank">Youtube</a>
                     </small>
                   </div>
                 </div>
@@ -254,11 +279,14 @@
                   <div class="card-body">
                     <h5 class="card-title">Jingle Bell Rock</h5>
                     <p class="card-text">
-                      "Jingle Bell Rock" is an American popular Christmas song first released by Bobby Helms in 1957 
-                      (after it was recorded in October of that year). It has received frequent airplay in the United States 
-                      during every Christmas season since then. "Jingle Bell Rock" was composed by Joseph Carleton Beal (1900–1967) 
-                      and James Ross Boothe (1917–1976). Beal was a Massachusetts-born public relations professional and 
-                      longtime resident of South Ocean Avenue in Atlantic City, New Jersey, and Boothe was an American writer in 
+                      "Jingle Bell Rock" is an American popular Christmas song first released by Bobby Helms in 1957
+                      (after it was recorded in October of that year). It has received frequent airplay in the United
+                      States
+                      during every Christmas season since then. "Jingle Bell Rock" was composed by Joseph Carleton Beal
+                      (1900–1967)
+                      and James Ross Boothe (1917–1976). Beal was a Massachusetts-born public relations professional and
+                      longtime resident of South Ocean Avenue in Atlantic City, New Jersey, and Boothe was an American
+                      writer in
                       the advertising business.
                     </p>
                     <small class="text-muted">

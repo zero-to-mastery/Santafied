@@ -1,401 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="../assets/js/lazyloading.js"></script>
-    <script
-      src="https://kit.fontawesome.com/5e68800c4a.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"
-    />
-    <link rel="stylesheet" href="../assets/css/normalize.css" />
-    <link rel="stylesheet" href="../assets/css/main.css" />
-    <link rel="stylesheet" href="../assets/css/gifts.css" />
-    <title>Santafied | Gifts</title>
-  </head>
-  <body>
-    <!-- :::NAV Starts ::: -->
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="../index.html"
-          ><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-        >
-          <span class="navbar-toggler-icon"></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="../assets/js/lazyloading.js"></script>
+  <script src="https://kit.fontawesome.com/5e68800c4a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css" />
+  <link rel="stylesheet" href="../assets/css/normalize.css" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/gifts.css" />
+  <title>Santafied | Gifts</title>
+</head>
+
+<body>
+  <!-- :::NAV Starts ::: -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html"><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a>
+    <div class="navbar-right">
+      <div class="dropdown">
+        <button class="dropdown-button">Navigation
+          <div class="arrow-down"></div>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="dropdown-content">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-item nav-link" href="../index.html">Home</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/facts.html">Facts</a>
+              <a class="nav-item nav-link" href="facts.html">Facts</a>
             </li>
             <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/recipes.html"
-                >Recipes</a
-              >
+              <a class="nav-item nav-link" href="recipes.html">Recipes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-item nav-link selected" href="../pages/gifts.html"
-                >Gifts</a
-              >
+              <a class="nav-item nav-link selected" href="gifts.html">Gifts</a>
             </li>
             <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/songs.html">Songs</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/games.html">Games</a>
+              <a class="nav-item nav-link" href="songs.html">Songs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/films.html">Films</a>
+              <a class="nav-item nav-link" href="games.html">Games</a>
             </li>
             <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/books.html">Books</a>
+              <a class="nav-item nav-link" href="films.html">Films</a>
             </li>
             <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/activities.html"
-                >Activities</a
-              >
+              <a class="nav-item nav-link" href="books.html">Books</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                More
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="elf-name-generator.html"
-                  >Elf Name Generator</a
-                >
-                <a class="dropdown-item" href="party-costumes.html"
-                  >Party Costumes</a
-                >
-                <a class="dropdown-item" href="international.html"
-                  >International</a
-                >
-                <a class="dropdown-item" href="#">Category</a>
-                <a class="dropdown-item" href="#">Category</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="activities.html">Activities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="elf-name-generator.html">Elf Name Generator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="international.html">International</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="party-costumes.html">Party Costumes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="#footer">Contact Us</a>
             </li>
           </ul>
         </div>
-      </nav>
+      </div>
+      <form class="nav-form-inline">
+        <input class="nav-form-control" type="email" id="nav-form-email" />
+        <button type="submit" class="nav-email-btn">Subscribe</button>
+      </form>
     </div>
+  </nav>
 
-    <!-- :::END OF Nav -->
-    <div class="container">
+  <!-- :::END OF Nav -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12" id="banner">
+        <img class="img-fluid" data-src="../assets/img/gift_banner.jpg" alt="gift_banner" id="bannerImage" />
+        <div class="caption text-center">
+          <h1>Looking for Christmas Gift Ideas?!!</h1>
+          <br />
+          <h2>Check out our List below...!!</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-12" id="note">
+      <p>
+        Uh Ooooh.....Christmas is almost here!!<br />
+        If you haven't done your Christmas shopping yet, we're here to help
+        you with some ideas!!<br />
+        Here is a list of Christmas gift suggestions you can choose from.<br /><br />
+      </p>
+    </div>
+    <div class="col-12 p-5" id="giftList">
       <div class="row">
-        <div class="col-12" id="banner">
-          <img
-            class="img-fluid"
-            data-src="../assets/img/gift_banner.jpg"
-            alt="gift_banner"
-            id="bannerImage"
-          />
-          <div class="caption text-center">
-            <h1>Looking for Christmas Gift Ideas?!!</h1>
-            <br />
-            <h2>Check out our List below...!!</h2>
+        <div class="col-12 p-2">
+          <div class="card gifts-card cardBackground">
+            <div class="card-body">
+              <h2 class="card-title text-center">1. Plush Toys</h2>
+              <p class="card-text text-center">
+                Plush toys make timeless gifts that kids of all ages love!
+                Pick out a special cuddly friend.
+              </p>
+            </div>
+            <div class="row p-5">
+              <div class="col-lg-4 col-md-6 col-12">
+                <div id="single-product" class="card">
+                  <div class="card-body row p-0">
+                    <div class="col-6">
+                      <img class="img-fluid" data-src="../assets/img/gift_bears.jpg" alt="Card image" loading="lazy" />
+                    </div>
+                    <div class="content col-6">
+                      <h4>Teddy Bear</h4>
+                      <span>$29.99</span>
+                      <button class="btn btn-danger">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div id="single-product" class="card">
+                  <div class="card-body row p-0">
+                    <div class="col-6">
+                      <img class="img-fluid" data-src="../assets/img/gift_dolls.jpg" alt="Card image" loading="lazy" />
+                    </div>
+                    <div class="content col-6">
+                      <h4>Doll</h4>
+                      <span>$29.99</span>
+                      <button class="btn btn-danger">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div id="single-product" class="card">
+                  <div class="card-body row p-0">
+                    <div class="col-6">
+                      <img class="img-fluid" data-src="../assets/img/gift_cats.jpg" alt="Card image" loading="lazy" />
+                    </div>
+                    <div class="content col-6">
+                      <h4>Cat</h4>
+                      <span>$29.99</span>
+                      <button class="btn btn-danger">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-12" id="note">
-        <p>
-          Uh Ooooh.....Christmas is almost here!!<br />
-          If you haven't done your Christmas shopping yet, we're here to help
-          you with some ideas!!<br />
-          Here is a list of Christmas gift suggestions you can choose from.<br /><br />
-        </p>
-      </div>
-      <div class="col-12 p-5" id="giftList">
-        <div class="row">
-            <div class="col-12 p-2">
-              <div class="card gifts-card cardBackground">
-                <div class="card-body">
-                  <h2 class="card-title text-center">1. Plush Toys</h2>
-                  <p class="card-text text-center">
-                    Plush toys make timeless gifts that kids of all ages love!
-                    Pick out a special cuddly friend.
-                  </p>
+        <div class="col-6 p-2">
+          <div class="card gifts-card cardBackground">
+            <div class="card-body">
+              <h2 class="card-title text-center">2. Home Decors</h2>
+              <p class="card-text text-center">
+                Home Decor gives you a wide variety of lovely gift options to
+                select from. Choose from wall hangings, candles, and figurines
+                to brighten anyone's Christmas.
+              </p>
+              <div class="products">
+                <div id="single-product" class="card">
+                  <div class="card-body row p-0">
+                    <div class="col-6">
+                      <img class="img-fluid" data-src="../assets/img/gift_homedecor2.jpg" alt="Card image"
+                        loading="lazy" />
+                    </div>
+                    <div class="content col-6">
+                      <h4>Assorted Wall Hangings</h4>
+                      <span>$59.99</span>
+                      <button class="btn btn-danger">Buy Now</button>
+                    </div>
+                  </div>
                 </div>
-                <div class="row p-5">
-                  <div class="col-lg-4 col-md-6 col-12">
-                    <div id="single-product" class="card">
-                      <div class="card-body row p-0">
-                        <div class="col-6">
-                          <img
-                            class="img-fluid"
-                            data-src="../assets/img/gift_bears.jpg"
-                            alt="Card image"
-                            loading="lazy"
-                          />
-                        </div>
-                        <div class="content col-6">
-                          <h4>Teddy Bear</h4>
-                          <span>$29.99</span>
-                          <button class="btn btn-danger">Buy Now</button>
-                        </div>
-                      </div>
+                <div id="single-product" class="card">
+                  <div class="card-body row p-0">
+                    <div class="col-6">
+                      <img class="img-fluid" data-src="../assets/img/gift_homedecor_candles.jpg" alt="Card image"
+                        loading="lazy" />
                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-12">
-                    <div id="single-product" class="card">
-                      <div class="card-body row p-0">
-                        <div class="col-6">
-                          <img
-                            class="img-fluid"
-                            data-src="../assets/img/gift_dolls.jpg"
-                            alt="Card image"
-                            loading="lazy"
-                          />
-                        </div>
-                        <div class="content col-6">
-                          <h4>Doll</h4>
-                          <span>$29.99</span>
-                          <button class="btn btn-danger">Buy Now</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-12">
-                    <div id="single-product" class="card">
-                      <div class="card-body row p-0">
-                        <div class="col-6">
-                          <img
-                            class="img-fluid"
-                            data-src="../assets/img/gift_cats.jpg"
-                            alt="Card image"
-                            loading="lazy"
-                          />
-                        </div>
-                        <div class="content col-6">
-                          <h4>Cat</h4>
-                          <span>$29.99</span>
-                          <button class="btn btn-danger">Buy Now</button>
-                        </div>
-                      </div>
+                    <div class="content col-6">
+                      <h4>Candles</h4>
+                      <span>$59.99</span>
+                      <button class="btn btn-danger">Buy Now</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-6 p-2">
-              <div class="card gifts-card cardBackground">
-                <div class="card-body">
-                  <h2 class="card-title text-center">2. Home Decors</h2>
-                  <p class="card-text text-center">
-                    Home Decor gives you a wide variety of lovely gift options to
-                    select from. Choose from wall hangings, candles, and figurines
-                    to brighten anyone's Christmas.
-                  </p>
-                  <div class="products">
-                    <div id="single-product" class="card">
-                      <div class="card-body row p-0">
-                        <div class="col-6">
-                          <img
-                            class="img-fluid"
-                            data-src="../assets/img/gift_homedecor2.jpg"
-                            alt="Card image"
-                            loading="lazy"
-                          />
-                        </div>
-                        <div class="content col-6">
-                          <h4>Assorted Wall Hangings</h4>
-                          <span>$59.99</span>
-                          <button class="btn btn-danger">Buy Now</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div id="single-product" class="card">
-                      <div class="card-body row p-0">
-                        <div class="col-6">
-                          <img
-                            class="img-fluid"
-                            data-src="../assets/img/gift_homedecor_candles.jpg"
-                            alt="Card image"
-                            loading="lazy"
-                          />
-                        </div>
-                        <div class="content col-6">
-                          <h4>Candles</h4>
-                          <span>$59.99</span>
-                          <button class="btn btn-danger">Buy Now</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 p-2">
-              <div class="card gifts-card cardBackground">
-                <div class="card-body">
-                  <h2 class="card-title text-center">3. Wristwatch</h2>
-                  <p class="card-text text-center">
-                    Wristwatches are yet another wonderful gift option for a
-                    special person in your life. Choose an elegant or sporty watch
-                    to reflect the recipient's personality.
-                  </p>
-                  <div class="row watches">
-                    <div class="col-lg-6 col-12">
-                      <div id="single-product-2" class="card">
-                        <div class="card-body row p-0">
-                          <div class="col-12">
-                            <img
-                              class="img-fluid"
-                              data-src="../assets/img/gift_wristwatch.jpg"
-                              alt="Card image"
-                              loading="lazy"
-                            />
-                          </div>
-                          <div class="content col-12">
-                            <h4>Elegant Wristwatch</h4>
-                            <span>$69.99</span>
-                            <button class="btn btn-danger">Buy Now</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-12">
-                      <div id="single-product-2" class="card">
-                        <div class="card-body row p-0">
-                          <div class="col-12">
-                            <img
-                              class="img-fluid"
-                              data-src="../assets/img/gift_wristwatch_sport.jpg"
-                              alt="Card image"
-                              loading="lazy"
-                            />
-                          </div>
-                          <div class="content col-12">
-                            <h4>Sports Watch</h4>
-                            <span>$59.99</span>
-                            <button class="btn btn-danger">Buy Now</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 p-2">
-              <div class="card gifts-card cardBackground">
-                <div class="card-body">
-                  <h2 class="card-title text-center">4. Books</h2>
-                  <p class="card-text text-center">
-                    Whether it be a children's story book, fiction or non-fiction,
-                    books almost make the best gifts that will be cherished long
-                    after the holiday is over.
-                  </p>
-                  <div id="single-product" class="card">
+          </div>
+        </div>
+        <div class="col-6 p-2">
+          <div class="card gifts-card cardBackground">
+            <div class="card-body">
+              <h2 class="card-title text-center">3. Wristwatch</h2>
+              <p class="card-text text-center">
+                Wristwatches are yet another wonderful gift option for a
+                special person in your life. Choose an elegant or sporty watch
+                to reflect the recipient's personality.
+              </p>
+              <div class="row watches">
+                <div class="col-lg-6 col-12">
+                  <div id="single-product-2" class="card">
                     <div class="card-body row p-0">
-                      <div class="col-6">
-                        <img
-                          class="img-fluid"
-                          data-src="../assets/img/gift_books.jpg"
-                          alt="Card image"
-                          loading="lazy"
-                        />
+                      <div class="col-12">
+                        <img class="img-fluid" data-src="../assets/img/gift_wristwatch.jpg" alt="Card image"
+                          loading="lazy" />
                       </div>
-                      <div class="content col-6">
-                        <h4>Children's Books</h4>
-                        <span>$19.99</span>
-                        <button class="btn btn-danger">Buy Now</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="single-product" class="card">
-                    <div class="card-body row p-0">
-                      <div class="col-6">
-                        <img
-                          class="img-fluid"
-                          data-src="../assets/img/gift_books_novel.jpg"
-                          alt="Card image"
-                          loading="lazy"
-                        />
-                      </div>
-                      <div class="content col-6">
-                        <h4>Popular Novel</h4>
-                        <span>$19.99</span>
+                      <div class="content col-12">
+                        <h4>Elegant Wristwatch</h4>
+                        <span>$69.99</span>
                         <button class="btn btn-danger">Buy Now</button>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-6 p-2">
-              <div class="card gifts-card cardBackground">
-                <div class="card-body">
-                  <h2 class="card-title text-center">
-                    5. Art Supplies & Accessories
-                  </h2>
-                  <p class="card-text text-center">
-                    Looking for a gift for an artist in your life? Choose from
-                    painting supplies and colored pencils to enhance their
-                    creativity!
-                  </p>
-                  <div id="single-product" class="card">
+                <div class="col-lg-6 col-12">
+                  <div id="single-product-2" class="card">
                     <div class="card-body row p-0">
-                      <div class="col-6">
-                        <img
-                          class="img-fluid"
-                          data-src="../assets/img/gift_colours.jpg"
-                          alt="Card image"
-                          loading="lazy"
-                        />
+                      <div class="col-12">
+                        <img class="img-fluid" data-src="../assets/img/gift_wristwatch_sport.jpg" alt="Card image"
+                          loading="lazy" />
                       </div>
-                      <div class="content col-6">
-                        <h4>Painting Supplies</h4>
-                        <span>$19.99</span>
-                        <button class="btn btn-danger">Buy Now</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="single-product" class="card">
-                    <div class="card-body row p-0">
-                      <div class="col-6">
-                        <img
-                          class="img-fluid"
-                          data-src="../assets/img/gift_colours_pencils.jpg"
-                          alt="Card image"
-                          loading="lazy"
-                        />
-                      </div>
-                      <div class="content col-6">
-                        <h4>Colored Pencils</h4>
-                        <span>$19.99</span>
+                      <div class="content col-12">
+                        <h4>Sports Watch</h4>
+                        <span>$59.99</span>
                         <button class="btn btn-danger">Buy Now</button>
                       </div>
                     </div>
@@ -405,25 +238,98 @@
             </div>
           </div>
         </div>
+        <div class="col-6 p-2">
+          <div class="card gifts-card cardBackground">
+            <div class="card-body">
+              <h2 class="card-title text-center">4. Books</h2>
+              <p class="card-text text-center">
+                Whether it be a children's story book, fiction or non-fiction,
+                books almost make the best gifts that will be cherished long
+                after the holiday is over.
+              </p>
+              <div id="single-product" class="card">
+                <div class="card-body row p-0">
+                  <div class="col-6">
+                    <img class="img-fluid" data-src="../assets/img/gift_books.jpg" alt="Card image" loading="lazy" />
+                  </div>
+                  <div class="content col-6">
+                    <h4>Children's Books</h4>
+                    <span>$19.99</span>
+                    <button class="btn btn-danger">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div id="single-product" class="card">
+                <div class="card-body row p-0">
+                  <div class="col-6">
+                    <img class="img-fluid" data-src="../assets/img/gift_books_novel.jpg" alt="Card image"
+                      loading="lazy" />
+                  </div>
+                  <div class="content col-6">
+                    <h4>Popular Novel</h4>
+                    <span>$19.99</span>
+                    <button class="btn btn-danger">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 p-2">
+          <div class="card gifts-card cardBackground">
+            <div class="card-body">
+              <h2 class="card-title text-center">
+                5. Art Supplies & Accessories
+              </h2>
+              <p class="card-text text-center">
+                Looking for a gift for an artist in your life? Choose from
+                painting supplies and colored pencils to enhance their
+                creativity!
+              </p>
+              <div id="single-product" class="card">
+                <div class="card-body row p-0">
+                  <div class="col-6">
+                    <img class="img-fluid" data-src="../assets/img/gift_colours.jpg" alt="Card image" loading="lazy" />
+                  </div>
+                  <div class="content col-6">
+                    <h4>Painting Supplies</h4>
+                    <span>$19.99</span>
+                    <button class="btn btn-danger">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div id="single-product" class="card">
+                <div class="card-body row p-0">
+                  <div class="col-6">
+                    <img class="img-fluid" data-src="../assets/img/gift_colours_pencils.jpg" alt="Card image"
+                      loading="lazy" />
+                  </div>
+                  <div class="content col-6">
+                    <h4>Colored Pencils</h4>
+                    <span>$19.99</span>
+                    <button class="btn btn-danger">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <footer class="site-footer">
-      &copy; Santafied. A project under zero-to-mastery.
-    </footer>
+  </div>
+  <footer class="site-footer">
+    &copy; Santafied. A project under zero-to-mastery.
+  </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
