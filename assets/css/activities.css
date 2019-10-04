@@ -1,4 +1,7 @@
 
+.card-text {
+  height: 10vh;
+}
 
 .btn-primary {
   background-color: #ff4546 !important;
