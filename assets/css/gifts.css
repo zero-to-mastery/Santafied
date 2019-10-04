@@ -13,8 +13,8 @@ div.products {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-top: 2em;
 }
 
@@ -30,8 +30,8 @@ div.watches {
 }
 
 #bannerImage {
-  width: 100%;
   height: 90vh;
+  object-fit: cover;
 }
 
 #banner {
@@ -42,7 +42,7 @@ div.watches {
 #banner .caption {
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -51,10 +51,10 @@ div.watches {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   font-size: 2em;
-  text-shadow: 3px 2px 1px rgba(0,0,0,0.6);
+  text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.6);
   padding: 30px;
 }
 
@@ -65,7 +65,7 @@ div.watches {
   padding: 20px;
   /* border-top: 2px solid rgba(255, 255, 255, 0.8); */
   font-size: 1.8em;
-  color: rgba(0,0,0,0.8);
+  color: rgba(0, 0, 0, 0.8);
   text-align: center;
   background-color: brown;
   margin-bottom: 40px;
@@ -77,24 +77,25 @@ div.watches {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #ff4546;
   /* border-top: 2px solid rgba(255, 255, 255, 0.8); */
   margin-bottom: 40px;
 }
-.cardBackground{
-  background-color: rgba(0,0,0,0.5);
+.cardBackground {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .card-img-top {
   height: 50%;
 }
-.card-title,.card-text{
+.card-title,
+.card-text {
   color: white;
 }
 
