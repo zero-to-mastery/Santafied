@@ -19,7 +19,8 @@ div.products {
 }
 
 div.watches {
-  height: 80%;
+  height: 72%;
+  margin-top: 30px;
 }
 /* #giftsPage {
   background-color: #ff4546;
@@ -126,7 +127,7 @@ div.watches {
 #single-product-2 img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  height: 200px;
+  height: 250px;
 }
 #single-product-2 .content {
   padding-left: 40px;
@@ -135,4 +136,15 @@ div.watches {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.img-fluid {
+  width: 100vw;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
 }
