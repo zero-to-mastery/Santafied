@@ -45,7 +45,11 @@ const navLinks = [
   },
   {
     label: "Party Costumes",
-    href:  "party-costumes.html",
+    href:  "pages/party-costumes.html",
+  },
+  {
+    label: "Blog",
+    href:  "pages/blog.html",
   },
   {
     label: "Contact Us",
@@ -54,13 +58,24 @@ const navLinks = [
 ];
 
 const generateLinks = () => {
+  let dropdownEl = null;
+  if (document.getElementById("nav-dropdown")) {
+    dropdownEl = document.getElementById("nav-dropdown");
+  } else {
+    dropdownEl = document.getElementById("nav-dropdown-from-page");
+    navLinks.pop();
+  }
+
   navLinks.forEach(navLink => {
+    if (document.getElementById("nav-dropdown-from-page")) {
+      navLink.href = `../${navLink.href}`;
+    }
+
     const anchor = document.createElement("a");
     anchor.href = navLink.href;
     anchor.className = "dropdown-item";
     anchor.innerText = navLink.label;
-
-    document.getElementById("nav-dropdown").appendChild(anchor);
+    dropdownEl.appendChild(anchor);
   });
 }
 

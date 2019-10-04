@@ -35,6 +35,17 @@ body {
   font-size: 0.9rem;
   font-style: italic;
   font-weight: 500;
+  color: black;
+}
+
+@media (hover: hover) {
+  .nav-link:hover {
+    color: #ff4546;
+  }
+}
+
+.dropdown-container {
+  margin-left: auto;
 }
 
 .nav-item:hover .dropdown-menu {
