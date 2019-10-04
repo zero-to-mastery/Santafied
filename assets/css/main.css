@@ -20,6 +20,28 @@ body {
   color: #ff4546;
 }
 
+.navbar-container {
+ margin: 0;
+ max-width: 100%;
+}
+
+.navbar-links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
+  width: 100%;  
+  padding-right: 100px;
+  padding-left: 50px;
+}
+
+@media (max-width: 1200px) {
+  .navbar-links-container {
+    align-items: flex-start;
+    padding: 0;
+  }
+}
+
 .navbar {
   padding: 20px 16px;
 }
