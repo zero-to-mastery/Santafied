@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="../assets/css/main.css" />
-  <link rel="stylesheet" href="../assets/css/films.css" />
+  <link rel="stylesheet" href="../assets/css/name-generator.css" />
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/elf-name-generator.css" />
   <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap" rel="stylesheet" />
@@ -43,7 +43,7 @@
               More
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="elf-name-generator.html">Elf Name Generator</a>
+              <a class="dropdown-item" href="name-generator.html">Name Generator</a>
               <a class="dropdown-item" href="international.html">International</a>
               <a class="dropdown-item" href="party-costumes.html">Party Costumes</a>
             </div>
@@ -56,10 +56,58 @@
   <!-- :::END OF Nav -->
 
   <div class="container">
-    <h1 class="title">Elf Name Generator</h1>
+    <h1 class="title">Name Generator</h1>
     <div class="name-generator">
+      <div class="name-choice">
+        <h3>First letter of your name</h3>
+        <select id="name" class="box-style" onchange="letterChoice()">
+            <option value="Cookie">A</option>
+            <option value="Sugar-plum">B</option>
+            <option value="Frosty">C</option>
+            <option value="Mistletoe">D</option>
+            <option value="Snowflake">E</option>
+            <option value="Cranberry">F</option>
+            <option value="Pickle-Pants">G</option>
+            <option value="Twinkle-Nose">H</option>
+            <option value="Eggnog">I</option>
+            <option value="Shimmer">J</option>
+            <option value="Pudding">K</option>
+            <option value="Pointy-Toes">L</option>
+            <option value="Kringle">M</option>
+            <option value="Dashing">N</option>
+            <option value="Turkey-Bell">O</option>
+            <option value="Honey-Ham">P</option>
+            <option value="Peppermint">Q</option>
+            <option value="Jolly-Joseph">R</option>
+            <option value="Grinch">S</option>
+            <option value="Tinsle-Cheeks">T</option>
+            <option value="McJingles">U</option>
+            <option value="Snowman">V</option>
+            <option value="Cinnamon Bun">W</option>
+            <option value="Merry-Mary">X</option>
+            <option value="Glitter">Y</option>
+            <option value="Ruldoph">Z</option>
+          </select>
+        </div>
+        <div class="month-choice">
+          <h3>Your birth month</h3>
+          <select id="month" class="box-style" onchange="monthChoice()">
+              <option value="Lord Crackle">Jan</option>
+              <option value="Razzle-Dazzle">Feb</option>
+              <option value="Maple">Mar</option>
+              <option value="McMittens">Apr</option>
+              <option value="Angry Elf">May</option>
+              <option value="Von Pretzel">Jun</option>
+              <option value="St.Candy Cane">July</option>
+              <option value="Bon Bon">Aug</option>
+              <option value="Long Beard">Sep</option>
+              <option value="Snickerdoodle">Oct</option>
+              <option value="Arctic Puffin">Nov</option>
+              <option value="Claus">Dec</option>
+            </select>
+          </div>
       <div id="name-box">
-        <p class="name">Click the button!</p>
+        <p class="given-name">Click the button!</p>
       </div>
       <button id="loadName">Elf Me</button>
     </div>
@@ -78,7 +126,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-  <script src="../assets/js/elf-name-generator.js"></script>
+  <script src="../assets/js/name-generator.js"></script>
 </body>
 
 </html>
