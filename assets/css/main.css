@@ -252,19 +252,13 @@ footer {
 .subtitle {
   font-size: 18px;
 }
-.page-content {
-  height: 100vh;
-}
+
 .form-inline {
   justify-content: center;
 }
 
-
-.page-content{
+.page-content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
-
