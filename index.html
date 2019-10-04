@@ -15,6 +15,16 @@
   <link rel="stylesheet" href="./assets/css/main.css" />
   <link rel="stylesheet" href="./assets/css/home.css" />
   <title>Santafied</title>
+
+  <style>
+    #nav-item{
+      color: #ff4546;
+    }
+    #nav-item:hover{
+      background-color: #ff4546;
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
@@ -26,6 +36,7 @@
         aria-controls="navbarNavAltMarkup">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -68,11 +79,12 @@
 
               <a class="dropdown-item" href="pages/international.html">International</a>
               <a class="dropdown-item" href="party-costumes.html">Party Costumes</a>
-
+              <a class="dropdown-item" href="blog.html">Blog</a>
             </div>
           </li>
         </ul>
       </div>
+    </div>
   </div>
   </div>
   </nav>
@@ -161,9 +173,29 @@
   </section>
 
   </section>
-  <!-- Page content -->
-  <section class="page-content">
-    <iframe src="https://tunein.com/embed/player/s117270/" style="width:100%; height:100px;" scrolling="no" frameborder="no"></iframe>
+
+  <!-- page cards on the index #209 -->
+    <section>
+      <div class="container d-flex flex-row flex-wrap align-items-center justify-content-center mt-5 mb-3">
+          <a id="nav-item" href="pages/facts.html" class="card m-2 shadow-sm d-flex align-items-center justify-content-center" style="width: 100%; max-width: 14.5rem; text-decoration: none;"><div class="card-body"><h5 class="card-title m-0">Facts</h5></div></a>
+          <a id="nav-item" href="pages/recipes.html" class="card m-2 shadow-sm d-flex align-items-center justify-content-center" style="width: 100%; max-width: 14.5rem; text-decoration: none;"><div class="card-body"><h5 class="card-title m-0">Recipes</h5></div></a>
+          <a id="nav-item" href="pages/gifts.html" class="card m-2 shadow-sm d-flex align-items-center justify-content-center" style="width: 100%; max-width: 14.5rem; text-decoration: none;"><div class="card-body"><h5 class="card-title m-0">Gifts</h5></div></a>
+          <a id="nav-item" href="pages/songs.html" class="card m-2 shadow-sm d-flex align-items-center justify-content-center" style="width: 100%; max-width: 14.5rem; text-decoration: none;"><div class="card-body"><h5 class="card-title m-0">Songs</h5></div></a>
+          <a id="nav-item" href="pages/games.html" class="card m-2 shadow-sm d-flex align-items-center justify-content-center" style="width: 100%; max-width: 14.5rem; text-decoration: none;"><div class="card-body"><h5 class="card-title m-0">Games</h5></div></a>
+          <a id="nav-item" href="pages/films.html" class="card m-2 shadow-sm d-flex align-items-center justify-content-center" style="width: 100%; max-width: 14.5rem; text-decoration: none;"><div class="card-body"><h5 class="card-title m-0">Films</h5></div></a>
+          <a id="nav-item" href="pages/books.html" class="card m-2 shadow-sm d-flex align-items-center justify-content-center" style="width: 100%; max-width: 14.5rem; text-decoration: none;"><div class="card-body"><h5 class="card-title m-0">Books</h5></div></a>
+          <a id="nav-item" href="pages/activities.html" class="card m-2 shadow-sm d-flex align-items-center justify-content-center" style="width: 100%; max-width: 14.5rem; text-decoration: none;"><div class="card-body"><h5 class="card-title m-0">Activities</h5></div></a>
+      </div>
+    </section>
+    <!-- end page cards on the index #209 -->
+
+  <section>
+    <div class="container my-5">
+      <h2 class="text-center mb-5" style="font-family: 'Mountains of Christmas', cursive; font-size: 3rem;">Christmas
+        Radio</h2>
+      <iframe src="https://tunein.com/embed/player/s117270/" style="width:100%; height:100px;" scrolling="no"
+        frameborder="no"></iframe>
+    </div>
   </section>
 
   <section class="container-fluid feature-section">
@@ -215,7 +247,7 @@
           <a href="tel:+1800123456" class="footer-tel">+ 1 800 123 456</a><br /><span class="footer-email">Email
             <a href="mailto:support@santafied.fi">support@santafied.fi</a></span>
         </div>
-        <div class="col-12 col-md-4 footer-links" >
+        <div class="col-12 col-md-4 footer-links">
           <h4>Links</h4>
           <ul class="list-unstyled">
             <li><a href="pages/facts.html">Facts and Info</a></li>
