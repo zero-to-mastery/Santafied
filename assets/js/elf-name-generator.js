@@ -1,16 +1,19 @@
 //array of first Name
-let firstNames = [
-  "Sparkle","BoBunny","Jolly","Moxie","Bella","Charmy","Glitzy",
-  "Bling-Bling","Perky","Cosmo","Bubbles","Pixie","Frilly","Scrappy",
-  "Bitty","Purdy","Tinsel","Foxy","Stampy","Inky","Wonky","Glimmer",
-  "Shimmer","Happy","Button","Tiny","Snowy","Fluffy","Jolly","Mischievous",
+
+let firstNames = [ "Annabell", "Bella", "Bitty", "Bling-Bling", "BoBunny",
+  "Bubbles", "Button", "Charmy", "Cosmo", "Flower", "Fluffy", "Foxy",
+  "Frilly", "Glimmer", "Glitzy", "Happy", "Inky", "Jolly", "Jolly",
+  "Mischievous", "Moxie", "Perky", "Pixie", "Purdy", "Scrappy", "Shimmer",
+  "Shorty", "Snowy", "Sparkle", "Stampy", "Tinsel", "Tiny", "Twinkle", "Wonky"
 ];
 
 //array of last Name
+
 let lastNames = [
-  "Gifty-Pants","Point-Ears","Sugar-Gems","McSprinkles","Merry-Mess",
-  "Jingle-Bells","Glitter-Bottom","Crafty-Pants","Twinkle-Toes",
-  "Sugar-Stitches","McGlitter","Curly-Toes","Big-ears","Rolly-Renn","Twinkles",
+  "Big-ears", "Blue-bug", "Crafty-Pants", "Curly-Toes", "Gifty-Pants",
+  "Glitter-Bottom", "Jingle-Bells", "McGlitter", "McSprinkles", "Merry-Mess",
+  "Point-Ears", "Rolly-Renn", "Sugar-Gems", "Sugar-Stitches", "Twinkle-Toes",
+  "Twinkles", "Upset", "Yoyo", "Zoom"
 ];
 
 //generateName function
