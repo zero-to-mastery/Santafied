@@ -1,0 +1,24 @@
+.card-tag {
+  padding: 5px 10px;
+  border: 1px solid green;
+  color: green;
+  display: inline-block;
+}
+
+.card-tag:hover {
+  border-color: red;
+  color: red;
+}
+
+.card-title a {
+  color: #000;
+}
+
+.card-subtext {
+  color: #ccc;
+}
+
+.card-subtext .author:after {
+  content: '|';
+  margin-left: 10px;
+}

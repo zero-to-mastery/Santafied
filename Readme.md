@@ -1,8 +1,8 @@
-![](https://cdn.discordapp.com/attachments/598312632407293963/626070022447431783/santafied.png)
-
 # Santafied - Hacktoberfest 2019
 
-Welcome to this years HTML challenge for Hacktoberfest ([What is Hacktoberfest?](https://github.com/zero-to-mastery/hacktoberfest-2019#what-is-hacktoberfest)). A project with beginners and aspiring developers in mind, utilising HTML, CSS & maybe a dash of JavaScript to achieve a simplistic yet elegant Christmas themed website.
+![Santafied](https://cdn.discordapp.com/attachments/598312632407293963/626070022447431783/santafied.png)
+
+Welcome to this years HTML challenge for Hacktoberfest ([What is Hacktoberfest?](https://github.com/zero-to-mastery/hacktoberfest-2019#what-is-hacktoberfest)). A project with beginners and aspiring developers in mind, utilizing HTML, CSS & maybe a dash of JavaScript to achieve a simplistic yet elegant Christmas themed website.
 
 Everyone is encouraged to participate, regardless of your skill level. This is a practice project and should be considered a playground. This project has plenty of options for collaboration, here are just a few of the many that we welcome pull requests:
 
@@ -20,16 +20,16 @@ Over the years Santa Claus has noticed a decline in the Christmas spirit and is 
 The website should provide visitors with the following:
 
 - [ ] A page for Christmas information and facts.
-- [ ] Recipes page for traditional food and drinks at Christmas
+- [ ] Recipes page for traditional food and drinks of Christmas
 - [ ] Gift suggestions for secret santas
 - [ ] Lyrics for Christmas songs
-- [ ] Christmas games
-- [ ] Christmas Films
-- [ ] Christmas Books
-- [ ] Christmas Activities
-- [ ] Christmas themed party costumes
-- [ ] Christmas themed backgrounds
-- [ ] Christmas themed [name generator](https://www.google.com/search?q=what+is+my+christmas+name&oq=what+is+my+christma&aqs=chrome.0.0j69i57j0l4.8031j0j4&sourceid=chrome&ie=UTF-8)
+- [ ] Christmas games 🎮
+- [ ] Christmas Films 🎥
+- [ ] Christmas Books 📚
+- [ ] Christmas Activities 🤪
+- [ ] Christmas themed party costumes 👻
+- [ ] Christmas themed backgrounds 🗻
+- [ ] Christmas themed [name generator webapp](https://www.google.com/search?q=what+is+my+christmas+name&oq=what+is+my+christma&aqs=chrome.0.0j69i57j0l4.8031j0j4&sourceid=chrome&ie=UTF-8) 📱
 
 ### Suggestions & Ideas
 
@@ -44,7 +44,7 @@ Ok, so you have read the brief and checked out the designs. Ready to contribute,
 
 1. First up you need to Fork (make a copy) of this repo to your Github account.
 2. Clone (download) your fork to you computer
-3. Set your streams so you can sync you clone with the original repo (get the latest updates)
+3. Set your streams so you can sync your clone with the original repo (get the latest updates)
 
 - `git remote add upstream https://github.com/zero-to-mastery/Santafied.git`
 - `git pull upstream master`
@@ -57,7 +57,7 @@ Ok, so you have read the brief and checked out the designs. Ready to contribute,
 
 **All discussions around this event can now be had in our #hacktoberfest-2019 channel on Discord!**
 
-Congratulations! You are now one pull request closer to getting that free t-shirt. Repeat steps 4-7 until you have made at least 4 qualifying pull requests. You can check how many qualifying pull requests you have made at https://hacktoberfest.digitalocean.com/profile Have Fun and Happy Coding Guys!
+Congratulations! You are now one pull request closer to getting that free t-shirt. Repeat steps 4-7 until you have made at least 4 qualifying pull requests. You can check how many qualifying pull requests you have made at <https://hacktoberfest.digitalocean.com/profile> Have Fun and Happy Coding Guys!
 
 ## To ensure everyone has the best chance at participating in this project. Please follow these simple guidelines where possible:
 
