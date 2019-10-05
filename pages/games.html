@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <script src="../assets/js/lazyloading.js"></script>
+  <script src="../assets/data/games.js"></script>
   <script src="https://kit.fontawesome.com/5e68800c4a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
@@ -58,168 +59,33 @@
   <div class="container">
     <h1 class="title">Christmas Games</h1>
     <div class="row">
-      <div class="col-4">
-        <div class="list-group" id="list-tab" role="tablist">
-          <a class="list-group-item list-group-item-action active" id="list-profile-list" data-toggle="list"
-            href="#last-christmas" role="tab" aria-controls="profile">Candy Canes</a>
-          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-            href="#all-i-want-for-christmas" role="tab" aria-controls="settings">Snowball Throw</a>
-          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#monopoly"
-            role="tab" aria-controls="settings">Monopoly</a>
-          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#stocking-game"
-            role="tab" aria-controls="settings">Christmas Stocking Game</a>
-            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#activity-game"
-            role="tab" aria-controls="settings">Activity Board Game</a>
-            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#christmas-piñatas"
-            role="tab" aria-controls="settings">Christmas Piñatas</a>
-        </div>
-      </div>
-      <!-- :::END OF MENU TO FILTER GAMES :::-->
+        <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist"></div>
+          </div>
+  <!-- :::END OF MENU TO FILTER GAMES :::-->
 
-      <!-- ::: CARDS OF GAMES :::-->
+      <!-- ::: CARDS OF GAMES (add games in the assets-> data-> games.js file):::-->
       <div class="col-8">
-        <div class="tab-content" id="nav-tabContent">
-          <!-- ::: CARD EXAMPLE OF A GAMES :::-->
-          <div class="tab-pane active" id="last-christmas" role="tabpanel" aria-labelledby="grinch-stole-list">
-            <div class="card mb-3" style="max-width: 670px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img
-                    data-src="https://i1.wp.com/bestlifeonline.com/wp-content/uploads/2017/12/shutterstock_518406193.jpg?w=1024&ssl=1"
-                    class="card-img" alt="..." loading="lazy" />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Candy Canes</h5>
-                    <p class="card-text">
-                      Similar to Spoons, only with candy canes. To play this game, grab a few candy canes, a deck of
-                      cards, and a group of three-to-six individuals or any number of people that can be accommodated by
-                      your dinner table. All the gamers must be able to reach the center of the table. And for more
-                      great holiday coverage, <a
-                        href="https://bestlifeonline.com/16-ways-christmas-was-better-in-the-90s/">here are the 16 Ways
-                        Christmas Was Way Better in the 90s.</a>
-                    </p>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane active">
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img id="cardImage" src="" class="card-img" alt="..." />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 id="cardTitle" class="card-title"></h5>
+                      <p id="cardText" class="card-text"></p>
+                      <p>Link: <a id="cardLink" href=""></a></p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- ::: END OF CARD EXAMPLE :::-->
-          <!-- START OF SNOWBALL THROW -->
-          <div class="tab-pane fade" id="all-i-want-for-christmas" role="tabpanel" aria-labelledby="grinch-stole-list">
-            <div class="card mb-3" style="max-width: 670px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img data-src="https://upload.wikimedia.org/wikipedia/commons/d/de/Throwing_a_snowball_in_Boston.jpg"
-                    class="card-img" alt="..." loading="lazy" />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Snowball Throw</h5>
-                    <p class="card-text">
-                      No, this is not a traditional snowball fight like you might have done as a kid. <a
-                        href="https://i1.wp.com/bestlifeonline.com/wp-content/uploads/2017/12/shutterstock_572772310.jpg?w=1024&ssl=1">This
-                        one</a> involves a person tossing marshmallows to fellow team members, aiming for his or her
-                      mouth. The team gains a point every time a marshmallow is caught—just make sure everyone washes
-                      their hands before and after the game.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END OF SNOWBALL THROW -->
-          <!-- START OF MONOPOLY -->
-          <div class="tab-pane fade" id="monopoly" role="tabpanel" aria-labelledby="grinch-stole-list">
-            <div class="card mb-3" style="max-width: 670px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img
-                    data-src="https://images.unsplash.com/photo-1566477479308-2b7abe8d7db9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-                    class="card-img" alt="..." />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Monopoly</h5>
-                    <p class="card-text">
-                      The greatest Christmas game of all time. If you aren't prepared to lose every friend you have over
-                      a game of Monopoly then you aren't playing hard enough! <a
-                        href="https://en.wikipedia.org/wiki/Monopoly_(game)">Check it out here</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END OF MONOPOLY -->
-           <!-- :::START OF CHRISTMAS STOCKING GAME :::-->
-      <div class="tab-pane fade" id="stocking-game" role="tabpanel" aria-labelledby="grinch-stole-list">
-        <div class="card mb-3" style="max-width: 670px;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img
-                data-src="https://www.publicdomainpictures.net/pictures/280000/nahled/christmas-stocking-1544937611jzU.jpg"
-                class="card-img" alt="..." />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Christmas Stocking Games</h5>
-                <p class="card-text">
-                  Young and old love playing <a
-                  href="https://www.ornamentshop.com/xmas_trivia/xmas_games.asp?game=STOCKINGGAME">this game</a>, and can be played using common Christmas items that can be found in your
-                  household.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- ::: END OF CHRISTMAS STOCKING GAME :::-->
-      <!-- :::START OF Activity Board Game :::-->
-      <div class="tab-pane fade" id="activity-game" role="tabpanel" aria-labelledby="grinch-stole-list">
-        <div class="card mb-3" style="max-width: 670px;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img
-                data-src="https://cf.geekdo-images.com/imagepage/img/r2D0JuBwl0H77aaCcuqvPt3b6xk=/fit-in/900x600/filters:no_upscale()/pic3186165.jpg"
-                class="card-img" alt="..." />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Activity Board Game</h5>
-                <p class="card-text">
-                  This is a party game from Piatnik played in 2-4 teams with at least 2 players each. The teams' meeples move over the board, the goal is to reach the finish. Depending on the sort of field they are currently standing at, one player has to act (pantomime) or to describe or to paint a phrase given on a card and the other members of his team have to find out what that should be. If they manage to do so, their meeple moves forward.
-				  There are several editions and expansions for this game. <a href="https://boardgamegeek.com/boardgame/8790/activity">Here you will find more about the game!</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ::: END OF Activity Board Game :::-->
-      <!-- ::: START OF CHRISTMAS PIÑATAS :::-->
-      <div class="tab-pane fade" id="christmas-piñatas" role="tabpanel" aria-labelledby="grinch-stole-list">
-          <div class="card mb-3" style="max-width: 670px;">
-           <div class="row no-gutters">
-             <div class="col-md-4">
-               <img
-                 data-src="https://cdn.apartmenttherapy.info/image/fetch/f_auto,q_auto:eco,c_fit,w_960/https%3A%2F%2Fstorage.googleapis.com%2Fgen-atmedia%2F2%2F2011%2F12%2Fa2cb1d3971d815e84b9a820b43a83139076adafc.jpeg"
-                    class="card-img" alt="Mexican Piñatas" />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Christmas Piñatas</h5>
-                  <p class="card-text">
-                    A mexican christmas <a href="https://www.apartmenttherapy.com/pinatas-a-christmas-tradition-162867">tradition</a>. A blindfolded person must attempt to break the piñata with a stick. Once the piñata is broken, the filling, usually consisting of candy, is released for everyone to enjoy!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ::: END OF CHRISTMAS PIÑATAS :::-->
-        </div>
-      </div>
+      <!-- ::: END CARDS OF GAMES :::-->
     </div>
   </div>
 
@@ -289,6 +155,55 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <script>
+      //load first item on the list
+      $( document ).ready(function() {
+        imgCardElem.src = linkList[0].imageLink;
+        imgCardElem.alt = linkList[0].title;
+        titleCardElem.innerHTML = linkList[0].title;
+        textCardElem.innerHTML = linkList[0].description;
+        linkCardElem.href = linkList[0].link;
+        linkCardElem.text = linkList[0].title;
+      });
+      
+        const listGroup = document.getElementById("list-tab");
+        const element = document.getElementById("list-tab");
+        const linkClass = "list-group-item list-group-item-action";
+        const linkDataToggle = "list";
+        const linkRole = "tab";
+        //loop through list, create new nodes for each and display
+        for (var i = 0; i < linkList.length; i++) {
+          let divElem = document.createElement("div");
+          let str = linkList[i].title.replace(/\s/g, "");
+          divElem.innerHTML = linkList[i].title;
+          divElem.setAttribute("id", str);
+          divElem.setAttribute("onclick", "showCard(" + i + ")");
+          divElem.setAttribute("class", "list-group-item list-group-item-action");
+          element.appendChild(divElem);
+        }
+  
+        const imgCardElem = document.getElementById("cardImage");
+        const titleCardElem = document.getElementById("cardTitle");
+        const textCardElem = document.getElementById("cardText");
+        const linkCardElem = document.getElementById("cardLink");
+        const listGroupFirst = listGroup.firstElementChild;
+        listGroupFirst.classList.add("active");
+        // when list link is clicked show info based on id
+        function showCard(id) {
+          imgCardElem.src = linkList[id].imageLink;
+          imgCardElem.alt = linkList[id].title;
+          titleCardElem.innerHTML = linkList[id].title;
+          textCardElem.innerHTML = linkList[id].description;
+          linkCardElem.href = linkList[id].link;
+          linkCardElem.text = linkList[id].title;
+          for (var x = 0; x < linkList.length; x++) {
+            let allId = linkList[x].title.replace(/\s/g, "");
+            document.getElementById(allId).classList.remove("active");
+          }
+          let crdId = linkList[id].title.replace(/\s/g, "");
+          document.getElementById(crdId).classList.add("active");
+        }
+      </script>
 </body>
 
 </html>
