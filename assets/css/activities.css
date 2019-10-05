@@ -12,3 +12,12 @@
   background-color: #e03d3e !important;
   border-color: #e03d3e !important;
 }
+.card{
+  min-width: 29%;
+  border: 0 !important;
+  box-shadow: 0 16px 32px rgba(100,27,27,0.1);
+}
+.card:hover {
+	box-shadow: 0 20px 36px rgba(100,27,27,0.3);
+	transform: translateY(-4px);
+}

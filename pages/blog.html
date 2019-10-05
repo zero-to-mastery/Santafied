@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script 
+      src="../assets/js/lazyloading.js"
+    ></script>
     <script
       src="https://kit.fontawesome.com/5e68800c4a.js"
       crossorigin="anonymous"
@@ -18,14 +21,15 @@
       href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"
+    <link 
+      rel="stylesheet" 
+      href="../assets/css/main.css" 
     />
-
-    <link rel="stylesheet" href="../assets/css/main.css" />
-    <link rel="stylesheet" href="../assets/css/activities.css" />
-    <title>Santafied | Activities</title>
+    <link 
+      rel="stylesheet" 
+      href="../assets/css/blog.css" 
+    />
+    <title>Santafied | Blog</title>
   </head>
 
   <body class="sub-page">
@@ -53,9 +57,7 @@
               <a class="nav-item nav-link" href="../pages/facts.html">Facts</a>
             </li>
             <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/recipes.html"
-                >Recipes</a
-              >
+              <a class="nav-item nav-link" href="../pages/recipes.html">Recipes</a>
             </li>
             <li class="nav-item">
               <a class="nav-item nav-link" href="../pages/gifts.html">Gifts</a>
@@ -73,9 +75,7 @@
               <a class="nav-item nav-link" href="../pages/books.html">Books</a>
             </li>
             <li class="nav-item">
-              <a class="nav-item nav-link selected" href="../pages/activities.html"
-                >Activities</a
-              >
+              <a class="nav-item nav-link selected" href="../pages/activities.html">Activities</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -90,8 +90,8 @@
                 More
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="name-generator.html"
-                  >Name Generator</a
+                <a class="dropdown-item" href="elf-name-generator.html"
+                  >Elf Name Generator</a
                 >
                 <a class="dropdown-item" href="party-costumes.html">Party Costumes</a>
                 <a class="dropdown-item" href="international.html">International</a>
@@ -108,72 +108,109 @@
 
     <!-- main activities content starts here -->
     <div class="container">
-      <h1 class="title">Activities</h1>
-      <div class="row my-md-4">
-        <div class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0" style="width: 18rem;">
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <div class="card-body">
-            <h5 class="card-title">Caroling</h5>
-            <p class="card-text">
-              We spread the christmas spirit by caroling from door to door.
-            </p>
-            <a href="#" class="btn btn-primary">Know more</a>
+      <h1 class="title">Blog</h1>
+      <div class="row mb-3">
+        <div class="col-sm-12 col-md-4">
+          <div class="card mx-3 mb-3 mb-md-0">
+            <div class="card-body">
+              <img
+                data-src="https://images.unsplash.com/photo-1480215529400-2995f91ddb96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                class="card-img" alt="..." loading="lazy" 
+              />
+              <a class="card-tag my-3" href="#">Christmas</a>
+              <h5 class="card-title"><a href="#">Santa's Favorite Cookies</a></h5>
+              <div class="card-subtext">
+                <span class="author mr-1">By Santa Clause</span>
+                <span class="date">Oct 1, 2019</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0" style="width: 18rem;">
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <div class="card-body">
-            <h5 class="card-title">Gift Wrapping</h5>
-            <p class="card-text">We wrap gifts for our loved ones</p>
-            <a href="#" class="btn btn-primary">Know more</a>
+        <div class="col-sm-12 col-md-4">
+          <div class="card mx-3 mb-3 mb-md-0">
+            <div class="card-body">
+              <img
+                data-src="https://images.unsplash.com/photo-1542936378-3fa06e6f7723?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                class="card-img" alt="..." loading="lazy" 
+              />
+              <a class="card-tag my-3" href="#">Christmas</a>
+              <h5 class="card-title"><a href="#">How to Guide Santa's Sleigh</a></h5>
+              <div class="card-subtext">
+                <span class="author mr-1">By Rudolph</span>
+                <span class="date">Nov 28, 2019</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0" style="width: 18rem;">
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <div class="card-body">
-            <h5 class="card-title">Photo with Santa</h5>
-            <p class="card-text">
-              We take photos with Santa and cheer
-            </p>
-            <a href="#" class="btn btn-primary">Know more</a>
-          </div>
-        </div>
-      </div>
-      <div class="row my-md-4">
-        <div class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0" style="width: 18rem;">
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <div class="card-body">
-            <h5 class="card-title">Milk and Cookie Fest</h5>
-            <p class="card-text">
-              We get to spread the Christmas spirit while enjoying some milk and
-              cookies.
-            </p>
-            <a href="#" class="btn btn-primary">Know more</a>
-          </div>
-        </div>
-        <div class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0" style="width: 18rem;">
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <div class="card-body">
-            <h5 class="card-title">Play in the snow</h5>
-            <p class="card-text">
-              We can make a snowman, go sledding or have a snowball fight.
-            </p>
-            <a href="#" class="btn btn-primary">Know more</a>
-          </div>
-        </div>
-        <div class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0" style="width: 18rem;">
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <div class="card-body">
-            <h5 class="card-title">Family Photo</h5>
-            <p class="card-text">
-                We get all our loved ones and print a memory.
-            </p>
-            <a href="#" class="btn btn-primary">Know more</a>
+        <div class="col-sm-12 col-md-4">
+          <div class="card mx-3 mb-3 mb-md-0">
+            <div class="card-body">
+              <img
+                data-src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                class="card-img" alt="..." loading="lazy" 
+              />
+              <a class="card-tag my-3" href="#">Christmas</a>
+              <h5 class="card-title"><a href="#">How to Wrap Gifts</a></h5>
+              <div class="card-subtext">
+                <span class="author mr-1">By Mrs. Clause</span>
+                <span class="date">Nov 26, 2019</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="row mb-3">
+          <div class="col-sm-12 col-md-4">
+            <div class="card mx-3 mb-3 mb-md-0">
+              <div class="card-body">
+                <img
+                  data-src="https://images.unsplash.com/photo-1512474932049-78ac69ede12c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                  class="card-img" alt="..." loading="lazy" 
+                />
+                <a class="card-tag my-3" href="#">Christmas</a>
+                <h5 class="card-title"><a href="#">First Time Caroling</a></h5>
+                <div class="card-subtext">
+                  <span class="author mr-1">By An Elf</span>
+                  <span class="date">Nov 21, 2019</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card mx-3 mb-3 mb-md-0">
+              <div class="card-body">
+                <img
+                  data-src="https://images.unsplash.com/photo-1514495021973-06719621b160?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1007&q=80"
+                  class="card-img" alt="..." loading="lazy" 
+                />
+                <a class="card-tag my-3" href="#">Christmas</a>
+                <h5 class="card-title"><a href="#">Building a Gingerbread House</a></h5>
+                <div class="card-subtext">
+                  <span class="author mr-1">By Gingerbread Man</span>
+                  <span class="date">Nov 15, 2019</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card mx-3 mb-3 mb-md-0">
+              <div class="card-body">
+                <img
+                  data-src="https://images.unsplash.com/photo-1512389098783-66b81f86e199?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjQ1OTl9&auto=format&fit=crop&w=1388&q=80"
+                  class="card-img" alt="..." loading="lazy" 
+                />
+                <a class="card-tag my-3" href="#">Christmas</a>
+                <h5 class="card-title"><a href="#">Best Christmas Songs</a></h5>
+                <div class="card-subtext">
+                  <span class="author mr-1">By Santa Clause</span>
+                  <span class="date">Nov 1, 2019</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
- 
+
     <footer class="site-footer" id="footer">
       <div class="container">
         <div class="row">
@@ -229,7 +266,6 @@
           </div>
         </div>
     </footer>
- 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="/assets/js/carousel.js"></script>
     <script
