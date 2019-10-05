@@ -148,3 +148,6 @@ div.watches {
   flex-direction: column;
   width: 100vw;
 }
+a:hover{
+	text-decoration: none;
+}
