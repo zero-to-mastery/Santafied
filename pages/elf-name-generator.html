@@ -57,10 +57,59 @@
   <!-- :::END OF Nav -->
 
   <div class="container">
-    <h1 class="title">Elf Name Generator</h1>
+    <h1 class="title">Name Generator</h1>
     <div class="name-generator">
+      <h1>What's your <span>REINDEER</span> name?</h1>
+      <div class="name-choice">
+        <h3>First letter of your name</h3>
+        <select id="name" class="box-style" onchange="letterChoice()">
+            <option value="Cookie">A</option>
+            <option value="Sugar-plum">B</option>
+            <option value="Frosty">C</option>
+            <option value="Mistletoe">D</option>
+            <option value="Snowflake">E</option>
+            <option value="Cranberry">F</option>
+            <option value="Pickle-Pants">G</option>
+            <option value="Twinkle-Nose">H</option>
+            <option value="Eggnog">I</option>
+            <option value="Shimmer">J</option>
+            <option value="Pudding">K</option>
+            <option value="Pointy-Toes">L</option>
+            <option value="Kringle">M</option>
+            <option value="Dashing">N</option>
+            <option value="Turkey-Bell">O</option>
+            <option value="Honey-Ham">P</option>
+            <option value="Peppermint">Q</option>
+            <option value="Jolly-Joseph">R</option>
+            <option value="Grinch">S</option>
+            <option value="Tinsle-Cheeks">T</option>
+            <option value="McJingles">U</option>
+            <option value="Snowman">V</option>
+            <option value="Cinnamon Bun">W</option>
+            <option value="Merry-Mary">X</option>
+            <option value="Glitter">Y</option>
+            <option value="Ruldoph">Z</option>
+          </select>
+        </div>
+        <div class="month-choice">
+          <h3>Your birth month</h3>
+          <select id="month" class="box-style" onchange="monthChoice()">
+              <option value="Lord Crackle">January</option>
+              <option value="Razzle-Dazzle">February</option>
+              <option value="Maple">March</option>
+              <option value="McMittens">April</option>
+              <option value="Angry Elf">May</option>
+              <option value="Von Pretzel">June</option>
+              <option value="St.Candy Cane">July</option>
+              <option value="Bon Bon">August</option>
+              <option value="Long Beard">September</option>
+              <option value="Snickerdoodle">October</option>
+              <option value="Arctic Puffin">November</option>
+              <option value="Claus">December</option>
+            </select>
+          </div>
       <div id="name-box">
-        <p class="name">Click the button!</p>
+        <p class="given-name">Click the button!</p>
       </div>
       <button id="loadName">Elf Me</button>
     </div>
