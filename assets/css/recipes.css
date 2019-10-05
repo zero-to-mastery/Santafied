@@ -6,8 +6,13 @@
   margin: 16px 0 0;
 }
 
+.card-mb-3 {
+	max-width: 670px;
+}
+
 .tab-content .card-img {
-  max-height: 250px;
+  max-width: 222px;
+  max-height: 146px;
 }
 
 @media(max-width: 767px) {
@@ -17,3 +22,4 @@
        object-fit: cover;
   }
 }
+
