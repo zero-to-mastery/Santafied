@@ -131,7 +131,7 @@ section#hero-content {
 
 /*Radio section*/
 .radio {
-  background: linear-gradient(to left, rgba(0,0,0, .4), rgba(0,0,0,.4)),url('/img/microphone.jpg');
+  background: linear-gradient(to left, rgba(0,0,0, .4), rgba(0,0,0,.4)),url('../../img/microphone.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
