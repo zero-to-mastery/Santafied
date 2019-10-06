@@ -220,5 +220,24 @@ var listOf = [
       'https://thetiptoefairy.com/wp-content/uploads/2013/11/heavenly-hash-label.jpg',
     linkName: 'thetiptoefairy.com',
     link: 'https://thetiptoefairy.com/holiday-recipes-heavenly-hash/'
+  },
+  {
+    id: 'holiday-fruitcake',
+    name: 'Holiday Fruitcake',
+    description:
+      'Fabulous holiday fruitcake! With dates, raisins, walnuts, glazed cherries, and orange zest. ' +
+      'Perfect for Christmas celebrations.',
+    summary: [
+      {
+        makes: '1 loaf',
+        prep: '15 mins',
+        cooking: '2 hrs',
+        skill: 'Easy'
+      }
+    ],
+    img:
+      'https://www.simplyrecipes.com/wp-content/uploads/2007/11/holiday-fruitcake-horiz-a-1600.jpg',
+    linkName: 'simplyrecipes.com',
+    link: 'https://www.simplyrecipes.com/recipes/patricias_holiday_fruitcake/'
   }
 ];
