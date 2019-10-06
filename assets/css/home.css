@@ -73,6 +73,16 @@ section#hero-content {
   color: white;
 }
 
+#nav-item{
+  color: #ff4546;
+  transition: all .2s;
+}
+  
+#nav-item:hover{
+  background-color: #ff4546;
+  color: white;
+}
+
 /* Centered text */
 .centered {
   position: absolute;
