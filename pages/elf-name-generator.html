@@ -20,36 +20,14 @@
   <!-- :::NAV Starts ::: -->
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> SANTA<span
-          id="brand-color">FIED</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-item nav-link" href="../index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/facts.html">Facts</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/recipes.html">Recipes</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/gifts.html">Gifts</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/songs.html">Songs</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/games.html">Games</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/films.html">Films</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/books.html">Books</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/activities.html">Activities</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              More
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="elf-name-generator.html">Name Generator</a>
-              <a class="dropdown-item" href="international.html">International</a>
-              <a class="dropdown-item" href="party-costumes.html">Party Costumes</a>
-              <a class="dropdown-item" href="blog.html">Blog</a>
-            </div>
-          </li>
-        </ul>
+      <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a>
+      <div class="dropdown dropdown-container">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Navigation
+        </a>
+        <div class="dropdown-menu" id="nav-dropdown-from-page" aria-labelledby="navbarDropdown">
+        </div>
       </div>
     </nav>
   </div>
@@ -172,6 +150,7 @@
       </div>
   </footer>
 
+  <script src="../assets/js/navLink-generator.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
