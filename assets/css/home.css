@@ -73,15 +73,6 @@ section#hero-content {
   color: white;
 }
 
-#nav-item{
-  color: #ff4546;
-  transition: all .2s;
-}
-  
-#nav-item:hover{
-  background-color: #ff4546;
-  color: white;
-}
 
 /* Centered text */
 .centered {
@@ -96,6 +87,70 @@ section#hero-content {
 .centered .display-1 {
   font-size: 3rem;
 }
+
+/*Checkout section*/
+.checkout {
+  padding: 100px;
+  text-align: center;
+  margin-top: -80px;
+  background-color: #f4f4f4;
+}
+
+.checkout h1 {
+  color: #555;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+#nav-item{
+  color: #ff4546;
+  transition: all .2s;
+}
+  
+#nav-item:hover{
+  background-color: #ff4546;
+  color: white;
+}
+
+.container a {
+  width: 100%;
+  max-width: 14.5rem;
+  text-decoration: none;
+}
+
+.checkout h1::after {
+    display: block;
+    height: 2px;
+    background-color: #ff4546;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+/*Radio section*/
+.radio {
+  background: linear-gradient(to left, rgba(0,0,0, .4), rgba(0,0,0,.4)),url('/img/microphone.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  padding-bottom: 20px;
+}
+
+.radio__heading {
+  font-family: 'Mountains of Christmas', cursive;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.radio iframe {
+  width:100%;
+  height:100px;
+  opacity: .9;
+}
+
 
 @media (min-width: 1280px) {
   .centered .display-1 {
