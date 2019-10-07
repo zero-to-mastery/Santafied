@@ -11,7 +11,6 @@ window.onload = function() {
         var description = listOf[i].description;
         var summary = listOf[i].summary;
         var img = listOf[i].img;
-        var linkName = listOf[i].linkName;
         var link = listOf[i].link;
 
         if (i == 0) {
@@ -63,7 +62,7 @@ window.onload = function() {
         var mainCardText = CreateMainText(description);
         cardBody.appendChild(mainCardText);
         // Create Footer
-        var footer = CreateCardFooter(link, linkName);
+        var footer = CreateCardFooter(link);
         cardBody.appendChild(footer);
 }
 
@@ -165,24 +164,17 @@ function CreateMainText(string) {
                 cardText.setAttribute("class", "card-text");
                 cardText.innerHTML = string;
 
-                console.log(cardText);
+                //console.log(cardText);
                 return cardText;
             }
 
-function CreateCardFooter(link, linkName) {
+function CreateCardFooter(link) {
 
-                var smallTextCard = document.createElement("p");
-                smallTextCard.setAttribute("class", "card-text");
-                
-                var smallText = document.createElement("small");
-                smallText.setAttribute("class", "text-muted");
-                smallTextCard.innerHTML = "Get the recipe at ";
-                smallTextCard.appendChild(smallText);
-
-                var smallLink = document.createElement("a");
-                smallLink.setAttribute("href", link);
-                smallLink.innerHTML = linkName;
-                smallText.appendChild(smallLink);
+                var smallTextCard = document.createElement("a");
+                smallTextCard.setAttribute("class", "btn button-color");
+                smallTextCard.setAttribute("role", "button");
+                smallTextCard.setAttribute("href", link);
+                smallTextCard.innerHTML = "Know More";
 
                 return smallTextCard;
             }
