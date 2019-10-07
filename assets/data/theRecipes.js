@@ -25,7 +25,6 @@ var listOf = [
     ],
     img:
       'https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/53/2018/10/The-Hummingbird-Bakery-gingerbread-man-recipe-620x408.jpg',
-    linkName: 'goodtoknow.co.uk',
     link:
       'https://www.goodtoknow.co.uk/recipes/the-hummingbird-bakery-gingerbread-men#Vvvgi2EtHPFD4wm7.99'
   },
@@ -46,7 +45,6 @@ var listOf = [
     ],
     img:
       'https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/53/2016/12/Christmad-pud-cupcakes-620x408.jpg',
-    linkName: 'goodtoknow.co.uk',
     link:
       'https://www.goodtoknow.co.uk/recipes/christmas-pudding-cupcakes#PwJkQP2j3Os7ShEV.99'
   },
@@ -66,7 +64,6 @@ var listOf = [
     ],
     img:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/caramel-pecan-brownie-trifle-recipes-1565897633.jpg',
-    linkName: 'Celebrating Sweets',
     link: 'https://celebratingsweets.com/caramel-pecan-brownie-trifles/'
   },
   {
@@ -84,7 +81,6 @@ var listOf = [
     ],
     img:
       'https://www.anasbakingchronicles.com/wp-content/uploads/2018/11/Linzers-blog4-1-of-1.jpg',
-    linkName: 'laurainthekitchen.com',
     link: 'https://www.laurainthekitchen.com/recipes/linzer-cookies/'
   },
   {
@@ -104,7 +100,6 @@ var listOf = [
     ],
     img:
       'https://sugarspunrun.com/wp-content/uploads/2018/11/How-to-make-Potato-Candy-1-of-1-2-500x500.jpg',
-    linkName: 'sugarspunrun.com',
     link: 'https://sugarspunrun.com/potato-candy/'
   },
   {
@@ -122,7 +117,6 @@ var listOf = [
     ],
     img:
       'https://images.unsplash.com/photo-1546024664-9226c2d3819b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1017&q=80',
-    linkName: 'Chocolate Covered Katie',
     link: 'https://chocolatecoveredkatie.com/2017/12/11/vegan-pecan-pie-recipe/'
   },
   {
@@ -140,7 +134,6 @@ var listOf = [
     ],
     img:
       'https://images.unsplash.com/photo-1546024664-9226c2d3819b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1017&q=80',
-    linkName: 'Green Bean Cake',
     link:
       'https://www.vietvisiontravel.com/wp-content/uploads/2016/05/banh-da-lon-pig-skin-pie1.jpg'
   },
@@ -159,7 +152,6 @@ var listOf = [
     ],
     img:
       'https://trancongchau.vn/images/am-thuc-viet-nam/2015/302-nhung-mon-banh-dac-san-cua-mien-tay-song-nuoc-1.jpg',
-    linkName: 'Banh Cam Cake',
     link:
       'https://trancongchau.vn/images/am-thuc-viet-nam/2015/302-nhung-mon-banh-dac-san-cua-mien-tay-song-nuoc-1.jpg'
   },
@@ -178,7 +170,6 @@ var listOf = [
       }
     ],
     img: 'http://vinhthuan.com/upload//image/banh-mi-viet-nam.jpg',
-    linkName: 'Banh My Cake',
     link: 'http://vinhthuan.com/upload//image/banh-mi-viet-nam.jpg'
   },
   {
@@ -197,7 +188,6 @@ var listOf = [
     ],
     img:
       'https://www.sbs.com.au/food/sites/sbs.com.au.food/files/styles/full/public/Halaszle-%28fishermans-soup%29.jpg?itok=LCVaMrbr&mtime=1386214655',
-    linkName: 'www.sbs.com',
     link: 'https://www.sbs.com.au/food/recipes/fishermans-soup-halaszle'
   },
   {
@@ -218,7 +208,6 @@ var listOf = [
     ],
     img:
       'https://thetiptoefairy.com/wp-content/uploads/2013/11/heavenly-hash-label.jpg',
-    linkName: 'thetiptoefairy.com',
     link: 'https://thetiptoefairy.com/holiday-recipes-heavenly-hash/'
   },
   {
@@ -237,7 +226,6 @@ var listOf = [
     ],
     img:
       'https://www.simplyrecipes.com/wp-content/uploads/2007/11/holiday-fruitcake-horiz-a-1600.jpg',
-    linkName: 'simplyrecipes.com',
     link: 'https://www.simplyrecipes.com/recipes/patricias_holiday_fruitcake/'
   }
 ];
