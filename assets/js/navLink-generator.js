@@ -36,8 +36,8 @@ const navLinks = [
     href:  "pages/activities.html",
   },
   {
-    label: "Elf Name Generator",
-    href:  "pages/elf-name-generator.html",
+    label: "Name Generators",
+    href: "pages/name-generators.html",
   },
   {
     label: "International",
