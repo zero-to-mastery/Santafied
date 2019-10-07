@@ -16,7 +16,7 @@ const positionElement = (event, snow) => {
     y: mouseY(event)
   }
 
-  snow.style.top = `${mouse.y}px`;
+  snow.style.top = `${mouse.y + document.documentElement.scrollTop}px`;
   snow.style.left = `${mouse.x}px`;
 }
 
