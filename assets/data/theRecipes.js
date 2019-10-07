@@ -283,5 +283,24 @@ var listOf = [
       "https://images.media-allrecipes.com/userphotos/720x405/4594095.jpg",
     link:
       "https://www.allrecipes.com/recipe/261802/savory-puff-pastry-christmas-tree/?internalSource=staff%20pick&referringId=932&referringContentType=Recipe%20Hub"
+  },
+  {
+    id: "Bibingka",
+    name: "Bibingka",
+    description:
+      "Bibingka is a type of rice cake native to the Philippines. This is traditionally made from galapong (milled glutinous rice), coconut milk, margarine, and sugar. During dawn masses on Christmas season, side street vendors are a common sight preparing and selling this delicious rice cake along with 'puto bumbong'" +
+      "The traditional way of cooking Bibingka is unique and quite time consuming. The mixture is poured on a clay pot lined with pre-cut banana leaf. A special clay oven known as “Bibingka oven” is needed to bake this rice cake. The clay pot is placed between the layers of the Bibingka oven and lit charcoals (locally known as 'uling') are placed below and above the clay pot to evenly cook the mixture",
+    summary: [
+      {
+        makes: "1",
+        prep: "10 min",
+        cooking: "35 min",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://panlasangpinoy.com/wp-content/uploads/2011/10/bibingka-Front-360x361.jpg",
+    link:
+      "https://panlasangpinoy.com/rice-cake-bibingka-recipe/"
   }
 ];
