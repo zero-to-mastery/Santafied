@@ -74,18 +74,6 @@ body {
   color: #000;
 }
 
-/*Navbar END*/
-/*
-section {
-  padding: 0 1rem;
-  font-size: 1.4em;
-  height: 85vh;  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: crimson;
-} */
-
 .fa-cube {
   color: #ff4546;
 }
@@ -279,18 +267,6 @@ footer {
   background-color: #ff4546;
   border-color: #ff4546;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*==============
  Newsletter Subscribe
