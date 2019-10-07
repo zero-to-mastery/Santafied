@@ -244,5 +244,44 @@ var listOf = [
     img:
       "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2016/10/reindeer-food.jpg?itok=lMTKFQGF",
     link: "https://www.bbcgoodfood.com/recipes/reindeer-food"
+  },
+  {
+    id: "pecan-rolls",
+    name: "Overnight Caramel Pecan Rolls",
+    description:
+      "These are easy and very good! " +
+      "They can be made and then cooked in the morning and make great hot rolls for special mornings (like Christmas) " +
+      "Everyone will think that you got up very early to make these rolls because they are hot in the morning!  ",
+    summary: [
+      {
+        makes: "12",
+        prep: "1 Hour 30 mins",
+        cooking: "30 min",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://images.media-allrecipes.com/userphotos/720x405/6173565.jpg",
+    link:
+      "https://www.allrecipes.com/recipe/24574/overnight-caramel-pecan-rolls/?internalSource=rotd&referringId=945&referringContentType=Recipe%20Hub"
+  },
+  {
+    id: "puff-pastry",
+    name: "Savory Puff Pastry Christmas Tree",
+    description:
+      "Fun and easy to make, this savory puff pastry Christmas tree is filled with a combination of creamy goat cheese and sun-dried tomato pesto. " +
+      "It's so much easier to make than it looks and is guaranteed to get lots of oohs and aahs from guests!  ",
+    summary: [
+      {
+        makes: "1",
+        prep: "35 min",
+        cooking: "20 min",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://images.media-allrecipes.com/userphotos/720x405/4594095.jpg",
+    link:
+      "https://www.allrecipes.com/recipe/261802/savory-puff-pastry-christmas-tree/?internalSource=staff%20pick&referringId=932&referringContentType=Recipe%20Hub"
   }
 ];
