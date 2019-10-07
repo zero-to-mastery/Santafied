@@ -133,3 +133,14 @@ label {
     font-family: "Mountains of Christmas", cursive;
     font-size: 4.5rem;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .container h1 {
+        text-align: center;
+    }
+
+    #loadName {
+        width: 75%;
+    }
+}

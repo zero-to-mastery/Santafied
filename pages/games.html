@@ -58,7 +58,7 @@
                     <div class="card-body">
                       <h5 id="cardTitle" class="card-title"></h5>
                       <p id="cardText" class="card-text"></p>
-                      <p>Link: <a id="cardLink" href=""></a></p>
+                      <p><a class="btn btn-danger" id="cardLink" href="">View Game</a></p>
                     </div>
                   </div>
                 </div>
@@ -145,7 +145,7 @@
         titleCardElem.innerHTML = linkList[0].title;
         textCardElem.innerHTML = linkList[0].description;
         linkCardElem.href = linkList[0].link;
-        linkCardElem.text = linkList[0].title;
+        
       });
       
         const listGroup = document.getElementById("list-tab");
@@ -177,7 +177,7 @@
           titleCardElem.innerHTML = linkList[id].title;
           textCardElem.innerHTML = linkList[id].description;
           linkCardElem.href = linkList[id].link;
-          linkCardElem.text = linkList[id].title;
+          //linkCardElem.text = linkList[id].title;
           for (var x = 0; x < linkList.length; x++) {
             let allId = linkList[x].title.replace(/\s/g, "");
             document.getElementById(allId).classList.remove("active");
