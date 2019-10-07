@@ -157,23 +157,53 @@ section#hero-content {
   }
 }
 
-@media (min-width: 320px) and (max-width: 1280px) {
+@media screen and (max-width: 600px) {
   .carousel-item {
     height: 60vh;
   }
+
+  .carousel-item img {
+    height: 100%;
+  }
+
   .carousel-caption {
-    top: 30%;
+    top: 50%;
     -webkit-transform: translateY(-30%);
         -ms-transform: translateY(-30%);
             transform: translateY(-30%);
   }
   .carousel-caption h3 {
     padding: 35px 43px;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 600;
   }
   .carousel-caption p {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .carousel-item {
+    height: 60vh;
+  }
+
+  .carousel-item img {
+    height: 100%;
+  }
+
+  .carousel-caption {
+    top: 50%;
+    -webkit-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+  }
+  .carousel-caption h3 {
+    padding: 35px 43px;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
   }
 }
 
