@@ -13,10 +13,14 @@ function generateName() {
 
     const snowSurnames = ['McSnowflake', 'McSparkles', 'McBlizzard', 'McIcicles', 'McSnowballs', 'McFreeze', 'McFrosty', 'McSparkle', 'McGlisten', 'McChilly', 'McSlushy', 'McSnowy'];
 
-    index = alphabet.indexOf(firstLetter);
-    snowmanName = snowNames[index];
-    snowmanSurname = snowSurnames[userMonth];
-
-    result.textContent = 'Your Snowman Name is: ' + snowmanName + ' ' + snowmanSurname;
+    if (firstLetter && userMonth) {
+        index = alphabet.indexOf(firstLetter);
+        snowmanName = snowNames[index];
+        snowmanSurname = snowSurnames[userMonth];
+        document.getElementById("resultContainer").style.display = "block";
+        result.textContent = snowmanName + ' ' + snowmanSurname;
+    } else {
+        alert('Please input your data first.');
+    } 
 
 }
