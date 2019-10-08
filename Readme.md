@@ -61,7 +61,7 @@ Congratulations! You are now one pull request closer to getting that free t-shir
 
 ## To ensure everyone has the best chance at participating in this project. Please follow these simple guidelines where possible:
 
-- Simplicity is key: There is not much need for React, Sass etc here. Lets stick with vanilla HTML, CSS & JavaScript
+- Simplicity is key: There is not much need for React, Sass etc here. Lets stick with vanilla HTML, CSS & JavaScript.
 - Commenting: Try to comment your code, so everyone can understand whats going on and could learn a thing or two.
 - Respect Content: Only use images/content that we are licensed to use.
 - Issues: Use Github issues, to create/find/solve ideas and bugs.
