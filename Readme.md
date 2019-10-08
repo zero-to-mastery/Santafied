@@ -22,7 +22,7 @@ The website should provide visitors with the following:
 - [ ] A page for Christmas information and facts.
 - [ ] Recipes page for traditional food and drinks of Christmas
 - [ ] Gift suggestions for secret santas
-- [ ] Lyrics for Christmas songs
+- [ ] Lyrics for Christmas songs :musical_note:
 - [ ] Christmas games 🎮
 - [ ] Christmas Films 🎥
 - [ ] Christmas Books 📚
