@@ -303,4 +303,23 @@ var listOf = [
     link:
       "https://panlasangpinoy.com/rice-cake-bibingka-recipe/"
   }
+  {
+    id: "Eggnog",
+    name: "Eggnog",
+    description:
+      "Eggnog is a classic holiday drink made of cream, milk, egg whites, and sometimes bourbon ;)" +
+      "Combine and beat ingredients together until smooth. Serve chilled."
+    summary: [
+      {
+        makes: "8",
+        prep: "10 min",
+        cooking: "none",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Eggnog2.jpg/400px-Eggnog2.jpg",
+    link:
+      "https://www.jamieoliver.com/features/best-eggnog-recipe/"
+  }
 ];
