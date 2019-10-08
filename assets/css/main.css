@@ -2,7 +2,9 @@
  * Following codeblocks are just starter code
  * Feel free to modify it in any way you like
  */
-
+ html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   display: flex;
