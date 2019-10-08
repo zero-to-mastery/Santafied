@@ -147,10 +147,14 @@ footer {
 }
 
 .footer-copyright {
-  padding: 1rem;
-  text-align: center;
-  border-top: 1px solid gray;
-  margin-top: 100px;
+    padding-top: 35px;
+    object-position: bottom;
+    padding-left:390px;
+    color:#9d9d9d;
+    bottom: 0;
+    width: 100%;
+    text-align: match-parent;
+}
 }
 
 .footer-links h4 {
