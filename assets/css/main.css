@@ -198,10 +198,12 @@ footer {
 .feature-section {
   background-color: #ff4546;
   color: white;
+  padding:30px 0;
 }
 
 .feature-card {
-  height: 40vh;
+  padding-top:75px;
+  padding-bottom:75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,7 +212,7 @@ footer {
   -ms-flex-direction: row;
   flex-direction: row;
   -ms-flex-pack: distribute;
-  justify-content: space-evenly;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -218,19 +220,22 @@ footer {
 
 @media (min-width: 767px) and (max-width: 991px) {
   .feature-card {
-    height: 25vh;
+    padding-top:25px;
+    padding-bottom:25px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
   .feature-card {
-    height: 25vh;
+    padding-top:25px;
+    padding-bottom:25px;
   }
 }
 
 @media (max-width: 575px) {
   .feature-card {
-    height: 30vh;
+    padding-top:10px;
+    padding-bottom:10px;
   }
 }
 
@@ -246,8 +251,25 @@ footer {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 9vh;
+  min-height:7em;
+  min-width:7em;
+  margin-right:2em;
+  background-color:rgb(241, 239, 239, 0.08);
 }
+
+.feature-card .icon .fa {
+  font-size:3em;
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .icon {
+    min-height:10em;
+    min-width:10em;
+  }
+  .feature-card .icon .fa {
+    font-size:4em;
+  }
+}
+
 .subtitle {
   font-size: 18px;
 }
