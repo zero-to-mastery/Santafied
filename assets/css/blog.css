@@ -46,11 +46,12 @@ input.search-blog {
 }
 
 input.search-blog:focus {
-  z-index:3;
+  z-index: 3;
   width: 270px;
 
   border: 1px solid #666;
   background-color: white;
   outline: none;
-  cursor:auto;
+  cursor: auto;
   padding-right: 10px;
+}
