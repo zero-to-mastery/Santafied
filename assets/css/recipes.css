@@ -15,6 +15,18 @@
   max-height: 146px;
 }
 
+.tab-pane ul, li {
+  padding: 5px 0;
+}
+
+.tab-pane ul {
+  list-style-type: none;
+}
+
+.tab-pane li {
+  text-transform: capitalize;
+}
+
 @media(max-width: 767px) {
   .tab-content .card-img {
     max-height: 300px;
