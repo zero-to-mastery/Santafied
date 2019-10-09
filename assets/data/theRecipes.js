@@ -173,6 +173,23 @@ var listOf = [
     link: "http://vinhthuan.com/upload//image/banh-mi-viet-nam.jpg"
   },
   {
+    id: "banh-xoai-cake",
+    name: "Banh Xoai Cake Pie",
+    description:
+      "Mango cake is cooked from ripe mangoes and dried, " +
+      " when eaten, it will create a sweet and sour feeling",
+    summary: [
+      {
+        makes: "1 pie",
+        prep: "30 min",
+        cooking: "20 min",
+        skill: "Easy"
+      }
+    ],
+    img: "http://gl.amthuc365.vn/uploads/i/Tin_Tuc/2015/15-7/0abanhxoai15.jpg",
+    link: "http://gl.amthuc365.vn/uploads/i/Tin_Tuc/2015/15-7/0abanhxoai15.jpg"
+  },
+  {
     id: "fish-soup",
     name: "Fishermans soup",
     description:
