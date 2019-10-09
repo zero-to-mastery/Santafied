@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../assets/css/films.css" />
+    <link rel="stylesheet" href="../assets/css/mouse-trail-snowball.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
@@ -24,74 +25,20 @@
     <title>Santafied | Films</title>
   </head>
   <body id="films" class="sub-page">
+    <div id="snowball1"></div>
+    <div id="snowball2"></div>
+    <div id="snowball3"></div>
     <!-- :::NAV Starts ::: -->
-    <div class="container">
+    <div class="container" id="scroll-up">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="../index.html"
-          ><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/facts.html">Facts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/recipes.html"
-                >Recipes</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/gifts.html">Gifts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/songs.html">Songs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/games.html">Games</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link selected" href="../pages/films.html">Films</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/books.html">Books</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/activities.html">Activities</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                More
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="elf-name-generator.html"
-                  >Elf Name Generator</a
-                >
-                <a class="dropdown-item" href="party-costumes.html">Party Costumes</a>
-                <a class="dropdown-item" href="international.html">International</a>
-                <a class="dropdown-item" href="#">Category</a>
-                <a class="dropdown-item" href="blog.html">Blog</a>
-              </div>
-            </li>
-          </ul>
+        <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a>
+        <div class="dropdown dropdown-container">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Navigation
+          </a>
+          <div class="dropdown-menu" id="nav-dropdown-from-page" aria-labelledby="navbarDropdown">
+          </div>
         </div>
       </nav>
     </div>
@@ -111,6 +58,7 @@
               href="#grinch-stole"
               role="tab"
               aria-controls="profile"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >How the Grinch Stole Christmas</a
             >
             <a
@@ -120,6 +68,7 @@
               href="#list-settings"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Disney's A Christmas Carol</a
             >
             <a
@@ -129,7 +78,17 @@
               href="#arthur-christmas"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Arthur Christmas</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-settings-list"
+              data-toggle="list"
+              href="#rare-exports-a-christmas-tale"
+              role="tab"
+              aria-controls="settings"
+              >Rare Exports: A Christmas Tale</a
             >
             <a
               class="list-group-item list-group-item-action"
@@ -138,6 +97,7 @@
               href="#home-alone"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Home Alone</a
             >
             <a
@@ -147,6 +107,7 @@
               href="#home-alone-2"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Home Alone 2: Lost in New York</a
             >
             <a
@@ -156,6 +117,7 @@
               href="#love-actually"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Love Actually</a
             >
             <a
@@ -165,6 +127,7 @@
               href="#miracle-34th-street"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Miracle on 34th Street</a
             >
             <a
@@ -174,6 +137,7 @@
               href="#santa-claus"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Santa Claus The Movie</a>
 
             <a
@@ -183,6 +147,7 @@
               href="#Elf"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Elf</a
             >
             <a
@@ -192,8 +157,39 @@
             href="#die-hard"
             role="tab"
             aria-controls="profile"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >Die Hard</a
-            >
+          >
+          <a
+            class="list-group-item list-group-item-action"
+            id="list-settings-list"
+            data-toggle="list"
+            href="#Rise-of-the-Guardians"
+            role="tab"
+            aria-controls="settings"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
+            >Rise of the Guardians</a
+          >
+          <a
+            class="list-group-item list-group-item-action"
+            id="list-settings-list"
+            data-toggle="list"
+            href="#A-Christmas-Prince"
+            role="tab"
+            aria-controls="settings"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
+            >A Christmas Prince</a
+          >
+          <a
+            class="list-group-item list-group-item-action"
+            id="list-settings-list"
+            data-toggle="list"
+            href="#Frozen"
+            role="tab"
+            aria-controls="settings"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
+            >Frozen</a
+          >
             <a
             class="list-group-item list-group-item-action"
             id="list-profile-list"
@@ -201,6 +197,7 @@
             href="#jingle"
             role="tab"
             aria-controls="profile"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >Jingle All the Way</a
             >
            <a
@@ -210,6 +207,7 @@
             href="#the_polar_express"
             role="tab"
             aria-controls="profile"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >The Polar Express</a
             >
             <a
@@ -219,6 +217,7 @@
             href="#white-christmas"
             role="tab"
             aria-controls="profile"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >White Christmas</a
             >
             <a
@@ -228,8 +227,51 @@
             href="#cool-runnings"
             role="tab"
             aria-controls="profile"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >Cool Runnings</a
             >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-profile-list"
+              data-toggle="list"
+              href="#rudolph-the-red-nosed-reindeer-1964"
+              role="tab"
+              aria-controls="profile"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
+            >
+              Rudolph The Red-Nosed Reindeer (1964)
+            </a>
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-profile-list"
+              data-toggle="list"
+              href="#the-night-before"
+              role="tab"
+              aria-controls="profile"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
+            >
+              The Night Before
+            </a>
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-profile-list"
+              data-toggle="list"
+              href="#the-christmas-chronicles"
+              role="tab"
+              aria-controls="profile"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
+            >
+              The Christmas Chronicles
+            </a>
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-profile-list"
+              data-toggle="list"
+              href="#el-camino-christmas"
+              role="tab"
+              aria-controls="profile">
+              El Camino Christmas
+            </a>
           </div>
         </div>
         <!-- :::END OF MENU TO FILTER FILMS :::-->
@@ -250,7 +292,7 @@
                     <img
                       data-src="https://m.media-amazon.com/images/M/MV5BNWNiNTczNzEtMjQyZC00MjFmLTkzMDMtODk4ZGMyZmE0N2E4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
                       class="card-img"
-                      alt="..."
+                      alt="How the Grinch Stole Christmas Cover"
                       loading="lazy"
                     />
                   </div>
@@ -269,11 +311,14 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
-                          <a
-                            href="https://www.imdb.com/title/tt0170016/"
-                            target="__blank"
-                            >IMDB</a
-                          >
+                          <button>
+                              <a
+                              href="https://www.imdb.com/title/tt0170016/"
+                              target="__blank"
+                              >Watch Now</a
+                            >
+                          </button>
+
                         </small>
                       </p>
                     </div>
@@ -282,6 +327,7 @@
               </div>
             </div>
             <!-- ::: END OF CARD EXAMPLE :::-->
+            <!-- ::: Disney's A Christmas Carol Card :::-->
             <div
               class="tab-pane fade"
               id="list-settings"
@@ -294,7 +340,7 @@
                     <img
                       data-src="https://m.media-amazon.com/images/M/MV5BMTM1MTI5ODU4MV5BMl5BanBnXkFtZTcwNTYyNTU4Mg@@._V1_SY1000_CR0,0,676,1000_AL_.jpg"
                       class="card-img"
-                      alt="..."
+                      alt="Disney's A Christmas Carol Cover"
                       loading="lazy"
                     />
                   </div>
@@ -312,11 +358,12 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
-                          <a
+                          <button><a
                             href="https://www.imdb.com/title/tt1067106/"
                             target="__blank"
-                            >IMDB</a
-                          >
+                            >Watch Now</a
+                          ></button>
+
                         </small>
                       </p>
                     </div>
@@ -324,7 +371,8 @@
                 </div>
               </div>
             </div>
-            <!-- Arthur Christmas -->
+            <!-- ::: Disney's A Christmas Carol Card End :::-->
+            <!-- ::: Arthur Christmas Card :::-->
             <div
               class="tab-pane fade "
               id="arthur-christmas"
@@ -350,11 +398,13 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt1430607/"
                             target="__blank"
-                            >IMDB</a
+                            >Watch Now</a
                           >
+                        </button>
                         </small>
                       </p>
                     </div>
@@ -362,7 +412,50 @@
                 </div>
               </div>
             </div>
-            <!-- ::: HOME ALONE CARD EXAMPLE :::-->
+            <!-- ::: Arthur Christmas Card End :::-->
+            <!-- ::: Rare Exports: A Christmas Tale Card :::-->
+            <div
+              class="tab-pane fade "
+              id="rare-exports-a-christmas-tale"
+              role="tabpanel"
+              aria-labelledby="santa-claus-list"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      data-src="https://upload.wikimedia.org/wikipedia/en/thumb/2/27/Rare_Exports_official_film_poster.jpg/215px-Rare_Exports_official_film_poster.jpg"
+                      class="card-img"
+                      alt="..."
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Rare Exports: A Christmas Tale</h5>
+                      <p class="card-text">
+                        <b>Rare Exports: A Christmas Tale</b> is a 2010 Finnish dark fantasy horror thriller film written and directed by Jalmari Helander about people living near the Korvatunturi mountain who discover the secret behind Santa Claus. The film is based on the 2003 short film <i>Rare Exports Inc.</i>, and its 2005 sequel <i>Rare Exports: The Official Safety Instructions</i>, by Jalmari Helander and Juuso Helander, both of which involve a company that traps wild Santa Clauses and trains and exports them to locations around the world<br>
+                        <b>Rotten Tomatoes:</b> 89%<br>
+                        <b>IMDb:</b> 6.7
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">
+                          <button>
+                          <a
+                            href="https://www.imdb.com/title/tt1401143/"
+                            target="__blank"
+                            >Watch Now</a
+                          >
+                        </button>
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: Rare Exports: A Christmas Tale Card End :::-->
+            <!-- ::: HOME ALONE CARD :::-->
             <div
               class="tab-pane fade"
               id="home-alone"
@@ -375,7 +468,7 @@
                     <img
                       data-src="https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
                       class="card-img"
-                      alt="..."
+                      alt="Home Alone Cover"
                       loading="lazy"
                     />
                   </div>
@@ -396,11 +489,12 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt0099785/"
                             target="__blank"
-                            >IMDB</a
-                          >
+                            >Watch Now</a
+                          ></button>
                         </small>
                       </p>
                     </div>
@@ -408,7 +502,8 @@
                 </div>
               </div>
             </div>
-            <!-- ::: HOME ALONE 2 CARD EXAMPLE :::-->
+            <!-- ::: HOME ALONE CARD End:::-->
+            <!-- ::: HOME ALONE 2 CARD :::-->
             <div
               class="tab-pane fade"
               id="home-alone-2"
@@ -421,7 +516,7 @@
                     <img
                       data-src="http://www.gstatic.com/tv/thumb/v22vodart/14385/p14385_v_v8_ab.jpg"
                       class="card-img"
-                      alt="..."
+                      alt="Home Alone 2: Lost in New York Cover"
                       loading="lazy"
                     />
                   </div>
@@ -442,11 +537,13 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt0104431/"
                             target="__blank"
-                            >IMDB</a
+                            >Watch Now</a
                           >
+                        </button>
                         </small>
                       </p>
                     </div>
@@ -454,7 +551,8 @@
                 </div>
               </div>
             </div>
-            <!-- Love Actually -->
+            <!-- ::: HOME ALONE 2 CARD End :::-->
+            <!-- ::: Love Actually CARD :::-->
             <div
               class="tab-pane fade "
               id="love-actually"
@@ -467,7 +565,7 @@
                     <img
                       data-src="https://upload.wikimedia.org/wikipedia/en/e/eb/Love_Actually_movie.jpg"
                       class="card-img"
-                      alt="..."
+                      alt="Love Actually Cover"
                       loading="lazy"
                     />
                   </div>
@@ -482,11 +580,13 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt0314331/"
                             target="__blank"
-                            >IMDB</a
-                          >
+                            >Watch Now</a
+                          ></button>
+
                         </small>
                       </p>
                     </div>
@@ -494,7 +594,8 @@
                 </div>
               </div>
             </div>
-            <!-- Miracle on 34th Street -->
+            <!-- ::: Love Actually CARD End :::-->
+            <!-- ::: Miracle on 34th Street CARD :::-->
             <div
               class="tab-pane fade "
               id="miracle-34th-street"
@@ -507,7 +608,7 @@
                     <img
                       data-src="https://upload.wikimedia.org/wikipedia/en/5/56/Miracle_on_34th_Street_poster.jpg"
                       class="card-img"
-                      alt="..."
+                      alt="Miracle on 34th Street Cover"
                       loading="lazy"
                     />
                   </div>
@@ -527,11 +628,12 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt0110527/"
                             target="__blank"
-                            >IMDB</a
-                          >
+                            >Watch Now</a
+                          ></button>
                         </small>
                       </p>
                     </div>
@@ -539,7 +641,8 @@
                 </div>
               </div>
             </div>
-            <!-- SANTA CLAUS: THE MOVIE -->
+            <!-- ::: Miracle on 34th Street CARD End :::-->
+            <!-- ::: Santa Claus: The Movie CARD :::-->
             <div
               class="tab-pane fade "
               id="santa-claus"
@@ -552,7 +655,7 @@
                     <img
                       data-src="https://m.media-amazon.com/images/M/MV5BZDc1OGVkMmQtYTU0NC00ZTc4LWIyNjItM2IzYzcwNTA1ZmJmXkEyXkFqcGdeQXVyMjY3MjUzNDk@._V1_.jpg"
                       class="card-img"
-                      alt="..."
+                      alt="Santa Claus: The Movie Cover"
                       loading="lazy"
                     />
                   </div>
@@ -566,11 +669,12 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt0089961/?ref_=fn_al_tt_2"
                             target="__blank"
-                            >IMDB</a
-                          >
+                            >Watch Now</a
+                          ></button>
                         </small>
                       </p>
                     </div>
@@ -578,7 +682,8 @@
                 </div>
               </div>
             </div>
-             <!-- Die Hard The Movie -->
+            <!-- ::: Santa Claus: The Movie CARD End :::-->
+             <!-- ::: Die Hard CARD :::-->
              <div
              class="tab-pane fade "
              id="die-hard"
@@ -591,7 +696,7 @@
                    <img
                      data-src="https://m.media-amazon.com/images/M/MV5BZjRlNDUxZjAtOGQ4OC00OTNlLTgxNmQtYTBmMDgwZmNmNjkxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,666,1000_AL_.jpg"
                      class="card-img"
-                     alt="..."
+                     alt="Die Hard Cover"
                      loading="lazy"
                    />
                  </div>
@@ -603,11 +708,13 @@
                      </p>
                      <p class="card-text">
                        <small class="text-muted">
+                         <button>
                          <a
                            href="https://www.imdb.com/title/tt0095016/"
                            target="__blank"
-                           >IMDB</a
+                           >Watch Now</a
                          >
+                        </button>
                        </small>
                      </p>
                    </div>
@@ -615,7 +722,126 @@
                </div>
              </div>
            </div>
-            <!-- Elf -->
+           <!-- ::: Die Hard CARD End :::-->
+           <!-- ::: Rise of the Guardians CARD :::-->
+           <div
+           class="tab-pane fade "
+           id="Rise-of-the-Guardians"
+           role="tabpanel"
+           aria-labelledby="Rise-of-the-Guardians-list"
+         >
+           <div class="card mb-3" style="max-width: 670px;">
+             <div class="row no-gutters">
+               <div class="col-md-12 col-lg-4">
+                 <img
+                   data-src="https://m.media-amazon.com/images/M/MV5BMTkzMjgwMDg1M15BMl5BanBnXkFtZTcwMTgzNTI1OA@@._V1_.jpg"
+                   class="card-img"
+                   alt="Rise of the Guardians Cover"
+                   loading="lazy"
+                 />
+               </div>
+               <div class="col-md-12 col-lg-8">
+                 <div class="card-body">
+                   <h5 class="card-title">Rise of the Guardians</h5>
+                   <p class="card-text">
+                    Generation after generation, immortal Guardians like Santa Claus (Alec Baldwin), the Easter Bunny (Hugh Jackman) and the Tooth Fairy (Isla Fisher) protect the world's children from darkness and despair. However, an evil boogeyman named Pitch Black (Jude Law) schemes to overthrow the Guardians by obliterating children's belief in them. It falls to a winter sprite named Jack Frost (Chris Pine) to thwart Pitch's plans and save the Guardians from destruction.
+                   </p>
+                   <p class="card-text">
+                     <small class="text-muted">
+                       <button>
+                       <a
+                         href="https://www.imdb.com/title/tt1446192/"
+                         target="__blank"
+                         >Watch Now</a
+                       ></button>
+                     </small>
+                   </p>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <!-- ::: Rise of the Guardians CARD End :::-->
+         <!-- ::: A Christmas Prince CARD :::-->
+         <div
+         class="tab-pane fade "
+         id="A-Christmas-Prince"
+         role="tabpanel"
+         aria-labelledby="A-Christmas-Prince-list"
+       >
+         <div class="card mb-3" style="max-width: 670px;">
+           <div class="row no-gutters">
+             <div class="col-md-12 col-lg-4">
+               <img
+                 data-src="https://m.media-amazon.com/images/M/MV5BMWVhMTBiOWUtMmI0Ni00NDg1LWFkMmYtNTJkNTkxNWE5OWY5XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                 class="card-img"
+                 alt="A Christmas Prince Cover"
+                 loading="lazy"
+               />
+             </div>
+             <div class="col-md-12 col-lg-8">
+               <div class="card-body">
+                 <h5 class="card-title">A Christmas Prince</h5>
+                 <p class="card-text">
+                  Christmas comes early for an aspiring young journalist when she's sent abroad to get the scoop on a dashing prince who's poised to be king.
+                 </p>
+                 <p class="card-text">
+                   <small class="text-muted">
+                     <button>
+                     <a
+                       href="https://www.imdb.com/title/tt8709036/"
+                       target="__blank"
+                       >Watch Now</a
+                     >
+                    </button>
+                   </small>
+                 </p>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <!-- ::: A Christmas Prince CARD End :::-->
+       <!-- ::: Frozen CARD :::-->
+       <div
+       class="tab-pane fade "
+       id="Frozen"
+       role="tabpanel"
+       aria-labelledby="Rise-of-the-Guardians-list"
+     >
+       <div class="card mb-3" style="max-width: 670px;">
+         <div class="row no-gutters">
+           <div class="col-md-12 col-lg-4">
+             <img
+               data-src="https://m.media-amazon.com/images/M/MV5BMTQ1MjQwMTE5OF5BMl5BanBnXkFtZTgwNjk3MTcyMDE@._V1_.jpg"
+               class="card-img"
+               alt="Frozen Cover"
+               loading="lazy"
+             />
+           </div>
+           <div class="col-md-12 col-lg-8">
+             <div class="card-body">
+               <h5 class="card-title">Frozen</h5>
+               <p class="card-text">
+                When their kingdom becomes trapped in perpetual winter, fearless Anna (Kristen Bell) joins forces with mountaineer Kristoff (Jonathan Groff) and his reindeer sidekick to find Anna's sister, Snow Queen Elsa (Idina Menzel), and break her icy spell. Although their epic journey leads them to encounters with mystical trolls, a comedic snowman (Josh Gad), harsh conditions, and magic at every turn, Anna and Kristoff bravely push onward in a race to save their kingdom from winter's cold grip.
+               </p>
+               <p class="card-text">
+                 <small class="text-muted">
+                   <button>
+                   <a
+                     href="https://www.imdb.com/title/tt2294629/"
+                     target="__blank"
+                     >Watch Now</a
+                   ></button>
+                 </small>
+               </p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- ::: Frozen CARD End :::-->
+            <!-- ::: Elf CARD :::-->
             <div
               class="tab-pane fade "
               id="Elf"
@@ -626,9 +852,9 @@
                 <div class="row no-gutters">
                   <div class="col-md-12 col-lg-4">
                     <img
-                      data-src="https://m.media-amazon.com/images/I/91ORhMVJxWL._AC_UY218_SEARCH213888_FMwebp_QL75_.jpg"
+                      data-src="https://www.myepl.org/wp-content/uploads/2018/10/Elf.jpg"
                       class="card-img"
-                      alt="..."
+                      alt="Elf Cover"
                       loading="lazy"
                     />
                   </div>
@@ -640,11 +866,13 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt0319343/?ref_=nv_sr_1?ref_=nv_sr_1"
                             target="__blank"
-                            >IMDB</a
-                          >
+                            >Watch Now</a
+                          ></button>
+
                         </small>
                       </p>
                     </div>
@@ -652,7 +880,8 @@
                 </div>
               </div>
             </div>
-            <!-- ::: Jingle All the Way :::-->
+            <!-- ::: Elf CARD End :::-->
+            <!-- ::: Jingle All the Way Card :::-->
             <div
               class="tab-pane fade"
               id="jingle"
@@ -663,7 +892,7 @@
                 <div class="row no-gutters">
                   <div class="col-md-12 col-lg-4">
                     <img
-                    data-src="http://3.bp.blogspot.com/-C-YOWWJND8Y/UNkycQ6PslI/AAAAAAAADjw/1IQQW1Yb2jU/s1600/woBp.jpg"
+                    data-src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Jingle_All_the_Way_poster.JPG/220px-Jingle_All_the_Way_poster.JPG"
                       class="card-img"
                       alt="Jingle All the Way"
                       loading="lazy"
@@ -682,10 +911,12 @@
                           </p>
                           <p class="card-text">
                             <small class="text-muted">
+                              <button>
                               <a href="https://www.imdb.com/title/tt0116705/?ref_=fn_al_tt_1"
                               target="__blank"
-                              >IMDB</a
+                              >Watch Now</a
                               >
+                            </button>
                             </small>
                           </p>
                         </div>
@@ -693,7 +924,8 @@
                 </div>
             </div>
             </div>
-              <!-- The Polar Express -->
+            <!-- ::: Jingle All the Way Card End :::-->
+            <!-- ::: The Polar Express Card:::-->
             <div
               class="tab-pane fade"
               id="the_polar_express"
@@ -723,11 +955,12 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt0338348/"
                             target="__blank"
-                            >IMDB</a
-                          >
+                            >Watch Now</a
+                          ></button>
                         </small>
                       </p>
                     </div>
@@ -735,6 +968,7 @@
                 </div>
               </div>
           </div>
+          <!-- ::: The Polar Express Card End :::-->
           <!-- White Christmas -->
           <div
               class="tab-pane fade"
@@ -760,11 +994,12 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt0047673/"
                             target="__blank"
-                            >IMDB</a
-                          >
+                            >Watch Now</a
+                          ></button>
                         </small>
                       </p>
                     </div>
@@ -797,11 +1032,12 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt0106611/"
                             target="__blank"
-                            >IMDB</a
-                          >
+                            >Watch Now</a
+                          ></button>
                         </small>
                       </p>
                     </div>
@@ -809,6 +1045,156 @@
                 </div>
               </div>
             </div>
+<<<<<<< HEAD
+=======
+          <!-- Rudolph The Red-Nosed Reindeer -->
+          <div
+            class="tab-pane fade"
+            id="rudolph-the-red-nosed-reindeer-1964"
+            role="tabpanel"
+            aria-labelledby="rudolph-the-red-nosed-reindeer-film-list">
+            <div class="card mb-3" style="max-width: 670px;">
+              <div class="row no-gutters">
+                <div class="col-md-12 col-lg-4">
+                  <img
+                    data-src="https://m.media-amazon.com/images/M/MV5BYjdjZjkyYjUtOWJiZC00ZTE2LTk4MDktZjliOTk5ZDk5ZTZhXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SY1000_CR0,0,701,1000_AL_.jpg"
+                    class="card-img"
+                    alt="Rudolph The Red-Nosed Reindeer (1964)"
+                    loading="lazy"/>
+                </div>
+                <div class="col-md-12 col-lg-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Rudolph The Red-Nosed Reindeer (1964)</h5>
+                    <p class="card-text">
+                      Sam the snowman tells us the story of a young red-nosed reindeer who, after being ousted from the reindeer games because of his glowing nose, teams up with Hermey, an elf who wants to be a dentist, and Yukon Cornelius, the prospector. They run into the Abominable Snowman and find a whole island of misfit toys. Rudoph vows to see if he can get Santa to help the toys, and he goes back to the North Pole on Christmas Eve. But Santa’s sleigh is fogged in. But when Santa looks over Rudolph, he gets a very bright idea…
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">
+                        <button>
+                        <a
+                          href="https://www.imdb.com/title/tt0058536/?ref_=ttpl_pl_tt"
+                          target="__blank"
+                          >Watch Now</a
+                        ></button>
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  <!-- Rudolph The Red-Nosed Reindeer ends here -->
+          <!-- The Night Before -->
+          <div
+            class="tab-pane fade"
+            id="the-night-before"
+            role="tabpanel"
+            aria-labelledby="the-night-before-list">
+            <div class="card mb-3" style="max-width: 670px;">
+              <div class="row no-gutters">
+                <div class="col-md-12 col-lg-4">
+                  <img
+                    data-src="https://m.media-amazon.com/images/M/MV5BMTkyNDY1ODQwNV5BMl5BanBnXkFtZTgwNzA2MjUwNzE@._V1_UX182_CR0,0,182,268_AL_.jpg"
+                    class="card-img"
+                    alt="The Night Before"
+                    loading="lazy"/>
+                </div>
+                <div class="col-md-12 col-lg-8">
+                  <div class="card-body">
+                    <h5 class="card-title">The Night Before</h5>
+                    <p class="card-text">
+                     On Christmas eve, three lifelong friends spend the night in New York City looking for the Holy Grail of Christmas parties.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">
+                        <button>
+                        <a
+                          href="https://www.imdb.com/title/tt3530002/"
+                          target="__blank"
+                          >Watch Now</a
+                        ></button>
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  <!-- The Night Before ends here -->
+
+          <!-- The Christmas Chronicles -->
+          <div
+            class="tab-pane fade"
+            id="the-christmas-chronicles"
+            role="tabpanel"
+            aria-labelledby="the-christmas-chronicles-list">
+            <div class="card mb-3" style="max-width: 670px;">
+              <div class="row no-gutters">
+                <div class="col-md-12 col-lg-4">
+                  <img
+                    data-src="http://www.gstatic.com/tv/thumb/v22vodart/16106601/p16106601_v_v8_aa.jpg"
+                    class="card-img"
+                    alt="The Christmas Chronicles"
+                    loading="lazy"/>
+                </div>
+                <div class="col-md-12 col-lg-8">
+                  <div class="card-body">
+                    <h5 class="card-title">The Christmas Chronicles</h5>
+                    <p class="card-text">
+                   Siblings Kate and Teddy Pierce hatch a scheme to capture Santa Claus on Christmas Eve. When the plan goes awry, the kids join forces with a somewhat jolly Saint Nick and his loyal elves to save the holiday before it's too late
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">
+                          <button>
+                            <a
+                              href="https://www.imdb.com/title/tt2990140/"
+                              target="__blank"
+                              >Watch Now</a
+                            >
+                        </button>
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  <!-- The Christmas Chronicles ends here -->
+
+          <!-- El Camino Christmas  -->
+          <div
+            class="tab-pane fade"
+            id="el-camino-christmas"
+            role="tabpanel"
+            aria-labelledby="el-camino-christmas-list">
+            <div class="card mb-3" style="max-width: 670px;">
+              <div class="row no-gutters">
+                <div class="col-md-12 col-lg-4">
+                  <img
+                    data-src="https://m.media-amazon.com/images/M/MV5BODk3MzY0MDkyM15BMl5BanBnXkFtZTgwNzUxNzMyNDM@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
+                    class="card-img"
+                    alt="El Camino Christmas"
+                    loading="lazy"/>
+                </div>
+                <div class="col-md-12 col-lg-8">
+                  <div class="card-body">
+                    <h5 class="card-title">El Camino Christmas</h5>
+                    <p class="card-text">
+                    Eric comes to El Camino looking for his unknown dad. He's harassed, hit and jailed by a drunk local cop, who later shoots at a liquor mart with Eric +4 inside. The sheriff and deputy then shoot up the place, answering each other's fire.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">
+                          <button>
+                          <a
+                            href="https://www.imdb.com/title/tt3255590/"
+                            target="__blank"
+                            >Watch Now</a
+                          ></button>
+                        </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  <!-- El Camino Christmas  ends here -->
+>>>>>>> upstream/master
         </div>
       </div>
     </div>
@@ -821,7 +1207,7 @@
       <div class="col-12 col-md-4">
         <a href="#" class="footer-logo"><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a>
         <p>
-          do eiusmod tempor incididut ut labore et dolore magna aliqua.
+          Contact us for all of your Christmas questions:
         </p>
         <!--Remove tel spaces in the href-->
         <a href="tel:+1800123456" class="footer-tel">+ 1 800 123 456</a><br /><span class="footer-email">Email
@@ -830,14 +1216,14 @@
       <div class="col-12 col-md-4 footer-links">
         <h4>Links</h4>
         <ul class="list-unstyled">
-          <li><a href="pages/facts.html">Facts and Info</a></li>
-          <li><a href="pages/recipes.html">Recipes</a></li>
-          <li><a href="pages/gifts.html">Gifts Suggestions</a></li>
-          <li><a href="pages/songs.html">Seasonal Songs &amp; Lyrics</a></li>
-          <li><a href="pages/games.html">Seasonal Games</a></li>
-          <li><a href="pages/films.html">Seasonal Films</a></li>
-          <li><a href="pages/books.html">Seasonal Books</a></li>
-          <li><a href="pages/activities.html">Seasonal Activities</a></li>
+          <li><a href="./facts.html">Facts and Info</a></li>
+          <li><a href="./recipes.html">Recipes</a></li>
+          <li><a href="./gifts.html">Gifts Suggestions</a></li>
+          <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
+          <li><a href="./games.html">Seasonal Games</a></li>
+          <li><a href="./films.html">Seasonal Films</a></li>
+          <li><a href="./books.html">Seasonal Books</a></li>
+          <li><a href="./activities.html">Seasonal Activities</a></li>
         </ul>
       </div>
       <div class="col-12 col-md-4">
@@ -870,10 +1256,11 @@
       </div>
     </div>
 </footer>
-
+    <script src="../assets/js/mouse-trail-snowball.js"></script>
+    <script src="../assets/js/navLink-generator.js"></script>
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous">
     </script>
     <script
@@ -886,5 +1273,20 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous">
     </script>
+
+    <script type="text/javascript">
+
+    // grab the tab shown event and move the document on top by callling 
+    // scrollTop method.
+
+    $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
+      //e.target // newly activated tab
+      //e.relatedTarget // previous active tab
+      //$(window).scrollTop(0);
+      $("html, body").animate({ scrollTop: 0 },10);
+    })
+
+    </script>
+
   </body>
 </html>

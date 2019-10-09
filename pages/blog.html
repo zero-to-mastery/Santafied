@@ -29,77 +29,29 @@
       rel="stylesheet"
       href="../assets/css/blog.css"
     />
+    <link 
+      rel="stylesheet" 
+      href="../assets/css/mouse-trail-snowball.css" 
+    />
+
     <title>Santafied | Blog</title>
   </head>
 
   <body class="sub-page">
+    <div id="snowball1"></div>
+    <div id="snowball2"></div>
+    <div id="snowball3"></div>
     <!-- :::NAV Starts ::: -->
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="../index.html"
-          ><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/facts.html">Facts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/recipes.html">Recipes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/gifts.html">Gifts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/songs.html">Songs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/games.html">Games</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/films.html">Films</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/books.html">Books</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link selected" href="../pages/activities.html">Activities</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                More
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="elf-name-generator.html"
-                  >Elf Name Generator</a
-                >
-                <a class="dropdown-item" href="party-costumes.html">Party Costumes</a>
-                <a class="dropdown-item" href="international.html">International</a>
-                <a class="dropdown-item" href="party-costumes.html">Party Costumes</a>
-                <a class="dropdown-item" href="blog.html">Blog</a>
-              </div>
-            </li>
-          </ul>
+        <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a>
+        <div class="dropdown dropdown-container">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Navigation
+          </a>
+          <div class="dropdown-menu" id="nav-dropdown-from-page" aria-labelledby="navbarDropdown">
+          </div>
         </div>
       </nav>
     </div>
@@ -108,8 +60,23 @@
 
     <!-- main activities content starts here -->
     <div class="container">
-      <h1 class="title">Blog</h1>
-      <div class="row mb-3">
+      <div class="blog-searchbox-container">
+        <h1 class="title">Blog</h1>
+        
+        <div class="row searchbox-item">
+          <div class="col-12 col-md-12 col-lg-12 text-center">
+            <div class="container">
+              <form action="" role="search" class="search-form btn btn-lg btn-outline-danger">
+                <input type="search" name="q" id="search-blog" class="search-blog main-title" onkeyup="searchBlog()"
+                       placeholder="Search blog post by title ..."
+                       autocomplete="off">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3 mt-4">
         <div class="col-sm-12 col-md-4">
           <div class="card mx-3 mb-3 mb-md-0">
             <div class="card-body">
@@ -217,7 +184,7 @@
           <div class="col-12 col-md-4">
             <a href="#" class="footer-logo"><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a>
             <p>
-              do eiusmod tempor incididut ut labore et dolore magna aliqua.
+              Contact us for all of your Christmas questions:
             </p>
             <!--Remove tel spaces in the href-->
             <a href="tel:+1800123456" class="footer-tel">+ 1 800 123 456</a><br /><span class="footer-email">Email
@@ -226,14 +193,14 @@
           <div class="col-12 col-md-4 footer-links">
             <h4>Links</h4>
             <ul class="list-unstyled">
-              <li><a href="pages/facts.html">Facts and Info</a></li>
-              <li><a href="pages/recipes.html">Recipes</a></li>
-              <li><a href="pages/gifts.html">Gifts Suggestions</a></li>
-              <li><a href="pages/songs.html">Seasonal Songs &amp; Lyrics</a></li>
-              <li><a href="pages/games.html">Seasonal Games</a></li>
-              <li><a href="pages/films.html">Seasonal Films</a></li>
-              <li><a href="pages/books.html">Seasonal Books</a></li>
-              <li><a href="pages/activities.html">Seasonal Activities</a></li>
+              <li><a href="./facts.html">Facts and Info</a></li>
+              <li><a href="./recipes.html">Recipes</a></li>
+              <li><a href="./gifts.html">Gifts Suggestions</a></li>
+              <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
+              <li><a href="./games.html">Seasonal Games</a></li>
+              <li><a href="./films.html">Seasonal Films</a></li>
+              <li><a href="./books.html">Seasonal Books</a></li>
+              <li><a href="./activities.html">Seasonal Activities</a></li>
             </ul>
           </div>
           <div class="col-12 col-md-4">
@@ -266,8 +233,10 @@
           </div>
         </div>
     </footer>
+    <script src="../assets/js/mouse-trail-snowball.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="/assets/js/carousel.js"></script>
+    <script src="../assets/js/navLink-generator.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -283,5 +252,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+  <script src="../assets/js/blog-script.js"></script>
   </body>
 </html>

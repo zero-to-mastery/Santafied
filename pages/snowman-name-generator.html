@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/5e68800c4a.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/films.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/snowman-name-generator.css" />
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/mouse-trail-snowball.css" />
+    <title>Santafied | Snowman Name Generator</title>
+</head>
+
+<body id="films">
+
+    <div id="snowball1"></div>
+    <div id="snowball2"></div>
+    <div id="snowball3"></div>
+    <!-- :::NAV Starts ::: -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> SANTA<span
+                    id="brand-color">FIED</span></a>
+            <div class="dropdown dropdown-container">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Navigation
+                </a>
+                <div class="dropdown-menu" id="nav-dropdown-from-page" aria-labelledby="navbarDropdown">
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main class="container name-generator">
+
+        <div class="icon-container">
+            <img alt="snowman" class="snowman-icon" src="../assets/img/snowman.svg">
+        </div>
+
+        <h1>What's Your SNOWMAN Name?</h1>
+
+        <div class="name-choice">
+            <label id="letterLabel" for="firstLetter">First Letter Of Your First Name:</label>
+            <input type="text" id="firstLetter" class="box-style" maxlength="1" value="">
+        </div>
+
+        <div class="month-choice">
+            <h3>Your Month of Birth:</h3>
+            <select id="selectMonth" class="box-style">
+                <option selected value="">--Select Month--</option>
+                <option value="0">January</ption>
+                <option value="1">February</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9">October</option>
+                <option value="10">November</option>
+                <option value="11">December</option>
+            </select>
+        </div>
+
+        <button id="loadName" type="submit" onclick="generateName();">Generate My Name!</button>
+
+        <div id="resultContainer">
+            <h3>Your Snowman Name is:</h3>
+            <p id="result"></p>
+        </div>
+
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <a href="#" class="footer-logo"><i class="fa fa-cube"></i> SANTA<span
+                            id="brand-color">FIED</span></a>
+                    <p>
+                        Contact us for all of your Christmas questions:
+                    </p>
+                    <!--Remove tel spaces in the href-->
+                    <a href="tel:+1800123456" class="footer-tel">+ 1 800 123 456</a><br /><span
+                        class="footer-email">Email
+                        <a href="mailto:support@santafied.fi">support@santafied.fi</a></span>
+                </div>
+                <div class="col-12 col-md-4 footer-links">
+                    <h4>Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="./facts.html">Facts and Info</a></li>
+                        <li><a href="./recipes.html">Recipes</a></li>
+                        <li><a href="./gifts.html">Gifts Suggestions</a></li>
+                        <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
+                        <li><a href="./games.html">Seasonal Games</a></li>
+                        <li><a href="./films.html">Seasonal Films</a></li>
+                        <li><a href="./books.html">Seasonal Books</a></li>
+                        <li><a href="./activities.html">Seasonal Activities</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h4>Let's stay in touch</h4>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="footer-form-email">Email</label>
+                            <input class="form-control form-inverted" type="email" id="footer-form-email"
+                                placeholder="Email" />
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+
+                    <p>Get updates on sales and more</p>
+                    <ul class="list-inline footer-social">
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col footer-copyright">
+                        &copy; Santafied. A project under zero-to-mastery.
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <script src="../assets/js/mouse-trail-snowball.js"></script>
+    <script src="../assets/js/navLink-generator.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <script src="../assets/js/elf-name-generator.js"></script>
+    <script src="../assets/js/snowman-name-generator.js"></script>
+
+</body>
+
+</html>
