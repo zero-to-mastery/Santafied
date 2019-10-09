@@ -55,3 +55,11 @@ input.search-blog:focus {
   cursor: auto;
   padding-right: 10px;
 }
+
+.blog-search-container {
+  display: flex;
+}
+
+.search-box-item {
+  margin-left: auto;
+}
