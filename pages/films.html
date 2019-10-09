@@ -29,7 +29,7 @@
     <div id="snowball2"></div>
     <div id="snowball3"></div>
     <!-- :::NAV Starts ::: -->
-    <div class="container">
+    <div class="container" id="scroll-up">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a>
         <div class="dropdown dropdown-container">
@@ -58,6 +58,7 @@
               href="#grinch-stole"
               role="tab"
               aria-controls="profile"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >How the Grinch Stole Christmas</a
             >
             <a
@@ -67,6 +68,7 @@
               href="#list-settings"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Disney's A Christmas Carol</a
             >
             <a
@@ -76,7 +78,17 @@
               href="#arthur-christmas"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Arthur Christmas</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-settings-list"
+              data-toggle="list"
+              href="#rare-exports-a-christmas-tale"
+              role="tab"
+              aria-controls="settings"
+              >Rare Exports: A Christmas Tale</a
             >
             <a
               class="list-group-item list-group-item-action"
@@ -85,6 +97,7 @@
               href="#home-alone"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Home Alone</a
             >
             <a
@@ -94,6 +107,7 @@
               href="#home-alone-2"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Home Alone 2: Lost in New York</a
             >
             <a
@@ -103,6 +117,7 @@
               href="#love-actually"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Love Actually</a
             >
             <a
@@ -112,6 +127,7 @@
               href="#miracle-34th-street"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Miracle on 34th Street</a
             >
             <a
@@ -121,6 +137,7 @@
               href="#santa-claus"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Santa Claus The Movie</a>
 
             <a
@@ -130,6 +147,7 @@
               href="#Elf"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Elf</a
             >
             <a
@@ -139,6 +157,7 @@
             href="#die-hard"
             role="tab"
             aria-controls="profile"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >Die Hard</a
           >
           <a
@@ -148,6 +167,7 @@
             href="#Rise-of-the-Guardians"
             role="tab"
             aria-controls="settings"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >Rise of the Guardians</a
           >
           <a
@@ -157,6 +177,7 @@
             href="#A-Christmas-Prince"
             role="tab"
             aria-controls="settings"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >A Christmas Prince</a
           >
           <a
@@ -166,6 +187,7 @@
             href="#Frozen"
             role="tab"
             aria-controls="settings"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >Frozen</a
           >
             <a
@@ -175,6 +197,7 @@
             href="#jingle"
             role="tab"
             aria-controls="profile"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >Jingle All the Way</a
             >
            <a
@@ -184,6 +207,7 @@
             href="#the_polar_express"
             role="tab"
             aria-controls="profile"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >The Polar Express</a
             >
             <a
@@ -193,6 +217,7 @@
             href="#white-christmas"
             role="tab"
             aria-controls="profile"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >White Christmas</a
             >
             <a
@@ -202,6 +227,7 @@
             href="#cool-runnings"
             role="tab"
             aria-controls="profile"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >Cool Runnings</a
             >
             <a
@@ -210,7 +236,9 @@
               data-toggle="list"
               href="#rudolph-the-red-nosed-reindeer-1964"
               role="tab"
-              aria-controls="profile">
+              aria-controls="profile"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
+            >
               Rudolph The Red-Nosed Reindeer (1964)
             </a>
             <a
@@ -219,7 +247,9 @@
               data-toggle="list"
               href="#the-night-before"
               role="tab"
-              aria-controls="profile">
+              aria-controls="profile"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
+            >
               The Night Before
             </a>
             <a
@@ -228,8 +258,19 @@
               data-toggle="list"
               href="#the-christmas-chronicles"
               role="tab"
-              aria-controls="profile">
+              aria-controls="profile"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
+            >
               The Christmas Chronicles
+            </a>
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-profile-list"
+              data-toggle="list"
+              href="#el-camino-christmas"
+              role="tab"
+              aria-controls="profile">
+              El Camino Christmas
             </a>
           </div>
         </div>
@@ -277,7 +318,7 @@
                               >Watch Now</a
                             >
                           </button>
-                         
+
                         </small>
                       </p>
                     </div>
@@ -322,7 +363,7 @@
                             target="__blank"
                             >Watch Now</a
                           ></button>
-                          
+
                         </small>
                       </p>
                     </div>
@@ -372,6 +413,48 @@
               </div>
             </div>
             <!-- ::: Arthur Christmas Card End :::-->
+            <!-- ::: Rare Exports: A Christmas Tale Card :::-->
+            <div
+              class="tab-pane fade "
+              id="rare-exports-a-christmas-tale"
+              role="tabpanel"
+              aria-labelledby="santa-claus-list"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      data-src="https://upload.wikimedia.org/wikipedia/en/thumb/2/27/Rare_Exports_official_film_poster.jpg/215px-Rare_Exports_official_film_poster.jpg"
+                      class="card-img"
+                      alt="..."
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Rare Exports: A Christmas Tale</h5>
+                      <p class="card-text">
+                        <b>Rare Exports: A Christmas Tale</b> is a 2010 Finnish dark fantasy horror thriller film written and directed by Jalmari Helander about people living near the Korvatunturi mountain who discover the secret behind Santa Claus. The film is based on the 2003 short film <i>Rare Exports Inc.</i>, and its 2005 sequel <i>Rare Exports: The Official Safety Instructions</i>, by Jalmari Helander and Juuso Helander, both of which involve a company that traps wild Santa Clauses and trains and exports them to locations around the world<br>
+                        <b>Rotten Tomatoes:</b> 89%<br>
+                        <b>IMDb:</b> 6.7
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">
+                          <button>
+                          <a
+                            href="https://www.imdb.com/title/tt1401143/"
+                            target="__blank"
+                            >Watch Now</a
+                          >
+                        </button>
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: Rare Exports: A Christmas Tale Card End :::-->
             <!-- ::: HOME ALONE CARD :::-->
             <div
               class="tab-pane fade"
@@ -911,7 +994,7 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
-                          <button> 
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt0047673/"
                             target="__blank"
@@ -962,6 +1045,8 @@
                 </div>
               </div>
             </div>
+<<<<<<< HEAD
+=======
           <!-- Rudolph The Red-Nosed Reindeer -->
           <div
             class="tab-pane fade"
@@ -1058,11 +1143,13 @@
                     </p>
                     <p class="card-text">
                       <small class="text-muted">
-                        <a
-                          href="https://www.imdb.com/title/tt2990140/"
-                          target="__blank"
-                          >IMDB</a
-                        >
+                          <button>
+                            <a
+                              href="https://www.imdb.com/title/tt2990140/"
+                              target="__blank"
+                              >Watch Now</a
+                            >
+                        </button>
                       </small>
                     </p>
                   </div>
@@ -1070,6 +1157,44 @@
               </div>
             </div>
           </div>  <!-- The Christmas Chronicles ends here -->
+
+          <!-- El Camino Christmas  -->
+          <div
+            class="tab-pane fade"
+            id="el-camino-christmas"
+            role="tabpanel"
+            aria-labelledby="el-camino-christmas-list">
+            <div class="card mb-3" style="max-width: 670px;">
+              <div class="row no-gutters">
+                <div class="col-md-12 col-lg-4">
+                  <img
+                    data-src="https://m.media-amazon.com/images/M/MV5BODk3MzY0MDkyM15BMl5BanBnXkFtZTgwNzUxNzMyNDM@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
+                    class="card-img"
+                    alt="El Camino Christmas"
+                    loading="lazy"/>
+                </div>
+                <div class="col-md-12 col-lg-8">
+                  <div class="card-body">
+                    <h5 class="card-title">El Camino Christmas</h5>
+                    <p class="card-text">
+                    Eric comes to El Camino looking for his unknown dad. He's harassed, hit and jailed by a drunk local cop, who later shoots at a liquor mart with Eric +4 inside. The sheriff and deputy then shoot up the place, answering each other's fire.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">
+                          <button>
+                          <a
+                            href="https://www.imdb.com/title/tt3255590/"
+                            target="__blank"
+                            >Watch Now</a
+                          ></button>
+                        </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  <!-- El Camino Christmas  ends here -->
+>>>>>>> upstream/master
         </div>
       </div>
     </div>
@@ -1082,7 +1207,7 @@
       <div class="col-12 col-md-4">
         <a href="#" class="footer-logo"><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a>
         <p>
-          do eiusmod tempor incididut ut labore et dolore magna aliqua.
+          Contact us for all of your Christmas questions:
         </p>
         <!--Remove tel spaces in the href-->
         <a href="tel:+1800123456" class="footer-tel">+ 1 800 123 456</a><br /><span class="footer-email">Email
@@ -1124,8 +1249,8 @@
           </li>
         </ul>
       </div>
-      <div class="row">
-        <div class="col footer-copyright">
+      <div class="row" style="width: 100%">
+        <div class="col footer-copyright justify-content-center">
           &copy; Santafied. A project under zero-to-mastery.
         </div>
       </div>
@@ -1134,8 +1259,8 @@
     <script src="../assets/js/mouse-trail-snowball.js"></script>
     <script src="../assets/js/navLink-generator.js"></script>
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous">
     </script>
     <script
@@ -1148,5 +1273,20 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous">
     </script>
+
+    <script type="text/javascript">
+
+    // grab the tab shown event and move the document on top by callling 
+    // scrollTop method.
+
+    $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
+      //e.target // newly activated tab
+      //e.relatedTarget // previous active tab
+      //$(window).scrollTop(0);
+      $("html, body").animate({ scrollTop: 0 },10);
+    })
+
+    </script>
+
   </body>
 </html>

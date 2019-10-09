@@ -54,11 +54,6 @@
               src="https://images.unsplash.com/photo-1482638591678-a11589a805f2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
               alt="" />
             <div class="carousel-caption d-flex flex-column align-items-center">
-          
-                <a href="index.html"> <h3>Welcome to Santafied 🎅</h3> </a>
-            <p>
-                                        Your one-stop-shop for all things Christmas related!   
-                                                               </p>
             </div>
           </div>
           <!-- Slide Two -->
@@ -69,7 +64,7 @@
               alt="" />
             <div class="carousel-caption d-flex flex-column align-items-center">
               <a href="pages/gifts.html">
-                <h3>Christmas Gifts 🎁</h3>
+               <a href="index.html"> <h3>Welcome to Santafied 🎅</h3> </a>
               </a>
 
               <p>
@@ -196,8 +191,36 @@
                 <p class="text-center">Subscribe our newsletter to receive the latest news and exclusive offers every week. No spam.
             </div>
             <form class="form-inline" method="post">
-                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Your Email"></div>
-                <div class="form-group"><button class="btn btn-danger" type="submit">Subscribe </button></div>
+                <div class="form-group"><input class="form-control validate-me" type="email" name="email" placeholder="Your Email"></div>
+                <div class="error-msg">Please Enter a Valid Email Address</div>
+                <div class="form-group">
+              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+  Subscribe
+</button>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Your are successfully subscribed
+      </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+              
+              
+              
+              </div>
             </form>
         </div>
     </div>
@@ -223,7 +246,7 @@
         <div class="col-12 col-md-4">
           <a href="#" class="footer-logo"><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a>
           <p>
-            do eiusmod tempor incididut ut labore et dolore magna aliqua.
+            Contact us for all of your Christmas questions:
           </p>
           <!--Remove tel spaces in the href-->
           <a href="tel:+1800123456" class="footer-tel">+ 1 800 123 456</a><br /><span class="footer-email">Email
@@ -265,8 +288,8 @@
             </li>
           </ul>
         </div>
-        <div class="row">
-          <div class="col footer-copyright">
+        <div class="row" style="width: 100%">
+          <div class="col footer-copyright justify-content-center">
             &copy; Santafied. A project under zero-to-mastery.
           </div>
         </div>
@@ -278,6 +301,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <script src="./assets/js/carousel.js"></script>
   <script src="./assets/js/navLink-generator.js"></script>
+  <script src="./assets/js/email-validation.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
