@@ -304,6 +304,7 @@ footer {
   color:#313437;
   background-color:#fff;
   padding:50px 0;
+  position: relative;
 }
 
 .newsletter-subscribe p {
@@ -374,4 +375,13 @@ footer {
   background-color:#da0517 !important;
   color:#fff;
   outline:none !important;
+}
+
+.newsletter-subscribe .error-msg {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  color: #da0517 !important;
 }
