@@ -56,10 +56,10 @@ input.search-blog:focus {
   padding-right: 10px;
 }
 
-.blog-search-container {
+.blog-searchbox-container {
   display: flex;
 }
 
-.search-box-item {
+.searchbox-item {
   margin-left: auto;
 }
