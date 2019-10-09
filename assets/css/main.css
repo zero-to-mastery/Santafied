@@ -308,6 +308,7 @@ footer {
   color:#313437;
   background-color:#fff;
   padding:50px 0;
+  position: relative;
 }
 
 .newsletter-subscribe p {
@@ -389,4 +390,13 @@ footer {
 .btn-primary:hover {
   background-color: #e03d3e;
   border-color: #e03d3e;
+}
+
+.newsletter-subscribe .error-msg {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  color: #da0517 !important;
 }
