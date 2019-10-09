@@ -173,6 +173,23 @@ var listOf = [
     link: "http://vinhthuan.com/upload//image/banh-mi-viet-nam.jpg"
   },
   {
+    id: "banh-xoai-cake",
+    name: "Banh Xoai Cake Pie",
+    description:
+      "Mango cake is cooked from ripe mangoes and dried, " +
+      " when eaten, it will create a sweet and sour feeling",
+    summary: [
+      {
+        makes: "1 pie",
+        prep: "30 min",
+        cooking: "20 min",
+        skill: "Easy"
+      }
+    ],
+    img: "http://gl.amthuc365.vn/uploads/i/Tin_Tuc/2015/15-7/0abanhxoai15.jpg",
+    link: "http://gl.amthuc365.vn/uploads/i/Tin_Tuc/2015/15-7/0abanhxoai15.jpg"
+  },
+  {
     id: "fish-soup",
     name: "Fishermans soup",
     description:
@@ -302,5 +319,24 @@ var listOf = [
       "https://panlasangpinoy.com/wp-content/uploads/2011/10/bibingka-Front-360x361.jpg",
     link:
       "https://panlasangpinoy.com/rice-cake-bibingka-recipe/"
+  },
+  {
+    id: "Eggnog",
+    name: "Eggnog",
+    description:
+      "Eggnog is a classic holiday drink made of cream, milk, egg whites, and sometimes bourbon ;)" +
+      "Combine and beat ingredients together until smooth. Serve chilled.",
+    summary: [
+      {
+        makes: "8",
+        prep: "10 min",
+        cooking: "none",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Eggnog2.jpg/400px-Eggnog2.jpg",
+    link:
+      "https://www.jamieoliver.com/features/best-eggnog-recipe/"
   }
 ];

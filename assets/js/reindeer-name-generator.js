@@ -13,7 +13,7 @@ function monthChoice() {
   choice.monthChoice = month;
 }
 
-//function to generate elf name
+//function to generate reindeer name
 function generateName() {
   if (choice.firstLetter && choice.monthChoice) {
     document.getElementById("resultContainer").style.display = "block";
