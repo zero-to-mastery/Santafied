@@ -1,22 +1,24 @@
-let choice = { firstletter: "Cookie", month: "Lord Crackle" };
+let choice = { firstLetter: "", monthChoice: "" };
+let result = document.getElementById("result");
 
 //  letterChoice function
 function letterChoice() {
   letter = document.getElementById("name").value;
-  choice.firstletter = letter;
+  choice.firstLetter = letter;
 }
 
 //  monthChoice function
 function monthChoice() {
   month = document.getElementById("month").value;
-  choice.month = month;
+  choice.monthChoice = month;
 }
 
-//printName function
-function printName() {
-  let nameContainer = document.querySelector(".given-name");
-  nameContainer.textContent = choice.firstletter + " " + choice.month;
+//function to generate elf name
+function generateName() {
+  if (choice.firstLetter && choice.monthChoice) {
+    document.getElementById("resultContainer").style.display = "block";
+    result.textContent = choice.firstLetter + " " + choice.monthChoice;
+  } else {
+    alert("Please input your data first.");
+  }
 }
-
-//the magic!
-document.getElementById("loadName").addEventListener("click", printName, false);
