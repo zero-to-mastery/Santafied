@@ -1,0 +1,42 @@
+main {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 10% 0;
+    margin-top: 5%;
+    width: 100vw;
+}
+
+.generator-title {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.generator-tile {
+    background-color: #ff4546;
+    border-radius: .7rem;
+    height: 12rem;
+    margin: 1rem;
+    padding-top: 1.2rem;
+    text-align: center;
+    width: 15rem;
+}
+
+.generator-tile a {
+    text-decoration: none;
+}
+
+svg {
+    display: block;
+    fill: #fff;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 75px;
+}
+
+.generator-tile span {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}

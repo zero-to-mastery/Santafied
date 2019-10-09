@@ -22,3 +22,36 @@
   content: '|';
   margin-left: 10px;
 }
+
+input.search-blog {
+  color: #222;
+  position: relative;
+  z-index: 5;
+  transition: z-index 0.8s, width 0.5s, background 0.3s ease, border 0.3s;
+  height: 45px;
+  width: 0;
+  margin: 0;
+  padding: 5px 0 5px 40px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  /*background: url(search.png) no-repeat left 9px center transparent;*/
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQbSURBVGhD7ZhbqExRGMfHXTy4e0ApPCC3Oqkzs9acOQ/nMGat4YhDxIMiL5LcSkhyyZOEPEnu5HJ4liKPRO73Es7ee44TUuRu/Nf2zWntvYcz9uw9zmh+9XXa51v7+77/uu21JlKhQgfEkNHRpmCrLMHOWZI9MiV7b0metU2wVvy9Zgq+30zxBW/q6vrQax2DbGNjF0vG5lqCX20ruiBjnyDqWGZazXgK9e/IyFjUlPxm/kILM7z/Q41Sc8PkARS2dGQjkU6YQhth3/IV5zT0PIrN73NYsyEZpxThk00kumK+H85TCHqXfYW4i/Avy6T5BDPJB9nvVFV1eyGqh0JQArYD0/BBvvdpus22E4WJGgkkPOou4Nf0YMdb0tWjqGm7oOg0BN/zxMIoZ0RsOjULB/T4BndiezcSrJaa/BX2RiH4Fs/UE/yDGlFqFiz2wvasCXY/I/gIauIbK83moPjP7tiPk8ke1CQYVM+h11y7E3sVhIgcGRlf7IxvT9n15A4GDPM8V4IffqfTn0Dn7NPzIMfbZzMSfcldPO6PnVrY5AqU54L3Q/zXrlyryF0cZqpmjCOw5F9akrGR5A4cbCirHfkEu0Wu4vAG5hfIFQrWzOhg96byMpkYRm7/IOh5PSjm7TJyhQbyXNFzZiSbTy7/YASe6EEtER1HrtBQ3xZnTraVXP7BTvJRD1qKwx2m81I9J+wQufxBRxItIPtErlAxJG9w5uVN5PKPHlAtQvVxJFdoYGo16nlhR8nlH/VR0oO2To8NIVdoGIKt0HOihp3k8g+C3NCDluLOgG/VHj2nJeNryOUfTKcDelAsxG3kCg0IearnNEQsTi7/IOhCPShG6B65QkHd4fV86Lj3dxvHdie3f15Mqe6vditHcBFLkTtwEP+Qngt2llzFg145oQfH8+3spkhncgdGi2AT8QH+rufCDAjulN2cik2yj+5aAjxvIncgGLKqF4q+rudQz+QODgQ+qCdRwkwZn0Xuovj1qww/6YiPkVG3UmoSHIZMDMSUMvVktHYWURNfqJFwi1CGXLupSfCYqXiN925tj84ePzc5tSY806nN2Gn1MxI1DR51pHbfF2wTrBWCVhZyqFQnaLxz0LOwPRayGBwhZiKJ41ScMyUSgi5B2GZD8CVWmku1luBbjv/vQvHOa0F7JtiZUMWonQzT7GHe5EEbxATyUfwdzxKJnliUG9DT7/IWUIhhjRgiPtVzE3Vb2GIU9q8fgq+FoDt5i/CYvdudQidMU1uviqGK7BBicpip6HAIWgjbjoKPoIAmFHwCa2MvClkHq7Xq63tTcwcFicGRpWRiiqFAMU0VMaWmIDGCnftvxCh/RUypaVeMYJfV4ZOad2x+K6acROTwiClHETnaxJSziBxKTNmLqFCeRCI/AV2mPc19dRJ4AAAAAElFTkSuQmCC") no-repeat left 9px center transparent;
+  background-size: 24px;
+  background-color: white;
+
+}
+
+input.search-blog:focus {
+  z-index: 3;
+  width: 270px;
+
+  border: 1px solid #666;
+  background-color: white;
+  outline: none;
+  cursor: auto;
+  padding-right: 10px;
+}

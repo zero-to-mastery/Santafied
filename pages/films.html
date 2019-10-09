@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../assets/css/films.css" />
+    <link rel="stylesheet" href="../assets/css/mouse-trail-snowball.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
@@ -24,74 +25,20 @@
     <title>Santafied | Films</title>
   </head>
   <body id="films" class="sub-page">
+    <div id="snowball1"></div>
+    <div id="snowball2"></div>
+    <div id="snowball3"></div>
     <!-- :::NAV Starts ::: -->
-    <div class="container">
+    <div class="container" id="scroll-up">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="../index.html"
-          ><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/facts.html">Facts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/recipes.html"
-                >Recipes</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/gifts.html">Gifts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/songs.html">Songs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/games.html">Games</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link selected" href="../pages/films.html">Films</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/books.html">Books</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/activities.html">Activities</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                More
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="elf-name-generator.html"
-                  >Elf Name Generator</a
-                >
-                <a class="dropdown-item" href="party-costumes.html">Party Costumes</a>
-                <a class="dropdown-item" href="international.html">International</a>
-                <a class="dropdown-item" href="#">Category</a>
-                <a class="dropdown-item" href="blog.html">Blog</a>
-              </div>
-            </li>
-          </ul>
+        <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a>
+        <div class="dropdown dropdown-container">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Navigation
+          </a>
+          <div class="dropdown-menu" id="nav-dropdown-from-page" aria-labelledby="navbarDropdown">
+          </div>
         </div>
       </nav>
     </div>
@@ -111,6 +58,7 @@
               href="#grinch-stole"
               role="tab"
               aria-controls="profile"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >How the Grinch Stole Christmas</a
             >
             <a
@@ -120,6 +68,7 @@
               href="#list-settings"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Disney's A Christmas Carol</a
             >
             <a
@@ -129,7 +78,17 @@
               href="#arthur-christmas"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Arthur Christmas</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-settings-list"
+              data-toggle="list"
+              href="#rare-exports-a-christmas-tale"
+              role="tab"
+              aria-controls="settings"
+              >Rare Exports: A Christmas Tale</a
             >
             <a
               class="list-group-item list-group-item-action"
@@ -138,6 +97,7 @@
               href="#home-alone"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Home Alone</a
             >
             <a
@@ -147,6 +107,7 @@
               href="#home-alone-2"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Home Alone 2: Lost in New York</a
             >
             <a
@@ -156,6 +117,7 @@
               href="#love-actually"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Love Actually</a
             >
             <a
@@ -165,6 +127,7 @@
               href="#miracle-34th-street"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Miracle on 34th Street</a
             >
             <a
@@ -174,6 +137,7 @@
               href="#santa-claus"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Santa Claus The Movie</a>
 
             <a
@@ -183,6 +147,7 @@
               href="#Elf"
               role="tab"
               aria-controls="settings"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
               >Elf</a
             >
             <a
@@ -192,6 +157,7 @@
             href="#die-hard"
             role="tab"
             aria-controls="profile"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >Die Hard</a
           >
           <a
@@ -201,6 +167,7 @@
             href="#Rise-of-the-Guardians"
             role="tab"
             aria-controls="settings"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >Rise of the Guardians</a
           >
           <a
@@ -210,6 +177,7 @@
             href="#A-Christmas-Prince"
             role="tab"
             aria-controls="settings"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >A Christmas Prince</a
           >
           <a
@@ -219,6 +187,7 @@
             href="#Frozen"
             role="tab"
             aria-controls="settings"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >Frozen</a
           >
             <a
@@ -228,6 +197,7 @@
             href="#jingle"
             role="tab"
             aria-controls="profile"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >Jingle All the Way</a
             >
            <a
@@ -237,6 +207,7 @@
             href="#the_polar_express"
             role="tab"
             aria-controls="profile"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >The Polar Express</a
             >
             <a
@@ -246,6 +217,7 @@
             href="#white-christmas"
             role="tab"
             aria-controls="profile"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >White Christmas</a
             >
             <a
@@ -255,6 +227,7 @@
             href="#cool-runnings"
             role="tab"
             aria-controls="profile"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
             >Cool Runnings</a
             >
             <a
@@ -263,7 +236,9 @@
               data-toggle="list"
               href="#rudolph-the-red-nosed-reindeer-1964"
               role="tab"
-              aria-controls="profile">
+              aria-controls="profile"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
+            >
               Rudolph The Red-Nosed Reindeer (1964)
             </a>
             <a
@@ -272,8 +247,30 @@
               data-toggle="list"
               href="#the-night-before"
               role="tab"
-              aria-controls="profile">
+              aria-controls="profile"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
+            >
               The Night Before
+            </a>
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-profile-list"
+              data-toggle="list"
+              href="#the-christmas-chronicles"
+              role="tab"
+              aria-controls="profile"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
+            >
+              The Christmas Chronicles
+            </a>
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-profile-list"
+              data-toggle="list"
+              href="#el-camino-christmas"
+              role="tab"
+              aria-controls="profile">
+              El Camino Christmas
             </a>
           </div>
         </div>
@@ -314,11 +311,14 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
-                          <a
-                            href="https://www.imdb.com/title/tt0170016/"
-                            target="__blank"
-                            >IMDB</a
-                          >
+                          <button>
+                              <a
+                              href="https://www.imdb.com/title/tt0170016/"
+                              target="__blank"
+                              >Watch Now</a
+                            >
+                          </button>
+
                         </small>
                       </p>
                     </div>
@@ -358,11 +358,12 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
-                          <a
+                          <button><a
                             href="https://www.imdb.com/title/tt1067106/"
                             target="__blank"
-                            >IMDB</a
-                          >
+                            >Watch Now</a
+                          ></button>
+
                         </small>
                       </p>
                     </div>
@@ -392,16 +393,18 @@
                     <div class="card-body">
                       <h5 class="card-title">Arthur Christmas</h5>
                       <p class="card-text">
-                        Santa's clumsy son Arthur sets out on a mission with St. 
+                        Santa's clumsy son Arthur sets out on a mission with St.
                         Nick's father to give out a present they misplaced to a young girl in less than 2 hours.
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt1430607/"
                             target="__blank"
-                            >IMDB</a
+                            >Watch Now</a
                           >
+                        </button>
                         </small>
                       </p>
                     </div>
@@ -410,6 +413,48 @@
               </div>
             </div>
             <!-- ::: Arthur Christmas Card End :::-->
+            <!-- ::: Rare Exports: A Christmas Tale Card :::-->
+            <div
+              class="tab-pane fade "
+              id="rare-exports-a-christmas-tale"
+              role="tabpanel"
+              aria-labelledby="santa-claus-list"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      data-src="https://upload.wikimedia.org/wikipedia/en/thumb/2/27/Rare_Exports_official_film_poster.jpg/215px-Rare_Exports_official_film_poster.jpg"
+                      class="card-img"
+                      alt="..."
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Rare Exports: A Christmas Tale</h5>
+                      <p class="card-text">
+                        <b>Rare Exports: A Christmas Tale</b> is a 2010 Finnish dark fantasy horror thriller film written and directed by Jalmari Helander about people living near the Korvatunturi mountain who discover the secret behind Santa Claus. The film is based on the 2003 short film <i>Rare Exports Inc.</i>, and its 2005 sequel <i>Rare Exports: The Official Safety Instructions</i>, by Jalmari Helander and Juuso Helander, both of which involve a company that traps wild Santa Clauses and trains and exports them to locations around the world<br>
+                        <b>Rotten Tomatoes:</b> 89%<br>
+                        <b>IMDb:</b> 6.7
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">
+                          <button>
+                          <a
+                            href="https://www.imdb.com/title/tt1401143/"
+                            target="__blank"
+                            >Watch Now</a
+                          >
+                        </button>
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: Rare Exports: A Christmas Tale Card End :::-->
             <!-- ::: HOME ALONE CARD :::-->
             <div
               class="tab-pane fade"
@@ -444,11 +489,12 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt0099785/"
                             target="__blank"
-                            >IMDB</a
-                          >
+                            >Watch Now</a
+                          ></button>
                         </small>
                       </p>
                     </div>
@@ -491,11 +537,13 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt0104431/"
                             target="__blank"
-                            >IMDB</a
+                            >Watch Now</a
                           >
+                        </button>
                         </small>
                       </p>
                     </div>
@@ -532,11 +580,13 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt0314331/"
                             target="__blank"
-                            >IMDB</a
-                          >
+                            >Watch Now</a
+                          ></button>
+
                         </small>
                       </p>
                     </div>
@@ -578,11 +628,12 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt0110527/"
                             target="__blank"
-                            >IMDB</a
-                          >
+                            >Watch Now</a
+                          ></button>
                         </small>
                       </p>
                     </div>
@@ -618,11 +669,12 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt0089961/?ref_=fn_al_tt_2"
                             target="__blank"
-                            >IMDB</a
-                          >
+                            >Watch Now</a
+                          ></button>
                         </small>
                       </p>
                     </div>
@@ -656,11 +708,13 @@
                      </p>
                      <p class="card-text">
                        <small class="text-muted">
+                         <button>
                          <a
                            href="https://www.imdb.com/title/tt0095016/"
                            target="__blank"
-                           >IMDB</a
+                           >Watch Now</a
                          >
+                        </button>
                        </small>
                      </p>
                    </div>
@@ -694,11 +748,12 @@
                    </p>
                    <p class="card-text">
                      <small class="text-muted">
+                       <button>
                        <a
                          href="https://www.imdb.com/title/tt1446192/"
                          target="__blank"
-                         >IMDB</a
-                       >
+                         >Watch Now</a
+                       ></button>
                      </small>
                    </p>
                  </div>
@@ -732,11 +787,13 @@
                  </p>
                  <p class="card-text">
                    <small class="text-muted">
+                     <button>
                      <a
                        href="https://www.imdb.com/title/tt8709036/"
                        target="__blank"
-                       >IMDB</a
+                       >Watch Now</a
                      >
+                    </button>
                    </small>
                  </p>
                </div>
@@ -770,11 +827,12 @@
                </p>
                <p class="card-text">
                  <small class="text-muted">
+                   <button>
                    <a
                      href="https://www.imdb.com/title/tt2294629/"
                      target="__blank"
-                     >IMDB</a
-                   >
+                     >Watch Now</a
+                   ></button>
                  </small>
                </p>
              </div>
@@ -794,7 +852,7 @@
                 <div class="row no-gutters">
                   <div class="col-md-12 col-lg-4">
                     <img
-                      data-src="https://m.media-amazon.com/images/I/91ORhMVJxWL._AC_UY218_SEARCH213888_FMwebp_QL75_.jpg"
+                      data-src="https://www.myepl.org/wp-content/uploads/2018/10/Elf.jpg"
                       class="card-img"
                       alt="Elf Cover"
                       loading="lazy"
@@ -808,11 +866,13 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt0319343/?ref_=nv_sr_1?ref_=nv_sr_1"
                             target="__blank"
-                            >IMDB</a
-                          >
+                            >Watch Now</a
+                          ></button>
+
                         </small>
                       </p>
                     </div>
@@ -832,7 +892,7 @@
                 <div class="row no-gutters">
                   <div class="col-md-12 col-lg-4">
                     <img
-                    data-src="http://3.bp.blogspot.com/-C-YOWWJND8Y/UNkycQ6PslI/AAAAAAAADjw/1IQQW1Yb2jU/s1600/woBp.jpg"
+                    data-src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Jingle_All_the_Way_poster.JPG/220px-Jingle_All_the_Way_poster.JPG"
                       class="card-img"
                       alt="Jingle All the Way"
                       loading="lazy"
@@ -844,17 +904,19 @@
                         <p class="card-text">
                           Jingle All the Way is a 1996 American Christmas family comedy film
                            directed by Brian Levant. It stars Arnold Schwarzenegger and Sinbad
-                            as two rival fathers, workaholic Howard Langston (Schwarzenegger) 
-                            and stressed out postal worker Myron Larabee (Sinbad), both 
-                            desperately trying to purchase a Turbo-Man action figure for their 
-                            respective sons on a last-minute shopping spree on Christmas Eve. 
+                            as two rival fathers, workaholic Howard Langston (Schwarzenegger)
+                            and stressed out postal worker Myron Larabee (Sinbad), both
+                            desperately trying to purchase a Turbo-Man action figure for their
+                            respective sons on a last-minute shopping spree on Christmas Eve.
                           </p>
                           <p class="card-text">
                             <small class="text-muted">
+                              <button>
                               <a href="https://www.imdb.com/title/tt0116705/?ref_=fn_al_tt_1"
                               target="__blank"
-                              >IMDB</a
+                              >Watch Now</a
                               >
+                            </button>
                             </small>
                           </p>
                         </div>
@@ -884,8 +946,8 @@
                     <div class="card-body">
                       <h5 class="card-title">The Polar Express</h5>
                       <p class="card-text">
-                        Tom Hanks and director Robert Zemeckis ("Forrest Gump"; "Cast Away") 
-                        reunite for "Polar Express," an inspiring adventure based on the 
+                        Tom Hanks and director Robert Zemeckis ("Forrest Gump"; "Cast Away")
+                        reunite for "Polar Express," an inspiring adventure based on the
                         beloved children's book by Chris Van Allsburg. When a doubting
                         young boy takes an extraordinary train ride to the North Pole,
                         he embarks on a journey of self-discovery that shows him that
@@ -893,11 +955,12 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt0338348/"
                             target="__blank"
-                            >IMDB</a
-                          >
+                            >Watch Now</a
+                          ></button>
                         </small>
                       </p>
                     </div>
@@ -931,11 +994,12 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt0047673/"
                             target="__blank"
-                            >IMDB</a
-                          >
+                            >Watch Now</a
+                          ></button>
                         </small>
                       </p>
                     </div>
@@ -968,18 +1032,19 @@
                       </p>
                       <p class="card-text">
                         <small class="text-muted">
+                          <button>
                           <a
                             href="https://www.imdb.com/title/tt0106611/"
                             target="__blank"
-                            >IMDB</a
-                          >
+                            >Watch Now</a
+                          ></button>
                         </small>
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div> 
+            </div>
           <!-- Rudolph The Red-Nosed Reindeer -->
           <div
             class="tab-pane fade"
@@ -1003,18 +1068,19 @@
                     </p>
                     <p class="card-text">
                       <small class="text-muted">
+                        <button>
                         <a
                           href="https://www.imdb.com/title/tt0058536/?ref_=ttpl_pl_tt"
                           target="__blank"
-                          >IMDB</a
-                        >
+                          >Watch Now</a
+                        ></button>
                       </small>
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>  <!-- Rudolph The Red-Nosed Reindeer ends here --> 
+          </div>  <!-- Rudolph The Red-Nosed Reindeer ends here -->
           <!-- The Night Before -->
           <div
             class="tab-pane fade"
@@ -1038,24 +1104,100 @@
                     </p>
                     <p class="card-text">
                       <small class="text-muted">
+                        <button>
                         <a
                           href="https://www.imdb.com/title/tt3530002/"
                           target="__blank"
-                          >IMDB</a
-                        >
+                          >Watch Now</a
+                        ></button>
                       </small>
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>  <!-- The Night Before ends here --> 
+          </div>  <!-- The Night Before ends here -->
+
+          <!-- The Christmas Chronicles -->
+          <div
+            class="tab-pane fade"
+            id="the-christmas-chronicles"
+            role="tabpanel"
+            aria-labelledby="the-christmas-chronicles-list">
+            <div class="card mb-3" style="max-width: 670px;">
+              <div class="row no-gutters">
+                <div class="col-md-12 col-lg-4">
+                  <img
+                    data-src="http://www.gstatic.com/tv/thumb/v22vodart/16106601/p16106601_v_v8_aa.jpg"
+                    class="card-img"
+                    alt="The Christmas Chronicles"
+                    loading="lazy"/>
+                </div>
+                <div class="col-md-12 col-lg-8">
+                  <div class="card-body">
+                    <h5 class="card-title">The Christmas Chronicles</h5>
+                    <p class="card-text">
+                   Siblings Kate and Teddy Pierce hatch a scheme to capture Santa Claus on Christmas Eve. When the plan goes awry, the kids join forces with a somewhat jolly Saint Nick and his loyal elves to save the holiday before it's too late
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">
+                          <button>
+                            <a
+                              href="https://www.imdb.com/title/tt2990140/"
+                              target="__blank"
+                              >Watch Now</a
+                            >
+                        </button>
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  <!-- The Christmas Chronicles ends here -->
+
+          <!-- El Camino Christmas  -->
+          <div
+            class="tab-pane fade"
+            id="el-camino-christmas"
+            role="tabpanel"
+            aria-labelledby="el-camino-christmas-list">
+            <div class="card mb-3" style="max-width: 670px;">
+              <div class="row no-gutters">
+                <div class="col-md-12 col-lg-4">
+                  <img
+                    data-src="https://m.media-amazon.com/images/M/MV5BODk3MzY0MDkyM15BMl5BanBnXkFtZTgwNzUxNzMyNDM@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
+                    class="card-img"
+                    alt="El Camino Christmas"
+                    loading="lazy"/>
+                </div>
+                <div class="col-md-12 col-lg-8">
+                  <div class="card-body">
+                    <h5 class="card-title">El Camino Christmas</h5>
+                    <p class="card-text">
+                    Eric comes to El Camino looking for his unknown dad. He's harassed, hit and jailed by a drunk local cop, who later shoots at a liquor mart with Eric +4 inside. The sheriff and deputy then shoot up the place, answering each other's fire.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">
+                          <button>
+                          <a
+                            href="https://www.imdb.com/title/tt3255590/"
+                            target="__blank"
+                            >Watch Now</a
+                          ></button>
+                        </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  <!-- El Camino Christmas  ends here -->
         </div>
       </div>
     </div>
   </div>
 </div>
- 
+
 <footer class="site-footer" id="footer">
   <div class="container">
     <div class="row">
@@ -1071,14 +1213,14 @@
       <div class="col-12 col-md-4 footer-links">
         <h4>Links</h4>
         <ul class="list-unstyled">
-          <li><a href="pages/facts.html">Facts and Info</a></li>
-          <li><a href="pages/recipes.html">Recipes</a></li>
-          <li><a href="pages/gifts.html">Gifts Suggestions</a></li>
-          <li><a href="pages/songs.html">Seasonal Songs &amp; Lyrics</a></li>
-          <li><a href="pages/games.html">Seasonal Games</a></li>
-          <li><a href="pages/films.html">Seasonal Films</a></li>
-          <li><a href="pages/books.html">Seasonal Books</a></li>
-          <li><a href="pages/activities.html">Seasonal Activities</a></li>
+          <li><a href="./facts.html">Facts and Info</a></li>
+          <li><a href="./recipes.html">Recipes</a></li>
+          <li><a href="./gifts.html">Gifts Suggestions</a></li>
+          <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
+          <li><a href="./games.html">Seasonal Games</a></li>
+          <li><a href="./films.html">Seasonal Films</a></li>
+          <li><a href="./books.html">Seasonal Books</a></li>
+          <li><a href="./activities.html">Seasonal Activities</a></li>
         </ul>
       </div>
       <div class="col-12 col-md-4">
@@ -1111,10 +1253,11 @@
       </div>
     </div>
 </footer>
-
+    <script src="../assets/js/mouse-trail-snowball.js"></script>
+    <script src="../assets/js/navLink-generator.js"></script>
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous">
     </script>
     <script
@@ -1127,5 +1270,20 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous">
     </script>
+
+    <script type="text/javascript">
+
+    // grab the tab shown event and move the document on top by callling 
+    // scrollTop method.
+
+    $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
+      //e.target // newly activated tab
+      //e.relatedTarget // previous active tab
+      //$(window).scrollTop(0);
+      $("html, body").animate({ scrollTop: 0 },10);
+    })
+
+    </script>
+
   </body>
 </html>

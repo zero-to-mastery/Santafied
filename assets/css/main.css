@@ -2,7 +2,9 @@
  * Following codeblocks are just starter code
  * Feel free to modify it in any way you like
  */
-
+ html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   display: flex;
@@ -16,7 +18,7 @@ body {
 }
 
 /*navbar Starts*/
-#brand-color {
+.brand-color {
   color: #ff4546;
 }
 
@@ -35,6 +37,17 @@ body {
   font-size: 0.9rem;
   font-style: italic;
   font-weight: 500;
+  color: black;
+}
+
+@media (hover: hover) {
+  .nav-link:hover {
+    color: #ff4546;
+  }
+}
+
+.dropdown-container {
+  margin-left: auto;
 }
 
 .nav-item:hover .dropdown-menu {
@@ -63,18 +76,6 @@ body {
   color: #000;
 }
 
-/*Navbar END*/
-/*
-section {
-  padding: 0 1rem;
-  font-size: 1.4em;
-  height: 85vh;  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: crimson;
-} */
-
 .fa-cube {
   color: #ff4546;
 }
@@ -90,6 +91,7 @@ footer {
 
 .site-footer {
   padding: 100px 0; /*padding top and bottom 100px 0 padding left and right*/
+  margin-top: 10px;
 }
 
 .site-footer a {
@@ -145,10 +147,14 @@ footer {
 }
 
 .footer-copyright {
-  padding: 1rem;
-  text-align: center;
-  border-top: 1px solid gray;
-  margin-top: 100px;
+    padding-top: 35px;
+    object-position: bottom;
+    padding-left:390px;
+    color:#9d9d9d;
+    bottom: 0;
+    width: 100%;
+    text-align: match-parent;
+}
 }
 
 .footer-links h4 {
@@ -199,10 +205,12 @@ footer {
 .feature-section {
   background-color: #ff4546;
   color: white;
+  padding:30px 0;
 }
 
 .feature-card {
-  height: 40vh;
+  padding-top:75px;
+  padding-bottom:75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,7 +219,7 @@ footer {
   -ms-flex-direction: row;
   flex-direction: row;
   -ms-flex-pack: distribute;
-  justify-content: space-evenly;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -219,19 +227,22 @@ footer {
 
 @media (min-width: 767px) and (max-width: 991px) {
   .feature-card {
-    height: 25vh;
+    padding-top:25px;
+    padding-bottom:25px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
   .feature-card {
-    height: 25vh;
+    padding-top:25px;
+    padding-bottom:25px;
   }
 }
 
 @media (max-width: 575px) {
   .feature-card {
-    height: 30vh;
+    padding-top:10px;
+    padding-bottom:10px;
   }
 }
 
@@ -247,8 +258,25 @@ footer {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 9vh;
+  min-height:7em;
+  min-width:7em;
+  margin-right:2em;
+  background-color:rgb(241, 239, 239, 0.08);
 }
+
+.feature-card .icon .fa {
+  font-size:3em;
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .icon {
+    min-height:10em;
+    min-width:10em;
+  }
+  .feature-card .icon .fa {
+    font-size:4em;
+  }
+}
+
 .subtitle {
   font-size: 18px;
 }
@@ -261,4 +289,89 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.button-color {
+  color: white;
+  background-color: #ff4546;
+  border-color: #ff4546;
+}
+
+/*==============
+ Newsletter Subscribe
+==============*/
+.newsletter-subscribe {
+  color:#313437;
+  background-color:#fff;
+  padding:50px 0;
+}
+
+.newsletter-subscribe p {
+  color:#7d8285;
+  line-height:1.5;
+}
+
+.newsletter-subscribe h2 {
+  font-size:24px;
+  font-weight:bold;
+  margin-bottom:25px;
+  line-height:1.5;
+  padding-top:0;
+  margin-top:0;
+  color:inherit;
+}
+
+.newsletter-subscribe .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto 25px;
+}
+
+.newsletter-subscribe .intro p {
+  margin-bottom:35px;
+}
+
+.newsletter-subscribe form {
+  justify-content:center;
+}
+
+.newsletter-subscribe form .form-control {
+  background:#eff1f4;
+  border:none;
+  border-radius:3px;
+  box-shadow:none;
+  outline:none;
+  color:inherit;
+  text-indent:9px;
+  height:45px;
+  margin-right:10px;
+  min-width:250px;
+}
+
+.newsletter-subscribe form .btn {
+  padding:16px 32px;
+  border:none;
+  background:none;
+  box-shadow:none;
+  text-shadow:none;
+  opacity:0.9;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size:13px;
+  letter-spacing:0.4px;
+  line-height:1;
+}
+
+.newsletter-subscribe form .btn:hover {
+  opacity:1;
+}
+
+.newsletter-subscribe form .btn:active {
+  transform:translateY(1px);
+}
+
+.newsletter-subscribe form .btn-danger {
+  background-color:#da0517 !important;
+  color:#fff;
+  outline:none !important;
 }

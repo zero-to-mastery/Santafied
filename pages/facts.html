@@ -13,47 +13,29 @@
     <link rel="stylesheet" href="../assets/css/facts.css" />
     <link rel="stylesheet" href="../assets/css/films.css" />
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/mouse-trail-snowball.css" />
+
     <!-- Changed title match page content -->
     <title>Santafied | Facts</title>
   </head>
 
   <body class="sub-page">
+    <div id="snowball1"></div>
+    <div id="snowball2"></div>
+    <div id="snowball3"></div>
     <!-- :::NAV Starts ::: -->
     <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> SANTA<span
-          id="brand-color">FIED</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-item nav-link" href="../index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-item nav-link selected" href="../pages/facts.html">Facts</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/recipes.html">Recipes</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/gifts.html">Gifts</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/songs.html">Songs</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/games.html">Games</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/films.html">Films</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/books.html">Books</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/activities.html">Activities</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              More
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="elf-name-generator.html">Elf Name Generator</a>
-              <a class="dropdown-item" href="party-costumes.html">Party Costumes</a>
-              <a class="dropdown-item" href="international.html">International</a>
-              <a class="dropdown-item" href="party-costumes.html">Party Costumes</a>
-              <a class="dropdown-item" href="blog.html">Blog</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a>
+        <div class="dropdown dropdown-container">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Navigation
+          </a>
+          <div class="dropdown-menu" id="nav-dropdown-from-page" aria-labelledby="navbarDropdown">
+          </div>
+        </div>
+      </nav>
     </div>
     <!-- :::END OF Nav -->
 
@@ -86,6 +68,10 @@
               role="tab" aria-controls="settings">Image of Santa Claus</a> -->
             <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#stockings"
               role="tab" aria-controls="settings">Hanging Stockings</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#artificialTree"
+              role="tab" aria-controls="settings">Artifical Christmas Trees</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#vikingOriginChristmasTrees"
+              role="tab" aria-controls="settings">Viking Origin of Christmas Trees</a>
           </div>
         </div>
         <!-- :::END OF MENU TO FILTER FACTS :::-->
@@ -112,12 +98,10 @@
                         a way to commemorate the famed Medford sleigh races. “Jingle Bells” was also the first song to be
                         broadcast from space.
                       </p>
-                      <p class="card-text">
 
-                        <small class="text-muted">Read more at<a
-                            href="https://www.pastbook.com/txt/12-fun-christmas-facts/" target="__blank"> pastbook.com</a>
-                        </small>
-                      </p>
+                      <button class='btn-read-more' onclick="window.open('https://www.pastbook.com/txt/12-fun-christmas-facts/')">
+                        Learn more
+                      </button>
 
                     </div>
                   </div>
@@ -145,12 +129,12 @@
                         red nose due to a parasite. However, Rudolf’s relationship with his parasite is symbiotic: after
                         all, the red nose illuminates the path through the winter night for the whole reindeer team.
                       </p>
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">Read more at<a href="https://www.pastbook.com/txt/12-fun-christmas-facts/"
-                            target="__blank"> pastbook.com</a>
-                        </small>
-                      </p>
+                    
+
+                      <button class='btn-read-more' onclick="window.open('https://www.pastbook.com/txt/12-fun-christmas-facts/')">
+                        Learn more
+                      </button>
+
                     </div>
                   </div>
                 </div>
@@ -174,11 +158,11 @@
                         The tradition is based on the English custom of wassailing which was a tradition to toast to
                         someone’s good health and fortune.
                         St. Francis of Assisi took this tradition and converted it to the modern form of carolling.</p>
-                      <p class="card-text">
-                        <small class="text-muted">More information at <a
-                            href="https://en.wikipedia.org/wiki/Christmas_Caroling" target="__blank"> Wikipedia</a>
-                        </small>
-                      </p>
+
+                      <button class='btn-read-more' onclick="window.open('https://en.wikipedia.org/wiki/Christmas_Caroling')">
+                        Learn more
+                      </button>
+
                     </div>
                   </div>
                 </div>
@@ -203,11 +187,12 @@
                         kids if they misbehave, and bring them to back Spain which is, according to the Dutch, a severe
                         punishment.
                       </p>
-                      <p class="card-text">
-                        <small class="text-muted">Read more at<a href="https://www.pastbook.com/txt/12-fun-christmas-facts/"
-                            target="__blank"> pastbook.com</a>
-                        </small>
-                      </p>
+                  
+
+                      <button class='btn-read-more' onclick="window.open('https://www.pastbook.com/txt/12-fun-christmas-facts/')">
+                        Learn more
+                      </button>
+
                     </div>
                   </div>
                 </div>
@@ -232,11 +217,12 @@
                           break. Christmas Day, however, is the least favorite day for breakups.
                       </p>
                       </p>
-                       <p class="card-text">
-                        <small class="text-muted">Read more at<a
-                              href="https://www.pastbook.com/txt/12-fun-christmas-facts/" target="__blank">
-                              pastbook.com</a></small>
-                      </p>
+                    
+
+                      <button class='btn-read-more' onclick="window.open('https://www.pastbook.com/txt/12-fun-christmas-facts/')">
+                        Learn more
+                      </button>
+
                     </div>
                   </div>
                 </div>
@@ -260,11 +246,12 @@
                         The first known instances of using Christmas trees were in 16th century Germany. Instead of the
                         glitzy decorations we see on them today, they were decorated with fruits and nuts. These trees are
                         evergreen and are also known as yule trees.</p>
-                      <p class="card-text">
-                        <small class="text-muted">Read more at<a
-                            href="https://parenting.firstcry.com/articles/20-interesting-facts-and-information-about-christmas-for-kids/"
-                            target="__blank"> firstcry.com</a></small>
-                      </p>
+                    
+
+                      <button class='btn-read-more' onclick="window.open('https://parenting.firstcry.com/articles/20-interesting-facts-and-information-about-christmas-for-kids/')">
+                        Learn more
+                      </button>
+
                     </div>
                   </div>
                 </div>
@@ -289,11 +276,12 @@
                         child in the world. This is why there are eight other reindeer to help him. They are called Cupid,
                         Dancer, Vixen, Dunder, Comet, Dasher, Prancer, and Blixem.
                       </p>
-                      <p class="card-text">
-                        <small class="text-muted">Read more at<a
-                            href="https://en.wikipedia.org/wiki/Santa_Claus%27s_reindeer" target="__blank"> wikipedia</a>
-                        </small>
-                      </p>
+                    
+
+                      <button class='btn-read-more' onclick="window.open('https://en.wikipedia.org/wiki/Santa_Claus%27s_reindeer')">
+                        Learn more
+                      </button>
+
                     </div>
                   </div>
                 </div>
@@ -317,11 +305,12 @@
                         The traditional family meal is an integral part of the holiday's festivities. Everything from
                         festive libations to the main course differ depending each culture's holiday traditions.
                       </p>
-                      <p class="card-text">
-                        <small class="text-muted">Read more at<a
-                            href="https://en.wikipedia.org/wiki/Christmas#Traditional_cuisine" target="__blank">
-                            wikipedia</a></small>
-                      </p>
+                    
+
+                      <button class='btn-read-more' onclick="window.open('https://en.wikipedia.org/wiki/Christmas#Traditional_cuisine')">
+                        Learn more
+                      </button>
+
                     </div>
                   </div>
                 </div>
@@ -344,11 +333,10 @@
                       <p class="card-text">
                         Try taking it to your local zoo. They will often recycle it by using it as food for the animals.
                       </p>
-                      <p class="card-text">
-                        <small class="text-muted">Read more at<a href="https://thefactfile.org/interesting-facts-christmas/"
-                            target="__blank">
-                            Fact File</a></small>
-                      </p>
+                    
+                      <button class='btn-read-more' onclick="window.open('https://thefactfile.org/interesting-facts-christmas/')">
+                        Learn more
+                      </button>
 
                     </div>
                   </div>
@@ -400,6 +388,58 @@
               </div>
             </div>
             <!-- ::: END OF STOCKINGS CARD :::-->
+            
+            <!-- ::: ARTIFICIAL TREES CARD :::-->
+            <div class="tab-pane fade " id="artificialTree" role="tabpanel" aria-labelledby="facts-list">
+                <div class="card mb-3" style="max-width: 670px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-12 col-lg-4">
+                      <img
+                        data-src="https://myvintagesoul.typepad.com/.a/6a00e551cab4f88833010536afcc1e970c-pi"
+                        class="card-img" alt="..." />
+                    </div>
+                    <div class="col-md-12 col-lg-8">
+                      <div class="card-body">
+                        <h5 class="card-title">The first artificial Christmas Tree wasn’t a tree at all. It was created out of goose feathers that were dyed green. </h5>
+                        <p class="card-text">
+                        The first artificial Christmas trees were developed in Germany in the 19th century, due to a major continuous
+                        deforestation. The feather trees became increasingly popular during the early 20th century and finally made their way to
+                        the US.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ::: END OF ARTIFICIAL TREES CARD :::-->
+            
+            <!-- ::: VIKING ORIGIN OF CHRISTMAS TREES CARD :::-->
+            <div class="tab-pane fade " id="vikingOriginChristmasTrees" role="tabpanel" aria-labelledby="facts-list">
+                <div class="card mb-3" style="max-width: 670px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-12 col-lg-4">
+                      <img
+                        data-src="https://no.hopa.com/wp-content/uploads/sites/2/2014/12/02.jpg"
+                        class="card-img" alt="..." />
+                    </div>
+                    <div class="col-md-12 col-lg-8">
+                      <div class="card-body">
+                        <h5 class="card-title">There are many traditions for decoration of and with trees during celebrations around Christmas times. One of these comes from the vikings. </h5>
+                        <p class="card-text">
+                        Since long before Christianity appeared, vikings used to decorate their homes with evergreen trees and plants to celebrate the Winter Solstice, the 21st or 22nd of December.
+                        The Winter Solstice is the shortest day, and marks the point when days grow longer. In viking tradition, the Winter Solstice marks the return in strength of the sun god, Baldr,
+                        which had been weakend during winter. The evergreen trees and plants served as a reminder that the god would glow again and summer was on it's way.
+                        </p>
+
+                        <button class='btn-read-more' onclick="window.open('https://www.zmescience.com/science/history-science/origin-christmas-tree-pagan/')">
+                        Learn more
+                      </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ::: END OF VIKING ORIGIN OF CHRISTMAS TREES CARD :::-->
 
           </div>
         </div>
@@ -422,14 +462,14 @@
           <div class="col-12 col-md-4 footer-links">
             <h4>Links</h4>
             <ul class="list-unstyled">
-              <li><a href="pages/facts.html">Facts and Info</a></li>
-              <li><a href="pages/recipes.html">Recipes</a></li>
-              <li><a href="pages/gifts.html">Gifts Suggestions</a></li>
-              <li><a href="pages/songs.html">Seasonal Songs &amp; Lyrics</a></li>
-              <li><a href="pages/games.html">Seasonal Games</a></li>
-              <li><a href="pages/films.html">Seasonal Films</a></li>
-              <li><a href="pages/books.html">Seasonal Books</a></li>
-              <li><a href="pages/activities.html">Seasonal Activities</a></li>
+              <li><a href="./facts.html">Facts and Info</a></li>
+              <li><a href="./recipes.html">Recipes</a></li>
+              <li><a href="./gifts.html">Gifts Suggestions</a></li>
+              <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
+              <li><a href="./games.html">Seasonal Games</a></li>
+              <li><a href="./films.html">Seasonal Films</a></li>
+              <li><a href="./books.html">Seasonal Books</a></li>
+              <li><a href="./activities.html">Seasonal Activities</a></li>
             </ul>
           </div>
           <div class="col-12 col-md-4">
@@ -463,6 +503,8 @@
         </div>
     </footer>
 
+    <script src="../assets/js/mouse-trail-snowball.js"></script>
+    <script src="../assets/js/navLink-generator.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
