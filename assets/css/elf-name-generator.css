@@ -1,102 +1,123 @@
 .name-generator{
-  font-family: "Mountains of Christmas", cursive;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-orient: vertical;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align:center;
-      -ms-flex-align:center;
-          align-items:center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
-.name-generator h1{
-  color: #c92e2f;
-  font-size:3rem;
+.name-generator h1 {
+color: #c92e2f;
+font-family: "Mountains of Christmas", cursive;
+font-size: 3rem;
 }
-.name-generator span{
-  font-size: 5rem;
+
+.name-generator span {
+font-size: 5rem;
+}
+
+.icon-container {
+margin-bottom: 2rem;
+}
+.elf-icon {
+width: 90px;
 }
 
 .given-name{
-  font-family: "Mountains of Christmas", cursive;
-  margin: 1.5rem;
+font-family: "Mountains of Christmas", cursive;
+margin: 1.5rem;
 }
 #name-box p.given-name{
-  font-size:6rem;
-  font-weight:bold;
+font-size:6rem;
+font-weight:bold;
 }
 
 .name-generator h3 {
-  font-weight: 300;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 300;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#loadName{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  padding:15px;
-  margin-top: 2rem;
-  margin-bottom:4rem;
-  font-size:2.5rem;
-  text-transform: uppercase;
-  border-radius:1.5rem;
-  width:20%;
-  border:0;
-  color:white;
-  background-color:#ff4546;
-  -webkit-transition: background-color 0.2s;
-  -o-transition: background-color 0.2s;
-  transition: background-color 0.2s;
+#loadName {
+background-color: #ff4546;
+border: 0;
+border-radius: 1.5rem;
+color: white;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 1.5rem;
+margin-top: 2.5rem;
+margin-bottom: 3rem;
+padding: 15px;
+width: 25%;
+text-transform: uppercase;
+-o-transition: background-color 0.2s;
+-webkit-transition: background-color 0.2s;
+transition: background-color 0.2s;
 }
-#loadName:hover{
-  background-color:#c92e2f;
+
+#loadName:hover {
+background-color: #c92e2f;
 }
 
 .box-style {
-  display: block;
-  font-size: 16px;
-  font-family: sans-serif;
-  font-weight: 700;
-  color: #444;
-  line-height: 1.3;
-  padding: .6em 1.4em .5em .8em;
-  width: 100%;
-  max-width: 100%; 
-  box-sizing: border-box;
-  margin: 0;
-  border: 1px solid #aaa;
-  box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
-  border-radius: .5em;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: #fff;
-  background-repeat: no-repeat, repeat;
-  background-position: right .7em top 50%, 0 0;
-  background-size: .65em auto, 100%;
+display: block;
+font-size: 16px;
+font-family: sans-serif;
+font-weight: 700;
+color: #444;
+line-height: 1.3;
+padding: .6em 1.4em .5em .8em;
+width: 100%;
+max-width: 100%; 
+box-sizing: border-box;
+margin: 0;
+border: 1px solid #aaa;
+box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+border-radius: .5em;
+-moz-appearance: none;
+-webkit-appearance: none;
+appearance: none;
+background-color: #fff;
+background-repeat: no-repeat, repeat;
+background-position: right .7em top 50%, 0 0;
+background-size: .65em auto, 100%;
 }
 .box-style::-ms-expand {
-  display: none;
+display: none;
 }
 .box-style:hover {
-  border-color: #888;
+border-color: #888;
 }
 .box-style:focus {
-  border-color: #aaa;
-  box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-  box-shadow: 0 0 0 3px -moz-mac-focusring;
-  color: #222; 
-  outline: none;
+border-color: #aaa;
+box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+box-shadow: 0 0 0 3px -moz-mac-focusring;
+color: #222; 
+outline: none;
 }
 .box-style option {
-  font-weight:normal;
+font-weight:normal;
 }
 
 .name-choice,.month-choice{
-  padding: 1rem;
+padding: 1rem;
+}
+
+#resultContainer {
+display: none;
+margin-bottom: 4.5rem;
+text-align: center;
+}
+
+#result {
+font-family: "Mountains of Christmas", cursive;
+font-size: 4.5rem;
 }
