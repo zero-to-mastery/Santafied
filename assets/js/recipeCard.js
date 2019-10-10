@@ -64,6 +64,13 @@ window.onload = function() {
         // Create Footer
         var footer = CreateCardFooter(link);
         cardBody.appendChild(footer);
+
+        $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
+          //e.target // newly activated tab
+          //e.relatedTarget // previous active tab
+          //$(window).scrollTop(0);
+          $("html, body").animate({ scrollTop: 0 },10);
+        })
 }
 
 function CreateSummary(summary) {
