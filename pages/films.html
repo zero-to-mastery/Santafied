@@ -269,7 +269,9 @@
               data-toggle="list"
               href="#el-camino-christmas"
               role="tab"
-              aria-controls="profile">
+              aria-controls="profile"
+              onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
+            >
               El Camino Christmas
             </a>
             <a
@@ -278,8 +280,20 @@
             data-toggle="list"
             href="#a-christmas-story"
             role="tab"
-            aria-controls="profile">
+            aria-controls="profile"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();">
             A Christmas Story
+          </a>
+          <a
+            class="list-group-item list-group-item-action"
+            id="list-profile-list"
+            data-toggle="list"
+            href="#national-lampoons-christmas-vacation"
+            role="tab"
+            aria-controls="profile"
+            onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
+          >
+            National Lampoon's Christmas Vacation
           </a>
           </div>
         </div>
@@ -1237,7 +1251,45 @@
             </div>
           </div>
         </div> <!-- A Christmas Story Ends Here -->
+        <!-- ::: National Lampoon's Christmas Vacation Card :::-->
+        <div
+        class="tab-pane fade"
+        id="national-lampoons-christmas-vacation"
+        role="tabpanel"
+        aria-labelledby="national-lampoons-christmas-vacation-list"
+        >
+          <div class="card mb-3" style="max-width: 670px;">
+            <div class="row no-gutters">
+              <div class="col-md-12 col-lg-4">
+                <img
+                  data-src="https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@.jpg"
+                  class="card-img"
+                  alt="National Lampoon's Christmas Vacation Cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col-md-12 col-lg-8">
+                <div class="card-body">
+                  <h5 class="card-title">National Lampoon's Christmas Vacation</h5>
+                  <p class="card-text">
+                    The Griswold family's plans for a big family Christmas predictably turn into a big disaster.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <button>
+                        <a
+                        href="https://www.imdb.com/title/tt0097958/"
+                        target="__blank"
+                        >Watch Now</a>
+                      </button>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- ::: National Lampoon's Christmas Vacation Card End :::-->
       </div>
     </div>
   </div>
