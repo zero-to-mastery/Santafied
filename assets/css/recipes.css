@@ -7,15 +7,16 @@
 }
 
 .card-mb-3 {
-	max-width: 670px;
+  max-width: 670px;
 }
 
 .tab-content .card-img {
   max-width: 222px;
-  max-height: 146px;
+  height: auto;
 }
 
-.tab-pane ul, li {
+.tab-pane ul,
+li {
   padding: 5px 0;
 }
 
@@ -34,7 +35,7 @@
   -webkit-overflow-scrolling: touch;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .tab-content .card-img {
     max-height: 300px;
     -o-object-fit: cover;
