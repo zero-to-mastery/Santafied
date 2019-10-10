@@ -338,5 +338,23 @@ var listOf = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Eggnog2.jpg/400px-Eggnog2.jpg",
     link:
       "https://www.jamieoliver.com/features/best-eggnog-recipe/"
+  },
+  {
+    id: "russian-tea-cake",
+    name: "Russian Tea Cake or Mexican Wedding Cookie",
+    description:
+      "My family's favorite christmas cookie! Light, sweet, full of nuts and coated in powdered sugar.",
+    summary: [
+      {
+        makes: "36",
+        prep: "15 min",
+        cooking: "12 -17 min",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Russianteacakes.jpg/600px-Russianteacakes.jpg",
+    link:
+      "https://joyofbaking.com/Mexican%20Wedding%20Cakes.html"
   }
 ];
