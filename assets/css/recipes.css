@@ -27,11 +27,17 @@
   text-transform: capitalize;
 }
 
+.list-group {
+  max-height: 300px;
+  overflow: scroll;
+  overflow-x: hidden; 
+  -webkit-overflow-scrolling: touch;
+}
+
 @media(max-width: 767px) {
   .tab-content .card-img {
     max-height: 300px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
-
