@@ -149,13 +149,12 @@ footer {
 .footer-copyright {
     padding-top: 35px;
     object-position: bottom;
-    padding-left:390px;
     color:#9d9d9d;
     bottom: 0;
     width: 100%;
     text-align: match-parent;
 }
-}
+
 
 .footer-links h4 {
   margin: 30px 0;
