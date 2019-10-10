@@ -140,8 +140,8 @@ footer {
 }
 
 .footer-social a:hover {
-  background-color: red;
-  border-color: red;
+  background: radial-gradient(circle, rgba(251,66,66,1) 15%, rgba(201,17,15,1) 90%);
+  border-color: rgba(201,17,15,1);
   color: white;
   opacity: 1;
 }
@@ -168,6 +168,10 @@ footer {
 
 .footer-links ul {
   margin-bottom: 30px;
+}
+
+.footer-social .fab {
+  font-size: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -304,6 +308,7 @@ footer {
   color:#313437;
   background-color:#fff;
   padding:50px 0;
+  position: relative;
 }
 
 .newsletter-subscribe p {
@@ -374,4 +379,24 @@ footer {
   background-color:#da0517 !important;
   color:#fff;
   outline:none !important;
+}
+
+/* Make bootstrap buttons match theme */
+.btn-primary {
+  background-color: #ff4546;
+  border-color: #ff4546;
+}
+
+.btn-primary:hover {
+  background-color: #e03d3e;
+  border-color: #e03d3e;
+}
+
+.newsletter-subscribe .error-msg {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  color: #da0517 !important;
 }

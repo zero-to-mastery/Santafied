@@ -148,6 +148,12 @@ div.watches {
 
 .img-fluid {
     width: 100vw;
+    height: auto;
+}
+
+.img-fluid.plush-toys {
+    height: 150px;
+    width: auto;
 }
 
 .flex {
