@@ -1,634 +1,849 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
 
     <script src="../assets/js/lazyloading.js"></script>
-    <script crossorigin="anonymous" src="https://kit.fontawesome.com/5e68800c4a.js"></script>
-    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
-    <link href="../assets/css/main.css" rel="stylesheet"/>
-    <link href="../assets/css/facts.css" rel="stylesheet"/>
-    <link href="../assets/css/films.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"/>
-    <link href="../assets/css/mouse-trail-snowball.css" rel="stylesheet"/>
+    <script
+      crossorigin="anonymous"
+      src="https://kit.fontawesome.com/5e68800c4a.js"
+    ></script>
+    <link
+      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      rel="stylesheet"
+    />
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/facts.css" rel="stylesheet" />
+    <link href="../assets/css/films.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../assets/css/mouse-trail-snowball.css" rel="stylesheet" />
 
     <!-- Changed title match page content -->
     <title>Santafied | Facts</title>
-</head>
+  </head>
 
-<body class="sub-page">
-<div id="snowball1"></div>
-<div id="snowball2"></div>
-<div id="snowball3"></div>
-<!-- :::NAV Starts ::: -->
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> SANTA<span
-                class="brand-color">FIED</span></a>
+  <body class="sub-page">
+    <div id="snowball1"></div>
+    <div id="snowball2"></div>
+    <div id="snowball3"></div>
+    <!-- :::NAV Starts ::: -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="../index.html"
+          ><i class="fa fa-cube"></i> SANTA<span class="brand-color"
+            >FIED</span
+          ></a
+        >
         <div class="dropdown dropdown-container">
-            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
-               href="#"
-               id="navbarDropdown" role="button">
-                Navigation
-            </a>
-            <div aria-labelledby="navbarDropdown" class="dropdown-menu" id="nav-dropdown-from-page">
-            </div>
+          <a
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+          >
+            Navigation
+          </a>
+          <div
+            aria-labelledby="navbarDropdown"
+            class="dropdown-menu"
+            id="nav-dropdown-from-page"
+          ></div>
         </div>
-    </nav>
-</div>
-<!-- :::END OF Nav -->
+      </nav>
+    </div>
+    <!-- :::END OF Nav -->
 
-<div class="container">
-    <h1 class="title">Christmas Facts</h1>
-    <div class="row">
+    <div class="container">
+      <h1 class="title">Christmas Facts</h1>
+      <div class="row">
         <div class="col-md-4 tab-navigation">
-            <div class="list-group" id="list-tab" role="tablist">
-                <!-- ::: MENU TO FILTER FACTS :::-->
-                <a aria-controls="profile" class="list-group-item list-group-item-action active" data-toggle="list"
-                   href="#jingle-bells"
-                   id="list-profile-list" role="tab">"Jingle Bells" the truth</a>
+          <div class="list-group" id="list-tab" role="tablist">
+            <!-- ::: MENU TO FILTER FACTS :::-->
+            <a
+              aria-controls="profile"
+              class="list-group-item list-group-item-action active"
+              data-toggle="list"
+              href="#jingle-bells"
+              id="list-profile-list"
+              role="tab"
+              >"Jingle Bells" the truth</a
+            >
 
-                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                   href="#rudolph"
-                   id="list-settings-list" role="tab">Rudolph's Nose</a>
-                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                   href="#carolling"
-                   id="list-settings-list" role="tab">Singing Carols</a>
-                <a aria-controls="profile" class="list-group-item list-group-item-action" data-toggle="list"
-                   href="#dutch-santa"
-                   id="list-settings-list" role="tab">Dutch Santa</a>
-                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                   href="#heartbreaks"
-                   id="list-settings-list" role="tab">Heartbreaks on Christmas</a>
-                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                   href="#christmastrees"
-                   id="list-settings-list" role="tab">Christmas Trees</a>
-                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                   href="#reindeer"
-                   id="list-settings-list" role="tab">Santa’s Reindeer</a>
-                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                   href="#cuisine"
-                   id="list-settings-list" role="tab">Christmas Cuisine</a>
-                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                   href="#recycle"
-                   id="list-settings-list" role="tab">Recycle your Tree</a>
-                <!-- <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#image"
+            <a
+              aria-controls="settings"
+              class="list-group-item list-group-item-action"
+              data-toggle="list"
+              href="#rudolph"
+              id="list-settings-list"
+              role="tab"
+              >Rudolph's Nose</a
+            >
+            <a
+              aria-controls="settings"
+              class="list-group-item list-group-item-action"
+              data-toggle="list"
+              href="#carolling"
+              id="list-settings-list"
+              role="tab"
+              >Singing Carols</a
+            >
+            <a
+              aria-controls="profile"
+              class="list-group-item list-group-item-action"
+              data-toggle="list"
+              href="#dutch-santa"
+              id="list-settings-list"
+              role="tab"
+              >Dutch Santa</a
+            >
+            <a
+              aria-controls="settings"
+              class="list-group-item list-group-item-action"
+              data-toggle="list"
+              href="#heartbreaks"
+              id="list-settings-list"
+              role="tab"
+              >Heartbreaks on Christmas</a
+            >
+            <a
+              aria-controls="settings"
+              class="list-group-item list-group-item-action"
+              data-toggle="list"
+              href="#christmastrees"
+              id="list-settings-list"
+              role="tab"
+              >Christmas Trees</a
+            >
+            <a
+              aria-controls="settings"
+              class="list-group-item list-group-item-action"
+              data-toggle="list"
+              href="#reindeer"
+              id="list-settings-list"
+              role="tab"
+              >Santa’s Reindeer</a
+            >
+            <a
+              aria-controls="settings"
+              class="list-group-item list-group-item-action"
+              data-toggle="list"
+              href="#cuisine"
+              id="list-settings-list"
+              role="tab"
+              >Christmas Cuisine</a
+            >
+            <a
+              aria-controls="settings"
+              class="list-group-item list-group-item-action"
+              data-toggle="list"
+              href="#recycle"
+              id="list-settings-list"
+              role="tab"
+              >Recycle your Tree</a
+            >
+            <!-- <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#image"
                  role="tab" aria-controls="settings">Image of Santa Claus</a> -->
-                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                   href="#stockings"
-                   id="list-settings-list" role="tab">Hanging Stockings</a>
-                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                   href="#artificialTree"
-                   id="list-settings-list" role="tab">Artifical Christmas Trees</a>
-                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                   href="#vikingOriginChristmasTrees"
-                   id="list-settings-list" role="tab">Viking Origin of Christmas Trees</a>
-            </div>
+            <a
+              aria-controls="settings"
+              class="list-group-item list-group-item-action"
+              data-toggle="list"
+              href="#stockings"
+              id="list-settings-list"
+              role="tab"
+              >Hanging Stockings</a
+            >
+            <a
+              aria-controls="settings"
+              class="list-group-item list-group-item-action"
+              data-toggle="list"
+              href="#artificialTree"
+              id="list-settings-list"
+              role="tab"
+              >Artifical Christmas Trees</a
+            >
+            <a
+              aria-controls="settings"
+              class="list-group-item list-group-item-action"
+              data-toggle="list"
+              href="#vikingOriginChristmasTrees"
+              id="list-settings-list"
+              role="tab"
+              >Viking Origin of Christmas Trees</a
+            >
+          </div>
         </div>
         <!-- :::END OF MENU TO FILTER FACTS :::-->
 
         <!-- ::: CARDS OF FACTS :::-->
         <div class="col-8">
-            <div class="tab-content" id="nav-tabContent">
+          <div class="tab-content" id="nav-tabContent">
+            <!-- ::: JINGLE BELLS CARD :::-->
+            <div
+              aria-labelledby="facts-list"
+              class="tab-pane active"
+              id="jingle-bells"
+              role="tabpanel"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      alt="..."
+                      class="card-img"
+                      data-src="https://t2.genius.com/unsafe/220x0/https%3A%2F%2Fimages.genius.com%2F76f6deb018cbd325d1f02f5e41aaaadb.700x700x1.jpg"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        “Jingle Bells” was written for Thanksgiving, not
+                        Christmas.
+                      </h5>
+                      <p class="card-text">
+                        The song was written in 1857 by James Lord Pierpont and
+                        published under the title “One Horse Open Sleigh”. It
+                        was supposed to be played in the composer’s Sunday
+                        school class during Thanksgiving as a way to commemorate
+                        the famed Medford sleigh races. “Jingle Bells” was also
+                        the first song to be broadcast from space.
+                      </p>
 
-                <!-- ::: JINGLE BELLS CARD :::-->
-                <div aria-labelledby="facts-list" class="tab-pane active" id="jingle-bells" role="tabpanel">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-12 col-lg-4">
-                                <img
-                                        alt="..."
-                                        class="card-img"
-                                        data-src="https://t2.genius.com/unsafe/220x0/https%3A%2F%2Fimages.genius.com%2F76f6deb018cbd325d1f02f5e41aaaadb.700x700x1.jpg"
-                                        loading="lazy"/>
-                            </div>
-                            <div class="col-md-12 col-lg-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">“Jingle Bells” was written for Thanksgiving, not
-                                        Christmas.</h5>
-                                    <p class="card-text">
-                                        The song was written in 1857 by James Lord Pierpont and published under the
-                                        title “One Horse Open
-                                        Sleigh”. It was supposed to be played in the composer’s Sunday school class
-                                        during Thanksgiving as
-                                        a way to commemorate the famed Medford sleigh races. “Jingle Bells” was also the
-                                        first song to be
-                                        broadcast from space.
-                                    </p>
-
-                                    <button class='btn-read-more'
-                                            onclick="window.open('https://www.pastbook.com/txt/12-fun-christmas-facts/')">
-                                        Learn more
-                                    </button>
-
-                                </div>
-                            </div>
-                        </div>
+                      <button
+                        class="btn-read-more"
+                        onclick="window.open('https://www.pastbook.com/txt/12-fun-christmas-facts/')"
+                      >
+                        Learn more
+                      </button>
                     </div>
+                  </div>
                 </div>
-                <!-- ::: END OF JINGLE BELLS :::-->
-
-                <!-- ::: RUDOLPH CARD :::-->
-                <div aria-labelledby="facts-list" class="tab-pane fade" id="rudolph" role="tabpanel">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-12 col-lg-4">
-                                <img
-                                        alt="..."
-                                        class="card-img"
-                                        data-src="https://i0.wp.com/www.brainpickings.org/wp-content/uploads/2011/12/rudolph4.jpg?w=180&ssl=1"
-                                        loading="lazy"/>
-                            </div>
-                            <div class="col-md-12 col-lg-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Not what your expected...</h5>
-                                    <p class="card-text">
-                                        Rudolph’s red nose is probably the result of a parasitic infection of his
-                                        respiratory system.
-                                        According to Roger Highfield, the author of the book “The Physics of Christmas:
-                                        From the
-                                        Aerodynamics of Reindeer to the Thermodynamics of Turkey” the world’s most
-                                        famous reindeer has a
-                                        red nose due to a parasite. However, Rudolf’s relationship with his parasite is
-                                        symbiotic: after
-                                        all, the red nose illuminates the path through the winter night for the whole
-                                        reindeer team.
-                                    </p>
-
-
-                                    <button class='btn-read-more'
-                                            onclick="window.open('https://www.pastbook.com/txt/12-fun-christmas-facts/')">
-                                        Learn more
-                                    </button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ::: END OF RUDOLPH CARD :::-->
-
-                <!-- ::: CAROLS CARD:::-->
-                <div aria-labelledby="facts-list" class="tab-pane fade" id="carolling" role="tabpanel">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-12 col-lg-4">
-                                <img alt="..."
-                                     class="card-img"
-                                     data-src="https://images.theconversation.com/files/199683/original/file-20171218-27568-1p0h8sv.jpg"
-                                     loading="lazy"/>
-                            </div>
-                            <div class="col-md-12 col-lg-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Tradition of Singing Carols</h5>
-                                    <p class="card-text">
-                                        Have you ever wondered why groups of people go to door to door singing carols?
-                                        The tradition is based on the English custom of wassailing which was a tradition
-                                        to toast to
-                                        someone’s good health and fortune.
-                                        St. Francis of Assisi took this tradition and converted it to the modern form of
-                                        carolling.</p>
-
-                                    <button class='btn-read-more'
-                                            onclick="window.open('https://en.wikipedia.org/wiki/Christmas_Caroling')">
-                                        Learn more
-                                    </button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ::: END OF CAROLS CARD :::-->
-
-                <!-- ::: SINTERKLASS CARD :::-->
-                <div aria-labelledby="facts-list" class="tab-pane fade" id="dutch-santa" role="tabpanel">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-12 col-lg-4">
-                                <img alt="..." class="card-img"
-                                     data-src="https://www.pastbook.com/txt/assets/Sinterklaas.jpg"/>
-                            </div>
-                            <div class="col-md-12 col-lg-8">
-                                <div class="card-body">
-                                    <h5 class="card-title"> Sinterklaas (the Dutch version of Santa Claus) arrives from
-                                        Spain, not from
-                                        the North Pole.</h5>
-                                    <p class="card-text">
-                                        That’s not the only weird thing about the Dutch Christmas. Sinterklaas has his
-                                        little helpers, but
-                                        they are not adorable hard-working elves: they are black-faced boys and girls
-                                        who can steal your
-                                        kids if they misbehave, and bring them to back Spain which is, according to the
-                                        Dutch, a severe
-                                        punishment.
-                                    </p>
-
-
-                                    <button class='btn-read-more'
-                                            onclick="window.open('https://www.pastbook.com/txt/12-fun-christmas-facts/')">
-                                        Learn more
-                                    </button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ::: END OF SINTERKLASS CARD:::-->
-
-                <!-- ::: HEARTBREAKS CARD :::-->
-                <div aria-labelledby="facts-list" class="tab-pane fade" id="heartbreaks" role="tabpanel">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-12 col-lg-4">
-                                <img alt="..."
-                                     class="card-img"
-                                     data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZoslKtZk4tKMiksITTLCSSGCWv-lUZJuKvtDqBZIkLBJmaBc1Fw"/>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title"> Two weeks before Christmas is the one of the two most
-                                        popular times for
-                                        couples to break up.</h5>
-                                    <p class="card-text">
-                                        According to data analyzed from Facebook posts and statuses, couples are more
-                                        likely to end their
-                                        relationship two weeks before Christmas and two weeks after Valentine’s day,
-                                        during the spring
-                                        break. Christmas Day, however, is the least favorite day for breakups.
-                                    </p>
-                                    </p>
-
-
-                                    <button class='btn-read-more'
-                                            onclick="window.open('https://www.pastbook.com/txt/12-fun-christmas-facts/')">
-                                        Learn more
-                                    </button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ::: END OF HEARTBREAKS CARD :::-->
-
-                <!-- ::: CHRISTMAS TREES CARD :::-->
-                <div aria-labelledby="facts-list" class="tab-pane fade" id="christmastrees" role="tabpanel">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-12 col-lg-4">
-                                <img
-                                        alt="..."
-                                        class="card-img"
-                                        data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Christmas_tree_ink04.jpg/458px-Christmas_tree_ink04.jpg"
-                                        loading="lazy"/>
-                            </div>
-                            <div class="col-md-12 col-lg-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Also known as yule trees.</h5>
-                                    <p class="card-text">
-                                        The first known instances of using Christmas trees were in 16th century Germany.
-                                        Instead of the
-                                        glitzy decorations we see on them today, they were decorated with fruits and
-                                        nuts. These trees are
-                                        evergreen and are also known as yule trees.</p>
-
-
-                                    <button class='btn-read-more'
-                                            onclick="window.open('https://parenting.firstcry.com/articles/20-interesting-facts-and-information-about-christmas-for-kids/')">
-                                        Learn more
-                                    </button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ::: END OF CHRISTMAS TREES CARD :::-->
-
-                <!-- ::: REINDEER CARD :::-->
-                <div aria-labelledby="facts-list" class="tab-pane fade" id="reindeer" role="tabpanel">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-12 col-lg-4">
-                                <img
-                                        alt="..."
-                                        class="card-img"
-                                        data-src="https://i.kinja-img.com/gawker-media/image/upload/s--A6UbkExp--/c_scale,f_auto,fl_progressive,q_80,w_800/flj3snxf0jpoz4mnxjbp.jpg"
-                                        loading="lazy"/>
-                            </div>
-                            <div class="col-md-12 col-lg-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Santa’s Reindeer</h5>
-                                    <p class="card-text">Everyone has heard of Rudolph the red nose reindeer. But it
-                                        would be impossible
-                                        for Rudolph to pull Santa’s sled alone since it is filled to the brim with gifts
-                                        for every good
-                                        child in the world. This is why there are eight other reindeer to help him. They
-                                        are called Cupid,
-                                        Dancer, Vixen, Dunder, Comet, Dasher, Prancer, and Blixem.
-                                    </p>
-
-
-                                    <button class='btn-read-more'
-                                            onclick="window.open('https://en.wikipedia.org/wiki/Santa_Claus%27s_reindeer')">
-                                        Learn more
-                                    </button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ::: END OF REINDEER CARD :::-->
-
-                <!-- Beginning of Christmas Cuisine Card -->
-                <div aria-labelledby="facts-list" class="tab-pane fade" id="cuisine" role="tabpanel">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-12 col-lg-4">
-                                <img
-                                        alt="..."
-                                        class="card-img"
-                                        data-src="https://images.unsplash.com/photo-1481391145929-5bcf567d5211?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
-                                        loading="lazy"/>
-                            </div>
-                            <div class="col-md-12 col-lg-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">A Traditional Meal Celebrated Around the World</h5>
-                                    <p class="card-text">
-                                        The traditional family meal is an integral part of the holiday's festivities.
-                                        Everything from
-                                        festive libations to the main course differ depending each culture's holiday
-                                        traditions.
-                                    </p>
-
-
-                                    <button class='btn-read-more'
-                                            onclick="window.open('https://en.wikipedia.org/wiki/Christmas#Traditional_cuisine')">
-                                        Learn more
-                                    </button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End of Christmas Cuisine Card -->
-
-                <!-- ::: RECYCLE TREE CARD :::-->
-                <div aria-labelledby="facts-list" class="tab-pane fade" id="recycle" role="tabpanel">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-12 col-lg-4">
-                                <img
-                                        alt="Christmas tree"
-                                        class="card-img"
-                                        data-src="https://images.unsplash.com/photo-1515433623871-56fb1702cefc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
-                                        loading="lazy"/>
-                            </div>
-                            <div class="col-md-12 col-lg-8">
-                                <div class="card-body">
-                                    <h5 class="card-title"> Not sure what to do with your tree after Christmas?</h5>
-                                    <p class="card-text">
-                                        Try taking it to your local zoo. They will often recycle it by using it as food
-                                        for the animals.
-                                    </p>
-
-                                    <button class='btn-read-more'
-                                            onclick="window.open('https://thefactfile.org/interesting-facts-christmas/')">
-                                        Learn more
-                                    </button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ::: END OF RECYCLE TREE CARD :::-->
-
-                <!-- ::: IMAGE OF SANTA CLAUS CARD:::-->
-                <div aria-labelledby="facts-list" class="tab-pane fade" id="image" role="tabpanel">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-12 col-lg-4">
-                                <img
-                                        alt="..."
-                                        class="card-img"
-                                        data-src="https://static-36.sinclairstoryline.com/resources/media/b3aadd55-a5fb-4566-b3ca-02ec103c4b48-large16x9_Santa.jpg?1513962385957"/>
-                            </div>
-                            <div class="col-md-12 col-lg-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Image of Santa Claus flying his sleigh</h5>
-                                    <p class="card-text">
-                                        The image of Santa Claus flying his sleigh began in 1819 and was created by
-                                        Washington Irving, the same author who dreamt up the Headless Horseman.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ::: END OF IMAGE OF SANTA CLAUS CARD:::-->
-
-                <!-- ::: STOCKINGS CARD :::-->
-                <div aria-labelledby="facts-list" class="tab-pane fade " id="stockings" role="tabpanel">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-12 col-lg-4">
-                                <img
-                                        alt="..."
-                                        class="card-img"
-                                        data-src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/christmas-stockings-royalty-free-image-488769494-1541697986.jpg?crop=0.969xw:0.970xh;0.0311xw,0.0300xh&resize=980:*"/>
-                            </div>
-                            <div class="col-md-12 col-lg-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hanging stockings started with an accident. </h5>
-                                    <p class="card-text">
-                                        According to legend, we hang out stockings by the chimney with care thanks to a
-                                        poor man who didn't have the money for his three daughters' dowries. Generous
-                                        old St. Nick (remember, that's his trademark!) dropped a bag of gold down their
-                                        chimney one night, where the girls had hung their stockings to dry by the fire.
-                                        That's where the gold ended up, and allegedly how the tradition began.
-                                    </p>
-                                    <button class='btn-read-more'
-                                            onclick="window.open('https://www.smithsonianmag.com/arts-culture/the-legend-of-the-christmas-stocking-160854441/')">
-                                        Learn more
-                                    </button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ::: END OF STOCKINGS CARD :::-->
-
-                <!-- ::: ARTIFICIAL TREES CARD :::-->
-                <div aria-labelledby="facts-list" class="tab-pane fade " id="artificialTree" role="tabpanel">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-12 col-lg-4">
-                                <img
-                                        alt="..."
-                                        class="card-img"
-                                        data-src="https://myvintagesoul.typepad.com/.a/6a00e551cab4f88833010536afcc1e970c-pi"/>
-                            </div>
-                            <div class="col-md-12 col-lg-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">First artificial Christmas Tree</h5>
-                                    <p class="card-text">
-                                        The first artificial Christmas Tree wasn’t a tree at all. It was created out of
-                                        goose feathers that were dyed green.
-                                        The first artificial Christmas trees were developed in Germany in the 19th
-                                        century, due to a major continuous
-                                        deforestation. The feather trees became increasingly popular during the early
-                                        20th century and finally made their way to
-                                        the US.
-                                    </p>
-                                    <button class='btn-read-more'
-                                            onclick="window.open('https://www.gardeniasfire.com/blog/fun-facts-about-christmas')">
-                                        Learn more
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ::: END OF ARTIFICIAL TREES CARD :::-->
-
-                <!-- ::: VIKING ORIGIN OF CHRISTMAS TREES CARD :::-->
-                <div aria-labelledby="facts-list" class="tab-pane fade " id="vikingOriginChristmasTrees"
-                     role="tabpanel">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-12 col-lg-4">
-                                <img
-                                        alt="..."
-                                        class="card-img"
-                                        data-src="https://no.hopa.com/wp-content/uploads/sites/2/2014/12/02.jpg"/>
-                            </div>
-                            <div class="col-md-12 col-lg-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">There are many traditions for decoration of and with trees
-                                        during celebrations around Christmas times. One of these comes from the
-                                        vikings. </h5>
-                                    <p class="card-text">
-                                        Since long before Christianity appeared, vikings used to decorate their homes
-                                        with evergreen trees and plants to celebrate the Winter Solstice, the 21st or
-                                        22nd of December.
-                                        The Winter Solstice is the shortest day, and marks the point when days grow
-                                        longer. In viking tradition, the Winter Solstice marks the return in strength of
-                                        the sun god, Baldr,
-                                        which had been weakend during winter. The evergreen trees and plants served as a
-                                        reminder that the god would glow again and summer was on it's way.
-                                    </p>
-
-                                    <button class='btn-read-more'
-                                            onclick="window.open('https://www.zmescience.com/science/history-science/origin-christmas-tree-pagan/')">
-                                        Learn more
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ::: END OF VIKING ORIGIN OF CHRISTMAS TREES CARD :::-->
+              </div>
             </div>
+            <!-- ::: END OF JINGLE BELLS :::-->
+
+            <!-- ::: RUDOLPH CARD :::-->
+            <div
+              aria-labelledby="facts-list"
+              class="tab-pane fade"
+              id="rudolph"
+              role="tabpanel"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      alt="..."
+                      class="card-img"
+                      data-src="https://i0.wp.com/www.brainpickings.org/wp-content/uploads/2011/12/rudolph4.jpg?w=180&ssl=1"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Not what your expected...</h5>
+                      <p class="card-text">
+                        Rudolph’s red nose is probably the result of a parasitic
+                        infection of his respiratory system. According to Roger
+                        Highfield, the author of the book “The Physics of
+                        Christmas: From the Aerodynamics of Reindeer to the
+                        Thermodynamics of Turkey” the world’s most famous
+                        reindeer has a red nose due to a parasite. However,
+                        Rudolf’s relationship with his parasite is symbiotic:
+                        after all, the red nose illuminates the path through the
+                        winter night for the whole reindeer team.
+                      </p>
+
+                      <button
+                        class="btn-read-more"
+                        onclick="window.open('https://www.pastbook.com/txt/12-fun-christmas-facts/')"
+                      >
+                        Learn more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: END OF RUDOLPH CARD :::-->
+
+            <!-- ::: CAROLS CARD:::-->
+            <div
+              aria-labelledby="facts-list"
+              class="tab-pane fade"
+              id="carolling"
+              role="tabpanel"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      alt="..."
+                      class="card-img"
+                      data-src="https://images.theconversation.com/files/199683/original/file-20171218-27568-1p0h8sv.jpg"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Tradition of Singing Carols</h5>
+                      <p class="card-text">
+                        Have you ever wondered why groups of people go to door
+                        to door singing carols? The tradition is based on the
+                        English custom of wassailing which was a tradition to
+                        toast to someone’s good health and fortune. St. Francis
+                        of Assisi took this tradition and converted it to the
+                        modern form of carolling.
+                      </p>
+
+                      <button
+                        class="btn-read-more"
+                        onclick="window.open('https://en.wikipedia.org/wiki/Christmas_Caroling')"
+                      >
+                        Learn more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: END OF CAROLS CARD :::-->
+
+            <!-- ::: SINTERKLASS CARD :::-->
+            <div
+              aria-labelledby="facts-list"
+              class="tab-pane fade"
+              id="dutch-santa"
+              role="tabpanel"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      alt="..."
+                      class="card-img"
+                      data-src="https://www.pastbook.com/txt/assets/Sinterklaas.jpg"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Sinterklaas (the Dutch version of Santa Claus) arrives
+                        from Spain, not from the North Pole.
+                      </h5>
+                      <p class="card-text">
+                        That’s not the only weird thing about the Dutch
+                        Christmas. Sinterklaas has his little helpers, but they
+                        are not adorable hard-working elves: they are
+                        black-faced boys and girls who can steal your kids if
+                        they misbehave, and bring them to back Spain which is,
+                        according to the Dutch, a severe punishment.
+                      </p>
+
+                      <button
+                        class="btn-read-more"
+                        onclick="window.open('https://www.pastbook.com/txt/12-fun-christmas-facts/')"
+                      >
+                        Learn more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: END OF SINTERKLASS CARD:::-->
+
+            <!-- ::: HEARTBREAKS CARD :::-->
+            <div
+              aria-labelledby="facts-list"
+              class="tab-pane fade"
+              id="heartbreaks"
+              role="tabpanel"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      alt="..."
+                      class="card-img"
+                      data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZoslKtZk4tKMiksITTLCSSGCWv-lUZJuKvtDqBZIkLBJmaBc1Fw"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Two weeks before Christmas is the one of the two most
+                        popular times for couples to break up.
+                      </h5>
+                      <p class="card-text">
+                        According to data analyzed from Facebook posts and
+                        statuses, couples are more likely to end their
+                        relationship two weeks before Christmas and two weeks
+                        after Valentine’s day, during the spring break.
+                        Christmas Day, however, is the least favorite day for
+                        breakups.
+                      </p>
+
+                      <button
+                        class="btn-read-more"
+                        onclick="window.open('https://www.pastbook.com/txt/12-fun-christmas-facts/')"
+                      >
+                        Learn more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: END OF HEARTBREAKS CARD :::-->
+
+            <!-- ::: CHRISTMAS TREES CARD :::-->
+            <div
+              aria-labelledby="facts-list"
+              class="tab-pane fade"
+              id="christmastrees"
+              role="tabpanel"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      alt="..."
+                      class="card-img"
+                      data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Christmas_tree_ink04.jpg/458px-Christmas_tree_ink04.jpg"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Also known as yule trees.</h5>
+                      <p class="card-text">
+                        The first known instances of using Christmas trees were
+                        in 16th century Germany. Instead of the glitzy
+                        decorations we see on them today, they were decorated
+                        with fruits and nuts. These trees are evergreen and are
+                        also known as yule trees.
+                      </p>
+
+                      <button
+                        class="btn-read-more"
+                        onclick="window.open('https://parenting.firstcry.com/articles/20-interesting-facts-and-information-about-christmas-for-kids/')"
+                      >
+                        Learn more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: END OF CHRISTMAS TREES CARD :::-->
+
+            <!-- ::: REINDEER CARD :::-->
+            <div
+              aria-labelledby="facts-list"
+              class="tab-pane fade"
+              id="reindeer"
+              role="tabpanel"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      alt="..."
+                      class="card-img"
+                      data-src="https://i.kinja-img.com/gawker-media/image/upload/s--A6UbkExp--/c_scale,f_auto,fl_progressive,q_80,w_800/flj3snxf0jpoz4mnxjbp.jpg"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Santa’s Reindeer</h5>
+                      <p class="card-text">
+                        Everyone has heard of Rudolph the red nose reindeer. But
+                        it would be impossible for Rudolph to pull Santa’s sled
+                        alone since it is filled to the brim with gifts for
+                        every good child in the world. This is why there are
+                        eight other reindeer to help him. They are called Cupid,
+                        Dancer, Vixen, Dunder, Comet, Dasher, Prancer, and
+                        Blixem.
+                      </p>
+
+                      <button
+                        class="btn-read-more"
+                        onclick="window.open('https://en.wikipedia.org/wiki/Santa_Claus%27s_reindeer')"
+                      >
+                        Learn more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: END OF REINDEER CARD :::-->
+
+            <!-- Beginning of Christmas Cuisine Card -->
+            <div
+              aria-labelledby="facts-list"
+              class="tab-pane fade"
+              id="cuisine"
+              role="tabpanel"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      alt="..."
+                      class="card-img"
+                      data-src="https://images.unsplash.com/photo-1481391145929-5bcf567d5211?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        A Traditional Meal Celebrated Around the World
+                      </h5>
+                      <p class="card-text">
+                        The traditional family meal is an integral part of the
+                        holiday's festivities. Everything from festive libations
+                        to the main course differ depending each culture's
+                        holiday traditions.
+                      </p>
+
+                      <button
+                        class="btn-read-more"
+                        onclick="window.open('https://en.wikipedia.org/wiki/Christmas#Traditional_cuisine')"
+                      >
+                        Learn more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Christmas Cuisine Card -->
+
+            <!-- ::: RECYCLE TREE CARD :::-->
+            <div
+              aria-labelledby="facts-list"
+              class="tab-pane fade"
+              id="recycle"
+              role="tabpanel"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      alt="Christmas tree"
+                      class="card-img"
+                      data-src="https://images.unsplash.com/photo-1515433623871-56fb1702cefc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Not sure what to do with your tree after Christmas?
+                      </h5>
+                      <p class="card-text">
+                        Try taking it to your local zoo. They will often recycle
+                        it by using it as food for the animals.
+                      </p>
+
+                      <button
+                        class="btn-read-more"
+                        onclick="window.open('https://thefactfile.org/interesting-facts-christmas/')"
+                      >
+                        Learn more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: END OF RECYCLE TREE CARD :::-->
+
+            <!-- ::: IMAGE OF SANTA CLAUS CARD:::-->
+            <div
+              aria-labelledby="facts-list"
+              class="tab-pane fade"
+              id="image"
+              role="tabpanel"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      alt="..."
+                      class="card-img"
+                      data-src="https://static-36.sinclairstoryline.com/resources/media/b3aadd55-a5fb-4566-b3ca-02ec103c4b48-large16x9_Santa.jpg?1513962385957"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Image of Santa Claus flying his sleigh
+                      </h5>
+                      <p class="card-text">
+                        The image of Santa Claus flying his sleigh began in 1819
+                        and was created by Washington Irving, the same author
+                        who dreamt up the Headless Horseman.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: END OF IMAGE OF SANTA CLAUS CARD:::-->
+
+            <!-- ::: STOCKINGS CARD :::-->
+            <div
+              aria-labelledby="facts-list"
+              class="tab-pane fade "
+              id="stockings"
+              role="tabpanel"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      alt="..."
+                      class="card-img"
+                      data-src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/christmas-stockings-royalty-free-image-488769494-1541697986.jpg?crop=0.969xw:0.970xh;0.0311xw,0.0300xh&resize=980:*"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Hanging stockings started with an accident.
+                      </h5>
+                      <p class="card-text">
+                        According to legend, we hang out stockings by the
+                        chimney with care thanks to a poor man who didn't have
+                        the money for his three daughters' dowries. Generous old
+                        St. Nick (remember, that's his trademark!) dropped a bag
+                        of gold down their chimney one night, where the girls
+                        had hung their stockings to dry by the fire. That's
+                        where the gold ended up, and allegedly how the tradition
+                        began.
+                      </p>
+                      <button
+                        class="btn-read-more"
+                        onclick="window.open('https://www.smithsonianmag.com/arts-culture/the-legend-of-the-christmas-stocking-160854441/')"
+                      >
+                        Learn more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: END OF STOCKINGS CARD :::-->
+
+            <!-- ::: ARTIFICIAL TREES CARD :::-->
+            <div
+              aria-labelledby="facts-list"
+              class="tab-pane fade "
+              id="artificialTree"
+              role="tabpanel"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      alt="..."
+                      class="card-img"
+                      data-src="https://myvintagesoul.typepad.com/.a/6a00e551cab4f88833010536afcc1e970c-pi"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        First artificial Christmas Tree
+                      </h5>
+                      <p class="card-text">
+                        The first artificial Christmas Tree wasn’t a tree at
+                        all. It was created out of goose feathers that were dyed
+                        green. The first artificial Christmas trees were
+                        developed in Germany in the 19th century, due to a major
+                        continuous deforestation. The feather trees became
+                        increasingly popular during the early 20th century and
+                        finally made their way to the US.
+                      </p>
+                      <button
+                        class="btn-read-more"
+                        onclick="window.open('https://www.gardeniasfire.com/blog/fun-facts-about-christmas')"
+                      >
+                        Learn more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: END OF ARTIFICIAL TREES CARD :::-->
+
+            <!-- ::: VIKING ORIGIN OF CHRISTMAS TREES CARD :::-->
+            <div
+              aria-labelledby="facts-list"
+              class="tab-pane fade "
+              id="vikingOriginChristmasTrees"
+              role="tabpanel"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4">
+                    <img
+                      alt="..."
+                      class="card-img"
+                      data-src="https://i.pinimg.com/originals/27/8a/14/278a1496ae73279386bcf3ec33a09849.jpg"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        There are many traditions for decoration of and with
+                        trees during celebrations around Christmas times. One of
+                        these comes from the vikings.
+                      </h5>
+                      <p class="card-text">
+                        Since long before Christianity appeared, vikings used to
+                        decorate their homes with evergreen trees and plants to
+                        celebrate the Winter Solstice, the 21st or 22nd of
+                        December. The Winter Solstice is the shortest day, and
+                        marks the point when days grow longer. In viking
+                        tradition, the Winter Solstice marks the return in
+                        strength of the sun god, Baldr, which had been weakend
+                        during winter. The evergreen trees and plants served as
+                        a reminder that the god would glow again and summer was
+                        on it's way.
+                      </p>
+
+                      <button
+                        class="btn-read-more"
+                        onclick="window.open('https://www.zmescience.com/science/history-science/origin-christmas-tree-pagan/')"
+                      >
+                        Learn more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: END OF VIKING ORIGIN OF CHRISTMAS TREES CARD :::-->
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-
-<footer class="site-footer" id="footer">
-    <div class="container">
+    <footer class="site-footer" id="footer">
+      <div class="container">
         <div class="row">
-            <div class="col-12 col-md-4">
-                <a class="footer-logo" href="#"><i class="fa fa-cube"></i> SANTA<span
-                        class="brand-color">FIED</span></a>
-                <p>
-                    Contact us for all of your Christmas questions:
-                </p>
-                <!--Remove tel spaces in the href-->
-                <a class="footer-tel" href="tel:+1800123456">+ 1 800 123 456</a><br/><span
-                    class="footer-email">Email
-                      <a href="mailto:support@santafied.fi">support@santafied.fi</a></span>
-            </div>
-            <div class="col-12 col-md-4 footer-links">
-                <h4>Links</h4>
-                <ul class="list-unstyled">
-                    <li><a href="./facts.html">Facts and Info</a></li>
-                    <li><a href="./recipes.html">Recipes</a></li>
-                    <li><a href="./gifts.html">Gifts Suggestions</a></li>
-                    <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
-                    <li><a href="./games.html">Seasonal Games</a></li>
-                    <li><a href="./films.html">Seasonal Films</a></li>
-                    <li><a href="./books.html">Seasonal Books</a></li>
-                    <li><a href="./activities.html">Seasonal Activities</a></li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-4">
-                <h4>Let's stay in touch</h4>
-                <form class="form-inline">
-                    <div class="form-group">
-                        <label class="sr-only" for="footer-form-email">Email</label>
-                        <input class="form-control form-inverted" id="footer-form-email" placeholder="Email"
-                               type="email"/>
-                        <button class="btn btn-primary" type="submit">Submit</button>
-                    </div>
-                </form>
+          <div class="col-12 col-md-4">
+            <a class="footer-logo" href="#"
+              ><i class="fa fa-cube"></i> SANTA<span class="brand-color"
+                >FIED</span
+              ></a
+            >
+            <p>
+              Contact us for all of your Christmas questions:
+            </p>
+            <!--Remove tel spaces in the href-->
+            <a class="footer-tel" href="tel:+1800123456">+ 1 800 123 456</a
+            ><br /><span class="footer-email"
+              >Email
+              <a href="mailto:support@santafied.fi"
+                >support@santafied.fi</a
+              ></span
+            >
+          </div>
+          <div class="col-12 col-md-4 footer-links">
+            <h4>Links</h4>
+            <ul class="list-unstyled">
+              <li><a href="./facts.html">Facts and Info</a></li>
+              <li><a href="./recipes.html">Recipes</a></li>
+              <li><a href="./gifts.html">Gifts Suggestions</a></li>
+              <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
+              <li><a href="./games.html">Seasonal Games</a></li>
+              <li><a href="./films.html">Seasonal Films</a></li>
+              <li><a href="./books.html">Seasonal Books</a></li>
+              <li><a href="./activities.html">Seasonal Activities</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h4>Let's stay in touch</h4>
+            <form class="form-inline">
+              <div class="form-group">
+                <label class="sr-only" for="footer-form-email">Email</label>
+                <input
+                  class="form-control form-inverted"
+                  id="footer-form-email"
+                  placeholder="Email"
+                  type="email"
+                />
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </div>
+            </form>
 
-                <p>Get updates on sales and more</p>
-                <ul class="list-inline footer-social">
-                    <li class="list-inline-item">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                </ul>
+            <p>Get updates on sales and more</p>
+            <ul class="list-inline footer-social">
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col footer-copyright">
+              &copy; Santafied. A project under zero-to-mastery.
             </div>
-            <div class="row">
-                <div class="col footer-copyright">
-                    &copy; Santafied. A project under zero-to-mastery.
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<script src="../assets/js/mouse-trail-snowball.js"></script>
-<script src="../assets/js/navLink-generator.js"></script>
-<script
-        crossorigin="anonymous"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        src="https://code.jquery.com/jquery-3.4.1.min.js">
-</script>
-<script crossorigin="anonymous"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
-</script>
-<script crossorigin="anonymous"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
-</script>
-<script type="text/javascript">
+    <script src="../assets/js/mouse-trail-snowball.js"></script>
+    <script src="../assets/js/navLink-generator.js"></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+    ></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    ></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript">
+      // grab the tab shown event and move the document on top by callling
+      // scrollTop method.
 
-    // grab the tab shown event and move the document on top by callling
-    // scrollTop method.
-
-    $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
+      $('a[data-toggle="list"]').on("shown.bs.tab", function(e) {
         //e.target // newly activated tab
         //e.relatedTarget // previous active tab
         //$(window).scrollTop(0);
-        $("html, body").animate({scrollTop: 0}, 10);
-    })
-</script>
-</body>
+        $("html, body").animate({ scrollTop: 0 }, 10);
+      });
+    </script>
+  </body>
 </html>
