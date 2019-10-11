@@ -32,8 +32,9 @@ div.watches {
 }
 
 #bannerImage {
-  height: 90vh;
-  object-fit: cover;
+    height: 90vh;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 #banner {
@@ -42,22 +43,24 @@ div.watches {
 }
 
 #banner .caption {
-  width: 100%;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  font-size: 2em;
-  text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.6);
-  padding: 30px;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 2em;
+    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.6);
+    padding: 30px;
 }
 
 /* section#giftsPage {
@@ -158,10 +161,17 @@ div.watches {
 }
 
 .flex {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100vw;
 }
 
 a:hover {
@@ -169,8 +179,8 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  #banner .caption {
-    font-size: 1em;
-    margin-top: 10%;
-  }
+    #banner .caption {
+        font-size: 1em;
+        margin-top: 10%;
+    }
 }

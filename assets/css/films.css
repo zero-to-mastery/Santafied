@@ -1,26 +1,26 @@
 body#films .list-group-item.list-group-item-action.active {
-  background-color: #ff4546 !important;
-  border-color: #ff4546 !important;
+    background-color: #ff4546 !important;
+    border-color: #ff4546 !important;
 }
 
 button {
-  text-decoration: none;
-  text-align: center;
-  background-color: #ff4546;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 12px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #ff4546;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 12px;
 }
 
 button a {
-  color: #fff;
-  font-size: 0.9rem;
-  font-weight: 500;
-  text-decoration: none;
-  background-color: #ff4546;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #ff4546;
 }
 
 button a:hover {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
