@@ -1,1157 +1,1502 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
     <script src="../assets/js/lazyloading.js"></script>
     <script
-      src="https://kit.fontawesome.com/5e68800c4a.js"
-      crossorigin="anonymous"
+            crossorigin="anonymous"
+            src="https://kit.fontawesome.com/5e68800c4a.js"
     ></script>
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
+            crossorigin="anonymous"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assets/css/main.css" />
-    <link rel="stylesheet" href="../assets/css/films.css" />
-    <link rel="stylesheet" href="../assets/css/mouse-trail-snowball.css" />
+    <link href="../assets/css/main.css" rel="stylesheet"/>
+    <link href="../assets/css/films.css" rel="stylesheet"/>
+    <link href="../assets/css/mouse-trail-snowball.css" rel="stylesheet"/>
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+            rel="stylesheet"
     />
     <link rel="stylesheet" href="../assets/css/darkmode.css" />
 
     <title>Santafied | Films</title>
-  </head>
-  <body id="films" class="sub-page">
-    <div id="snowball1"></div>
-    <div id="snowball2"></div>
-    <div id="snowball3"></div>
-    <!-- :::NAV Starts ::: -->
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> <span>SANTA</span>
-          <span id="brand-color">FIED</span></a>
+</head>
+<body class="sub-page" id="films">
+<div id="snowball1"></div>
+<div id="snowball2"></div>
+<div id="snowball3"></div>
+<!-- :::NAV Starts ::: -->
+<div class="container" id="scroll-up">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> <span>SANTA</span><span
+                class="brand-color">FIED</span></a>
         <div class="dropdown dropdown-container">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Navigation
-          </a>
-          <div class="dropdown-menu" id="nav-dropdown-from-page" aria-labelledby="navbarDropdown">
-          </div>
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+               href="#"
+               id="navbarDropdown" role="button">
+                Navigation
+            </a>
+            <div aria-labelledby="navbarDropdown" class="dropdown-menu" id="nav-dropdown-from-page">
+            </div>
         </div>
-      </nav>
-    </div>
+    </nav>
+</div>
 
-    <!-- :::END OF Nav -->
+<!-- :::END OF Nav -->
 
-    <div class="container">
-      <h1 class="title">Christmas Films</h1>
-      <div class="row">
+<div class="container">
+    <h1 class="title">Christmas Films</h1>
+    <div class="row">
         <div class="col-md-4 tab-navigation">
-          <div class="list-group" id="list-tab" role="tablist">
-            <!-- ::: MENU TO FILTER FILMS :::-->
-            <a
-              class="list-group-item list-group-item-action active"
-              id="list-profile-list"
-              data-toggle="list"
-              href="#grinch-stole"
-              role="tab"
-              aria-controls="profile"
-              >How the Grinch Stole Christmas</a
-            >
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-settings-list"
-              data-toggle="list"
-              href="#list-settings"
-              role="tab"
-              aria-controls="settings"
-              >Disney's A Christmas Carol</a
-            >
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-settings-list"
-              data-toggle="list"
-              href="#arthur-christmas"
-              role="tab"
-              aria-controls="settings"
-              >Arthur Christmas</a
-            >
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-settings-list"
-              data-toggle="list"
-              href="#home-alone"
-              role="tab"
-              aria-controls="settings"
-              >Home Alone</a
-            >
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-settings-list"
-              data-toggle="list"
-              href="#home-alone-2"
-              role="tab"
-              aria-controls="settings"
-              >Home Alone 2: Lost in New York</a
-            >
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-settings-list"
-              data-toggle="list"
-              href="#love-actually"
-              role="tab"
-              aria-controls="settings"
-              >Love Actually</a
-            >
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-settings-list"
-              data-toggle="list"
-              href="#miracle-34th-street"
-              role="tab"
-              aria-controls="settings"
-              >Miracle on 34th Street</a
-            >
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-settings-list"
-              data-toggle="list"
-              href="#santa-claus"
-              role="tab"
-              aria-controls="settings"
-              >Santa Claus The Movie</a>
+            <div class="list-group" id="list-tab" role="tablist">
+                <!-- ::: MENU TO FILTER FILMS :::-->
+                <a
+                        aria-controls="profile"
+                        class="list-group-item list-group-item-action active"
+                        data-toggle="list"
+                        href="#grinch-stole"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >How the Grinch Stole Christmas</a
+                >
+                <a
+                        aria-controls="settings"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#list-settings"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >Disney's A Christmas Carol</a
+                >
+                <a
+                        aria-controls="settings"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#arthur-christmas"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >Arthur Christmas</a
+                >
+                <a
+                        aria-controls="settings"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#rare-exports-a-christmas-tale"
+                        id="list-settings-list"
+                        role="tab"
+                >Rare Exports: A Christmas Tale</a
+                >
+                <a
+                        aria-controls="settings"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#home-alone"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >Home Alone</a
+                >
+                <a
+                        aria-controls="settings"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#home-alone-2"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >Home Alone 2: Lost in New York</a
+                >
+                <a
+                        aria-controls="settings"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#love-actually"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >Love Actually</a
+                >
+                <a
+                        aria-controls="settings"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#miracle-34th-street"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >Miracle on 34th Street</a
+                >
+                <a
+                        aria-controls="settings"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#santa-claus"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >Santa Claus The Movie</a>
 
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-settings-list"
-              data-toggle="list"
-              href="#Elf"
-              role="tab"
-              aria-controls="settings"
-              >Elf</a
-            >
-            <a
-            class="list-group-item list-group-item-action"
-            id="list-profile-list"
-            data-toggle="list"
-            href="#die-hard"
-            role="tab"
-            aria-controls="profile"
-            >Die Hard</a
-          >
-          <a
-            class="list-group-item list-group-item-action"
-            id="list-settings-list"
-            data-toggle="list"
-            href="#Rise-of-the-Guardians"
-            role="tab"
-            aria-controls="settings"
-            >Rise of the Guardians</a
-          >
-          <a
-            class="list-group-item list-group-item-action"
-            id="list-settings-list"
-            data-toggle="list"
-            href="#A-Christmas-Prince"
-            role="tab"
-            aria-controls="settings"
-            >A Christmas Prince</a
-          >
-          <a
-            class="list-group-item list-group-item-action"
-            id="list-settings-list"
-            data-toggle="list"
-            href="#Frozen"
-            role="tab"
-            aria-controls="settings"
-            >Frozen</a
-          >
-            <a
-            class="list-group-item list-group-item-action"
-            id="list-profile-list"
-            data-toggle="list"
-            href="#jingle"
-            role="tab"
-            aria-controls="profile"
-            >Jingle All the Way</a
-            >
-           <a
-            class="list-group-item list-group-item-action"
-            id="list-profile-list"
-            data-toggle="list"
-            href="#the_polar_express"
-            role="tab"
-            aria-controls="profile"
-            >The Polar Express</a
-            >
-            <a
-            class="list-group-item list-group-item-action"
-            id="list-profile-list"
-            data-toggle="list"
-            href="#white-christmas"
-            role="tab"
-            aria-controls="profile"
-            >White Christmas</a
-            >
-            <a
-            class="list-group-item list-group-item-action"
-            id="list-profile-list"
-            data-toggle="list"
-            href="#cool-runnings"
-            role="tab"
-            aria-controls="profile"
-            >Cool Runnings</a
-            >
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-profile-list"
-              data-toggle="list"
-              href="#rudolph-the-red-nosed-reindeer-1964"
-              role="tab"
-              aria-controls="profile">
-              Rudolph The Red-Nosed Reindeer (1964)
-            </a>
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-profile-list"
-              data-toggle="list"
-              href="#the-night-before"
-              role="tab"
-              aria-controls="profile">
-              The Night Before
-            </a>
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-profile-list"
-              data-toggle="list"
-              href="#the-christmas-chronicles"
-              role="tab"
-              aria-controls="profile">
-              The Christmas Chronicles
-            </a>
-          </div>
+                <a
+                        aria-controls="settings"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#Elf"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >Elf</a
+                >
+                <a
+                        aria-controls="profile"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#die-hard"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >Die Hard</a
+                >
+                <a
+                        aria-controls="settings"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#Rise-of-the-Guardians"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >Rise of the Guardians</a
+                >
+                <a
+                        aria-controls="settings"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#A-Christmas-Prince"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >A Christmas Prince</a
+                >
+                <a
+                        aria-controls="settings"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#Frozen"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >Frozen</a
+                >
+                <a
+                        aria-controls="profile"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#jingle"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >Jingle All the Way</a
+                >
+                <a
+                        aria-controls="profile"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#the_polar_express"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >The Polar Express</a
+                >
+                <a
+                        aria-controls="profile"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#white-christmas"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >White Christmas</a
+                >
+                <a
+                        aria-controls="profile"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#cool-runnings"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >Cool Runnings</a
+                >
+                <a
+                        aria-controls="profile"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#rudolph-the-red-nosed-reindeer-1964"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >
+                    Rudolph The Red-Nosed Reindeer (1964)
+                </a>
+                <a
+                        aria-controls="profile"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#the-night-before"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >
+                    The Night Before
+                </a>
+                <a
+                        aria-controls="profile"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#the-christmas-chronicles"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >
+                    The Christmas Chronicles
+                </a>
+                <a
+                        aria-controls="profile"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#el-camino-christmas"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >
+                    El Camino Christmas
+                </a>
+                <a
+                        aria-controls="profile"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#a-christmas-story"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab">
+                    A Christmas Story
+                </a>
+                <a
+                        aria-controls="profile"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#national-lampoons-christmas-vacation"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >
+                    National Lampoon's Christmas Vacation
+                </a>
+                <a
+                        aria-controls="profile"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#its-wonderful-life"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >
+                    It's a Wonderful Life
+                </a>
+            </div>
         </div>
         <!-- :::END OF MENU TO FILTER FILMS :::-->
 
         <!-- ::: CARDS OF FILMS :::-->
         <div class="col-md-8">
-          <div class="tab-content" id="nav-tabContent">
-            <!-- ::: CARD EXAMPLE OF A MOVIE :::-->
-            <div
-              class="tab-pane fade active show"
-              id="grinch-stole"
-              role="tabpanel"
-              aria-labelledby="grinch-stole-list"
-            >
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="https://m.media-amazon.com/images/M/MV5BNWNiNTczNzEtMjQyZC00MjFmLTkzMDMtODk4ZGMyZmE0N2E4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
-                      class="card-img"
-                      alt="How the Grinch Stole Christmas Cover"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">How the Grinch Stole Christmas</h5>
-                      <p class="card-text">
-                        Inside a snowflake exists the magical land of Whoville.
-                        In Whoville, live the Whos, an almost mutated sort of
-                        munchkin-like people. All the Whos love Christmas, yet
-                        just outside of their beloved town, lives the Grinch
-                        (Jim Carrey). The Grinch is a nasty creature that hates
-                        Christmas, and plots to steal it away from the Whos
-                        which he equally abhors. Yet a small child, Cindy Lou
-                        Who (Taylor Momsen), decides to try befriend the Grinch.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">
-                          <button>
-                              <a
-                              href="https://www.imdb.com/title/tt0170016/"
-                              target="__blank"
-                              >Watch Now</a
-                            >
-                          </button>
-                         
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ::: END OF CARD EXAMPLE :::-->
-            <!-- ::: Disney's A Christmas Carol Card :::-->
-            <div
-              class="tab-pane fade"
-              id="list-settings"
-              role="tabpanel"
-              aria-labelledby="list-settings-list"
-            >
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="https://m.media-amazon.com/images/M/MV5BMTM1MTI5ODU4MV5BMl5BanBnXkFtZTcwNTYyNTU4Mg@@._V1_SY1000_CR0,0,676,1000_AL_.jpg"
-                      class="card-img"
-                      alt="Disney's A Christmas Carol Cover"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Disney's A Christmas Carol</h5>
-                      <p class="card-text">
-                        Miser Ebenezer Scrooge is awakened on Christmas Eve by
-                        spirits who reveal to him his own miserable existence,
-                        what opportunities he wasted in his youth, his current
-                        cruelties, and the dire fate that awaits him if he does
-                        not change his ways. Scrooge is faced with his own story
-                        of growing bitterness and meanness, and must decide what
-                        his own future will hold: death or redemption
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">
-                          <button><a
-                            href="https://www.imdb.com/title/tt1067106/"
-                            target="__blank"
-                            >Watch Now</a
-                          ></button>
-                          
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ::: Disney's A Christmas Carol Card End :::-->
-            <!-- ::: Arthur Christmas Card :::-->
-            <div
-              class="tab-pane fade "
-              id="arthur-christmas"
-              role="tabpanel"
-              aria-labelledby="santa-claus-list"
-            >
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="https://upload.wikimedia.org/wikipedia/en/e/ed/Arthur_Christmas_Poster.jpg"
-                      class="card-img"
-                      alt="..."
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Arthur Christmas</h5>
-                      <p class="card-text">
-                        Santa's clumsy son Arthur sets out on a mission with St.
-                        Nick's father to give out a present they misplaced to a young girl in less than 2 hours.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">
-                          <button>
-                          <a
-                            href="https://www.imdb.com/title/tt1430607/"
-                            target="__blank"
-                            >Watch Now</a
-                          >
-                        </button>
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ::: Arthur Christmas Card End :::-->
-            <!-- ::: HOME ALONE CARD :::-->
-            <div
-              class="tab-pane fade"
-              id="home-alone"
-              role="tabpanel"
-              aria-labelledby="list-settings-list"
-            >
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
-                      class="card-img"
-                      alt="Home Alone Cover"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Home Alone</h5>
-                      <p class="card-text">
-                        When bratty 8-year-old Kevin McCallister (Macaulay
-                        Culkin) acts out the night before a family trip to
-                        Paris, his mother (Catherine O'Hara) makes him sleep in
-                        the attic. After the McCallisters mistakenly leave for
-                        the airport without Kevin, he awakens to an empty house
-                        and assumes his wish to have no family has come true.
-                        But his excitement sours when he realizes that two con
-                        men (Joe Pesci, Daniel Stern) plan to rob the
-                        McCallister residence, and that he alone must protect
-                        the family home.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">
-                          <button>
-                          <a
-                            href="https://www.imdb.com/title/tt0099785/"
-                            target="__blank"
-                            >Watch Now</a
-                          ></button>
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ::: HOME ALONE CARD End:::-->
-            <!-- ::: HOME ALONE 2 CARD :::-->
-            <div
-              class="tab-pane fade"
-              id="home-alone-2"
-              role="tabpanel"
-              aria-labelledby="list-settings-list"
-            >
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="http://www.gstatic.com/tv/thumb/v22vodart/14385/p14385_v_v8_ab.jpg"
-                      class="card-img"
-                      alt="Home Alone 2: Lost in New York Cover"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Home Alone 2: Lost in New York</h5>
-                      <p class="card-text">
-                        After snarky youth Kevin McCallister (Macaulay Culkin)
-                        loses track of his father at the airport, he mistakenly
-                        gets on a plane headed for New York City -- while the
-                        rest of the McCallisters fly to Florida. Now alone in
-                        the Big Apple, Kevin cons his way into a room at the
-                        Plaza Hotel and begins his usual antics. But when Kevin
-                        discovers that the Sticky Bandits (Joe Pesci, Daniel
-                        Stern) are on the loose, he struggles to stop them from
-                        robbing an elderly man's toy store just before
-                        Christmas.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">
-                          <button>
-                          <a
-                            href="https://www.imdb.com/title/tt0104431/"
-                            target="__blank"
-                            >Watch Now</a
-                          >
-                        </button>
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ::: HOME ALONE 2 CARD End :::-->
-            <!-- ::: Love Actually CARD :::-->
-            <div
-              class="tab-pane fade "
-              id="love-actually"
-              role="tabpanel"
-              aria-labelledby="santa-claus-list"
-            >
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="https://upload.wikimedia.org/wikipedia/en/e/eb/Love_Actually_movie.jpg"
-                      class="card-img"
-                      alt="Love Actually Cover"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Love Actually</h5>
-                      <p class="card-text">
-                        Follows the lives of eight very different couples in
-                        dealing with their love lives in various loosely
-                        interrelated tales all set during a frantic month before
-                        Christmas in London, England.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">
-                          <button>
-                          <a
-                            href="https://www.imdb.com/title/tt0314331/"
-                            target="__blank"
-                            >Watch Now</a
-                          ></button>
+            <div class="tab-content" id="nav-tabContent">
+                <!-- ::: CARD EXAMPLE OF A MOVIE :::-->
+                <div
+                        aria-labelledby="grinch-stole-list"
+                        class="tab-pane fade active show"
+                        id="grinch-stole"
+                        role="tabpanel"
+                >
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="How the Grinch Stole Christmas Cover"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BNWNiNTczNzEtMjQyZC00MjFmLTkzMDMtODk4ZGMyZmE0N2E4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">How the Grinch Stole Christmas</h5>
+                                    <p class="card-text">
+                                        Inside a snowflake exists the magical land of Whoville.
+                                        In Whoville, live the Whos, an almost mutated sort of
+                                        munchkin-like people. All the Whos love Christmas, yet
+                                        just outside of their beloved town, lives the Grinch
+                                        (Jim Carrey). The Grinch is a nasty creature that hates
+                                        Christmas, and plots to steal it away from the Whos
+                                        which he equally abhors. Yet a small child, Cindy Lou
+                                        Who (Taylor Momsen), decides to try befriend the Grinch.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt0170016/"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                >
+                                            </button>
 
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ::: Love Actually CARD End :::-->
-            <!-- ::: Miracle on 34th Street CARD :::-->
-            <div
-              class="tab-pane fade "
-              id="miracle-34th-street"
-              role="tabpanel"
-              aria-labelledby="santa-claus-list"
-            >
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="https://upload.wikimedia.org/wikipedia/en/5/56/Miracle_on_34th_Street_poster.jpg"
-                      class="card-img"
-                      alt="Miracle on 34th Street Cover"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Miracle on 34th Street</h5>
-                      <p class="card-text">
-                        A little girl discovers dreams do come true if you
-                        really believe. Six-year-old Susan has doubts about
-                        childhood's most enduring miracle, Santa Claus. Her
-                        mother told her the "secret" about Santa a long time
-                        ago, so Susan doesn't expect to receive the most
-                        important gifts on her Christmas list. But after meeting
-                        a special department store Santa who's convinced he's
-                        the real thing, Susan is given the most precious gift of
-                        all, something to believe in.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">
-                          <button>
-                          <a
-                            href="https://www.imdb.com/title/tt0110527/"
-                            target="__blank"
-                            >Watch Now</a
-                          ></button>
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ::: Miracle on 34th Street CARD End :::-->
-            <!-- ::: Santa Claus: The Movie CARD :::-->
-            <div
-              class="tab-pane fade "
-              id="santa-claus"
-              role="tabpanel"
-              aria-labelledby="santa-claus-list"
-            >
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="https://m.media-amazon.com/images/M/MV5BZDc1OGVkMmQtYTU0NC00ZTc4LWIyNjItM2IzYzcwNTA1ZmJmXkEyXkFqcGdeQXVyMjY3MjUzNDk@._V1_.jpg"
-                      class="card-img"
-                      alt="Santa Claus: The Movie Cover"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Santa Claus: The Movie</h5>
-                      <p class="card-text">
-                        The legend of Santa Claus is put in jeopardy when an
-                        unscrupulous toy manufacturer attempts to take over
-                        Christmas. Staring Dudley Moore and John Lithgow.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">
-                          <button>
-                          <a
-                            href="https://www.imdb.com/title/tt0089961/?ref_=fn_al_tt_2"
-                            target="__blank"
-                            >Watch Now</a
-                          ></button>
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ::: Santa Claus: The Movie CARD End :::-->
-             <!-- ::: Die Hard CARD :::-->
-             <div
-             class="tab-pane fade "
-             id="die-hard"
-             role="tabpanel"
-             aria-labelledby="die-hard-list"
-           >
-             <div class="card mb-3" style="max-width: 670px;">
-               <div class="row no-gutters">
-                 <div class="col-md-12 col-lg-4">
-                   <img
-                     data-src="https://m.media-amazon.com/images/M/MV5BZjRlNDUxZjAtOGQ4OC00OTNlLTgxNmQtYTBmMDgwZmNmNjkxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,666,1000_AL_.jpg"
-                     class="card-img"
-                     alt="Die Hard Cover"
-                     loading="lazy"
-                   />
-                 </div>
-                 <div class="col-md-12 col-lg-8">
-                   <div class="card-body">
-                     <h5 class="card-title">Die Hard</h5>
-                     <p class="card-text">
-                      An NYPD officer tries to save his wife and several others taken hostage by German terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles.
-                     </p>
-                     <p class="card-text">
-                       <small class="text-muted">
-                         <button>
-                         <a
-                           href="https://www.imdb.com/title/tt0095016/"
-                           target="__blank"
-                           >Watch Now</a
-                         >
-                        </button>
-                       </small>
-                     </p>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-           <!-- ::: Die Hard CARD End :::-->
-           <!-- ::: Rise of the Guardians CARD :::-->
-           <div
-           class="tab-pane fade "
-           id="Rise-of-the-Guardians"
-           role="tabpanel"
-           aria-labelledby="Rise-of-the-Guardians-list"
-         >
-           <div class="card mb-3" style="max-width: 670px;">
-             <div class="row no-gutters">
-               <div class="col-md-12 col-lg-4">
-                 <img
-                   data-src="https://m.media-amazon.com/images/M/MV5BMTkzMjgwMDg1M15BMl5BanBnXkFtZTcwMTgzNTI1OA@@._V1_.jpg"
-                   class="card-img"
-                   alt="Rise of the Guardians Cover"
-                   loading="lazy"
-                 />
-               </div>
-               <div class="col-md-12 col-lg-8">
-                 <div class="card-body">
-                   <h5 class="card-title">Rise of the Guardians</h5>
-                   <p class="card-text">
-                    Generation after generation, immortal Guardians like Santa Claus (Alec Baldwin), the Easter Bunny (Hugh Jackman) and the Tooth Fairy (Isla Fisher) protect the world's children from darkness and despair. However, an evil boogeyman named Pitch Black (Jude Law) schemes to overthrow the Guardians by obliterating children's belief in them. It falls to a winter sprite named Jack Frost (Chris Pine) to thwart Pitch's plans and save the Guardians from destruction.
-                   </p>
-                   <p class="card-text">
-                     <small class="text-muted">
-                       <button>
-                       <a
-                         href="https://www.imdb.com/title/tt1446192/"
-                         target="__blank"
-                         >Watch Now</a
-                       ></button>
-                     </small>
-                   </p>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-         <!-- ::: Rise of the Guardians CARD End :::-->
-         <!-- ::: A Christmas Prince CARD :::-->
-         <div
-         class="tab-pane fade "
-         id="A-Christmas-Prince"
-         role="tabpanel"
-         aria-labelledby="A-Christmas-Prince-list"
-       >
-         <div class="card mb-3" style="max-width: 670px;">
-           <div class="row no-gutters">
-             <div class="col-md-12 col-lg-4">
-               <img
-                 data-src="https://m.media-amazon.com/images/M/MV5BMWVhMTBiOWUtMmI0Ni00NDg1LWFkMmYtNTJkNTkxNWE5OWY5XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
-                 class="card-img"
-                 alt="A Christmas Prince Cover"
-                 loading="lazy"
-               />
-             </div>
-             <div class="col-md-12 col-lg-8">
-               <div class="card-body">
-                 <h5 class="card-title">A Christmas Prince</h5>
-                 <p class="card-text">
-                  Christmas comes early for an aspiring young journalist when she's sent abroad to get the scoop on a dashing prince who's poised to be king.
-                 </p>
-                 <p class="card-text">
-                   <small class="text-muted">
-                     <button>
-                     <a
-                       href="https://www.imdb.com/title/tt8709036/"
-                       target="__blank"
-                       >Watch Now</a
-                     >
-                    </button>
-                   </small>
-                 </p>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-       <!-- ::: A Christmas Prince CARD End :::-->
-       <!-- ::: Frozen CARD :::-->
-       <div
-       class="tab-pane fade "
-       id="Frozen"
-       role="tabpanel"
-       aria-labelledby="Rise-of-the-Guardians-list"
-     >
-       <div class="card mb-3" style="max-width: 670px;">
-         <div class="row no-gutters">
-           <div class="col-md-12 col-lg-4">
-             <img
-               data-src="https://m.media-amazon.com/images/M/MV5BMTQ1MjQwMTE5OF5BMl5BanBnXkFtZTgwNjk3MTcyMDE@._V1_.jpg"
-               class="card-img"
-               alt="Frozen Cover"
-               loading="lazy"
-             />
-           </div>
-           <div class="col-md-12 col-lg-8">
-             <div class="card-body">
-               <h5 class="card-title">Frozen</h5>
-               <p class="card-text">
-                When their kingdom becomes trapped in perpetual winter, fearless Anna (Kristen Bell) joins forces with mountaineer Kristoff (Jonathan Groff) and his reindeer sidekick to find Anna's sister, Snow Queen Elsa (Idina Menzel), and break her icy spell. Although their epic journey leads them to encounters with mystical trolls, a comedic snowman (Josh Gad), harsh conditions, and magic at every turn, Anna and Kristoff bravely push onward in a race to save their kingdom from winter's cold grip.
-               </p>
-               <p class="card-text">
-                 <small class="text-muted">
-                   <button>
-                   <a
-                     href="https://www.imdb.com/title/tt2294629/"
-                     target="__blank"
-                     >Watch Now</a
-                   ></button>
-                 </small>
-               </p>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-     <!-- ::: Frozen CARD End :::-->
-            <!-- ::: Elf CARD :::-->
-            <div
-              class="tab-pane fade "
-              id="Elf"
-              role="tabpanel"
-              aria-labelledby="santa-claus-list"
-            >
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="https://www.myepl.org/wp-content/uploads/2018/10/Elf.jpg"
-                      class="card-img"
-                      alt="Elf Cover"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Elf</h5>
-                      <p class="card-text">
-                        Buddy was a baby in an orphanage who stowed away in Santa's sack and ended up at the North Pole. Later, as an adult human who happened to be raised by elves, Santa allows him to go to New York City to find his birth father, Walter Hobbs. Hobbs, on Santa's naughty list for being a heartless jerk, had no idea that Buddy was even born. Buddy, meanwhile, experiences the delights of New York City (and human culture) as only an elf can. When Walter's relationship with Buddy interferes with his job, he is forced to reevaluate his priorities.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">
-                          <button>
-                          <a
-                            href="https://www.imdb.com/title/tt0319343/?ref_=nv_sr_1?ref_=nv_sr_1"
-                            target="__blank"
-                            >Watch Now</a
-                          ></button>
-
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ::: Elf CARD End :::-->
-            <!-- ::: Jingle All the Way Card :::-->
-            <div
-              class="tab-pane fade"
-              id="jingle"
-              role="tabpanel"
-              aria-labelledby="jingle-list"
-            >
-            <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                    data-src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Jingle_All_the_Way_poster.JPG/220px-Jingle_All_the_Way_poster.JPG"
-                      class="card-img"
-                      alt="Jingle All the Way"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Jingle All the Way</h5>
-                        <p class="card-text">
-                          Jingle All the Way is a 1996 American Christmas family comedy film
-                           directed by Brian Levant. It stars Arnold Schwarzenegger and Sinbad
-                            as two rival fathers, workaholic Howard Langston (Schwarzenegger)
-                            and stressed out postal worker Myron Larabee (Sinbad), both
-                            desperately trying to purchase a Turbo-Man action figure for their
-                            respective sons on a last-minute shopping spree on Christmas Eve.
-                          </p>
-                          <p class="card-text">
-                            <small class="text-muted">
-                              <button>
-                              <a href="https://www.imdb.com/title/tt0116705/?ref_=fn_al_tt_1"
-                              target="__blank"
-                              >Watch Now</a
-                              >
-                            </button>
-                            </small>
-                          </p>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                  </div>
-                </div>
-            </div>
-            </div>
-            <!-- ::: Jingle All the Way Card End :::-->
-            <!-- ::: The Polar Express Card:::-->
-            <div
-              class="tab-pane fade"
-              id="the_polar_express"
-              role="tabpanel"
-              aria-labelledby="santa-claus-list"
-            >
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="https://upload.wikimedia.org/wikipedia/en/2/24/The_Polar_Express_%282004%29_poster.jpg"
-                      class="card-img"
-                      alt="the polar express"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">The Polar Express</h5>
-                      <p class="card-text">
-                        Tom Hanks and director Robert Zemeckis ("Forrest Gump"; "Cast Away")
-                        reunite for "Polar Express," an inspiring adventure based on the
-                        beloved children's book by Chris Van Allsburg. When a doubting
-                        young boy takes an extraordinary train ride to the North Pole,
-                        he embarks on a journey of self-discovery that shows him that
-                        the wonder of life never fades for those who believe.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">
-                          <button>
-                          <a
-                            href="https://www.imdb.com/title/tt0338348/"
-                            target="__blank"
-                            >Watch Now</a
-                          ></button>
-                        </small>
-                      </p>
                     </div>
-                  </div>
                 </div>
-              </div>
-          </div>
-          <!-- ::: The Polar Express Card End :::-->
-          <!-- White Christmas -->
-          <div
-              class="tab-pane fade"
-              id="white-christmas"
-              role="tabpanel"
-              aria-labelledby="white-christmas-list"
-            >
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="https://m.media-amazon.com/images/M/MV5BYjI0ZTk0ZjQtZTMzOS00NDdmLTk0YzUtZTQ4NGRkNWFhZTkxXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg"
-                      class="card-img"
-                      alt="..."
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">White Christmas</h5>
-                      <p class="card-text">
-                        In this classic 1954 movie, Singers Bob Wallace (Bing Crosby) and Phil Davis (Danny Kaye) join sister act Betty (Rosemary Clooney) and Judy Haynes (Vera-Ellen) to perform a Christmas show in rural Vermont. There, they run into Gen. Waverly (Dean Jagger), the boys' commander in World War II, who, they learn, is having financial difficulties; his quaint country inn is failing. So what's the foursome to do but plan a yuletide miracle: a fun-filled musical extravaganza that's sure to put Waverly and his business in the black!
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">
-                          <button> 
-                          <a
-                            href="https://www.imdb.com/title/tt0047673/"
-                            target="__blank"
-                            >Watch Now</a
-                          ></button>
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Cool Runnings -->
-          <div
-              class="tab-pane fade"
-              id="cool-runnings"
-              role="tabpanel"
-              aria-labelledby="cool-runnings-list"
-            >
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="https://m.media-amazon.com/images/M/MV5BMjMxMTQ3MzMwMV5BMl5BanBnXkFtZTgwNTYxNzYxMTE@._V1_UX182_CR0,0,182,268_AL_.jpg"
-                      class="card-img"
-                      alt="..."
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Cool Runnings</h5>
-                      <p class="card-text">
-                        The outrageously funny comedy hit inspired by the true story of Jamaica's first Olympic bobsled team. They were four unlikely athletes with one impossible dream. Now, with the help of an ex-champion as their coach, Derice, Sanka, Junior and Yul leave their sunny island home and enter the chilly winter Olympics to compete for the gold in a sport they know nothing about - bobsled racing!
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">
-                          <button>
-                          <a
-                            href="https://www.imdb.com/title/tt0106611/"
-                            target="__blank"
-                            >Watch Now</a
-                          ></button>
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          <!-- Rudolph The Red-Nosed Reindeer -->
-          <div
-            class="tab-pane fade"
-            id="rudolph-the-red-nosed-reindeer-1964"
-            role="tabpanel"
-            aria-labelledby="rudolph-the-red-nosed-reindeer-film-list">
-            <div class="card mb-3" style="max-width: 670px;">
-              <div class="row no-gutters">
-                <div class="col-md-12 col-lg-4">
-                  <img
-                    data-src="https://m.media-amazon.com/images/M/MV5BYjdjZjkyYjUtOWJiZC00ZTE2LTk4MDktZjliOTk5ZDk5ZTZhXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SY1000_CR0,0,701,1000_AL_.jpg"
-                    class="card-img"
-                    alt="Rudolph The Red-Nosed Reindeer (1964)"
-                    loading="lazy"/>
-                </div>
-                <div class="col-md-12 col-lg-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Rudolph The Red-Nosed Reindeer (1964)</h5>
-                    <p class="card-text">
-                      Sam the snowman tells us the story of a young red-nosed reindeer who, after being ousted from the reindeer games because of his glowing nose, teams up with Hermey, an elf who wants to be a dentist, and Yukon Cornelius, the prospector. They run into the Abominable Snowman and find a whole island of misfit toys. Rudoph vows to see if he can get Santa to help the toys, and he goes back to the North Pole on Christmas Eve. But Santa’s sleigh is fogged in. But when Santa looks over Rudolph, he gets a very bright idea…
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted">
-                        <button>
-                        <a
-                          href="https://www.imdb.com/title/tt0058536/?ref_=ttpl_pl_tt"
-                          target="__blank"
-                          >Watch Now</a
-                        ></button>
-                      </small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>  <!-- Rudolph The Red-Nosed Reindeer ends here -->
-          <!-- The Night Before -->
-          <div
-            class="tab-pane fade"
-            id="the-night-before"
-            role="tabpanel"
-            aria-labelledby="the-night-before-list">
-            <div class="card mb-3" style="max-width: 670px;">
-              <div class="row no-gutters">
-                <div class="col-md-12 col-lg-4">
-                  <img
-                    data-src="https://m.media-amazon.com/images/M/MV5BMTkyNDY1ODQwNV5BMl5BanBnXkFtZTgwNzA2MjUwNzE@._V1_UX182_CR0,0,182,268_AL_.jpg"
-                    class="card-img"
-                    alt="The Night Before"
-                    loading="lazy"/>
-                </div>
-                <div class="col-md-12 col-lg-8">
-                  <div class="card-body">
-                    <h5 class="card-title">The Night Before</h5>
-                    <p class="card-text">
-                     On Christmas eve, three lifelong friends spend the night in New York City looking for the Holy Grail of Christmas parties.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted">
-                        <button>
-                        <a
-                          href="https://www.imdb.com/title/tt3530002/"
-                          target="__blank"
-                          >Watch Now</a
-                        ></button>
-                      </small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>  <!-- The Night Before ends here -->
+                <!-- ::: END OF CARD EXAMPLE :::-->
+                <!-- ::: Disney's A Christmas Carol Card :::-->
+                <div
+                        aria-labelledby="list-settings-list"
+                        class="tab-pane fade"
+                        id="list-settings"
+                        role="tabpanel"
+                >
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="Disney's A Christmas Carol Cover"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BMTM1MTI5ODU4MV5BMl5BanBnXkFtZTcwNTYyNTU4Mg@@._V1_SY1000_CR0,0,676,1000_AL_.jpg"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Disney's A Christmas Carol</h5>
+                                    <p class="card-text">
+                                        Miser Ebenezer Scrooge is awakened on Christmas Eve by
+                                        spirits who reveal to him his own miserable existence,
+                                        what opportunities he wasted in his youth, his current
+                                        cruelties, and the dire fate that awaits him if he does
+                                        not change his ways. Scrooge is faced with his own story
+                                        of growing bitterness and meanness, and must decide what
+                                        his own future will hold: death or redemption
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button><a
+                                                    href="https://www.imdb.com/title/tt1067106/"
+                                                    target="__blank"
+                                            >Watch Now</a
+                                            ></button>
 
-          <!-- The Christmas Chronicles -->
-          <div
-            class="tab-pane fade"
-            id="the-christmas-chronicles"
-            role="tabpanel"
-            aria-labelledby="the-christmas-chronicles-list">
-            <div class="card mb-3" style="max-width: 670px;">
-              <div class="row no-gutters">
-                <div class="col-md-12 col-lg-4">
-                  <img
-                    data-src="http://www.gstatic.com/tv/thumb/v22vodart/16106601/p16106601_v_v8_aa.jpg"
-                    class="card-img"
-                    alt="The Christmas Chronicles"
-                    loading="lazy"/>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-12 col-lg-8">
-                  <div class="card-body">
-                    <h5 class="card-title">The Christmas Chronicles</h5>
-                    <p class="card-text">
-                   Siblings Kate and Teddy Pierce hatch a scheme to capture Santa Claus on Christmas Eve. When the plan goes awry, the kids join forces with a somewhat jolly Saint Nick and his loyal elves to save the holiday before it's too late
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted">
-                        <a
-                          href="https://www.imdb.com/title/tt2990140/"
-                          target="__blank"
-                          >IMDB</a
-                        >
-                      </small>
-                    </p>
-                  </div>
+                <!-- ::: Disney's A Christmas Carol Card End :::-->
+                <!-- ::: Arthur Christmas Card :::-->
+                <div
+                        aria-labelledby="santa-claus-list"
+                        class="tab-pane fade "
+                        id="arthur-christmas"
+                        role="tabpanel"
+                >
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="..."
+                                        class="card-img"
+                                        data-src="https://upload.wikimedia.org/wikipedia/en/e/ed/Arthur_Christmas_Poster.jpg"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Arthur Christmas</h5>
+                                    <p class="card-text">
+                                        Santa's clumsy son Arthur sets out on a mission with St.
+                                        Nick's father to give out a present they misplaced to a young girl in less than
+                                        2 hours.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt1430607/"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                >
+                                            </button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <!-- ::: Arthur Christmas Card End :::-->
+                <!-- ::: Rare Exports: A Christmas Tale Card :::-->
+                <div
+                        aria-labelledby="santa-claus-list"
+                        class="tab-pane fade "
+                        id="rare-exports-a-christmas-tale"
+                        role="tabpanel"
+                >
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="..."
+                                        class="card-img"
+                                        data-src="https://upload.wikimedia.org/wikipedia/en/thumb/2/27/Rare_Exports_official_film_poster.jpg/215px-Rare_Exports_official_film_poster.jpg"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rare Exports: A Christmas Tale</h5>
+                                    <p class="card-text">
+                                        <b>Rare Exports: A Christmas Tale</b> is a 2010 Finnish dark fantasy horror
+                                        thriller film written and directed by Jalmari Helander about people living near
+                                        the Korvatunturi mountain who discover the secret behind Santa Claus. The film
+                                        is based on the 2003 short film <i>Rare Exports Inc.</i>, and its 2005 sequel
+                                        <i>Rare Exports: The Official Safety Instructions</i>, by Jalmari Helander and
+                                        Juuso Helander, both of which involve a company that traps wild Santa Clauses
+                                        and trains and exports them to locations around the world<br>
+                                        <b>Rotten Tomatoes:</b> 89%<br>
+                                        <b>IMDb:</b> 6.7
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt1401143/"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                >
+                                            </button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: Rare Exports: A Christmas Tale Card End :::-->
+                <!-- ::: HOME ALONE CARD :::-->
+                <div
+                        aria-labelledby="list-settings-list"
+                        class="tab-pane fade"
+                        id="home-alone"
+                        role="tabpanel"
+                >
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="Home Alone Cover"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Home Alone</h5>
+                                    <p class="card-text">
+                                        When bratty 8-year-old Kevin McCallister (Macaulay
+                                        Culkin) acts out the night before a family trip to
+                                        Paris, his mother (Catherine O'Hara) makes him sleep in
+                                        the attic. After the McCallisters mistakenly leave for
+                                        the airport without Kevin, he awakens to an empty house
+                                        and assumes his wish to have no family has come true.
+                                        But his excitement sours when he realizes that two con
+                                        men (Joe Pesci, Daniel Stern) plan to rob the
+                                        McCallister residence, and that he alone must protect
+                                        the family home.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt0099785/"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                ></button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: HOME ALONE CARD End:::-->
+                <!-- ::: HOME ALONE 2 CARD :::-->
+                <div
+                        aria-labelledby="list-settings-list"
+                        class="tab-pane fade"
+                        id="home-alone-2"
+                        role="tabpanel"
+                >
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="Home Alone 2: Lost in New York Cover"
+                                        class="card-img"
+                                        data-src="http://www.gstatic.com/tv/thumb/v22vodart/14385/p14385_v_v8_ab.jpg"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Home Alone 2: Lost in New York</h5>
+                                    <p class="card-text">
+                                        After snarky youth Kevin McCallister (Macaulay Culkin)
+                                        loses track of his father at the airport, he mistakenly
+                                        gets on a plane headed for New York City -- while the
+                                        rest of the McCallisters fly to Florida. Now alone in
+                                        the Big Apple, Kevin cons his way into a room at the
+                                        Plaza Hotel and begins his usual antics. But when Kevin
+                                        discovers that the Sticky Bandits (Joe Pesci, Daniel
+                                        Stern) are on the loose, he struggles to stop them from
+                                        robbing an elderly man's toy store just before
+                                        Christmas.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt0104431/"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                >
+                                            </button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: HOME ALONE 2 CARD End :::-->
+                <!-- ::: Love Actually CARD :::-->
+                <div
+                        aria-labelledby="santa-claus-list"
+                        class="tab-pane fade "
+                        id="love-actually"
+                        role="tabpanel"
+                >
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="Love Actually Cover"
+                                        class="card-img"
+                                        data-src="https://upload.wikimedia.org/wikipedia/en/e/eb/Love_Actually_movie.jpg"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Love Actually</h5>
+                                    <p class="card-text">
+                                        Follows the lives of eight very different couples in
+                                        dealing with their love lives in various loosely
+                                        interrelated tales all set during a frantic month before
+                                        Christmas in London, England.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt0314331/"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                ></button>
+
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: Love Actually CARD End :::-->
+                <!-- ::: Miracle on 34th Street CARD :::-->
+                <div
+                        aria-labelledby="santa-claus-list"
+                        class="tab-pane fade "
+                        id="miracle-34th-street"
+                        role="tabpanel"
+                >
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="Miracle on 34th Street Cover"
+                                        class="card-img"
+                                        data-src="https://upload.wikimedia.org/wikipedia/en/5/56/Miracle_on_34th_Street_poster.jpg"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Miracle on 34th Street</h5>
+                                    <p class="card-text">
+                                        A little girl discovers dreams do come true if you
+                                        really believe. Six-year-old Susan has doubts about
+                                        childhood's most enduring miracle, Santa Claus. Her
+                                        mother told her the "secret" about Santa a long time
+                                        ago, so Susan doesn't expect to receive the most
+                                        important gifts on her Christmas list. But after meeting
+                                        a special department store Santa who's convinced he's
+                                        the real thing, Susan is given the most precious gift of
+                                        all, something to believe in.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt0110527/"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                ></button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: Miracle on 34th Street CARD End :::-->
+                <!-- ::: Santa Claus: The Movie CARD :::-->
+                <div
+                        aria-labelledby="santa-claus-list"
+                        class="tab-pane fade "
+                        id="santa-claus"
+                        role="tabpanel"
+                >
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="Santa Claus: The Movie Cover"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BZDc1OGVkMmQtYTU0NC00ZTc4LWIyNjItM2IzYzcwNTA1ZmJmXkEyXkFqcGdeQXVyMjY3MjUzNDk@._V1_.jpg"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Santa Claus: The Movie</h5>
+                                    <p class="card-text">
+                                        The legend of Santa Claus is put in jeopardy when an
+                                        unscrupulous toy manufacturer attempts to take over
+                                        Christmas. Staring Dudley Moore and John Lithgow.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt0089961/?ref_=fn_al_tt_2"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                ></button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: Santa Claus: The Movie CARD End :::-->
+                <!-- ::: Die Hard CARD :::-->
+                <div
+                        aria-labelledby="die-hard-list"
+                        class="tab-pane fade "
+                        id="die-hard"
+                        role="tabpanel"
+                >
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="Die Hard Cover"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BZjRlNDUxZjAtOGQ4OC00OTNlLTgxNmQtYTBmMDgwZmNmNjkxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,666,1000_AL_.jpg"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Die Hard</h5>
+                                    <p class="card-text">
+                                        An NYPD officer tries to save his wife and several others taken hostage by
+                                        German terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt0095016/"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                >
+                                            </button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: Die Hard CARD End :::-->
+                <!-- ::: Rise of the Guardians CARD :::-->
+                <div
+                        aria-labelledby="Rise-of-the-Guardians-list"
+                        class="tab-pane fade "
+                        id="Rise-of-the-Guardians"
+                        role="tabpanel"
+                >
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="Rise of the Guardians Cover"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BMTkzMjgwMDg1M15BMl5BanBnXkFtZTcwMTgzNTI1OA@@._V1_.jpg"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rise of the Guardians</h5>
+                                    <p class="card-text">
+                                        Generation after generation, immortal Guardians like Santa Claus (Alec Baldwin),
+                                        the Easter Bunny (Hugh Jackman) and the Tooth Fairy (Isla Fisher) protect the
+                                        world's children from darkness and despair. However, an evil boogeyman named
+                                        Pitch Black (Jude Law) schemes to overthrow the Guardians by obliterating
+                                        children's belief in them. It falls to a winter sprite named Jack Frost (Chris
+                                        Pine) to thwart Pitch's plans and save the Guardians from destruction.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt1446192/"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                ></button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: Rise of the Guardians CARD End :::-->
+                <!-- ::: A Christmas Prince CARD :::-->
+                <div
+                        aria-labelledby="A-Christmas-Prince-list"
+                        class="tab-pane fade "
+                        id="A-Christmas-Prince"
+                        role="tabpanel"
+                >
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="A Christmas Prince Cover"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BMWVhMTBiOWUtMmI0Ni00NDg1LWFkMmYtNTJkNTkxNWE5OWY5XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">A Christmas Prince</h5>
+                                    <p class="card-text">
+                                        Christmas comes early for an aspiring young journalist when she's sent abroad to
+                                        get the scoop on a dashing prince who's poised to be king.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt8709036/"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                >
+                                            </button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: A Christmas Prince CARD End :::-->
+                <!-- ::: Frozen CARD :::-->
+                <div
+                        aria-labelledby="Rise-of-the-Guardians-list"
+                        class="tab-pane fade "
+                        id="Frozen"
+                        role="tabpanel"
+                >
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="Frozen Cover"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BMTQ1MjQwMTE5OF5BMl5BanBnXkFtZTgwNjk3MTcyMDE@._V1_.jpg"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Frozen</h5>
+                                    <p class="card-text">
+                                        When their kingdom becomes trapped in perpetual winter, fearless Anna (Kristen
+                                        Bell) joins forces with mountaineer Kristoff (Jonathan Groff) and his reindeer
+                                        sidekick to find Anna's sister, Snow Queen Elsa (Idina Menzel), and break her
+                                        icy spell. Although their epic journey leads them to encounters with mystical
+                                        trolls, a comedic snowman (Josh Gad), harsh conditions, and magic at every turn,
+                                        Anna and Kristoff bravely push onward in a race to save their kingdom from
+                                        winter's cold grip.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt2294629/"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                ></button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: Frozen CARD End :::-->
+                <!-- ::: Elf CARD :::-->
+                <div
+                        aria-labelledby="santa-claus-list"
+                        class="tab-pane fade "
+                        id="Elf"
+                        role="tabpanel"
+                >
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="Elf Cover"
+                                        class="card-img"
+                                        data-src="https://www.myepl.org/wp-content/uploads/2018/10/Elf.jpg"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Elf</h5>
+                                    <p class="card-text">
+                                        Buddy was a baby in an orphanage who stowed away in Santa's sack and ended up at
+                                        the North Pole. Later, as an adult human who happened to be raised by elves,
+                                        Santa allows him to go to New York City to find his birth father, Walter Hobbs.
+                                        Hobbs, on Santa's naughty list for being a heartless jerk, had no idea that
+                                        Buddy was even born. Buddy, meanwhile, experiences the delights of New York City
+                                        (and human culture) as only an elf can. When Walter's relationship with Buddy
+                                        interferes with his job, he is forced to reevaluate his priorities.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt0319343/?ref_=nv_sr_1?ref_=nv_sr_1"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                ></button>
+
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: Elf CARD End :::-->
+                <!-- ::: Jingle All the Way Card :::-->
+                <div
+                        aria-labelledby="jingle-list"
+                        class="tab-pane fade"
+                        id="jingle"
+                        role="tabpanel"
+                >
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="Jingle All the Way"
+                                        class="card-img"
+                                        data-src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Jingle_All_the_Way_poster.JPG/220px-Jingle_All_the_Way_poster.JPG"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jingle All the Way</h5>
+                                    <p class="card-text">
+                                        Jingle All the Way is a 1996 American Christmas family comedy film
+                                        directed by Brian Levant. It stars Arnold Schwarzenegger and Sinbad
+                                        as two rival fathers, workaholic Howard Langston (Schwarzenegger)
+                                        and stressed out postal worker Myron Larabee (Sinbad), both
+                                        desperately trying to purchase a Turbo-Man action figure for their
+                                        respective sons on a last-minute shopping spree on Christmas Eve.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a href="https://www.imdb.com/title/tt0116705/?ref_=fn_al_tt_1"
+                                                   target="__blank"
+                                                >Watch Now</a
+                                                >
+                                            </button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: Jingle All the Way Card End :::-->
+                <!-- ::: The Polar Express Card:::-->
+                <div
+                        aria-labelledby="santa-claus-list"
+                        class="tab-pane fade"
+                        id="the_polar_express"
+                        role="tabpanel"
+                >
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="the polar express"
+                                        class="card-img"
+                                        data-src="https://upload.wikimedia.org/wikipedia/en/2/24/The_Polar_Express_%282004%29_poster.jpg"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Polar Express</h5>
+                                    <p class="card-text">
+                                        Tom Hanks and director Robert Zemeckis ("Forrest Gump"; "Cast Away")
+                                        reunite for "Polar Express," an inspiring adventure based on the
+                                        beloved children's book by Chris Van Allsburg. When a doubting
+                                        young boy takes an extraordinary train ride to the North Pole,
+                                        he embarks on a journey of self-discovery that shows him that
+                                        the wonder of life never fades for those who believe.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt0338348/"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                ></button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: The Polar Express Card End :::-->
+                <!-- White Christmas -->
+                <div
+                        aria-labelledby="white-christmas-list"
+                        class="tab-pane fade"
+                        id="white-christmas"
+                        role="tabpanel"
+                >
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="..."
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BYjI0ZTk0ZjQtZTMzOS00NDdmLTk0YzUtZTQ4NGRkNWFhZTkxXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">White Christmas</h5>
+                                    <p class="card-text">
+                                        In this classic 1954 movie, Singers Bob Wallace (Bing Crosby) and Phil Davis
+                                        (Danny Kaye) join sister act Betty (Rosemary Clooney) and Judy Haynes
+                                        (Vera-Ellen) to perform a Christmas show in rural Vermont. There, they run into
+                                        Gen. Waverly (Dean Jagger), the boys' commander in World War II, who, they
+                                        learn, is having financial difficulties; his quaint country inn is failing. So
+                                        what's the foursome to do but plan a yuletide miracle: a fun-filled musical
+                                        extravaganza that's sure to put Waverly and his business in the black!
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt0047673/"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                ></button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cool Runnings -->
+                <div
+                        aria-labelledby="cool-runnings-list"
+                        class="tab-pane fade"
+                        id="cool-runnings"
+                        role="tabpanel"
+                >
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="..."
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BMjMxMTQ3MzMwMV5BMl5BanBnXkFtZTgwNTYxNzYxMTE@._V1_UX182_CR0,0,182,268_AL_.jpg"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cool Runnings</h5>
+                                    <p class="card-text">
+                                        The outrageously funny comedy hit inspired by the true story of Jamaica's first
+                                        Olympic bobsled team. They were four unlikely athletes with one impossible
+                                        dream. Now, with the help of an ex-champion as their coach, Derice, Sanka,
+                                        Junior and Yul leave their sunny island home and enter the chilly winter
+                                        Olympics to compete for the gold in a sport they know nothing about - bobsled
+                                        racing!
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt0106611/"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                ></button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rudolph The Red-Nosed Reindeer -->
+                <div
+                        aria-labelledby="rudolph-the-red-nosed-reindeer-film-list"
+                        class="tab-pane fade"
+                        id="rudolph-the-red-nosed-reindeer-1964"
+                        role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="Rudolph The Red-Nosed Reindeer (1964)"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BYjdjZjkyYjUtOWJiZC00ZTE2LTk4MDktZjliOTk5ZDk5ZTZhXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SY1000_CR0,0,701,1000_AL_.jpg"
+                                        loading="lazy"/>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rudolph The Red-Nosed Reindeer (1964)</h5>
+                                    <p class="card-text">
+                                        Sam the snowman tells us the story of a young red-nosed reindeer who, after
+                                        being ousted from the reindeer games because of his glowing nose, teams up with
+                                        Hermey, an elf who wants to be a dentist, and Yukon Cornelius, the prospector.
+                                        They run into the Abominable Snowman and find a whole island of misfit toys.
+                                        Rudoph vows to see if he can get Santa to help the toys, and he goes back to the
+                                        North Pole on Christmas Eve. But Santa’s sleigh is fogged in. But when Santa
+                                        looks over Rudolph, he gets a very bright idea…
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt0058536/?ref_=ttpl_pl_tt"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                ></button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  <!-- Rudolph The Red-Nosed Reindeer ends here -->
+                <!-- The Night Before -->
+                <div
+                        aria-labelledby="the-night-before-list"
+                        class="tab-pane fade"
+                        id="the-night-before"
+                        role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="The Night Before"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BMTkyNDY1ODQwNV5BMl5BanBnXkFtZTgwNzA2MjUwNzE@._V1_UX182_CR0,0,182,268_AL_.jpg"
+                                        loading="lazy"/>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Night Before</h5>
+                                    <p class="card-text">
+                                        On Christmas eve, three lifelong friends spend the night in New York City
+                                        looking for the Holy Grail of Christmas parties.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt3530002/"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                ></button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  <!-- The Night Before ends here -->
+
+                <!-- The Christmas Chronicles -->
+                <div
+                        aria-labelledby="the-christmas-chronicles-list"
+                        class="tab-pane fade"
+                        id="the-christmas-chronicles"
+                        role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="The Christmas Chronicles"
+                                        class="card-img"
+                                        data-src="http://www.gstatic.com/tv/thumb/v22vodart/16106601/p16106601_v_v8_aa.jpg"
+                                        loading="lazy"/>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Christmas Chronicles</h5>
+                                    <p class="card-text">
+                                        Siblings Kate and Teddy Pierce hatch a scheme to capture Santa Claus on
+                                        Christmas Eve. When the plan goes awry, the kids join forces with a somewhat
+                                        jolly Saint Nick and his loyal elves to save the holiday before it's too late
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt2990140/"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                >
+                                            </button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  <!-- The Christmas Chronicles ends here -->
+
+                <!-- El Camino Christmas  -->
+                <div
+                        aria-labelledby="el-camino-christmas-list"
+                        class="tab-pane fade"
+                        id="el-camino-christmas"
+                        role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="El Camino Christmas"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BODk3MzY0MDkyM15BMl5BanBnXkFtZTgwNzUxNzMyNDM@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
+                                        loading="lazy"/>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">El Camino Christmas</h5>
+                                    <p class="card-text">
+                                        Eric comes to El Camino looking for his unknown dad. He's harassed, hit and
+                                        jailed by a drunk local cop, who later shoots at a liquor mart with Eric +4
+                                        inside. The sheriff and deputy then shoot up the place, answering each other's
+                                        fire.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt3255590/"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                ></button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  <!-- El Camino Christmas  ends here -->
+                <!-- A Christmas Story Begins here -->
+                <div
+                        aria-labelledby="a-christmas-story"
+                        class="tab-pane fade"
+                        id="a-christmas-story"
+                        role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="A Christmas Story"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BMTU4Mzc2NTc1OF5BMl5BanBnXkFtZTYwNTQ4MDk4._V1_.jpg"
+                                        loading="lazy"/>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">A Christmas Story</h5>
+                                    <p class="card-text">
+                                        Based on the humorous writings of author Jean Shepherd, this beloved holiday
+                                        movie follows the wintry exploits of youngster Ralphie Parker (Peter
+                                        Billingsley), who spends most of his time dodging a bully (Zack Ward) and
+                                        dreaming of his ideal Christmas gift, a "Red Ryder air rifle." Frequently at
+                                        odds with his cranky dad (Darren McGavin) but comforted by his doting mother
+                                        (Melinda Dillon), Ralphie struggles to make it to Christmas Day with his glasses
+                                        and his hopes intact.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt0085334"
+                                                        target="__blank"
+                                                >Watch Now</a
+                                                ></button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- A Christmas Story Ends Here -->
+                <!-- ::: National Lampoon's Christmas Vacation Card :::-->
+                <div
+                        aria-labelledby="national-lampoons-christmas-vacation-list"
+                        class="tab-pane fade"
+                        id="national-lampoons-christmas-vacation"
+                        role="tabpanel"
+                >
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="National Lampoon's Christmas Vacation Cover"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@.jpg"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">National Lampoon's Christmas Vacation</h5>
+                                    <p class="card-text">
+                                        The Griswold family's plans for a big family Christmas predictably turn into a
+                                        big disaster.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a
+                                                        href="https://www.imdb.com/title/tt0097958/"
+                                                        target="__blank"
+                                                >Watch Now</a>
+                                            </button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: National Lampoon's Christmas Vacation Card End :::-->
+                <!-- Its a Wonderful Life Card -->
+                <div
+                    aria-labelledby="its-wonderful-life"
+                    class="tab-pane fade"
+                    id="its-wonderful-life"
+                    role="tabpanel"
+                >
+                            <div class="card mb-3" style="max-width: 670px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-12 col-lg-4">
+                                        <img
+                                                alt="It's a Wonderful Life poster'"
+                                                class="card-img"
+                                                data-src="https://images-na.ssl-images-amazon.com/images/I/51450grILAL.jpg"
+                                                loading="lazy"
+                                        />
+                                    </div>
+                                    <div class="col-md-12 col-lg-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">It's a Wonderful Life</h5>
+                                            <p class="card-text">
+                                                An angel is sent from Heaven to help a desperately frustrated businessman 
+                                                by showing him what life would have been like if he had never existed. 
+                                            </p>
+                                            <p class="card-text">
+                                                <small class="text-muted">
+                                                    <button>
+                                                        <a
+                                                                href="https://www.imdb.com/title/tt0038650/"
+                                                                target="__blank"
+                                                        >Watch Now</a>
+                                                    </button>
+                                                </small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Its a Wonderful Life Card End -->
             </div>
-          </div>  <!-- The Christmas Chronicles ends here -->
         </div>
-      </div>
     </div>
-  </div>
 </div>
 
 <footer class="site-footer" id="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-4">
-        <a href="#" class="footer-logo"><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a>
-        <p>
-          do eiusmod tempor incididut ut labore et dolore magna aliqua.
-        </p>
-        <!--Remove tel spaces in the href-->
-        <a href="tel:+1800123456" class="footer-tel">+ 1 800 123 456</a><br /><span class="footer-email">Email
-          <a href="mailto:support@santafied.fi">support@santafied.fi</a></span>
-      </div>
-      <div class="col-12 col-md-4 footer-links">
-        <h4>Links</h4>
-        <ul class="list-unstyled">
-          <li><a href="./facts.html">Facts and Info</a></li>
-          <li><a href="./recipes.html">Recipes</a></li>
-          <li><a href="./gifts.html">Gifts Suggestions</a></li>
-          <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
-          <li><a href="./games.html">Seasonal Games</a></li>
-          <li><a href="./films.html">Seasonal Films</a></li>
-          <li><a href="./books.html">Seasonal Books</a></li>
-          <li><a href="./activities.html">Seasonal Activities</a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-4">
-        <h4>Let's stay in touch</h4>
-        <form class="form-inline">
-          <div class="form-group">
-            <label class="sr-only" for="footer-form-email">Email</label>
-            <input class="form-control form-inverted" type="email" id="footer-form-email" placeholder="Email" />
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <a class="footer-logo" href="#"><i class="fa fa-cube"></i> SANTA<span
+                        class="brand-color">FIED</span></a>
+                <p>
+                    Contact us for all of your Christmas questions:
+                </p>
+                <!--Remove tel spaces in the href-->
+                <a class="footer-tel" href="tel:+1800123456">+ 1 800 123 456</a><br/><span
+                    class="footer-email">Email
+                  <a href="mailto:support@santafied.fi">support@santafied.fi</a></span>
+            </div>
+            <div class="col-12 col-md-4 footer-links">
+                <h4>Links</h4>
+                <ul class="list-unstyled">
+                    <li><a href="./facts.html">Facts and Info</a></li>
+                    <li><a href="./recipes.html">Recipes</a></li>
+                    <li><a href="./gifts.html">Gifts Suggestions</a></li>
+                    <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
+                    <li><a href="./games.html">Seasonal Games</a></li>
+                    <li><a href="./films.html">Seasonal Films</a></li>
+                    <li><a href="./books.html">Seasonal Books</a></li>
+                    <li><a href="./activities.html">Seasonal Activities</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4">
+                <h4>Let's stay in touch</h4>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label class="sr-only" for="footer-form-email">Email</label>
+                        <input class="form-control form-inverted" id="footer-form-email" placeholder="Email"
+                               type="email"/>
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </form>
 
-        <p>Get updates on sales and more</p>
-        <ul class="list-inline footer-social">
-          <li class="list-inline-item">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#"><i class="fab fa-youtube"></i></a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </li>
-        </ul>
-      </div>
-      <div class="row">
-        <div class="col footer-copyright">
-          &copy; Santafied. A project under zero-to-mastery.
+                <p>Get updates on sales and more</p>
+                <ul class="list-inline footer-social">
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col footer-copyright">
+                    &copy; Santafied. A project under zero-to-mastery.
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 </footer>
 <script src="../assets/js/darkmode.js"></script>
 
-    <script src="../assets/js/mouse-trail-snowball.js"></script>
-    <script src="../assets/js/navLink-generator.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous">
-    </script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous">
-    </script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous">
-    </script>
-  </body>
+<script src="../assets/js/mouse-trail-snowball.js"></script>
+<script src="../assets/js/navLink-generator.js"></script>
+<script
+        crossorigin="anonymous"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        src="https://code.jquery.com/jquery-3.4.1.min.js">
+</script>
+<script
+        crossorigin="anonymous"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+</script>
+<script
+        crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+</script>
+
+<script type="text/javascript">
+
+    // grab the tab shown event and move the document on top by callling 
+    // scrollTop method.
+
+    $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
+        //e.target // newly activated tab
+        //e.relatedTarget // previous active tab
+        //$(window).scrollTop(0);
+        $("html, body").animate({scrollTop: 0}, 10);
+    })
+
+</script>
+
+</body>
 </html>

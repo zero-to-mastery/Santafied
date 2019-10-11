@@ -3,15 +3,27 @@
 */
 
 window.onload = function() {
- 
-    for ( i=0; i < listOf.length; i++) {
 
-        var id = listOf[i].id;
-        var name = listOf[i].name;
-        var description = listOf[i].description;
-        var summary = listOf[i].summary;
-        var img = listOf[i].img;
-        var link = listOf[i].link;
+    recipes = listOf.sort(function(a, b){
+
+          if (a.name < b.name){
+            return -1;
+          }
+          if (a.name > b.name){
+            return 1;
+          }
+          return 0;
+
+    });
+ 
+    for ( i=0; i < recipes.length; i++) {
+
+        var id = recipes[i].id;
+        var name = recipes[i].name;
+        var description = recipes[i].description;
+        var summary = recipes[i].summary;
+        var img = recipes[i].img;
+        var link = recipes[i].link;
 
         if (i == 0) {
                 // Creates First Nav Link Element 
@@ -26,7 +38,7 @@ window.onload = function() {
             }
         else{
                 //Create Card Nav Link Item.
-                var getAncor = document.getElementById(listOf[i-1].id);
+                var getAncor = document.getElementById(recipes[i-1].id);
                 getAncor.insertAdjacentHTML("afterend", '<a id="'+id+'" class="list-group-item list-group-item-action" data-toggle="list" href="#'+id+'-a" role="tab" aria-controls="profile">'+name+'</a>');
 
                 var getContentTab = document.getElementById("nav-tabContent");
@@ -34,6 +46,7 @@ window.onload = function() {
                 var tabPane = TabPaneActive(false, id + "-a");
                 getContentTab.appendChild(tabPane);
         } 
+
 
         // Create Card 
         var card = CreateCard();
@@ -64,6 +77,13 @@ window.onload = function() {
         // Create Footer
         var footer = CreateCardFooter(link);
         cardBody.appendChild(footer);
+
+        $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
+          //e.target // newly activated tab
+          //e.relatedTarget // previous active tab
+          //$(window).scrollTop(0);
+          $("html, body").animate({ scrollTop: 0 },10);
+        })
 }
 
 function CreateSummary(summary) {

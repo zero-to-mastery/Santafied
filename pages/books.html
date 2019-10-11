@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
     <script src="../assets/js/lazyloading.js"></script>
-    <script src="https://kit.fontawesome.com/5e68800c4a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="../assets/css/main.css"/>
-    <link rel="stylesheet" href="../assets/css/films.css"/>
-    <link rel="stylesheet" href="../assets/css/mouse-trail-snowball.css" />
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/5e68800c4a.js"></script>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
+    <link href="../assets/css/main.css" rel="stylesheet"/>
+    <link href="../assets/css/films.css" rel="stylesheet"/>
+    <link href="../assets/css/facts.css" rel="stylesheet"/>
+    <link href="../assets/css/mouse-trail-snowball.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="../assets/css/darkmode.css" />
 
@@ -25,16 +26,17 @@
 <!-- :::NAV Starts ::: -->
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> <span>SANTA</span>
-        <span id="brand-color">FIED</span></a>
-      <div class="dropdown dropdown-container">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Navigation
-        </a>
-        <div class="dropdown-menu" id="nav-dropdown-from-page" aria-labelledby="navbarDropdown">
+        <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> <span>SANTA</span><span
+                class="brand-color">FIED</span></a>
+        <div class="dropdown dropdown-container">
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+               href="#"
+               id="navbarDropdown" role="button">
+                Navigation
+            </a>
+            <div aria-labelledby="navbarDropdown" class="dropdown-menu" id="nav-dropdown-from-page">
+            </div>
         </div>
-      </div>
     </nav>
 </div>
 
@@ -43,49 +45,59 @@
 <div class="container">
     <h1 class="title">Christmas Books</h1>
     <div class="row">
-        <div class="col-4">
-            <div class="list-group" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action active" id="list-profile-list" data-toggle="list"
-                   href="#santa-big-night" role="tab" aria-controls="profile">Santa's Big Night</a>
-                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-                   href="#fun-christmas-stories" role="tab" aria-controls="settings">Fun Christmas Stories for Kids</a>
-                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-                   href="#twas-the-night-before-christmas" role="tab" aria-controls="settings">Twas the Night Before
+        <div class="col-md-4 tab-navigation">
+            <div class="list-group" id="list-tab" role="tablist" >
+                <a aria-controls="profile" class="list-group-item list-group-item-action active" data-toggle="list"
+                   href="#santa-big-night" id="list-profile-list" role="tab">Santa's Big Night</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#fun-christmas-stories" id="list-settings-list" role="tab">Fun Christmas Stories for Kids</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#twas-the-night-before-christmas" id="list-settings-list" role="tab">Twas the Night Before
                     Christmas</a>
-                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-                   href="#a-christmas-carol" role="tab" aria-controls="settings">A Christmas Carol</a>
-                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-                   href="#the-nutcracker" role="tab" aria-controls="settings">The Nutcracker and the Mouse King</a>
-                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-                   href="#the-christmas-shoes" role="tab" aria-controls="settings">The Christmas Shoes</a>
-                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#a-christmas-carol" id="list-settings-list" role="tab">A Christmas Carol</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#the-nutcracker" id="list-settings-list" role="tab">The Nutcracker and the Mouse King</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#the-christmas-shoes" id="list-settings-list" role="tab">The Christmas Shoes</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
                    href="#grinch"
-                   role="tab" aria-controls="settings">How the Grinch Stole Christmas</a>
-                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-                   href="#letters" role="tab" aria-controls="settings">Letters from Father Christmas</a>
-                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-                   href="#christmaswish" role="tab" aria-controls="settings">The Christmas Wish</a>
-                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-                   href="#alittlematch" role="tab" aria-controls="settings">A Little Match</a>
-                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-                   href="#cris-morning" role="tab" aria-controls="settings">Christmas Day in the Morning</a>
-                   <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-                   href="#the-girl-who-saved-christmas" role="tab" aria-controls="settings">The Girl Who Saved Christmas</a>
+                   id="list-settings-list" role="tab">How the Grinch Stole Christmas</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#letters" id="list-settings-list" role="tab">Letters from Father Christmas</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#christmaswish" id="list-settings-list" role="tab">The Christmas Wish</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#alittlematch" id="list-settings-list" role="tab">A Little Match</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#cris-morning" id="list-settings-list" role="tab">Christmas Day in the Morning</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#the-girl-who-saved-christmas" id="list-settings-list" role="tab">The Girl Who Saved
+                    Christmas</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#christmasaurus" id="list-settings-list" role="tab">The Christmasaurus</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#christmasatthebeach" id="list-settings-list" role="tab">Christmas at the Beach Hut</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#thechristmassecret" id="list-settings-list" role="tab">The Christmas Secret</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#polarExpress" id="list-settings-list" role="tab">The Polar Express</a>
             </div>
         </div>
         <!-- :::END OF MENU TO FILTER FILMS :::-->
 
         <!-- ::: CARDS OF FILMS :::-->
-        <div class="col-8">
+        <div class="col-md-8">
             <div class="tab-content" id="nav-tabContent">
                 <!-- ::: CARD EXAMPLE OF A MOVIE :::-->
-                <div class="tab-pane active" id="santa-big-night" role="tabpanel" aria-labelledby="grinch-stole-list">
+                <div aria-labelledby="grinch-stole-list" class="tab-pane active" id="santa-big-night" role="tabpanel">
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-4">
-                                <img data-src="https://images-na.ssl-images-amazon.com/images/I/513hnBL%2BUtL.jpg"
+                                <img alt="..."
                                      class="card-img"
-                                     alt="..." loading="lazy"/>
+                                     data-src="https://images-na.ssl-images-amazon.com/images/I/513hnBL%2BUtL.jpg"
+                                     loading="lazy"/>
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -103,20 +115,26 @@
                                         presents before morning! Will he make it out in time to
                                         save Christmas?
                                     </p>
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://www.amazon.com/Santas-Big-Night-Lindsey-Scott/dp/1519660006')">
+                                        Read more
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- ::: END OF CARD EXAMPLE :::-->
-                <div class="tab-pane fade" id="fun-christmas-stories" role="tabpanel"
-                     aria-labelledby="list-settings-list">
+                <div aria-labelledby="list-settings-list" class="tab-pane fade" id="fun-christmas-stories"
+                     role="tabpanel">
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-4">
                                 <img
+                                        alt="..."
+                                        class="card-img"
                                         data-src="https://images-na.ssl-images-amazon.com/images/I/519xnnXPu1L._SX381_BO1,204,203,200_.jpg"
-                                        class="card-img" alt="..." loading="lazy"/>
+                                        loading="lazy"/>
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -133,6 +151,10 @@
                                         and Hilarious Christmas jokes & illustrations for kids
                                         FREE Christmas coloring book downloads included
                                     </p>
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://www.amazon.com/Christmas-Stories-Kids-Fun-Jokes-ebook/dp/B00PB850XS')">
+                                        Read more
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -140,14 +162,15 @@
                 </div>
 
                 <!-- ::: TWAS THE NIGHT BEFORE CHRISTMAS :::-->
-                <div class="tab-pane fade" id="twas-the-night-before-christmas" role="tabpanel"
-                     aria-labelledby="grinch-stole-list">
+                <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="twas-the-night-before-christmas"
+                     role="tabpanel">
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-4">
-                                <img data-src="https://images-na.ssl-images-amazon.com/images/I/51cqcxSvOeL._SX258_BO1,204,203,200_.jpg"
+                                <img alt="..."
                                      class="card-img"
-                                     alt="..." loading="lazy"/>
+                                     data-src="https://images-na.ssl-images-amazon.com/images/I/51cqcxSvOeL._SX258_BO1,204,203,200_.jpg"
+                                     loading="lazy"/>
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -163,6 +186,10 @@
                                         and
                                         has been recorded by many artists.
                                     </p>
+                                    <button class='btn-read-more'
+                                            fade onclick="window.open('https://www.teachervision.com/twas-night-christmas-full-text')">
+                                        Read more
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -170,308 +197,634 @@
                 </div>
                 <!-- ::: TWAS THE NIGHT BEFORE CHRISTMAS :::-->
 
-                <div class="tab-pane fade" id="a-christmas-carol" role="tabpanel" aria-labelledby="list-settings-list">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img data-src="https://miro.medium.com/max/2364/0*Fv9qolR1ZgNLfCCF." class="card-img"
-                                     alt="..."
-                                     loading="lazy"/>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">A Christmas Carol</h5>
-                                    <p class="card-text">
-                                        A Christmas Carol is a novella by Charles Dickens, first
-                                        published in London by Chapman & Hall in 1843 and
-                                        illustrated by John Leech. A Christmas Carol recounts
-                                        the story of Ebenezer Scrooge, an elderly miser who is
-                                        visited by the ghost of his former business partner
-                                        Jacob Marley and the spirits of Christmas Past, Present
-                                        and Yet to Come. After their visits, Scrooge is
-                                        transformed into a kinder, gentler man.
-                                    </p>
+                <div class=" tab-pane
+                                    " id="a-christmas-carol" role="tabpanel" aria-labelledby="list-settings-list">
+                                    <div class="card mb-3" style="max-width: 670px;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img alt="..."
+                                                     class="card-img"
+                                                     data-src="https://miro.medium.com/max/2364/0*Fv9qolR1ZgNLfCCF."
+                                                     loading="lazy"/>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">A Christmas Carol</h5>
+                                                    <p class="card-text">
+                                                        A Christmas Carol is a novella by Charles Dickens, first
+                                                        published in London by Chapman & Hall in 1843 and
+                                                        illustrated by John Leech. A Christmas Carol recounts
+                                                        the story of Ebenezer Scrooge, an elderly miser who is
+                                                        visited by the ghost of his former business partner
+                                                        Jacob Marley and the spirits of Christmas Past, Present
+                                                        and Yet to Come. After their visits, Scrooge is
+                                                        transformed into a kinder, gentler man.
+                                                    </p>
+                                                    <button class='btn-read-more'
+                                                    onclick="window.open('https://books.google.com.ph/books/about/A_Christmas_Carol_in_Prose.html?id=LelLAAAAcAAJ&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false')">
+>
+                                                        Read more
+                                                    </button>
+                                                    <button class='btn-read-more'
+                                                            onclick="window.open('https://www.penguinrandomhouse.com/books/295692/nutcracker-and-mouse-king-and-the-tale-of-the-nutcracker-by-eta-hoffmann-and-alexandre-dumas/')">
+                                                        Read more
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                <!-- ::: A CHRISTMAS CAROL :::-->
 
-                <div class="tab-pane fade" id="the-nutcracker" role="tabpanel" aria-labelledby="list-settings-list">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img data-src="https://miro.medium.com/max/500/0*8dX3bezz6V4XJVX5." class="card-img"
-                                     alt="..."
-                                     loading="lazy"/>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        The Nutcracker and the Mouse King
-                                    </h5>
-                                    <p class="card-text">
-                                        The Nutcracker and the Mouse King is a story written in
-                                        1816 by Prussian author E. T. A. Hoffmann, in which
-                                        young Marie Stahlbaum's favourite Christmas toy, the
-                                        Nutcracker, comes alive and, after defeating the evil
-                                        Mouse King in battle, whisks her away to a magical
-                                        kingdom populated by dolls. In 1892, the Russian
-                                        composer Pyotr Ilyich Tchaikovsky and choreographers
-                                        Marius Petipa and Lev Ivanov turned Alexandre Dumas's
-                                        adaptation of the story into the ballet The Nutcracker.
-                                    </p>
+
+                                <div aria-labelledby="list-settings-list" class="tab-pane fade" id="the-nutcracker"
+                                     role="tabpanel">
+                                    <div class="card mb-3" style="max-width: 670px;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img alt="..."
+                                                     class="card-img"
+                                                     data-src="https://miro.medium.com/max/500/0*8dX3bezz6V4XJVX5."
+                                                     loading="lazy"/>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">
+                                                        The Nutcracker and the Mouse King
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        The Nutcracker and the Mouse King is a story written in
+                                                        1816 by Prussian author E. T. A. Hoffmann, in which
+                                                        young Marie Stahlbaum's favourite Christmas toy, the
+                                                        Nutcracker, comes alive and, after defeating the evil
+                                                        Mouse King in battle, whisks her away to a magical
+                                                        kingdom populated by dolls. In 1892, the Russian
+                                                        composer Pyotr Ilyich Tchaikovsky and choreographers
+                                                        Marius Petipa and Lev Ivanov turned Alexandre Dumas's
+                                                        adaptation of the story into the ballet The Nutcracker.
+                                                    </p>
+                                                    <button class='btn-read-more'
+                                                            onclick="window.open('https://www.penguinrandomhouse.com/books/295692/nutcracker-and-mouse-king-and-the-tale-of-the-nutcracker-by-eta-hoffmann-and-alexandre-dumas/')">
+                                                        Read more
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                <!-- ::: THE NUTCRACKER AND THE MOUSE KING :::-->
 
-                <div class="tab-pane fade" id="the-christmas-shoes" role="tabpanel"
-                     aria-labelledby="list-settings-list">
+
+                                <div aria-labelledby="list-settings-list" class="tab-pane fade" id="the-christmas-shoes"
+                                     role="tabpanel">
+                                    <div class="card mb-3" style="max-width: 670px;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img
+                                                        alt="..."
+                                                        class="card-img"
+                                                        data-src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1434144615l/42172._SX318_.jpg"
+                                                        loading="lazy"/>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">The Christmas Shoes</h5>
+                                                    <p class="card-text">
+                                                        Sometimes, the things that can change your life will
+                                                        cross your path in one instant-and then, in a fleeting
+                                                        moment, they're gone. But if you open your eyes, and
+                                                        watch carefully, you will believe....
+                                                        <br/>
+                                                        The Christmas Shoes is a universal story of the deeper
+                                                        meaning of serendipity, a tale of our shared humanity,
+                                                        and of how a power greater than ourselves can shape, and
+                                                        even save, our lives.
+                                                    </p>
+                                                    <button class='btn-read-more'
+                                                            onclick="window.open('https://www.goodreads.com/book/show/42172.The_Christmas_Shoes')">
+                                                        Read more
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- :: HOW THE GRINCH STOLE CHRISTMAS ENTRY :: -->
+                                <div aria-labelledby="list-settings-list" class="tab-pane fade" id="grinch"
+                                     role="tabpanel">
+                                    <div class="card mb-3" style="max-width: 670px;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img
+                                                        alt="..."
+                                                        class="card-img"
+                                                        data-src="https://thecavenderdiary.files.wordpress.com/2013/11/how-the-grinch-stole-christmas-review.jpg"
+                                                        loading="lazy"/>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">
+                                                        How the Grinch Stole Christmas!
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        Theodor "Dr. Seuss" Geisel wrote and illustrated the famous
+                                                        children's book
+                                                        <b><i>'How the Grinch
+                                                            Stole Christmas!'</i></b> which was published by Random
+                                                        House in 1957. The
+                                                        story revolves
+                                                        around the Grinch a grumpy, solitary creature whom despises the
+                                                        Whos of
+                                                        Whoville. In the
+                                                        story the Grinch devises a plan to ruin the Whos' celebrations
+                                                        and leave them as
+                                                        miserable as he
+                                                        is. In the end the Grinch's plan is thwarted by the Whos' kind
+                                                        and compasionate
+                                                        nature.
+                                                        After seeing the Whos' depths of compassion, the Grinch's cold
+                                                        tiny heart is
+                                                        forever changed.
+                                                    </p>
+                                                    <button class='btn-read-more'
+                                                            onclick="window.open('https://books.google.com.ph/books/about/How_the_Grinch_Stole_Christmas.html?id=arDxAwAAQBAJ&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false')">
+                                                        Read more
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- :: HOW THE GRINCH STOLE CHRISTMAS END :: -->
+
+                                <!-- :: LETTERS FROM FATHER CHRISTMAS BEGIN :: -->
+                                <div aria-labelledby="list-settings-list" class="tab-pane fade" id="letters"
+                                     role="tabpanel">
+                                    <div class="card mb-3" style="max-width: 670px;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img alt="..."
+                                                     class="card-img"
+                                                     data-src="https://miro.medium.com/max/1493/0*wTAJD_5tOKxgMO9_."
+                                                     loading="lazy"/>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Letters from Father Christmas</h5>
+                                                    <p class="card-text">
+                                                        Every December, J.R.R. Tolkien’s children would receive a letter
+                                                        from ‘Father
+                                                        Christmas’. These letters
+                                                        shared Father Christmas’s experiences that year — from an
+                                                        accident-prone polar
+                                                        bear to goblin wars in
+                                                        caves beneath the house — and are riddled with life lessons. In
+                                                        Letters from
+                                                        Father Christmas, Tolkien
+                                                        has compiled all these short stories into one book for you to
+                                                        enjoy with your
+                                                        children.
+                                                    </p>
+                                                    <button class='btn-read-more'
+                                                            onclick="window.open('https://books.google.com.ph/books/about/Letters_from_Father_Christmas.html?id=RmSuWSzFfZcC&source=kp_cover&redir_esc=y')">
+                                                        Read more
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- :: LETTERS FROM FATHER CHRISTMAS END :: -->
+                                <!-- The christmas wish -->
+                                <div aria-labelledby="list-settings-list" class="tab-pane fade" id="christmaswish"
+                                     role="tabpanel">
+                                    <div class="card mb-3" style="max-width: 670px;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img alt="..."
+                                                     class="card-img"
+                                                     data-src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1409604521l/17080312.jpg"
+                                                     loading="lazy"/>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">The Christmas Wish</h5>
+                                                    <p class="card-text">
+                                                        The Christmas Wish is a fairy tale set in 18th-century Norway.
+                                                        Stunning
+                                                        photographs illustrate this story of a little girl who wishes to
+                                                        become one of
+                                                        Santa's Elves. She skis out alone, and with the help of a
+                                                        succession of friendly
+                                                        animals, finds Santa Claus and the true meaning of Christmas.
+                                                        The Christmas Wish, the first book in the series and a New York
+                                                        Times
+                                                        Bestseller, started with photos the family did with four-year
+                                                        old daughter,
+                                                        Anja, in Norway. Those photos evolved into a story book about
+                                                        Anja's magical
+                                                        quest to find Santa with help from a menagerie of Arctic
+                                                        animals.<br>
+                                                    </p>
+                                                    <button class='btn-read-more'
+                                                            onclick="window.open('https://www.amazon.com/Christmas-Wish-Lori-Evert/dp/0449816818')">
+                                                        Read more
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- The Christmas wish end-->
+                                <div aria-labelledby="list-settings-list" class="tab-pane fade" id="alittlematch"
+                                     role="tabpanel">
+                                    <div class="card mb-3" style="max-width: 670px;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img alt="..."
+                                                     class="card-img"
+                                                     data-src="http://the-toast.net/wp-content/uploads/2014/07/hca.jpg"
+                                                     loading="lazy"/>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">A little Match</h5>
+                                                    <p class="card-text">
+                                                        Another story from Hans Christian Andersen. In The Little Match
+                                                        Girl, a young
+                                                        girl spends her New Year’s Eve on the streets trying to sell
+                                                        matches. She is
+                                                        poorly dressed for the cold and no one is interested in the
+                                                        matches, but she’s
+                                                        afraid to return home having not sold anything. She seeks
+                                                        shelter in an alley
+                                                        where she imagines herself in Heaven with her grandmother.
+                                                    </p>
+                                                    <button class='btn-read-more'
+                                                            onclick="window.open('https://andersen.sdu.dk/vaerk/hersholt/TheLittleMatchGirl_e.html')">
+                                                        Read more
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- :: Christmas Day in the Morning BEGIN :: -->
+                                <div aria-labelledby="list-settings-list" class="tab-pane fade" id="cris-morning"
+                                     role="tabpanel">
+                                    <div class="card mb-3" style="max-width: 670px;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img alt="..."
+                                                     class="card-img"
+                                                     data-src="https://images-na.ssl-images-amazon.com/images/I/51%2BJgNU8xjL._SX386_BO1,204,203,200_.jpg"
+                                                     loading="lazy"/>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Christmas Day in the Morning</h5>
+                                                    <p class="card-text">
+                                                        From Pulitzer and Nobel Prize-winning author Pearl S. Buck and
+                                                        acclaimed artist
+                                                        Mark Buehner comes a heartwarming story that illustrates the
+                                                        true meaning of
+                                                        Christmas.
+
+                                                        Rob wants to get his father something special for Christmas this
+                                                        year—something
+                                                        that shows how much he really loves him. But it's Christmas Eve,
+                                                        and he doesn't
+                                                        have much money to spend. What could he possibly get? Suddenly,
+                                                        Rob thinks of
+                                                        the best gift of all...
+                                                    </p>
+                                                    <button class='btn-read-more'
+                                                            onclick="window.open('https://books.google.com.ph/books/about/Christmas_Day_in_the_Morning.html?id=1Y1_vCM_De4C&source=kp_cover&redir_esc=y')">
+                                                        Read more
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- :: Christmas Day in the Morning END :: -->
+
+                                <!-- :: The Girl Who Saved Christmas START :: -->
+                                <div aria-labelledby="list-settings-list" class="tab-pane fade"
+                                     id="the-girl-who-saved-christmas"
+                                     role="tabpanel">
+                                    <div class="card mb-3" style="max-width: 670px;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img
+                                                        alt="The Girl Who Saved Christmas"
+                                                        class="card-img"
+                                                        data-src="https://images-na.ssl-images-amazon.com/images/I/51zi2bbqYZL.jpg"
+                                                        loading="lazy"/>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">
+                                                        The Girl Who Saved Christmas
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        If magic has a beginning, can it also have an end?<br>
+                                                        When Amelia wants a wish to come true she knows just the man to
+                                                        ask - Father
+                                                        Christmas.<br>
+                                                        But the magic she wants to believe in is starting to fade, and
+                                                        Father Christmas
+                                                        has more than impossible wishes to worry about. Upset elves,
+                                                        reindeers dropping
+                                                        out of the sky, angry trolls and the chance that Christmas might
+                                                        be cancelled.
+                                                    </p>
+                                                    <button class='btn-read-more'
+                                                            onclick="window.open('https://www.goodreads.com/book/show/30250405-the-girl-who-saved-christmas')">
+                                                        Read more
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- :: The Girl Who Saved Christmas END :: -->
+
+                                <!-- :: The Christmasaurus START :: -->
+                                <div aria-labelledby="list-settings-list" class="tab-pane fade" id="christmasaurus"
+                                     role="tabpanel">
+                                    <div class="card mb-3" style="max-width: 670px;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img
+                                                        alt="The Christmasaurus"
+                                                        class="card-img"
+                                                        data-src="https://images-na.ssl-images-amazon.com/images/I/81nAM2Mgm1L.jpg"
+                                                        loading="lazy"/>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">
+                                                        The Christmasaurus
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        Once upon a time--long, long ago, when dinosaurs roamed the
+                                                        Earth--an egg rolled
+                                                        away from its mother and landed in the ocean, where it froze
+                                                        solid and stayed
+                                                        peacefully for thousands of years. Then one day Santa and his
+                                                        elves discover the
+                                                        frozen egg, and Santa sits on it to see if it will hatch. But he
+                                                        can't guess
+                                                        what's inside. . . . <strong>A dinosaur</strong>!
+                                                    </p>
+                                                    <button class='btn-read-more'
+                                                            onclick="window.open('https://books.google.com.ph/books/about/The_Christmasaurus.html?id=DGNJDwAAQBAJ&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false')">
+                                                        Read more
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        
+                    
+                
+                <!-- :: The Christmasaurus END :: -->
+
+                <!-- :: the Beach Hut START :: -->
+                <div class="tab-pane fade" id="christmasatthebeach" role="tabpanel" aria-labelledby="list-settings-list">
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-4">
                                 <img
-                                        data-src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1434144615l/42172._SX318_.jpg"
-                                        class="card-img" alt="..." loading="lazy"/>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">The Christmas Shoes</h5>
-                                    <p class="card-text">
-                                        Sometimes, the things that can change your life will
-                                        cross your path in one instant-and then, in a fleeting
-                                        moment, they're gone. But if you open your eyes, and
-                                        watch carefully, you will believe....
-                                        <br/>
-                                        The Christmas Shoes is a universal story of the deeper
-                                        meaning of serendipity, a tale of our shared humanity,
-                                        and of how a power greater than ourselves can shape, and
-                                        even save, our lives.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- :: HOW THE GRINCH STOLE CHRISTMAS ENTRY :: -->
-                <div class="tab-pane fade" id="grinch" role="tabpanel" aria-labelledby="list-settings-list">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img
-                                        data-src="https://thecavenderdiary.files.wordpress.com/2013/11/how-the-grinch-stole-christmas-review.jpg"
-                                        class="card-img" alt="..." loading="lazy"/>
+                                        data-src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549266729l/40542822.jpg"
+                                        class="card-img" alt="Christmas at the Beach Hut" loading="lazy"/>
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        How the Grinch Stole Christmas!
+                                        Christmas at the Beach Hut
                                     </h5>
                                     <p class="card-text">
-                                        Theodor "Dr. Seuss" Geisel wrote and illustrated the famous children's book
-                                        <b><i>'How the Grinch
-                                            Stole Christmas!'</i></b> which was published by Random House in 1957. The
-                                        story revolves
-                                        around the Grinch a grumpy, solitary creature whom despises the Whos of
-                                        Whoville. In the
-                                        story the Grinch devises a plan to ruin the Whos' celebrations and leave them as
-                                        miserable as he
-                                        is. In the end the Grinch's plan is thwarted by the Whos' kind and compasionate
-                                        nature.
-                                        After seeing the Whos' depths of compassion, the Grinch's cold tiny heart is
-                                        forever changed.
+                                        Especially Lizzy Kingham. But this year, she is feeling unloved and under-appreciated by her family. The present-buying, decorating and food shopping have a....<strong>A dinosaur</strong>!
                                     </p>
+                                    <button class='btn-read-more' onclick="window.open('https://www.goodreads.com/en/book/show/40542822-christmas-at-the-beach-hut')">
+                                        Read more
+                                      </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- :: HOW THE GRINCH STOLE CHRISTMAS END :: -->
+                <!-- :: the Beach Hut END :: -->
+                
+                <!-- :: The Christmas Secret START :: -->
+                <div class="tab-pane fade" id="thechristmassecret" role="tabpanel" aria-labelledby="list-settings-list">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img
+                                        data-src="https://panmacmillanapi.blob.core.windows.net/pmapi/e12a8195-4610-4b2d-fa9f-08d58e45775c/editions/7852463a-6b7f-4f0b-7eac-08d5dd18a277/original_400_600.jpg"
+                                        class="card-img" alt="Christmas at the Beach Hut" loading="lazy"/>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        The Christmas Secret
+                                    </h5>
+                                    <p class="card-text">
+                                        Set on the beautiful island of Islay, The Christmas Secret is a gripping story filled with emotion from Karen Swan, author of Christmas Under the Stars....<strong>A dinosaur</strong>!
+                                    </p>
+                                    <button class='btn-read-more' onclick="window.open('https://www.goodreads.com/en/book/show/34734391-the-christmas-secret')">
+                                        Read more
+                                      </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- :: The Christmas Secret END :: -->
+
+                <!-- :: The Polar Express START :: -->
+                <div class="tab-pane fade" id="polarExpress" role="tabpanel" aria-labelledby="list-settings-list">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img data-src="https://prodimage.images-bn.com/pimages/9780547626925_p0_v3_s600x595.jpg"
+                                    class="card-img" alt="..." loading="lazy" />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        The Polar Express
+                                    </h5>
+                                    <p class="card-text">
+                                        A young boy, lying awake one Christmas Eve, is welcomed aboard a magical
+                                        trip to the North Pole. Through dark forests, over tall mountains, and across a desert of ice,
+                                        the
+                                        Polar Express makes its way to the city atop the world, where the boy will make his Christmas
+                                        wish.
+                                    </p>
+                                    <button class='btn-read-more' onclick="window.open('https://unitedthroughreading.org/book/the-polar-express/')">
+                                        Read more
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- :: The Polar Express END :: -->
 
                 <!-- :: LETTERS FROM FATHER CHRISTMAS BEGIN :: -->
                 <div class="tab-pane fade" id="letters" role="tabpanel" aria-labelledby="list-settings-list">
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img data-src="https://miro.medium.com/max/1493/0*wTAJD_5tOKxgMO9_." class="card-img"
-                                     alt="..."
-                                     loading="lazy"/>
+                        <div class="col-md-4">
+                            <img data-src="https://miro.medium.com/max/1493/0*wTAJD_5tOKxgMO9_." class="card-img" alt="..."
+                            loading="lazy" />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title">Letters from Father Christmas</h5>
+                            <p class="card-text">
+                                Every December, J.R.R. Tolkien’s children would receive a letter from ‘Father Christmas’. These letters
+                                shared Father Christmas’s experiences that year — from an accident-prone polar bear to goblin wars in
+                                caves beneath the house — and are riddled with life lessons. In Letters from Father Christmas, Tolkien
+                                has compiled all these short stories into one book for you to enjoy with your children.
+                            </p>
                             </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Letters from Father Christmas</h5>
-                                    <p class="card-text">
-                                        Every December, J.R.R. Tolkien’s children would receive a letter from ‘Father
-                                        Christmas’. These letters
-                                        shared Father Christmas’s experiences that year — from an accident-prone polar
-                                        bear to goblin wars in
-                                        caves beneath the house — and are riddled with life lessons. In Letters from
-                                        Father Christmas, Tolkien
-                                        has compiled all these short stories into one book for you to enjoy with your
-                                        children.
-                                    </p>
-                                </div>
-                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
                 <!-- :: LETTERS FROM FATHER CHRISTMAS END :: -->
-                <!-- The christmas wish -->
-                <div class="tab-pane fade" id="christmaswish" role="tabpanel" aria-labelledby="list-settings-list">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img data-src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1409604521l/17080312.jpg"
-                                     class="card-img" alt="..."
-                                     loading="lazy"/>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">The Christmas Wish</h5>
-                                    <p class="card-text">
-                                        The Christmas Wish is a fairy tale set in 18th-century Norway. Stunning
-                                        photographs illustrate this story of a little girl who wishes to become one of
-                                        Santa's Elves. She skis out alone, and with the help of a succession of friendly
-                                        animals, finds Santa Claus and the true meaning of Christmas.
-                                        The Christmas Wish, the first book in the series and a New York Times
-                                        Bestseller, started with photos the family did with four-year old daughter,
-                                        Anja, in Norway. Those photos evolved into a story book about Anja's magical
-                                        quest to find Santa with help from a menagerie of Arctic animals.<br>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- The Christmas wish end-->
-                <div class="tab-pane fade" id="alittlematch" role="tabpanel" aria-labelledby="list-settings-list">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img data-src="http://the-toast.net/wp-content/uploads/2014/07/hca.jpg" class="card-img"
-                                     alt="..."
-                                     loading="lazy"/>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">A little Match</h5>
-                                    <p class="card-text">
-                                        Another story from Hans Christian Andersen. In The Little Match Girl, a young
-                                        girl spends her New Year’s Eve on the streets trying to sell matches. She is
-                                        poorly dressed for the cold and no one is interested in the matches, but she’s
-                                        afraid to return home having not sold anything. She seeks shelter in an alley
-                                        where she imagines herself in Heaven with her grandmother.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- :: Christmas Day in the Morning BEGIN :: -->
-                <div class="tab-pane fade" id="cris-morning" role="tabpanel" aria-labelledby="list-settings-list">
-                    <div class="card mb-3" style="max-width: 670px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img data-src="https://images-na.ssl-images-amazon.com/images/I/51%2BJgNU8xjL._SX386_BO1,204,203,200_.jpg"
-                                     class="card-img"
-                                     alt="..."
-                                     loading="lazy"/>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Christmas Day in the Morning</h5>
-                                    <p class="card-text">
-                                        From Pulitzer and Nobel Prize-winning author Pearl S. Buck and acclaimed artist
-                                        Mark Buehner comes a heartwarming story that illustrates the true meaning of
-                                        Christmas.
 
-                                        Rob wants to get his father something special for Christmas this year—something
-                                        that shows how much he really loves him. But it's Christmas Eve, and he doesn't
-                                        have much money to spend. What could he possibly get? Suddenly, Rob thinks of
-                                        the best gift of all...
-                                    </p>
-                                </div>
-                            </div>
+                <!-- The Christmas Wish BEGIN -->
+                <div class="tab-pane fade" id="christmaswish" role="tabpanel" aria-labelledby="list-settings-list">
+                <div class="card mb-3" style="max-width: 670px;">
+                    <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img data-src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1409604521l/17080312.jpg" class="card-img" alt="..."
+                        loading="lazy" />
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">The Christmas Wish</h5>
+                        <p class="card-text">
+                            The Christmas Wish is a fairy tale set in 18th-century Norway. Stunning photographs illustrate this story of a little girl who wishes to become one of Santa's Elves. She skis out alone, and with the help of a succession of friendly animals, finds Santa Claus and the true meaning of Christmas.
+                            The Christmas Wish, the first book in the series and a New York Times Bestseller, started with photos the family did with four-year old daughter, Anja, in Norway. Those photos evolved into a story book about Anja's magical quest to find Santa with help from a menagerie of Arctic animals.<br>
+
+                        </p>
                         </div>
                     </div>
+                    </div>
                 </div>
-                <!-- :: Christmas Day in the Morning END :: -->
+
+                </div>
+                <!-- The Christmas Wish end-->
+                
+                <!-- START of new entry -->
+                <!-- END of new entry -->
             </div>
         </div>
     </div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 <footer class="site-footer" id="footer">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-4">
-                <a href="#" class="footer-logo"><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a>
+                <a href="#" class="footer-logo"><i class="fa fa-cube"></i> SANTA<span
+                        class="brand-color">FIED</span></a>
                 <p>
-                    do eiusmod tempor incididut ut labore et dolore magna aliqua.
+                    Contact us for all of your Christmas questions:
                 </p>
                 <!--Remove tel spaces in the href-->
-                <a href="tel:+1800123456" class="footer-tel">+ 1 800 123 456</a><br/><span class="footer-email">Email
-            <a href="mailto:support@santafied.fi">support@santafied.fi</a></span>
-            </div>
-            <div class="col-12 col-md-4 footer-links">
-                <h4>Links</h4>
-                <ul class="list-unstyled">
-                    <li><a href="./facts.html">Facts and Info</a></li>
-                    <li><a href="./recipes.html">Recipes</a></li>
-                    <li><a href="./gifts.html">Gifts Suggestions</a></li>
-                    <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
-                    <li><a href="./games.html">Seasonal Games</a></li>
-                    <li><a href="./films.html">Seasonal Films</a></li>
-                    <li><a href="./books.html">Seasonal Books</a></li>
-                    <li><a href="./activities.html">Seasonal Activities</a></li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-4">
-                <h4>Let's stay in touch</h4>
-                <form class="form-inline">
-                    <div class="form-group">
-                        <label class="sr-only" for="footer-form-email">Email</label>
-                        <input class="form-control form-inverted" type="email" id="footer-form-email"
-                               placeholder="Email"/>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                <a href="tel:+1800123456" class="footer-tel">+ 1 800 123 456</a><br /><span
+                    class="footer-email">Email
+                    <a href="mailto:support@santafied.fi">support@santafied.fi</a></span>
                     </div>
-                </form>
+                    <div class="col-12 col-md-4 footer-links">
+                        <h4>Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="./facts.html">Facts and Info</a></li>
+                            <li><a href="./recipes.html">Recipes</a></li>
+                            <li><a href="./gifts.html">Gifts Suggestions</a></li>
+                            <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
+                            <li><a href="./games.html">Seasonal Games</a></li>
+                            <li><a href="./films.html">Seasonal Films</a></li>
+                            <li><a href="./books.html">Seasonal Books</a></li>
+                            <li><a href="./activities.html">Seasonal Activities</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h4>Let's stay in touch</h4>
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label class="sr-only" for="footer-form-email">Email</label>
+                                <input class="form-control form-inverted" id="footer-form-email" placeholder="Email"
+                                       type="email"/>
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                            </div>
+                        </form>
 
-                <p>Get updates on sales and more</p>
-                <ul class="list-inline footer-social">
-                    <li class="list-inline-item">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="row">
-                <div class="col footer-copyright">
-                    &copy; Santafied. A project under zero-to-mastery.
+                        <p>Get updates on sales and more</p>
+                        <ul class="list-inline footer-social">
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col footer-copyright">
+                            &copy; Santafied. A project under zero-to-mastery.
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-</footer>
-<script src="../assets/js/darkmode.js"></script>
+        </footer>
+        <script src="../assets/js/darkmode.js"></script>
 
-<script src="../assets/js/mouse-trail-snowball.js"></script>
-<script src="../assets/js/navLink-generator.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-</script>
+        <script src="../assets/js/mouse-trail-snowball.js"></script>
+        <script src="../assets/js/navLink-generator.js"></script>
+        <script
+                crossorigin="anonymous"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                src="https://code.jquery.com/jquery-3.4.1.min.js">
+        </script>
+        <script crossorigin="anonymous"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+        </script>
+        <script crossorigin="anonymous"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+        </script>
+
+        <script type="text/javascript">
+
+            $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
+                //e.target // newly activated tab
+                //e.relatedTarget // previous active tab
+                //$(window).scrollTop(0);
+                $("html, body").animate({scrollTop: 0}, 10);
+            })
+
+        </script>
+        >
+    </div>
+</div>
 </body>
 
 </html>

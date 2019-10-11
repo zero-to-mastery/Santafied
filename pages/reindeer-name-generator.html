@@ -11,13 +11,11 @@
     <link href="../assets/css/main.css" rel="stylesheet"/>
     <link href="../assets/css/films.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"/>
-    <link href="../assets/css/elf-name-generator.css" rel="stylesheet"/>
+    <link href="../assets/css/reindeer-name-generator.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap" rel="stylesheet"/>
     <link href="../assets/css/mouse-trail-snowball.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="../assets/css/darkmode.css" />
 
-
-    <title>Santafied | Elf Name Generator</title>
+    <title>Santafied | Reindeer Name Generator</title>
 </head>
 
 <body id="films">
@@ -27,7 +25,7 @@
 <!-- :::NAV Starts ::: -->
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> <span>SANTA</span><span
+        <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> SANTA<span
                 class="brand-color">FIED</span></a>
         <div class="dropdown dropdown-container">
             <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
@@ -46,41 +44,41 @@
 <div class="container name-generator">
 
     <div class="icon-container">
-        <img alt="elf" class="elf-icon" src="../assets/img/santa-claus.svg">
+        <img alt="reindeer" class="reindeer-icon" src="../assets/img/reindeer.svg">
     </div>
 
-    <h1>What's your <span>ELF</span> name?</h1>
+    <h1>What's your <span>REINDEER</span> name?</h1>
 
     <div class="name-choice">
         <h3>First letter of your name</h3>
         <select class="box-style" id="name" onchange="letterChoice()">
             <option selected value="">--Select Letter--</option>
-            <option value="Sparkles">A</option>
-            <option value="Cookie">B</option>
-            <option value="Blinky">C</option>
-            <option value="Evergreen">D</option>
-            <option value="Jingle">E</option>
-            <option value="Elfie">F</option>
-            <option value="Buddy">G</option>
-            <option value="Pixie">H</option>
-            <option value="Cocoa">I</option>
-            <option value="Frosty">J</option>
-            <option value="Mistletoe">K</option>
-            <option value="Twinkle">L</option>
-            <option value="Peppermint">M</option>
-            <option value="Cranberry">N</option>
-            <option value="Snowflake">O</option>
-            <option value="Kringle">P</option>
-            <option value="Snowy">Q</option>
-            <option value="Holly">R</option>
-            <option value="Jolly">S</option>
-            <option value="Sprinkles">T</option>
-            <option value="Merry">U</option>
-            <option value="Tipsy">V</option>
-            <option value="Glitzy">W</option>
-            <option value="Starlight">X</option>
-            <option value="Happy">Y</option>
-            <option value="Twinkle">Z</option>
+            <option value="Cookie">A</option>
+            <option value="Sugar-plum">B</option>
+            <option value="Frosty">C</option>
+            <option value="Mistletoe">D</option>
+            <option value="Snowflake">E</option>
+            <option value="Cranberry">F</option>
+            <option value="Pickle-Pants">G</option>
+            <option value="Twinkle-Nose">H</option>
+            <option value="Eggnog">I</option>
+            <option value="Shimmer">J</option>
+            <option value="Pudding">K</option>
+            <option value="Pointy-Toes">L</option>
+            <option value="Kringle">M</option>
+            <option value="Dashing">N</option>
+            <option value="Turkey-Bell">O</option>
+            <option value="Honey-Ham">P</option>
+            <option value="Peppermint">Q</option>
+            <option value="Jolly-Joseph">R</option>
+            <option value="Grinch">S</option>
+            <option value="Tinsle-Cheeks">T</option>
+            <option value="McJingles">U</option>
+            <option value="Snowman">V</option>
+            <option value="Cinnamon Bun">W</option>
+            <option value="Merry-Mary">X</option>
+            <option value="Glitter">Y</option>
+            <option value="Ruldoph">Z</option>
         </select>
     </div>
 
@@ -88,25 +86,25 @@
         <h3>Your birth month</h3>
         <select class="box-style" id="month" onchange="monthChoice()">
             <option selected value="">--Select Month--</option>
-            <option value="Glitterballs">January</option>
-            <option value="TwinkleToes">February</option>
-            <option value="SugarSocks">March</option>
-            <option value="SleighBells">April</option>
-            <option value="McJingles">May</option>
-            <option value="McSnowball">June</option>
-            <option value="SnowyBum">July</option>
-            <option value="CinnamonShorts">August</option>
-            <option value="TinselPants">September</option>
-            <option value="ToffeeNut">October</option>
-            <option value="McFluff">November</option>
-            <option value="Gingerberry">December</option>
+            <option value="Lord Crackle">January</option>
+            <option value="Razzle-Dazzle">February</option>
+            <option value="Maple">March</option>
+            <option value="McMittens">April</option>
+            <option value="Angry Elf">May</option>
+            <option value="Von Pretzel">June</option>
+            <option value="St.Candy Cane">July</option>
+            <option value="Bon Bon">August</option>
+            <option value="Long Beard">September</option>
+            <option value="Snickerdoodle">October</option>
+            <option value="Arctic Puffin">November</option>
+            <option value="Claus">December</option>
         </select>
     </div>
 
     <button id="loadName" onclick="generateName();" type="submit">Generate My Name!</button>
 
     <div id="resultContainer">
-        <h3>Your Elf Name is:</h3>
+        <h3>Your Reindeer Name is:</h3>
         <p id="result"></p>
     </div>
 </div>
@@ -171,8 +169,6 @@
         </div>
     </div>
 </footer>
-<script src="../assets/js/darkmode.js"></script>
-
 <script src="../assets/js/mouse-trail-snowball.js"></script>
 <script src="../assets/js/navLink-generator.js"></script>
 <script crossorigin="anonymous"
@@ -187,7 +183,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
 </script>
-<script src="../assets/js/elf-name-generator.js"></script>
+<script src="../assets/js/reindeer-name-generator.js"></script>
 </body>
 
 </html>

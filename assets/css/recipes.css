@@ -1,25 +1,44 @@
 .tab-navigation {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .tab-content .col-lg-4 > ul {
-  margin: 16px 0 0;
+    margin: 16px 0 0;
 }
 
 .card-mb-3 {
-	max-width: 670px;
+    max-width: 670px;
 }
 
 .tab-content .card-img {
-  max-width: 222px;
-  max-height: 146px;
+    max-width: 222px;
+    height: auto;
 }
 
-@media(max-width: 767px) {
-  .tab-content .card-img {
-    max-height: 300px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
+.tab-pane ul,
+li {
+    padding: 5px 0;
 }
 
+.tab-pane ul {
+    list-style-type: none;
+}
+
+.tab-pane li {
+    text-transform: capitalize;
+}
+
+.list-group {
+  max-height: 300px;
+  overflow: scroll;
+  overflow-x: hidden; 
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 767px) {
+    .tab-content .card-img {
+        max-height: 300px;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+}

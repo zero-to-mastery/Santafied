@@ -29,7 +29,7 @@
     margin-bottom: 2rem;
 }
 
-.elf-icon {
+.reindeer-icon {
     width: 90px;
 }
 
@@ -107,7 +107,6 @@
     border-color: #aaa;
     -webkit-box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
     box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-    box-shadow: 0 0 0 3px -moz-mac-focusring;
     color: #222;
     outline: none;
 }
