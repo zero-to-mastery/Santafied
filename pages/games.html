@@ -2,86 +2,87 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <script src="../assets/js/lazyloading.js"></script>
-  <script src="../assets/data/games.js"></script>
-  <script src="https://kit.fontawesome.com/5e68800c4a.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../assets/css/main.css" />
-  <link rel="stylesheet" href="../assets/css/films.css" />
-  <link rel="stylesheet" href="../assets/css/mouse-trail-snowball.css" />
-  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
-  <title>Santafied | Games</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <script src="../assets/js/lazyloading.js"></script>
+    <script src="../assets/data/games.js"></script>
+    <script src="https://kit.fontawesome.com/5e68800c4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../assets/css/main.css"/>
+    <link rel="stylesheet" href="../assets/css/films.css"/>
+    <link rel="stylesheet" href="../assets/css/mouse-trail-snowball.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"/>
+    <title>Santafied | Games</title>
 </head>
 
 
 <body id="films">
-  <div id="snowball1"></div>
-  <div id="snowball2"></div>
-  <div id="snowball3"></div>
-  <!-- :::NAV Starts ::: -->
-  <div class="container">
+<div id="snowball1"></div>
+<div id="snowball2"></div>
+<div id="snowball3"></div>
+<!-- :::NAV Starts ::: -->
+<div class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a>
-      <div class="dropdown dropdown-container">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Navigation
-        </a>
-        <div class="dropdown-menu" id="nav-dropdown-from-page" aria-labelledby="navbarDropdown">
+        <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> SANTA<span
+                class="brand-color">FIED</span></a>
+        <div class="dropdown dropdown-container">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+                Navigation
+            </a>
+            <div class="dropdown-menu" id="nav-dropdown-from-page" aria-labelledby="navbarDropdown">
+            </div>
         </div>
-      </div>
     </nav>
-  </div>
-  <!-- :::END OF Nav -->
-  <div class="container">
+</div>
+<!-- :::END OF Nav -->
+<div class="container">
     <h1 class="title">Christmas Games</h1>
     <div class="row">
         <div class="col-4">
             <div class="list-group" id="list-tab" role="tablist"></div>
-          </div>
-  <!-- :::END OF MENU TO FILTER GAMES :::-->
-
-      <!-- ::: CARDS OF GAMES (add games in the assets-> data-> games.js file):::-->
-      <div class="col-8">
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane active">
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img id="cardImage" src="" class="card-img" alt="..." />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 id="cardTitle" class="card-title"></h5>
-                      <p id="cardText" class="card-text"></p>
-                      <p><a class="btn btn-danger" id="cardLink" href="">View Game</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      <!-- ::: END CARDS OF GAMES :::-->
+        <!-- :::END OF MENU TO FILTER GAMES :::-->
+
+        <!-- ::: CARDS OF GAMES (add games in the assets-> data-> games.js file):::-->
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane active">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img id="cardImage" src="" class="card-img" alt="..."/>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 id="cardTitle" class="card-title"></h5>
+                                    <p id="cardText" class="card-text"></p>
+                                    <p><a class="btn btn-danger" id="cardLink" href="">View Game</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ::: END CARDS OF GAMES :::-->
     </div>
-  </div>
+</div>
 
 
-  <footer class="site-footer" id="footer">
+<footer class="site-footer" id="footer">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-4">
                 <a href="#" class="footer-logo"><i class="fa fa-cube"></i> SANTA<span
-                        id="brand-color">FIED</span></a>
+                        class="brand-color">FIED</span></a>
                 <p>
                     Contact us for all of your Christmas questions:
                 </p>
                 <!--Remove tel spaces in the href-->
-                <a href="tel:+1800123456" class="footer-tel">+ 1 800 123 456</a><br /><span
+                <a href="tel:+1800123456" class="footer-tel">+ 1 800 123 456</a><br/><span
                     class="footer-email">Email
                     <a href="mailto:support@santafied.fi">support@santafied.fi</a></span>
             </div>
@@ -104,7 +105,7 @@
                     <div class="form-group">
                         <label class="sr-only" for="footer-form-email">Email</label>
                         <input class="form-control form-inverted" type="email" id="footer-form-email"
-                            placeholder="Email" />
+                               placeholder="Email"/>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
@@ -129,66 +130,67 @@
             </div>
         </div>
 </footer>
-  <script src="../assets/js/mouse-trail-snowball.js"></script>
-  <script src="../assets/js/navLink-generator.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-    <script>
-      //load first item on the list
-      $( document ).ready(function() {
+<script src="../assets/js/mouse-trail-snowball.js"></script>
+<script src="../assets/js/navLink-generator.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script>
+    //load first item on the list
+    $(document).ready(function () {
         imgCardElem.src = linkList[0].imageLink;
         imgCardElem.alt = linkList[0].title;
         titleCardElem.innerHTML = linkList[0].title;
         textCardElem.innerHTML = linkList[0].description;
         linkCardElem.href = linkList[0].link;
-        
-      });
-      
-        const listGroup = document.getElementById("list-tab");
-        const element = document.getElementById("list-tab");
-        const linkClass = "list-group-item list-group-item-action";
-        const linkDataToggle = "list";
-        const linkRole = "tab";
-        //loop through list, create new nodes for each and display
-        for (var i = 0; i < linkList.length; i++) {
-          let divElem = document.createElement("div");
-          let str = linkList[i].title.replace(/\s/g, "");
-          divElem.innerHTML = linkList[i].title;
-          divElem.setAttribute("id", str);
-          divElem.setAttribute("onclick", "showCard(" + i + ")");
-          divElem.setAttribute("class", "list-group-item list-group-item-action");
-          element.appendChild(divElem);
-        }
-  
-        const imgCardElem = document.getElementById("cardImage");
-        const titleCardElem = document.getElementById("cardTitle");
-        const textCardElem = document.getElementById("cardText");
-        const linkCardElem = document.getElementById("cardLink");
-        const listGroupFirst = listGroup.firstElementChild;
-        listGroupFirst.classList.add("active");
-        // when list link is clicked show info based on id
-        function showCard(id) {
-          imgCardElem.src = linkList[id].imageLink;
-          imgCardElem.alt = linkList[id].title;
-          titleCardElem.innerHTML = linkList[id].title;
-          textCardElem.innerHTML = linkList[id].description;
-          linkCardElem.href = linkList[id].link;
-          //linkCardElem.text = linkList[id].title;
-          for (var x = 0; x < linkList.length; x++) {
+
+    });
+
+    const listGroup = document.getElementById("list-tab");
+    const element = document.getElementById("list-tab");
+    const linkClass = "list-group-item list-group-item-action";
+    const linkDataToggle = "list";
+    const linkRole = "tab";
+    //loop through list, create new nodes for each and display
+    for (var i = 0; i < linkList.length; i++) {
+        let divElem = document.createElement("div");
+        let str = linkList[i].title.replace(/\s/g, "");
+        divElem.innerHTML = linkList[i].title;
+        divElem.setAttribute("id", str);
+        divElem.setAttribute("onclick", "showCard(" + i + ")");
+        divElem.setAttribute("class", "list-group-item list-group-item-action");
+        element.appendChild(divElem);
+    }
+
+    const imgCardElem = document.getElementById("cardImage");
+    const titleCardElem = document.getElementById("cardTitle");
+    const textCardElem = document.getElementById("cardText");
+    const linkCardElem = document.getElementById("cardLink");
+    const listGroupFirst = listGroup.firstElementChild;
+    listGroupFirst.classList.add("active");
+
+    // when list link is clicked show info based on id
+    function showCard(id) {
+        imgCardElem.src = linkList[id].imageLink;
+        imgCardElem.alt = linkList[id].title;
+        titleCardElem.innerHTML = linkList[id].title;
+        textCardElem.innerHTML = linkList[id].description;
+        linkCardElem.href = linkList[id].link;
+        //linkCardElem.text = linkList[id].title;
+        for (var x = 0; x < linkList.length; x++) {
             let allId = linkList[x].title.replace(/\s/g, "");
             document.getElementById(allId).classList.remove("active");
-          }
-          let crdId = linkList[id].title.replace(/\s/g, "");
-          document.getElementById(crdId).classList.add("active");
         }
-      </script>
+        let crdId = linkList[id].title.replace(/\s/g, "");
+        document.getElementById(crdId).classList.add("active");
+    }
+</script>
 </body>
 
 </html>
