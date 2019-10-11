@@ -33,6 +33,7 @@ div.watches {
 
 #bannerImage {
     height: 90vh;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -46,6 +47,8 @@ div.watches {
     position: absolute;
     top: 30%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: white;
     display: -webkit-box;
@@ -157,8 +160,15 @@ div.watches {
 }
 
 .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 100vw;
 }
