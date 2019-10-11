@@ -2,29 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
     <script src="../assets/js/lazyloading.js"></script>
     <script
-            src="https://kit.fontawesome.com/5e68800c4a.js"
             crossorigin="anonymous"
+            src="https://kit.fontawesome.com/5e68800c4a.js"
     ></script>
     <link
-            rel="stylesheet"
+            crossorigin="anonymous"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossorigin="anonymous"
+            rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assets/css/main.css"/>
-    <link rel="stylesheet" href="../assets/css/films.css"/>
-    <link rel="stylesheet" href="../assets/css/mouse-trail-snowball.css"/>
+    <link href="../assets/css/main.css" rel="stylesheet"/>
+    <link href="../assets/css/films.css" rel="stylesheet"/>
+    <link href="../assets/css/mouse-trail-snowball.css" rel="stylesheet"/>
     <link
             href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
             rel="stylesheet"
     />
     <title>Santafied | Films</title>
 </head>
-<body id="films" class="sub-page">
+<body class="sub-page" id="films">
 <div id="snowball1"></div>
 <div id="snowball2"></div>
 <div id="snowball3"></div>
@@ -34,11 +34,12 @@
         <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> SANTA<span
                 class="brand-color">FIED</span></a>
         <div class="dropdown dropdown-container">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-               aria-haspopup="true" aria-expanded="false">
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+               href="#"
+               id="navbarDropdown" role="button">
                 Navigation
             </a>
-            <div class="dropdown-menu" id="nav-dropdown-from-page" aria-labelledby="navbarDropdown">
+            <div aria-labelledby="navbarDropdown" class="dropdown-menu" id="nav-dropdown-from-page">
             </div>
         </div>
     </nav>
@@ -53,246 +54,246 @@
             <div class="list-group" id="list-tab" role="tablist">
                 <!-- ::: MENU TO FILTER FILMS :::-->
                 <a
+                        aria-controls="profile"
                         class="list-group-item list-group-item-action active"
-                        id="list-profile-list"
                         data-toggle="list"
                         href="#grinch-stole"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="profile"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >How the Grinch Stole Christmas</a
                 >
                 <a
+                        aria-controls="settings"
                         class="list-group-item list-group-item-action"
-                        id="list-settings-list"
                         data-toggle="list"
                         href="#list-settings"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="settings"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >Disney's A Christmas Carol</a
                 >
                 <a
+                        aria-controls="settings"
                         class="list-group-item list-group-item-action"
-                        id="list-settings-list"
                         data-toggle="list"
                         href="#arthur-christmas"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="settings"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >Arthur Christmas</a
                 >
                 <a
+                        aria-controls="settings"
                         class="list-group-item list-group-item-action"
-                        id="list-settings-list"
                         data-toggle="list"
                         href="#rare-exports-a-christmas-tale"
+                        id="list-settings-list"
                         role="tab"
-                        aria-controls="settings"
                 >Rare Exports: A Christmas Tale</a
                 >
                 <a
+                        aria-controls="settings"
                         class="list-group-item list-group-item-action"
-                        id="list-settings-list"
                         data-toggle="list"
                         href="#home-alone"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="settings"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >Home Alone</a
                 >
                 <a
+                        aria-controls="settings"
                         class="list-group-item list-group-item-action"
-                        id="list-settings-list"
                         data-toggle="list"
                         href="#home-alone-2"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="settings"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >Home Alone 2: Lost in New York</a
                 >
                 <a
+                        aria-controls="settings"
                         class="list-group-item list-group-item-action"
-                        id="list-settings-list"
                         data-toggle="list"
                         href="#love-actually"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="settings"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >Love Actually</a
                 >
                 <a
+                        aria-controls="settings"
                         class="list-group-item list-group-item-action"
-                        id="list-settings-list"
                         data-toggle="list"
                         href="#miracle-34th-street"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="settings"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >Miracle on 34th Street</a
                 >
                 <a
+                        aria-controls="settings"
                         class="list-group-item list-group-item-action"
-                        id="list-settings-list"
                         data-toggle="list"
                         href="#santa-claus"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="settings"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >Santa Claus The Movie</a>
 
                 <a
+                        aria-controls="settings"
                         class="list-group-item list-group-item-action"
-                        id="list-settings-list"
                         data-toggle="list"
                         href="#Elf"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="settings"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >Elf</a
                 >
                 <a
+                        aria-controls="profile"
                         class="list-group-item list-group-item-action"
-                        id="list-profile-list"
                         data-toggle="list"
                         href="#die-hard"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="profile"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >Die Hard</a
                 >
                 <a
+                        aria-controls="settings"
                         class="list-group-item list-group-item-action"
-                        id="list-settings-list"
                         data-toggle="list"
                         href="#Rise-of-the-Guardians"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="settings"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >Rise of the Guardians</a
                 >
                 <a
+                        aria-controls="settings"
                         class="list-group-item list-group-item-action"
-                        id="list-settings-list"
                         data-toggle="list"
                         href="#A-Christmas-Prince"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="settings"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >A Christmas Prince</a
                 >
                 <a
+                        aria-controls="settings"
                         class="list-group-item list-group-item-action"
-                        id="list-settings-list"
                         data-toggle="list"
                         href="#Frozen"
+                        id="list-settings-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="settings"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >Frozen</a
                 >
                 <a
+                        aria-controls="profile"
                         class="list-group-item list-group-item-action"
-                        id="list-profile-list"
                         data-toggle="list"
                         href="#jingle"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="profile"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >Jingle All the Way</a
                 >
                 <a
+                        aria-controls="profile"
                         class="list-group-item list-group-item-action"
-                        id="list-profile-list"
                         data-toggle="list"
                         href="#the_polar_express"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="profile"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >The Polar Express</a
                 >
                 <a
+                        aria-controls="profile"
                         class="list-group-item list-group-item-action"
-                        id="list-profile-list"
                         data-toggle="list"
                         href="#white-christmas"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="profile"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >White Christmas</a
                 >
                 <a
+                        aria-controls="profile"
                         class="list-group-item list-group-item-action"
-                        id="list-profile-list"
                         data-toggle="list"
                         href="#cool-runnings"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="profile"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >Cool Runnings</a
                 >
                 <a
+                        aria-controls="profile"
                         class="list-group-item list-group-item-action"
-                        id="list-profile-list"
                         data-toggle="list"
                         href="#rudolph-the-red-nosed-reindeer-1964"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="profile"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >
                     Rudolph The Red-Nosed Reindeer (1964)
                 </a>
                 <a
+                        aria-controls="profile"
                         class="list-group-item list-group-item-action"
-                        id="list-profile-list"
                         data-toggle="list"
                         href="#the-night-before"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="profile"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >
                     The Night Before
                 </a>
                 <a
+                        aria-controls="profile"
                         class="list-group-item list-group-item-action"
-                        id="list-profile-list"
                         data-toggle="list"
                         href="#the-christmas-chronicles"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="profile"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >
                     The Christmas Chronicles
                 </a>
                 <a
+                        aria-controls="profile"
                         class="list-group-item list-group-item-action"
-                        id="list-profile-list"
                         data-toggle="list"
                         href="#el-camino-christmas"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="profile"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >
                     El Camino Christmas
                 </a>
                 <a
+                        aria-controls="profile"
                         class="list-group-item list-group-item-action"
-                        id="list-profile-list"
                         data-toggle="list"
                         href="#a-christmas-story"
-                        role="tab"
-                        aria-controls="profile"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();">
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab">
                     A Christmas Story
                 </a>
                 <a
+                        aria-controls="profile"
                         class="list-group-item list-group-item-action"
-                        id="list-profile-list"
                         data-toggle="list"
                         href="#national-lampoons-christmas-vacation"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
                         role="tab"
-                        aria-controls="profile"
-                        onclick="javascript:document.getElementById('scroll-up').scrollIntoView();"
                 >
                     National Lampoon's Christmas Vacation
                 </a>
@@ -305,18 +306,18 @@
             <div class="tab-content" id="nav-tabContent">
                 <!-- ::: CARD EXAMPLE OF A MOVIE :::-->
                 <div
+                        aria-labelledby="grinch-stole-list"
                         class="tab-pane fade active show"
                         id="grinch-stole"
                         role="tabpanel"
-                        aria-labelledby="grinch-stole-list"
                 >
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://m.media-amazon.com/images/M/MV5BNWNiNTczNzEtMjQyZC00MjFmLTkzMDMtODk4ZGMyZmE0N2E4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
-                                        class="card-img"
                                         alt="How the Grinch Stole Christmas Cover"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BNWNiNTczNzEtMjQyZC00MjFmLTkzMDMtODk4ZGMyZmE0N2E4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
                                         loading="lazy"
                                 />
                             </div>
@@ -353,18 +354,18 @@
                 <!-- ::: END OF CARD EXAMPLE :::-->
                 <!-- ::: Disney's A Christmas Carol Card :::-->
                 <div
+                        aria-labelledby="list-settings-list"
                         class="tab-pane fade"
                         id="list-settings"
                         role="tabpanel"
-                        aria-labelledby="list-settings-list"
                 >
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://m.media-amazon.com/images/M/MV5BMTM1MTI5ODU4MV5BMl5BanBnXkFtZTcwNTYyNTU4Mg@@._V1_SY1000_CR0,0,676,1000_AL_.jpg"
-                                        class="card-img"
                                         alt="Disney's A Christmas Carol Cover"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BMTM1MTI5ODU4MV5BMl5BanBnXkFtZTcwNTYyNTU4Mg@@._V1_SY1000_CR0,0,676,1000_AL_.jpg"
                                         loading="lazy"
                                 />
                             </div>
@@ -398,18 +399,18 @@
                 <!-- ::: Disney's A Christmas Carol Card End :::-->
                 <!-- ::: Arthur Christmas Card :::-->
                 <div
+                        aria-labelledby="santa-claus-list"
                         class="tab-pane fade "
                         id="arthur-christmas"
                         role="tabpanel"
-                        aria-labelledby="santa-claus-list"
                 >
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://upload.wikimedia.org/wikipedia/en/e/ed/Arthur_Christmas_Poster.jpg"
-                                        class="card-img"
                                         alt="..."
+                                        class="card-img"
+                                        data-src="https://upload.wikimedia.org/wikipedia/en/e/ed/Arthur_Christmas_Poster.jpg"
                                         loading="lazy"
                                 />
                             </div>
@@ -440,18 +441,18 @@
                 <!-- ::: Arthur Christmas Card End :::-->
                 <!-- ::: Rare Exports: A Christmas Tale Card :::-->
                 <div
+                        aria-labelledby="santa-claus-list"
                         class="tab-pane fade "
                         id="rare-exports-a-christmas-tale"
                         role="tabpanel"
-                        aria-labelledby="santa-claus-list"
                 >
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://upload.wikimedia.org/wikipedia/en/thumb/2/27/Rare_Exports_official_film_poster.jpg/215px-Rare_Exports_official_film_poster.jpg"
-                                        class="card-img"
                                         alt="..."
+                                        class="card-img"
+                                        data-src="https://upload.wikimedia.org/wikipedia/en/thumb/2/27/Rare_Exports_official_film_poster.jpg/215px-Rare_Exports_official_film_poster.jpg"
                                         loading="lazy"
                                 />
                             </div>
@@ -488,18 +489,18 @@
                 <!-- ::: Rare Exports: A Christmas Tale Card End :::-->
                 <!-- ::: HOME ALONE CARD :::-->
                 <div
+                        aria-labelledby="list-settings-list"
                         class="tab-pane fade"
                         id="home-alone"
                         role="tabpanel"
-                        aria-labelledby="list-settings-list"
                 >
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
-                                        class="card-img"
                                         alt="Home Alone Cover"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
                                         loading="lazy"
                                 />
                             </div>
@@ -536,18 +537,18 @@
                 <!-- ::: HOME ALONE CARD End:::-->
                 <!-- ::: HOME ALONE 2 CARD :::-->
                 <div
+                        aria-labelledby="list-settings-list"
                         class="tab-pane fade"
                         id="home-alone-2"
                         role="tabpanel"
-                        aria-labelledby="list-settings-list"
                 >
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="http://www.gstatic.com/tv/thumb/v22vodart/14385/p14385_v_v8_ab.jpg"
-                                        class="card-img"
                                         alt="Home Alone 2: Lost in New York Cover"
+                                        class="card-img"
+                                        data-src="http://www.gstatic.com/tv/thumb/v22vodart/14385/p14385_v_v8_ab.jpg"
                                         loading="lazy"
                                 />
                             </div>
@@ -585,18 +586,18 @@
                 <!-- ::: HOME ALONE 2 CARD End :::-->
                 <!-- ::: Love Actually CARD :::-->
                 <div
+                        aria-labelledby="santa-claus-list"
                         class="tab-pane fade "
                         id="love-actually"
                         role="tabpanel"
-                        aria-labelledby="santa-claus-list"
                 >
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://upload.wikimedia.org/wikipedia/en/e/eb/Love_Actually_movie.jpg"
-                                        class="card-img"
                                         alt="Love Actually Cover"
+                                        class="card-img"
+                                        data-src="https://upload.wikimedia.org/wikipedia/en/e/eb/Love_Actually_movie.jpg"
                                         loading="lazy"
                                 />
                             </div>
@@ -628,18 +629,18 @@
                 <!-- ::: Love Actually CARD End :::-->
                 <!-- ::: Miracle on 34th Street CARD :::-->
                 <div
+                        aria-labelledby="santa-claus-list"
                         class="tab-pane fade "
                         id="miracle-34th-street"
                         role="tabpanel"
-                        aria-labelledby="santa-claus-list"
                 >
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://upload.wikimedia.org/wikipedia/en/5/56/Miracle_on_34th_Street_poster.jpg"
-                                        class="card-img"
                                         alt="Miracle on 34th Street Cover"
+                                        class="card-img"
+                                        data-src="https://upload.wikimedia.org/wikipedia/en/5/56/Miracle_on_34th_Street_poster.jpg"
                                         loading="lazy"
                                 />
                             </div>
@@ -675,18 +676,18 @@
                 <!-- ::: Miracle on 34th Street CARD End :::-->
                 <!-- ::: Santa Claus: The Movie CARD :::-->
                 <div
+                        aria-labelledby="santa-claus-list"
                         class="tab-pane fade "
                         id="santa-claus"
                         role="tabpanel"
-                        aria-labelledby="santa-claus-list"
                 >
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://m.media-amazon.com/images/M/MV5BZDc1OGVkMmQtYTU0NC00ZTc4LWIyNjItM2IzYzcwNTA1ZmJmXkEyXkFqcGdeQXVyMjY3MjUzNDk@._V1_.jpg"
-                                        class="card-img"
                                         alt="Santa Claus: The Movie Cover"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BZDc1OGVkMmQtYTU0NC00ZTc4LWIyNjItM2IzYzcwNTA1ZmJmXkEyXkFqcGdeQXVyMjY3MjUzNDk@._V1_.jpg"
                                         loading="lazy"
                                 />
                             </div>
@@ -716,18 +717,18 @@
                 <!-- ::: Santa Claus: The Movie CARD End :::-->
                 <!-- ::: Die Hard CARD :::-->
                 <div
+                        aria-labelledby="die-hard-list"
                         class="tab-pane fade "
                         id="die-hard"
                         role="tabpanel"
-                        aria-labelledby="die-hard-list"
                 >
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://m.media-amazon.com/images/M/MV5BZjRlNDUxZjAtOGQ4OC00OTNlLTgxNmQtYTBmMDgwZmNmNjkxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,666,1000_AL_.jpg"
-                                        class="card-img"
                                         alt="Die Hard Cover"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BZjRlNDUxZjAtOGQ4OC00OTNlLTgxNmQtYTBmMDgwZmNmNjkxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,666,1000_AL_.jpg"
                                         loading="lazy"
                                 />
                             </div>
@@ -757,18 +758,18 @@
                 <!-- ::: Die Hard CARD End :::-->
                 <!-- ::: Rise of the Guardians CARD :::-->
                 <div
+                        aria-labelledby="Rise-of-the-Guardians-list"
                         class="tab-pane fade "
                         id="Rise-of-the-Guardians"
                         role="tabpanel"
-                        aria-labelledby="Rise-of-the-Guardians-list"
                 >
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://m.media-amazon.com/images/M/MV5BMTkzMjgwMDg1M15BMl5BanBnXkFtZTcwMTgzNTI1OA@@._V1_.jpg"
-                                        class="card-img"
                                         alt="Rise of the Guardians Cover"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BMTkzMjgwMDg1M15BMl5BanBnXkFtZTcwMTgzNTI1OA@@._V1_.jpg"
                                         loading="lazy"
                                 />
                             </div>
@@ -801,18 +802,18 @@
                 <!-- ::: Rise of the Guardians CARD End :::-->
                 <!-- ::: A Christmas Prince CARD :::-->
                 <div
+                        aria-labelledby="A-Christmas-Prince-list"
                         class="tab-pane fade "
                         id="A-Christmas-Prince"
                         role="tabpanel"
-                        aria-labelledby="A-Christmas-Prince-list"
                 >
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://m.media-amazon.com/images/M/MV5BMWVhMTBiOWUtMmI0Ni00NDg1LWFkMmYtNTJkNTkxNWE5OWY5XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
-                                        class="card-img"
                                         alt="A Christmas Prince Cover"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BMWVhMTBiOWUtMmI0Ni00NDg1LWFkMmYtNTJkNTkxNWE5OWY5XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
                                         loading="lazy"
                                 />
                             </div>
@@ -842,18 +843,18 @@
                 <!-- ::: A Christmas Prince CARD End :::-->
                 <!-- ::: Frozen CARD :::-->
                 <div
+                        aria-labelledby="Rise-of-the-Guardians-list"
                         class="tab-pane fade "
                         id="Frozen"
                         role="tabpanel"
-                        aria-labelledby="Rise-of-the-Guardians-list"
                 >
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://m.media-amazon.com/images/M/MV5BMTQ1MjQwMTE5OF5BMl5BanBnXkFtZTgwNjk3MTcyMDE@._V1_.jpg"
-                                        class="card-img"
                                         alt="Frozen Cover"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BMTQ1MjQwMTE5OF5BMl5BanBnXkFtZTgwNjk3MTcyMDE@._V1_.jpg"
                                         loading="lazy"
                                 />
                             </div>
@@ -887,18 +888,18 @@
                 <!-- ::: Frozen CARD End :::-->
                 <!-- ::: Elf CARD :::-->
                 <div
+                        aria-labelledby="santa-claus-list"
                         class="tab-pane fade "
                         id="Elf"
                         role="tabpanel"
-                        aria-labelledby="santa-claus-list"
                 >
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://www.myepl.org/wp-content/uploads/2018/10/Elf.jpg"
-                                        class="card-img"
                                         alt="Elf Cover"
+                                        class="card-img"
+                                        data-src="https://www.myepl.org/wp-content/uploads/2018/10/Elf.jpg"
                                         loading="lazy"
                                 />
                             </div>
@@ -933,18 +934,18 @@
                 <!-- ::: Elf CARD End :::-->
                 <!-- ::: Jingle All the Way Card :::-->
                 <div
+                        aria-labelledby="jingle-list"
                         class="tab-pane fade"
                         id="jingle"
                         role="tabpanel"
-                        aria-labelledby="jingle-list"
                 >
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Jingle_All_the_Way_poster.JPG/220px-Jingle_All_the_Way_poster.JPG"
-                                        class="card-img"
                                         alt="Jingle All the Way"
+                                        class="card-img"
+                                        data-src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Jingle_All_the_Way_poster.JPG/220px-Jingle_All_the_Way_poster.JPG"
                                         loading="lazy"
                                 />
                             </div>
@@ -977,18 +978,18 @@
                 <!-- ::: Jingle All the Way Card End :::-->
                 <!-- ::: The Polar Express Card:::-->
                 <div
+                        aria-labelledby="santa-claus-list"
                         class="tab-pane fade"
                         id="the_polar_express"
                         role="tabpanel"
-                        aria-labelledby="santa-claus-list"
                 >
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://upload.wikimedia.org/wikipedia/en/2/24/The_Polar_Express_%282004%29_poster.jpg"
-                                        class="card-img"
                                         alt="the polar express"
+                                        class="card-img"
+                                        data-src="https://upload.wikimedia.org/wikipedia/en/2/24/The_Polar_Express_%282004%29_poster.jpg"
                                         loading="lazy"
                                 />
                             </div>
@@ -1021,18 +1022,18 @@
                 <!-- ::: The Polar Express Card End :::-->
                 <!-- White Christmas -->
                 <div
+                        aria-labelledby="white-christmas-list"
                         class="tab-pane fade"
                         id="white-christmas"
                         role="tabpanel"
-                        aria-labelledby="white-christmas-list"
                 >
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://m.media-amazon.com/images/M/MV5BYjI0ZTk0ZjQtZTMzOS00NDdmLTk0YzUtZTQ4NGRkNWFhZTkxXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg"
-                                        class="card-img"
                                         alt="..."
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BYjI0ZTk0ZjQtZTMzOS00NDdmLTk0YzUtZTQ4NGRkNWFhZTkxXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg"
                                         loading="lazy"
                                 />
                             </div>
@@ -1065,18 +1066,18 @@
                 </div>
                 <!-- Cool Runnings -->
                 <div
+                        aria-labelledby="cool-runnings-list"
                         class="tab-pane fade"
                         id="cool-runnings"
                         role="tabpanel"
-                        aria-labelledby="cool-runnings-list"
                 >
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://m.media-amazon.com/images/M/MV5BMjMxMTQ3MzMwMV5BMl5BanBnXkFtZTgwNTYxNzYxMTE@._V1_UX182_CR0,0,182,268_AL_.jpg"
-                                        class="card-img"
                                         alt="..."
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BMjMxMTQ3MzMwMV5BMl5BanBnXkFtZTgwNTYxNzYxMTE@._V1_UX182_CR0,0,182,268_AL_.jpg"
                                         loading="lazy"
                                 />
                             </div>
@@ -1108,17 +1109,17 @@
                 </div>
                 <!-- Rudolph The Red-Nosed Reindeer -->
                 <div
+                        aria-labelledby="rudolph-the-red-nosed-reindeer-film-list"
                         class="tab-pane fade"
                         id="rudolph-the-red-nosed-reindeer-1964"
-                        role="tabpanel"
-                        aria-labelledby="rudolph-the-red-nosed-reindeer-film-list">
+                        role="tabpanel">
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://m.media-amazon.com/images/M/MV5BYjdjZjkyYjUtOWJiZC00ZTE2LTk4MDktZjliOTk5ZDk5ZTZhXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SY1000_CR0,0,701,1000_AL_.jpg"
-                                        class="card-img"
                                         alt="Rudolph The Red-Nosed Reindeer (1964)"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BYjdjZjkyYjUtOWJiZC00ZTE2LTk4MDktZjliOTk5ZDk5ZTZhXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SY1000_CR0,0,701,1000_AL_.jpg"
                                         loading="lazy"/>
                             </div>
                             <div class="col-md-12 col-lg-8">
@@ -1150,17 +1151,17 @@
                 </div>  <!-- Rudolph The Red-Nosed Reindeer ends here -->
                 <!-- The Night Before -->
                 <div
+                        aria-labelledby="the-night-before-list"
                         class="tab-pane fade"
                         id="the-night-before"
-                        role="tabpanel"
-                        aria-labelledby="the-night-before-list">
+                        role="tabpanel">
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://m.media-amazon.com/images/M/MV5BMTkyNDY1ODQwNV5BMl5BanBnXkFtZTgwNzA2MjUwNzE@._V1_UX182_CR0,0,182,268_AL_.jpg"
-                                        class="card-img"
                                         alt="The Night Before"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BMTkyNDY1ODQwNV5BMl5BanBnXkFtZTgwNzA2MjUwNzE@._V1_UX182_CR0,0,182,268_AL_.jpg"
                                         loading="lazy"/>
                             </div>
                             <div class="col-md-12 col-lg-8">
@@ -1188,17 +1189,17 @@
 
                 <!-- The Christmas Chronicles -->
                 <div
+                        aria-labelledby="the-christmas-chronicles-list"
                         class="tab-pane fade"
                         id="the-christmas-chronicles"
-                        role="tabpanel"
-                        aria-labelledby="the-christmas-chronicles-list">
+                        role="tabpanel">
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="http://www.gstatic.com/tv/thumb/v22vodart/16106601/p16106601_v_v8_aa.jpg"
-                                        class="card-img"
                                         alt="The Christmas Chronicles"
+                                        class="card-img"
+                                        data-src="http://www.gstatic.com/tv/thumb/v22vodart/16106601/p16106601_v_v8_aa.jpg"
                                         loading="lazy"/>
                             </div>
                             <div class="col-md-12 col-lg-8">
@@ -1228,17 +1229,17 @@
 
                 <!-- El Camino Christmas  -->
                 <div
+                        aria-labelledby="el-camino-christmas-list"
                         class="tab-pane fade"
                         id="el-camino-christmas"
-                        role="tabpanel"
-                        aria-labelledby="el-camino-christmas-list">
+                        role="tabpanel">
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://m.media-amazon.com/images/M/MV5BODk3MzY0MDkyM15BMl5BanBnXkFtZTgwNzUxNzMyNDM@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
-                                        class="card-img"
                                         alt="El Camino Christmas"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BODk3MzY0MDkyM15BMl5BanBnXkFtZTgwNzUxNzMyNDM@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
                                         loading="lazy"/>
                             </div>
                             <div class="col-md-12 col-lg-8">
@@ -1267,17 +1268,17 @@
                 </div>  <!-- El Camino Christmas  ends here -->
                 <!-- A Christmas Story Begins here -->
                 <div
+                        aria-labelledby="a-christmas-story"
                         class="tab-pane fade"
                         id="a-christmas-story"
-                        role="tabpanel"
-                        aria-labelledby="a-christmas-story">
+                        role="tabpanel">
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://m.media-amazon.com/images/M/MV5BMTU4Mzc2NTc1OF5BMl5BanBnXkFtZTYwNTQ4MDk4._V1_.jpg"
-                                        class="card-img"
                                         alt="A Christmas Story"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BMTU4Mzc2NTc1OF5BMl5BanBnXkFtZTYwNTQ4MDk4._V1_.jpg"
                                         loading="lazy"/>
                             </div>
                             <div class="col-md-12 col-lg-8">
@@ -1309,18 +1310,18 @@
                 </div> <!-- A Christmas Story Ends Here -->
                 <!-- ::: National Lampoon's Christmas Vacation Card :::-->
                 <div
+                        aria-labelledby="national-lampoons-christmas-vacation-list"
                         class="tab-pane fade"
                         id="national-lampoons-christmas-vacation"
                         role="tabpanel"
-                        aria-labelledby="national-lampoons-christmas-vacation-list"
                 >
                     <div class="card mb-3" style="max-width: 670px;">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
                                 <img
-                                        data-src="https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@.jpg"
-                                        class="card-img"
                                         alt="National Lampoon's Christmas Vacation Cover"
+                                        class="card-img"
+                                        data-src="https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@.jpg"
                                         loading="lazy"
                                 />
                             </div>
@@ -1356,13 +1357,13 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-4">
-                <a href="#" class="footer-logo"><i class="fa fa-cube"></i> SANTA<span
+                <a class="footer-logo" href="#"><i class="fa fa-cube"></i> SANTA<span
                         class="brand-color">FIED</span></a>
                 <p>
                     Contact us for all of your Christmas questions:
                 </p>
                 <!--Remove tel spaces in the href-->
-                <a href="tel:+1800123456" class="footer-tel">+ 1 800 123 456</a><br/><span
+                <a class="footer-tel" href="tel:+1800123456">+ 1 800 123 456</a><br/><span
                     class="footer-email">Email
                   <a href="mailto:support@santafied.fi">support@santafied.fi</a></span>
             </div>
@@ -1384,9 +1385,9 @@
                 <form class="form-inline">
                     <div class="form-group">
                         <label class="sr-only" for="footer-form-email">Email</label>
-                        <input class="form-control form-inverted" type="email" id="footer-form-email"
-                               placeholder="Email"/>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <input class="form-control form-inverted" id="footer-form-email" placeholder="Email"
+                               type="email"/>
+                        <button class="btn btn-primary" type="submit">Submit</button>
                     </div>
                 </form>
 
@@ -1413,19 +1414,19 @@
 <script src="../assets/js/mouse-trail-snowball.js"></script>
 <script src="../assets/js/navLink-generator.js"></script>
 <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        crossorigin="anonymous"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous">
+        src="https://code.jquery.com/jquery-3.4.1.min.js">
 </script>
 <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        crossorigin="anonymous"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous">
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
 </script>
 <script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        crossorigin="anonymous"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous">
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
 </script>
 
 <script type="text/javascript">
