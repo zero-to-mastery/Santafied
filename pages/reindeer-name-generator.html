@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <script src="https://kit.fontawesome.com/5e68800c4a.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="../assets/css/main.css"/>
-    <link rel="stylesheet" href="../assets/css/films.css"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/5e68800c4a.js"></script>
+    <link href="../img/favicon.png" rel="shortcut icon" type="image/png">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
+    <link href="../assets/css/main.css" rel="stylesheet"/>
+    <link href="../assets/css/films.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="../assets/css/reindeer-name-generator.css"/>
+    <link href="../assets/css/reindeer-name-generator.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="../assets/css/mouse-trail-snowball.css"/>
+    <link href="../assets/css/mouse-trail-snowball.css" rel="stylesheet"/>
 
     <title>Santafied | Reindeer Name Generator</title>
 </head>
@@ -28,11 +28,12 @@
         <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> SANTA<span
                 class="brand-color">FIED</span></a>
         <div class="dropdown dropdown-container">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-               aria-haspopup="true" aria-expanded="false">
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+               href="#"
+               id="navbarDropdown" role="button">
                 Navigation
             </a>
-            <div class="dropdown-menu" id="nav-dropdown-from-page" aria-labelledby="navbarDropdown">
+            <div aria-labelledby="navbarDropdown" class="dropdown-menu" id="nav-dropdown-from-page">
             </div>
         </div>
     </nav>
@@ -50,7 +51,7 @@
 
     <div class="name-choice">
         <h3>First letter of your name</h3>
-        <select id="name" class="box-style" onchange="letterChoice()">
+        <select class="box-style" id="name" onchange="letterChoice()">
             <option selected value="">--Select Letter--</option>
             <option value="Cookie">A</option>
             <option value="Sugar-plum">B</option>
@@ -83,7 +84,7 @@
 
     <div class="month-choice">
         <h3>Your birth month</h3>
-        <select id="month" class="box-style" onchange="monthChoice()">
+        <select class="box-style" id="month" onchange="monthChoice()">
             <option selected value="">--Select Month--</option>
             <option value="Lord Crackle">January</option>
             <option value="Razzle-Dazzle">February</option>
@@ -100,7 +101,7 @@
         </select>
     </div>
 
-    <button id="loadName" type="submit" onclick="generateName();">Generate My Name!</button>
+    <button id="loadName" onclick="generateName();" type="submit">Generate My Name!</button>
 
     <div id="resultContainer">
         <h3>Your Reindeer Name is:</h3>
@@ -113,13 +114,13 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-4">
-                <a href="#" class="footer-logo"><i class="fa fa-cube"></i> SANTA<span
+                <a class="footer-logo" href="#"><i class="fa fa-cube"></i> SANTA<span
                         class="brand-color">FIED</span></a>
                 <p>
                     Contact us for all of your Christmas questions:
                 </p>
                 <!--Remove tel spaces in the href-->
-                <a href="tel:+1800123456" class="footer-tel">+ 1 800 123 456</a><br/><span
+                <a class="footer-tel" href="tel:+1800123456">+ 1 800 123 456</a><br/><span
                     class="footer-email">Email
                     <a href="mailto:support@santafied.fi">support@santafied.fi</a></span>
             </div>
@@ -141,9 +142,9 @@
                 <form class="form-inline">
                     <div class="form-group">
                         <label class="sr-only" for="footer-form-email">Email</label>
-                        <input class="form-control form-inverted" type="email" id="footer-form-email"
-                               placeholder="Email"/>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <input class="form-control form-inverted" id="footer-form-email" placeholder="Email"
+                               type="email"/>
+                        <button class="btn btn-primary" type="submit">Submit</button>
                     </div>
                 </form>
 
@@ -170,14 +171,17 @@
 </footer>
 <script src="../assets/js/mouse-trail-snowball.js"></script>
 <script src="../assets/js/navLink-generator.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+<script crossorigin="anonymous"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+<script crossorigin="anonymous"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
 </script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+<script crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
 </script>
 <script src="../assets/js/reindeer-name-generator.js"></script>
 </body>
