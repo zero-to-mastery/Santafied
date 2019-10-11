@@ -3,11 +3,25 @@
  * Feel free to modify it in any way you like
  */
 
+ :root {
+  --background-color: #FFFFFF;
+  --background-color-rgb: 255,255,255;
+
+  --background-light-gray: #262626;
+
+  --text-color: #121212;
+  --text-color-rgb: 18,18,18;
+ }
+
+
 body {
   margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+
 }
 
 .main-content {
@@ -35,7 +49,7 @@ body {
   font-size: 0.9rem;
   font-style: italic;
   font-weight: 500;
-  color: black;
+  color: var(--text-color);
 }
 
 @media (hover: hover) {
@@ -61,6 +75,7 @@ body {
   background-color: #ff4546;
 }
 .navbar-light .navbar-nav .nav-item:hover .nav-link {
+
   color: #ff4546;
   letter-spacing: 0.2rem;
   font-weight: 600;
@@ -71,8 +86,13 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #000;
+  color: var(--text-color);
 }
+
+a.navbar-brand > *{
+  color:var(--text-color);
+}
+
 
 /*Navbar END*/
 /*
@@ -296,8 +316,8 @@ footer {
  Newsletter Subscribe
 ==============*/
 .newsletter-subscribe {
-  color:#313437;
-  background-color:#fff;
+  color: var(--text-color);
+  background-color:var(--background-color);
   padding:50px 0;
 }
 

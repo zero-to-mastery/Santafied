@@ -93,11 +93,11 @@ section#hero-content {
   padding: 100px;
   text-align: center;
   margin-top: -80px;
-  background-color: #f4f4f4;
+  background-color: var(--background-color);
 }
 
 .checkout h1 {
-  color: #555;
+  color: var(--text-color);
   text-transform: uppercase;
   font-size: 40px;
 }

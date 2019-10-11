@@ -24,3 +24,17 @@ button a:hover {
   color: #fff;
   text-decoration: none;
 }
+
+body.dark .card {
+  background-color: var(--background-light-gray);
+}
+
+body.dark div#list-tab.list-group a{
+  background-color: var(--background-light-gray);
+  color: var(--text-color);
+}
+body.dark div#list-tab.list-group div{
+  background-color: var(--background-light-gray);
+  color: var(--text-color);
+}
+
