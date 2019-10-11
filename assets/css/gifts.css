@@ -1,26 +1,26 @@
 body {
-    /* min-width: 100%; */
-    overflow-x: hidden;
+  /* min-width: 100%; */
+  overflow-x: hidden;
 }
 
 div.gifts-card {
-    height: 100%;
+  height: 100%;
 }
 
 div.products {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 2em;
 }
 
 div.watches {
-    height: 72%;
-    margin-top: 30px;
+  height: 72%;
+  margin-top: 30px;
 }
 
 /* #giftsPage {
@@ -28,7 +28,7 @@ div.watches {
 } */
 
 #bannerImage {
-    position: relative;
+  position: relative;
 }
 
 #bannerImage {
@@ -38,8 +38,8 @@ div.watches {
 }
 
 #banner {
-    position: relative;
-    margin-bottom: 40px;
+  position: relative;
+  margin-bottom: 40px;
 }
 
 #banner .caption {
@@ -67,96 +67,97 @@ div.watches {
   height: 90vh;
 } */
 #note {
-    padding: 20px;
-    /* border-top: 2px solid rgba(255, 255, 255, 0.8); */
-    font-size: 1.8em;
-    color: rgba(0, 0, 0, 0.8);
-    text-align: center;
-    background-color: brown;
-    margin-bottom: 40px;
+  padding: 20px;
+  /* border-top: 2px solid rgba(255, 255, 255, 0.8); */
+  font-size: 1.8em;
+  color: #fff; /* Better visibility over brown background */
+  text-shadow: 2px 2px 5px #000000;
+  text-align: center;
+  background-color: brown;
+  margin-bottom: 40px;
 }
 
 #giftList {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: #ff4546;
-    /* border-top: 2px solid rgba(255, 255, 255, 0.8); */
-    margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #ff4546;
+  /* border-top: 2px solid rgba(255, 255, 255, 0.8); */
+  margin-bottom: 40px;
 }
 
 .cardBackground {
-    background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .card-img-top {
-    height: 50%;
+  height: 50%;
 }
 
 .card-title,
 .card-text {
-    color: white;
+  color: white;
 }
 
 .single-product {
-    border-radius: 15px;
-    margin: 10px !important;
+  border-radius: 15px;
+  margin: 10px !important;
 }
 
 .single-product img {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .single-product .content {
-    padding-top: 10px;
-    padding-left: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
 .single-product span {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .single-product-2 {
-    border-radius: 15px;
-    height: 100%;
+  border-radius: 15px;
+  height: 100%;
 }
 
 .single-product-2 img {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    height: 250px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 250px;
 }
 
 .single-product-2 .content {
-    padding-left: 40px;
+  padding-left: 40px;
 }
 
 .single-product-2 span {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .img-fluid {
-    width: 100vw;
-    height: auto;
+  width: 100vw;
+  height: auto;
 }
 
 .img-fluid.plush-toys {
-    height: 150px;
-    width: auto;
+  height: 150px;
+  width: auto;
 }
 
 .flex {
@@ -174,7 +175,7 @@ div.watches {
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
