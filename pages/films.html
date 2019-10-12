@@ -321,6 +321,17 @@
                 >
                     Holiday Inn
                 </a>
+                <a
+                        aria-controls="profile"
+                        class="list-group-item list-group-item-action"
+                        data-toggle="list"
+                        href="#mickey-once-upon-a-christmas"
+                        id="list-profile-list"
+                        onclick="document.getElementById('scroll-up').scrollIntoView();"
+                        role="tab"
+                >
+                    Mickey's Once Upon a Christmas
+                </a>
             </div>
         </div>
         <!-- :::END OF MENU TO FILTER FILMS :::-->
@@ -1393,8 +1404,8 @@
                                         <div class="card-body">
                                             <h5 class="card-title">It's a Wonderful Life</h5>
                                             <p class="card-text">
-                                                An angel is sent from Heaven to help a desperately frustrated businessman 
-                                                by showing him what life would have been like if he had never existed. 
+                                                An angel is sent from Heaven to help a desperately frustrated businessman
+                                                by showing him what life would have been like if he had never existed.
                                             </p>
                                             <p class="card-text">
                                                 <small class="text-muted">
@@ -1433,7 +1444,7 @@
                                         <div class="card-body">
                                             <h5 class="card-title">Holiday Inn</h5>
                                             <p class="card-text">
-                                                At an inn which is only open on holidays, a crooner and a hoofer vie for the affections of a beautiful up-and-coming performer. 
+                                                At an inn which is only open on holidays, a crooner and a hoofer vie for the affections of a beautiful up-and-coming performer.
                                             </p>
                                             <p class="card-text">
                                                 <small class="text-muted">
@@ -1451,6 +1462,46 @@
                             </div>
                         </div>
                         <!-- Holiday Inn Card End -->
+                        <!-- :::  Mickey's Once Upon a Christmas Card :::-->
+                    <div
+                        aria-labelledby="mickey-once-upon-a-christmas"
+                        class="tab-pane fade"
+                        id="mickey-once-upon-a-christmas"
+                        role="tabpanel"
+                    >
+                            <div class="card mb-3" style="max-width: 670px;">
+                                <div class="row no-gutters">
+                                     <div class="col-md-12 col-lg-4">
+                                        <img alt="Mickey's Once Upon a Christmas Cover"
+                                        class="card-img"
+                                        data-src="https://images-na.ssl-images-amazon.com/images/I/51S6CYK9J6L.jpg"
+                                        loading="lazy"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mickey's Once Upon a Christmas</h5>
+                                    <p class="card-text">
+                                        Mickey's Once Upon a Christmas is a 1999 direct-to-video Christmas
+                                        compilation movie featuring three segments, including Donald Duck and his nephews in
+                                        "Stuck on Christmas", Goofy and Max Goof in "A Very Goofy Christmas"
+                                        and Mickey and Minnie Mouse in "Gift of the Magi". A sequel,
+                                        titled Mickey's Twice Upon a Christmas, was released in 2004.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <button>
+                                                <a href="https://www.imdb.com/title/tt0238414/"
+                                                    target="__blank">Watch Now</a>
+                                            </button>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- :::  Mickey's Once Upon a Christmas Card End :::-->
             </div>
         </div>
     </div>
@@ -1536,7 +1587,7 @@
 
 <script type="text/javascript">
 
-    // grab the tab shown event and move the document on top by callling 
+    // grab the tab shown event and move the document on top by callling
     // scrollTop method.
 
     $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
