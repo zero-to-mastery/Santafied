@@ -48,8 +48,3 @@ img {
 .btn-read-more:hover {
     opacity: 0.7
 }
-
-/*Scroll to facts list*/
-.scroll-list{
-    overflow-y:scroll
-}
