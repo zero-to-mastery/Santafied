@@ -92,16 +92,22 @@ section#hero-content {
 
 /*Checkout section*/
 .checkout {
+  padding: 100px;
+  text-align: center;
+  margin-top: -80px;
+  background-color: var(--background-color);
+}
+
+
+.checkout h1 {
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 40px;
     padding: 100px;
     text-align: center;
     margin-top: -80px;
-    background-color: #f4f4f4;
-}
+    background-color: var(--background-color);
 
-.checkout h1 {
-    color: #555;
-    text-transform: uppercase;
-    font-size: 40px;
 }
 
 #nav-item {

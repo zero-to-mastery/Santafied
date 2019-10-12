@@ -6,6 +6,17 @@ html {
     scroll-behavior: smooth;
 }
 
+ :root {
+  --background-color: #FFFFFF;
+  --background-color-rgb: 255,255,255;
+
+  --background-light-gray: #262626;
+
+  --text-color: #121212;
+  --text-color-rgb: 18,18,18;
+ }
+
+
 body {
     margin: 0;
     display: -webkit-box;
@@ -16,6 +27,9 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  
 }
 
 .main-content {
@@ -45,7 +59,7 @@ body {
     font-size: 0.9rem;
     font-style: italic;
     font-weight: 500;
-    color: black;
+    color: var(--text-color);
 }
 
 @media (hover: hover) {
@@ -84,8 +98,25 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #000;
+  color: var(--text-color);
 }
+
+a.navbar-brand > *{
+  color:var(--text-color);
+}
+
+
+/*Navbar END*/
+/*
+section {
+  padding: 0 1rem;
+  font-size: 1.4em;
+  height: 85vh;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: crimson;
+} */
 
 .fa-cube {
     color: #ff4546;
@@ -337,9 +368,9 @@ footer {
  Newsletter Subscribe
 ==============*/
 .newsletter-subscribe {
-    color: #313437;
-    background-color: #fff;
-    padding: 50px 0;
+    color: var(--text-color);
+    background-color:var(--background-color);
+      padding: 50px 0;
     position: relative;
 }
 
