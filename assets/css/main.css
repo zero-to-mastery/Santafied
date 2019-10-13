@@ -51,6 +51,53 @@ body {
     font-weight: 600;
 }
 
+/*logo*/
+.logo-container {
+  position: relative;
+  left: 2px;
+  top: -3px;
+}
+
+#logo {
+  animation: dash 2s linear forwards;
+  stroke-dasharray: 140;
+  stroke-dashoffset: 140;
+}
+
+#logo path {
+  
+  animation: fill 1s 1s forwards linear;
+  fill: transparent;
+  stroke: var(--text-color);
+}
+
+#logo .logo__part2 {
+   stroke: #ff4546;
+   animation: fillRed 1s 1s forwards linear;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+    stroke: var(--text-color);
+  }
+}
+
+@keyframes fill {
+  to {
+    fill: var(--text-color);
+    stroke: transparent;
+  }
+}
+
+@keyframes fillRed {
+  to {
+    fill: #ff4546;
+    stroke: transparent;
+  }
+}
+/*end logo*/
+
 .nav-link {
     margin-right: 1rem;
     -webkit-transition: all 0.2s;
