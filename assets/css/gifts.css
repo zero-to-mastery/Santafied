@@ -158,6 +158,7 @@ div.watches {
 .img-fluid.plush-toys {
   height: 150px;
   width: auto;
+  object-fit: cover;
 }
 
 .flex {
