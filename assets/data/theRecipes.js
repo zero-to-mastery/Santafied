@@ -374,5 +374,41 @@ var listOf = [
       "https://foodnessgracious.com/wp-content/uploads/2013/03/hot-cross-buns2-085.jpg",
     link:
       "https://www.allrecipes.com/recipe/7073/hot-cross-buns-i/"
+  },
+  {
+    id: "Puto-Bumbong",
+    name: "Puto-Bumbong",
+    description:
+      "Puto bumbong is a type of Filipino purple rice cake which is prepared by steaming ground purple rice mixture inside a bamboo tube. The tube is referred to as “bumbong ng kawayan” in Filipino. This might have been the reason why this was named as such.",
+    summary: [
+      {
+        makes: "6",
+        prep: "2 days",
+        cooking: "3 min",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://panlasangpinoy.com/wp-content/uploads/2017/12/Puto-Bumbong.jpg",
+    link:
+      "https://panlasangpinoy.com/puto-bumbong-recipe/"
+  },
+  {
+    id: "panettone",
+    name: "Panettone",
+    description:
+      "Italian Christmas bread, with a brioche-like dough infused with a vanilla bean and studded with rum-soaked raisins and candied orange peel.",
+    summary: [
+      {
+        makes: "12 servings",
+        prep: "1 hour",
+        cooking: "1 hour",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://www.ilgiornaledelcibo.it/wp-content/uploads/2017/12/panettoni-artigianali.jpg",
+    link:
+      "https://www.browneyedbaker.com/panettone-recipe/"
   }
 ];
