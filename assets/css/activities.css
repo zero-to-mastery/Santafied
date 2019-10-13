@@ -28,3 +28,7 @@
     -ms-transform: translateY(-4px);
     transform: translateY(-4px);
 }
+/*with dark mode text is not visible hence added this explicit black color for cards*/
+.card-body{
+    color:black;
+}
