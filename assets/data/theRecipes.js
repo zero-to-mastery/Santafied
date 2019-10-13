@@ -356,5 +356,23 @@ var listOf = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Russianteacakes.jpg/600px-Russianteacakes.jpg",
     link:
       "https://joyofbaking.com/Mexican%20Wedding%20Cakes.html"
+  },
+  {
+    id: "hot-crossbuns",
+    name: "Hot Crossbuns",
+    description:
+      "A classic British breakfast bun, tender dough is loaded with diced apple, raisins, citrus zest, cinnamon and currants. After rising and formed into balls, it rises once more then a flour and water paste gets piped across the top of the dough before baking to form the perfect looking Hot Cross Buns. Once baked the buns are glazed with an apricot jam and are ready to eat.",
+    summary: [
+      {
+        makes: "16",
+        prep: "20 min",
+        cooking: "20 min",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://foodnessgracious.com/wp-content/uploads/2013/03/hot-cross-buns2-085.jpg",
+    link:
+      "https://www.allrecipes.com/recipe/7073/hot-cross-buns-i/"
   }
 ];
