@@ -38,9 +38,6 @@ body {
 }
 
 /*navbar Starts*/
-.brand-color {
-    color: #ff4546;
-}
 
 .navbar {
     padding: 20px 16px;
@@ -152,6 +149,10 @@ a.navbar-brand > *{
   color:var(--text-color);
 }
 
+/* This is added to correct the color of FIED text on all the pages. */
+a.navbar-brand >.brand-color {
+    color: #ff4546;
+}
 
 /*Navbar END*/
 /*
