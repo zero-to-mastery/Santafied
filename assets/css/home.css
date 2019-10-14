@@ -114,12 +114,13 @@ section#hero-content {
     color: #ff4546;
     -webkit-transition: all .2s;
     -o-transition: all .2s;
-    transition: all .2s;
+    transition: all .2s ease-in-out;
 }
 
 #nav-item:hover {
     background-color: #ff4546;
     color: white;
+    transform: scale(1.1);
 }
 
 .container a {
