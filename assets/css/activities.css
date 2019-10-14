@@ -32,3 +32,8 @@
 .card-body{
     color:black;
 }
+
+/* This is added to align know more button for all the cards in activities page */
+.card-title{
+    height: 50px;
+}
