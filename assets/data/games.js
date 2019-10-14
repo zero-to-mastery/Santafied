@@ -83,6 +83,14 @@ const linkList = [
     imageLink:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/hallmark-movie-bingo-1542052363.png?crop=0.850xw:1.00xh;0.0777xw,0&resize=980:*'
   },
+    {
+    title: 'You’ve Been Jingled',
+    description:
+      'You’ve been jingled is a fun, surprising and definitely exciting family tradition especially during the Christmas season. It’s a nice way to promote the spirit of gift giving without the need of saying, “Hey! The gift’s from me.”',
+    link: 'https://christiancamppro.com/youve-been-jingled-a-christmas-game-that-spreads-joy/',
+    imageLink:
+      'https://christiancamppro.com/wp-content/uploads/2018/12/youve-been-jingled-christmas-game.jpg'
+  }
 
 
 ];

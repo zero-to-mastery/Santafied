@@ -356,5 +356,59 @@ var listOf = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Russianteacakes.jpg/600px-Russianteacakes.jpg",
     link:
       "https://joyofbaking.com/Mexican%20Wedding%20Cakes.html"
+  },
+  {
+    id: "hot-crossbuns",
+    name: "Hot Crossbuns",
+    description:
+      "A classic British breakfast bun, tender dough is loaded with diced apple, raisins, citrus zest, cinnamon and currants. After rising and formed into balls, it rises once more then a flour and water paste gets piped across the top of the dough before baking to form the perfect looking Hot Cross Buns. Once baked the buns are glazed with an apricot jam and are ready to eat.",
+    summary: [
+      {
+        makes: "16",
+        prep: "20 min",
+        cooking: "20 min",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://foodnessgracious.com/wp-content/uploads/2013/03/hot-cross-buns2-085.jpg",
+    link:
+      "https://www.allrecipes.com/recipe/7073/hot-cross-buns-i/"
+  },
+  {
+    id: "Puto-Bumbong",
+    name: "Puto-Bumbong",
+    description:
+      "Puto bumbong is a type of Filipino purple rice cake which is prepared by steaming ground purple rice mixture inside a bamboo tube. The tube is referred to as “bumbong ng kawayan” in Filipino. This might have been the reason why this was named as such.",
+    summary: [
+      {
+        makes: "6",
+        prep: "2 days",
+        cooking: "3 min",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://panlasangpinoy.com/wp-content/uploads/2017/12/Puto-Bumbong.jpg",
+    link:
+      "https://panlasangpinoy.com/puto-bumbong-recipe/"
+  },
+  {
+    id: "panettone",
+    name: "Panettone",
+    description:
+      "Italian Christmas bread, with a brioche-like dough infused with a vanilla bean and studded with rum-soaked raisins and candied orange peel.",
+    summary: [
+      {
+        makes: "12 servings",
+        prep: "1 hour",
+        cooking: "1 hour",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://www.ilgiornaledelcibo.it/wp-content/uploads/2017/12/panettoni-artigianali.jpg",
+    link:
+      "https://www.browneyedbaker.com/panettone-recipe/"
   }
 ];
