@@ -3,10 +3,6 @@ body {
   overflow-x: hidden;
 }
 
-div.gifts-card {
-
-}
-
 div.products {
   display: -webkit-box;
   display: -ms-flexbox;
