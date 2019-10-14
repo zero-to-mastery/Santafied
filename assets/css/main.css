@@ -384,6 +384,14 @@ footer {
     }
 }
 
+.grow {
+    transition: all .25s ease-in-out; 
+}
+
+.grow:hover {
+    transform: scale(1.25)
+}
+
 .subtitle {
     font-size: 18px;
 }
