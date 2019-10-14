@@ -48,6 +48,10 @@ const navLinks = [
     href:  "pages/party-costumes.html",
   },
   {
+    label:"Wishes",
+    href:"pages/wishes.html"
+  },
+  {
     label: "Blog",
     href:  "pages/blog.html",
   },

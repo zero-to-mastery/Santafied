@@ -38,9 +38,6 @@ body {
 }
 
 /*navbar Starts*/
-.brand-color {
-    color: #ff4546;
-}
 
 .navbar {
     padding: 20px 16px;
@@ -50,6 +47,53 @@ body {
     font-size: 2rem;
     font-weight: 600;
 }
+
+/*logo*/
+.logo-container {
+  position: relative;
+  left: 2px;
+  top: -3px;
+}
+
+#logo {
+  animation: dash 2s linear forwards;
+  stroke-dasharray: 140;
+  stroke-dashoffset: 140;
+}
+
+#logo path {
+  
+  animation: fill 1s 1s forwards linear;
+  fill: transparent;
+  stroke: var(--text-color);
+}
+
+#logo .logo__part2 {
+   stroke: #ff4546;
+   animation: fillRed 1s 1s forwards linear;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+    stroke: var(--text-color);
+  }
+}
+
+@keyframes fill {
+  to {
+    fill: var(--text-color);
+    stroke: transparent;
+  }
+}
+
+@keyframes fillRed {
+  to {
+    fill: #ff4546;
+    stroke: transparent;
+  }
+}
+/*end logo*/
 
 .nav-link {
     margin-right: 1rem;
@@ -105,6 +149,10 @@ a.navbar-brand > *{
   color:var(--text-color);
 }
 
+/* This is added to correct the color of FIED text on all the pages. */
+a.navbar-brand >.brand-color {
+    color: #ff4546;
+}
 
 /*Navbar END*/
 /*
@@ -334,6 +382,14 @@ footer {
     .feature-card .icon .fa {
         font-size: 4em;
     }
+}
+
+.grow {
+    transition: all .25s ease-in-out; 
+}
+
+.grow:hover {
+    transform: scale(1.25)
 }
 
 .subtitle {
