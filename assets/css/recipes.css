@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+
+.container {
+    font-family: 'Bitter', serif;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .tab-navigation {
     margin-bottom: 16px;
 }
@@ -33,6 +44,17 @@ li {
   overflow: scroll;
   overflow-x: hidden; 
   -webkit-overflow-scrolling: touch;
+}
+
+.card-title {
+    color: #ff4546;
+}
+
+.card-img {
+    width: 180px;
+    height: auto;
+    border: 2px solid #ff4546;
+    border-radius: 5px;
 }
 
 @media (max-width: 767px) {
