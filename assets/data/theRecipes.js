@@ -410,5 +410,96 @@ var listOf = [
       "https://www.ilgiornaledelcibo.it/wp-content/uploads/2017/12/panettoni-artigianali.jpg",
     link:
       "https://www.browneyedbaker.com/panettone-recipe/"
+  },
+  {
+    id: "spinach",
+    name: "Spinach Phyllo Roll-Ups",
+    description:
+      "Keep Make-Ahead Spinach Phyllo Roll-Ups in the freezer and pop one in the oven for a quick appetizer later. These spinach phyllo roll-ups are delicious.",
+    summary: [
+      {
+        makes: "6 servings",
+        prep: "25 Min",
+        cooking: "40 hour",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://cdn-image.myrecipes.com/sites/default/files/styles/medium_2x/public/image/kraft/athenos/420/Make-Ahead-Spinach-Phyllo-RollUps_420.jpg?itok=sqI-LwbD",
+    link:
+      "https://www.myfoodandfamily.com/recipe/062581/make-ahead-spinach-phyllo-roll-ups?categoryid=734"
+  },
+  {
+    id: "yorkshire-pudding",
+    name: "Yorkshire Pudding",
+    description:
+      "Yorkshire pudding and prime rib go together like cookies and milk, especially on Christmas. And with just four ingredients and in only 30 minutes, you'll have a delicious side dish made, grand and burnished like a crown.",
+    summary: [
+      {
+        makes: "6 servings",
+        prep: "10 Min",
+        cooking: "20 hour",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2014/6/19/1/BW2D14_Yorkshire-Pudding_s4x3.jpg.rend.hgtvcom.826.620.suffix/1403627915429.jpeg",
+    link:
+      "https://www.foodnetwork.com/recipes/tyler-florence/yorkshire-pudding-recipe-1943597"
+  },
+  {
+    id: "ham-puff-pastry",
+    name: "Christmas Ham Wrapped in Puff Pastry",
+    description:
+      "A riff on the iconic glazed ham covered with pineapple rings and cherries, this showstopping main course offers flaky pastry and salty ham topped with sweet pineapple sauce in every slice.",
+    summary: [
+      {
+        makes: "14 servings",
+        prep: "25 Min",
+        cooking: "2 hr 20 min",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2017/9/8/0/FN_Christmas-Puff-Pastry-Ham-v2-H_s4x3.jpg.rend.hgtvcom.826.620.suffix/1504917403503.jpeg",
+    link:
+      "https://www.foodnetwork.com/recipes/food-network-kitchen/christmas-ham-wrapped-in-puff-pastry-3887317"
+  },
+  {
+    id: "stuffing-bacon",
+    name: "Christmas Stuffing with Bacon",
+    description:
+      "Giada's Christmas stuffing uses two types of rice as an alternative to bread. The pearl onions, Brussels sprouts, hazelnuts and chopped bacon add sweet and savory flavors.",
+    summary: [
+      {
+        makes: "8 servings",
+        prep: "30 Min",
+        cooking: "1 hr",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/2/22/1/GH0503H_christmas-stuffing-with-bacon-recipe_s4x3.jpg.rend.hgtvcom.826.620.suffix/1382545867835.jpeg",
+    link:
+      "https://www.foodnetwork.com/recipes/giada-de-laurentiis/christmas-stuffing-with-bacon-recipe-2048968"
+  },
+  //
+  {
+    id: "reindeer-brownies",
+    name: "Christmas Reindeer Brownies",
+    description:
+      "Candy canes, marshmallows and wafer cookies turn fudgy brownies into a festive holiday dessert. These brownies are so easy the kids can help make them!",
+    summary: [
+      {
+        makes: "16 Brownies",
+        prep: "30 Min",
+        cooking: "1 hr 10 min",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2016/7/21/4/FNK_Reindeer-Brownies_s4x3.jpg.rend.hgtvcom.966.725.suffix/1470277984103.jpeg",
+    link:
+      "https://www.foodnetwork.com/recipes/food-network-kitchen/christmas-reindeer-brownies-3561587"
   }
 ];
