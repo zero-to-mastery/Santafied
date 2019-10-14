@@ -78,3 +78,7 @@ input.search-blog:focus {
 .searchbox-item {
     margin-left: auto;
 }
+
+.card-shadow {
+    box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);
+}
