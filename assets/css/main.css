@@ -2,8 +2,11 @@
  * Following codeblocks are just starter code
  * Feel free to modify it in any way you like
  */
+
+
 html {
     scroll-behavior: smooth;
+  
 }
 
  :root {
@@ -182,7 +185,7 @@ footer {
 
 .site-footer {
     padding: 100px 0; /*padding top and bottom 100px 0 padding left and right*/
-    margin-top: 10px;
+    margin-top: 8rem;
 }
 
 .site-footer a {
