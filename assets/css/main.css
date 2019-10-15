@@ -32,7 +32,7 @@ body {
     min-height: 100vh;
     background-color: var(--background-color);
     color: var(--text-color);
-  
+    overflow-x: hidden;  
 }
 
 .main-content {
