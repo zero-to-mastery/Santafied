@@ -430,6 +430,26 @@ var listOf = [
     link:
       "https://www.browneyedbaker.com/panettone-recipe/"
   },
+  //
+  {
+    id: "salpicao-de-frango",
+    name: "Salpicao Simples de Frango - Easy Brazilian Chicken Salad",
+    description:
+      "A Brazilian version of Chicken Salad. This refreshing salad can be enjoyed with white rice, as main or side dish. Salpicao de frango is a very popular dish in Brazil during Christmas time. Enjoy!",
+    summary: [
+      {
+        makes: "8 Portions",
+        prep: "20 Min",
+        cooking: "15 min",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_581,h_327/v1/img/recipes/10/79/14/picozfR1g.jpg",
+    link:
+      "https://www.food.com/recipe/brazilian-chicken-salad-aka-salpicao-especial-de-galinha-107914"
+  },
+  //
   {
     id: "spinach",
     name: "Spinach Phyllo Roll-Ups",
@@ -520,5 +540,25 @@ var listOf = [
       "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2016/7/21/4/FNK_Reindeer-Brownies_s4x3.jpg.rend.hgtvcom.966.725.suffix/1470277984103.jpeg",
     link:
       "https://www.foodnetwork.com/recipes/food-network-kitchen/christmas-reindeer-brownies-3561587"
+  },
+  {
+    id: "coquito",
+    name: "Coquito",
+    description:
+      "Tropical coconut eggnog made with spices and white rum. A traditional Puerto Rican holiday beverage. Feliz Navidad!",
+    summary: [
+      {
+        makes: "4 drinks",
+        prep: "10 Min",
+        cooking: "15 min",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://thenoshery.com/wp-content/uploads/2016/12/Coquito-4.jpg",
+    link:
+      "https://www.allrecipes.com/recipe/44187/coquito/"
   }
+
+
 ];
