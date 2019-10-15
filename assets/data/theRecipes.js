@@ -540,6 +540,24 @@ var listOf = [
       "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2016/7/21/4/FNK_Reindeer-Brownies_s4x3.jpg.rend.hgtvcom.966.725.suffix/1470277984103.jpeg",
     link:
       "https://www.foodnetwork.com/recipes/food-network-kitchen/christmas-reindeer-brownies-3561587"
+  },
+  {
+    id: "coquito",
+    name: "Coquito",
+    description:
+      "Tropical coconut eggnog made with spices and white rum. A traditional Puerto Rican holiday beverage. Feliz Navidad!",
+    summary: [
+      {
+        makes: "4 drinks",
+        prep: "10 Min",
+        cooking: "15 min",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://thenoshery.com/wp-content/uploads/2016/12/Coquito-4.jpg",
+    link:
+      "https://www.allrecipes.com/recipe/44187/coquito/"
   }
 
 
