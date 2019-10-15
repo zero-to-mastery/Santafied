@@ -225,3 +225,42 @@ section#hero-content {
 .slide img {
     width: 100%;
 }
+
+.card-image-placeholder {
+  width: 190px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+#facts {
+  background-image: url("/img/factsSanta.jpg");
+}
+#recipes {
+  background-image: url("/img/recipes.jpg");
+}
+#gifts {
+  background-image: url("/img/gifts.jpg");
+}
+#songs {
+  background-image: url("/img/songs.jpg");
+}
+#games {
+  background-image: url("/img/games.jpg");
+}
+#films {
+  background-image: url("/img/movies.png");
+}
+#books {
+  background-image: url("/img/books.jpg");
+}
+#activities {
+  background-image: url("/img/activity.jpg");
+}
+#find-your-snowman-name {
+  background-image: url("/img/name.jpg");
+}
+#wishes {
+  background-image: url("/img/wish.jpg");
+}
