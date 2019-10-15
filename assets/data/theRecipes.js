@@ -430,6 +430,26 @@ var listOf = [
     link:
       "https://www.browneyedbaker.com/panettone-recipe/"
   },
+  //
+  {
+    id: "salpicao-de-frango",
+    name: "Salpicao Simples de Frango - Easy Brazilian Chicken Salad",
+    description:
+      "A Brazilian version of Chicken Salad. This refreshing salad can be enjoyed with white rice, as main or side dish. Salpicao de frango is a very popular dish in Brazil during Christmas time. Enjoy!",
+    summary: [
+      {
+        makes: "8 Portions",
+        prep: "20 Min",
+        cooking: "15 min",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_581,h_327/v1/img/recipes/10/79/14/picozfR1g.jpg",
+    link:
+      "https://www.food.com/recipe/brazilian-chicken-salad-aka-salpicao-especial-de-galinha-107914"
+  },
+  //
   {
     id: "spinach",
     name: "Spinach Phyllo Roll-Ups",
@@ -521,4 +541,6 @@ var listOf = [
     link:
       "https://www.foodnetwork.com/recipes/food-network-kitchen/christmas-reindeer-brownies-3561587"
   }
+
+
 ];
