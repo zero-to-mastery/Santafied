@@ -49,6 +49,25 @@ var listOf = [
       "https://www.goodtoknow.co.uk/recipes/christmas-pudding-cupcakes#PwJkQP2j3Os7ShEV.99"
   },
   {
+    id: "snowman-biscuits",
+    name: "Snowman Biscuits",
+    description:
+      "Get little ones to help decorate these festive snowman biscuits. " +
+      "You can bake and freeze the biscuits ahead, then bring them out for a winter’s day activity",
+    summary: [
+      {
+        makes: "20",
+        prep: "60 min",
+        cooking: "14 min",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2018/10/snowman-biscuits.jpg",
+    link:
+      "https://www.bbcgoodfood.com/recipes/snowman-biscuits"
+  },
+  {
     id: "caramel-pecan-brownie-trifles",
     name: "Caramel Pecan Brownie Trifles",
     description:
