@@ -157,6 +157,12 @@ a.navbar-brand >.brand-color {
     color: #ff4546;
 }
 
+.navbar-toggler {
+    background-color: white;
+    border-radius: 4px;
+    padding: 2px;
+}
+
 /*Navbar END*/
 /*
 section {
