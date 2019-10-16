@@ -11,7 +11,7 @@ body.dark {
 .toggle-container{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end; /*so the toggle dark mode are together*/
   height: 50px;
 }
 
