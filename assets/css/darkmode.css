@@ -9,10 +9,10 @@ body.dark {
 }
 
 .toggle-container{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 40px;
 }
 
 /* The switch - the box around the slider */
