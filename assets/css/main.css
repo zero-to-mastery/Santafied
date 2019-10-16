@@ -301,7 +301,7 @@ footer {
 #list-tab{
   overflow-x: hidden;
   overflow-y: scroll;
-  height:100% ;
+  width: 100% ;
 }
 
 /*inverted form*/
