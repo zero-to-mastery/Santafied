@@ -5,6 +5,7 @@ section#hero-content {
     padding: 0;
     margin: 0;
     height: auto;
+    z-index: auto;
 }
 
 .carousel-item {
