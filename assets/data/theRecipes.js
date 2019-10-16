@@ -1,6 +1,6 @@
 //theRecipes.js
 /*
-   List of all recipes 
+   List of all recipes
    renders with the use of recipeCard.js
 */
 
@@ -576,6 +576,24 @@ var listOf = [
       "https://images.media-allrecipes.com/userphotos/720x405/4561717.jpg",
     link:
       "https://www.allrecipes.com/recipe/260313/christmas-reindeer-cupcakes/?internalSource=staff%20pick&referringId=187&referringContentType=Recipe%20Hub"
+  },
+  {
+    id: "saladg",
+    name: "Goat’s cheese, pear & candied pecan salad",
+    description:
+      "This extra-special vegetarian starter is bursting with contrasting flavours and textures, such as spiralized pear, crunchy roasted nuts and creamy cheese",
+    summary: [
+      {
+        serves: "4",
+        prep: "20 mins",
+        cooking: "7 mins - 10 mins",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/user-collections/my-colelction-image/2015/12/goats-cheese-pear-candied-pecan-salad.jpg?itok=crbFk6UI",
+    link:
+      "https://www.bbcgoodfood.com/recipes/goats-cheese-pear-candied-pecan-salad"
   }
 
 
