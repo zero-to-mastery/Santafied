@@ -1,7 +1,7 @@
 // Query for the toggle that is used to change between themes
 const toggle = document.querySelector("#themeToggle");
 const storedMode = localStorage.getItem("darkmode");
-const navbar = document.querySelector(".navbar");
+const navbar = document.querySelector(".navbar .toggle-darkmode");
 
 const createElement = (elem, cssClass, txt = undefined) => {
   let node = document.createElement(elem); //create the List element
@@ -21,7 +21,7 @@ const tc = createElement("DIV", "toggle-container");
 const switchLabel = createElement("LABEL", "switch");
 const checkbox = createElement("INPUT");
 const spanSlider = createElement("SPAN", "slider");
-const pTag = createElement("P", "ptag", "🌙 Toggle Dark mode");
+const pTag = createElement("P", "ptag", "🌙 dark mode");
 
 checkbox.setAttribute("id", "themeToggle");
 checkbox.setAttribute("type", "checkbox");
