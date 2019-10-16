@@ -558,6 +558,24 @@ var listOf = [
       "https://thenoshery.com/wp-content/uploads/2016/12/Coquito-4.jpg",
     link:
       "https://www.allrecipes.com/recipe/44187/coquito/"
+  },
+  {
+    id: "reindeer-cupcakes",
+    name: "Reindeer Cupcakes",
+    description:
+      "Cute reindeer cupcakes for Christmas that the kids will absolutely adore. These cupcakes are great anytime of year, however, simply skip the reindeer decorating! -rasckus",
+    summary: [
+      {
+        makes: "12 cupcakes",
+        prep: "1 hr",
+        cooking: "18 mins",
+        skill: "Medium"
+      }
+    ],
+    img:
+      "https://images.media-allrecipes.com/userphotos/720x405/4561717.jpg",
+    link:
+      "https://www.allrecipes.com/recipe/260313/christmas-reindeer-cupcakes/?internalSource=staff%20pick&referringId=187&referringContentType=Recipe%20Hub"
   }
 
 
