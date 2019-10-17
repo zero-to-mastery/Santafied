@@ -61,3 +61,17 @@ body.dark div#list-tab.list-group div{
     background-color: #ff4546;
     /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
 }
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
