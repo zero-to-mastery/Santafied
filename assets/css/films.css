@@ -37,6 +37,9 @@ body.dark div#list-tab.list-group div{
   background-color: var(--background-light-gray);
   color: var(--text-color);
 }
+.row{
+  width: 100%;
+}
 /* #list-tab{
     height: 40%;
     overflow-x: hidden;

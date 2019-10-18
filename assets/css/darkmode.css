@@ -12,15 +12,17 @@ body.dark {
   display: flex;
   align-items: center;
   justify-content: flex-end; /*so the toggle dark mode are together*/
-  height: 50px;
+  height: 38px;
+  padding-top: 15px;
 }
 
 /* The switch - the box around the slider */
 .switch {
   position: relative;
   display: inline-block;
+  bottom:5px;
   width: 60px;
-  height: 34px;
+  height: 35px;
 }
 
 

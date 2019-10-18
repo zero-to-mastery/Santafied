@@ -1,0 +1,212 @@
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #333;
+  overflow-x: hidden;
+
+}
+
+/* *************** HEADER *************************** */
+.v-header {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  color: #181d15;
+  background: #333;
+}
+
+.fullscreen-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99vh;
+  overflow: hidden;
+  background: url('../img/4.jpg') no-repeat center center/cover fixed;
+}
+
+.fullscreen-video-wrap video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header-content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 30px;
+}
+.header-game-text {
+ color: #f1f1f1;
+}
+
+.header-content h1 {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+
+}
+
+audio{
+  margin-right: 2rem;
+  }
+
+
+.header-content .games-btn {
+  color: rgb(165, 165, 165);
+  background-image: linear-gradient(#ca1902, #4d1601 );
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  margin-right: 3rem;  
+}
+#myBtn {
+  cursor: pointer;
+  color: rgb(165, 165, 165);
+  background-image: linear-gradient(#ca1902, #4d1601 );
+  padding: 0.9rem 4rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5rem;
+}
+
+/* ************************************* SECTION *************************************** */
+#section {
+  padding: 20px 0;
+  height: 95vh;
+  background: url('../img/santa-claus-game.jpg') no-repeat center center/cover fixed;
+  color: #f1f1f1;
+  overflow: hidden;
+  font-family: 'Mountains of Christmas', cursive;
+}
+.section-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+
+.grid-container {
+  margin: auto;
+  padding: 3rem;
+  background: #fcf2f2a2;
+  width: 500px;
+  height: 350px; 
+  color: #4C4B4B; 
+}
+.back {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+}
+.btn-back {
+  position: relative;
+  text-align: center;
+  margin-top: 2rem;
+  color: rgb(165, 165, 165);
+  background-image: linear-gradient(#ca1902, #4d1601 );
+  padding: 1rem 3.5rem;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.8rem;
+  letter-spacing: 1rem;
+  cursor: pointer;
+}
+h1{
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #000;
+  font-size: 2rem;
+}
+
+p {
+  color: #000;
+  font-size: 1.4rem;
+}
+
+/* ****************************************** RESPONSIVE ********************************** */
+@media (max-width: 700px) {
+
+  body {
+    font-size: 0.8rem;
+    background: url('../img/4.jpg') no-repeat center center/cover fixed;
+  }
+  
+  .games-container {
+    background: none;
+    width: 100%;    
+  }
+  
+  .v-header.games-container {
+    width: 95%;
+    padding: 1rem 1rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2;
+  }
+  
+  .header-content {
+    position: relative;
+    top: 60px;
+    margin-left: 10px;
+    right: 0; 
+    height: 50vh;    
+  }
+  
+  #myVideo {
+    display: none;
+  }
+  
+  #myBtn {
+    display: none;
+  }
+  
+  audio{
+    display: none;
+  }
+  
+  .header-content .games-btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    margin: 2rem auto;
+  }  
+  
+  #section {
+    padding: 10px 0;
+    height: 150vh;   
+  }  
+  
+  .section-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  height: 130vh;  
+}
+
+.grid-container {
+  margin: auto;
+  padding: 1rem; 
+}
+
+h1, p {
+  font-size: 1rem;
+}
+.btn-back {  
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem; 
+  margin-bottom: 1rem;
+}
+ 
+}
