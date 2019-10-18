@@ -1,192 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
-    <script crossorigin="anonymous" src="https://kit.fontawesome.com/5e68800c4a.js"></script>
-    <link href="../img/favicon.png" rel="shortcut icon" type="image/png">
-    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
-    <link href="../assets/css/main.css" rel="stylesheet"/>
-    <link href="../assets/css/films.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"/>
-    <link href="../assets/css/elf-name-generator.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap" rel="stylesheet"/>
-    <link href="../assets/css/mouse-trail-snowball.css" rel="stylesheet"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <script
+      crossorigin="anonymous"
+      src="https://kit.fontawesome.com/5e68800c4a.js"
+    ></script>
+    <link href="../img/favicon.png" rel="shortcut icon" type="image/png" />
+    <link
+      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      rel="stylesheet"
+    />
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/films.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../assets/css/elf-name-generator.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../assets/css/mouse-trail-snowball.css" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/darkmode.css" />
-    <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
     <title>Santafied | Elf Name Generator</title>
-</head>
+  </head>
 
-<body id="films">
-<div id="snowball1"></div>
-<div id="snowball2"></div>
-<div id="snowball3"></div>
-<!-- :::NAV Starts ::: -->
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> <span>SANTA</span><span
-                class="brand-color">FIED</span></a>
+  <body id="films">
+    <div id="snowball1"></div>
+    <div id="snowball2"></div>
+    <div id="snowball3"></div>
+    <!-- :::NAV Starts ::: -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="../index.html"
+          ><i class="fa fa-cube"></i> <span>SANTA</span
+          ><span class="brand-color">FIED</span></a
+        >
         <div class="dropdown dropdown-container">
-            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
-               href="#"
-               id="navbarDropdown" role="button">
-                Navigation
-            </a>
-            <div aria-labelledby="navbarDropdown" class="dropdown-menu" id="nav-dropdown-from-page">
-            </div>
+          <a
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+          >
+            Navigation
+          </a>
+          <div
+            aria-labelledby="navbarDropdown"
+            class="dropdown-menu"
+            id="nav-dropdown-from-page"
+          ></div>
         </div>
-    </nav>
-</div>
-
-<!-- :::END OF Nav -->
-
-<div class="container name-generator">
-
-    <div class="icon-container">
-        <img alt="elf" class="elf-icon" src="../assets/img/santa-claus.svg">
+        <div class="nav-item toggle-darkmode"></div>
+      </nav>
     </div>
 
-    <h1>What's your <span>ELF</span> name?</h1>
+    <!-- :::END OF Nav -->
 
-    <div class="name-choice">
+    <div class="container name-generator">
+      <div class="icon-container">
+        <img
+          alt="elf"
+          class="elf-icon invert"
+          src="../assets/img/santa-claus.svg"
+        />
+      </div>
+
+      <h1>What's your <span>ELF</span> name?</h1>
+
+      <div class="name-choice">
         <h3>First letter of your name</h3>
         <select class="box-style" id="name" onchange="letterChoice()">
-            <option selected value="">--Select Letter--</option>
-            <option value="Sparkles">A</option>
-            <option value="Cookie">B</option>
-            <option value="Blinky">C</option>
-            <option value="Evergreen">D</option>
-            <option value="Jingle">E</option>
-            <option value="Elfie">F</option>
-            <option value="Buddy">G</option>
-            <option value="Pixie">H</option>
-            <option value="Cocoa">I</option>
-            <option value="Frosty">J</option>
-            <option value="Mistletoe">K</option>
-            <option value="Twinkle">L</option>
-            <option value="Peppermint">M</option>
-            <option value="Cranberry">N</option>
-            <option value="Snowflake">O</option>
-            <option value="Kringle">P</option>
-            <option value="Snowy">Q</option>
-            <option value="Holly">R</option>
-            <option value="Jolly">S</option>
-            <option value="Sprinkles">T</option>
-            <option value="Merry">U</option>
-            <option value="Tipsy">V</option>
-            <option value="Glitzy">W</option>
-            <option value="Starlight">X</option>
-            <option value="Happy">Y</option>
-            <option value="Twinkle">Z</option>
+          <option selected value="">--Select Letter--</option>
+          <option value="Sparkles">A</option>
+          <option value="Cookie">B</option>
+          <option value="Blinky">C</option>
+          <option value="Evergreen">D</option>
+          <option value="Jingle">E</option>
+          <option value="Elfie">F</option>
+          <option value="Buddy">G</option>
+          <option value="Pixie">H</option>
+          <option value="Cocoa">I</option>
+          <option value="Frosty">J</option>
+          <option value="Mistletoe">K</option>
+          <option value="Twinkle">L</option>
+          <option value="Peppermint">M</option>
+          <option value="Cranberry">N</option>
+          <option value="Snowflake">O</option>
+          <option value="Kringle">P</option>
+          <option value="Snowy">Q</option>
+          <option value="Holly">R</option>
+          <option value="Jolly">S</option>
+          <option value="Sprinkles">T</option>
+          <option value="Merry">U</option>
+          <option value="Tipsy">V</option>
+          <option value="Glitzy">W</option>
+          <option value="Starlight">X</option>
+          <option value="Happy">Y</option>
+          <option value="Twinkle">Z</option>
         </select>
-    </div>
+      </div>
 
-    <div class="month-choice">
+      <div class="month-choice">
         <h3>Your birth month</h3>
         <select class="box-style" id="month" onchange="monthChoice()">
-            <option selected value="">--Select Month--</option>
-            <option value="Glitterballs">January</option>
-            <option value="TwinkleToes">February</option>
-            <option value="SugarSocks">March</option>
-            <option value="SleighBells">April</option>
-            <option value="McJingles">May</option>
-            <option value="McSnowball">June</option>
-            <option value="SnowyBum">July</option>
-            <option value="CinnamonShorts">August</option>
-            <option value="TinselPants">September</option>
-            <option value="ToffeeNut">October</option>
-            <option value="McFluff">November</option>
-            <option value="Gingerberry">December</option>
+          <option selected value="">--Select Month--</option>
+          <option value="Glitterballs">January</option>
+          <option value="TwinkleToes">February</option>
+          <option value="SugarSocks">March</option>
+          <option value="SleighBells">April</option>
+          <option value="McJingles">May</option>
+          <option value="McSnowball">June</option>
+          <option value="SnowyBum">July</option>
+          <option value="CinnamonShorts">August</option>
+          <option value="TinselPants">September</option>
+          <option value="ToffeeNut">October</option>
+          <option value="McFluff">November</option>
+          <option value="Gingerberry">December</option>
         </select>
-    </div>
+      </div>
 
-    <button id="loadName" onclick="generateName();" type="submit">Generate My Name!</button>
+      <button id="loadName" onclick="generateName();" type="submit">
+        Generate My Name!
+      </button>
 
-    <div id="resultContainer">
+      <div id="resultContainer">
         <h3>Your Elf Name is:</h3>
         <p id="result"></p>
+      </div>
     </div>
-</div>
 
-
-<footer class="site-footer" id="footer">
-    <div class="container">
+    <footer class="site-footer" id="footer">
+      <div class="container">
         <div class="row">
-            <div class="col-12 col-md-4">
-                <a class="footer-logo" href="#"><i class="fa fa-cube"></i> SANTA<span
-                        class="brand-color">FIED</span></a>
-                <p>
-                    Contact us for all of your Christmas questions:
-                </p>
-                <!--Remove tel spaces in the href-->
-                <a class="footer-tel" href="tel:+1800123456">+ 1 800 123 456</a><br/><span
-                    class="footer-email">Email
-                    <a href="mailto:support@santafied.fi">support@santafied.fi</a></span>
-            </div>
-            <div class="col-12 col-md-4 footer-links">
-                <h4>Links</h4>
-                <ul class="list-unstyled">
-                    <li><a href="./facts.html">Facts and Info</a></li>
-                    <li><a href="./recipes.html">Recipes</a></li>
-                    <li><a href="./gifts.html">Gifts Suggestions</a></li>
-                    <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
-                    <li><a href="./games.html">Seasonal Games</a></li>
-                    <li><a href="./films.html">Seasonal Films</a></li>
-                    <li><a href="./books.html">Seasonal Books</a></li>
-                    <li><a href="./activities.html">Seasonal Activities</a></li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-4">
-                <h4>Let's stay in touch</h4>
-                <form class="form-inline">
-                    <div class="form-group">
-                        <label class="sr-only" for="footer-form-email">Email</label>
-                        <input class="form-control form-inverted" id="footer-form-email" placeholder="Email"
-                               type="email"/>
-                        <button class="btn btn-primary" type="submit">Submit</button>
-                    </div>
-                </form>
+          <div class="col-12 col-md-4">
+            <a class="footer-logo" href="#"
+              ><i class="fa fa-cube"></i> SANTA<span class="brand-color"
+                >FIED</span
+              ></a
+            >
+            <p>
+              Contact us for all of your Christmas questions:
+            </p>
+            <!--Remove tel spaces in the href-->
+            <a class="footer-tel" href="tel:+1800123456">+ 1 800 123 456</a
+            ><br /><span class="footer-email"
+              >Email
+              <a href="mailto:support@santafied.fi"
+                >support@santafied.fi</a
+              ></span
+            >
+          </div>
+          <div class="col-12 col-md-4 footer-links">
+            <h4>Links</h4>
+            <ul class="list-unstyled">
+              <li><a href="./facts.html">Facts and Info</a></li>
+              <li><a href="./recipes.html">Recipes</a></li>
+              <li><a href="./gifts.html">Gifts Suggestions</a></li>
+              <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
+              <li><a href="./games.html">Seasonal Games</a></li>
+              <li><a href="./films.html">Seasonal Films</a></li>
+              <li><a href="./books.html">Seasonal Books</a></li>
+              <li><a href="./activities.html">Seasonal Activities</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h4>Let's stay in touch</h4>
+            <form class="form-inline">
+              <div class="form-group">
+                <label class="sr-only" for="footer-form-email">Email</label>
+                <input
+                  class="form-control form-inverted"
+                  id="footer-form-email"
+                  placeholder="Email"
+                  type="email"
+                />
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </div>
+            </form>
 
-                <p>Get updates on sales and more</p>
-                <ul class="list-inline footer-social">
-                    <li class="list-inline-item">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                </ul>
+            <p>Get updates on sales and more</p>
+            <ul class="list-inline footer-social">
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col footer-copyright">
+              &copy; Santafied. A project under zero-to-mastery.
             </div>
-            <div class="row">
-                <div class="col footer-copyright">
-                    &copy; Santafied. A project under zero-to-mastery.
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-</footer>
-<script src="../assets/js/darkmode.js"></script>
+      </div>
+    </footer>
+    <script src="../assets/js/darkmode.js"></script>
 
-<script src="../assets/js/mouse-trail-snowball.js"></script>
-<script src="../assets/js/navLink-generator.js"></script>
-<script crossorigin="anonymous"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
-</script>
-<script crossorigin="anonymous"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
-</script>
-<script crossorigin="anonymous"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
-</script>
-<script src="../assets/js/elf-name-generator.js"></script>
-</body>
-
+    <script src="../assets/js/mouse-trail-snowball.js"></script>
+    <script src="../assets/js/navLink-generator.js"></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    ></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    ></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    ></script>
+    <script src="../assets/js/elf-name-generator.js"></script>
+  </body>
 </html>

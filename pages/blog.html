@@ -1,288 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <script src="../assets/js/lazyloading.js"></script>
     <script
-            src="../assets/js/lazyloading.js"
-    ></script>
-    <script
-            crossorigin="anonymous"
-            src="https://kit.fontawesome.com/5e68800c4a.js"
+      crossorigin="anonymous"
+      src="https://kit.fontawesome.com/5e68800c4a.js"
     ></script>
     <link
-            crossorigin="anonymous"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            rel="stylesheet"
+      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      rel="stylesheet"
     />
     <link
-            href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap"
-            rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap"
+      rel="stylesheet"
     />
-    <link href="../assets/css/main.css" rel="stylesheet"/>
-    <link href="../assets/css/blog.css" rel="stylesheet"/>
-    <link href="../assets/css/mouse-trail-snowball.css" rel="stylesheet"/>
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/blog.css" rel="stylesheet" />
+    <link href="../assets/css/mouse-trail-snowball.css" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/darkmode.css" />
-    <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
+    <link rel="stylesheet" href="../assets/css/darkmode.css" />
+
     <title>Santafied | Blog</title>
-</head>
+  </head>
 
-<body class="sub-page">
-<div id="snowball1"></div>
-<div id="snowball2"></div>
-<div id="snowball3"></div>
-<!-- :::NAV Starts ::: -->
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> <span>SANTA</span><span
-                class="brand-color">FIED</span></a>
+  <body class="sub-page">
+    <div id="snowball1"></div>
+    <div id="snowball2"></div>
+    <div id="snowball3"></div>
+    <!-- :::NAV Starts ::: -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="../index.html"
+          ><i class="fa fa-cube"></i> <span>SANTA</span
+          ><span class="brand-color">FIED</span></a
+        >
         <div class="dropdown dropdown-container">
-            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
-               href="#"
-               id="navbarDropdown" role="button">
-                Navigation
-            </a>
-            <div aria-labelledby="navbarDropdown" class="dropdown-menu" id="nav-dropdown-from-page">
-            </div>
+          <a
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+          >
+            Navigation
+          </a>
+          <div
+            aria-labelledby="navbarDropdown"
+            class="dropdown-menu"
+            id="nav-dropdown-from-page"
+          ></div>
         </div>
-    </nav>
-</div>
+        <div class="nav-item toggle-darkmode"></div>
+      </nav>
+    </div>
 
-<!-- :::END OF Nav -->
+    <!-- :::END OF Nav -->
 
-<!-- main activities content starts here -->
-<div class="container">
-    <div class="blog-searchbox-container">
+    <!-- main activities content starts here -->
+    <div class="container">
+      <div class="blog-searchbox-container">
         <h1 class="title">Blog</h1>
 
         <div class="row searchbox-item">
-            <div class="col-12 col-md-12 col-lg-12 text-center">
-                <div class="container">
-                    <form action="" class="search-form btn btn-lg btn-outline-danger" role="search">
-                        <input autocomplete="off" class="search-blog main-title" id="search-blog" name="q"
-                               onkeyup="searchBlog()"
-                               placeholder="Search blog post by title ..."
-                               type="search">
-                    </form>
-                </div>
+          <div class="col-12 col-md-12 col-lg-12 text-center">
+            <div class="container">
+              <form
+                action=""
+                class="search-form btn btn-lg btn-outline-danger"
+                role="search"
+              >
+                <input
+                  autocomplete="off"
+                  class="search-blog main-title"
+                  id="search-blog"
+                  name="q"
+                  onkeyup="searchBlog()"
+                  placeholder="Search blog post by title ..."
+                  type="search"
+                />
+              </form>
             </div>
+          </div>
         </div>
+      </div>
+
+      <div class="row mb-3 mt-4">
+        <div class="col-sm-12 col-md-4">
+          <div class="card mx-3 mb-3 mb-md-0 card-shadow">
+            <div class="card-body">
+              <img
+                alt="..."
+                class="card-img"
+                data-src="https://images.unsplash.com/photo-1480215529400-2995f91ddb96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                loading="lazy"
+              />
+              <a class="card-tag my-3" href="#">Christmas</a>
+              <h5 class="card-title">
+                <a href="#">Santa's Favorite Cookies</a>
+              </h5>
+              <div class="card-subtext">
+                <span class="author mr-1">By Santa Clause</span>
+                <span class="date">Oct 1, 2019</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="card mx-3 mb-3 mb-md-0 card-shadow">
+            <div class="card-body">
+              <img
+                alt="..."
+                class="card-img"
+                data-src="https://images.unsplash.com/photo-1542936378-3fa06e6f7723?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                loading="lazy"
+              />
+              <a class="card-tag my-3" href="#">Christmas</a>
+              <h5 class="card-title">
+                <a href="#">How to Guide Santa's Sleigh</a>
+              </h5>
+              <div class="card-subtext">
+                <span class="author mr-1">By Rudolph</span>
+                <span class="date">Nov 28, 2019</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="card mx-3 mb-3 mb-md-0 card-shadow">
+            <div class="card-body">
+              <img
+                alt="..."
+                class="card-img"
+                data-src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                loading="lazy"
+              />
+              <a class="card-tag my-3" href="#">Christmas</a>
+              <h5 class="card-title"><a href="#">How to Wrap Gifts</a></h5>
+              <div class="card-subtext">
+                <span class="author mr-1">By Mrs. Clause</span>
+                <span class="date">Nov 26, 2019</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-sm-12 col-md-4">
+          <div class="card mx-3 mb-3 mb-md-0 card-shadow">
+            <div class="card-body">
+              <img
+                alt="..."
+                class="card-img"
+                data-src="https://images.unsplash.com/photo-1512474932049-78ac69ede12c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                loading="lazy"
+              />
+              <a class="card-tag my-3" href="#">Christmas</a>
+              <h5 class="card-title"><a href="#">First Time Caroling</a></h5>
+              <div class="card-subtext">
+                <span class="author mr-1">By An Elf</span>
+                <span class="date">Nov 21, 2019</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="card mx-3 mb-3 mb-md-0 card-shadow">
+            <div class="card-body">
+              <img
+                alt="..."
+                class="card-img"
+                data-src="https://images.unsplash.com/photo-1514495021973-06719621b160?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1007&q=80"
+                loading="lazy"
+              />
+              <a class="card-tag my-3" href="#">Christmas</a>
+              <h5 class="card-title">
+                <a href="#">Building a Gingerbread House</a>
+              </h5>
+              <div class="card-subtext">
+                <span class="author mr-1">By Gingerbread Man</span>
+                <span class="date">Nov 15, 2019</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="card mx-3 mb-3 mb-md-0 card-shadow">
+            <div class="card-body">
+              <img
+                alt="..."
+                class="card-img"
+                data-src="https://images.unsplash.com/photo-1512389098783-66b81f86e199?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjQ1OTl9&auto=format&fit=crop&w=1388&q=80"
+                loading="lazy"
+              />
+              <a class="card-tag my-3" href="#">Christmas</a>
+              <h5 class="card-title"><a href="#">Best Christmas Songs</a></h5>
+              <div class="card-subtext">
+                <span class="author mr-1">By Santa Clause</span>
+                <span class="date">Nov 1, 2019</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="card mx-3 mb-3 mb-md-0 card-shadow">
+            <div class="card-body">
+              <img
+                alt="..."
+                class="card-img"
+                data-src="https://images.unsplash.com/photo-1496134732667-ae8d2853a045?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                loading="lazy"
+              />
+              <a class="card-tag my-3" href="#">Christmas</a>
+              <h5 class="card-title">
+                <a href="#"
+                  >Christmas at the Tropicals: Best refreshing beverages for
+                  warmer Christmas Nights</a
+                >
+              </h5>
+              <div class="card-subtext">
+                <span class="author mr-1">By Mrs. Clause</span>
+                <span class="date">Oct 15, 2019</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="row mb-3 mt-4">
-        <div class="col-sm-12 col-md-4">
-            <div class="card mx-3 mb-3 mb-md-0 card-shadow">
-                <div class="card-body">
-                    <img
-                            alt="..."
-                            class="card-img"
-                            data-src="https://images.unsplash.com/photo-1480215529400-2995f91ddb96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-                            loading="lazy"
-                    />
-                    <a class="card-tag my-3" href="#">Christmas</a>
-                    <h5 class="card-title"><a href="#">Santa's Favorite Cookies</a></h5>
-                    <div class="card-subtext">
-                        <span class="author mr-1">By Santa Clause</span>
-                        <span class="date">Oct 1, 2019</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-4">
-            <div class="card mx-3 mb-3 mb-md-0 card-shadow">
-                <div class="card-body">
-                    <img
-                            alt="..."
-                            class="card-img"
-                            data-src="https://images.unsplash.com/photo-1542936378-3fa06e6f7723?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-                            loading="lazy"
-                    />
-                    <a class="card-tag my-3" href="#">Christmas</a>
-                    <h5 class="card-title"><a href="#">How to Guide Santa's Sleigh</a></h5>
-                    <div class="card-subtext">
-                        <span class="author mr-1">By Rudolph</span>
-                        <span class="date">Nov 28, 2019</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-4">
-            <div class="card mx-3 mb-3 mb-md-0 card-shadow">
-                <div class="card-body">
-                    <img
-                            alt="..."
-                            class="card-img"
-                            data-src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                            loading="lazy"
-                    />
-                    <a class="card-tag my-3" href="#">Christmas</a>
-                    <h5 class="card-title"><a href="#">How to Wrap Gifts</a></h5>
-                    <div class="card-subtext">
-                        <span class="author mr-1">By Mrs. Clause</span>
-                        <span class="date">Nov 26, 2019</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row mb-3">
-        <div class="col-sm-12 col-md-4">
-            <div class="card mx-3 mb-3 mb-md-0 card-shadow">
-                <div class="card-body">
-                    <img
-                            alt="..."
-                            class="card-img"
-                            data-src="https://images.unsplash.com/photo-1512474932049-78ac69ede12c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                            loading="lazy"
-                    />
-                    <a class="card-tag my-3" href="#">Christmas</a>
-                    <h5 class="card-title"><a href="#">First Time Caroling</a></h5>
-                    <div class="card-subtext">
-                        <span class="author mr-1">By An Elf</span>
-                        <span class="date">Nov 21, 2019</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-4">
-            <div class="card mx-3 mb-3 mb-md-0 card-shadow">
-                <div class="card-body">
-                    <img
-                            alt="..."
-                            class="card-img"
-                            data-src="https://images.unsplash.com/photo-1514495021973-06719621b160?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1007&q=80"
-                            loading="lazy"
-                    />
-                    <a class="card-tag my-3" href="#">Christmas</a>
-                    <h5 class="card-title"><a href="#">Building a Gingerbread House</a></h5>
-                    <div class="card-subtext">
-                        <span class="author mr-1">By Gingerbread Man</span>
-                        <span class="date">Nov 15, 2019</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-4">
-            <div class="card mx-3 mb-3 mb-md-0 card-shadow">
-                <div class="card-body">
-                    <img
-                            alt="..."
-                            class="card-img"
-                            data-src="https://images.unsplash.com/photo-1512389098783-66b81f86e199?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjQ1OTl9&auto=format&fit=crop&w=1388&q=80"
-                            loading="lazy"
-                    />
-                    <a class="card-tag my-3" href="#">Christmas</a>
-                    <h5 class="card-title"><a href="#">Best Christmas Songs</a></h5>
-                    <div class="card-subtext">
-                        <span class="author mr-1">By Santa Clause</span>
-                        <span class="date">Nov 1, 2019</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-         <div class="col-sm-12 col-md-4">
-            <div class="card mx-3 mb-3 mb-md-0 card-shadow">
-                <div class="card-body">
-                    <img
-                            alt="..."
-                            class="card-img"
-                            data-src="https://images.unsplash.com/photo-1496134732667-ae8d2853a045?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-                            loading="lazy"
-                    />
-                    <a class="card-tag my-3" href="#">Christmas</a>
-                    <h5 class="card-title"><a href="#">Christmas at the Tropicals: Best refreshing beverages for warmer Christmas Nights</a></h5>
-                    <div class="card-subtext">
-                        <span class="author mr-1">By Mrs. Clause</span>
-                        <span class="date">Oct 15, 2019</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<footer class="site-footer" id="footer">
-    <div class="container">
+    <footer class="site-footer" id="footer">
+      <div class="container">
         <div class="row">
-            <div class="col-12 col-md-4">
-                <a class="footer-logo" href="#"><i class="fa fa-cube"></i> SANTA<span
-                        class="brand-color">FIED</span></a>
-                <p>
-                    Contact us for all of your Christmas questions:
-                </p>
-                <!--Remove tel spaces in the href-->
-                <a class="footer-tel" href="tel:+1800123456">+ 1 800 123 456</a><br/><span
-                    class="footer-email">Email
-                      <a href="mailto:support@santafied.fi">support@santafied.fi</a></span>
-            </div>
-            <div class="col-12 col-md-4 footer-links">
-                <h4>Links</h4>
-                <ul class="list-unstyled">
-                    <li><a href="./facts.html">Facts and Info</a></li>
-                    <li><a href="./recipes.html">Recipes</a></li>
-                    <li><a href="./gifts.html">Gifts Suggestions</a></li>
-                    <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
-                    <li><a href="./games.html">Seasonal Games</a></li>
-                    <li><a href="./films.html">Seasonal Films</a></li>
-                    <li><a href="./books.html">Seasonal Books</a></li>
-                    <li><a href="./activities.html">Seasonal Activities</a></li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-4">
-                <h4>Let's stay in touch</h4>
-                <form class="form-inline">
-                    <div class="form-group">
-                        <label class="sr-only" for="footer-form-email">Email</label>
-                        <input class="form-control form-inverted" id="footer-form-email" placeholder="Email"
-                               type="email"/>
-                        <button class="btn btn-primary" type="submit">Submit</button>
-                    </div>
-                </form>
+          <div class="col-12 col-md-4">
+            <a class="footer-logo" href="#"
+              ><i class="fa fa-cube"></i> SANTA<span class="brand-color"
+                >FIED</span
+              ></a
+            >
+            <p>
+              Contact us for all of your Christmas questions:
+            </p>
+            <!--Remove tel spaces in the href-->
+            <a class="footer-tel" href="tel:+1800123456">+ 1 800 123 456</a
+            ><br /><span class="footer-email"
+              >Email
+              <a href="mailto:support@santafied.fi"
+                >support@santafied.fi</a
+              ></span
+            >
+          </div>
+          <div class="col-12 col-md-4 footer-links">
+            <h4>Links</h4>
+            <ul class="list-unstyled">
+              <li><a href="./facts.html">Facts and Info</a></li>
+              <li><a href="./recipes.html">Recipes</a></li>
+              <li><a href="./gifts.html">Gifts Suggestions</a></li>
+              <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
+              <li><a href="./games.html">Seasonal Games</a></li>
+              <li><a href="./films.html">Seasonal Films</a></li>
+              <li><a href="./books.html">Seasonal Books</a></li>
+              <li><a href="./activities.html">Seasonal Activities</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h4>Let's stay in touch</h4>
+            <form class="form-inline">
+              <div class="form-group">
+                <label class="sr-only" for="footer-form-email">Email</label>
+                <input
+                  class="form-control form-inverted"
+                  id="footer-form-email"
+                  placeholder="Email"
+                  type="email"
+                />
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </div>
+            </form>
 
-                <p>Get updates on sales and more</p>
-                <ul class="list-inline footer-social">
-                    <li class="list-inline-item">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                </ul>
-            </div>
+            <p>Get updates on sales and more</p>
+            <ul class="list-inline footer-social">
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="row">
-            <div class="footer-copyright">
-                &copy; Santafied. A project under zero-to-mastery.
-            </div>
+          <div class="footer-copyright">
+            &copy; Santafied. A project under zero-to-mastery.
+          </div>
         </div>
-    </div>
-</footer>
-<script src="../assets/js/darkmode.js"></script>
+      </div>
+    </footer>
+    <script src="../assets/js/darkmode.js"></script>
 
-<script src="../assets/js/mouse-trail-snowball.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-<script src="/assets/js/carousel.js"></script>
-<script src="../assets/js/navLink-generator.js"></script>
-<script
-        crossorigin="anonymous"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-></script>
-<script
-        crossorigin="anonymous"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-></script>
-<script
-        crossorigin="anonymous"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-></script>
-<script src="../assets/js/blog-script.js"></script>
-</body>
+    <script src="../assets/js/mouse-trail-snowball.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <!-- <script src="../assets/js/carousel.js"></script> -->
+    <script src="../assets/js/navLink-generator.js"></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    ></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    ></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    ></script>
+    <script src="../assets/js/blog-script.js"></script>
+  </body>
 </html>
