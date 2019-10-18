@@ -1,7 +1,7 @@
 // Query for the toggle that is used to change between themes
 const toggle = document.querySelector("#themeToggle");
 const storedMode = localStorage.getItem("darkmode");
-const navbar = document.querySelector(".navbar .toggle-darkmode");
+const navbar = document.querySelector(".navbar ");
 
 const createElement = (elem, cssClass, txt = undefined) => {
   let node = document.createElement(elem); //create the List element
