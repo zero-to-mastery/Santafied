@@ -1,0 +1,142 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: url('../img/gift/gift_bg.jpg') no-repeat center center/cover fixed;
+}
+
+.container {
+  width: 900px;
+  height: 90vh;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 15px;  
+  margin-top: 5rem;
+}
+
+.container .card {
+  position: relative;
+  width: 340px;
+  height: 400px;
+  background: rgb(252, 252, 252);
+  box-shadow: 0px 0px 30px rgba(190, 0, 0, 0.5);
+}
+
+h3 {
+  text-align: center;
+  padding-top: 0.5rem; 
+}
+
+p {
+ margin: 0.8rem 0.8rem;
+}
+
+.gift-btn {
+  color: rgb(165, 165, 165);
+  background-image: linear-gradient(#ca1902, #4d1601 );
+  padding: 0.3rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  margin-left: 33%;
+  position: absolute;
+}
+ 
+.container .card .face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  font-family: 'Mountains of Christmas', cursive;
+}
+
+.container .card .face.face1 {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.container .card .face.face1 h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.container .card .face.face2 {
+  transition: 0.5s;
+}
+
+.container .card:hover .face.face2 { 
+  display: none;
+}
+
+.container .card .face.face2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.1);
+ 
+}
+
+.container .card .face.face2 h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  color: rgb(252, 0, 0);
+  transition: 0.5s;
+}
+
+.container .card:nth-child(1) .face.face2 {
+  background: url('../img/gift/1.jpg') center center/cover;  
+}
+.container .card:nth-child(2) .face.face2 {
+  background: url('../img/gift/2.jpg') center center/cover;
+}
+.container .card:nth-child(3) .face.face2 {
+  background: url('../img/gift/3.jpg') center center/cover;
+}
+.container .card:nth-child(4) .face.face2 {
+  background: url('../img/gift/4.jpg') center center/cover;
+}
+
+.container .card:hover .face.face2 h3 {
+  display: none; 
+} 
+
+/* ****************************************** RESPONSIVE ********************************** */
+@media (max-width: 700px) {
+
+  body {
+    background: url('../img/gift/gift_mobile_bg.jpg') no-repeat center center/cover fixed;
+  }
+
+  .container {
+    width: 500px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 15rem auto;
+  }
+
+  .container .card {
+    width: 250px;
+    height: 600px;
+    margin: 2rem auto;
+  }
+
+  .container .card .face.face1 {
+  display: none;
+  }
+  
+}
+

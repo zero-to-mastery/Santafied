@@ -1,0 +1,166 @@
+aside {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 350px;
+  background: rgba(230, 30, 37, 1);
+  margin-left: 2rem;
+  margin-top: 1rem;
+  position: fixed;
+  padding: 2rem;
+  border-radius: 15px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.aside-title, .label {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ #input, #submit {
+  margin-bottom: 1rem;  
+  height: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+ }
+
+
+ #generated-name {
+   font-size: 2rem;
+   margin-top: 2rem;
+   margin-bottom: 2rem;    
+ } 
+
+
+#activities {
+  background: url('../img/activities_bg.jpg') no-repeat center center/cover fixed;
+}
+
+.activities-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  max-width: 50%;
+  margin: 1rem auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  margin-bottom: 7rem;
+} 
+
+.desc {
+  color: #fff;
+  background: rgba(230, 30, 37);
+  border-radius: 15px;
+  padding: 3rem;
+}
+
+.desc p {
+  font-size: 1rem;
+}
+
+.activities-desc {
+  border-radius: 15px;
+  background: rgba(230, 30, 37);
+  align-self: center;
+  padding: 3rem;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+h1, h3, img {
+  margin-bottom: 2rem;
+}
+
+.activities-desc h3 {font-size: 2rem;}
+.activities-desc p {font-size: 1.5rem;}
+.activities-desc img { border-radius: 15px;}
+
+/* ************************ Footer **************************** */
+
+#main-footer {
+  display: flex;
+  flex-direction: row;
+  background: rgba(230, 30, 37);
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.2rem;  
+  justify-content: center;  
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;  
+  height: 3rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+#main-footer p{  
+  margin-left: 2rem;
+  margin-right: 1rem;
+  
+}
+
+.git-icon {
+  position: absolute; 
+  margin:  0 auto;
+  align-self: center;
+}
+
+/* ****************************************** RESPONSIVE ********************************** */
+
+@media(max-width: 700px){
+
+  aside {
+    align-self: center;
+    max-width: 350px;   
+    margin: 0 auto;
+    position: relative;
+    padding: 2.5rem;   
+ } 
+
+ .aside-title, .label {
+   font-size: 1rem;   
+  }
+
+  #generated-name {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;      
+  } 
+  
+  .section{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: flex-start;
+   margin: 15rem auto;
+   height: 100vh;
+  }
+
+  .activities-container {
+    margin: 2rem auto;
+    max-width: 360px;
+    align-self: center;  
+  } 
+  
+  .desc {
+    padding: 2rem;
+  }
+  
+  .desc p {
+    font-size: 0.8rem;
+  }
+  
+  .activities-desc {
+    padding: 2rem;    
+  }  
+  
+  .activities-desc h3 {font-size: 1rem;}
+  .activities-desc p {font-size: 0.8rem;}  
+
+  #main-footer {
+    display: none;
+  } 
+}
