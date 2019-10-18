@@ -42,7 +42,6 @@ function checkToggle(shouldCheck) {
   checkbox.checked = shouldCheck;
 }
 
-console.log("Localstorage is set to: ", storedMode);
 // Called when the page loads
 if (storedMode === null || storedMode === "false") {
   toggleDarkMode(false);
@@ -53,6 +52,5 @@ if (storedMode === null || storedMode === "false") {
 function toggleDarkMode(shouldEnable) {
   document.body.classList.toggle("dark", shouldEnable);
   checkToggle(shouldEnable);
-  console.log(shouldEnable);
   localStorage.setItem("darkmode", shouldEnable);
 }
