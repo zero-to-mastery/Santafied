@@ -78,3 +78,24 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+.toggle-darkmode {
+  position: fixed;
+  top: 15%;
+  right: 5%;
+  z-index: 10;
+  border: 1px solid red;
+  border-radius: 4px;
+  -webkit-user-drag: auto;
+  padding: 12px 16px;
+  background-color: rgba(255,255,255, .3);
+}
+
+.toggle-darkmode  .toggle-container {
+  display: block;
+  height: auto;
+}
+
+.toggle-darkmode  .toggle-container p{
+  margin-bottom: 0;
+}
