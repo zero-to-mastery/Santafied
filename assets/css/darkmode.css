@@ -19,10 +19,12 @@ body.dark {
   align-items: center;
   justify-content: center;
   height: auto;
+  cursor: pointer;
 }
 
 .ptag {
   font-size: 12px;
+  cursor: pointer;
 }
 
 /* The switch - the box around the slider */
@@ -30,6 +32,7 @@ body.dark {
   display: inline-block;
   margin-bottom: 0;
   position: relative;
+  cursor: pointer;
 }
 
 
@@ -50,6 +53,7 @@ body.dark {
   height: 5px;
   top: auto;
   margin-bottom: 0;
+  cursor: pointer;
   background-color: #2d2d2d;
   -webkit-transition: .4s;
   transition: .4s;
