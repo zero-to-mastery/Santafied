@@ -9,11 +9,10 @@ body.dark {
 }
 
 .toggle-container{
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; /*so the toggle dark mode are together*/
-  height: 38px;
-  padding-top: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 40px;
 }
 
 /* The switch - the box around the slider */
