@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+
+
 body {
   /* min-width: 100%; */
   overflow-x: hidden;
+  font-family: 'Bitter', serif;
 }
 
 div.products {
@@ -23,7 +27,7 @@ div.products {
 }
 
 #bannerImage {
-  height: 90vh;
+  height: 50vh;
   -o-object-fit: cover;
   object-fit: cover;
 }

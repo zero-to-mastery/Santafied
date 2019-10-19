@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+
+.container {
+    font-family: 'Bitter', serif;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .tab-navigation {
     margin-bottom: 16px;
 }
