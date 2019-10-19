@@ -21,16 +21,16 @@ const tc = createElement("DIV", "toggle-container");
 const switchLabel = createElement("LABEL", "switch");
 const checkbox = createElement("INPUT");
 const spanSlider = createElement("SPAN", "slider");
-const pTag = createElement("P", "ptag", "🌙 dark mode");
+const pTag = createElement("SPAN", "ptag", "dark mode");
 
 checkbox.setAttribute("id", "themeToggle");
 checkbox.setAttribute("type", "checkbox");
 spanSlider.classList.add("round");
+switchLabel.appendChild(pTag);
 switchLabel.appendChild(checkbox);
 switchLabel.appendChild(spanSlider);
 
 tc.appendChild(switchLabel);
-tc.appendChild(pTag);
 
 navbar.appendChild(tc);
 
