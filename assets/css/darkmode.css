@@ -90,3 +90,15 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+@media screen and (max-width: 600px) {
+  .toggle-container{
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .toggle-container{
+    justify-content: flex-start;
+  }
+}

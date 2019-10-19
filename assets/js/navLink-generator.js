@@ -56,6 +56,10 @@ const navLinks = [
     href:  "pages/blog.html",
   },
   {
+    label: "Calendar",
+    href:  "pages/calendar.html",
+  },
+  {
     label: "Contact Us",
     href:  "#footer",
   },
