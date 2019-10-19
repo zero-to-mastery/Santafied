@@ -26,6 +26,9 @@
 
     <link rel="stylesheet" href="../assets/css/darkmode.css" />
     <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+    <link rel="stylesheet" href="../assets/css/darkmode.css" />
+
+    
     <title>Santafied | Books</title>
   </head>
 
@@ -59,6 +62,8 @@
             id="nav-dropdown-from-page"
           ></div>
         </div>
+        <div class="nav-item toggle-darkmode"></div>
+
       </nav>
     </div>
 
@@ -208,6 +213,15 @@
               aria-controls="settings"
               class="list-group-item list-group-item-action"
               data-toggle="list"
+              href="#thechristmasmiracle"
+              id="list-settings-list"
+              role="tab"
+              >The Christmas Miracle of Jonathan Toomey</a
+            >
+            <a
+              aria-controls="settings"
+              class="list-group-item list-group-item-action"
+              data-toggle="list"
               href="#polarExpress"
               id="list-settings-list"
               role="tab"
@@ -249,7 +263,20 @@
               role="tab"
               >The Life and Adventures of Santa Claus</a
             >
-          </div>
+            <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+              href="#elfontheshelf" id="list-settings-list" role="tab">The Elf on the Shelf</a>
+          
+            <a
+              aria-controls="settings"
+              class="list-group-item list-group-item-action"
+              data-toggle="list"
+              href="#finding-christmas"
+              id="list-settings-list"
+              role="tab"
+              >Finding Christmas</a
+              >
+          
+            </div>
         </div>
         <!-- :::END OF MENU TO FILTER FILMS :::-->
 
@@ -917,6 +944,50 @@
             </div>
             <!-- :: The Christmas Secret END :: -->
 
+            <!-- :: The Christmas Miracle of Jonathan Toomey :: -->
+            <div
+              class="tab-pane fade"
+              id="thechristmasmiracle"
+              role="tabpanel"
+              aria-labelledby="list-settings-list"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      data-src="http://2.bp.blogspot.com/-CYo3a6XtXV4/TuZ5kSH-3dI/AAAAAAAABQQ/0MfH-ajjCv4/s1600/the-christmas-miracle-of-jonathan-toomey.jpg"
+                      class="card-img"
+                      alt="A Miraculous Christmas"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        The Christmas Miracle of Jonathan Toomey
+                      </h4>
+                      <h6 class="card-subtitle mb-2 text-muted">"The story of a gloomy woodcutter who gradually recovers his ability to find joy in life"</h6>
+                      <p class="card-text">
+                        Jonathan Toomey is a woodcarver in a small village, known (and feared) for his gruff manner.
+                         But before the story itself truly begins, the author lets us in on a secret: Mr. Toomey wasn’t
+                          always this way. Once he was young and full of life, but he closed himself off after suffering
+                           terrible grief. Because Susan Wojciechowski introduces us to this side of Mr. Toomey first,
+                            watching his transformation throughout the story—as he meets the young widow McDowell and
+                             her son Thomas—is like watching someone open a gift we just know they’re going to love.
+                      </p>
+                      <button
+                        class="btn-read-more"
+                        onclick="window.open('https://www.goodreads.com/book/show/1434923.The_Christmas_Miracle_of_Jonathan_Toomey')"
+                      >
+                        Read more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- :: The Christmas Miracle of Jonathan Toomey END :: -->
+
             <!-- :: The Polar Express START :: -->
             <div
               class="tab-pane fade"
@@ -1138,11 +1209,11 @@
                        A Charlie Brown Christmas
                      </h5>
                      <p class="card-text">
-                       Celebrate Christmas with Charlie Brown and the rest of the Peanuts gang in this gorgeous 
+                       Celebrate Christmas with Charlie Brown and the rest of the Peanuts gang in this gorgeous
                        deluxe storybook retelling of the beloved Christmas special! </br>
 
                        Christmas is almost here, which means ice-skating, Christmas carols, and sparkly lights
-                       everywhere—even on Snoopy’s doghouse! Everyone is enjoying the holiday celebrations except 
+                       everywhere—even on Snoopy’s doghouse! Everyone is enjoying the holiday celebrations except
                        Charlie Brown. Can the Peanuts gang help Charlie Brown discover the true meaning of Christmas?
                      </p>
                      <button
@@ -1181,14 +1252,14 @@
                         The Life and Adventures of Santa Claus
                       </h5>
                       <p class="card-text">
-                        L. Frank Baum’s The Life and Adventures of Santa Claus was first published in 1902, 
-                        two years after his Wonderful Wizard of Oz. Drawing on the attributes of Santa Claus 
-                        from Clement Moore’s 1822 poem “A Visit from St. Nicholas” (“The Night Before Christmas”), 
-                        Baum chronicles Santa’s life from his childhood in an enchanted forest—the same forest 
-                        that is the source of all magic in the land of Oz—to his destiny of sharing gifts 
+                        L. Frank Baum’s The Life and Adventures of Santa Claus was first published in 1902,
+                        two years after his Wonderful Wizard of Oz. Drawing on the attributes of Santa Claus
+                        from Clement Moore’s 1822 poem “A Visit from St. Nicholas” (“The Night Before Christmas”),
+                        Baum chronicles Santa’s life from his childhood in an enchanted forest—the same forest
+                        that is the source of all magic in the land of Oz—to his destiny of sharing gifts
                         and spreading love to his fellow man. <br>
-                        Along the way we witness him making his first toys, learn the origins of 
-                        the Christmas tree and Christmas stockings, and discover the stories behind many Christmas secrets, 
+                        Along the way we witness him making his first toys, learn the origins of
+                        the Christmas tree and Christmas stockings, and discover the stories behind many Christmas secrets,
                         like why Santa slides down chimneys, how he picks his reindeer, and how he delivers all his toys in one night.
                       </p>
                       <button
@@ -1203,6 +1274,75 @@
               </div>
             </div>
             <!-- :: The Life and Adventures of Santa Claus END :: -->
+
+            <!-- The Elf on the Shelf Start -->
+            <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="elfontheshelf" role="tabpanel">
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img alt="..." class="card-img" data-src="https://i.imgur.com/tGPdR0y.jpg" loading="lazy" />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">The Elf on the Shelf</h5>
+                      <p class="card-text">
+                        The Elf on the Shelf: A Christmas Tradition is a 2005 children's picture book,
+                        written by Carol Aebersold and her daughter Chanda Bell, and illustrated by Coë
+                        Steinwart. The book tells a Christmas-themed story, written in rhyme, that
+                        explains how Santa Claus knows who is naughty and nice.<br>
+                      </p>
+                      <button class='btn-read-more' fade
+                        onclick="window.open('https://www.youtube.com/watch?v=muqdQuMeD58&feature=youtu.be')">
+                        Read more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--The Elf on the Shelf End-->
+
+            <!-- Finding Christmas Start -->
+            <div
+              class="tab-pane fade"
+              id="finding-christmas"
+              role="tabpanel"
+              aria-labelledby="list-settings-list"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      data-src="https://images-na.ssl-images-amazon.com/images/I/91LRRoYippL.jpg"
+                      class="card-img"
+                      alt="Finding Christmas"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Finding Christmas
+                      </h5>
+                      <p class="card-text">
+                        For the first time ever, Canada's best loved author and illustrator team creates a festive story to ring in the holiday season - with all of the zaniness fans have come to expect, of course!
+                        <br>
+                        Every year Julie finds the Christmas presents her parents hid: in the basement, under the bed, in the garage. But this year it's Christmas Eve and she has found nothing. NOTHING! She's worried - will be there no presents at all?
+                        <br>
+                        Her investigation takes her to a mysterious box on the rooftop, which - lo and behold - houses all of the gifts! But, in classic Munsch mayhem, she becomes trapped inside, creating the biggest surprise of all for her family on Christmas morning.
+                      </p>
+                      <button
+                        class="btn-read-more"
+                        onclick="window.open('https://www.amazon.ca/Finding-Christmas-Robert-Munsch/dp/1443113174/')"
+                      >
+                        Read more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Finding Christmas End-->
 
             <!-- START of new entry -->
             <!-- END of new entry -->

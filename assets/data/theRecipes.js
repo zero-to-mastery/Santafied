@@ -1,6 +1,6 @@
 //theRecipes.js
 /*
-   List of all recipes 
+   List of all recipes
    renders with the use of recipeCard.js
 */
 
@@ -558,6 +558,42 @@ var listOf = [
       "https://thenoshery.com/wp-content/uploads/2016/12/Coquito-4.jpg",
     link:
       "https://www.allrecipes.com/recipe/44187/coquito/"
+  },
+  {
+    id: "reindeer-cupcakes",
+    name: "Reindeer Cupcakes",
+    description:
+      "Cute reindeer cupcakes for Christmas that the kids will absolutely adore. These cupcakes are great anytime of year, however, simply skip the reindeer decorating! -rasckus",
+    summary: [
+      {
+        makes: "12 cupcakes",
+        prep: "1 hr",
+        cooking: "18 mins",
+        skill: "Medium"
+      }
+    ],
+    img:
+      "https://images.media-allrecipes.com/userphotos/720x405/4561717.jpg",
+    link:
+      "https://www.allrecipes.com/recipe/260313/christmas-reindeer-cupcakes/?internalSource=staff%20pick&referringId=187&referringContentType=Recipe%20Hub"
+  },
+  {
+    id: "saladg",
+    name: "Goat’s cheese, pear & candied pecan salad",
+    description:
+      "This extra-special vegetarian starter is bursting with contrasting flavours and textures, such as spiralized pear, crunchy roasted nuts and creamy cheese",
+    summary: [
+      {
+        serves: "4",
+        prep: "20 mins",
+        cooking: "7 mins - 10 mins",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/user-collections/my-colelction-image/2015/12/goats-cheese-pear-candied-pecan-salad.jpg?itok=crbFk6UI",
+    link:
+      "https://www.bbcgoodfood.com/recipes/goats-cheese-pear-candied-pecan-salad"
   }
 
 

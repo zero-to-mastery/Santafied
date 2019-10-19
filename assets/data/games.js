@@ -98,5 +98,13 @@ const linkList = [
     link: 'https://www.partygameideas.com/christmas-carol-pictionary-relay/',
     imageLink:
       'https://www.partygameideas.com/wp/wp-content/uploads/2017/11/Christmas-Carol-Pictionary-Relay.jpg'
+  },
+  {
+    title: 'Christmas Puzzle Game - Christmas Games',
+    description:
+      'Easy to play Christmas Puzzle game with beautiful graphics, the kids will love it! Fun Puzzle for Christmas with beautiful drawings for kids.',
+    link: 'https://chrome.google.com/webstore/detail/christmas-puzzle-game-chr/phglegapajbnleklhlanfejghkcbjijd',
+    imageLink:
+      'https://lh3.googleusercontent.com/7AVaTuRPRhq6S7kH3nSX_EY5YPleMqX2DDMOLTZbK0lBM_NgmrlUsAMMBBCfxe9XPZR1KQsdAA=w640-h400-e365'
   }
 ];

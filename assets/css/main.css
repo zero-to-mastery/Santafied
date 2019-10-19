@@ -157,6 +157,12 @@ a.navbar-brand >.brand-color {
     color: #ff4546;
 }
 
+.navbar-toggler {
+    background-color: white;
+    border-radius: 4px;
+    padding: 2px;
+}
+
 /*Navbar END*/
 /*
 section {
@@ -301,7 +307,8 @@ footer {
 #list-tab{
   overflow-x: hidden;
   overflow-y: scroll;
-  height:100% ;
+  width: 100% ;
+  height: 100%;
 }
 
 /*inverted form*/
