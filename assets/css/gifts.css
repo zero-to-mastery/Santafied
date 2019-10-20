@@ -185,7 +185,6 @@ a:hover {
 /* Want to vertically center price, title and button */
 
 .content.col-md-6.col-sm-12 {
-  /* border: 1px solid rebeccapurple; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -197,6 +196,5 @@ a:hover {
 .card-body.row.p-0 {
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid red; */
   width: 100%;
 }
