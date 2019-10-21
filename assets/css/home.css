@@ -168,20 +168,19 @@ section#hero-content {
     }
 }
 
+/*
 @media screen and (max-width: 600px) {
+    .carousel-inner {
+        height: 205px;
+    }
+
     .carousel-item {
         height: 60vh;
     }
 
     .carousel-item img {
-        height: 100%;
-    }
-
-    .carousel-caption {
-        top: 50%;
-        -webkit-transform: translateY(-30%);
-        -ms-transform: translateY(-30%);
-        transform: translateY(-30%);
+        width: 100%;
+        height: auto;
     }
 
     .carousel-caption h3 {
@@ -198,6 +197,7 @@ section#hero-content {
         padding: 0px;
     }
 }
+*/
 
 @media (min-width: 601px) and (max-width: 1200px) {
     .carousel-item {
@@ -273,37 +273,64 @@ section#hero-content {
 }
 
 @media screen and (max-width: 600px) {
+    .carousel-inner {
+        width: 100%;
+        height: 205px;
+        overflow: hidden;
+    }
+
     .carousel-item {
-        height: 60vh;
+        height: 200px;
+        width: 100%;
+        right: unset;
+        background-color: white;
+        overflow: hidden;
+
     }
 
     .carousel-item img {
-        height: 100%;
+        height: auto;
+        height: 200px;
+        width: unset;
+        object-fit: cover;
     }
 
     .carousel-caption {
-        top: 50%;
-        -webkit-transform: translateY(-30%);
-        -ms-transform: translateY(-30%);
-        transform: translateY(-30%);
+        position: absolute;
+        top: 0px;
+        bottom: unset;
+        left: unset;
+        right: 0px;
+        height: 40px;
+        width: 100vw;
     }
 
     .carousel-caption h3 {
-        padding: 35px 43px;
+        padding: 10px 20px;
         font-size: 1rem;
         font-weight: 600;
+        margin-bottom: 0px;
     }
 
     .carousel-caption p {
+        display: none;
         font-size: 0.8rem;
+        margin-bottom: 0px;
     }
 
     .checkout{
         padding: 0px;
     }
+
+    .carousel-indicators {
+        bottom: 0px;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 1200px) {
+    .carousel-indicator {
+        min-width: 320px;
+    }
     .carousel-item {
         height: 60vh;
     }
