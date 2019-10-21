@@ -1174,5 +1174,57 @@ Underneath the tree
 A love that's meant for me
 A heart…
         `,
-	},
+  },
+  {
+    title: `Christmas, Baby Please Come Home`,
+    description: `"Christmas, Baby Please Come Home" is a cover by the alternative rock band Anberlin, 
+    released on November 20, 2007. Original song was written by Phil Spector, performed by Darlene Love, and released in 1963.`,
+    imageUrl: 'https://lastfm.freetls.fastly.net/i/u/770x0/001b86741aa04492a2b87ff6681bb57a.jpg#001b86741aa04492a2b87ff6681bb57a',
+    youtubeUrl: 'https://www.youtube.com/watch?v=xg_NtRN0-8E',
+    audioUrl: 'http://www.mp3gospel.org/musicas/Anberlin/anberlinlostsongs2007/15.mp3',
+    lyrics: `(Christmas)<br>
+The snow's coming down<br>
+(Christmas)<br>
+I'm watching it fall<br>
+(Christmas)<br>
+Watching the people around<br>
+(Christmas)<br>
+Baby, please come home<br>
+(Christmas)<br>
+The church bells in town<br>
+(Christmas)<br>
+They're ringing a song<br>
+(Christmas)<br>
+Oh the happiest sound<br>
+(Christmas)<br>
+Baby, please come home<br>
+<br>
+They're singing Deck the Halls<br>
+But it's not like Christmas at all<br>
+I remember when you were here<br>
+And all the fun we had last year<br>
+<br>
+(Christmas)<br>
+Pretty lights on the tree<br>
+(Christmas)<br>
+And I'm watching them shine<br>
+(Christmas)<br>
+You should be here with me<br>
+(Christmas)<br>
+Baby, please come home<br>
+<br>
+They're singing deck the halls<br>
+But it's not like Christmas at all<br>
+I remember when you were here<br>
+And all the fun we had last year<br>
+<br>
+(Christmas)<br>
+If there was a way<br>
+(Christmas)<br>
+I'd hold back these tears<br>
+(Christmas)<br>
+But it's Christmas day<br>
+(Christmas)<br>
+Baby, please come home`,
+},
 ];
