@@ -36,6 +36,8 @@ body {font-family: Verdana, sans-serif;}
 
 /* Weekdays (Mon-Sun) */
 .weekdays {
+  display: flex;
+  flex-wrap: nowrap;
   margin: 0;
   padding: 10px 0;
   background-color:#ddd;
@@ -50,6 +52,8 @@ body {font-family: Verdana, sans-serif;}
 
 /* Days (1-31) */
 .days {
+  display: flex;
+  flex-wrap: wrap;
   padding: 10px 0;
   background: #eee;
   margin: 0;
