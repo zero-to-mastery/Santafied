@@ -1,0 +1,65 @@
+#snowball1 {
+    position: absolute;
+    -webkit-animation: pulse 2s infinite; /* Chrome, Safari, Opera */
+    animation: pulse 2s infinite;
+    background: white;
+    border-radius: 50%;
+    height: 1em;
+    width: 1em;
+    margin-top: -0.3em;
+    margin-left: -0.5em;
+    z-index: 100;
+    pointer-events: none;
+}
+
+#snowball2 {
+    position: absolute;
+    -webkit-animation: pulse 2s infinite 0.3s; /* Chrome, Safari, Opera */
+    animation: pulse 2s infinite 0.3s;
+    background: white;
+    border-radius: 50%;
+    height: 0.8em;
+    width: 0.8em;
+    margin-top: -0.3em;
+    margin-left: -0.5em;
+    z-index: 100;
+    pointer-events: none;
+}
+
+#snowball3 {
+    position: absolute;
+    -webkit-animation: pulse 2s infinite 0.6s; /* Chrome, Safari, Opera */
+    animation: pulse 2s infinite 0.6s;
+    background: white;
+    border-radius: 50%;
+    height: 0.6em;
+    width: 0.6em;
+    margin-top: -0.3em;
+    margin-left: -0.5em;
+    z-index: 100;
+    pointer-events: none;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}

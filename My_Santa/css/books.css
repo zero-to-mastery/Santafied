@@ -1,0 +1,135 @@
+/* ********************** PAGES BACKGROUNDS START ********************** */
+#books {
+  background: url('../img/books/books_bg.jpg') no-repeat center center/cover fixed;
+}
+
+.book-section {
+  max-width: 1300px;
+  margin: 2rem auto;
+  background: rgb(230,29,37);
+  padding: 2rem;
+  box-shadow: 0px 0px 20px rgb(241,81,85);
+}
+
+.book-content {
+  display: flex;
+  flex-direction: row;
+   padding: 1rem; 
+   margin-top: 0.5rem;  
+}
+
+.description {
+  justify-content: flex-end;
+  top: 0;
+  margin-left: 1.5rem;
+  }
+
+.description h3 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.description p {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0.5rem;
+  font-size: 1 rem;
+  color: #fff;
+}
+
+
+.btn-book {
+  color: rgb(165, 165, 165);
+  background-image: linear-gradient(#ca1902, #4d1601 );
+  padding: 0.3rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.btn-book:hover {
+  background-image: linear-gradient(#4d1601, #ca1902 );
+  color: #fff;
+}
+
+.top {
+  margin-top: 1rem;
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.top a {
+  color: #fff;
+  background-image: linear-gradient(#ca1902, #4d1601 );
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+ }
+
+ .top a:hover {
+background-image: linear-gradient(#4d1601, #ca1902 );
+ }
+
+ /* ****************************************** RESPONSIVE ********************************** */
+ @media (max-width: 700px) {
+  #books {
+    background: url('../img/books/books_mobile_bg.jpg') no-repeat center center/cover fixed;
+  }
+  
+  .book-section {
+    width: 80%;
+    height: 100%;
+    margin: 15rem auto;
+    padding: 1rem;
+  }
+  .book-content {    
+    flex-direction: column;
+    justify-content: center;    
+    margin-bottom: 1rem;      
+  }
+
+  img {    
+    width: 100px;
+    height: 150px;
+    align-content: center;
+    margin-left: 35%;
+    margin-top: 3rem;    
+  }
+
+  .description {
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+    padding: 2rem;   
+  }
+
+  
+.description h3 {  
+  margin-bottom: 3rem;
+  margin-top: -3rem;  
+}
+
+  .btn-book {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2rem;
+    
+  }
+
+  .top {  
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2rem;
+  }
+  
+  .top a {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}

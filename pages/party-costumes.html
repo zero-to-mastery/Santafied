@@ -1,286 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<script src="../assets/js/lazyloading.js"></script>
-		<script
-			src="https://kit.fontawesome.com/5e68800c4a.js"
-			crossorigin="anonymous"
-		></script>
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="../assets/css/main.css" />
-		<link rel="stylesheet" href="../assets/css/recipes.css" />
-		<link rel="stylesheet" href="../assets/css/films.css" />
-		<link
-			href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
-			rel="stylesheet"
-		/>
-		<title>Santafied | Party Costumes</title>
-	</head>
-	<body class="sub-page">
-		<!-- ::: Start of Nav ::: -->
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<a class="navbar-brand" href="../index.html"
-					><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a
-				>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarNavAltMarkup"
-					aria-controls="navbarNavAltMarkup"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-item nav-link" href="../index.html">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-item nav-link" href="../pages/facts.html">Facts</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-item nav-link" href="../pages/recipes.html"
-								>Recipes</a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-item nav-link" href="../pages/gifts.html">Gifts</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-item nav-link" href="../pages/songs.html">Songs</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-item nav-link" href="../pages/games.html">Games</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-item nav-link" href="../pages/films.html">Films</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-item nav-link" href="../pages/books.html">Books</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-item nav-link" href="../pages/activities.html"
-								>Activities</a
-							>
-						</li>
-						<li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								id="navbarDropdown"
-								role="button"
-								data-toggle="dropdown"
-								aria-haspopup="true"
-								aria-expanded="false"
-							>
-								More
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="elf-name-generator.html"
-									>Elf Name Generator</a
-								>
-								<a class="dropdown-item" href="party-costumes.html"
-									>Party Costumes</a
-								>
-								<a class="dropdown-item" href="international.html">International</a>
-								<a class="dropdown-item" href="#">Category</a>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-		<!-- ::: End of Nav -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <script src="../assets/js/lazyloading.js"></script>
+    <script
+      crossorigin="anonymous"
+      src="https://kit.fontawesome.com/5e68800c4a.js"
+    ></script>
+    <link
+      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      rel="stylesheet"
+    />
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/recipes.css" rel="stylesheet" />
+    <link href="../assets/css/films.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../assets/css/mouse-trail-snowball.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/darkmode.css" />
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
+    <link rel="stylesheet" href="./assets/css/darkmode.css" />
 
-		<!-- ::: Card Container :::-->
-		<div class="container">
-			<h1 class="title">Party Costumes</h1>
-			<div class="row">
-				<div class="col-md-4 tab-navigation">
-					<div class="list-group" id="list-tab" role="tablist">
-						<!-- ::: Start of Filter Menu :::-->
-						<a
-							class="list-group-item list-group-item-action active"
-							id="list-profile-list"
-							data-toggle="list"
-							href="#placeholder"
-							role="tab"
-							aria-controls="profile"
-							>Snowflake Costume</a>
+    <title>Santafied | Party Costumes</title>
+  </head>
 
-							<a
-							class="list-group-item list-group-item-action"
-							id="list-profile-list"
-							data-toggle="list"
-							href="#placeholder2"
-							role="tab"
-							aria-controls="profile"
-							>Rudolf</a>
-						<!-- ::: End of Filter Menu :::-->
-					</div>
-				</div>
+  <body class="sub-page">
+    <div id="snowball1"></div>
+    <div id="snowball2"></div>
+    <div id="snowball3"></div>
+    <!-- ::: Start of Nav ::: -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="../index.html"
+          ><i class="fa fa-cube"></i> <span>SANTA</span
+          ><span class="brand-color">FIED</span></a
+        >
+        <div class="dropdown dropdown-container">
+          <a
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+          >
+            Navigation
+          </a>
+          <div
+            aria-labelledby="navbarDropdown"
+            class="dropdown-menu"
+            id="nav-dropdown-from-page"
+          ></div>
+        </div>
+        <div class="nav-item toggle-darkmode"></div>
+      </nav>
+    </div>
+    <!-- ::: End of Nav -->
 
-				<!-- ::: Card Container :::-->
-				<div class="col-md-8">
-					<div class="tab-content" id="nav-tabContent">
-						<!-- ::: Example Card for Costume Idea :::-->
-						<div
-							class="tab-pane active"
-							id="placeholder"
-							role="tabpanel"
-							aria-labelledby="placeholder"
-						>
-							<div class="card mb-3" style="max-width: 670px;">
-								<div class="row no-gutters">
-									<div class="col-md-12 col-lg-4">
-										<img
+    <!-- ::: Card Container :::-->
+    <div class="container">
+      <h1 class="title">Party Costumes</h1>
+      <div class="row">
+        <div class="col-md-4 tab-navigation">
+          <div class="list-group" id="list-tab" role="tablist">
+            <!-- ::: Start of Filter Menu :::-->
+            <a
+              aria-controls="profile"
+              class="list-group-item list-group-item-action active"
+              data-toggle="list"
+              href="#santa"
+              id="list-profile-list"
+              role="tab"
+              >Santa</a
+            >
 
-											data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Jonathan_G_Meath_portrays_Santa_Claus.jpg/732px-Jonathan_G_Meath_portrays_Santa_Claus.jpg"
+            <a
+              aria-controls="profile"
+              class="list-group-item list-group-item-action"
+              data-toggle="list"
+              href="#rudolf"
+              id="list-profile-list"
+              role="tab"
+              >Rudolf</a
+            >
 
-											class="card-img"
-											alt="..."
-											loading="lazy"
-										/>
-									</div>
-									<div class="col-md-12 col-lg-8">
-										<div class="card-body">
+            <a
+              aria-controls="profile"
+              class="list-group-item list-group-item-action"
+              data-toggle="list"
+              href="#ugly-sweater-vest"
+              id="list-profile-list"
+              role="tab"
+              >Ugly Sweater or Vest</a
+            >
 
-											<h5 class="card-title">Santa</h5>
-											<p class="card-text">
-												You can't go wrong dressing up as Santa at Christmas but good for year-round fun!
-											</p>
-											<p class="card-text">
-												<small class="text-muted"
-													>Link placeholder<a href="#" target="__blank">
-														placeholder.co.uk</a>
-													</small>
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="row no-gutters">
-									<div class="col-md-12 col-lg-4">
-										<img
-											data-src="https://upload.wikimedia.org/wikipedia/commons/a/a8/%27Mustangs%27_host_Christmas_party%2C_build_family_morale_121211-A-CJ112-794.jpg"
-											class="card-img"
-											alt="..."
-											loading="lazy"
-										/>
-									</div>
-									<div class="col-md-12 col-lg-8">
-										<div class="card-body">
-											<h5 class="card-title">Ugly Sweater and Sweater Vest Combo Pack</h5>
-											<p class="card-text">
-												For those classy events.
-											</p>
-											<p class="card-text">
-												<small class="text-muted"
-													>Link placeholder<a href="#" target="__blank">
-														placeholder.co.uk</a>
-													</small>
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="row no-gutters">
-									<div class="col-md-12 col-lg-4">
-										<img
-											data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx3NHx3j-uaO2QfbVmgNDrnv6fGgc7dDBOML_9dvt1Yp30-q1z"
-											class="card-img"
-											alt="..."
-											loading="lazy"
-										/>
-									</div>
-									<div class="col-md-12 col-lg-8">
-										<div class="card-body">
-											<h5 class="card-title">The Grinch</h5>
-											<p class="card-text">
-												Dress up as your favorite Dr. Seuss character with this Grinch Costume.
-											</p>
-											<p class="card-text">
-												<small class="text-muted"
-													>Link placeholder<a href="#" target="__blank">
-														placeholder.co.uk</a>
-													</small>
+            <a
+              aria-controls="profile"
+              class="list-group-item list-group-item-action"
+              data-toggle="list"
+              href="#grinch"
+              id="list-profile-list"
+              role="tab"
+              >The Grinch</a
+            >
+            <a
+              aria-controls="profile"
+              class="list-group-item list-group-item-action"
+              data-toggle="list"
+              href="#christmas-tree"
+              id="list-profile-list"
+              role="tab"
+              >Christmas Tree</a
+            >
+            <a
+              aria-controls="profile"
+              class="list-group-item list-group-item-action"
+              data-toggle="list"
+              href="#christmas-woman-angel"
+              id="list-profile-list"
+              role="tab"
+              >Woman Angel</a
+            >
+            <!-- ::: End of Filter Menu :::-->
+          </div>
+        </div>
 
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- ::: End of Example Card - Add more below this line! :::-->
-						<div
-							class="tab-pane "
-							id="placeholder2"
-							role="tabpanel"
-							aria-labelledby="placeholder2"
-						>
-							<div class="card mb-3" style="max-width: 670px;">
-								<div class="row no-gutters">
-									<div class="col-md-12 col-lg-4">
-										<img
-											data-src="https://christmas.365greetings.com/wp-content/uploads/2014/12/adult-christmas-costume.jpg"
-											class="card-img"
-											alt="..."
-											loading="lazy"
-										/>
-									</div>
-									<div class="col-md-12 col-lg-8">
-										<div class="card-body">
-											<h5 class="card-title">Rudolf Costume</h5>
-											<p class="card-text">
-													Another cute and hilarious Christmas costume idea is this red-nosed reindeer shirt. 
-													It’s sure to bring some laughter and cheer from everybody, especially the kids. 
-													You’ll be needing a dark brown shirt, and another long sleeved one in a lighter shade. 
-													Sew in some white patches and design a comic-looking pair of eyes. Stuff some brown socks for the antlers, 
-													and add a red ball for the nose. Hello there, Rudolf!
-											</p>
-											<p class="card-text">
-												<small class="text-muted">
-													<a href="https://www.amazon.com/Smiffys-Reindeer-Costume-Jumpsuit-Brown/dp/B00DY9GFOE/ref=sr_1_2?crid=D56ST7G5CHQG&keywords=rudolf+costume&qid=1570089251&sprefix=rudolf+cos%2Caps%2C255&sr=8-2" target="__blank">
-														Buy</a>
-												</small>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- ::: End of Card Container :::-->
+        <!-- ::: Card Container :::-->
+        <div class="col-md-8">
+          <div class="tab-content" id="nav-tabContent">
+            <!-- ::: Santa Costume Card Start :::-->
+            <div
+              aria-labelledby="santa"
+              class="tab-pane active"
+              id="santa"
+              role="tabpanel"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4 text-center text-lg-left mt-2 mt-lg-0">
+                    <img
+                      alt="..."
+                      class="card-img"
+                      data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Jonathan_G_Meath_portrays_Santa_Claus.jpg/732px-Jonathan_G_Meath_portrays_Santa_Claus.jpg"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Santa</h5>
+                      <p class="card-text">
+                        You can't go wrong dressing up as Santa at Christmas but
+                        good for year-round fun!
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">
+                          <button>
+                            <a
+                              href="https://www.amazon.com/s?k=santa+suit&pd_rd_r=7f4052e2-e2b1-4a08-ac01-74c4e73f50cd&pd_rd_w=2BvcV&pd_rd_wg=uhcJJ&pf_rd_p=7be70e42-b5c0-4077-873a-35a472a6fbd4&pf_rd_r=TEXYJYW05Z5MZDKV8CVS&qid=1570249538&ref=sugsr_2"
+                              target="__blank"
+                            >
+                              Buy</a
+                            >
+                          </button>
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: Santa Costume Card End :::-->
 
-		<footer>
-			&copy; Santafied. A project under zero-to-mastery.
-		</footer>
+            <!-- ::: Rudolf Costume Card Start :::-->
+            <div
+              aria-labelledby="rudolf"
+              class="tab-pane"
+              id="rudolf"
+              role="tabpanel"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4 text-center text-lg-left mt-2 mt-lg-0">
+                    <img
+                      alt="..."
+                      class="card-img"
+                      data-src="https://christmas.365greetings.com/wp-content/uploads/2014/12/adult-christmas-costume.jpg"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Rudolf Costume</h5>
+                      <p class="card-text">
+                        Another cute and hilarious Christmas costume idea is
+                        this red-nosed reindeer shirt. It’s sure to bring some
+                        laughter and cheer from everybody, especially the kids.
+                        You’ll be needing a dark brown shirt, and another long
+                        sleeved one in a lighter shade. Sew in some white
+                        patches and design a comic-looking pair of eyes. Stuff
+                        some brown socks for the antlers, and add a red ball for
+                        the nose. Hello there, Rudolf!
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">
+                          <button>
+                            <a
+                              href="https://www.amazon.com/Smiffys-Reindeer-Costume-Jumpsuit-Brown/dp/B00DY9GFOE/ref=sr_1_2?crid=D56ST7G5CHQG&keywords=rudolf+costume&qid=1570089251&sprefix=rudolf+cos%2Caps%2C255&sr=8-2"
+                              target="__blank"
+                            >
+                              Buy</a
+                            >
+                          </button>
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: Rudolf Costume Card End :::-->
 
-		<script
-			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-			crossorigin="anonymous"
-		></script>
-	</body>
+            <!-- ::: Ugly Sweater or Vest Costume Card Start :::-->
+            <div
+              aria-labelledby="ugly-sweater-vest"
+              class="tab-pane "
+              id="ugly-sweater-vest"
+              role="tabpanel"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4 text-center text-lg-left mt-2 mt-lg-0">
+                    <img
+                      alt="..."
+                      class="card-img"
+                      data-src="https://upload.wikimedia.org/wikipedia/commons/a/a8/%27Mustangs%27_host_Christmas_party%2C_build_family_morale_121211-A-CJ112-794.jpg"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Ugly Sweater and Sweater Vest Combo Pack
+                      </h5>
+                      <p class="card-text">
+                        For those classy events.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">
+                          <button>
+                            <a
+                              href="https://www.amazon.com/Ugly-Christmas-Sweaters-More/b?ie=UTF8&node=10253406011"
+                              target="__blank"
+                            >
+                              Buy</a
+                            >
+                          </button>
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ::: Ugly Sweater or Vest Costume Card End :::-->
+
+            <!-- ::: The Grinch Costume Card Start :::-->
+            <div
+              aria-labelledby="grinch"
+              class="tab-pane "
+              id="grinch"
+              role="tabpanel"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4 text-center text-lg-left mt-2 mt-lg-0">
+                    <img
+                      alt="..."
+                      class="card-img"
+                      data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx3NHx3j-uaO2QfbVmgNDrnv6fGgc7dDBOML_9dvt1Yp30-q1z"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">The Grinch</h5>
+                      <p class="card-text">
+                        Dress up as your favorite Dr. Seuss character with this
+                        Grinch Costume.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">
+                          <button>
+                            <a
+                              href="https://www.amazon.com/s?k=grinch+costume&pd_rd_r=ade3a5f2-ec3b-4789-a74f-26ff7fa6f84c&pd_rd_w=7WorF&pd_rd_wg=BIV3V&pf_rd_p=7be70e42-b5c0-4077-873a-35a472a6fbd4&pf_rd_r=PZQY0750MQC2MBEYP85A&qid=1570249632&ref=sugsr_0"
+                              target="__blank"
+                            >
+                              Buy</a
+                            >
+                          </button>
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- :::The Grinch Costume Card End :::-->
+
+            <!-- Christmas Tree Costume Card START -->
+            <div
+              aria-labelledby="christmas-tree"
+              class="tab-pane "
+              id="christmas-tree"
+              role="tabpanel"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4 text-center text-lg-left mt-2 mt-lg-0">
+                    <img
+                      alt="..."
+                      class="card-img"
+                      data-src="https://2.bp.blogspot.com/-cZEtBmkDYzc/UpwCVUWWWNI/AAAAAAAAAwY/TGeysOefHQk/s1600/556831_10151178171488174_1013815396_n.jpg"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Christmas Tree Costume</h5>
+                      <p class="card-text">
+                        A Christmas Tree costume is a fun, easy way to be
+                        festive! All you need is green tulle, and some Christmas
+                        ornaments. You can make it as intricate or simple as you
+                        wish!
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">
+                          <button>
+                            <a
+                              href="https://www.sloppyelegance.com/p/diy-christmas-tree-outfit.html"
+                              target="__blank"
+                            >
+                              Check It Out!</a
+                            >
+                          </button>
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Christmas Tree Costume Card END -->
+            </div>
+
+            <!-- Christmas Woman Angel Costume Card START -->
+            <div
+              aria-labelledby="christmas-woman-angel"
+              class="tab-pane "
+              id="christmas-woman-angel"
+              role="tabpanel"
+            >
+              <div class="card mb-3" style="max-width: 670px;">
+                <div class="row no-gutters">
+                  <div class="col-md-12 col-lg-4 text-center text-lg-left mt-2 mt-lg-0">
+                    <img
+                      alt="..."
+                      class="card-img"
+                      data-src="https://costumesupercenter-prodv3-weblinc.netdna-ssl.com/product_images/womens-angel-costume/5794472269702d347c00ad39/detail.jpg?c=1469785440"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Christmas Woman Angel Costume</h5>
+                      <p class="card-text">
+                        Be a fool in love with this Women's Angel Costume.
+                        Becoming an angel for a variety of events and
+                        celebrations has been a fun choice for plenty of years.
+                        This particular outfit is comfortable and easy to wear.
+                        It comes as a single, long, white gown that flows all
+                        the way down to the feet featuring minor decorative
+                        folds along the chest. There is also a white belt tie to
+                        wrap yourself together. The sleeves are long and open
+                        which makes for a great source of ventilation during
+                        warmer events.
+                      </p>
+
+                      <p class="card-text">
+                        <small class="text-muted">
+                          <button>
+                            <a
+                              href="https://www.costumesupercenter.com/products/womens-angel-costume?via=Z2lkOi8vYnV5LXNlYXNvbnMvV29ya2FyZWE6OkNhdGFsb2c6OkNhdGVnb3J5LzU5M2VhYzhhNjk3MDJkNWM3MjE2Y2UzNA"
+                              target="__blank"
+                            >
+                              Buy</a
+                            >
+                          </button>
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Christmas Woman Angel  Costume Card END -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ::: End of Card Container :::-->
+
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <a class="footer-logo" href="#"
+              ><i class="fa fa-cube"></i> SANTA<span class="brand-color"
+                >FIED</span
+              ></a
+            >
+            <p>
+              Contact us for all of your Christmas questions:
+            </p>
+            <!--Remove tel spaces in the href-->
+            <a class="footer-tel" href="tel:+1800123456">+ 1 800 123 456</a
+            ><br /><span class="footer-email"
+              >Email
+              <a href="mailto:support@santafied.fi"
+                >support@santafied.fi</a
+              ></span
+            >
+          </div>
+          <div class="col-12 col-md-4 footer-links">
+            <h4>Links</h4>
+            <ul class="list-unstyled">
+              <li><a href="./facts.html">Facts and Info</a></li>
+              <li><a href="./recipes.html">Recipes</a></li>
+              <li><a href="./gifts.html">Gifts Suggestions</a></li>
+              <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
+              <li><a href="./games.html">Seasonal Games</a></li>
+              <li><a href="./films.html">Seasonal Films</a></li>
+              <li><a href="./books.html">Seasonal Books</a></li>
+              <li><a href="./activities.html">Seasonal Activities</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h4>Let's stay in touch</h4>
+            <form class="form-inline">
+              <div class="form-group">
+                <label class="sr-only" for="footer-form-email">Email</label>
+                <input
+                  class="form-control form-inverted"
+                  id="footer-form-email"
+                  placeholder="Email"
+                  type="email"
+                />
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </div>
+            </form>
+
+            <p>Get updates on sales and more</p>
+            <ul class="list-inline footer-social">
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col footer-copyright">
+              &copy; Santafied. A project under zero-to-mastery.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/js/darkmode.js"></script>
+    <script src="../assets/js/mouse-trail-snowball.js"></script>
+    <script src="../assets/js/navLink-generator.js"></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    ></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    ></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    ></script>
+  </body>
 </html>

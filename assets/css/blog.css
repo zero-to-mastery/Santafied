@@ -1,0 +1,84 @@
+.card-tag {
+    padding: 5px 10px;
+    border: 1px solid green;
+    color: green;
+    display: inline-block;
+}
+
+.card-tag:hover {
+    border-color: red;
+    color: red;
+}
+
+.card-title a {
+    color: #000;
+}
+
+.card-subtext {
+    color: #ccc;
+}
+
+.card-subtext .author:after {
+  content: '|';
+  margin-left: 10px;
+}
+
+body.dark .card {
+  min-width: 29%;
+  border: 0 !important;
+  box-shadow: 0 16px 32px rgba(100,27,27,0.1);
+  background-color: var(--background-light-gray);
+}
+
+body.dark .card-title a {
+  color: var(--text-color);
+}
+
+input.search-blog {
+    color: #222;
+    position: relative;
+    z-index: 5;
+    -webkit-transition: z-index 0.8s, width 0.5s, background 0.3s ease, border 0.3s;
+    -o-transition: z-index 0.8s, width 0.5s, background 0.3s ease, border 0.3s;
+    transition: z-index 0.8s, width 0.5s, background 0.3s ease, border 0.3s;
+    height: 45px;
+    width: 0;
+    margin: 0;
+    padding: 5px 0 5px 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    
+    background: white url("https://www.stickpng.com/assets/images/585e4adacb11b227491c3392.png") no-repeat left center;
+    background-size: 25px;
+    background-position: 5px;
+
+}
+
+input.search-blog:focus {
+    z-index: 3;
+    width: 270px;
+
+    border: 1px solid #666;
+    background-color: white;
+    outline: none;
+    cursor: auto;
+    padding-right: 10px;
+}
+
+.blog-searchbox-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.searchbox-item {
+    margin-left: auto;
+}
+
+.card-shadow {
+    box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);
+}

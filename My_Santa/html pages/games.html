@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/games.css">
+  <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <title>Games</title>
+</head>
+
+<body id="games">
+
+  <!-- ****************************** NAVBAR ****************************** -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Christmas information</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="gift.html">Gift suggestions</a></li>
+      <li><a href="songs.html">Songs</a></li>
+      <li><a class="current" href="games.html">Games</a></li>
+      <li><a href="movie.html">Movie</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li><a href="activites.html">Activities</a></li>
+    </ul>
+  </nav>
+
+  <!-- ******************* VIDEO BACKGROUND ************************************ -->
+  <header class="v-header games-container">
+    <div class="fullscreen-video-wrap">
+      <video id="myVideo" src="../img/video/reindeer.mp4" autoplay="true" muted loop="true"></video>
+    </div>
+    <div class="header-content">
+      <h1 class="header-game-text"> Some fun Christmas party games to play with the family</h1>
+      <div class="buttons">
+        <a href="#section" class="games-btn">Read More bellow</a>
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+      </div>
+    </div>
+  </header>
+
+  <!--  ******************************* GAMES CONTENT ****************************** -->
+  <section id="section" class="section-a">
+    <div class="section-container">
+      <div class="grid-container">
+        <h1>Pin the red nose on Rudolph</h1>
+        <p>
+          You will need a large cut-out or picture of a reindeer without its nose, a red circle or pom pom, blind fold,
+          blue-tac and a marker to write down where each player places the tail.
+          Another variation of a classic party game, blindfold each player and have them take it in turns to guess where
+          Rudolph's nose goes. Whoever is closest to the correct position wins a prize.
+        </p>
+      </div>
+      <div class="grid-container">
+        <h1>Christmas memory game</h1>
+        <p>Put Christmas items on a tray and give people one minute to memorize the items. Take the tray away and have
+          them write as many down as they can remember in 30 seconds.</p>
+      </div>
+      <div class="grid-container">
+        <h1>Santa limbo</h1>
+        <p>Using a broom, have people do the limbo, but put a "santa belly" under their shirt using a pillow.</p>
+      </div>
+      <div class="grid-container">
+        <h1>Penguin waddle game</h1>
+        <p>Step aside Santa from the North Pole, the South Pole is taking over. This is a relay race where you put
+          balloons between your legs, waddling like a penguin, racing against another team.</p>
+      </div>
+      <div class="grid-container">
+        <h1>Christmas gift wrap relay</h1>
+        <p>Set up assembly lines of gifts, boxes, scissors, wrapping paper, ribbon, and tape for each team. Either have
+          each player wrap one gift or make an assembly line of workers. Then race to wrap!</p>
+      </div>
+      <div class="grid-container">
+        <h1>Christmas charades</h1>
+        <p>You will need a timer, bowls for clues, paper, pen or pencil and four or more players.
+          This game takes charades and puts it in a festive setting using Christmas phrases and film titles, and music.
+          You can find words for charades ready made for the game online.</p>
+      </div>
+    </div>
+    </div>
+    <div class="back">
+      <a href="#games" class="btn-back">Back</a>
+    </div>
+  </section>
+
+  <!-- ********************** SCRIPT FOR PLAY/PAUSE BUTTON ****************************** -->
+  <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+  </script>
+</body>
+
+</html>

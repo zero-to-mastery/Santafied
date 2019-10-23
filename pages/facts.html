@@ -1,423 +1,840 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
 
     <script src="../assets/js/lazyloading.js"></script>
-    <script src="https://kit.fontawesome.com/5e68800c4a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../assets/css/main.css" />
-    <link rel="stylesheet" href="../assets/css/facts.css" />
-    <link rel="stylesheet" href="../assets/css/films.css" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
-    <!-- Changed title match page content -->
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/5e68800c4a.js"></script>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
+    <link href="../assets/css/main.css" rel="stylesheet"/>
+    <link href="../assets/css/facts.css" rel="stylesheet"/>
+    <link href="../assets/css/films.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"/>
+    <link href="../assets/css/mouse-trail-snowball.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../assets/css/darkmode.css" />
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+    <link rel="stylesheet" href="./assets/css/darkmode.css" />
+
     <title>Santafied | Facts</title>
-  </head>
+</head>
 
-  <body class="sub-page">
-    <!-- :::NAV Starts ::: -->
-    <div class="container">
+<body class="sub-page">
+<div id="snowball1"></div>
+<div id="snowball2"></div>
+<div id="snowball3"></div>
+<!-- :::NAV Starts ::: -->
+<div class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> SANTA<span
-          id="brand-color">FIED</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-item nav-link" href="../index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-item nav-link selected" href="../pages/facts.html">Facts</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/recipes.html">Recipes</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/gifts.html">Gifts</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/songs.html">Songs</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/games.html">Games</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/films.html">Films</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/books.html">Books</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="../pages/activities.html">Activities</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              More
+        <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> <span>SANTA</span><span
+                class="brand-color">FIED</span></a>
+        <div class="dropdown dropdown-container">
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+               href="#"
+               id="navbarDropdown" role="button">
+                Navigation
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="elf-name-generator.html">Elf Name Generator</a>
-              <a class="dropdown-item" href="party-costumes.html">Party Costumes</a>
-              <a class="dropdown-item" href="international.html">International</a>
-              <a class="dropdown-item" href="party-costumes.html">Party Costumes</a>
+            <div aria-labelledby="navbarDropdown" class="dropdown-menu" id="nav-dropdown-from-page">
             </div>
-          </li>
-        </ul>
-      </div>
+        </div>
+        <div class="nav-item toggle-darkmode"></div>
+
     </nav>
-    </div>
-    <!-- :::END OF Nav -->
+</div>
+<!-- :::END OF Nav -->
 
-    <div class="container">
-      <h1 class="title">Christmas Facts</h1>
-      <div class="row">
+<div class="container">
+    <h3 class="title">--- Christmas Facts ---</h3>
+    <div class="row">
         <div class="col-md-4 tab-navigation">
-          <div class="list-group" id="list-tab" role="tablist">
-            <!-- ::: MENU TO FILTER FACTS :::-->
-            <a class="list-group-item list-group-item-action active" id="list-profile-list" data-toggle="list" href="#jingle-bells" 
-              role="tab" aria-controls="profile">"Jingle Bells" the truth</a>
+            <div class="list-group" id="list-tab" role="tablist">
+                <!-- ::: MENU TO FILTER FACTS :::-->
+                <a aria-controls="profile" class="list-group-item list-group-item-action active" data-toggle="list"
+                   href="#jingle-bells"
+                   id="list-profile-list" role="tab">"Jingle Bells" the truth</a>
 
-            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#rudolph"
-              role="tab" aria-controls="settings">Rudolph's Nose</a>
-            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#carolling"
-              role="tab" aria-controls="settings">Singing Carols</a>
-            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#dutch-santa" 
-              role="tab" aria-controls="profile">Dutch Santa</a>
-            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#heartbreaks" 
-              role="tab" aria-controls="settings">Heartbreaks on Christmas</a>
-            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#christmastrees" 
-              role="tab" aria-controls="settings">Christmas Trees</a>
-            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#reindeer"
-              role="tab" aria-controls="settings">Santa’s Reindeer</a>
-            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#cuisine"
-              role="tab" aria-controls="settings">Christmas Cuisine</a>
-            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#recycle"
-              role="tab" aria-controls="settings">Recycle your Tree</a>
-             <!-- <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#image"
-              role="tab" aria-controls="settings">Image of Santa Claus</a> -->
-            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#stockings"
-              role="tab" aria-controls="settings">Hanging Stockings</a>
-          </div>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#rudolph"
+                   id="list-settings-list" role="tab">Rudolph's Nose</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#carolling"
+                   id="list-settings-list" role="tab">Singing Carols</a>
+                <a aria-controls="profile" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#dutch-santa"
+                   id="list-settings-list" role="tab">Dutch Santa</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#heartbreaks"
+                   id="list-settings-list" role="tab">Heartbreaks on Christmas</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#christmastrees"
+                   id="list-settings-list" role="tab">Christmas Trees</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#reindeer"
+                   id="list-settings-list" role="tab">Santa’s Reindeer</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#cuisine"
+                   id="list-settings-list" role="tab">Christmas Cuisine</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#recycle"
+                   id="list-settings-list" role="tab">Recycle your Tree</a>
+                <!-- <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#image"
+                 role="tab" aria-controls="settings">Image of Santa Claus</a> -->
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#stockings"
+                   id="list-settings-list" role="tab">Hanging Stockings</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#artificialTree"
+                   id="list-settings-list" role="tab">Artifical Christmas Trees</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#vikingOriginChristmasTrees"
+                   id="list-settings-list" role="tab">Viking Origin of Christmas Trees</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                   href="#twelveDayOfChristmas"
+                   id="list-settings-list" role="tab">12 Days of Christmas</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                    href="#xmas"
+                    id="list-settings-list" role="tab">The meaning behind the word Xmas</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                    href="#santaclaus"
+                    id="list-settings-list" role="tab">Santa Claus</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                    href="#xinxmas"
+                    id="list-settings-list" role="tab">The X in Xmas</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                    href="#candyCane"
+                    id="list-settings-list" role="tab">Christmas Candy Cane Story</a>
+                <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
+                    href="#mistletoe"
+                    id="list-settings-list" role="tab">Mistletoe Story</a>
+                </div>
         </div>
         <!-- :::END OF MENU TO FILTER FACTS :::-->
 
         <!-- ::: CARDS OF FACTS :::-->
         <div class="col-8">
-          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-content" id="nav-tabContent">
 
-            <!-- ::: JINGLE BELLS CARD :::-->
-            <div class="tab-pane active" id="jingle-bells" role="tabpanel" aria-labelledby="facts-list">
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="https://t2.genius.com/unsafe/220x0/https%3A%2F%2Fimages.genius.com%2F76f6deb018cbd325d1f02f5e41aaaadb.700x700x1.jpg"
-                      class="card-img" alt="..." loading="lazy" />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">“Jingle Bells” was written for Thanksgiving, not Christmas.</h5>
-                      <p class="card-text">
-                        The song was written in 1857 by James Lord Pierpont and published under the title “One Horse Open
-                        Sleigh”. It was supposed to be played in the composer’s Sunday school class during Thanksgiving as
-                        a way to commemorate the famed Medford sleigh races. “Jingle Bells” was also the first song to be
-                        broadcast from space.
-                      </p>
-                      <p class="card-text">
+                <!-- ::: JINGLE BELLS CARD :::-->
+                <div aria-labelledby="facts-list" class="tab-pane active" id="jingle-bells" role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="..."
+                                        class="card-img"
+                                        data-src="https://t2.genius.com/unsafe/220x0/https%3A%2F%2Fimages.genius.com%2F76f6deb018cbd325d1f02f5e41aaaadb.700x700x1.jpg"
+                                        loading="lazy"/>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">“Jingle Bells” was written for Thanksgiving, not
+                                        Christmas.</h5>
+                                    <p class="card-text">
+                                        The song was written in 1857 by James Lord Pierpont and published under the
+                                        title “One Horse Open
+                                        Sleigh”. It was supposed to be played in the composer’s Sunday school class
+                                        during Thanksgiving as
+                                        a way to commemorate the famed Medford sleigh races. “Jingle Bells” was also the
+                                        first song to be
+                                        broadcast from space.
+                                    </p>
 
-                        <small class="text-muted">Read more at<a
-                            href="https://www.pastbook.com/txt/12-fun-christmas-facts/" target="__blank"> pastbook.com</a>
-                        </small>
-                      </p>
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://www.pastbook.com/txt/12-fun-christmas-facts/')">
+                                        Learn more
+                                    </button>
 
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+                <!-- ::: END OF JINGLE BELLS :::-->
+
+                <!-- ::: RUDOLPH CARD :::-->
+                <div aria-labelledby="facts-list" class="tab-pane fade" id="rudolph" role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="..."
+                                        class="card-img"
+                                        data-src="https://i0.wp.com/www.brainpickings.org/wp-content/uploads/2011/12/rudolph4.jpg?w=180&ssl=1"
+                                        loading="lazy"/>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Not what your expected...</h5>
+                                    <p class="card-text">
+                                        Rudolph’s red nose is probably the result of a parasitic infection of his
+                                        respiratory system.
+                                        According to Roger Highfield, the author of the book “The Physics of Christmas:
+                                        From the
+                                        Aerodynamics of Reindeer to the Thermodynamics of Turkey” the world’s most
+                                        famous reindeer has a
+                                        red nose due to a parasite. However, Rudolf’s relationship with his parasite is
+                                        symbiotic: after
+                                        all, the red nose illuminates the path through the winter night for the whole
+                                        reindeer team.
+                                    </p>
+
+
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://www.pastbook.com/txt/12-fun-christmas-facts/')">
+                                        Learn more
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: END OF RUDOLPH CARD :::-->
+
+                <!-- ::: CAROLS CARD:::-->
+                <div aria-labelledby="facts-list" class="tab-pane fade" id="carolling" role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img alt="..."
+                                     class="card-img"
+                                     data-src="https://images.theconversation.com/files/199683/original/file-20171218-27568-1p0h8sv.jpg"
+                                     loading="lazy"/>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tradition of Singing Carols</h5>
+                                    <p class="card-text">
+                                        Have you ever wondered why groups of people go to door to door singing carols?
+                                        The tradition is based on the English custom of wassailing which was a tradition
+                                        to toast to
+                                        someone’s good health and fortune.
+                                        St. Francis of Assisi took this tradition and converted it to the modern form of
+                                        carolling.</p>
+
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://en.wikipedia.org/wiki/Christmas_Caroling')">
+                                        Learn more
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: END OF CAROLS CARD :::-->
+
+                <!-- ::: SINTERKLASS CARD :::-->
+                <div aria-labelledby="facts-list" class="tab-pane fade" id="dutch-santa" role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img alt="..." class="card-img"
+                                     data-src="https://www.pastbook.com/txt/assets/Sinterklaas.jpg"/>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Sinterklaas (the Dutch version of Santa Claus) arrives from
+                                        Spain, not from
+                                        the North Pole.</h5>
+                                    <p class="card-text">
+                                        That’s not the only weird thing about the Dutch Christmas. Sinterklaas has his
+                                        little helpers, but
+                                        they are not adorable hard-working elves: they are black-faced boys and girls
+                                        who can steal your
+                                        kids if they misbehave, and bring them to back Spain which is, according to the
+                                        Dutch, a severe
+                                        punishment.
+                                    </p>
+
+
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://www.pastbook.com/txt/12-fun-christmas-facts/')">
+                                        Learn more
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: END OF SINTERKLASS CARD:::-->
+
+                <!-- ::: HEARTBREAKS CARD :::-->
+                <div aria-labelledby="facts-list" class="tab-pane fade" id="heartbreaks" role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img alt="..."
+                                     class="card-img"
+                                     data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZoslKtZk4tKMiksITTLCSSGCWv-lUZJuKvtDqBZIkLBJmaBc1Fw"/>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Two weeks before Christmas is the one of the two most
+                                        popular times for
+                                        couples to break up.</h5>
+                                    <p class="card-text">
+                                        According to data analyzed from Facebook posts and statuses, couples are more
+                                        likely to end their
+                                        relationship two weeks before Christmas and two weeks after Valentine’s day,
+                                        during the spring
+                                        break. Christmas Day, however, is the least favorite day for breakups.
+                                    </p>
+                                    </p>
+
+
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://www.pastbook.com/txt/12-fun-christmas-facts/')">
+                                        Learn more
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: END OF HEARTBREAKS CARD :::-->
+
+                <!-- ::: CHRISTMAS TREES CARD :::-->
+                <div aria-labelledby="facts-list" class="tab-pane fade" id="christmastrees" role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="..."
+                                        class="card-img"
+                                        data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Christmas_tree_ink04.jpg/458px-Christmas_tree_ink04.jpg"
+                                        loading="lazy"/>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Also known as yule trees.</h5>
+                                    <p class="card-text">
+                                        The first known instances of using Christmas trees were in 16th century Germany.
+                                        Instead of the
+                                        glitzy decorations we see on them today, they were decorated with fruits and
+                                        nuts. These trees are
+                                        evergreen and are also known as yule trees.</p>
+
+
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://parenting.firstcry.com/articles/20-interesting-facts-and-information-about-christmas-for-kids/')">
+                                        Learn more
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: END OF CHRISTMAS TREES CARD :::-->
+
+                <!-- ::: REINDEER CARD :::-->
+                <div aria-labelledby="facts-list" class="tab-pane fade" id="reindeer" role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="..."
+                                        class="card-img"
+                                        data-src="https://i.kinja-img.com/gawker-media/image/upload/s--A6UbkExp--/c_scale,f_auto,fl_progressive,q_80,w_800/flj3snxf0jpoz4mnxjbp.jpg"
+                                        loading="lazy"/>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Santa’s Reindeer</h5>
+                                    <p class="card-text">Everyone has heard of Rudolph the red nose reindeer. But it
+                                        would be impossible
+                                        for Rudolph to pull Santa’s sled alone since it is filled to the brim with gifts
+                                        for every good
+                                        child in the world. This is why there are eight other reindeer to help him. They
+                                        are called Cupid,
+                                        Dancer, Vixen, Dunder, Comet, Dasher, Prancer, and Blixem.
+                                    </p>
+
+
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://en.wikipedia.org/wiki/Santa_Claus%27s_reindeer')">
+                                        Learn more
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: END OF REINDEER CARD :::-->
+
+                <!-- Beginning of Christmas Cuisine Card -->
+                <div aria-labelledby="facts-list" class="tab-pane fade" id="cuisine" role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="..."
+                                        class="card-img"
+                                        data-src="https://images.unsplash.com/photo-1481391145929-5bcf567d5211?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+                                        loading="lazy"/>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">A Traditional Meal Celebrated Around the World</h5>
+                                    <p class="card-text">
+                                        The traditional family meal is an integral part of the holiday's festivities.
+                                        Everything from
+                                        festive libations to the main course differ depending each culture's holiday
+                                        traditions.
+                                    </p>
+
+
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://en.wikipedia.org/wiki/Christmas#Traditional_cuisine')">
+                                        Learn more
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Christmas Cuisine Card -->
+
+                <!-- ::: RECYCLE TREE CARD :::-->
+                <div aria-labelledby="facts-list" class="tab-pane fade" id="recycle" role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="Christmas tree"
+                                        class="card-img"
+                                        data-src="https://images.unsplash.com/photo-1515433623871-56fb1702cefc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                                        loading="lazy"/>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Not sure what to do with your tree after Christmas?</h5>
+                                    <p class="card-text">
+                                        Try taking it to your local zoo. They will often recycle it by using it as food
+                                        for the animals.
+                                    </p>
+
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://thefactfile.org/interesting-facts-christmas/')">
+                                        Learn more
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: END OF RECYCLE TREE CARD :::-->
+
+                <!-- ::: IMAGE OF SANTA CLAUS CARD:::-->
+                <div aria-labelledby="facts-list" class="tab-pane fade" id="image" role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="..."
+                                        class="card-img"
+                                        data-src="https://static-36.sinclairstoryline.com/resources/media/b3aadd55-a5fb-4566-b3ca-02ec103c4b48-large16x9_Santa.jpg?1513962385957"/>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Image of Santa Claus flying his sleigh</h5>
+                                    <p class="card-text">
+                                        The image of Santa Claus flying his sleigh began in 1819 and was created by
+                                        Washington Irving, the same author who dreamt up the Headless Horseman.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: END OF IMAGE OF SANTA CLAUS CARD:::-->
+
+                <!-- ::: STOCKINGS CARD :::-->
+                <div aria-labelledby="facts-list" class="tab-pane fade " id="stockings" role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="..."
+                                        class="card-img"
+                                        data-src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/christmas-stockings-royalty-free-image-488769494-1541697986.jpg?crop=0.969xw:0.970xh;0.0311xw,0.0300xh&resize=980:*"/>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hanging stockings started with an accident. </h5>
+                                    <p class="card-text">
+                                        According to legend, we hang out stockings by the chimney with care thanks to a
+                                        poor man who didn't have the money for his three daughters' dowries. Generous
+                                        old St. Nick (remember, that's his trademark!) dropped a bag of gold down their
+                                        chimney one night, where the girls had hung their stockings to dry by the fire.
+                                        That's where the gold ended up, and allegedly how the tradition began.
+                                    </p>
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://www.smithsonianmag.com/arts-culture/the-legend-of-the-christmas-stocking-160854441/')">
+                                        Learn more
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: END OF STOCKINGS CARD :::-->
+
+                <!-- ::: ARTIFICIAL TREES CARD :::-->
+                <div aria-labelledby="facts-list" class="tab-pane fade " id="artificialTree" role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="..."
+                                        class="card-img"
+                                        data-src="https://myvintagesoul.typepad.com/.a/6a00e551cab4f88833010536afcc1e970c-pi"/>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">First artificial Christmas Tree</h5>
+                                    <p class="card-text">
+                                        The first artificial Christmas Tree wasn’t a tree at all. It was created out of
+                                        goose feathers that were dyed green.
+                                        The first artificial Christmas trees were developed in Germany in the 19th
+                                        century, due to a major continuous
+                                        deforestation. The feather trees became increasingly popular during the early
+                                        20th century and finally made their way to
+                                        the US.
+                                    </p>
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://www.gardeniasfire.com/blog/fun-facts-about-christmas')">
+                                        Learn more
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: END OF ARTIFICIAL TREES CARD :::-->
+
+                <!-- ::: VIKING ORIGIN OF CHRISTMAS TREES CARD :::-->
+                <div aria-labelledby="facts-list" class="tab-pane fade " id="vikingOriginChristmasTrees"
+                     role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="..."
+                                        class="card-img"
+                                        data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/First_Christmas_Tree_in_Britain_1846_Illustrated_London_News.jpg/396px-First_Christmas_Tree_in_Britain_1846_Illustrated_London_News.jpg"/>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">There are many traditions for decoration of and with trees
+                                        during celebrations around Christmas times. One of these comes from the
+                                        vikings. </h5>
+                                    <p class="card-text">
+                                        Since long before Christianity appeared, vikings used to decorate their homes
+                                        with evergreen trees and plants to celebrate the Winter Solstice, the 21st or
+                                        22nd of December.
+                                        The Winter Solstice is the shortest day, and marks the point when days grow
+                                        longer. In viking tradition, the Winter Solstice marks the return in strength of
+                                        the sun god, Baldr,
+                                        which had been weakend during winter. The evergreen trees and plants served as a
+                                        reminder that the god would glow again and summer was on it's way.
+                                    </p>
+
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://www.zmescience.com/science/history-science/origin-christmas-tree-pagan/')">
+                                        Learn more
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: END OF VIKING ORIGIN OF CHRISTMAS TREES CARD :::-->
+
+                <!-- ::: TWELVE DAY OF CHRISTMAS  :::-->
+                <div aria-labelledby="facts-list" class="tab-pane fade " id="twelveDayOfChristmas"
+                     role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                        alt="..."
+                                        class="card-img"
+                                        data-src="data:image/jpeg;base64,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"/>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Twelve Days of Christmas. </h5>
+                                    <p class="card-text">
+                                            The 12 days of Christmas is the period that in Christian theology
+                                            marks the span between the birth of Christ and the coming of the Magi,
+                                            the three wise men.
+                                            It begins on December 25 (Christmas) and runs through
+                                            January 6 (the Epiphany, sometimes also called Three Kings' Day).
+                                            The four weeks preceding Christmas are collectively known as Advent,
+                                            which begins four Sundays before Christmas and ends on December 24.
+                                    </p>
+
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://www.vox.com/2015/12/25/10661878/12-days-of-christmas-explained')">
+                                        Learn more
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: END OF TWELVE DAY OF CHRISTMAS :::-->
+
+                <!-- ::: Meaning of Xmas Start  :::-->
+                <div aria-labelledby="facts-list" class="tab-pane fade " id="xmas"
+                     role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                    alt="..."
+                                    class="card-img"
+                                    data-src="https://images.pexels.com/photos/273883/pexels-photo-273883.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">The meaning of Xmas </h5>
+                                    <p class="card-text">
+                                        Ever wondered why Christmas is also known as Xmas?
+                                        The X comes from the ancient Greek language where X refers to Christ.
+                                        So, Xmas simply means Christmas.
+                                    </p>
+
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://parenting.firstcry.com/articles/20-interesting-facts-and-information-about-christmas-for-kids/')">
+                                        Learn more
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: Meaning of Xmas End :::-->
+                <!-- ::: Meaning of santaclaus Start  :::-->
+                <div aria-labelledby="facts-list" class="tab-pane fade " id="santaclaus"
+                     role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                    alt="..."
+                                    class="card-img"
+                                    data-src="https://cdn.cdnparenting.com/articles/2017/12/324282713-H.jpg"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Santa Claus</h5>
+                                    <p class="card-text">
+                                        One of the most interesting aspects of Christmas, especially for children, is Santa Claus. Children want to catch Santa Claus bringing them presents. The character is based on St. Nicholas who loved children and also enjoyed giving gifts to children secretly.
+                                    </p>
+
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://parenting.firstcry.com/articles/20-interesting-facts-and-information-about-christmas-for-kids/')">
+                                        Learn more
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: Meaning of santaclaus End :::-->
+                <!-- ::: X in Xmas  :::-->
+                <div aria-labelledby="facts-list" class="tab-pane fade " id="xinxmas"
+                     role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                    alt="..."
+                                    class="card-img"
+                                    data-src="https://www.pastbook.com/txt/assets/xmas.jpg"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">The X in Xmas</h5>
+                                    <p class="card-text">
+                                        Xmas is a common abbreviation of the word Christmas, however, some people think that this spelling is not right, because it takes the “Christ” out of Christmas. Don’t worry, no one is taking the “Christ” anywhere. In the Greek alphabet, the letter X (“chi”) is the first letter of the Greek word for Christ or Christos.
+                                    </p>
+
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://www.pastbook.com/txt/12-fun-christmas-facts/')">
+                                        Learn more
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: Meaning of santaclaus End :::-->
+                <!-- ::: Christmas Candy Cane Story Start  :::-->
+                <div aria-labelledby="facts-list" class="tab-pane fade " id="candyCane"
+                     role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                    alt="..."
+                                    class="card-img"
+                                    data-src="https://images.unsplash.com/photo-1550077958-b876071114b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80"
+                                />
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Christmas Candy Cane Story</h5>
+                                    <p class="card-text">
+                                        When the Candy Cane was invented in Germany, it was made into a J for Jesus and the red stripes symbolize his blood. 
+                                        Read on to know more!
+                                    </p>
+
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://en.wikipedia.org/wiki/Candy_cane')">
+                                        Learn more
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: Christmas Candy Cane Story End :::-->
+                <!-- ::: Mistletoe Story Start  :::-->
+                <div aria-labelledby="facts-list" class="tab-pane fade " id="mistletoe"
+                     role="tabpanel">
+                    <div class="card mb-3" style="max-width: 670px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-lg-4">
+                                <img
+                                    alt="..."
+                                    class="card-img"
+                                    data-src="https://www.gannett-cdn.com/-mm-/024e847695ee03ffd12b22e691d9bcb8febead0f/c=0-86-1700-1042/local/-/media/Rochester/2014/12/05/mistletoe-christmas1.jpg?width=580&height=326&fit=crop"/>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mistletoe Story</h5>
+                                    <p class="card-text">
+                                        Mistletoe kissing originated with fertility rites. The hanging sprig is a very ancient symbol of virility and therefore anybody standing beneath it is signaling that he or she is sexually available.
+                                    </p>
+
+                                    <button class='btn-read-more'
+                                            onclick="window.open('https://www.inc.com/geoffrey-james/10-weird-facts-about-christmas.html')">
+                                        Learn more
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ::: Mistletoe Story End :::-->
             </div>
-            <!-- ::: END OF JINGLE BELLS :::-->
-          
-            <!-- ::: RUDOLPH CARD :::-->
-              <div class="tab-pane fade" id="rudolph" role="tabpanel" aria-labelledby="facts-list">
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="https://i0.wp.com/www.brainpickings.org/wp-content/uploads/2011/12/rudolph4.jpg?w=180&ssl=1"
-                      class="card-img" alt="..." loading="lazy" />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Not what your expected...</h5>
-                      <p class="card-text">
-                        Rudolph’s red nose is probably the result of a parasitic infection of his respiratory system.
-                        According to Roger Highfield, the author of the book “The Physics of Christmas: From the
-                        Aerodynamics of Reindeer to the Thermodynamics of Turkey” the world’s most famous reindeer has a
-                        red nose due to a parasite. However, Rudolf’s relationship with his parasite is symbiotic: after
-                        all, the red nose illuminates the path through the winter night for the whole reindeer team.
-                      </p>
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">Read more at<a href="https://www.pastbook.com/txt/12-fun-christmas-facts/"
-                            target="__blank"> pastbook.com</a>
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="site-footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <a class="footer-logo" href="#"><i class="fa fa-cube"></i> SANTA<span
+                        class="brand-color">FIED</span></a>
+                <p>
+                    Contact us for all of your Christmas questions:
+                </p>
+                <!--Remove tel spaces in the href-->
+                <a class="footer-tel" href="tel:+1800123456">+ 1 800 123 456</a><br/><span
+                    class="footer-email">Email
+                      <a href="mailto:support@santafied.fi">support@santafied.fi</a></span>
             </div>
-            <!-- ::: END OF RUDOLPH CARD :::-->
-
-            <!-- ::: CAROLS CARD:::-->
-            <div class="tab-pane fade" id="carolling" role="tabpanel" aria-labelledby="facts-list">
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img data-src="https://images.theconversation.com/files/199683/original/file-20171218-27568-1p0h8sv.jpg"
-                      class="card-img" alt="..." loading="lazy"/>
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Tradition of Singing Carols</h5>
-                      <p class="card-text">
-                        Have you ever wondered why groups of people go to door to door singing carols?
-                        The tradition is based on the English custom of wassailing which was a tradition to toast to
-                        someone’s good health and fortune.
-                        St. Francis of Assisi took this tradition and converted it to the modern form of carolling.</p>
-                      <p class="card-text">
-                        <small class="text-muted">More information at <a
-                            href="https://en.wikipedia.org/wiki/Christmas_Caroling" target="__blank"> Wikipedia</a>
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> 
-            <!-- ::: END OF CAROLS CARD :::-->
-
-            <!-- ::: SINTERKLASS CARD :::-->
-            <div class="tab-pane fade" id="dutch-santa" role="tabpanel" aria-labelledby="facts-list">
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img data-src="https://www.pastbook.com/txt/assets/Sinterklaas.jpg" class="card-img" alt="..." />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title"> Sinterklaas (the Dutch version of Santa Claus) arrives from Spain, not from
-                        the North Pole.</h5>
-                      <p class="card-text">
-                        That’s not the only weird thing about the Dutch Christmas. Sinterklaas has his little helpers, but
-                        they are not adorable hard-working elves: they are black-faced boys and girls who can steal your
-                        kids if they misbehave, and bring them to back Spain which is, according to the Dutch, a severe
-                        punishment.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">Read more at<a href="https://www.pastbook.com/txt/12-fun-christmas-facts/"
-                            target="__blank"> pastbook.com</a>
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-12 col-md-4 footer-links">
+                <h4>Links</h4>
+                <ul class="list-unstyled">
+                    <li><a href="./facts.html">Facts and Info</a></li>
+                    <li><a href="./recipes.html">Recipes</a></li>
+                    <li><a href="./gifts.html">Gifts Suggestions</a></li>
+                    <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
+                    <li><a href="./games.html">Seasonal Games</a></li>
+                    <li><a href="./films.html">Seasonal Films</a></li>
+                    <li><a href="./books.html">Seasonal Books</a></li>
+                    <li><a href="./activities.html">Seasonal Activities</a></li>
+                </ul>
             </div>
-            <!-- ::: END OF SINTERKLASS CARD:::-->
-
-            <!-- ::: HEARTBREAKS CARD :::-->
-            <div class="tab-pane fade" id="heartbreaks" role="tabpanel" aria-labelledby="facts-list">
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZoslKtZk4tKMiksITTLCSSGCWv-lUZJuKvtDqBZIkLBJmaBc1Fw" class="card-img" alt="..." />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title"> Two weeks before Christmas is the one of the two most popular times for
-                          couples to break up.</h5>
-                      <p class="card-text">
-                          According to data analyzed from Facebook posts and statuses, couples are more likely to end their
-                          relationship two weeks before Christmas and two weeks after Valentine’s day, during the spring
-                          break. Christmas Day, however, is the least favorite day for breakups.
-                      </p>
-                      </p>
-                       <p class="card-text">
-                        <small class="text-muted">Read more at<a
-                              href="https://www.pastbook.com/txt/12-fun-christmas-facts/" target="__blank">
-                              pastbook.com</a></small>
-                      </p>
+            <div class="col-12 col-md-4">
+                <h4>Let's stay in touch</h4>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label class="sr-only" for="footer-form-email">Email</label>
+                        <input class="form-control form-inverted" id="footer-form-email" placeholder="Email"
+                               type="email"/>
+                        <button class="btn btn-primary" type="submit">Submit</button>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div> 
-            <!-- ::: END OF HEARTBREAKS CARD :::-->
+                </form>
 
-            <!-- ::: CHRISTMAS TREES CARD :::-->
-            <div class="tab-pane fade" id="christmastrees" role="tabpanel" aria-labelledby="facts-list">
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Christmas_tree_ink04.jpg/458px-Christmas_tree_ink04.jpg"
-                      class="card-img" alt="..." loading="lazy" />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Also known as yule trees.</h5>
-                      <p class="card-text">
-                        The first known instances of using Christmas trees were in 16th century Germany. Instead of the
-                        glitzy decorations we see on them today, they were decorated with fruits and nuts. These trees are
-                        evergreen and are also known as yule trees.</p>
-                      <p class="card-text">
-                        <small class="text-muted">Read more at<a
-                            href="https://parenting.firstcry.com/articles/20-interesting-facts-and-information-about-christmas-for-kids/"
-                            target="__blank"> firstcry.com</a></small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <p>Get updates on sales and more</p>
+                <ul class="list-inline footer-social">
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
             </div>
-             <!-- ::: END OF CHRISTMAS TREES CARD :::-->
-
-            <!-- ::: REINDEER CARD :::-->
-            <div class="tab-pane fade" id="reindeer" role="tabpanel" aria-labelledby="facts-list">
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="https://i.kinja-img.com/gawker-media/image/upload/s--A6UbkExp--/c_scale,f_auto,fl_progressive,q_80,w_800/flj3snxf0jpoz4mnxjbp.jpg"
-                      class="card-img" alt="..." loading="lazy"/>
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Santa’s Reindeer</h5>
-                      <p class="card-text">Everyone has heard of Rudolph the red nose reindeer. But it would be impossible
-                        for Rudolph to pull Santa’s sled alone since it is filled to the brim with gifts for every good
-                        child in the world. This is why there are eight other reindeer to help him. They are called Cupid,
-                        Dancer, Vixen, Dunder, Comet, Dasher, Prancer, and Blixem.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">Read more at<a
-                            href="https://en.wikipedia.org/wiki/Santa_Claus%27s_reindeer" target="__blank"> wikipedia</a>
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="row">
+            <div class="footer-copyright">
+                &copy; Santafied. A project under zero-to-mastery.
             </div>
-            <!-- ::: END OF REINDEER CARD :::-->
-
-            <!-- Beginning of Christmas Cuisine Card -->
-            <div class="tab-pane fade" id="cuisine" role="tabpanel" aria-labelledby="facts-list">
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="https://images.unsplash.com/photo-1481391145929-5bcf567d5211?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
-                      class="card-img" alt="..." loading="lazy"/>
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">A Traditional Meal Celebrated Around the World</h5>
-                      <p class="card-text">
-                        The traditional family meal is an integral part of the holiday's festivities. Everything from
-                        festive libations to the main course differ depending each culture's holiday traditions.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">Read more at<a
-                            href="https://en.wikipedia.org/wiki/Christmas#Traditional_cuisine" target="__blank">
-                            wikipedia</a></small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End of Christmas Cuisine Card -->
-
-            <!-- ::: RECYCLE TREE CARD :::-->
-            <div class="tab-pane fade" id="recycle" role="tabpanel" aria-labelledby="facts-list">
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="https://images.unsplash.com/photo-1515433623871-56fb1702cefc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
-                      class="card-img" alt="Christmas tree" loading="lazy" />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title"> Not sure what to do with your tree after Christmas?</h5>
-                      <p class="card-text">
-                        Try taking it to your local zoo. They will often recycle it by using it as food for the animals.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">Read more at<a href="https://thefactfile.org/interesting-facts-christmas/"
-                            target="__blank">
-                            Fact File</a></small>
-                      </p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ::: END OF RECYCLE TREE CARD :::-->
-
-            <!-- ::: IMAGE OF SANTA CLAUS CARD:::-->
-            <div class="tab-pane fade" id="image" role="tabpanel" aria-labelledby="facts-list">
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="https://static-36.sinclairstoryline.com/resources/media/b3aadd55-a5fb-4566-b3ca-02ec103c4b48-large16x9_Santa.jpg?1513962385957"
-                      class="card-img" alt="..." />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Image of Santa Claus flying his sleigh</h5>
-                      <p class="card-text">
-                       The image of Santa Claus flying his sleigh began in 1819 and was created by Washington Irving, the same author who dreamt up the Headless Horseman.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ::: END OF IMAGE OF SANTA CLAUS CARD:::-->
-
-            <!-- ::: STOCKINGS CARD :::-->
-            <div class="tab-pane fade " id="stockings" role="tabpanel" aria-labelledby="facts-list">
-              <div class="card mb-3" style="max-width: 670px;">
-                <div class="row no-gutters">
-                  <div class="col-md-12 col-lg-4">
-                    <img
-                      data-src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/christmas-stockings-royalty-free-image-488769494-1541697986.jpg?crop=0.969xw:0.970xh;0.0311xw,0.0300xh&resize=980:*"
-                      class="card-img" alt="..." />
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Hanging stockings started with an accident. </h5>
-                      <p class="card-text">
-                       According to legend, we hang out stockings by the chimney with care thanks to a poor man who didn't have the money for his three daughters' dowries. Generous old St. Nick (remember, that's his trademark!) dropped a bag of gold down their chimney one night, where the girls had hung their stockings to dry by the fire. That's where the gold ended up, and allegedly how the tradition began.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ::: END OF STOCKINGS CARD :::-->
-
           </div>
         </div>
-      </div>
     </div>
+</footer>
+<script src="../assets/js/darkmode.js"></script>
 
-    <footer>
-      &copy; Santafied. A project under zero-to-mastery.
-    </footer>
+<script src="../assets/js/mouse-trail-snowball.js"></script>
+<script src="../assets/js/navLink-generator.js"></script>
+<script
+        crossorigin="anonymous"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        src="https://code.jquery.com/jquery-3.4.1.min.js">
+</script>
+<script crossorigin="anonymous"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+</script>
+<script crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+</script>
+<script type="text/javascript">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    // grab the tab shown event and move the document on top by callling
+    // scrollTop method.
 
-  </body>
+    $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
+        //e.target // newly activated tab
+        //e.relatedTarget // previous active tab
+        //$(window).scrollTop(0);
+        $("html, body").animate({scrollTop: 0}, 10);
+    })
+</script>
+</body>
 </html>
