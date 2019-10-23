@@ -1227,4 +1227,47 @@ But it's Christmas day<br>
 (Christmas)<br>
 Baby, please come home`,
 },
+{
+    title: 'Little Saint Nick',
+    description: '"Little Saint Nick" is a Christmas-themed hot rod song about Santa Claus and his sleigh, written by Brian Wilson and Mike Love of the American rock band The Beach Boys. It was released on December 9, 1963.',
+    imageURL: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/BBXmasCover.jpg',
+    youtubeURL: 'https://www.youtube.com/watch?v=AbgxDgVmMF0',
+    audioURL: 'https://jmeshel.com/wp-content/uploads/2010/04/Little-Saint-Nick.mp3?_=1',
+    lyrics: `Merry Christmas Saint Nick<br>
+        Christmas comes this time each year<br>
+
+        Well a way up north where the air gets cold<br>
+        There's a tale about Christmas that you've all been told<br>
+        And a real famous cat all dressed up in red<br>
+        And he spends the whole year working out on his sled<br>
+
+        It's the little Saint Nick (little Saint Nick)<br>
+        It's the little Saint Nick (little Saint Nick)<br>
+
+        Just a little bob sleigh we call it old Saint Nick<br>
+        But she'll walk a toboggan with a four speed stick<br>
+        She's candy apple red with a ski for a wheel<br>
+        And when Santa hits the gas man just watch her peel<br>
+
+        It's the little Saint Nick (little Saint Nick)<br>
+        It's the little Saint Nick (little Saint Nick)<br>
+        Run run reindeer<br>
+        Run run reindeer (oh-oh-oh-oh)<br>
+        Run run reindeer<br>
+        Run run reindeer<br>
+        He don't miss no one<br>
+
+        And haulin' through the snow at a frightenin' speed<br>
+        With a half a dozen deer with the a-Rudy to lead<br>
+        He's gotta wear his goggles 'cause the snow really flies<br>
+        And he's cruisin' every pad with a little surprise<br>
+
+        It's the little Saint Nick (little Saint Nick)<br>
+        It's the little Saint Nick (little Saint Nick)<br>
+        Merry Christmas Saint Nick<br>
+        Christmas comes this time each year, ooh<br>
+        Merry Christmas Saint Nick<br>
+        Christmas comes this time each year, ooh<br>
+        `,
+}
 ];
