@@ -2,10 +2,11 @@
 body.dark {
   /* Dark mode variables go here */
   --background-color: #000000;
-  --background-color-rgb: 0,0,0;
+  --background-color-rgb: 0, 0, 0;
 
   --text-color: #ffffff;
-  --text-color-rgb: 255,255,255;
+  --text-color-rgb: 255, 255, 255;
+  transition: all 250ms linear;
 }
 
 .toggle-darkmode {
@@ -13,7 +14,7 @@ body.dark {
   margin-top: 5px;
 }
 
-.toggle-container{
+.toggle-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +28,6 @@ body.dark {
   cursor: pointer;
 }
 
-
 /* The switch - the box around the slider */
 .switch {
   display: inline-block;
@@ -35,7 +35,6 @@ body.dark {
   position: relative;
   cursor: pointer;
 }
-
 
 /* Hide default HTML checkbox */
 .switch input {
@@ -56,20 +55,20 @@ body.dark {
   margin-bottom: 0;
   cursor: pointer;
   background-color: #2d2d2d;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 10px;
   width: 10px;
   left: 0;
   bottom: -2px;
   background-color: #2d2d2d;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -77,11 +76,11 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .slider:before {
-  background-color: white ;
+  background-color: white;
   -webkit-transform: translateX(55px);
   -ms-transform: translateX(55px);
   transform: translateX(55px);
@@ -97,13 +96,13 @@ input:checked + .slider:before {
 }
 
 @media screen and (max-width: 600px) {
-  .toggle-container{
+  .toggle-container {
     justify-content: flex-start;
   }
 }
 
 @media (min-width: 601px) and (max-width: 1200px) {
-  .toggle-container{
+  .toggle-container {
     justify-content: flex-start;
   }
 }
