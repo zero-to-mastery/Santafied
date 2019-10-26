@@ -161,6 +161,13 @@ section#hero-content {
     opacity: .9;
 }
 
+/* Form email field */
+.form-inline .form-control:focus::placeholder {
+    transition: all .2s;
+    font-size: 70%;
+    transform: translateY(-10px);
+}
+
 
 @media (min-width: 1280px) {
     .centered .display-1 {
