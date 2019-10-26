@@ -2,7 +2,6 @@ window.onload = async () => {
   const response = await fetch('https://api.unsplash.com/photos/random?client_id=5f15d1d0b2164d7a7e6f371db87cae6cbce09dcab5e63fd0d0214b40a21d4b7a&count=21&query=christmas')
 
   const myJson = await response.json()
-  console.log('response', myJson)
 
   const filteredPhotos = myJson.map((photo) => ({
     link: photo.links.html,
@@ -37,6 +36,4 @@ window.onload = async () => {
 
     container.appendChild(image(photo))
   })
-
-  console.log('filteredPhotos', filteredPhotos)
 }
