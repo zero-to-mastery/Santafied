@@ -137,6 +137,12 @@ section#hero-content {
     margin: 30px auto 0;
 }
 
+/* Button subscribe */
+
+.newsletter-subscribe form .btn-danger:hover {
+    background-color: #ff0016 !important;
+}
+
 
 /*Radio section*/
 .radio {
