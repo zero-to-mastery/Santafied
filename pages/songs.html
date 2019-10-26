@@ -16,8 +16,7 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <script src="../assets/js/lazyloading.js"></script>
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/5e68800c4a.js"></script>
-    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet" />
     <link href="../assets/css/main.css" rel="stylesheet" />
     <link href="../assets/css/films.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
@@ -36,101 +35,107 @@
     <!-- :::NAV Starts ::: -->
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> <span>SANTA</span><span
-                    class="brand-color">FIED</span></a>
-            <div class="dropdown dropdown-container">
-                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
-                    href="#" id="navbarDropdown" role="button">
-                    Navigation
-                </a>
-                <div aria-labelledby="navbarDropdown" class="dropdown-menu" id="nav-dropdown-from-page">
-                </div>
+            <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> <span>SANTA</span><span class="brand-color">FIED</span></a>
+            <div class="navbar-collapse collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Navigation
+                        </a>
+                        <div class="dropdown-menu" id="nav-dropdown-from-page" aria-labelledby="navbarDropdown">
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="nav-item toggle-darkmode"></div>
 
         </nav>
     </div>
     <!-- :::END OF Nav -->
     <div id="songs-container" class="container">
-            <!-- ::: TITLE ::: -->
-            <h1 class="title">Christmas Songs</h1>
-            <!-- ::: CONTAINER FOR MENU AND CARDS ::: -->
-            <div class="row">
-                <!-- ::: MENU CONTAINER ::: -->
-                <div class="col-md-4 tab-navigation">
-                    <!-- ::: MENU ::: -->                
-                    <div class="list-group" id="list-tab" role="tablist">            
-                        <!-- ::: MENU ITEM TEMPLATE -->      
-                        <template id="menu-template">
-                            <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                                href="#last-christmas" id="list-settings-list" role="tab"><!-- *** { song.title } *** --></a>                            
-                        </template>
-                        <!-- ::: END OF MENU ITEM TEMPLATE-->
-                    </div>
+        <!-- ::: TITLE ::: -->
+        <h1 class="title">Christmas Songs</h1>
+        <!-- ::: CONTAINER FOR MENU AND CARDS ::: -->
+        <div class="row">
+            <!-- ::: MENU CONTAINER ::: -->
+            <div class="col-md-4 tab-navigation">
+                <!-- ::: MENU ::: -->
+                <div class="list-group" id="list-tab" role="tablist">
+                    <!-- ::: MENU ITEM TEMPLATE -->
+                    <template id="menu-template">
+                        <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list" href="#last-christmas" id="list-settings-list" role="tab">
+                            <!-- *** { song.title } *** --></a>
+                    </template>
+                    <!-- ::: END OF MENU ITEM TEMPLATE-->
                 </div>
-                <!-- ::: END OF MENU CONTAINER ::: -->
-        
-                <!-- ::: CARDS CONTAINER ::: -->
-                <div class="col-8">
-                    <!-- ::: NESTED CARDS CONTAINER ::: -->
-                        <div id="card-container" class="tab-content" id="nav-tabContent">
-                            <!-- ::: CARD TEMPLATE ::: -->
-                            <template id="card-template">
-                                <div aria-labelledby="grinch-stole-list" class="tab-pane fade"
-                                    role="tabpanel">
-                                    <div class="card mb-3" style="max-width: 670px;">
-                                        <div class="row no-gutters">
-                                            <div class="col-md-4">
-                                                <!-- *** { song.imageUrl } *** -->
-                                                <img alt="..." class="card-img" />
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="card-body">
-                                                    <h5 class="card-title"><!-- *** { song.title } *** --></h5>
-                                                    <p class="card-text"><!-- *** { song.description } *** --></p>                                                
-                                                    <small class="text-muted">
-                                                        <!-- *** { song.youtubeUrl } *** -->
-                                                        Watch the video on <a target="__blank">Youtube</a>
-                                                    </small>            
-                                                    <hr>
-                                                    <figure>
-                                                        <figcaption><!-- ::: Listen to { songs.title } ::: --></figcaption>
-                                                        <!-- *** { song.audioUrl } *** -->
-                                                        <audio controls>
-                                                            Your browser does not support the
-                                                            <code>audio</code> element.
-                                                        </audio>
-                                                    </figure>
-                                                    <hr>            
-                                                    <h5>Lyrics</h5>
-                                                    <p id="lyrics"><!-- *** { song.lyrics } *** --></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>                    
-                                </div>
-                            </template>
-                            <!-- ::: END OF CARD TEMPLATE ::: -->
-                        </div>
-                    <!-- ::: END OF CARDS CONTAINER ::: -->
-                </div>
-            <!-- ::: END OF CONTAINER FOR MENU AND CARDS ::: -->
             </div>
+            <!-- ::: END OF MENU CONTAINER ::: -->
+
+            <!-- ::: CARDS CONTAINER ::: -->
+            <div class="col-8">
+                <!-- ::: NESTED CARDS CONTAINER ::: -->
+                <div id="card-container" class="tab-content" id="nav-tabContent">
+                    <!-- ::: CARD TEMPLATE ::: -->
+                    <template id="card-template">
+                        <div aria-labelledby="grinch-stole-list" class="tab-pane fade" role="tabpanel">
+                            <div class="card mb-3" style="max-width: 670px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <!-- *** { song.imageUrl } *** -->
+                                        <img alt="..." class="card-img" />
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                <!-- *** { song.title } *** -->
+                                            </h5>
+                                            <p class="card-text">
+                                                <!-- *** { song.description } *** -->
+                                            </p>
+                                            <small class="text-muted">
+                                                <!-- *** { song.youtubeUrl } *** -->
+                                                Watch the video on <a target="__blank">Youtube</a>
+                                            </small>
+                                            <hr>
+                                            <figure>
+                                                <figcaption>
+                                                    <!-- ::: Listen to { songs.title } ::: -->
+                                                </figcaption>
+                                                <!-- *** { song.audioUrl } *** -->
+                                                <audio controls>
+                                                    Your browser does not support the
+                                                    <code>audio</code> element.
+                                                </audio>
+                                            </figure>
+                                            <hr>
+                                            <h5>Lyrics</h5>
+                                            <p id="lyrics">
+                                                <!-- *** { song.lyrics } *** -->
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                    <!-- ::: END OF CARD TEMPLATE ::: -->
+                </div>
+                <!-- ::: END OF CARDS CONTAINER ::: -->
+            </div>
+            <!-- ::: END OF CONTAINER FOR MENU AND CARDS ::: -->
         </div>
-    
+    </div>
+
     <!-- FOOTER -->
     <footer class="site-footer" id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4">
-                    <a class="footer-logo" href="#"><i class="fa fa-cube"></i> SANTA<span
-                            class="brand-color">FIED</span></a>
+                    <a class="footer-logo" href="#"><i class="fa fa-cube"></i> SANTA<span class="brand-color">FIED</span></a>
                     <p>
                         Contact us for all of your Christmas questions:
                     </p>
                     <!--Remove tel spaces in the href-->
-                    <a class="footer-tel" href="tel:+1800123456">+ 1 800 123 456</a><br /><span
-                        class="footer-email">Email
+                    <a class="footer-tel" href="tel:+1800123456">+ 1 800 123 456</a><br /><span class="footer-email">Email
                         <a href="mailto:support@santafied.fi">support@santafied.fi</a></span>
                 </div>
                 <div class="col-12 col-md-4 footer-links">
@@ -151,8 +156,7 @@
                     <form class="form-inline">
                         <div class="form-group">
                             <label class="sr-only" for="footer-form-email">Email</label>
-                            <input class="form-control form-inverted" id="footer-form-email" placeholder="Email"
-                                type="email" />
+                            <input class="form-control form-inverted" id="footer-form-email" placeholder="Email" type="email" />
                             <button class="btn btn-primary" type="submit">Submit</button>
                         </div>
                     </form>
@@ -177,24 +181,19 @@
                 </div>
             </div>
     </footer>
-    
-    <script
-    crossorigin="anonymous"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    src="https://code.jquery.com/jquery-3.4.1.min.js">
+
+    <script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" src="https://code.jquery.com/jquery-3.4.1.min.js">
     </script>
 
     <script type="text/javascript">
-    function onPlay(songReference)
-    {   
-        //Pass the reference of the song played
-        //Get all the audio components and avoid the one user selected.
-        $("audio").not(songReference).each(function(index, audio) 
-        {
-            //Pause every audio.
-            audio.pause();
-        });
-    }
+        function onPlay(songReference) {
+            //Pass the reference of the song played
+            //Get all the audio components and avoid the one user selected.
+            $("audio").not(songReference).each(function (index, audio) {
+                //Pause every audio.
+                audio.pause();
+            });
+        }
     </script>
 
     <script src="../assets/data/songs.js"></script>
@@ -202,12 +201,9 @@
     <script src="../assets/js/darkmode.js"></script>
     <script src="../assets/js/mouse-trail-snowball.js"></script>
     <script src="../assets/js/navLink-generator.js"></script>
-    <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
