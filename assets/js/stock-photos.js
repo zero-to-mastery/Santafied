@@ -33,10 +33,10 @@ window.onload = async () => {
       const imgDiv = document.createElement('div')
 
       imgDiv.setAttribute('style',
-        "padding: 10px 5px; margin: 2px; border: 1px solid black; border-radius: 7px; text-align: center; width: 30%",
+        "padding: 7px 0; margin: 7px; border: 1px solid black; border-radius: 7px; text-align: center; width: 30%; box-shadow: 5px 5px 10px 1px;",
       )
 
-      imgDiv.innerHTML = `<a href=${photoProps.link}><img src=${photoProps.url} alt=${photoProps.alt_description} /><br /><span>Photo by ${photoProps.photographer}</span></a>`
+      imgDiv.innerHTML = `<a href=${photoProps.link}><img src=${photoProps.url} alt="${photoProps.alt_description}" style="max-height: 250px"/><br /><span>Photo by ${photoProps.photographer}</span></a>`
 
       return imgDiv
     }
