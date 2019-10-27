@@ -40,6 +40,10 @@ body.dark div#list-tab.list-group div{
 .row{
   width: 100%;
 }
+
+.list-group {
+  cursor: pointer;
+}
 /* #list-tab{
     height: 40%;
     overflow-x: hidden;

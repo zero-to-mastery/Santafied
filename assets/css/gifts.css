@@ -147,7 +147,7 @@ div.products {
 
 .img-fluid {
   width: 100vw;
-  height: auto;
+  height: 100%;
   border: 1px groove black;
 }
 
