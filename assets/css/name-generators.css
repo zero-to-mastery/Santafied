@@ -1,0 +1,48 @@
+main {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 5% 0 10%;
+    width: 100vw;
+}
+
+.generator-title {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.generator-tile {
+    background-color: #ff4546;
+    border-radius: .7rem;
+    height: 12rem;
+    margin: 1rem;
+    padding-top: 1.2rem;
+    text-align: center;
+    width: 15rem;
+}
+
+.generator-tile a {
+    text-decoration: none;
+}
+
+svg {
+    display: block;
+    fill: #fff;
+    margin: 0 auto 15px;
+    width: 75px;
+}
+
+.generator-tile span {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}

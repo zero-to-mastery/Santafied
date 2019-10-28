@@ -2,101 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <script
-      src="https://kit.fontawesome.com/5e68800c4a.js"
       crossorigin="anonymous"
+      src="https://kit.fontawesome.com/5e68800c4a.js"
     ></script>
     <link
-      rel="stylesheet"
+      crossorigin="anonymous"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
+      rel="stylesheet"
     />
     <link
       href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap"
       rel="stylesheet"
     />
     <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"
+      rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="../assets/css/main.css" />
-    <link rel="stylesheet" href="../assets/css/activities.css" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/activities.css" rel="stylesheet" />
+    <link href="../assets/css/mouse-trail-snowball.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/darkmode.css" />
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
+    <link rel="stylesheet" href="../assets/css/darkmode.css" />
+
     <title>Santafied | Activities</title>
   </head>
 
   <body class="sub-page">
+    <div id="snowball1"></div>
+    <div id="snowball2"></div>
+    <div id="snowball3"></div>
     <!-- :::NAV Starts ::: -->
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="../index.html"
-          ><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a
+          ><i class="fa fa-cube"></i> <span>SANTA</span
+          ><span class="brand-color">FIED</span></a
         >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-collapse collapse" id="navbarContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/facts.html">Facts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/recipes.html"
-                >Recipes</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/gifts.html">Gifts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/songs.html">Songs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/games.html">Games</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/films.html">Films</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="../pages/books.html">Books</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link selected" href="../pages/activities.html"
-                >Activities</a
-              >
-            </li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                More
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Navigation
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="elf-name-generator.html"
-                  >Elf Name Generator</a
-                >
-                <a class="dropdown-item" href="party-costumes.html">Party Costumes</a>
-                <a class="dropdown-item" href="international.html">International</a>
-                <a class="dropdown-item" href="party-costumes.html">Party Costumes</a>
-                <a class="dropdown-item" href="blog.html">Blog</a>
+              <div class="dropdown-menu" id="nav-dropdown-from-page" aria-labelledby="navbarDropdown">
               </div>
             </li>
           </ul>
@@ -108,87 +62,961 @@
 
     <!-- main activities content starts here -->
     <div class="container">
-      <h1 class="title">Activities</h1>
+      <h1 class="title">Christmas Activities</h1>
       <div class="row my-md-4">
-        <div class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0" style="width: 18rem;">
+        <div
+          class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0"
+          style="width: 18rem;"
+        >
           <!-- <img src="..." class="card-img-top" alt="..."> -->
           <div class="card-body">
             <h5 class="card-title">Caroling</h5>
-            <p class="card-text">
-              We spread the christmas spirit by caroling from door to door.
-            </p>
-            <a href="#" class="btn btn-primary">Know more</a>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal1"
+            >
+              Know more
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modal1"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Caroling</h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    We spread the christmas spirit by caroling from door to
+                    door.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0" style="width: 18rem;">
+        <div
+          class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0"
+          style="width: 18rem;"
+        >
           <!-- <img src="..." class="card-img-top" alt="..."> -->
           <div class="card-body">
             <h5 class="card-title">Gift Wrapping</h5>
-            <p class="card-text">We wrap gifts for our loved ones</p>
-            <a href="#" class="btn btn-primary">Know more</a>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal2"
+            >
+              Know more
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modal2"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Gift Wrapping
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    We wrap gifts for our loved ones
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0" style="width: 18rem;">
+        <div
+          class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0"
+          style="width: 18rem;"
+        >
           <!-- <img src="..." class="card-img-top" alt="..."> -->
           <div class="card-body">
             <h5 class="card-title">Photo with Santa</h5>
-            <p class="card-text">
-              We take photos with Santa and cheer
-            </p>
-            <a href="#" class="btn btn-primary">Know more</a>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal3"
+            >
+              Know more
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modal3"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Photo with Santa
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    We take photos with Santa and cheer
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="row my-md-4">
-        <div class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0" style="width: 18rem;">
+        <div
+          class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0"
+          style="width: 18rem;"
+        >
           <!-- <img src="..." class="card-img-top" alt="..."> -->
           <div class="card-body">
             <h5 class="card-title">Milk and Cookie Fest</h5>
-            <p class="card-text">
-              We get to spread the Christmas spirit while enjoying some milk and
-              cookies.
-            </p>
-            <a href="#" class="btn btn-primary">Know more</a>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal4"
+            >
+              Know more
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modal4"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Milk and Cookie Fest
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    We get to spread the Christmas spirit while enjoying some
+                    milk and cookies.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0" style="width: 18rem;">
+        <div
+          class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0"
+          style="width: 18rem;"
+        >
           <!-- <img src="..." class="card-img-top" alt="..."> -->
           <div class="card-body">
             <h5 class="card-title">Play in the snow</h5>
-            <p class="card-text">
-              We can make a snowman, go sledding or have a snowball fight.
-            </p>
-            <a href="#" class="btn btn-primary">Know more</a>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal5"
+            >
+              Know more
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modal5"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Play in the snow
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    We can make a snowman, go sledding or have a snowball fight.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0" style="width: 18rem;">
+        <div
+          class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0"
+          style="width: 18rem;"
+        >
           <!-- <img src="..." class="card-img-top" alt="..."> -->
           <div class="card-body">
             <h5 class="card-title">Family Photo</h5>
-            <p class="card-text">
-                We get all our loved ones and print a memory.
-            </p>
-            <a href="#" class="btn btn-primary">Know more</a>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal6"
+            >
+              Know more
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modal6"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Family Photo
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    We get all our loved ones and print a memory.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-md-4">
+        <div
+          class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0"
+          style="width: 18rem;"
+        >
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Walking around the Christmas Tree</h5>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal7"
+            >
+              Know more
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modal7"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Walking around the Christmas Tree
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    We walk around the Christmas Tree with our loved ones,
+                    singing along to Christmas Carols.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0"
+          style="width: 18rem;"
+        >
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Baking Cookies</h5>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal8"
+            >
+              Know more
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modal8"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Baking Cookies
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    We enjoy baking all kinds of christmas cookies. Christmas
+                    trees, snowmen, and snowflakes are a few different shapes we
+                    love to make and decorate.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0"
+          style="width: 18rem;"
+        >
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Making Home-Made Decorations</h5>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal9"
+            >
+              Know more
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modal9"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Making Home-Made Decorations
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    We like to hand make decorations every year. This way, our
+                    house is filled with memories. It is fun for all ages!
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-md-4">
+        <div
+          class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0"
+          style="width: 18rem;"
+        >
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Tree Lighting Event</h5>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal10"
+            >
+              Know more
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modal10"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Tree Lighting Event
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    We join our community and friends to watch our local
+                    Lighting Tree Event!
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0"
+          style="width: 18rem;"
+        >
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Christmas Parades</h5>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal11"
+            >
+              Know more
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modal11"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Christmas Parades
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    To kick off the Holiday Season, We join our community to
+                    watch local Christmas Parades!
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0"
+          style="width: 18rem;"
+        >
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Donating to Charity</h5>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal12"
+            >
+              Know more
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modal12"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Donating to Charity
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Holiday season can be difficult for some. However, We help
+                    to spread the Holiday Joy donating food, toys and clothing.
+                    We look for local charities in need.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row my-md-4">
+        <div
+          class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0"
+          style="width: 18rem;"
+        >
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Secret Santa</h5>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal13"
+            >
+              Know more
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modal13"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Secret Santa
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Secret Santa is a Western Christmas tradition in which 
+                    members of a group or community are randomly assigned a person to whom they give a gift. 
+                    The identity of the gift giver is to remain a secret and should not be revealed.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0"
+          style="width: 18rem;"
+        >
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Craft your own Christmas cards</h5>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal14"
+            >
+              Know more
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modal14"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Craft your own Christmas cards
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Make handmade Christmas cards for your loved ones.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0"
+          style="width: 18rem;"
+        >
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Go skating</h5>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal15"
+            >
+              Know more
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modal15"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Go skating
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Take your kith and kin to the skating rink!
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row my-md-4">
+        <div
+          class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0"
+          style="width: 18rem;"
+        >
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Ugly Christmas Sweater Party</h5>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal16"
+            >
+              Know more
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modal16"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Ugly Christmas Sweater Parties!
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    An ugly Christmas sweater is anything tacky or gaudy with a Christmas theme, and the parties are no different. 
+                    These parties are centered around celebrating ugly sweaters, but they are fun and festive and a great way to get friends and family together.
+                    Looking for ideas? Get inspired <a href="https://www.prettymyparty.com/10-tips-for-throwing-an-ugly-christmas-sweater-party/">here</a>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
- 
+
     <footer class="site-footer" id="footer">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4">
-            <a href="#" class="footer-logo"><i class="fa fa-cube"></i> SANTA<span id="brand-color">FIED</span></a>
+            <a class="footer-logo" href="#"
+              ><i class="fa fa-cube"></i> SANTA<span class="brand-color"
+                >FIED</span
+              ></a
+            >
             <p>
-              do eiusmod tempor incididut ut labore et dolore magna aliqua.
+              Contact us for all of your Christmas questions:
             </p>
             <!--Remove tel spaces in the href-->
-            <a href="tel:+1800123456" class="footer-tel">+ 1 800 123 456</a><br /><span class="footer-email">Email
-              <a href="mailto:support@santafied.fi">support@santafied.fi</a></span>
+            <a class="footer-tel" href="tel:+1800123456">+ 1 800 123 456</a
+            ><br /><span class="footer-email"
+              >Email
+              <a href="mailto:support@santafied.fi"
+                >support@santafied.fi</a
+              ></span
+            >
           </div>
           <div class="col-12 col-md-4 footer-links">
             <h4>Links</h4>
             <ul class="list-unstyled">
+              
               <li><a href="pages/facts.html">Facts and Info</a></li>
               <li><a href="pages/recipes.html">Recipes</a></li>
               <li><a href="pages/gifts.html">Gifts Suggestions</a></li>
@@ -205,11 +1033,16 @@
             <form class="form-inline">
               <div class="form-group">
                 <label class="sr-only" for="footer-form-email">Email</label>
-                <input class="form-control form-inverted" type="email" id="footer-form-email" placeholder="Email" />
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <input
+                  class="form-control form-inverted"
+                  id="footer-form-email"
+                  placeholder="Email"
+                  type="email"
+                />
+                <button class="btn btn-primary" type="submit">Submit</button>
               </div>
             </form>
-  
+
             <p>Get updates on sales and more</p>
             <ul class="list-inline footer-social">
               <li class="list-inline-item">
@@ -223,30 +1056,34 @@
               </li>
             </ul>
           </div>
-          <div class="row">
-            <div class="col footer-copyright">
-              &copy; Santafied. A project under zero-to-mastery.
-            </div>
+        </div>
+        <div class="row">
+          <div class="footer-copyright">
+            &copy; Santafied. A project under zero-to-mastery.
           </div>
         </div>
+      </div>
     </footer>
- 
+    <script src="../assets/js/darkmode.js"></script>
+
+    <script src="../assets/js/mouse-trail-snowball.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="/assets/js/carousel.js"></script>
+    <script src="../assets/js/navLink-generator.js"></script>
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      crossorigin="anonymous"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      crossorigin="anonymous"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     ></script>
     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     ></script>
   </body>
 </html>

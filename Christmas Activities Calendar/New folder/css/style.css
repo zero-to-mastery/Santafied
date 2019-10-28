@@ -1,0 +1,61 @@
+body {
+	/*background-color: #EDECDB;*/
+	font-family: sans-serif;
+	font-size: 2em;
+	font-family: 'Sofia', cursive;
+	text-align: center;
+}
+
+#wrapper {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.item {
+	/*border: 1px solid white;*/
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px black;
+	color: white;
+}
+
+.sm-box {
+	height: 75px;
+	width: 13%;
+	margin-right: 1%;
+	margin-bottom: 1%;
+}
+
+.md-box {
+	height: 100px;
+	width: 13%;
+	margin-right: 1%;
+	margin-bottom: 1%;
+}
+
+.lg-box {
+	height: 150px;
+	width: 13%;
+	margin-right: 1%;
+	margin-bottom: 1%;
+}
+
+.red-box {
+	background-color: rgb(141, 33, 16);
+}
+
+.green-box {
+	background-color: rgb(102, 150, 34);
+}
+
+.yellow-box {
+	background-color: rgb(184, 45, 25);
+}
+
+.dgreen-box {
+	background-color: rgb(61, 93, 45);
+}
+
+img {
+	width: 200px;
+}

@@ -1,0 +1,255 @@
+/* *************** RESET MARGINS ******************************************* */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.4;
+}
+/* ********************** NAVBAR START ********************************* */
+.navbar{
+  display: flex;
+  position: fixed;
+  width: 100%; 
+  top: 0;
+  justify-content: space-around; 
+  z-index: 1;
+  color: #333;
+  background: rgba(255, 255, 255, 1);
+  padding: 1rem;
+} 
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar ul li a {
+  color: #333;
+  padding: 1rem;
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navbar ul li a:hover{
+   background: rgb(165, 177, 190, 0.8);
+   color:  rgb(238, 89, 89);
+} 
+
+
+.current {
+  color: red !important; 
+}
+
+a {
+  /* padding: 1rem; */
+  text-decoration: none;
+}
+
+/* ********************** READ MORE CONTENT ********************** */
+
+#readMore {
+  background: rgb(255, 255, 255) url('../img/Facts/10.jpg')no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;   
+  
+}
+
+#readMore .readMore-content {
+  display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    /* Overlay */
+    position: absolute;
+    top:66px;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.btn {
+  display: block;
+  color: rgb(165, 165, 165);
+  background-image: linear-gradient(#ca1902, #4d1601 );
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.btn-back {
+  text-align: center;
+  color: rgb(165, 165, 165);
+  background-image: linear-gradient(#ca1902, #4d1601 );
+  padding: 0.8rem 2.5rem;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.5rem;
+}
+.btn-back:hover {
+  background-image: linear-gradient(#4d1601, #ca1902 );
+  color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+  background-image: linear-gradient(#4d1601, #ca1902 );
+  color: rgb(255, 255, 255);
+}
+
+.text1 {
+font-size: 3rem;
+margin-bottom: 2rem;
+font-family: 'Poppins', sans-serif;
+text-shadow: 4px 4px rgb(206, 13, 13);
+}
+
+.text2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 4px 4px rgb(206, 13, 13);
+  }
+
+
+/* ********************** FACTS ********************** */
+b {
+color: rgb(206, 175, 163);
+}
+
+.box {
+  background-color: rgba(230, 30, 37, 0.929);
+  padding: 2rem;
+}
+.container {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-column-gap: 3rem;
+margin: 2rem;
+height: 70vh;
+}
+
+.index-img{
+  width: 900px;
+  height: 600px;
+}
+
+.paragraph {
+font-size: 1.5rem;
+font-family: 'Poppins', sans-serif;
+color: rgb(255, 255, 255);
+text-shadow: 2px 2px #533b3b;
+}
+
+.link {
+color: rgb(206, 175, 163);
+text-decoration: underline;
+}
+
+.link:hover {
+ color: cornflowerblue;
+}
+
+.santa {
+  color: #333232;
+  font-weight: bolder;
+}
+
+.index-img {
+  background: url('../img/Facts/9.jpg') no-repeat center center/cover;
+  border-radius: 15px;
+}
+
+
+/* ****************************************** RESPONSIVE ********************************** */
+@media (max-width: 700px) {
+  .navbar{    
+    justify-content: center; 
+    padding: 0.2rem;
+    ;
+  } 
+ 
+  .navbar ul li a {
+    padding: 0.2rem;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+  }
+  
+  .navbar ul li a:hover{
+    background: none;
+    color:  rgb(238, 89, 89);
+  } 
+  
+  .navbar ul{
+      padding-top: 1rem;
+      width: 100vw;
+      flex-direction: row; 
+      font-size: 0.3rem;
+      text-align: center;
+      margin-bottom: 1rem;
+  }
+
+  .text1 {
+    font-size: 1.5rem;
+    text-shadow: none
+   }
+
+  .text2 {
+    font-size: 2rem;
+    text-shadow: none;
+  }
+
+  
+  #readMore {
+    background: url('../img/Facts/index_bg.png')no-repeat center center/cover;     
+  }
+
+   #readMore .readMore-content {
+    height: 95%;
+    top: 50px;
+  
+  } 
+  
+  .btn {
+    padding: 0.2rem 1rem;
+    font-size: 1rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    }
+    
+    .index-img{
+      display: none;
+    }
+
+    .paragraph {
+      font-size: 1rem;     
+  }
+
+  .btn-back {
+    padding: 0.3rem 1.5rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+
+
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+
+    <script src="../assets/js/lazyloading.js"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/5e68800c4a.js"></script>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/facts.css" rel="stylesheet" />
+    <link href="../assets/css/films.css" rel="stylesheet" />
+    <link href="../assets/css/calendar.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="../assets/css/mouse-trail-snowball.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/darkmode.css" />
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+    <title>Calendar</title>
+</head>
+
+<body>
+
+    <div id="snowball1"></div>
+    <div id="snowball2"></div>
+    <div id="snowball3"></div>
+    <!-- :::NAV Starts ::: -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> <span>SANTA</span><span class="brand-color">FIED</span></a>
+            <div class="navbar-collapse collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Navigation
+                        </a>
+                        <div class="dropdown-menu" id="nav-dropdown-from-page" aria-labelledby="navbarDropdown">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Calendar -->
+    <!-- <table border='1'  bordercolor='#FFFF00' cellspacing='0' cellpadding='0' align=center>
+<tr><td><table cellspacing='0' cellpadding='0' align=center width='100' border='1'><tr><td  align=center bgcolor='#ffff00'><font size='4' face='Tahoma'> <a href='html_calendar.php?prm=10&chm=-1' rel="nofollow"><</a></font> </td><td colspan=5 align=center bgcolor='#ffff00'><font size='4' face='Tahoma'>December</font> </td><td  align=center bgcolor='#ffff00'><font size='4' face='Tahoma'> <a href='html_calendar.php?prm=10&chm=1' rel="nofollow">></a>  </font></td></tr><tr><td><font size='4' face='Tahoma'><b>Sun</b></font></td><td><font size='4' face='Tahoma'><b>Mon</b></font></td><td><font size='4' face='Tahoma'><b>Tue</b></font></td><td><font size='4' face='Tahoma'><b>Wed</b></font></td><td><font size='4' face='Tahoma'><b>Thu</b></font></td><td><font size='4' face='Tahoma'><b>Fri</b></font></td><td><font size='4' face='Tahoma'><b>Sat</b></font></td></tr><tr><td> </td><td> </td><td valign=top><font size='5' face='Tahoma'>1  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>2  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>3  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>4  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>5  
+<br>
+ </font></td></tr><tr><td valign=top><font size='5' face='Tahoma'>6  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>7  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>8  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>9  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>10  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>11  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>12  
+<br>
+ </font></td></tr><tr><td valign=top><font size='5' face='Tahoma'>13  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>14  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>15  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>16  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>17  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>18  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>19  
+<br>
+ </font></td></tr><tr><td valign=top><font size='5' face='Tahoma'>20  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>21  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>22  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>23  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>24  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>25  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>26  
+<br>
+ </font></td></tr><tr><td valign=top><font size='5' face='Tahoma'>27  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>28  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>29  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>30  
+<br>
+ </font></td><td valign=top><font size='5' face='Tahoma'>31  
+<br>
+ </font></td></tr></table></td></tr></table> -->
+    <!-- Calendar -->
+
+    <div class="month">
+        <ul>
+            <li class="prev">&#10094;</li>
+            <li class="next">&#10095;</li>
+            <li>December<br><span style="font-size:18px">2019</span></li>
+        </ul>
+    </div>
+
+    <ul class="weekdays">
+        <li>Sun</li>
+        <li>Mon</li>
+        <li>Tue</li>
+        <li>Wed</li>
+        <li>Thur</li>
+        <li>Fri</li>
+        <li>Sat</li>
+    </ul>
+
+    <ul class="days">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li><span class="active">10</span></li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+    </ul>
+
+
+
+    <!-- Footer -->
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <a class="footer-logo" href="#"><i class="fa fa-cube"></i> SANTA<span class="brand-color">FIED</span></a>
+                    <p>
+                        Contact us for all of your Christmas questions:
+                    </p>
+                    <!--Remove tel spaces in the href-->
+                    <a class="footer-tel" href="tel:+1800123456">+ 1 800 123 456</a><br /><span class="footer-email">Email
+                        <a href="mailto:support@santafied.fi">support@santafied.fi</a></span>
+                </div>
+                <div class="col-12 col-md-4 footer-links">
+                    <h4>Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="./facts.html">Facts and Info</a></li>
+                        <li><a href="./recipes.html">Recipes</a></li>
+                        <li><a href="./gifts.html">Gifts Suggestions</a></li>
+                        <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
+                        <li><a href="./games.html">Seasonal Games</a></li>
+                        <li><a href="./films.html">Seasonal Films</a></li>
+                        <li><a href="./books.html">Seasonal Books</a></li>
+                        <li><a href="./activities.html">Seasonal Activities</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h4>Let's stay in touch</h4>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="footer-form-email">Email</label>
+                            <input class="form-control form-inverted" id="footer-form-email" placeholder="Email" type="email" />
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </div>
+                    </form>
+
+                    <p>Get updates on sales and more</p>
+                    <ul class="list-inline footer-social">
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="footer-copyright">
+                        &copy; Santafied. A project under zero-to-mastery.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/darkmode.js"></script>
+
+    <script src="../assets/js/mouse-trail-snowball.js"></script>
+    <script src="../assets/js/navLink-generator.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+    <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript">
+
+        // grab the tab shown event and move the document on top by callling
+        // scrollTop method.
+
+        $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
+            //e.target // newly activated tab
+            //e.relatedTarget // previous active tab
+            //$(window).scrollTop(0);
+            $("html, body").animate({ scrollTop: 0 }, 10);
+        })
+    </script>
+</body>
+
+</html>
