@@ -103,6 +103,23 @@ var listOf = [
     link: "https://www.laurainthekitchen.com/recipes/linzer-cookies/"
   },
   {
+    id: "honey-spice-cookies",
+    name: "Honey and Spice Cookies",
+    description:
+      "More than just gingerbread, these Christmas cookies have our special festive spice mix and are dipped in dark chocolate. Get the kids involved in baking them",
+    summary: [
+      {
+        makes: "35+",
+        prep: "30 min",
+        cooking: "12 min",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2017/12/spiced-biscuits.jpg?itok=b032mBjw",
+    link: "https://www.bbcgoodfood.com/recipes/honey-spice-cookies"
+  },
+  {
     id: "potato-candy",
     name: "Potato Candy",
     description:
