@@ -68,7 +68,7 @@ const linkList = [
       'https://images.unsplash.com/photo-1544130973-522ef28d62fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
   },
   {
-    title: 'TOY TOUCHDOWN',
+    title: 'Toy Touchdown',
     description:
       'Players must pass small toys or ornaments under their legs like they’re hiking a football and have a teammate catch them in a small Christmas basket that’s attached to the second player’s back. Teams race to be the first team to catch five or see who can get the most in a minute.',
     link: 'https://www.playpartyplan.com/christmas-games/',
