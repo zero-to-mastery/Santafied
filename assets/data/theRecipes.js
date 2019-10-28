@@ -594,6 +594,24 @@ var listOf = [
       "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/user-collections/my-colelction-image/2015/12/goats-cheese-pear-candied-pecan-salad.jpg?itok=crbFk6UI",
     link:
       "https://www.bbcgoodfood.com/recipes/goats-cheese-pear-candied-pecan-salad"
+  },
+  {
+    id: "giant-jam-tart",
+    name: "Giant Jam Tart",
+    description:
+      "This giant jam tart will go down a storm at a party. They're so easy to make, you can bake serveral at once, and get the kids to help you decorate them",
+    summary: [
+      {
+        serves: "6",
+        prep: "20 mins",
+        cooking: "40 mins",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2018/11/jam-tarts.jpg?itok=TjG_K-cw",
+    link:
+      "https://www.bbcgoodfood.com/recipes/giant-jam-tart"
   }
 
 
