@@ -648,6 +648,24 @@ var listOf = [
       "https://files.ketodietapp.com/Blog/files/2016/03/5IngredientKetoChocolateCookies7.jpg",
     link:
       "https://ketodietapp.com/Blog/lchf/5-ingredient-keto-chocolate-cookies"
-  }
+  },
+  {
+    id: "roasted-duck",
+    name: "Traditional Roasted Duck",
+    description:
+      "Duck is great to have when I ran late to the store and could not buy the turkey or after I burnt the turkey.",
+    summary: [
+      {
+        serves: "4",
+        prep: "20 mins",
+        cooking: "30 mins",
+        skill: "Intermediate"
+      }
+    ],
+    img:
+      "https://www.thespruceeats.com/thmb/iQMW5TDys1o7gewHbxi-tW0h1io=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-893098978-2-5be9b37646e0fb00511182ed.jpg",
+    link:
+      "https://www.thespruceeats.com/roast-duck-perfect-for-the-holidays-913046"
+  },
 
 ];
