@@ -106,5 +106,13 @@ const linkList = [
     link: 'https://chrome.google.com/webstore/detail/christmas-puzzle-game-chr/phglegapajbnleklhlanfejghkcbjijd',
     imageLink:
       'https://lh3.googleusercontent.com/7AVaTuRPRhq6S7kH3nSX_EY5YPleMqX2DDMOLTZbK0lBM_NgmrlUsAMMBBCfxe9XPZR1KQsdAA=w640-h400-e365'
+  },
+  {
+    title: 'White Elephant Gift Exchange',
+    description:
+      'A white elephant gift exchange, Yankee swap or Dirty Santa is a party game where amusing, impractical gifts are exchanged during festivities. Usually, the goal of a white elephant gift exchange is to entertain party-goers rather than to gain a genuinely valuable or highly sought-after item.',
+    link: 'https://www.whiteelephantrules.com/',
+    imageLink:
+      'https://www.halfwaycreek.org/wp-content/uploads/2015/11/WhiteElephantChristmas.jpg'
   }
 ];
