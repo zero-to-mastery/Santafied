@@ -629,7 +629,43 @@ var listOf = [
       "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2018/11/jam-tarts.jpg?itok=TjG_K-cw",
     link:
       "https://www.bbcgoodfood.com/recipes/giant-jam-tart"
-  }
+  },
 
+  {
+    id: "keto-cookies",
+    name: "5-Ingredient Keto Christmas Cookies",
+    description:
+      "These keto cookies are for everyone who likes to have a crispy treat with their coffee. They are quick, easy to make and freezable. One cookie contains 25% of your your daily magnesium requirement - a delicious way to beat keto-flu!",
+    summary: [
+      {
+        serves: "12",
+        prep: "10 mins",
+        cooking: "15 mins",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://files.ketodietapp.com/Blog/files/2016/03/5IngredientKetoChocolateCookies7.jpg",
+    link:
+      "https://ketodietapp.com/Blog/lchf/5-ingredient-keto-chocolate-cookies"
+  },
+  {
+    id: "roasted-duck",
+    name: "Traditional Roasted Duck",
+    description:
+      "Duck is great to have when I ran late to the store and could not buy the turkey or after I burnt the turkey.",
+    summary: [
+      {
+        serves: "4",
+        prep: "20 mins",
+        cooking: "30 mins",
+        skill: "Intermediate"
+      }
+    ],
+    img:
+      "https://www.thespruceeats.com/thmb/iQMW5TDys1o7gewHbxi-tW0h1io=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-893098978-2-5be9b37646e0fb00511182ed.jpg",
+    link:
+      "https://www.thespruceeats.com/roast-duck-perfect-for-the-holidays-913046"
+  },
 
 ];
