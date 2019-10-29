@@ -629,7 +629,25 @@ var listOf = [
       "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2018/11/jam-tarts.jpg?itok=TjG_K-cw",
     link:
       "https://www.bbcgoodfood.com/recipes/giant-jam-tart"
-  }
+  },
 
+  {
+    id: "keto-cookies",
+    name: "5-Ingredient Keto Christmas Cookies",
+    description:
+      "These keto cookies are for everyone who likes to have a crispy treat with their coffee. They are quick, easy to make and freezable. One cookie contains 25% of your your daily magnesium requirement - a delicious way to beat keto-flu!",
+    summary: [
+      {
+        serves: "12",
+        prep: "10 mins",
+        cooking: "15 mins",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://files.ketodietapp.com/Blog/files/2016/03/5IngredientKetoChocolateCookies7.jpg",
+    link:
+      "https://ketodietapp.com/Blog/lchf/5-ingredient-keto-chocolate-cookies"
+  }
 
 ];
