@@ -1,39 +1,38 @@
-const navLinks = [
-  {
+const navLinks = [{
     label: "Home",
-    href:  "index.html",
+    href: "index.html",
   },
   {
     label: "Facts",
-    href:  "pages/facts.html",
+    href: "pages/facts.html",
   },
   {
     label: "Recipes",
-    href:  "pages/recipes.html",
+    href: "pages/recipes.html",
   },
   {
     label: "Gifts",
-    href:  "pages/gifts.html",
+    href: "pages/gifts.html",
   },
   {
     label: "Songs",
-    href:  "pages/songs.html",
+    href: "pages/songs.html",
   },
   {
     label: "Games",
-    href:  "pages/games.html",
+    href: "pages/games.html",
   },
   {
     label: "Films",
-    href:  "pages/films.html",
+    href: "pages/films.html",
   },
   {
     label: "Books",
-    href:  "pages/books.html",
+    href: "pages/books.html",
   },
   {
     label: "Activities",
-    href:  "pages/activities.html",
+    href: "pages/activities.html",
   },
   {
     label: "Name Generators",
@@ -41,27 +40,31 @@ const navLinks = [
   },
   {
     label: "International",
-    href:  "pages/international.html",
+    href: "pages/international.html",
   },
   {
     label: "Party Costumes",
-    href:  "pages/party-costumes.html",
+    href: "pages/party-costumes.html",
   },
   {
-    label:"Wishes",
-    href:"pages/wishes.html"
+    label: "Wishes",
+    href: "pages/wishes.html"
   },
   {
     label: "Blog",
-    href:  "pages/blog.html",
+    href: "pages/blog.html",
+  },  
+  {
+    label: "Stock Photos",
+    href: "pages/stock-photos.html",
   },
   {
     label: "Calendar",
-    href:  "pages/calendar.html",
+    href: "pages/calendar.html",
   },
   {
     label: "Contact Us",
-    href:  "#footer",
+    href: "#footer",
   },
 ];
 

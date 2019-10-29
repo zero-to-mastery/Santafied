@@ -7,8 +7,7 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <script src="../assets/js/lazyloading.js"></script>
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/5e68800c4a.js"></script>
-    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet" />
     <link href="../assets/css/main.css" rel="stylesheet" />
     <link href="../assets/css/films.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
@@ -27,17 +26,18 @@
     <!-- :::NAV Starts ::: -->
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> <span>SANTA</span><span
-                    class="brand-color">FIED</span></a>
-            <div class="dropdown dropdown-container">
-                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
-                    href="#" id="navbarDropdown" role="button">
-                    Navigation
-                </a>
-                <div aria-labelledby="navbarDropdown" class="dropdown-menu" id="nav-dropdown-from-page">
-                </div>
+            <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> <span>SANTA</span><span class="brand-color">FIED</span></a>
+            <div class="navbar-collapse collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Navigation
+                        </a>
+                        <div class="dropdown-menu" id="nav-dropdown-from-page" aria-labelledby="navbarDropdown">
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="nav-item toggle-darkmode"></div>
 
         </nav>
     </div>
@@ -49,28 +49,17 @@
             <div class="col-md-4 tab-navigation">
                 <div class="list-group" id="list-tab" role="tablist">
 
-                    <a aria-controls="profile" class="list-group-item list-group-item-action active" data-toggle="list"
-                        href="#one" id="list-profile-list" role="tab">Wish Merry Christmas</a>
-                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                        href="#two" id="list-settings-list" role="tab">Wish joy, love and laughter</a>
-                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                        href="#three" id="list-settings-list" role="tab">Wish love, peace and happiness</a>    
-                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                        href="#four" id="list-settings-list" role="tab">May Santa gives you the greatest gift</a>
-                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                        href="#five" id="list-settings-list" role="tab">Long distance Christmas wishes</a>
-                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                        href="#six" id="list-settings-list" role="tab">Warm wishes for Christmas</a>
-                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                        href="#seven" id="list-settings-list" role="tab">Spreading peace this Christmas</a>
-                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                        href="#eight" id="list-settings-list" role="tab">Gifting You a Christmas Candle</a>
-                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                        href="#nine" id="list-settings-list" role="tab">Thanking You this Christmas</a>
-                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                        href="#ten" id="list-settings-list" role="tab">Christmas holiday wishes</a>     
-                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list"
-                        href="#eleven" id="list-settings-list" role="tab">Witty christmas wish</a>       
+                    <a aria-controls="profile" class="list-group-item list-group-item-action active" data-toggle="list" href="#one" id="list-profile-list" role="tab">Wish Merry Christmas</a>
+                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list" href="#two" id="list-settings-list" role="tab">Wish joy, love and laughter</a>
+                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list" href="#three" id="list-settings-list" role="tab">Wish love, peace and happiness</a>
+                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list" href="#four" id="list-settings-list" role="tab">May Santa gives you the greatest gift</a>
+                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list" href="#five" id="list-settings-list" role="tab">Long distance Christmas wishes</a>
+                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list" href="#six" id="list-settings-list" role="tab">Warm wishes for Christmas</a>
+                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list" href="#seven" id="list-settings-list" role="tab">Spreading peace this Christmas</a>
+                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list" href="#eight" id="list-settings-list" role="tab">Gifting You a Christmas Candle</a>
+                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list" href="#nine" id="list-settings-list" role="tab">Thanking You this Christmas</a>
+                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list" href="#ten" id="list-settings-list" role="tab">Christmas holiday wishes</a>
+                    <a aria-controls="settings" class="list-group-item list-group-item-action" data-toggle="list" href="#eleven" id="list-settings-list" role="tab">Witty christmas wish</a>
                 </div>
             </div>
             <!-- :::END OF MENU TO FILTER WISHES :::-->
@@ -79,14 +68,11 @@
             <div class="col-8">
                 <div class="tab-content" id="nav-tabContent">
                     <!-- ::: CARD EXAMPLE :::-->
-                    <div aria-labelledby="grinch-stole-list" class="tab-pane active" id="one"
-                        role="tabpanel">
+                    <div aria-labelledby="grinch-stole-list" class="tab-pane active" id="one" role="tabpanel">
                         <div class="card mb-3" style="max-width: 670px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
-                                    <img alt="..." class="card-img"
-                                        data-src="../img/wish.jpg"
-                                        loading="lazy" />
+                                    <img alt="..." class="card-img" data-src="../img/wish.jpg" loading="lazy" />
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -104,14 +90,11 @@
                         </div>
                     </div>
 
-                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="two"
-                        role="tabpanel">
+                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="two" role="tabpanel">
                         <div class="card mb-3" style="max-width: 670px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
-                                    <img alt="..." class="card-img"
-                                        data-src="../img/wish.jpg"
-                                        loading="lazy" />
+                                    <img alt="..." class="card-img" data-src="../img/wish.jpg" loading="lazy" />
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -132,14 +115,11 @@
                         </div>
                     </div>
 
-                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="three"
-                        role="tabpanel">
+                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="three" role="tabpanel">
                         <div class="card mb-3" style="max-width: 670px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
-                                    <img alt="..." class="card-img"
-                                        data-src="../img/wish.jpg"
-                                        loading="lazy" />
+                                    <img alt="..." class="card-img" data-src="../img/wish.jpg" loading="lazy" />
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -158,14 +138,11 @@
                         </div>
                     </div>
 
-                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="four"
-                        role="tabpanel">
+                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="four" role="tabpanel">
                         <div class="card mb-3" style="max-width: 670px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
-                                    <img alt="..." class="card-img"
-                                        data-src="../img/wish.jpg"
-                                        loading="lazy" />
+                                    <img alt="..." class="card-img" data-src="../img/wish.jpg" loading="lazy" />
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -183,14 +160,11 @@
                         </div>
                     </div>
 
-                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="five"
-                        role="tabpanel">
+                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="five" role="tabpanel">
                         <div class="card mb-3" style="max-width: 670px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
-                                    <img alt="..." class="card-img"
-                                        data-src="../img/wish.jpg"
-                                        loading="lazy" />
+                                    <img alt="..." class="card-img" data-src="../img/wish.jpg" loading="lazy" />
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -198,9 +172,9 @@
 
                                         <p class="card-text">
                                             We may not be together on Christmas day,<br>
-											But my heart and soul will always be with you.<br>
-											My warmest greetings to you<br>
-											Have a great and wonderful Christmas!<br>
+                                            But my heart and soul will always be with you.<br>
+                                            My warmest greetings to you<br>
+                                            Have a great and wonderful Christmas!<br>
                                             <br>
                                         </p>
                                     </div>
@@ -209,14 +183,11 @@
                         </div>
                     </div>
 
-                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="six"
-                        role="tabpanel">
+                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="six" role="tabpanel">
                         <div class="card mb-3" style="max-width: 670px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
-                                    <img alt="..." class="card-img"
-                                        data-src="../img/wish.jpg"
-                                        loading="lazy" />
+                                    <img alt="..." class="card-img" data-src="../img/wish.jpg" loading="lazy" />
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -236,14 +207,11 @@
                         </div>
                     </div>
 
-                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="seven"
-                        role="tabpanel">
+                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="seven" role="tabpanel">
                         <div class="card mb-3" style="max-width: 670px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
-                                    <img alt="..." class="card-img"
-                                        data-src="../img/wish.jpg"
-                                        loading="lazy" />
+                                    <img alt="..." class="card-img" data-src="../img/wish.jpg" loading="lazy" />
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -252,8 +220,8 @@
                                         <p class="card-text">
                                             Peace on earth will come to stay,<br>
                                             when we live Christmas every day.<br>
-                                     		Whishing you a peaceful Christmas!<br>
-                                     		<br>
+                                            Whishing you a peaceful Christmas!<br>
+                                            <br>
                                         </p>
                                     </div>
                                 </div>
@@ -261,14 +229,11 @@
                         </div>
                     </div>
 
-                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="eight"
-                        role="tabpanel">
+                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="eight" role="tabpanel">
                         <div class="card mb-3" style="max-width: 670px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
-                                    <img alt="..." class="card-img"
-                                        data-src="../img/wish.jpg"
-                                        loading="lazy" />
+                                    <img alt="..." class="card-img" data-src="../img/wish.jpg" loading="lazy" />
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -278,8 +243,8 @@
                                             A Christmas candle is a lovely thing;<br>
                                             It makes no noise at all,<br>
                                             But softly gives itself away;<br>
-                                            While quite unselfish, it grows small.<br> 
-                                            <br>        
+                                            While quite unselfish, it grows small.<br>
+                                            <br>
                                         </p>
                                     </div>
                                 </div>
@@ -287,14 +252,11 @@
                         </div>
                     </div>
 
-                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="nine"
-                        role="tabpanel">
+                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="nine" role="tabpanel">
                         <div class="card mb-3" style="max-width: 670px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
-                                    <img alt="..." class="card-img"
-                                        data-src="../img/wish.jpg"
-                                        loading="lazy" />
+                                    <img alt="..." class="card-img" data-src="../img/wish.jpg" loading="lazy" />
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -311,14 +273,11 @@
                         </div>
                     </div>
 
-                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="ten"
-                        role="tabpanel">
+                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="ten" role="tabpanel">
                         <div class="card mb-3" style="max-width: 670px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
-                                    <img alt="..." class="card-img"
-                                        data-src="../img/wish.jpg"
-                                        loading="lazy" />
+                                    <img alt="..." class="card-img" data-src="../img/wish.jpg" loading="lazy" />
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -335,27 +294,24 @@
                         </div>
                     </div>
 
-                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="eleven"
-                        role="tabpanel">
+                    <div aria-labelledby="grinch-stole-list" class="tab-pane fade" id="eleven" role="tabpanel">
                         <div class="card mb-3" style="max-width: 670px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
-                                    <img alt="..." class="card-img"
-                                        data-src="../img/wish.jpg"
-                                        loading="lazy" />
+                                    <img alt="..." class="card-img" data-src="../img/wish.jpg" loading="lazy" />
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
                                         <h5 class="card-title">Compulsory Christmas!</h5>
 
                                         <p class="card-text">
-                                            “A lovely thing about 
-                                             Christmas is that 
-											 it's compulsory, <br>
-                                             like a thunderstorm, 
-                                             and we all go 
-                                             through it together.” <br>
-                                             Merry Christmas!
+                                            “A lovely thing about
+                                            Christmas is that
+                                            it's compulsory, <br>
+                                            like a thunderstorm,
+                                            and we all go
+                                            through it together.” <br>
+                                            Merry Christmas!
                                         </p>
                                     </div>
                                 </div>
@@ -374,14 +330,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4">
-                    <a class="footer-logo" href="#"><i class="fa fa-cube"></i> SANTA<span
-                            class="brand-color">FIED</span></a>
+                    <a class="footer-logo" href="#"><i class="fa fa-cube"></i> SANTA<span class="brand-color">FIED</span></a>
                     <p>
                         Contact us for all of your Christmas questions:
                     </p>
                     <!--Remove tel spaces in the href-->
-                    <a class="footer-tel" href="tel:+1800123456">+ 1 800 123 456</a><br /><span
-                        class="footer-email">Email
+                    <a class="footer-tel" href="tel:+1800123456">+ 1 800 123 456</a><br /><span class="footer-email">Email
                         <a href="mailto:support@santafied.fi">support@santafied.fi</a></span>
                 </div>
                 <div class="col-12 col-md-4 footer-links">
@@ -402,8 +356,7 @@
                     <form class="form-inline">
                         <div class="form-group">
                             <label class="sr-only" for="footer-form-email">Email</label>
-                            <input class="form-control form-inverted" id="footer-form-email" placeholder="Email"
-                                type="email" />
+                            <input class="form-control form-inverted" id="footer-form-email" placeholder="Email" type="email" />
                             <button class="btn btn-primary" type="submit">Submit</button>
                         </div>
                     </form>
@@ -431,12 +384,9 @@
     <script src="../assets/js/darkmode.js"></script>
     <script src="../assets/js/mouse-trail-snowball.js"></script>
     <script src="../assets/js/navLink-generator.js"></script>
-    <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -1,235 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-    <script
-      crossorigin="anonymous"
-      src="https://kit.fontawesome.com/5e68800c4a.js"
-    ></script>
-    <link href="../img/favicon.png" rel="shortcut icon" type="image/png" />
-    <link
-      crossorigin="anonymous"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      rel="stylesheet"
-    />
-    <link href="../assets/css/main.css" rel="stylesheet" />
-    <link href="../assets/css/films.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <link href="../assets/css/reindeer-name-generator.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap"
-      rel="stylesheet"
-    />
-    <link href="../assets/css/mouse-trail-snowball.css" rel="stylesheet" />
-    <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
-    <link rel="stylesheet" href="../assets/css/darkmode.css" />
 
-    <title>Santafied | Reindeer Name Generator</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/5e68800c4a.js"></script>
+  <link href="../img/favicon.png" rel="shortcut icon" type="image/png" />
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet" />
+  <link href="../assets/css/main.css" rel="stylesheet" />
+  <link href="../assets/css/films.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="../assets/css/reindeer-name-generator.css" rel="stylesheet" />
+  <link href="../assets/css/name-generators.css" rel="stylesheet" />   
+  <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap" rel="stylesheet" />
+  <link href="../assets/css/mouse-trail-snowball.css" rel="stylesheet" />
+  <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
+  <link rel="stylesheet" href="../assets/css/darkmode.css" />
 
-  <body id="films">
-    <div id="snowball1"></div>
-    <div id="snowball2"></div>
-    <div id="snowball3"></div>
-    <!-- :::NAV Starts ::: -->
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="../index.html"
-          ><i class="fa fa-cube"></i> <span>SANTA</span
-          ><span class="brand-color">FIED</span></a
-        >
-        <div class="dropdown dropdown-container">
-          <a
-            aria-expanded="false"
-            aria-haspopup="true"
-            class="nav-link dropdown-toggle"
-            data-toggle="dropdown"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-          >
-            Navigation
-          </a>
-          <div
-            aria-labelledby="navbarDropdown"
-            class="dropdown-menu"
-            id="nav-dropdown-from-page"
-          ></div>
-        </div>
-        <div class="nav-item toggle-darkmode"></div>
-      </nav>
-    </div>
+  <title>Santafied | Reindeer Name Generator</title>
+</head>
 
-    <!-- :::END OF Nav -->
-
-    <div class="container name-generator">
-      <div class="icon-container">
-        <img
-          alt="reindeer"
-          class="reindeer-icon invert"
-          src="../assets/img/reindeer.svg"
-        />
-      </div>
-
-      <h1>What's your <span>REINDEER</span> name?</h1>
-
-      <div class="name-choice">
-        <h3>First letter of your name</h3>
-        <select class="box-style" id="name" onchange="letterChoice()">
-          <option selected value="">--Select Letter--</option>
-          <option value="Cookie">A</option>
-          <option value="Sugar-plum">B</option>
-          <option value="Frosty">C</option>
-          <option value="Mistletoe">D</option>
-          <option value="Snowflake">E</option>
-          <option value="Cranberry">F</option>
-          <option value="Pickle-Pants">G</option>
-          <option value="Twinkle-Nose">H</option>
-          <option value="Eggnog">I</option>
-          <option value="Shimmer">J</option>
-          <option value="Pudding">K</option>
-          <option value="Pointy-Toes">L</option>
-          <option value="Kringle">M</option>
-          <option value="Dashing">N</option>
-          <option value="Turkey-Bell">O</option>
-          <option value="Honey-Ham">P</option>
-          <option value="Peppermint">Q</option>
-          <option value="Jolly-Joseph">R</option>
-          <option value="Grinch">S</option>
-          <option value="Tinsle-Cheeks">T</option>
-          <option value="McJingles">U</option>
-          <option value="Snowman">V</option>
-          <option value="Cinnamon Bun">W</option>
-          <option value="Merry-Mary">X</option>
-          <option value="Glitter">Y</option>
-          <option value="Ruldoph">Z</option>
-        </select>
-      </div>
-
-      <div class="month-choice">
-        <h3>Your birth month</h3>
-        <select class="box-style" id="month" onchange="monthChoice()">
-          <option selected value="">--Select Month--</option>
-          <option value="Lord Crackle">January</option>
-          <option value="Razzle-Dazzle">February</option>
-          <option value="Maple">March</option>
-          <option value="McMittens">April</option>
-          <option value="Angry Elf">May</option>
-          <option value="Von Pretzel">June</option>
-          <option value="St.Candy Cane">July</option>
-          <option value="Bon Bon">August</option>
-          <option value="Long Beard">September</option>
-          <option value="Snickerdoodle">October</option>
-          <option value="Arctic Puffin">November</option>
-          <option value="Claus">December</option>
-        </select>
-      </div>
-
-      <button id="loadName" onclick="generateName();" type="submit">
-        Generate My Name!
-      </button>
-
-      <div id="resultContainer">
-        <h3>Your Reindeer Name is:</h3>
-        <p id="result"></p>
-      </div>
-    </div>
-
-    <footer class="site-footer" id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <a class="footer-logo" href="#"
-              ><i class="fa fa-cube"></i> SANTA<span class="brand-color"
-                >FIED</span
-              ></a
-            >
-            <p>
-              Contact us for all of your Christmas questions:
-            </p>
-            <!--Remove tel spaces in the href-->
-            <a class="footer-tel" href="tel:+1800123456">+ 1 800 123 456</a
-            ><br /><span class="footer-email"
-              >Email
-              <a href="mailto:support@santafied.fi"
-                >support@santafied.fi</a
-              ></span
-            >
-          </div>
-          <div class="col-12 col-md-4 footer-links">
-            <h4>Links</h4>
-            <ul class="list-unstyled">
-              <li><a href="./facts.html">Facts and Info</a></li>
-              <li><a href="./recipes.html">Recipes</a></li>
-              <li><a href="./gifts.html">Gifts Suggestions</a></li>
-              <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
-              <li><a href="./games.html">Seasonal Games</a></li>
-              <li><a href="./films.html">Seasonal Films</a></li>
-              <li><a href="./books.html">Seasonal Books</a></li>
-              <li><a href="./activities.html">Seasonal Activities</a></li>
-            </ul>
-          </div>
-          <div class="col-12 col-md-4">
-            <h4>Let's stay in touch</h4>
-            <form class="form-inline">
-              <div class="form-group">
-                <label class="sr-only" for="footer-form-email">Email</label>
-                <input
-                  class="form-control form-inverted"
-                  id="footer-form-email"
-                  placeholder="Email"
-                  type="email"
-                />
-                <button class="btn btn-primary" type="submit">Submit</button>
-              </div>
-            </form>
-
-            <p>Get updates on sales and more</p>
-            <ul class="list-inline footer-social">
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-youtube"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-            </ul>
-          </div>
-          <div class="row">
-            <div class="col footer-copyright">
-              &copy; Santafied. A project under zero-to-mastery.
+<body id="films">
+  <div id="snowball1"></div>
+  <div id="snowball2"></div>
+  <div id="snowball3"></div>
+  <!-- :::NAV Starts ::: -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="../index.html"><i class="fa fa-cube"></i> <span>SANTA</span><span class="brand-color">FIED</span></a>
+      <div class="navbar-collapse collapse" id="navbarContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Navigation
+            </a>
+            <div class="dropdown-menu" id="nav-dropdown-from-page" aria-labelledby="navbarDropdown">
             </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- :::END OF Nav -->
+
+  <div class="container name-generator">
+    <div class="icon-container">
+      <img alt="reindeer" class="reindeer-icon invert" src="../assets/img/reindeer.svg" />
+    </div>
+
+    <h1>What's your <span>REINDEER</span> name?</h1>
+
+    <div class="name-choice">
+      <h3>First letter of your name</h3>
+      <select class="box-style" id="name" onchange="letterChoice()">
+        <option selected value="">--Select Letter--</option>
+        <option value="Cookie">A</option>
+        <option value="Sugar-plum">B</option>
+        <option value="Frosty">C</option>
+        <option value="Mistletoe">D</option>
+        <option value="Snowflake">E</option>
+        <option value="Cranberry">F</option>
+        <option value="Pickle-Pants">G</option>
+        <option value="Twinkle-Nose">H</option>
+        <option value="Eggnog">I</option>
+        <option value="Shimmer">J</option>
+        <option value="Pudding">K</option>
+        <option value="Pointy-Toes">L</option>
+        <option value="Kringle">M</option>
+        <option value="Dashing">N</option>
+        <option value="Turkey-Bell">O</option>
+        <option value="Honey-Ham">P</option>
+        <option value="Peppermint">Q</option>
+        <option value="Jolly-Joseph">R</option>
+        <option value="Grinch">S</option>
+        <option value="Tinsle-Cheeks">T</option>
+        <option value="McJingles">U</option>
+        <option value="Snowman">V</option>
+        <option value="Cinnamon Bun">W</option>
+        <option value="Merry-Mary">X</option>
+        <option value="Glitter">Y</option>
+        <option value="Ruldoph">Z</option>
+      </select>
+    </div>
+
+    <div class="month-choice">
+      <h3>Your birth month</h3>
+      <select class="box-style" id="month" onchange="monthChoice()">
+        <option selected value="">--Select Month--</option>
+        <option value="Lord Crackle">January</option>
+        <option value="Razzle-Dazzle">February</option>
+        <option value="Maple">March</option>
+        <option value="McMittens">April</option>
+        <option value="Angry Elf">May</option>
+        <option value="Von Pretzel">June</option>
+        <option value="St.Candy Cane">July</option>
+        <option value="Bon Bon">August</option>
+        <option value="Long Beard">September</option>
+        <option value="Snickerdoodle">October</option>
+        <option value="Arctic Puffin">November</option>
+        <option value="Claus">December</option>
+      </select>
+    </div>
+
+    <button id="loadName" onclick="generateName();" type="submit">
+      Generate My Name!
+    </button>
+
+    <div id="resultContainer">
+      <h3>Your Reindeer Name is:</h3>
+      <p id="result"></p>
+    </div>
+    
+        <h3>You may also like:</h3>
+             <a href="snowman-name-generator.html">
+        <div class="generator-tile">
+          <svg
+            id="Capa_1"
+            style="enable-background:new 0 0 408.749 408.749;"
+            version="1.1"
+            viewBox="0 0 408.749 408.749"
+            x="0px"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            y="0px"
+          >
+            <path
+              d="M368.2,186.749l-6-3.2l18.4-36.8c7.6-15.2,8-32.4,3.2-47.2c-4.8-14.8-15.6-28-30.8-35.6l-116.4-57.6
+                               c-15.2-7.6-32-8-47.2-3.2c-14.8,4.8-28,15.6-35.6,30.8l-18.4,36.8l-6.4-3.2c-6.8-3.6-14.8-4-21.6-1.6c-6.4,2.4-12.4,6.8-16,13.6
+                               c-0.4,0.4-0.4,1.2-0.8,1.6c-3.2,6.8-3.6,14-1.2,20.8c0.4,1.2,0.8,2,1.2,3.2c-20,14.8-36.8,34-48.8,56c-12.8,23.6-20,50.8-20,79.6
+                               c0,46.4,18.8,88.4,49.6,118.8c30.4,30.4,72.4,49.2,118.8,49.2c46.4,0,88.4-18.8,118.8-49.2c30.4-30.4,49.2-72.4,49.2-118.8
+                               c2.4-0.4,4.4-0.8,6.4-1.6c6.4-2.4,12.4-6.8,16-13.6c0.4-0.4,0.4-1.2,0.8-1.6c3.2-6.8,3.6-14,1.2-20.8
+                               C380.2,196.349,375,190.349,368.2,186.749z M168.6,40.349c5.6-11.2,15.2-19.2,26.4-22.8c11.2-3.6,23.6-3.2,34.8,2.4l115.2,57.6
+                               c0.4,0.4,0.8,0.8,1.2,0.8c11.2,5.6,18.8,15.2,22.4,26c3.6,11.2,3.2,23.2-2,34.4c-0.4,0.4-0.8,0.8-0.8,1.2l-18,36.4l-183.2-91.6
+                               l-14.8-7.2L168.6,40.349z M341.4,240.349c0,42-16.8,80-44.4,107.6c-27.6,27.2-65.6,44.4-107.6,44.4s-80-16.8-107.6-44.4
+                               c-27.2-27.6-44.4-65.6-44.4-107.6c0-26,6.4-50.8,18-72c11.2-20.4,26.8-38,45.6-51.6c0.8,0.4,1.2,0.4,1.6,0.8
+                               c0.8,0.4,1.2,0.8,1.6,0.8l86.8,43.6l150.4,75.2C341.4,237.949,341.4,239.149,341.4,240.349z M367,216.749c0,0.4-0.4,0.8-0.4,1.2
+                               c-1.6,2.8-4,4.8-6.8,5.6c-2.4,0.8-4.8,0.8-7.2,0.4h-0.4c-0.4,0-0.8-0.4-1.2-0.4c-0.4,0-0.4-0.4-0.8-0.4L111,103.549
+                               c-0.8,0-1.2-0.4-1.6-0.8l-0.4-0.4c-0.4-0.4-0.4-0.4-0.8-0.8l-0.4-0.4c-1.2-1.2-2.4-2.8-2.8-4.4c-0.8-3.2-0.8-6.4,0.4-9.2
+                               c0-0.4,0.4-0.8,0.4-1.2c1.6-2.8,4-4.8,6.8-5.6s6.4-0.8,9.6,0.4l13.2,6.8l162.8,81.6l62.4,30.4c0.4,0.4,0.8,0.8,1.2,0.8
+                               c2.8,1.6,4.8,4,5.6,6.8C368.2,210.749,368.2,213.949,367,216.749z"
+            />
+            <path
+              d="M209.8,244.749c4.4,4,10.4,6.8,16.8,6.8c6.4,0,12.4-2.4,16.8-6.8c4-4.4,6.8-10.4,6.8-16.8c0-6.4-2.4-12.4-6.8-16.8
+                               c-4.4-4-10.4-6.8-16.8-6.8c-6.4,0-12,2.4-16.4,6.4l-0.4,0.4c-4,4.4-6.8,10.4-6.8,16.8c0,6.4,2.4,12,6.4,16.4L209.8,244.749z
+                                M221,222.749l0.4-0.4c1.2-1.2,3.2-2,5.2-2c2.4,0,4.4,1.2,5.6,2.4c1.2,1.2,2,3.2,2.4,5.6c0,2.4-1.2,4.4-2.4,5.6
+                               c-1.6,1.6-3.6,2.4-5.6,2.4c-2.4,0-4.4-1.2-5.6-2.4l-0.4-0.4c-1.2-1.2-2-3.2-2-5.2C218.6,225.949,219.8,223.949,221,222.749z"
+            />
+            <path
+              d="M187.4,258.749l-32.4,8l-38,9.2c-2.8,0.4-5.2,2.8-6,6.4c-0.8,4.4,1.6,8.4,6,9.6l38,9.2l32.4,8c0.8,0.4,2,0.8,3.2,1.2
+                               c1.6,0.4,2.8,0.4,4.4,0.4c6.4,0,12.4-3.6,16.4-8.8c3.6-4.8,6-11.2,6-18s-2.4-13.2-6-18c-4-5.6-10-8.8-16.4-8.8
+                               c-1.2,0-2.8,0-4.4,0.4C189.4,257.949,188.6,258.349,187.4,258.749z M193.8,273.149c0.4-0.4,0.4-0.4,0.8-0.4c0.4,0,0.4,0,0.8,0
+                               c1.2,0,2.4,0.8,3.6,2.4c1.6,2,2.4,5.2,2.4,8.4c0,3.6-0.8,6.4-2.4,8.4c-0.8,1.6-2.4,2.4-3.6,2.4c-0.4,0-0.8,0-0.8,0
+                               c-0.4,0-0.4-0.4-0.8-0.4c-0.8-0.4-1.2-0.8-2-0.8l-32.8-8l-6.4-1.6l6.4-1.2l33.2-8.4C192.6,273.549,193.4,273.549,193.8,273.149z"
+            />
+            <path
+              d="M153.8,251.549c6.4,0,12.4-2.4,16.8-6.8c4-4.4,6.8-10.4,6.8-16.8c0-6.4-2.4-12.4-6.8-16.8c-4.4-4-10.4-6.8-16.8-6.8
+                               c-6.4,0-12.4,2.4-16.4,6.4l-0.4,0.4c-4,4.4-6.8,10.4-6.8,16.8c0,6.4,2.4,12.4,6.8,16.8
+                               C141.4,248.749,147.4,251.549,153.8,251.549z M147.8,222.749l0.4-0.4c1.2-1.2,3.2-2,5.2-2c2.4,0,4.4,1.2,5.6,2.4
+                               c1.6,1.2,2.4,3.2,2.4,5.6c0,2.4-1.2,4.4-2.4,5.6c-1.6,1.6-3.6,2.4-5.6,2.4c-2.4,0-4.4-1.2-5.6-2.4c-1.6-1.6-2.4-3.6-2.4-5.6
+                               C145.4,225.949,146.6,223.949,147.8,222.749z"
+            />
+          </svg>
+          <span>Snowman<br />
+            Name Generator</span>
+        </div>
+      </a>   
+        
+              <a href="elf-name-generator.html">
+        <div class="generator-tile">
+          <svg
+            id="Capa_1"
+            style="enable-background:new 0 0 408.8 408.8;"
+            version="1.1"
+            viewBox="0 0 408.8 408.8"
+            x="0px"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            y="0px"
+          >
+            <path
+              d="M274.8,63.6c-14.8-12.4-32-21.6-51.2-26.8c-4.4-1.2-8.8,1.2-10,5.6c-1.2,4.4,1.2,8.8,5.6,10c16.8,4.8,32,12.8,44.8,23.2
+                               c13.2,11.2,23.6,24.8,31.2,40.4c2,4,6.8,6,10.8,4s6-6.8,4-10.8C301.6,91.6,289.6,76,274.8,63.6z"
+            />
+            <path
+              d="M199.6,32.8c-2,0-4-0.4-6-0.4c-2.4,0-4.4,0-6,0c-4.4,0-8,3.6-8,8c0,4.4,3.6,8,8,8c2.4,0,4,0,5.2,0c1.6,0,3.6,0.4,5.2,0.4
+                               c4.4,0.4,8.4-2.8,8.8-7.2C207.2,37.2,204,33.2,199.6,32.8z"
+            />
+            <path
+              d="M230.4,302.4h-42.8h-42.8c-4.4,0-8,3.6-8,8c0,14,5.6,26.8,14.8,36c9.2,9.2,22,14.8,36,14.8s26.8-5.6,36-14.8
+                               c9.2-9.2,14.8-22,14.8-36C238.4,306,234.8,302.4,230.4,302.4z M212.4,335.2c-6.4,6.4-15.2,10.4-24.8,10.4
+                               c-9.6,0-18.4-4-24.8-10.4c-4.4-4.8-7.6-10.4-9.2-16.8h34h34C220,324.8,216.8,330.8,212.4,335.2z"
+            />
+            <path
+              d="M396,210c-2.4-2.8-5.6-5.2-8.8-7.2c0-54.8-22.4-104.8-57.6-140.4c-35.6-36-85.2-58-140-58.4c-0.4,0-0.8,0-1.2,0
+                               c-45.2,0-86.4,18.4-116,48c-28.4,28.4-46,66.8-48,109.2c-5.6,1.2-10.8,4.4-14.8,8.4c-6,6-9.6,14-9.6,22.8s3.6,16.8,9.6,22.8
+                               c4,4,9.2,6.8,14.8,8.4v17.2c0,42.4,16.4,81.2,42.8,110.4c0.4,0.8,0.8,1.2,1.2,1.6c0.4,0.8,0.8,1.2,1.2,1.6
+                               c0.4,0.4,0.8,0.8,1.2,1.2c0.8,0.8,1.2,1.2,1.6,1.6c26.4,26.4,61.6,44,101.2,47.6c0.8,0,1.2,0,2,0c0.8,0,1.2,0,2,0
+                               c0.8,0,1.2,0,2,0c0.8,0,1.2,0,2,0c0.8,0,1.2,0,2,0c0.4,0,1.2,0,2,0c0.4,0,1.2,0,2,0c0.4,0,1.2,0,2,0c45.2-0.8,84.8-19.2,113.6-48
+                               c10-10,18.8-21.2,26-33.6c7.2-12.4,12.8-25.6,16.8-39.6c0.8,0.4,2,0.8,2.8,1.2c4.8,1.6,9.6,2.4,14.4,2.4c12.8,0,24-4.8,32.4-13.2
+                               c8-8.4,13.2-20,13.2-32.4C408.8,229.2,404,218.4,396,210z M83.2,62.8c25.2-25.2,59.6-41.6,98-43.2c0.4,0,1.2,0,1.6,0
+                               c0.8,0,2.4,0,4.8,0c50.8,0,96.8,20.4,129.6,53.2c26,26,44,60,50.8,97.6c-0.4-0.4-1.2-1.2-1.6-1.6c-4-4-9.2-6.8-14.8-8.4
+                               c-0.4-4.4-0.8-8.8-1.2-13.6c-0.8-6.8-2.4-13.6-4-20.4c-0.8-4-5.2-6.8-9.6-5.6c-4,0.8-6.8,5.2-5.6,9.6c1.6,6,2.8,12.4,3.6,18.4
+                               c0.4,3.6,0.8,7.2,0.8,10.8h-296C42,122,58,88,83.2,62.8z M316.8,314c-6.4,11.2-14.4,21.6-23.6,30.8
+                               c-26.4,26.4-62.8,43.2-102.8,43.6c-0.8,0-1.2,0-2,0c-0.8,0-1.2,0-2,0c-0.8,0-1.2,0-2,0c-0.8,0-1.2,0-2,0c-0.8,0-1.2,0-2,0
+                               c-0.8,0-1.2,0-2,0c-0.8,0-1.2,0-2,0c-0.8,0-1.2,0-2,0c-35.2-3.2-67.2-18.8-91.2-42.8c-0.8-0.8-1.6-1.6-2.4-2.4L80,342l-0.8-0.8
+                               l-0.4-0.4l-0.8-1.2l-0.4-0.4c-0.4-0.8-1.2-1.6-2-2.4c-20.8-24.4-33.6-55.2-35.2-89.2c5.2,7.2,11.6,14.8,18.8,21.6
+                               c14.4,14,32,26.4,52.4,35.2c2.8,1.2,6,0.8,8.4-1.2c9.6-8,20.4-14,32-18.4c11.2-4,23.6-6.4,36-6.4c12.4,0,24.8,2.4,36,6.4
+                               c11.6,4,22.4,10.4,32.4,17.6c2.8,2.4,6,2.4,8.8,1.2c20.4-8.8,38-21.2,52.4-35.2c7.2-6.8,13.2-14,18.8-21.6
+                               C335.6,270.8,328.4,294,316.8,314z M44.4,224.4h286.8c-6.4,11.6-14.8,22.8-25.6,33.2c-12.4,11.6-27.2,22.4-43.6,30
+                               c-10-7.6-20.8-13.6-32.8-18c-13.2-4.8-27.2-7.2-41.6-7.2c-14.4,0-28.4,2.4-41.2,7.2c-12,4.4-22.8,10.4-32.8,18
+                               c-16.8-7.6-31.6-18-43.6-30C59.2,247.2,50.8,235.6,44.4,224.4z M345.2,208.4c-2.4,0-32.4,0-313.6,0c-4.4,0-8.8-2-11.6-4.8
+                               c-2.8-3.2-4.8-7.2-4.8-11.6c0-4.8,2-8.8,4.8-11.6c3.2-2.8,7.2-4.8,11.6-4.8H344c4.4,0,8.4,2,11.6,4.8c2.8,3.2,4.8,7.2,4.8,11.6
+                               c0,4.8-2,8.8-4.8,11.6l-0.4,0.4C352.4,206.4,349.2,208,345.2,208.4z M384,261.6c-5.2,5.6-12.8,8.8-20.8,8.8
+                               c-3.2,0-6.4-0.8-9.2-1.6c-1.6-0.4-3.2-0.8-4.4-1.6c1.6-8.4,2.4-16.4,2.4-24.4c0-0.289,0-2.12,0-2.8c0,0.4,0-16,0-17.2
+                               c6.8-1.6,12.8-5.6,16.8-10.4c13.6,2.8,24,14.4,24,28.4C392.8,248.8,389.2,256.4,384,261.6z"
+            />
+          </svg>
+
+          <span
+            >Elf<br />
+            Name Generator</span
+          >
+        </div>
+      </a> 
+    
+    
+   
+  </div>
+
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <a class="footer-logo" href="#"><i class="fa fa-cube"></i> SANTA<span class="brand-color">FIED</span></a>
+          <p>
+            Contact us for all of your Christmas questions:
+          </p>
+          <!--Remove tel spaces in the href-->
+          <a class="footer-tel" href="tel:+1800123456">+ 1 800 123 456</a><br /><span class="footer-email">Email
+            <a href="mailto:support@santafied.fi">support@santafied.fi</a></span>
+        </div>
+        <div class="col-12 col-md-4 footer-links">
+          <h4>Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="./facts.html">Facts and Info</a></li>
+            <li><a href="./recipes.html">Recipes</a></li>
+            <li><a href="./gifts.html">Gifts Suggestions</a></li>
+            <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
+            <li><a href="./games.html">Seasonal Games</a></li>
+            <li><a href="./films.html">Seasonal Films</a></li>
+            <li><a href="./books.html">Seasonal Books</a></li>
+            <li><a href="./activities.html">Seasonal Activities</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h4>Let's stay in touch</h4>
+          <form class="form-inline">
+            <div class="form-group">
+              <label class="sr-only" for="footer-form-email">Email</label>
+              <input class="form-control form-inverted" id="footer-form-email" placeholder="Email" type="email" />
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+          </form>
+
+          <p>Get updates on sales and more</p>
+          <ul class="list-inline footer-social">
+            <li class="list-inline-item">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col footer-copyright">
+            &copy; Santafied. A project under zero-to-mastery.
           </div>
         </div>
       </div>
-    </footer>
-    <script src="../assets/js/darkmode.js"></script>
+    </div>
+  </footer>
+  <script src="../assets/js/darkmode.js"></script>
 
-    <script src="../assets/js/mouse-trail-snowball.js"></script>
-    <script src="../assets/js/navLink-generator.js"></script>
-    <script
-      crossorigin="anonymous"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    ></script>
-    <script
-      crossorigin="anonymous"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    ></script>
-    <script
-      crossorigin="anonymous"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    ></script>
-    <script src="../assets/js/reindeer-name-generator.js"></script>
-  </body>
+  <script src="../assets/js/mouse-trail-snowball.js"></script>
+  <script src="../assets/js/navLink-generator.js"></script>
+  <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="../assets/js/reindeer-name-generator.js"></script>
+</body>
+
 </html>

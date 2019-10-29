@@ -103,6 +103,23 @@ var listOf = [
     link: "https://www.laurainthekitchen.com/recipes/linzer-cookies/"
   },
   {
+    id: "honey-spice-cookies",
+    name: "Honey and Spice Cookies",
+    description:
+      "More than just gingerbread, these Christmas cookies have our special festive spice mix and are dipped in dark chocolate. Get the kids involved in baking them",
+    summary: [
+      {
+        makes: "35+",
+        prep: "30 min",
+        cooking: "12 min",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2017/12/spiced-biscuits.jpg?itok=b032mBjw",
+    link: "https://www.bbcgoodfood.com/recipes/honey-spice-cookies"
+  },
+  {
     id: "potato-candy",
     name: "Potato Candy",
     description:
@@ -594,7 +611,61 @@ var listOf = [
       "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/user-collections/my-colelction-image/2015/12/goats-cheese-pear-candied-pecan-salad.jpg?itok=crbFk6UI",
     link:
       "https://www.bbcgoodfood.com/recipes/goats-cheese-pear-candied-pecan-salad"
-  }
+  },
+  {
+    id: "giant-jam-tart",
+    name: "Giant Jam Tart",
+    description:
+      "This giant jam tart will go down a storm at a party. They're so easy to make, you can bake serveral at once, and get the kids to help you decorate them",
+    summary: [
+      {
+        serves: "6",
+        prep: "20 mins",
+        cooking: "40 mins",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2018/11/jam-tarts.jpg?itok=TjG_K-cw",
+    link:
+      "https://www.bbcgoodfood.com/recipes/giant-jam-tart"
+  },
 
+  {
+    id: "keto-cookies",
+    name: "5-Ingredient Keto Christmas Cookies",
+    description:
+      "These keto cookies are for everyone who likes to have a crispy treat with their coffee. They are quick, easy to make and freezable. One cookie contains 25% of your your daily magnesium requirement - a delicious way to beat keto-flu!",
+    summary: [
+      {
+        serves: "12",
+        prep: "10 mins",
+        cooking: "15 mins",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://files.ketodietapp.com/Blog/files/2016/03/5IngredientKetoChocolateCookies7.jpg",
+    link:
+      "https://ketodietapp.com/Blog/lchf/5-ingredient-keto-chocolate-cookies"
+  },
+  {
+    id: "roasted-duck",
+    name: "Traditional Roasted Duck",
+    description:
+      "Duck is great to have when I ran late to the store and could not buy the turkey or after I burnt the turkey.",
+    summary: [
+      {
+        serves: "4",
+        prep: "20 mins",
+        cooking: "30 mins",
+        skill: "Intermediate"
+      }
+    ],
+    img:
+      "https://www.thespruceeats.com/thmb/iQMW5TDys1o7gewHbxi-tW0h1io=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-893098978-2-5be9b37646e0fb00511182ed.jpg",
+    link:
+      "https://www.thespruceeats.com/roast-duck-perfect-for-the-holidays-913046"
+  },
 
 ];

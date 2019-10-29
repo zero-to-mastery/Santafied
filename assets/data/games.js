@@ -68,7 +68,7 @@ const linkList = [
       'https://images.unsplash.com/photo-1544130973-522ef28d62fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
   },
   {
-    title: 'TOY TOUCHDOWN',
+    title: 'Toy Touchdown',
     description:
       'Players must pass small toys or ornaments under their legs like they’re hiking a football and have a teammate catch them in a small Christmas basket that’s attached to the second player’s back. Teams race to be the first team to catch five or see who can get the most in a minute.',
     link: 'https://www.playpartyplan.com/christmas-games/',
@@ -106,5 +106,13 @@ const linkList = [
     link: 'https://chrome.google.com/webstore/detail/christmas-puzzle-game-chr/phglegapajbnleklhlanfejghkcbjijd',
     imageLink:
       'https://lh3.googleusercontent.com/7AVaTuRPRhq6S7kH3nSX_EY5YPleMqX2DDMOLTZbK0lBM_NgmrlUsAMMBBCfxe9XPZR1KQsdAA=w640-h400-e365'
+  },
+  {
+    title: 'White Elephant Gift Exchange',
+    description:
+      'A white elephant gift exchange, Yankee swap or Dirty Santa is a party game where amusing, impractical gifts are exchanged during festivities. Usually, the goal of a white elephant gift exchange is to entertain party-goers rather than to gain a genuinely valuable or highly sought-after item.',
+    link: 'https://www.whiteelephantrules.com/',
+    imageLink:
+      'https://www.halfwaycreek.org/wp-content/uploads/2015/11/WhiteElephantChristmas.jpg'
   }
 ];

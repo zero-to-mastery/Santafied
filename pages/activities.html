@@ -44,25 +44,17 @@
           ><i class="fa fa-cube"></i> <span>SANTA</span
           ><span class="brand-color">FIED</span></a
         >
-        <div class="dropdown dropdown-container">
-          <a
-            aria-expanded="false"
-            aria-haspopup="true"
-            class="nav-link dropdown-toggle"
-            data-toggle="dropdown"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-          >
-            Navigation
-          </a>
-          <div
-            aria-labelledby="navbarDropdown"
-            class="dropdown-menu"
-            id="nav-dropdown-from-page"
-          ></div>
+        <div class="navbar-collapse collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Navigation
+              </a>
+              <div class="dropdown-menu" id="nav-dropdown-from-page" aria-labelledby="navbarDropdown">
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="nav-item toggle-darkmode"></div>
       </nav>
     </div>
 
@@ -937,6 +929,67 @@
         </div>
 
       </div>
+
+      <div class="row my-md-4">
+        <div
+          class="card col-11 col-sm-12 col-md mx-auto mx-md-3 mb-3 mb-md-0"
+          style="width: 18rem;"
+        >
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Ugly Christmas Sweater Party</h5>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal16"
+            >
+              Know more
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modal16"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Ugly Christmas Sweater Parties!
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    An ugly Christmas sweater is anything tacky or gaudy with a Christmas theme, and the parties are no different. 
+                    These parties are centered around celebrating ugly sweaters, but they are fun and festive and a great way to get friends and family together.
+                    Looking for ideas? Get inspired <a href="https://www.prettymyparty.com/10-tips-for-throwing-an-ugly-christmas-sweater-party/">here</a>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer class="site-footer" id="footer">
@@ -963,14 +1016,16 @@
           <div class="col-12 col-md-4 footer-links">
             <h4>Links</h4>
             <ul class="list-unstyled">
-              <li><a href="./facts.html">Facts and Info</a></li>
-              <li><a href="./recipes.html">Recipes</a></li>
-              <li><a href="./gifts.html">Gifts Suggestions</a></li>
-              <li><a href="./songs.html">Seasonal Songs &amp; Lyrics</a></li>
-              <li><a href="./games.html">Seasonal Games</a></li>
-              <li><a href="./films.html">Seasonal Films</a></li>
-              <li><a href="./books.html">Seasonal Books</a></li>
-              <li><a href="./activities.html">Seasonal Activities</a></li>
+              
+              <li><a href="pages/facts.html">Facts and Info</a></li>
+              <li><a href="pages/recipes.html">Recipes</a></li>
+              <li><a href="pages/gifts.html">Gifts Suggestions</a></li>
+              <li><a href="pages/songs.html">Seasonal Songs &amp; Lyrics</a></li>
+              <li><a href="pages/games.html">Seasonal Games</a></li>
+              <li><a href="pages/films.html">Seasonal Films</a></li>
+              <li><a href="pages/books.html">Seasonal Books</a></li>
+              <li><a href="pages/activities.html">Seasonal Activities</a></li>
+              
             </ul>
           </div>
           <div class="col-12 col-md-4">

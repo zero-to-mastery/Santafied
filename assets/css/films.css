@@ -40,6 +40,10 @@ body.dark div#list-tab.list-group div{
 .row{
   width: 100%;
 }
+
+.list-group {
+  cursor: pointer;
+}
 /* #list-tab{
     height: 40%;
     overflow-x: hidden;
@@ -78,4 +82,9 @@ body.dark div#list-tab.list-group div{
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* Button view game */
+.btn-game {
+  text-align: center;
 }
