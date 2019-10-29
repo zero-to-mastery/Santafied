@@ -1,35 +1,33 @@
-//array of first Name
-let firstNames = [
-  "Sparkle","BoBunny","Jolly","Moxie","Bella","Charmy","Glitzy",
-  "Bling-Bling","Perky","Cosmo","Bubbles","Pixie","Frilly","Scrappy",
-  "Bitty","Purdy","Tinsel","Foxy","Stampy","Inky","Wonky","Glimmer",
-  "Shimmer","Happy","Button","Tiny","Snowy","Fluffy","Jolly","Mischievous",
-];
+let choice = {firstLetter: "", monthChoice: ""};
+let result = document.getElementById("result");
 
-//array of last Name
-let lastNames = [
-  "Gifty-Pants","Point-Ears","Sugar-Gems","McSprinkles","Merry-Mess",
-  "Jingle-Bells","Glitter-Bottom","Crafty-Pants","Twinkle-Toes",
-  "Sugar-Stitches","McGlitter","Curly-Toes","Big-ears","Rolly-Renn","Twinkles",
-];
-
-//generateName function
-function generateName(){
-  let firstName =  firstNames[ Math.floor (Math.random() * firstNames.length ) ];
-  let lastName =  lastNames[ Math.floor (Math.random() * lastNames.length ) ];
-  return firstName + " " + lastName;
+//  letterChoice function
+function letterChoice() {
+    letter = document.getElementById("name").value;
+    choice.firstLetter = letter;
 }
 
-//printName function
-function printName(){
-
-  //get a random name
-  let theName = generateName();
-
-  //change the name
-  let nameContainer = document.querySelector('.name');
-  nameContainer.textContent = theName;
+//  monthChoice function
+function monthChoice() {
+    month = document.getElementById("month").value;
+    choice.monthChoice = month;
 }
 
-//the magic!
-document.getElementById('loadName').addEventListener("click", printName, false);
+//function to generate elf name
+function generateName() {
+    if (choice.firstLetter && choice.monthChoice) {
+        document.getElementById("resultContainer").style.display = "block";
+        result.textContent = choice.firstLetter + " " + choice.monthChoice;
+    } else {
+        alert("Please input your data first.");
+    }
+}
+
+function displayButtonText() {
+  const button = document.getElementById('loadName');
+  if (document.body.offsetWidth < 600) {
+    button.innerText = 'Go!'
+  }
+}
+
+ displayButtonText();

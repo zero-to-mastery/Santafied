@@ -5,6 +5,7 @@ section#hero-content {
   padding: 0;
   margin: 0;
   height: auto;
+  z-index: auto;
 }
 
 .carousel-item {
@@ -19,8 +20,8 @@ section#hero-content {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-20%);
-      -ms-transform: translateY(-20%);
-          transform: translateY(-20%);
+  -ms-transform: translateY(-20%);
+  transform: translateY(-20%);
 }
 
 .carousel-caption h3,
@@ -30,6 +31,7 @@ section#hero-content {
   text-shadow: none;
   margin-bottom: 20px;
 }
+
 .carousel-caption h3 {
   background: rgba(0, 0, 0, 0.8);
   padding: 35px 43px;
@@ -37,6 +39,7 @@ section#hero-content {
   font-weight: 500;
   text-transform: uppercase;
 }
+
 .carousel-caption p {
   background: #ccc;
   opacity: 0.9;
@@ -58,7 +61,7 @@ section#hero-content {
   width: 100%;
   height: 100%;
   /*padding-top: 75px;
-  padding-left: 20px;*/
+    padding-left: 20px;*/
 }
 
 .intro-text {
@@ -79,12 +82,88 @@ section#hero-content {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .centered .display-1 {
   font-size: 3rem;
+}
+
+/*Checkout section*/
+.checkout {
+  padding: 100px;
+  text-align: center;
+  margin-top: -80px;
+  background-color: var(--background-color);
+}
+
+.checkout h1 {
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-top: 100px;
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+#nav-item {
+  color: #ff4546;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s ease-in-out;
+}
+
+#nav-item:hover {
+  background-color: #ff4546;
+  color: white;
+  transform: scale(1.1);
+}
+
+.container a {
+  max-width: 14.5rem;
+  text-decoration: none;
+}
+
+.checkout h1::after {
+  display: block;
+  height: 2px;
+  background-color: #ff4546;
+  content: "";
+  width: 100px;
+  margin: 30px auto 0;
+}
+
+/*Radio section*/
+.radio {
+  background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(rgba(0, 0, 0, 0.4)),
+      to(rgba(0, 0, 0, 0.4))
+    ),
+    url("../../img/microphone.jpg");
+  background: -o-linear-gradient(right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../img/microphone.jpg");
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../img/microphone.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+}
+
+.radio__heading {
+  font-family: "Mountains of Christmas", cursive;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.radio iframe {
+  width: 100%;
+  height: 100px;
+  opacity: 0.9;
 }
 
 @media (min-width: 1280px) {
@@ -93,26 +172,299 @@ section#hero-content {
   }
 }
 
-@media (min-width: 320px) and (max-width: 1280px) {
+/*
+@media screen and (max-width: 600px) {
+    .carousel-inner {
+        height: 205px;
+    }
+
+    .carousel-item {
+        height: 60vh;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-caption h3 {
+        padding: 35px 43px;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem;
+    }
+
+    .checkout{
+        padding: 0px;
+    }
+}
+*/
+
+@media (min-width: 601px) and (max-width: 1200px) {
   .carousel-item {
     height: 60vh;
   }
-  .carousel-caption {
-    top: 30%;
-    -webkit-transform: translateY(-30%);
-        -ms-transform: translateY(-30%);
-            transform: translateY(-30%);
+
+  .carousel-item img {
+    height: 100%;
   }
+
+  .carousel-caption {
+    top: 50%;
+    -webkit-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+  }
+
   .carousel-caption h3 {
     padding: 35px 43px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
   }
+
   .carousel-caption p {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .checkout {
+    padding: 0px;
   }
 }
 
 .slide img {
   width: 100%;
+}
+
+.card-image-placeholder {
+  width: 190px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+/* Card calender */
+header {
+  color: white;
+}
+
+/* .header-bar {
+    height: 1rem;
+  } */
+
+.header-title {
+  padding: 1rem;
+}
+.header-title h1 {
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.header-weekdays {
+  height: 2rem;
+}
+.header-weekdays span {
+  font-size: 0.8rem;
+  display: block;
+  float: left;
+  width: 14.28571%;
+  padding: 0.5rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card-body-device {
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  width: 100%;
+
+}
+
+.card-body-device:hover .card-image-placeholder.device header {
+  display: none;
+}
+
+.device header {
+  width: 100%;
+  height: 6rem;
+  background-color: #58b2a4;
+}
+
+/*countdown section*/
+.countdown {
+  background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(rgba(0, 0, 0, 0.4)),
+      to(rgba(0, 0, 0, 0.4))
+    ),
+    url("../../img/snow-xmas.jpg");
+  background: -o-linear-gradient(right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../img/snow-xmas.jpg");
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../img/snow-xmas.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 80px;
+}
+
+.countdown__heading {
+  font-family: "Mountains of Christmas", cursive;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.countdown iframe {
+  width: 100%;
+  height: 200px;
+  opacity: 0.9;
+}
+
+@media (min-width: 1280px) {
+  .centered .display-1 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-inner {
+    width: 100%;
+    height: 205px;
+    overflow: hidden;
+  }
+
+  .carousel-item {
+    height: 200px;
+    width: 100%;
+    right: unset;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .carousel-item img {
+    height: auto;
+    height: 200px;
+    width: unset;
+    object-fit: cover;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 0px;
+    bottom: unset;
+    left: unset;
+    right: 0px;
+    height: 40px;
+    width: 100vw;
+  }
+
+  .carousel-caption h3 {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+
+  .carousel-caption p {
+    display: none;
+    font-size: 0.8rem;
+    margin-bottom: 0px;
+  }
+
+  .checkout {
+    padding: 0px;
+  }
+
+  .carousel-indicators {
+    bottom: 0px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .carousel-indicator {
+    min-width: 320px;
+  }
+  .carousel-item {
+    height: 60vh;
+  }
+
+  .carousel-item img {
+    height: 100%;
+  }
+
+  .carousel-caption {
+    top: 50%;
+    -webkit-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+  }
+
+  .carousel-caption h3 {
+    padding: 35px 43px;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .checkout {
+    padding: 0px;
+  }
+}
+
+.slide img {
+  width: 100%;
+}
+
+.card-image-placeholder {
+  width: 190px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+#facts {
+  background-image: url("../../img/factsSanta.jpg");
+}
+#recipes {
+  background-image: url("../../img/recipes.jpg");
+}
+#gifts {
+  background-image: url("../../img/gifts.jpg");
+}
+#songs {
+  background-image: url("../../img/songs.jpg");
+}
+#games {
+  background-image: url("../../img/games.jpg");
+}
+#films {
+  background-image: url("../../img/movies.png");
+}
+#books {
+  background-image: url("../../img/books.jpg");
+}
+#activities {
+  background-image: url("../../img/activity.jpg");
+}
+#find-your-snowman-name {
+  background-image: url("../../img/name.jpg");
+}
+#wishes {
+  background-image: url("../../img/wish.jpg");
 }

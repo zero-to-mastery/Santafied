@@ -1,0 +1,77 @@
+
+/* ********************** PAGES BACKGROUNDS START ********************** */
+#movie {
+  background: url('../img/movie/movie_bg.jpg') no-repeat center center/cover fixed;
+  height: 110vh;
+  line-height: 1.4;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 5rem;
+  color: rgb(253, 207, 0);
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 4px 4px rgb(206, 13, 13);
+}
+
+.iframe-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: rgb(241,81,85,0.9);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  height: 200%;
+  padding: 2rem 2rem;
+  /* Overlay */
+  position: absolute;
+  top: 200px;
+  left:0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6)
+}
+
+/* ****************************************** RESPONSIVE ********************************** */
+
+@media(max-width: 700px) {
+  #movie {
+    height: 250%;
+    background-color: #333;   
+    background: url('../img/movie/movie_mobile_bg.jpg') no-repeat center center/cover fixed;
+   }
+
+  h1 {
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px rgb(230, 5, 5);
+    
+  }
+
+  iframe {
+    width: 400px;
+    height: 550px;
+    margin: 1rem auto;
+
+  }
+
+  .iframe-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    height: 280vh;    
+    width: 85%;
+    margin: 0 auto;
+    top: 300px;
+    padding: 0.5rem; 
+  }
+
+ 
+
+}
