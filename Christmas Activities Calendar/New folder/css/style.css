@@ -17,6 +17,7 @@ body {
 	border-radius: 5px;
 	box-shadow: 1px 1px 2px black;
 	color: white;
+	font-weight:900;
 }
 
 .sm-box {
@@ -41,19 +42,35 @@ body {
 }
 
 .red-box {
-	background-color: rgb(141, 33, 16);
+    background-image: url("../images/RedBoxBackground.png");
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: soft-light;
+	background-color: rgba(41, 3, 69, 0.8);
 }
 
 .green-box {
-	background-color: rgb(102, 150, 34);
+	background-image: url("../images/GreenBoxBackground.jpe");
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: soft-light;
+    background-color: rgba(6, 35, 2, 0.8);
 }
 
 .yellow-box {
-	background-color: rgb(184, 45, 25);
+	background-image: url("../images/YellowBoxBackground.jpg");
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: soft-light;
+    background-color: rgba(38, 1, 1, 0.8);
 }
 
 .dgreen-box {
-	background-color: rgb(61, 93, 45);
+	background-image: url("../images/DgreenBoxBackground.jpe");
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: soft-light;
+    background-color: rgba(1, 3, 40, 0.8);
 }
 
 img {
