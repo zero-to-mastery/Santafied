@@ -83,15 +83,23 @@ const linkList = [
     imageLink:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/hallmark-movie-bingo-1542052363.png?crop=0.850xw:1.00xh;0.0777xw,0&resize=980:*'
   },
-    {
+  {
     title: 'You’ve Been Jingled',
     description:
       'You’ve been jingled is a fun, surprising and definitely exciting family tradition especially during the Christmas season. It’s a nice way to promote the spirit of gift giving without the need of saying, “Hey! The gift’s from me.”',
     link: 'https://christiancamppro.com/youve-been-jingled-a-christmas-game-that-spreads-joy/',
     imageLink:
       'https://christiancamppro.com/wp-content/uploads/2018/12/youve-been-jingled-christmas-game.jpg'
-  }, 
-    {
+  },
+  {
+    title: 'Go Santa Go',
+    description:
+      'Oh dear. It looks like Santa Claus hit the snooze button again, and barely got dressed, as he rushed out to work. Go, Santa! Go as quickly as possible, as you bounce along to deliver the gifts in timely fashion for the kids this Christmas. Make sure you put some clothes on before you drop down the chimney!',
+    link: 'https://www.miniclip.com/games/go-santa-go/en/#t-c-f-C',
+    imageLink:
+      'https://static3.miniclipcdn.com/content/game-icons/medium/gosantago.jpg'
+  },
+  {
     title: 'Christmas Carol Pictionary Relay',
     description:
       'Everyone knows Pictionary, but this version turns it up a few holiday-themed notches. Teams of party gamers race to depict familiar Christmas carols. As soon as the team figures out which carol has been drawn, they have to sing the song to score more points.',
