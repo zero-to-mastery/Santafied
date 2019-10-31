@@ -667,5 +667,22 @@ var listOf = [
     link:
       "https://www.thespruceeats.com/roast-duck-perfect-for-the-holidays-913046"
   },
-
+  {
+    id: "peanut-brittle",
+    name: "Peanut Brittle",
+    description:
+      "Peanut brittle is a buttery, crispy treat filled with roasted peanuts. It is the perfect edible gift during Christmas time. If you love crunchy treats, you will definitely love this recipe!",
+    summary: [
+      {
+        serves: "24",
+        prep: "10 mins",
+        cooking: "35 mins",
+        skill: "Easy"
+      }
+    ],
+    img:
+      "https://www.dinneratthezoo.com/wp-content/uploads/2018/10/peanut-brittle-2-150x150.jpg",
+    link:
+      "https://www.dinneratthezoo.com/peanut-brittle"
+  },
 ];
