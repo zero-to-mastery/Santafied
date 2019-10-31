@@ -134,6 +134,12 @@ section#hero-content {
   margin: 30px auto 0;
 }
 
+/* Button subscribe */
+
+.newsletter-subscribe form .btn-danger:hover {
+    background-color: #ff0016 !important;
+}
+
 /*Radio section*/
 .radio {
   background: -webkit-gradient(
@@ -165,6 +171,14 @@ section#hero-content {
   height: 100px;
   opacity: 0.9;
 }
+
+/* Form email field */
+.form-inline .form-control:focus::placeholder {
+    transition: all .2s;
+    font-size: 70%;
+    transform: translateY(-10px);
+}
+
 
 @media (min-width: 1280px) {
   .centered .display-1 {
