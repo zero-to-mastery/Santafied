@@ -14,6 +14,62 @@
     },
 */
 const songs = [
+    {
+		title: `Wonderful Christmas Time`,
+		description: `Wonderful Christmas Time is a song by Paul McCartney and Wings. 
+        Recorded during the sessions for his solo album McCartney II (1980), it was released in November 1979 following Wings' 
+        final album Back to the Egg earlier that year. It was his first solo single since their formation. `,
+		imageUrl:
+			'https://upload.wikimedia.org/wikipedia/en/5/5e/Wonderful_Christmastime_%28Paul_McCartney_single_-_cover_art%29.jpg',
+		youtubeUrl: 'https://www.youtube.com/watch?v=V9BZDpni56Y',
+		audioUrl:
+			'http://yuletidetunes.com/A_Wonderful_Christmas_Time_-_Paul_McCartney.html',
+		lyrics: `The moon is right<br>
+        The spirits up<br>
+        We're here tonight<br>
+        And that's enough<br>
+        Simply havin' a wonderful Christmastime<br>
+        Simply havin' a wonderful Christmastime<br>
+        The party's on<br>
+        The feelin's here<br>
+        That only comes<br>
+        This time of year<br>
+        Simply havin' a wonderful Christmastime<br>
+        Simply havin' a wonderful Christmastime<br>
+        The choir of children sing their song<br>
+        <br>
+        Ding dong, ding dong<br>
+        Ding dong, ding, ooh, ooh<br>
+        We're simply havin' a wonderful Christmastime<br>
+        Simply havin' a wonderful Christmastime<br>
+        The word is out<br>
+        About the town<br>
+        So lift a glass<br>
+        Ahh, don't look down<br>
+        Simply havin' a wonderful Christmastime<br>
+        The choir of children sing their song<br>
+        They practiced all year long<br>
+        <br>
+        Ding dong, ding dong<br>
+        Ding dong, ding dong<br>
+        Ding dong, ding dong<br>
+        Ding dong, ding, ooh, ooh<br>
+        <br>
+        The party's on<br>
+        The spirits up<br>
+        We're here tonight<br>
+        And that's enough<br>
+        Simply havin' a wonderful Christmastime<br>
+        We're simply havin' a wonderful Christmastime<br>
+        The moon is right<br>
+        The spirits up<br>
+        We're here tonight<br>
+        And that's enough<br>
+        We're simply havin' a wonderful Christmastime<br>
+        Simply havin' a wonderful Christmastime<br>
+        Simply havin' a wonderful Christmastime<br>
+        Oh, Christmastime`,
+	},
 	{
 		title: `Last Christmas`,
 		description: `Last Christmas is a song by English pop duo Wham!, 
@@ -217,66 +273,48 @@ const songs = [
 		imageUrl: 'https://m.media-amazon.com/images/I/71aA3Wt3UWL._SS500_.jpg',
 		youtubeUrl: 'https://www.youtube.com/watch?v=itcMLwMEeMQ',
 		audioUrl: 'http://yuletidetunes.com/uploads/audio/Jingle%20Bell%20Rock%20-%20Bobby%20Helms.mp3',
-		lyrics: `Jingle bell, jingle bell, jingle bell rock
-        Jingle bells swing and jingle bells ring
-        Snowing and blowing up bushels of fun
-        Now the jingle hop has begun
-        <br>
-        <br>
-        Jingle bell, jingle bell, jingle bell rock
-        Jingle bells chime in jingle bell time
-        Dancing and prancing in Jingle Bell Square
-        In the frosty air
-        What a bright time, it's the right time
-        <br>
-        <br>
-        To rock the night away
-        Jingle bell time is a swell time
-        To go gliding in a one-horse sleigh
-        <br>
-        <br>
-        Giddy-up jingle horse, pick up your feet
-        Jingle around the clock
-        Mix and a-mingle in the jingling feet
-        <br>
-        <br>
-        That's the jingle bell rock
-        Jingle bell, jingle bell, jingle bell rock
-        Jingle bells chime in jingle bell time
-        Dancing and prancing in Jingle Bell Square
-        In the frosty air
-        <br>
-        <br>
-        Jingle bell, jingle bell, jingle bell rock
-        Jingle bells chime in jingle bell time
-        Snowing and blowing up bushels of fun
-        Now the jingle hop has begun
-        <br>
-        <br>
-        Jingle bell, jingle bell, jingle bell rock
-        Jingle bells chime in jingle bell time
-        Dancing and prancing in Jingle Bell Square
-        In the frosty air
-        <br>
-        <br>
-        What a bright time, it's the right time
-        To rock the night away (rock the night away)
-        Jingle bell time is a swell time
-        To go gliding in a one-horse sleigh
-        Giddy-up jingle horse, pick up your feet
-        Jingle around the clock
-        <br>
-        <br>
-        Mix and a-mingle in the jingling feet
-        That's the jingle bell
-        That's the jingle bell
-        That's the jingle bell (rock)
-        <br>
-        <br>
-        Jingle bell, jingle bell, jingle bell rock
-        <br>
-        <br>
-        Jingle bell, jingle bell, jingle bell rock Jingle bell, jingle bell, jingle bell rock`,
+		lyrics: `The moon is right
+The spirits up
+We're here tonight
+And that's enough
+Simply havin' a wonderful Christmastime
+Simply havin' a wonderful Christmastime
+The party's on
+The feelin's here
+That only comes
+This time of year
+Simply havin' a wonderful Christmastime
+Simply havin' a wonderful Christmastime
+The choir of children sing their song
+Ding dong, ding dong
+Ding dong, ding, ooh, ooh
+We're simply havin' a wonderful Christmastime
+Simply havin' a wonderful Christmastime
+The word is out
+About the town
+So lift a glass
+Ahh, don't look down
+Simply havin' a wonderful Christmastime
+The choir of children sing their song
+They practiced all year long
+Ding dong, ding dong
+Ding dong, ding dong
+Ding dong, ding dong
+Ding dong, ding, ooh, ooh
+The party's on
+The spirits up
+We're here tonight
+And that's enough
+Simply havin' a wonderful Christmastime
+We're simply havin' a wonderful Christmastime
+The moon is right
+The spirits up
+We're here tonight
+And that's enough
+We're simply havin' a wonderful Christmastime
+Simply havin' a wonderful Christmastime
+Simply havin' a wonderful Christmastime
+Oh, Christmastime`,
 	},
 	{
 		title: `Christmas In Hollis`,
