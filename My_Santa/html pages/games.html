@@ -12,6 +12,17 @@
   <title>Games</title>
 </head>
 
+<script>
+	window.onload = function() {
+		makeSelectedNavActive();
+	};
+	
+	function makeSelectedNavActive() {
+		var element = document.getElementById("games-link");
+		element.classList.add("current");
+	}
+</script>
+  
 <body id="games">
 
   <div class="header">

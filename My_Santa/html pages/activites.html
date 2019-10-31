@@ -12,6 +12,17 @@
   <title>Santafield 2019</title>
 </head>
 
+<script>
+	window.onload = function() {
+		makeSelectedNavActive();
+	};
+	
+	function makeSelectedNavActive() {
+		var element = document.getElementById("activities-link");
+		element.classList.add("current");
+	}
+</script>
+  
 <body id="activities">
   <div class="header">
 		<script src="../js/My_Santa-page-header.js"></script>

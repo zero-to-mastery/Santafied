@@ -12,6 +12,17 @@
   <title>Santafield 2019</title>
 </head>
 
+<script>
+	window.onload = function() {
+		makeSelectedNavActive();
+	};
+	
+	function makeSelectedNavActive() {
+		var element = document.getElementById("books-link");
+		element.classList.add("current");
+	}
+</script>
+
 <body id="books">
 
   <div class="header">

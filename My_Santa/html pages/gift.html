@@ -12,6 +12,17 @@
   <title>Gift Idea</title>
 </head>
 
+<script>
+	window.onload = function() {
+		makeSelectedNavActive();
+	};
+	
+	function makeSelectedNavActive() {
+		var element = document.getElementById("gift-link");
+		element.classList.add("current");
+	}
+</script>
+
 <body id="gift">
 
   <div class="header">

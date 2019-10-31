@@ -12,6 +12,18 @@
   <title>The Best recipes</title>
 </head>
 
+<script>
+	window.onload = function() {
+		makeSelectedNavActive();
+	};
+	
+	function makeSelectedNavActive() {
+		var element = document.getElementById("recipes-link");
+		element.classList.add("current");
+	}
+</script>
+
+	
 <body id="recipes">
 
   <div class="header">

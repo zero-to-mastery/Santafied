@@ -11,6 +11,17 @@
         <title>Specific Movie</title>
     </head>
 
+	<script>
+		window.onload = function() {
+			makeSelectedNavActive();
+		};
+	
+		function makeSelectedNavActive() {
+			var element = document.getElementById("movie-link");
+			element.classList.add("current");
+		}
+	</script>
+
     <body id="movie">
         <div class="header">
 			<script src="../js/My_Santa-page-header.js"></script>
