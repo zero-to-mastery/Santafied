@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+
+.container {
+    font-family: 'Bitter', serif;
+}
+
 body#films .list-group-item.list-group-item-action.active {
     background-color: #ff4546 !important;
     border-color: #ff4546 !important;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 button {
