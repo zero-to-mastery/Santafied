@@ -1,3 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+
+.container {
+    font-family: 'Bitter', serif;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tab-navigation {
+    margin-bottom: 16px;
+}
+
+.tab-content .card-img {
+    max-height: 250px;
+}
+
+.tab-content .col-md-12 {
+    padding: 0;
+}
+
+/*Center all images, horizontally and vertically*/
+.col-lg-4 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+@media (max-width: 767px) {
+    .tab-content .card-img {
+        max-height: 300px;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+}
+
+/*Padding*/
+img {
+    margin: 5px;
+}
+
+.btn-read-more {
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0.5em 1em;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 1;
+    border: none red;
+}
+
+.btn-read-more:hover {
+    opacity: 0.7
+}
+
+
 .list-group {
     max-height: 300px;
     overflow: scroll;
