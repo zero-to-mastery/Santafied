@@ -14,19 +14,19 @@
     },
 */
 const songs = [
-	{
-		title: `Last Christmas`,
-		description: `Last Christmas is a song by English pop duo Wham!, 
-        released on Epic Records in December 1984, 
+  {
+    title: `Last Christmas`,
+    description: `Last Christmas is a song by English pop duo Wham!,
+        released on Epic Records in December 1984,
         on a double A-side with "Everything She Wants".
         It was written and produced by George Michael,
         and has been covered by many artists since its original release.`,
-		imageUrl:
-			'https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Last_Christmaswham.jpg/220px-Last_Christmaswham.jpg',
-		youtubeUrl: 'https://www.youtube.com/watch?v=E8gmARGvPlI',
-		audioUrl:
-			'https://mp3storage.alarab.com/data/static/MMS_Files/MP3/mp3_files//C/Christmas%20Time/mp3/Alarab.net_George-Micheal.Wham-Last_Christmas.mp3',
-		lyrics: `[Chorus]
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Last_Christmaswham.jpg/220px-Last_Christmaswham.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=E8gmARGvPlI",
+    audioUrl:
+      "https://mp3storage.alarab.com/data/static/MMS_Files/MP3/mp3_files//C/Christmas%20Time/mp3/Alarab.net_George-Micheal.Wham-Last_Christmas.mp3",
+    lyrics: `[Chorus]
         <br>
         Last Christmas, I gave you my heart
         But the very next day you gave it away
@@ -102,22 +102,23 @@ const songs = [
         Maybe next year
         I'll give it to someone, I'll give it to someone special
         Special...
-        Someone...`,
-	},
-	{
-		title: `All I Want for Christmas Is You`,
-		description: `All I Want for Christmas Is You" is a Christmas song 
+        Someone...`
+  },
+  {
+    title: `All I Want for Christmas Is You`,
+    description: `All I Want for Christmas Is You" is a Christmas song
         performed by American singer and songwriter Mariah Carey.
         She wrote and produced the song alongside Walter Afanasieff.
         Columbia Records released it on November 28, 1994,[1] as the lead
         single from her fourth studio album and first holiday album, Merry Christmas (1994).
         The track is an uptempo love song that includes bell chimes, heavy back-up vocals, and synthesizers.
         It is also the best-selling modern day Christmas song making her the "Queen of Christmas" in popular culture and music.`,
-		imageUrl:
-			'https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/All_I_Want_for_Christmas_Is_You_Mariah_Carey.png/220px-All_I_Want_for_Christmas_Is_You_Mariah_Carey.png',
-		youtubeUrl: 'https://www.youtube.com/watch?v=yXQViqx6GMY',
-		audioUrl: 'https://topnaija.ng/wp-content/uploads/2018/11/All-I-Want-For-Christmas-%E2%80%93-Mariah-Carey.mp3',
-		lyrics: `[Intro]
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/All_I_Want_for_Christmas_Is_You_Mariah_Carey.png/220px-All_I_Want_for_Christmas_Is_You_Mariah_Carey.png",
+    youtubeUrl: "https://www.youtube.com/watch?v=yXQViqx6GMY",
+    audioUrl:
+      "https://topnaija.ng/wp-content/uploads/2018/11/All-I-Want-For-Christmas-%E2%80%93-Mariah-Carey.mp3",
+    lyrics: `[Intro]
         <br>
         I-I-I don't want a lot for Christmas
         There is just one thing I need
@@ -206,18 +207,19 @@ const songs = [
         You
         All, all, all, all I want for Christmas is you, baby
         You
-        All I want for Christmas is you, baby`,
-	},
-	{
-		title: `Jingle Bells Rock`,
-		description: `Jingle Bells is one of the best-known and commonly sung American songs in the world. 
+        All I want for Christmas is you, baby`
+  },
+  {
+    title: `Jingle Bells Rock`,
+    description: `Jingle Bells is one of the best-known and commonly sung American songs in the world.
         It was written by James Lord Pierpont (1822–1893) and published under the title "One Horse Open Sleigh" in the autumn of 1857.
         It has been claimed that it was originally written to be sung by a Sunday school choir; however, historians dispute this,
         stating that it was much too "racy" (and secular) to be sung by a children's church choir in the days it was written.`,
-		imageUrl: 'https://m.media-amazon.com/images/I/71aA3Wt3UWL._SS500_.jpg',
-		youtubeUrl: 'https://www.youtube.com/watch?v=itcMLwMEeMQ',
-		audioUrl: 'http://yuletidetunes.com/uploads/audio/Jingle%20Bell%20Rock%20-%20Bobby%20Helms.mp3',
-		lyrics: `Jingle bell, jingle bell, jingle bell rock
+    imageUrl: "https://m.media-amazon.com/images/I/71aA3Wt3UWL._SS500_.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=itcMLwMEeMQ",
+    audioUrl:
+      "http://yuletidetunes.com/uploads/audio/Jingle%20Bell%20Rock%20-%20Bobby%20Helms.mp3",
+    lyrics: `Jingle bell, jingle bell, jingle bell rock
         Jingle bells swing and jingle bells ring
         Snowing and blowing up bushels of fun
         Now the jingle hop has begun
@@ -276,20 +278,21 @@ const songs = [
         Jingle bell, jingle bell, jingle bell rock
         <br>
         <br>
-        Jingle bell, jingle bell, jingle bell rock Jingle bell, jingle bell, jingle bell rock`,
-	},
-	{
-		title: `Christmas In Hollis`,
-		description: `"Christmas in Hollis" is a single by Run-DMC that was included on two 1987 Christmas compilation albums 
+        Jingle bell, jingle bell, jingle bell rock Jingle bell, jingle bell, jingle bell rock`
+  },
+  {
+    title: `Christmas In Hollis`,
+    description: `"Christmas in Hollis" is a single by Run-DMC that was included on two 1987 Christmas compilation albums
         featuring various artists: A Very Special Christmas (A&M 3911) and Christmas Rap (Profile 1247).
         The title refers to Hollis, Queens, the New York City neigborhood in which the members of Run-DMC grew up.
         The track samples Clarence Carter's 1968 holiday song "Back Door Santa", as well as "Frosty the Snowman", "Jingle Bells",
         and "Joy to the World" and features a slide whistle. "Christmas in Hollis" was written by the members of Run DMC,: Joseph Simmons,
         Darryl McDaniels, and Jason Mizell.`,
-		imageUrl: 'https://i.ibb.co/SVzCSYJ/220px-Christmas-in-Hollis.jpg',
-		youtubeUrl: 'https://www.youtube.com/watch?v=OR07r0ZMFb8',
-		audioUrl: 'https://www.mfiles.co.uk/mp3-downloads/jingle-bells-keyboard.mp3',
-		lyrics: `[Run]
+    imageUrl: "https://i.ibb.co/SVzCSYJ/220px-Christmas-in-Hollis.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=OR07r0ZMFb8",
+    audioUrl:
+      "https://www.mfiles.co.uk/mp3-downloads/jingle-bells-keyboard.mp3",
+    lyrics: `[Run]
         <br>
         It was December 24th on Hollis Ave after dark
         When I seen a man chilling with his dog in the park
@@ -344,17 +347,19 @@ const songs = [
         <br>
         [Run-D.M.C.]
         <br>
-        Merry Christmas and Happy New Year!`,
-	},
-	{
-		title: `Carol of the Bells`,
-		description: `"Carol of the Bells" is a popular Christmas carol, with music by Ukrainian composer 
+        Merry Christmas and Happy New Year!`
+  },
+  {
+    title: `Carol of the Bells`,
+    description: `"Carol of the Bells" is a popular Christmas carol, with music by Ukrainian composer
         Mykola Leontovych in 1914 and lyrics by Peter J. Wilhousky. The song is based on the Ukrainian folk chant "Shchedryk".
         Pentatonix (abbreviated PTX) is an American a cappella group famous for their covers on Youtubehave and other streaming platforms.`,
-		imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/81srrVU9WaL._SL1500_.jpg',
-		youtubeUrl: 'https://www.youtube.com/watch?v=WSUFzC6_fp8',
-		audioUrl: 'http://yuletidetunes.com/uploads/audio/Carol Of The Bells - Hayley Westenra.mp3',
-		lyrics: `Hark how the bells
+    imageUrl:
+      "https://images-na.ssl-images-amazon.com/images/I/81srrVU9WaL._SL1500_.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=WSUFzC6_fp8",
+    audioUrl:
+      "http://yuletidetunes.com/uploads/audio/Carol Of The Bells - Hayley Westenra.mp3",
+    lyrics: `Hark how the bells
         Sweet silver bells
         All seem to say
         Throw cares away
@@ -447,19 +452,21 @@ const songs = [
         Ah! Ah! Ah!
         <br>
         <br>
-        La, la, la, la...`,
-	},
-	{
-		title: `Feliz Navidad`,
-		description: `"Feliz Navidad" is a Christmas song written in 1970 by the Puerto Rican 
+        La, la, la, la...`
+  },
+  {
+    title: `Feliz Navidad`,
+    description: `"Feliz Navidad" is a Christmas song written in 1970 by the Puerto Rican
         singer and songwriter José Feliciano. With its simple Spanish chorus
         (the traditional Christmas/ New Year greeting, "Feliz Navidad, próspero año y felicidad" meaning
         "Merry Christmas, a prosperous year and happiness") and equally simple English verse
         "I wanna wish you a Merry Christmas from the bottom of my heart", it has become a classic Christmas pop song.`,
-		imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/51WrR9GVnFL._SY355_.jpg',
-		youtubeUrl: 'https://www.youtube.com/watch?v=RTtc2pM1boE',
-		audioUrl: 'http://yuletidetunes.com/uploads/audio/Feliz Navidad - Boney M.mp3',
-		lyrics: `[Chorus]
+    imageUrl:
+      "https://images-na.ssl-images-amazon.com/images/I/51WrR9GVnFL._SY355_.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=RTtc2pM1boE",
+    audioUrl:
+      "http://yuletidetunes.com/uploads/audio/Feliz Navidad - Boney M.mp3",
+    lyrics: `[Chorus]
         <br>
         Feliz Navidad
         Feliz Navidad
@@ -537,21 +544,23 @@ const songs = [
         Feliz Navidad, ey, ey
         Feliz Navidad
         Feliz Navidad
-        Próspero año y felicidad`,
-	},
-	{
-		title: `Happy Xmas (War is Over)`,
-		description: `"Happy Xmas (War Is Over)" was released in 1971 as a single by John & Yoko/Plastic Ono Band with the Harlem Community Choir. 
-        The lyrics are set to the traditional English ballad "Skewball". The song reached number four in the UK, where its release was delayed until November 1972, 
-        and has periodically reemerged on the UK Singles Chart, most notably after Lennon's death in December 1980, when it peaked at number two. 
+        Próspero año y felicidad`
+  },
+  {
+    title: `Happy Xmas (War is Over)`,
+    description: `"Happy Xmas (War Is Over)" was released in 1971 as a single by John & Yoko/Plastic Ono Band with the Harlem Community Choir.
+        The lyrics are set to the traditional English ballad "Skewball". The song reached number four in the UK, where its release was delayed until November 1972,
+        and has periodically reemerged on the UK Singles Chart, most notably after Lennon's death in December 1980, when it peaked at number two.
         In a UK-wide poll in December 2012, it was voted tenth on the ITV television special The Nation's Favourite Christmas Song.
 
         Also a protest song against the Vietnam War, "Happy Xmas (War Is Over)" has since become a Christmas standard, frequently covered by other artists,
         appearing on compilation albums of seasonal music, and named in polls as a holiday favourite.`,
-		imageUrl: 'https://upload.wikimedia.org/wikipedia/en/a/a9/Happy_Xmas_%28War_is_Over%29.jpg',
-		youtubeUrl: 'https://www.youtube.com/watch?v=yN4Uu0OlmTg',
-		audioUrl: 'http://yuletidetunes.com/uploads/audio/Happy Xmas (War Is Over) - Neil Diamond.mp3',
-		lyrics: `[Intro]
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/en/a/a9/Happy_Xmas_%28War_is_Over%29.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=yN4Uu0OlmTg",
+    audioUrl:
+      "http://yuletidetunes.com/uploads/audio/Happy Xmas (War Is Over) - Neil Diamond.mp3",
+    lyrics: `[Intro]
         <br>
         (Happy Christmas, Kyoko
         Happy Christmas, Julian)
@@ -620,19 +629,20 @@ const songs = [
         War is over, now
         Happy Christmas
         Happy Christmas, Christmas
-        Happy Christmas, Christmas`,
-	},
-	{
-		title: `Have Yourself a Merry Little Christmas`,
-		description: `"Have Yourself a Merry Little Christmas" is a song written by Hugh Martin and Ralph Blane and introduced 
+        Happy Christmas, Christmas`
+  },
+  {
+    title: `Have Yourself a Merry Little Christmas`,
+    description: `"Have Yourself a Merry Little Christmas" is a song written by Hugh Martin and Ralph Blane and introduced
         by Judy Garland in the 1944 MGM musical Meet Me in St. Louis. Frank Sinatra later recorded a version with modified lyrics.
         In 2007, ASCAP ranked it the third most performed Christmas song during the preceding five years that had been written by ASCAP members.
         In 2004 it finished at No. 76 in AFI's 100 Years...100 Songs rankings of the top tunes in American cinema.`,
-		imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/St._Louis_Judy.jpg',
-		youtubeUrl: 'https://www.youtube.com/watch?v=CreWsnhQwzY',
-		audioUrl:
-			'http://yuletidetunes.com/uploads/audio/Bebo Norman - 09 - Have Yourself A Merry Little Christmas.mp3',
-		lyrics: `Have yourself a merry little Christmas
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/6/6c/St._Louis_Judy.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=CreWsnhQwzY",
+    audioUrl:
+      "http://yuletidetunes.com/uploads/audio/Bebo Norman - 09 - Have Yourself A Merry Little Christmas.mp3",
+    lyrics: `Have yourself a merry little Christmas
         Let your heart be light
         Next year all our troubles will be out of sight
         Have yourself a merry little Christmas
@@ -649,17 +659,18 @@ const songs = [
         Someday soon we all will be together
         If the fates allow
         Until then we'll have to muddle through somehow
-        So have yourself a merry little Christmas now`,
-	},
-	{
-		title: `Merry Christmas Everyone`,
-		description: `"Merry Christmas Everyone" is a festive song recorded by Welsh singer-songwriter Shakin' Stevens. 
+        So have yourself a merry little Christmas now`
+  },
+  {
+    title: `Merry Christmas Everyone`,
+    description: `"Merry Christmas Everyone" is a festive song recorded by Welsh singer-songwriter Shakin' Stevens.
         Written by Bob Heatlie and produced by Dave Edmunds, it was the fourth number one single for Shakin' Stevens on the UK Singles Chart.`,
-		imageUrl:
-			'https://upload.wikimedia.org/wikipedia/en/8/80/Shakin%27_Stevens_Merry_Christmas_Everyone_single_cover.jpg',
-		youtubeUrl: 'https://www.youtube.com/watch?v=ZeyHl1tQeaQ',
-		audioUrl: 'http://yuletidetunes.com/uploads/audio/Merry%20Christmas%20Everyone%20-%20Shakin%20Stevens.mp3',
-		lyrics: `Snow is fallin'<br>
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/en/8/80/Shakin%27_Stevens_Merry_Christmas_Everyone_single_cover.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=ZeyHl1tQeaQ",
+    audioUrl:
+      "http://yuletidetunes.com/uploads/audio/Merry%20Christmas%20Everyone%20-%20Shakin%20Stevens.mp3",
+    lyrics: `Snow is fallin'<br>
         All around me<br>
         Children playin'<br>
         Having fun<br>
@@ -720,18 +731,18 @@ const songs = [
         Love and understanding<br>
         Merry Christmas everyone<br>
         Merry Christmas everyone<br>
-        Ooh merry Christmas everyone<br>`,
-	},
-	{
-		title: `Rockin' Around the Christmas Tree`,
-		description: `"Rockin' Around the Christmas Tree" is a Christmas song written by Johnny Marks and recorded by Brenda Lee in 1958; 
+        Ooh merry Christmas everyone<br>`
+  },
+  {
+    title: `Rockin' Around the Christmas Tree`,
+    description: `"Rockin' Around the Christmas Tree" is a Christmas song written by Johnny Marks and recorded by Brenda Lee in 1958;
         it has since been recorded by numerous other music artists. By the song's 50th anniversary in 2008, Lee's original version had sold
         over 25 million copies with the 4th most digital downloads sold of any Christmas single.`,
-		imageUrl:
-			'https://upload.wikimedia.org/wikipedia/en/6/6d/Single_Brenda_Lee-Rockin%27_Around_the_Christmas_Tree_cover.jpg',
-		youtubeUrl: 'https://www.youtube.com/watch?v=UztPyw3sbRM',
-		audioUrl: '',
-		lyrics: `[Chorus]<br>
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/en/6/6d/Single_Brenda_Lee-Rockin%27_Around_the_Christmas_Tree_cover.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=UztPyw3sbRM",
+    audioUrl: "",
+    lyrics: `[Chorus]<br>
         Feliz Navidad<br>
         Feliz Navidad<br>
         Feliz Navidad<br>
@@ -795,17 +806,18 @@ const songs = [
         Feliz Navidad, ey, ey<br>
         Feliz Navidad<br>
         Feliz Navidad<br>
-        Próspero año y felicidad<br>`,
-	},
-	{
-		title: `Rudolph The Red-Nosed Reindeer`,
-		description: `"Rudolph the Red-Nosed Reindeer" is a song by songwriter Johnny Marks based on the 1939 story Rudolph the Red-Nosed Reindeer 
+        Próspero año y felicidad<br>`
+  },
+  {
+    title: `Rudolph The Red-Nosed Reindeer`,
+    description: `"Rudolph the Red-Nosed Reindeer" is a song by songwriter Johnny Marks based on the 1939 story Rudolph the Red-Nosed Reindeer
         published by the Montgomery Ward Company. Gene Autry's recording hit No. 1 on the U.S. charts the week of Christmas 1949.`,
-		imageUrl:
-			'https://upload.wikimedia.org/wikipedia/en/b/bb/Single_Gene_Autry-Rudolph%2C_the_Red-Nosed_Reindeer_cover.jpg',
-		youtubeUrl: 'https://www.youtube.com/watch?v=CreWsnhQwzY',
-		audioUrl: 'http://yuletidetunes.com/uploads/audio/Rudolph%20The%20Red%20Nosed%20Reindeer%20-%20Burl%20Ives.mp3',
-		lyrics: `You know Dasher and Dancer<br>
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/en/b/bb/Single_Gene_Autry-Rudolph%2C_the_Red-Nosed_Reindeer_cover.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=CreWsnhQwzY",
+    audioUrl:
+      "http://yuletidetunes.com/uploads/audio/Rudolph%20The%20Red%20Nosed%20Reindeer%20-%20Burl%20Ives.mp3",
+    lyrics: `You know Dasher and Dancer<br>
         And Prancer and Vixen<br>
         Comet and Cupid<br>
         And Donner and Blitzen<br>
@@ -841,19 +853,20 @@ const songs = [
         "Rudolph the red-nosed reindeer<br>
         (reindeer)<br>
         You'll go down in history!"<br>
-        (like Columbus)<br>`,
-	},
-	{
-		title: `Run Rudolph Run`,
-		description: `"Run, Rudolph, Run" is a Christmas song popularized by Chuck Berry, written by Johnny Marks and Marvin Brodie 
+        (like Columbus)<br>`
+  },
+  {
+    title: `Run Rudolph Run`,
+    description: `"Run, Rudolph, Run" is a Christmas song popularized by Chuck Berry, written by Johnny Marks and Marvin Brodie
         and published by St. Nicholas Music (ASCAP). The song was first recorded by Berry in 1958 and released as a single on Chess Records.
         It has since been covered by numerous other artists, sometimes with the title "Run, Run, Rudolph". The song is a 12-bar blues,
         musically similar to Berry's very popular and recognizable song "Johnny B. Goode" and melodically identical to his song "Little Queenie",
         released in 1959.`,
-		imageUrl: 'https://i.ytimg.com/vi/MVu4c7dhDRE/hqdefault.jpg',
-		youtubeUrl: 'https://www.youtube.com/watch?v=MVu4c7dhDRE',
-		audioUrl: 'http://yuletidetunes.com/uploads/audio/Run%20Rudolph%20Run%20-%20Chuck%20Berry.mp3',
-		lyrics: `Out of all the reindeers, you know you're the
+    imageUrl: "https://i.ytimg.com/vi/MVu4c7dhDRE/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=MVu4c7dhDRE",
+    audioUrl:
+      "http://yuletidetunes.com/uploads/audio/Run%20Rudolph%20Run%20-%20Chuck%20Berry.mp3",
+    lyrics: `Out of all the reindeers, you know you're the
         mastermind<br>
         Run, run Rudolph, Randalph ain't too far behind<br>
         Run, run Rudolph, Santa's got to make it to town<br>
@@ -890,17 +903,18 @@ const songs = [
         Run, run Rudolph, Santa's got to make it to town<br>
         Santa make him hurry, tell him he can take the freeway
         down<br>
-        Run, run Rudolph, I'm reeling like a merry-go-round<br>`,
-	},
-	{
-		title: `Santa Baby`,
-		description: `Santa Baby is a 1953 Christmas song written by Joan Javits (the niece of Senator Jacob K. Javits) and Philip Springer, 
+        Run, run Rudolph, I'm reeling like a merry-go-round<br>`
+  },
+  {
+    title: `Santa Baby`,
+    description: `Santa Baby is a 1953 Christmas song written by Joan Javits (the niece of Senator Jacob K. Javits) and Philip Springer,
         sung originally by Eartha Kitt. The song is a tongue-in-cheek look at a Christmas list addressed to Santa Claus by a woman who wants
         extravagant gifts such as sables, yachts, and decorations from Tiffany's.`,
-		imageUrl: 'https://upload.wikimedia.org/wikipedia/en/a/af/Single_Eartha_Kitt-Santa_Baby_cover.jpg',
-		youtubeUrl: 'https://www.youtube.com/watch?v=ppYGHqxwCuk',
-		audioUrl: 'http://yuletidetunes.com/uploads/audio/Santa%20Baby.mp3',
-		lyrics: `[Verse 1]<br>
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/en/a/af/Single_Eartha_Kitt-Santa_Baby_cover.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=ppYGHqxwCuk",
+    audioUrl: "http://yuletidetunes.com/uploads/audio/Santa%20Baby.mp3",
+    lyrics: `[Verse 1]<br>
         Santa baby, just slip a sable under the tree<br>
         For me<br>
         Been an awful good girl<br>
@@ -948,17 +962,18 @@ const songs = [
         I don't mean on the phone<br>
         Santa baby, so hurry down the chimney tonight<br>
         Hurry down the chimney tonight<br>
-        Hurry, tonight<br>`,
-	},
-	{
-		title: `White Christmas`,
-		description: `White Christmas is a 1942 Irving Berlin song reminiscing about an old-fashioned Christmas setting. 
-        The version sung by Bing Crosby is the world's best-selling single with estimated sales in excess of 50 million copies worldwide. 
+        Hurry, tonight<br>`
+  },
+  {
+    title: `White Christmas`,
+    description: `White Christmas is a 1942 Irving Berlin song reminiscing about an old-fashioned Christmas setting.
+        The version sung by Bing Crosby is the world's best-selling single with estimated sales in excess of 50 million copies worldwide.
         When the figures for other versions of the song are added to Crosby's, sales of the song exceed 100 million.`,
-		imageUrl: 'https://upload.wikimedia.org/wikipedia/en/5/5a/Decca18429A.jpg',
-		youtubeUrl: 'https://www.youtube.com/watch?v=w9QLn7gM-hY',
-		audioUrl: 'http://yuletidetunes.com/uploads/audio/Jaci%20Velasquez%20-%2004%20-%20White%20Christmas.mp3',
-		lyrics: `[Verse 1]<br>
+    imageUrl: "https://upload.wikimedia.org/wikipedia/en/5/5a/Decca18429A.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=w9QLn7gM-hY",
+    audioUrl:
+      "http://yuletidetunes.com/uploads/audio/Jaci%20Velasquez%20-%2004%20-%20White%20Christmas.mp3",
+    lyrics: `[Verse 1]<br>
         I'm dreaming of a white Christmas<br>
         Just like the ones I used to know<br>
         Where the treetops glisten and children listen<br>
@@ -980,18 +995,20 @@ const songs = [
         I'm dreaming of a white Christmas<br>
         With every Christmas card I write<br>
         "May your days be merry and bright<br>
-        And may all your Christmases be white"<br>`,
-	},
-	{
-		title: `Baby It's Cold Outside`,
-		description: `"Baby, It's Cold Outside" is an Academy Award-winning popular song written by Frank Loesser in 1944, which gained wide recognition 
+        And may all your Christmases be white"<br>`
+  },
+  {
+    title: `Baby It's Cold Outside`,
+    description: `"Baby, It's Cold Outside" is an Academy Award-winning popular song written by Frank Loesser in 1944, which gained wide recognition
         in 1949 when it was performed in the film Neptune's Daughter.
         While the lyrics make no mention of any holiday, it is popularly regarded as a Christmas song owing to its winter theme.
         The song was released in no fewer than 8 recordings in 1949 and has been covered numerous times since.`,
-		imageUrl: 'http://www.thefeedbacksociety.com/wp-content/uploads/2018/12/MI0001748126.jpg',
-		youtubeUrl: 'https://www.youtube.com/watch?v=_DAh5kt0vfI',
-		audioUrl: 'http://yuletidetunes.com/uploads/audio/Baby%20Its%20Cold%20Outside%20-%20Anne%20Murray.mp3',
-		lyrics: `I really can't stay (Baby it's cold outside)<br>
+    imageUrl:
+      "http://www.thefeedbacksociety.com/wp-content/uploads/2018/12/MI0001748126.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=_DAh5kt0vfI",
+    audioUrl:
+      "http://yuletidetunes.com/uploads/audio/Baby%20Its%20Cold%20Outside%20-%20Anne%20Murray.mp3",
+    lyrics: `I really can't stay (Baby it's cold outside)<br>
         I gotta go away (Baby it's cold outside)<br>
         This evening has been (Been hoping that you'd
         dropped in)<br>
@@ -1067,18 +1084,18 @@ const songs = [
         Baby it's cold<br>
         Baby it's cold outside<br>
         Okay fine, just another drink then<br>
-        That took a lot of convincing!<br>`,
-	},
-	{
-		title: `Little Drummer Boy`,
-		description: `In the lyrics, the singer relates how, as a poor young boy, he was summoned by the Magi to the Nativity of Jesus. 
+        That took a lot of convincing!<br>`
+  },
+  {
+    title: `Little Drummer Boy`,
+    description: `In the lyrics, the singer relates how, as a poor young boy, he was summoned by the Magi to the Nativity of Jesus.
         Without a gift for the Infant, the little drummer boy played his drum with Jesus’ mother, Mary’s approval; recalling, “I played my best for him” and "He smiled at me."`,
-		imageUrl:
-			'https://st2.depositphotos.com/1007168/6108/v/450/depositphotos_61085423-stock-illustration-boy-playing-drum.jpg',
-		youtubeUrl: 'https://www.youtube.com/watch?v=qJ_MGWio-vc',
-		audioUrl:
-			'http://yuletidetunes.com/uploads/audio/Anita%20Kerr%20Singers%20-%2010%20-%20The%20Little%20Drummer%20Boy.mp3',
-		lyrics: `[Verse 1]<br>
+    imageUrl:
+      "https://st2.depositphotos.com/1007168/6108/v/450/depositphotos_61085423-stock-illustration-boy-playing-drum.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=qJ_MGWio-vc",
+    audioUrl:
+      "http://yuletidetunes.com/uploads/audio/Anita%20Kerr%20Singers%20-%2010%20-%20The%20Little%20Drummer%20Boy.mp3",
+    lyrics: `[Verse 1]<br>
         Come they told me
         Pa rum pum pum pum
         A new born king to see
@@ -1126,17 +1143,17 @@ const songs = [
         Pa rum pum pum pum
         The ox and lamb kept time
         Pa rum pum pum pum
-        I played…<br>`,
-	},
-	,
-	{
-		title: `Underneath the Tree`,
-		description: `Song by Kelly Clarkson.
+        I played…<br>`
+  },
+  ,
+  {
+    title: `Underneath the Tree`,
+    description: `Song by Kelly Clarkson.
         "Underneath the Tree" is a song by American singer Kelly Clarkson, from her sixth studio album and first Christmas album, Wrapped in Red (2013). Written by Clarkson along with Greg Kurstin, who handled its production, it is a Christmas-themed song that sings of gratitude for companionship during the holidays, in which the beloved is being referred as the only present needed "underneath the tree". Accompanied by various instrumental sounds, the song prominently incorporates a Wall of Sound treatment along with sleigh bells and bell chimes to resonate a holiday atmosphere. "Underneath the Tree" was first released to Adult Contemporary radio stations on November 5, 2013, by RCA Records as the lead single from the album.`,
-		imageUrl:
-			'https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Kelly_Clarkson_-_Underneath_the_Tree.jpg/220px-Kelly_Clarkson_-_Underneath_the_Tree.jpg',
-		youtubeUrl: 'https://www.youtube.com/watch?v=VrTpPhNhr5g',
-		lyrics: `[Intro]
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Kelly_Clarkson_-_Underneath_the_Tree.jpg/220px-Kelly_Clarkson_-_Underneath_the_Tree.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=VrTpPhNhr5g",
+    lyrics: `[Intro]
         <br>
         You're here where you should be
 Snow is falling as the carols sing
@@ -1148,7 +1165,7 @@ You're all that I need
 Underneath the tree
 Tonight
         <br>
-       
+
         I'm gonna hold you close
 Make sure that you know
 I was lost before you
@@ -1169,19 +1186,21 @@ Don't mean a thing if you ain't holding me tight
 You're all that I need
 Underneath the tree
         <br>
-        
+
         I found, what I was looking for
 A love that's meant for me
 A heart…
-        `,
+        `
   },
   {
     title: `Christmas, Baby Please Come Home`,
-    description: `"Christmas, Baby Please Come Home" is a cover by the alternative rock band Anberlin, 
+    description: `"Christmas, Baby Please Come Home" is a cover by the alternative rock band Anberlin,
     released on November 20, 2007. Original song was written by Phil Spector, performed by Darlene Love, and released in 1963.`,
-    imageUrl: 'https://lastfm.freetls.fastly.net/i/u/770x0/001b86741aa04492a2b87ff6681bb57a.jpg#001b86741aa04492a2b87ff6681bb57a',
-    youtubeUrl: 'https://www.youtube.com/watch?v=xg_NtRN0-8E',
-    audioUrl: 'http://www.mp3gospel.org/musicas/Anberlin/anberlinlostsongs2007/15.mp3',
+    imageUrl:
+      "https://lastfm.freetls.fastly.net/i/u/770x0/001b86741aa04492a2b87ff6681bb57a.jpg#001b86741aa04492a2b87ff6681bb57a",
+    youtubeUrl: "https://www.youtube.com/watch?v=xg_NtRN0-8E",
+    audioUrl:
+      "http://www.mp3gospel.org/musicas/Anberlin/anberlinlostsongs2007/15.mp3",
     lyrics: `(Christmas)<br>
 The snow's coming down<br>
 (Christmas)<br>
@@ -1225,14 +1244,17 @@ I'd hold back these tears<br>
 (Christmas)<br>
 But it's Christmas day<br>
 (Christmas)<br>
-Baby, please come home`,
-},
-{
-    title: 'Little Saint Nick',
-    description: '"Little Saint Nick" is a Christmas-themed hot rod song about Santa Claus and his sleigh, written by Brian Wilson and Mike Love of the American rock band The Beach Boys. It was released on December 9, 1963.',
-    imageURL: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/BBXmasCover.jpg',
-    youtubeURL: 'https://www.youtube.com/watch?v=AbgxDgVmMF0',
-    audioURL: 'https://jmeshel.com/wp-content/uploads/2010/04/Little-Saint-Nick.mp3?_=1',
+Baby, please come home`
+  },
+  {
+    title: "Little Saint Nick",
+    description:
+      '"Little Saint Nick" is a Christmas-themed hot rod song about Santa Claus and his sleigh, written by Brian Wilson and Mike Love of the American rock band The Beach Boys. It was released on December 9, 1963.',
+    imageURL:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/BBXmasCover.jpg",
+    youtubeURL: "https://www.youtube.com/watch?v=AbgxDgVmMF0",
+    audioURL:
+      "https://jmeshel.com/wp-content/uploads/2010/04/Little-Saint-Nick.mp3?_=1",
     lyrics: `Merry Christmas Saint Nick<br>
         Christmas comes this time each year<br>
 
@@ -1268,6 +1290,42 @@ Baby, please come home`,
         Christmas comes this time each year, ooh<br>
         Merry Christmas Saint Nick<br>
         Christmas comes this time each year, ooh<br>
-        `,
-}
+        `
+  },
+  {
+    title: "I saw Mommy kissing Santa Clause",
+    description:
+      "The song written by Tommie Connor, was originally recorded by Jimmy Boyd on July 15, 1952 when he was 13 years old, and it reached No. 1 on the Billboard pop singles chart in December 1952. The song describes a scene where a child walks downstairs from their bedroom on Christmas Eve to see their mother kissing “Santa Claus” (presumably their father in a Santa Claus costume) under the mistletoe.",
+    imageURL:
+      "https://ia801909.us.archive.org/10/items/78_i-saw-mommy-kissing-santa-claus_tommie-connor-jimmy-boyd-norman-luboff_gbia0001239a/78_i-saw-mommy-kissing-santa-claus_tommie-connor-jimmy-boyd-norman-luboff_gbia0001239a_itemimage.jpg?cnt=0",
+    youtubeURL:
+      "https://www.youtube.com/watch?v=e7t8YTbQSQc&feature=youtu.be&list=SRjimmy+boyd+i+saw+mommy+kissing+santa+claus",
+    audioURL:
+      "https://archive.org/details/78_i-saw-mommy-kissing-santa-claus_tommie-connor-jimmy-boyd-norman-luboff_gbia0001239a/I+Saw+Mommy+Kissing+Santa+Claus+-+Tommie+Connor.flac#",
+
+    lyrics: `I saw Mommy kissing Santa Claus <br>
+            Underneath the mistletoe last night. <br>
+            She didn't see me creep <br>
+            Down the stairs to have a peep; <br>
+            She thought that I was tucked <br>
+            Up in my bedroom fast asleep. <br>
+            Then, I saw Mommy tickle Santa Claus <br>
+            Underneath his beard so snowy white; <br>
+            Oh, what a laugh it would have been <br>
+            If Daddy had only seen <br>
+            Mommy kissing Santa Claus last night. <br>
+            <br>
+            I saw Mommy kissing Santa Claus <br>
+            Underneath the mistletoe last night. <br>
+            She didn't see me creep <br>
+            Down the stairs to have a peep; <br>
+            She thought that I was tucked <br>
+            Up in my bedroom fast asleep. <br>
+            Then, I saw Mommy tickle Santa Claus <br>
+            Underneath his beard so snowy white; <br>
+            Oh, what a laugh it would have been <br>
+            If Daddy had only seen <br>
+            Mommy kissing Santa Claus last night. <br>
+                    `
+  }
 ];
