@@ -1307,5 +1307,52 @@ Baby, please come home`,
         Merry Christmas Saint Nick<br>
         Christmas comes this time each year, ooh<br>
         `,
-}
+},
+{
+title: 'God is born',
+    description: 'Traditional Polish Carol.',
+    imageURL: 'https://i.ytimg.com/vi/IomK7_2hWVc/hqdefault.jpg',
+    youtubeURL: 'https://www.youtube.com/watch?v=AbgxDgVmMF0',
+    audioURL: 'https://www.youtube.com/watch?v=AbgxDgVmMF0',
+    lyrics: `God is born and the night is shaken,
+The Lord of Heaven lies naked,<br>
+Fire is frozen, light is veiled<br>
+The Eternal now has its limits.<br><br>
+H<br>e was scorned, yet clothed with glory,<br>
+Mortal Ki<br>ng of the Ages!<br>
+<br>
+(Chorus)<br>
+And the Word was made flesh,<br>
+And dwelt among us.<br>
+<br>
+What do you have, Heaven and earth?<br>
+God gave up His happiness.<br>
+He walked among His beloved people,<br>
+Sharing in the hardships and toil.<br>
+He suffered much, not little,<br>
+For they were all guilty sinners.<br>
+(Chorus)<br>
+<br>
+Born in a common stable,<br>
+The manger was given to Him as cradle!<br>
+What surrounded it?<br>
+Cattle, shepherds, and hay.<br>
+Poor, yet you were met and<br>
+Greeted him before Kings!<br>
+(Chorus)<br>
+<br>
+Raise Thy hand, Divine Child,<br>
+Bless our beloved country<br>
+With good counsel and well-being,<br>
+Bolster it with the strength of His power.<br>
+Bless our home and all our possessions<br>
+And all the villages and cities.<br>
+`, 
+},
 ];
+
+
+
+
+
+
