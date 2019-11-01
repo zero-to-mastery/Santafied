@@ -14,10 +14,66 @@
     },
 */
 const songs = [
-  {
-    title: `Last Christmas`,
-    description: `Last Christmas is a song by English pop duo Wham!,
-        released on Epic Records in December 1984,
+    {
+		title: `Wonderful Christmas Time`,
+		description: `Wonderful Christmas Time is a song by Paul McCartney and Wings. 
+        Recorded during the sessions for his solo album McCartney II (1980), it was released in November 1979 following Wings' 
+        final album Back to the Egg earlier that year. It was his first solo single since their formation. `,
+		imageUrl:
+			'https://upload.wikimedia.org/wikipedia/en/5/5e/Wonderful_Christmastime_%28Paul_McCartney_single_-_cover_art%29.jpg',
+		youtubeUrl: 'https://www.youtube.com/watch?v=V9BZDpni56Y',
+		audioUrl:
+			'http://yuletidetunes.com/A_Wonderful_Christmas_Time_-_Paul_McCartney.html',
+		lyrics: `The moon is right<br>
+        The spirits up<br>
+        We're here tonight<br>
+        And that's enough<br>
+        Simply havin' a wonderful Christmastime<br>
+        Simply havin' a wonderful Christmastime<br>
+        The party's on<br>
+        The feelin's here<br>
+        That only comes<br>
+        This time of year<br>
+        Simply havin' a wonderful Christmastime<br>
+        Simply havin' a wonderful Christmastime<br>
+        The choir of children sing their song<br>
+        <br>
+        Ding dong, ding dong<br>
+        Ding dong, ding, ooh, ooh<br>
+        We're simply havin' a wonderful Christmastime<br>
+        Simply havin' a wonderful Christmastime<br>
+        The word is out<br>
+        About the town<br>
+        So lift a glass<br>
+        Ahh, don't look down<br>
+        Simply havin' a wonderful Christmastime<br>
+        The choir of children sing their song<br>
+        They practiced all year long<br>
+        <br>
+        Ding dong, ding dong<br>
+        Ding dong, ding dong<br>
+        Ding dong, ding dong<br>
+        Ding dong, ding, ooh, ooh<br>
+        <br>
+        The party's on<br>
+        The spirits up<br>
+        We're here tonight<br>
+        And that's enough<br>
+        Simply havin' a wonderful Christmastime<br>
+        We're simply havin' a wonderful Christmastime<br>
+        The moon is right<br>
+        The spirits up<br>
+        We're here tonight<br>
+        And that's enough<br>
+        We're simply havin' a wonderful Christmastime<br>
+        Simply havin' a wonderful Christmastime<br>
+        Simply havin' a wonderful Christmastime<br>
+        Oh, Christmastime`,
+	},
+	{
+		title: `Last Christmas`,
+		description: `Last Christmas is a song by English pop duo Wham!, 
+        released on Epic Records in December 1984, 
         on a double A-side with "Everything She Wants".
         It was written and produced by George Michael,
         and has been covered by many artists since its original release.`,
@@ -280,9 +336,9 @@ const songs = [
         <br>
         Jingle bell, jingle bell, jingle bell rock Jingle bell, jingle bell, jingle bell rock`
   },
-  {
-    title: `Christmas In Hollis`,
-    description: `"Christmas in Hollis" is a single by Run-DMC that was included on two 1987 Christmas compilation albums
+	{
+		title: `Christmas In Hollis`,
+		description: `"Christmas in Hollis" is a single by Run-DMC that was included on two 1987 Christmas compilation albums 
         featuring various artists: A Very Special Christmas (A&M 3911) and Christmas Rap (Profile 1247).
         The title refers to Hollis, Queens, the New York City neigborhood in which the members of Run-DMC grew up.
         The track samples Clarence Carter's 1968 holiday song "Back Door Santa", as well as "Frosty the Snowman", "Jingle Bells",
@@ -1327,5 +1383,52 @@ Baby, please come home`
             If Daddy had only seen <br>
             Mommy kissing Santa Claus last night. <br>
                     `
-  }
+  },
+{
+title: 'God is born',
+    description: 'Traditional Polish Carol.',
+    imageURL: 'https://i.ytimg.com/vi/IomK7_2hWVc/hqdefault.jpg',
+    youtubeURL: 'https://www.youtube.com/watch?v=AbgxDgVmMF0',
+    audioURL: 'https://www.youtube.com/watch?v=AbgxDgVmMF0',
+    lyrics: `God is born and the night is shaken,
+The Lord of Heaven lies naked,<br>
+Fire is frozen, light is veiled<br>
+The Eternal now has its limits.<br><br>
+H<br>e was scorned, yet clothed with glory,<br>
+Mortal Ki<br>ng of the Ages!<br>
+<br>
+(Chorus)<br>
+And the Word was made flesh,<br>
+And dwelt among us.<br>
+<br>
+What do you have, Heaven and earth?<br>
+God gave up His happiness.<br>
+He walked among His beloved people,<br>
+Sharing in the hardships and toil.<br>
+He suffered much, not little,<br>
+For they were all guilty sinners.<br>
+(Chorus)<br>
+<br>
+Born in a common stable,<br>
+The manger was given to Him as cradle!<br>
+What surrounded it?<br>
+Cattle, shepherds, and hay.<br>
+Poor, yet you were met and<br>
+Greeted him before Kings!<br>
+(Chorus)<br>
+<br>
+Raise Thy hand, Divine Child,<br>
+Bless our beloved country<br>
+With good counsel and well-being,<br>
+Bolster it with the strength of His power.<br>
+Bless our home and all our possessions<br>
+And all the villages and cities.<br>
+`, 
+},
 ];
+
+
+
+
+
+

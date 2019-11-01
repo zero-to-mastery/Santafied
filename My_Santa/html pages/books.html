@@ -12,22 +12,22 @@
   <title>Santafield 2019</title>
 </head>
 
+<script>
+	window.onload = function() {
+		makeSelectedNavActive();
+	};
+	
+	function makeSelectedNavActive() {
+		var element = document.getElementById("books-link");
+		element.classList.add("current");
+	}
+</script>
+
 <body id="books">
 
-  <!-- ****************************** NAVBAR ****************************** -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="index.html">Christmas information</a></li>
-      <li><a href="recipes.html">Recipes</a></li>
-      <li><a href="gift.html">Gift suggestions</a></li>
-      <li><a href="songs.html">Songs</a></li>
-      <li><a href="games.html">Games</a></li>
-      <li><a href="movie.html">Movie</a></li>
-      <li><a class="current" href="books.html">Books</a></li>
-      <li><a href="activites.html">Activities</a></li>
-
-    </ul>
-  </nav>
+  <div class="header">
+		<script src="../js/My_Santa-page-header.js"></script>
+  </div>
 
   <!-- *********************** BOOK SECTION **************************** -->
   <div class="book-section">

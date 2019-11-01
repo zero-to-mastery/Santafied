@@ -11,20 +11,21 @@
   <title>Santafied 2019 | Facts </title>
 </head>
 
+<script>
+	window.onload = function() {
+		makeSelectedNavActive();
+	};
+	
+	function makeSelectedNavActive() {
+		var element = document.getElementById("index-link");
+		element.classList.add("current");
+	}
+</script>
+
 <body id="index">
-  <!-- ****************************** NAVBAR ****************************** -->
-  <nav class="navbar">
-    <ul>
-      <li><a class="current" href="index.html">Christmas information</a></li>
-      <li><a href="recipes.html">Recipes</a></li>
-      <li><a href="gift.html">Gift suggestions</a></li>
-      <li><a href="songs.html">Songs</a></li>
-      <li><a href="games.html">Games</a></li>
-      <li><a href="movie.html">Movie</a></li>
-      <li><a href="books.html">Books</a></li>
-      <li><a href="activites.html">Activities</a></li>
-    </ul>
-  </nav>
+  <div class="header">
+		<script src="../js/My_Santa-page-header.js"></script>
+  </div>
 
   <!-- ************************* READ MORE SECTION ******************************** -->
   <header id="readMore">

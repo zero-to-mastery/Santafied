@@ -11,20 +11,21 @@
         <title>Specific Movie</title>
     </head>
 
+	<script>
+		window.onload = function() {
+			makeSelectedNavActive();
+		};
+	
+		function makeSelectedNavActive() {
+			var element = document.getElementById("movie-link");
+			element.classList.add("current");
+		}
+	</script>
+
     <body id="movie">
-        <!-- ****************************** NAVBAR ****************************** -->
-        <nav class="navbar recipes">
-            <ul>
-                <li><a href="index.html">Christmas information</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="gift.html">Gift suggestions</a></li>
-                <li><a href="songs.html">Songs</a></li>
-                <li><a href="games.html">Games</a></li>
-                <li><a class="current" href="movie.html">Movie</a></li>
-                <li><a href="books.html">Books</a></li>
-                <li><a href="activites.html">Activities</a></li>
-            </ul>
-        </nav>
+        <div class="header">
+			<script src="../js/My_Santa-page-header.js"></script>
+		</div>
 
         <h1>SOME GREAT MOVIE FOR WHOLE FAMILY</h1>
         <div class="iframe-container">
